@@ -6,6 +6,7 @@ import { StrategyVistaLocal } from './strategyVistaListasLocal'
 import { StrategyVistaServer } from './strategyVistaListaServer'
 import { StrategyCancionesLocal } from './strategyVistaCancionesLocal'
 import { StrategyCancionesServer } from './strategyVistaCancionesServer'
+import { StrategyListaReproduccion } from './strategyVistaListaReproduccion'
 
 export class vistaHome {
   public viendo: string = 'inicio'
@@ -25,8 +26,20 @@ export class vistaHome {
     await this.strategia.cambioLista()
   }
 
-  public async clickViendo(viendo: string) {
+  public async clickViendo(
+    viendo: string,
+    logueado: boolean,
+    conLista: boolean,
+  ) {
     this.viendo = viendo
+    if (logueado) {
+      if (viendo === 'listas' || viendo === 'canciones') {
+        this.viendoOrigen = 'server'
+      }
+    }
+    if (conLista && viendo === 'listas') {
+      this.viendoOrigen = 'reproduccion'
+    }
     await this.cambiarStrategia()
   }
 
@@ -43,6 +56,8 @@ export class vistaHome {
         this.strategia = new StrategyVistaLocal(this)
       } else if (this.viendoOrigen === 'server') {
         this.strategia = new StrategyVistaServer(this)
+      } else {
+        this.strategia = new StrategyListaReproduccion(this)
       }
     } else if (this.viendo === 'canciones') {
       if (this.viendoOrigen === 'localstorage') {

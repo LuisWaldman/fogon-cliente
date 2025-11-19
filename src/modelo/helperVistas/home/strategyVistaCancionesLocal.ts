@@ -11,8 +11,6 @@ export class StrategyCancionesLocal extends StrategyVista {
   }
 
   public override async iniciar(): Promise<void> {
-    // Implementación por defecto para iniciar la vistaHome
-
     this.vista.viendoCanciones = await CancionManager.getInstance().GetDBIndex()
   }
 }

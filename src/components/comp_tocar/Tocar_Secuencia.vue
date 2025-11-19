@@ -35,7 +35,7 @@ onMounted(() => {
 //  :style="EstiloSecuencia()" :ref="ctrlSecuencia">
 function EstiloSecuencia() {
   return {
-    'height': configPantalla.anchoParte + 'px',
+    height: configPantalla.anchoParte + 'px',
   }
 }
 watch(
@@ -49,16 +49,14 @@ watch(
   () => props.compas,
   (newCompas) => {
     resumenSecuencia.value?.ActualizarCompas(newCompas)
-    
+
     if (configPantalla.AutoScroll) {
       //const total = resumenSecuencia.value.resumenPartes.length
-      const enParte = resumenSecuencia.value.parte 
+      const enParte = resumenSecuencia.value.parte
       // Calcular la posición de scroll basada en la parte actual
       const positionY = enParte * configPantalla.tamanioAcordeParte * 2
       moverScroll(positionY)
     }
-
-
   },
 )
 
@@ -100,7 +98,6 @@ helper.latino = appStore.perfil.CifradoLatino
         >
       </div>
       <div class="ordendiv">
-        
         <div
           class="acordeSecuencia"
           v-for="(acorde, acordeIndex) in cancion.acordes.partes[parte.parteId]
@@ -114,8 +111,6 @@ helper.latino = appStore.perfil.CifradoLatino
         >
           {{ helper.GetAcorde(acorde) }}
         </div>
-
-        
 
         <div class="repeticion" v-if="parte.cantPartes > 1">
           <span v-if="resumenSecuencia.parte === index"
@@ -138,21 +133,15 @@ helper.latino = appStore.perfil.CifradoLatino
   margin-right: 10px;
 }
 
-
-
 .contSecuencia {
   flex-wrap: wrap;
   overflow-y: scroll;
   scrollbar-color: black transparent;
   scrollbar-width: thin;
-
-  
-  
 }
 .secuencia {
   font-size: var(--tamanio-parte);
   flex-wrap: wrap;
-  
 }
 
 .acordeSeleccionado {
@@ -174,7 +163,6 @@ helper.latino = appStore.perfil.CifradoLatino
   color: #a9a8f6;
   margin-top: 10px;
 }
-
 
 .partediv {
   display: flex;

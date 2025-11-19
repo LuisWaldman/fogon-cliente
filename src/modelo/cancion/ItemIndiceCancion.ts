@@ -46,8 +46,8 @@ export class ItemIndiceCancion {
   public owner: string
   public origenUrl: string
   public fileName: string
-  public GetOrigen(): OrigenCancion {
-    return new OrigenCancion(this.origenUrl, this.fileName, this.owner)
+  public static GetOrigen(desde: ItemIndiceCancion): OrigenCancion {
+    return new OrigenCancion(desde.origenUrl, desde.fileName, desde.owner)
   }
   constructor(_origen: OrigenCancion, _cancion: string, _banda: string) {
     this.origenUrl = _origen.origenUrl

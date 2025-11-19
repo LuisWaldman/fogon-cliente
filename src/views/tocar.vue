@@ -56,8 +56,7 @@ function stopRafLoop() {
 // Watch for changes in playback state and start/stop RAF loop
 watch(
   () => appStore.estadoReproduccion,
-  (nuevo, viejo) => {
-    console.log('Cambio appStore.estadoReproduccion:', viejo, '->', nuevo)
+  (nuevo) => {
     if (nuevo === 'Reproduciendo' || nuevo === 'Iniciando') {
       startRafLoop()
     } else {
@@ -69,13 +68,6 @@ watch(
 onUnmounted(() => {
   stopRafLoop()
 })
-
-const urlParams = new URLSearchParams(window.location.search)
-const sesionurl = urlParams.get('cancion')
-if (sesionurl) {
-  const origen = OrigenCancion.GetFromQuery(sesionurl)
-  appStore.aplicacion.ClickTocar(origen)
-}
 
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 
@@ -196,7 +188,6 @@ function GetStyleOverlay() {
   }
   return `top: ${vista.value.altoReproductor}px;`
 }
-
 
 function GetStyleSecuencia() {
   return `height: ${vista.value.anchoParte}px;`
@@ -349,12 +340,11 @@ const refAdvertencia = ref(true)
 
         <div class="overlay" :style="GetStyleOverlay()">
           <div class="secuencia" :style="GetStyleSecuencia()">
-
-          <Secuencia
-            v-if="vista.viendoSecuencia"
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-          ></Secuencia>
+            <Secuencia
+              v-if="vista.viendoSecuencia"
+              :cancion="appStore.cancion"
+              :compas="appStore.compas"
+            ></Secuencia>
           </div>
 
           <ProximosAcordes

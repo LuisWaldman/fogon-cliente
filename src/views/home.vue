@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { useAppStore } from '../stores/appStore'
-import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
@@ -70,11 +69,23 @@ const refResultadoCanciones = ref<ItemIndiceCancion[]>([])
 
 const appStore = useAppStore()
 
-function clickTocar(cancion: OrigenCancion) {
-  appStore.aplicacion.ClickTocar(cancion)
+function clickTocar(cancion: ItemIndiceCancion, indice: number) {
+  if (viendoOrigen.value === 'reproduccion' && viendo.value === 'listas') {
+    appStore.aplicacion.ClickCancionNro(indice)
+  } else {
+    appStore.aplicacion.ClickTocar(cancion)
+  }
+}
+function tocarLista() {
+  if (viendoLista.value == null || viendoLista.value === '') {
+    alert('Por favor, selecciona una lista para reproducir.')
+    return
+  }
+  console.log('Tocando lista:', viendoLista.value)
+  appStore.aplicacion.ClickTocarLista(viendoCanciones.value)
 }
 
-function clickBorrarLista(cancion: OrigenCancion) {
+function clickBorrarLista(cancion: ItemIndiceCancion) {
   viendoCanciones.value = viendoCanciones.value.filter(
     (c) => c.fileName !== cancion.fileName,
   )
@@ -90,7 +101,9 @@ async function clickOpcion(viendostr: string) {
   if (viendo.value === viendostr) return
   cargandoCanciones.value = true
   cargandoListas.value = true
-  await vistaControl.clickViendo(viendostr)
+  const conLista = appStore.listaReproduccion.length > 0
+  const conLogin = appStore.estadosApp.estadoLogin === 'logueado' ? true : false
+  await vistaControl.clickViendo(viendostr, conLogin, conLista)
   await Cargar()
   return
 }
@@ -106,11 +119,31 @@ async function cambioLista() {
 async function clickOrigen(viendostr: string) {
   if (viendoOrigen.value === viendostr) return
   console.log('Cambiando origen a:', viendostr)
+  if (appStore.estadosApp.estadoLogin === 'logueado') {
+  }
   await vistaControl.clickViendoOrigen(viendostr)
   await vistaControl.iniciar()
-  actualizarVista()
+  Cargar()
   return
 }
+
+watch(
+  () => appStore.nroCancion,
+  () => {
+    if (viendoOrigen.value === 'reproduccion' && viendo.value === 'listas') {
+      Cargar()
+    }
+  },
+)
+
+watch(
+  () => appStore.listaReproduccion,
+  () => {
+    if (viendoOrigen.value === 'reproduccion' && viendo.value === 'listas') {
+      actualizarVista()
+    }
+  },
+)
 
 function confirmarNuevaLista() {
   if (nuevaLista.value.trim() === '') {
@@ -246,8 +279,7 @@ function borrarLista() {
   }
 }
 
-function AgregarLista(index: number, listaseleccionada: string) {
-  console.log('Agregar a lista:', index, listaseleccionada)
+async function AgregarALista(index: number, listaseleccionada: string) {
   if (listaseleccionada === 'actual') {
     appStore.aplicacion.ClickAgregarAListaReproduccion(
       viendoCanciones.value[index],
@@ -325,7 +357,7 @@ function AgregarLista(index: number, listaseleccionada: string) {
     <div class="config-menu">
       <div class="config-menu-group">
         <div
-          v-if="appStore.listaReproduccion.length"
+          v-if="appStore.listaReproduccion.length && viendo === 'listas'"
           @click="clickOrigen('reproduccion')"
           class="config-menu-item"
         >
@@ -411,6 +443,10 @@ function AgregarLista(index: number, listaseleccionada: string) {
               ➕<span class="button-text">Nueva Cancion</span>
             </button>
             <subirCancion v-if="viendo === 'canciones'"></subirCancion>
+
+            <button @click="tocarLista" v-if="viendo === 'listas'">
+              ▶<span class="button-text">Tocar Lista</span>
+            </button>
             <button @click="addingLista = true" v-if="viendo === 'listas'">
               ➕<span class="button-text">Nueva Lista</span>
             </button>
@@ -450,9 +486,13 @@ function AgregarLista(index: number, listaseleccionada: string) {
         :listasserverstore="appStore.listasEnServer"
         :listasstore="ListasEnStorage"
         :cargando="cargandoCanciones"
+        :agregarLista="AgregarALista"
+        :nro-cancion="appStore.nroCancion"
+        :ver-cancion-actual="
+          viendoOrigen === 'reproduccion' && viendo === 'listas'
+        "
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
-        @agregar="AgregarLista"
         :ver-borrar="viendo != 'inicio'"
       />
     </div>

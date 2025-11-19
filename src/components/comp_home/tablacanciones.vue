@@ -1,3 +1,4 @@
+z
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
@@ -6,7 +7,7 @@ import emoticonOrigen from './emoticonOrigen.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
 const helper = HelperDisplayAcordesLatino.getInstance()
-const emit = defineEmits(['tocar', 'borrar', 'agregar'])
+const emit = defineEmits(['tocar', 'borrar'])
 const vectorCalidades: string[] = [
   'De Internet',
   'Texto Sincronizado',
@@ -14,17 +15,27 @@ const vectorCalidades: string[] = [
   'Ok',
 ]
 const agregandoLista = ref(false)
+const agregandoALista = ref(false)
 const props = defineProps<{
   canciones: ItemIndiceCancion[]
   listasstore: string[]
   listasserverstore: string[]
   verBorrar: boolean
+  verCancionActual: boolean
+  nroCancion: number
   cargando: boolean
+  agregarLista: (index: number, listaseleccionada: string) => Promise<void>
 }>()
 const listaseleccionada = ref<string>('actual')
 
-function clickAgregar(index: number) {
-  emit('agregar', index, listaseleccionada.value)
+async function clickAgregar(index: number) {
+  agregandoALista.value = true
+  try {
+    await props.agregarLista(index, listaseleccionada.value)
+  } finally {
+    agregandoALista.value = false
+    agregandoLista.value = false
+  }
 }
 function arreglartexto(texto: string): string {
   if (texto == null || texto === undefined) return ''
@@ -45,7 +56,7 @@ function arreglartexto(texto: string): string {
 
 const viendoFiltroTabla = ref(false)
 const filtroTexto = ref<string>('')
-const viendoDetalle = ref<string | null>(null)
+const viendoDetalle = ref<number | null>(null)
 
 const cancionesFiltradas = computed(() => {
   if (!viendoFiltroTabla.value) return props.canciones
@@ -58,23 +69,16 @@ const cancionesFiltradas = computed(() => {
   })
 })
 
-function VerDetalle(cancion: ItemIndiceCancion) {
-  const id = `${cancion.banda}-${cancion.cancion}`
-  if (viendoDetalle.value === id) {
-    viendoDetalle.value = null
-  } else {
-    viendoDetalle.value = id
-  }
+function VerDetalle(index: number) {
+  viendoDetalle.value = index
 }
 
 const tiempo = new Tiempo()
-function Reproducir(cancion: ItemIndiceCancion) {
-  const { origenUrl, fileName, owner } = cancion
-  emit('tocar', { origenUrl, fileName, usuario: owner })
+function Reproducir(cancion: ItemIndiceCancion, index: number) {
+  emit('tocar', cancion, index)
 }
 function Borrar(cancion: ItemIndiceCancion) {
-  const { origenUrl, fileName, owner } = cancion
-  emit('borrar', { origenUrl, fileName, usuario: owner })
+  emit('borrar', cancion)
 }
 </script>
 
@@ -119,7 +123,13 @@ function Borrar(cancion: ItemIndiceCancion) {
     </tbody>
     <tbody v-if="canciones.length > 0 && props.cargando == false">
       <template v-for="(cancion, index) in cancionesFiltradas" :key="index">
-        <tr @click="VerDetalle(cancion)">
+        <tr
+          @click="VerDetalle(index)"
+          :class="{
+            tocando: index === nroCancion && verCancionActual,
+            seleccionado: index === viendoDetalle,
+          }"
+        >
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
@@ -145,8 +155,12 @@ function Borrar(cancion: ItemIndiceCancion) {
           <td></td>
         </tr>
         <tr
-          v-if="viendoDetalle === `${cancion.banda}-${cancion.cancion}`"
+          v-if="viendoDetalle === index"
           data-detail
+          :class="{
+            tocandodetalle: index === nroCancion && verCancionActual,
+            seleccionado: index === viendoDetalle,
+          }"
         >
           <td colspan="5" style="text-align: right">
             <div class="divDetalle">
@@ -199,7 +213,7 @@ function Borrar(cancion: ItemIndiceCancion) {
               </div>
 
               <div class="botoneraDetalle">
-                <button @click="Reproducir(cancion)">▶ Tocar</button>
+                <button @click="Reproducir(cancion, index)">▶ Tocar</button>
                 <button @click="agregandoLista = true">🗒️ Lista</button>
                 <button @click="Borrar(cancion)" v-if="verBorrar">
                   🗑 Borrar
@@ -230,8 +244,18 @@ function Borrar(cancion: ItemIndiceCancion) {
                     </option>
                   </optgroup>
                 </select>
-                <button @click="clickAgregar(index)">AGREGAR</button>
-                <button @click="agregandoLista = false">❌</button>
+                <button
+                  @click="clickAgregar(index)"
+                  :disabled="agregandoALista"
+                >
+                  {{ agregandoALista ? '🔥 Agregando...' : 'AGREGAR' }}
+                </button>
+                <button
+                  @click="agregandoLista = false"
+                  :disabled="agregandoALista"
+                >
+                  ❌
+                </button>
               </div>
             </div>
           </td>
@@ -319,5 +343,15 @@ td {
     margin-right: 5px;
     margin-top: 10px;
   }
+}
+
+.tocando {
+  background: radial-gradient(ellipse at bottom, #000000 0%, #6a700f 100%);
+}
+.tocandodetalle {
+  background: radial-gradient(ellipse at top, #000000 0%, #6a700f 100%);
+}
+.seleccionado {
+  background-color: #2c2c2c;
 }
 </style>

@@ -53,7 +53,7 @@ export const useAppStore = defineStore('app', () => {
 
   const sesiones = ref<Sesion[]>([] as Sesion[])
   const listaReproduccion = ref<ItemIndiceCancion[]>([])
-  const nroCancion = ref<number>(1)
+  const nroCancion = ref<number>(0)
   const mensajes = ref<string[]>([])
   const compas = ref<number>(-1)
   const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado

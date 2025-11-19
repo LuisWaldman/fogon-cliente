@@ -6,13 +6,15 @@ import { OrigenCancion } from '../cancion/origencancion'
 import { CancionManager } from '../cancion/CancionManager'
 import { Cancion } from '../cancion/cancion'
 import { HelperSincro } from '../sincro/HelperSincro'
+import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import { ListaReproduccionConectada } from './listareproduccionconectada'
 
 export class ReproductorConectado extends Reproductor {
   cliente: ClienteSocket
   momentoInicio: Date | null = null
   compasInicio: number = 0
   token: string = ''
-
+  listaReproduccionConcetada: ListaReproduccionConectada
   async GetCancionDelFogon() {
     const origen = new OrigenCancion('fogon', '', '')
     const cancion = await CancionManager.getInstance().Get(origen)
@@ -22,6 +24,11 @@ export class ReproductorConectado extends Reproductor {
   }
   constructor(cliente: ClienteSocket, token: string) {
     super()
+    this.listaReproduccionConcetada = new ListaReproduccionConectada(
+      cliente,
+      token,
+    )
+    this.listaReproduccion = this.listaReproduccionConcetada
     const appStore = useAppStore()
     this.token = token
     this.cliente = cliente
@@ -37,6 +44,7 @@ export class ReproductorConectado extends Reproductor {
         desde,
         compas, // duracionGolpe
       )
+      appStore.MediaVistas?.Iniciar?.()
       this.sincronizar()
       if (appStore.cancion) {
         if (appStore.compas < 0) {
@@ -71,13 +79,15 @@ export class ReproductorConectado extends Reproductor {
     CancionManager.getInstance().Save(origenN, cancion)
   }
 
-  override async ClickCancion(origen: OrigenCancion) {
-    const appStore = useAppStore()
-    appStore.estadosApp.texto = 'Obteniendo cancion...'
-    const cancionObtenida = await CancionManager.getInstance().Get(origen)
-    appStore.origenCancion = origen
-    appStore.estadosApp.texto = 'Enviando cancion...'
-    await this.EnviarCancion(cancionObtenida)
+  override async ClickCancion(cancion: ItemIndiceCancion) {
+    await this.listaReproduccionConcetada.ClickCancion(cancion)
+  }
+
+  override async ClickTocarLista(lista: ItemIndiceCancion[]) {
+    await this.listaReproduccionConcetada.ClickTocarLista(lista)
+  }
+  override async ClickCancionNro(nro: number) {
+    await this.listaReproduccionConcetada.ClickCancionNro(nro)
   }
 
   override async iniciarReproduccion() {

@@ -13,6 +13,8 @@ interface ServerToClientEvents {
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
   cancionActualizada: () => void
+  listacambiada: () => void
+  nrocambiado: () => void
   cancionIniciada: (compas: number, desde: number) => void
   cancionSincronizada: (compas: number, desde: number) => void
   cancionDetenida: () => void
@@ -142,6 +144,16 @@ export class ClienteSocket {
   private actualizarUsuariosHandler?: () => void
   public setActualizarUsuariosHandler(handler: () => void): void {
     this.actualizarUsuariosHandler = handler
+  }
+
+  private listacambiadaHandler?: () => void
+  public setListacambiadaHandler(handler: () => void): void {
+    this.listacambiadaHandler = handler
+  }
+
+  private nrocambiadoHandler?: () => void
+  public setNrocambiadoHandler(handler: () => void): void {
+    this.nrocambiadoHandler = handler
   }
 
   private servidor: Servidor
@@ -333,6 +345,16 @@ export class ClienteSocket {
     socket.on('actualizarusuarios', () => {
       console.log('actualizarUsuarios received')
       this.actualizarUsuariosHandler?.()
+    })
+
+    socket.on('listacambiada', () => {
+      console.log('listacambiada received')
+      this.listacambiadaHandler?.()
+    })
+
+    socket.on('nrocambiado', () => {
+      console.log('nrocambiado received')
+      this.nrocambiadoHandler?.()
     })
 
     this.socket = socket

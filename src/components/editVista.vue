@@ -393,7 +393,10 @@ function ClickSoloMidi() {
         Cuadrado
       </div>
     </div>
-    <div class="config-row" v-if="configPantalla.viendoSecuencia3 || configPantalla.viendoSecuencia">
+    <div
+      class="config-row"
+      v-if="configPantalla.viendoSecuencia3 || configPantalla.viendoSecuencia"
+    >
       <span>Secuencia</span>
       <input
         type="range"
@@ -403,7 +406,7 @@ function ClickSoloMidi() {
       />
       <span>{{ configPantalla.tamanioParte }} px</span>
 
-       <span style="margin-left: 20px;">Ancho Parte</span>
+      <span style="margin-left: 20px">Ancho Parte</span>
       <input
         type="range"
         min="0"
