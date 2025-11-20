@@ -222,14 +222,12 @@ function DescargarJSON() {
         :cancion="cancion"
         :origen="origen"
         @cerrar="clickCerrar"
-        
       ></editarmedias>
       <editaryoutube
         v-if="viendo == 'medias'"
         :cancion="cancion"
         :origen="origen"
         @cerrar="clickCerrar"
-        
       ></editaryoutube>
       <editararchivo
         v-if="viendo == 'archivo'"

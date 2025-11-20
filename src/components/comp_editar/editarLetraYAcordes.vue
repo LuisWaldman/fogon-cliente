@@ -92,9 +92,18 @@ function estiloVistaSecundaria() {
 }
 </script>
 <template>
-  <div :style="{ height: pantalla.getAltoPantalla() + 'px', overflow: 'hidden', display: 'flex' }">
+  <div
+    :style="{
+      height: pantalla.getAltoPantalla() + 'px',
+      overflow: 'hidden',
+      display: 'flex',
+    }"
+  >
     <div :style="estiloVistaPrincipal()">
-      <div class="editdivconteiner" :style="{ height: pantalla.getAltoPantalla() + 'px', overflow: 'auto' }">
+      <div
+        class="editdivconteiner"
+        :style="{ height: pantalla.getAltoPantalla() + 'px', overflow: 'auto' }"
+      >
         <div
           class="editrenglon"
           v-for="(renglon, indexrenglon) in compaces"

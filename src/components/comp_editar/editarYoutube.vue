@@ -10,7 +10,7 @@ const props = defineProps<{
   origen: OrigenCancion
 }>()
 
-const id = ref<string>("")
+const id = ref<string>('')
 const delay = ref<number>(0)
 if (props.cancion.medias.length > 0) {
   id.value = props.cancion.medias[0].id
@@ -22,17 +22,21 @@ const exid = ref<string>(id.value)
 const exlength = ref<number>(props.cancion.medias.length)
 const exdelay = ref<number>(delay.value)
 
-// Calculo los valores 
+// Calculo los valores
 const delayGolpe = ref<number>(Math.floor(delay.value / duracionGolpe.value))
-const delayCompas = ref<number>(Math.floor(delayGolpe.value / golpesPorCompas.value))
-const sobranteGolpe = ref<number>(delayGolpe.value - (delayCompas.value * golpesPorCompas.value))
-const sobranteDelay = ref<number>(delay.value - (delayGolpe.value * duracionGolpe.value))
-
-
+const delayCompas = ref<number>(
+  Math.floor(delayGolpe.value / golpesPorCompas.value),
+)
+const sobranteGolpe = ref<number>(
+  delayGolpe.value - delayCompas.value * golpesPorCompas.value,
+)
+const sobranteDelay = ref<number>(
+  delay.value - delayGolpe.value * duracionGolpe.value,
+)
 
 function clickCancelarCambiarDatos() {
   if (exlength.value == 0) {
-    props.cancion.medias = []    
+    props.cancion.medias = []
     emit('cerrar')
     return
   }
@@ -44,9 +48,8 @@ function clickCancelarCambiarDatos() {
 }
 
 function cambiarDatos() {
-  
   if (props.cancion.medias.length == 0) {
-    const media = new Media("youtube", id.value, delay.value)
+    const media = new Media('youtube', id.value, delay.value)
     props.cancion.medias.push(media)
   } else {
     props.cancion.medias[0].id = id.value
@@ -58,43 +61,53 @@ function clickOkCambiarDatos() {
   cambiarDatos()
   emit('cerrar')
 }
-
 </script>
 <template>
   <div class="ctrlEditar">
-    <input v-model="id" placeholder="ID de Youtube" @change="cambiarDatos"/>
-    
+    <input v-model="id" placeholder="ID de Youtube" @change="cambiarDatos" />
+
     <div>
       <button class="lblCabecera" @click="clickOkCambiarDatos">✔️</button>
       <button class="lblCabecera" @click="clickCancelarCambiarDatos">❌</button>
     </div>
-    <div class="itemctrl">COMPASES <input type="number" v-model="delayCompas" style="border: 6px; width: 5ch; text-align: right;" 
-        @change="cambiarDatos" />
+    <div class="itemctrl">
+      COMPASES
+      <input
+        type="number"
+        v-model="delayCompas"
+        style="border: 6px; width: 5ch; text-align: right"
+        @change="cambiarDatos"
+      />
     </div>
-    <div class="itemctrl">GOLPES <input type="number" v-model="sobranteGolpe" style="border: 6px; width: 5ch; text-align: right;" 
-        @change="cambiarDatos" />
+    <div class="itemctrl">
+      GOLPES
+      <input
+        type="number"
+        v-model="sobranteGolpe"
+        style="border: 6px; width: 5ch; text-align: right"
+        @change="cambiarDatos"
+      />
     </div>
-  
-    <div class="itemctrl">SOBRAN <input type="number" v-model="sobranteDelay" style="border: 6px; width: 5ch; text-align: right;" 
-        @change="cambiarDatos" />
-    </div>
-<div class="contentCompases">
-    <div class="compasDelay">❓</div>
-    <div class="compasDelay">❓</div>
-    <div class="compasDelay">❓</div>
-    <div class="compasDelay">❓</div>
-    <div class="compasDelay">❓</div>
-</div>
 
-
-  
-   
+    <div class="itemctrl">
+      SOBRAN
+      <input
+        type="number"
+        v-model="sobranteDelay"
+        style="border: 6px; width: 5ch; text-align: right"
+        @change="cambiarDatos"
+      />
     </div>
-    
-<div>
-      
+    <div class="contentCompases">
+      <div class="compasDelay">❓</div>
+      <div class="compasDelay">❓</div>
+      <div class="compasDelay">❓</div>
+      <div class="compasDelay">❓</div>
+      <div class="compasDelay">❓</div>
+    </div>
+  </div>
 
-</div>  
+  <div></div>
 </template>
 <style scoped>
 .ctrlEditar input {

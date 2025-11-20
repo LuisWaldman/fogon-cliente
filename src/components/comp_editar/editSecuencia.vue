@@ -124,21 +124,21 @@ defineExpose({ Actualizar })
     .. No cargada ..
   </div>
   <div>
-    <button 
-      >🎸 ACORDES</button
+    <button>🎸 ACORDES</button>
+
+    <button v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia">
+      PARTES
+    </button>
+
+    <button v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia">
+      SECUENCIA
+    </button>
+    <button
+      v-if="refActualizandoSecuencia"
+      @click="CancelarActualizarSecuencia"
     >
-    
-    <button v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia"
-      >PARTES</button
-    >
-    
-    
-    <button v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia"
-      >SECUENCIA</button
-    >
-    <button v-if="refActualizandoSecuencia" @click="CancelarActualizarSecuencia"
-      >[CANCELAR]</button
-    >
+      [CANCELAR]
+    </button>
 
     <select v-model="ParteNuevaSecuencia" v-if="refActualizandoSecuencia">
       <option
