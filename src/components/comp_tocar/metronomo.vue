@@ -1,70 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { watch } from 'vue'
 
-let midiPlayer = new MidiPlayer()
 import { useAppStore } from '../../stores/appStore'
-import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 const appStore = useAppStore()
-const midiCargado = ref(false)
-let sonidoxgolpe = ref([1, 1, 1, 1, 1, 1, 1, 1, 1])
-const instrumentosBateria = [
-  { nota: '', nombre: 'Silencio', icono: '' }, // Representa la profundidad del bombo
-  { nota: 'C1', nombre: 'Bombo', icono: '🪘' }, // Representa la profundidad del bombo
-  { nota: 'E4', nombre: 'Caja', icono: '🥁' }, // Sonido intermedio
-  { nota: 'A#3', nombre: 'Matraca', icono: '🪇' }, // Indica el cierre del sonido
-  { nota: 'C#3', nombre: 'Platillo cerrado', icono: '🔔>' }, // Más resonante
-  { nota: 'D#3', nombre: 'Platillo abierto', icono: '🔔<' }, // Más resonante
-  { nota: 'G#4', nombre: 'Triangulo', icono: '🎵' }, // Representa su tono más grave
-  { nota: 'C5', nombre: 'Silbato', icono: '🪈' }, // Tono más agudo
-  { nota: 'F6', nombre: 'Crash', icono: '🦶' }, // Representa el impacto del crash
-]
-
-function iniciar() {
-  //appStore.midiPlayer.setInstrument
-  if (midiCargado.value) {
-    midiCargado.value = false
-    return
-  }
-  console.log('Cargar')
-  midiPlayer = new MidiPlayer()
-  fetch('InstrumentosMIDI/bateria.json')
-    .then((response) => response.json())
-    .then((samples) => {
-      midiPlayer.setInstrument(samples)
-      midiPlayer.initialize()
-      midiCargado.value = true
-    })
-    .catch((error) => {
-      console.error('Error loading samples:', error)
-    })
-  console.log('Iniciar')
-}
-
-function tocar() {
-  if (!midiCargado.value) {
-    return
-  }
-
-  const note =
-    instrumentosBateria[sonidoxgolpe.value[appStore.golpeDelCompas + 1]].nota
-  if (note != '') {
-    midiPlayer.tocarysoltar(note, 0.05, 0)
-  }
-}
-
-watch(
-  () => appStore.golpeDelCompas,
-  (newVal, oldVal) => {
-    if (newVal !== oldVal) {
-      tocar()
-    }
-  },
-)
-
-function cambiar(id: number, idx: number = 0) {
-  sonidoxgolpe.value[id] = idx
-}
 </script>
 
 <template>
@@ -84,35 +21,9 @@ function cambiar(id: number, idx: number = 0) {
               appStore.estadoReproduccion === 'Reproduciendo',
           }"
         >
-          <span v-if="!midiCargado"> {{ n }}</span>
+          <span> {{ n }}</span>
 
-          <div class="dropdown" v-if="midiCargado" :key="n">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              {{ n }}{{ instrumentosBateria[sonidoxgolpe[n]].icono }}
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li v-for="(instrumento, idx) in instrumentosBateria" :key="idx">
-                <a class="dropdown-item" @click="cambiar(n, idx)">
-                  {{ instrumento.icono }} {{ instrumento.nombre }}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="beat"
-          :class="{
-            beat_activo: midiCargado,
-          }"
-          @click="iniciar"
-        >
-          🥁
+          
         </div>
       </div>
     </div>
