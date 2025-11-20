@@ -1,1 +1,541 @@
-{"cancion": "Tiemblas", "banda": "sandro", "escala": "Bb", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Bb", "Dm", "G#", "Cm", "Dm", "G7", "C", "Bb7", "Dm7", "Em", "Am", "Dm", "Em7", "Am", "Dm", "Am", "Bb", "A7", "Dm", "B7", "E", "Dm7", "Fmaj7", "Am", "Dm6", "Em7", "Am", "Dm7", "E", "Am", "Bb", "A7", "Dm", "Dm7", "Dm6", "E", "Am", "Dm", "G", "C", "Dm", "G", "C", "Dm", "G", "C", "Am", "Fmaj7", "E", "F9", "Bb7", "Am", "Dm", "Em7", "Am", "Dm7", "Em7", "Am", "Bb", "A7", "Dm7", "Em", "Am", "F", "Dm7", "Bb", "G", "C", "Dm", "G", "C", "Dm", "G", "C", "Am", "Fmaj7", "Dm7", "E", "F9", "Bb7", "Am", "Dm", "Em7", "Am", "Dm7", "Em7", "Am", "Bb", "A7", "Dm7", "Em", "Am", "F", "Fmaj7", "Dm7", "Am"]}], "orden_partes": [0]}, "letras": [[], ["Tiemblas,  ", "  cada vez que me ves", ", yo ", "s\u00e9 que tiemblas", "/nNo hay misterio de ti q"], ["ue yo no entienda", "", "/nPorque tratas de "], ["ocultar que yo soy pa", "rte de ti", "", "", "/n"], ["Vives,  ", "  esperan", "do un amor, que no ", "recibes", "/nSin que l"], ["legue la dicha, qu", "e persigues", "", "/nY es cosa, m"], ["uy natural, ", "     ", " que t\u00fa te acuer", "des de m\u00ed", "./n"], ["Hubo un adi", "\u00f3s, que n", "o derrot\u00f3 al coraz\u00f3n/n"], ["Igual que un", "a ra\u00edz m", "i presencia qued\u00f3/n"], ["Se que en tu v", "ida, un d\u00eda mand\u00f3 la ra", "z\u00f3n", "/nY no, no se escap\u00f3 del ayer,"], [" tu coraz", "\u00f3n/n"], ["    ", " Y por eso, tiem", "blas,    ", "cada vez ", "que me ves,/n"], ["  Yo se que tiemblas, ", "   no hay miste", "rio de ti", "/nQue yo no entienda, "], ["    ", " porque tratas de ocul", "tar/nQue yo soy "], ["parte de t", "i.", "", "", "/nHubo un ad"], ["i\u00f3s, q", "ue no derrot\u00f3 al coraz\u00f3n", "/nIgual que u"], ["na ra\u00edz ", "m\u00ed presencia que", "d\u00f3/nSe que en tu v"], ["ida, un d", "\u00eda mand\u00f3 la raz\u00f3n", "/nPero"], [" no, no se escap\u00f3 del ayer, ", "   tu coraz", "\u00f3n/n"], ["    ", " Y por eso, tiem", "blas,    ", "cada vez ", "que me ves,/n"], ["  Yo se que tiemblas, ", "   no hay miste", "rio de ti", "/nQue yo no entienda, "], ["    ", " porque tratas de ocul", "tar/nQue yo soy "], ["parte de t", "i.", "", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "aMrOQ-UQyBM", "delay": 0}]}
+{
+    "cancion": "Tiemblas",
+    "banda": "sandro",
+    "escala": "Bb",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "G#",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Fmaj7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Fmaj7",
+                    "Bb7",
+                    "Bb7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Am",
+                    "Am",
+                    "Dm7",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm7",
+                    "Dm7",
+                    "Fmaj7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Fmaj7",
+                    "Dm6",
+                    "Dm6",
+                    "Dm6"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm6",
+                    "Dm7",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "Bb",
+                    "A7",
+                    "Dm",
+                    "Dm",
+                    "Dm7",
+                    "Dm7",
+                    "Dm6"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Dm6",
+                    "Am",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7",
+                    "Bb7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Bb7",
+                    "Bb7",
+                    "Bb7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bb7",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "G#",
+                    "Cm",
+                    "G",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Fmaj7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Fmaj7",
+                    "Bb7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "Dm7",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "Bb",
+                    "Bb",
+                    "A7",
+                    "Dm",
+                    "Dm7",
+                    "Dm7",
+                    "Dm6",
+                    "Dm6"
+                ]
+            },
+            {
+                "nombre": "parte17",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte18",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G#",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte19",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte20",
+                "acordes": [
+                    "Fmaj7",
+                    "Bb7",
+                    "Bb7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte21",
+                "acordes": [
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Em",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "D",
+            "iembla ",
+            "/n"
+        ],
+        [
+            "Cada v",
+            "ez  que me ves,",
+            "yo sé que ti",
+            "embla /n"
+        ],
+        [
+            "No hay mis",
+            "teri  de ti q",
+            "ue  yo no ent",
+            "iend /n"
+        ],
+        [
+            "Po",
+            "rqu  tratas d",
+            "e  ocul",
+            "ta /n"
+        ],
+        [
+            "Que yo s",
+            "oy  parte d",
+            "e  ti",
+            "",
+            "",
+            "",
+            "",
+            "v",
+            "ive /n Espe",
+            "rand  un amor",
+            "qu  no recibes",
+            "/n"
+        ],
+        [
+            "Si",
+            "que llegue la di",
+            "ch  que persigues",
+            "",
+            "",
+            "es co",
+            "s  muy natur",
+            "a /n"
+        ],
+        [
+            "Qu",
+            "tú te acuerd",
+            "e  de m",
+            "í /n"
+        ],
+        [
+            "Hub",
+            "un adió",
+            "que no derrotó e",
+            "l  corazón/n"
+        ],
+        [
+            "Ig",
+            "ua  que una r",
+            "aí  mi",
+            "presenci  qued",
+            "ó /n S",
+            "é  que en tu v",
+            "id  un dí",
+            "a  mandó la razón/n"
+        ],
+        [
+            "Pe",
+            "r  no se esc",
+            "ap  de nadi",
+            "e ",
+            "",
+            "/n"
+        ],
+        [
+            "Tu",
+            "corazó ",
+            "/n"
+        ],
+        [
+            "P",
+            "or  eso ti",
+            "embla /n"
+        ],
+        [
+            "Ca",
+            "d  vez que me v",
+            "es,  yo",
+            "s  que ti",
+            "embla /n N",
+            "o  hay misterio d",
+            "ti qu",
+            "yo no entie",
+            "nd /n"
+        ],
+        [
+            "Porqu",
+            "e  tratas de o",
+            "cult",
+            "a /n Q",
+            "ue  yo soy pa",
+            "rt  d",
+            "e  t",
+            "i ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "M",
+            "úsic ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Hub  un a",
+            "dió  q",
+            "u  no derrotó el",
+            "corazó /n"
+        ],
+        [
+            "Igual que",
+            "un  raí",
+            "z  mi pre",
+            "senci  qu",
+            "ed /n Sé que en t",
+            "u  vida u",
+            "n  día mandó la r",
+            "azón /n"
+        ],
+        [
+            "Pero n",
+            "o  se escapó de",
+            "nadi ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tu c",
+            "orazón ",
+            "",
+            "por e",
+            "s  tiembl",
+            "a /n Cada",
+            "vez qu",
+            "e  me ves,",
+            "yo sé que ti",
+            "embla /n"
+        ],
+        [
+            "No h",
+            "a  misterio de ti q",
+            "ue  yo n",
+            "o  entiend/n"
+        ],
+        [
+            "P",
+            "orque  trat",
+            "a  de ocu",
+            "lta ",
+            "/n"
+        ],
+        [
+            "Qu",
+            "yo soy par",
+            "t  d",
+            "e ",
+            "t",
+            "i ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 161,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "aMrOQ-UQyBM",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

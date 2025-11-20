@@ -1,1 +1,297 @@
-{"cancion": "por-algun-camino", "banda": "sandro", "escala": "G", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G", "G", "Em"]}, {"nombre": "parte2", "acordes": ["Bm", "Am", "Em", "B7", "Bm", "Em", "E"]}, {"nombre": "parte3", "acordes": ["Em", "Bm", "Am", "Em", "B7", "Bm", "Em"]}, {"nombre": "parte4", "acordes": ["C", "D", "G", "Em", "C", "D", "G", "B7"]}], "orden_partes": [0, 1, 2, 2, 3, 2, 2, 3, 2, 2, 3, 2, 2, 3, 2, 2, 2]}, "letras": [[], [], [], [], [], [], ["RO (2 Veces)", "/n e]--"], ["-----------", "7-------7-8", "---7-----7--", "-----", "------7---", "------", "--]/n"], [], [], [], [], ["ERSO/nP"], ["or algun ca", "mino yo la", " encontrar\u00e9", "/n"], ["y la abra", "zar\u00e9", ".../nY"], [" sobre su b", "oca mi bo", "ca pondr", "/n"], ["y la bes", "ar\u00e9.", "../nO"], ["tra ve", "z... las campa", "nas volar\u00e1n", "/ny"], [" otra ve", "z...sue\u00f1os lo", "cos volver\u00e1", "n/nP"], ["or algun ca", "mino yo la", " encontrar\u00e9", "/n"], ["y la abra", "zar\u00e9", ".../nA"], ["  A  A  A  l", "\u00e1... A  A  l", "\u00e1... A  A  l", "\u00e1.../n"], ["L\u00e1...A  A ..", "l\u00e1  ", "A .../nO"], ["tra ve", "z... las campa", "nas volar\u00e1n", "/ny"], [" otra ve", "z...sue\u00f1os lo", "cos volver\u00e1", "n/nJ"], ["unto a su s", "ombra mi so", "mbra pondr\u00e9", "/n"], ["y camin", "ar\u00e9.", "../nH"], ["acia donde n", "ace la vi", "da yo ir\u00e9", "/n"], ["y la llev", "ar\u00e9.", "../nO"], ["tra ve", "z... las campa", "nas volar\u00e1n", "/ny"], [" otra ve", "z...sue\u00f1os lo", "cos volver\u00e1", "n/nP"], ["or algun ca", "mino yo la", " encontrar\u00e9", "/n"], ["y la abra", "zar\u00e9", ".../nA"], ["  A  A  A  l", "\u00e1... A  A  l", "\u00e1... A  A  l", "\u00e1.../n"], ["L\u00e1...A  A ..", "l\u00e1  ", "A .../nO"], ["tra ve", "z... las campa", "nas volar\u00e1n", "/ny"], [" otra ve", "z...sue\u00f1os lo", "cos volver\u00e1", "n/nP"], ["or algun ca", "mino yo la", " encontrar\u00e9", "/n"], ["y la abrazar\u00e9.../nY sobre su boca mi boca pondr\u00e9"], [], [], [], []], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "cYqzgcxqrkw", "delay": 0}]}
+{
+    "cancion": "por-algun-camino",
+    "banda": "sandro",
+    "escala": "G",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "C",
+                    "C",
+                    "D",
+                    "D",
+                    "C",
+                    "C",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "Em",
+                    "Bm",
+                    "B7",
+                    "B7",
+                    "Em",
+                    "Bm",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Em",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm",
+                    "Bm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Por algú",
+            "camino yo la e",
+            "ncontrar ",
+            "l  abra",
+            "zar  sobre",
+            "su boca mi boca",
+            "pondr ",
+            "la besar",
+            "é /n Ot",
+            "r  v",
+            "e  las campa",
+            "na  vola",
+            "ra ",
+            "otra v",
+            "ez  sueños lo",
+            "co  volverán./n"
+        ],
+        [
+            "Por",
+            "algú  camino yo la",
+            "encontrar ",
+            "la abrazaré",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Otra",
+            "ve  las ca",
+            "mpana  vol",
+            "ara ",
+            "otr",
+            "vez sueñ",
+            "o  locos volverán./n"
+        ],
+        [
+            "Ju",
+            "nt  su sombra m",
+            "i  sombra pondré",
+            "ca",
+            "minar",
+            "hacia donde nace",
+            "la vida yo ir",
+            "é  la ll",
+            "evaré ",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ot",
+            "ra  vez l",
+            "as  campanas v",
+            "olara",
+            "o",
+            "tr  ve",
+            "z  sueños locos v",
+            "olverán. /n P",
+            "or  algún ca",
+            "min  yo la enc",
+            "ontrar  l",
+            "a  abrazaré.",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Otr  v",
+            "e  las campa",
+            "na  vola",
+            "ra ",
+            "otra v",
+            "ez  sueños l",
+            "oco  volverán./n"
+        ],
+        [
+            "Po",
+            "algún camino yo l",
+            "a  encontraré",
+            "la abr",
+            "azar ",
+            "sobre su boca mi",
+            "boca pondré",
+            "la besa",
+            "ré /n"
+        ],
+        [
+            "Por algún camino y",
+            "o  la encontrar",
+            "la",
+            "abra",
+            "zar ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos por la comunidad de /n Amara .org"
+        ]
+    ],
+    "bpm": 143,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "cYqzgcxqrkw",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

@@ -1,1 +1,458 @@
-{"cancion": "tentacion", "banda": "sandro", "escala": "F", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["F", "Gm", "F", "Gm", "F", "Bb", "F", "Bb", "Am", "Dm", "Bb", "Gm", "C7", "Dm", "F7", "Bb", "F", "Gm", "C", "Am", "Dm", "F", "Esus4", "Bb", "C7", "F6", "F7", "Bb", "F", "Am", "F", "Bb", "C", "Am", "Dm", "D7", "Gm", "C7", "F", "Cm", "F7", "Bb", "C", "Am", "Dm", "D7", "Gm", "C", "Bb", "F", "Gm", "Am", "Dm", "Dm7", "Dm6", "Bb", "Gm7", "C7", "Dm", "F7", "Bb", "Gm", "C", "F", "Am", "F", "F7", "Bb", "C", "Am", "Dm", "D7", "Gm", "C7", "F", "Cm", "F7", "Bb", "C", "Am", "Dm", "D7", "Gm", "C", "Bb", "F", "Gm", "Bb", "C", "Am", "Dm", "D7", "Gm", "C", "Dm", "F"]}], "orden_partes": [0]}, "letras": [["   ", "    ", "   ", "Faug", "", "", "", "", "", "", "", "", "/n"], ["No me emborraches de t", "i porque me mue", "ro", "/n"], ["Y no juegues con fu", "ego que te vas", " a quemar", "/n"], ["No te muerdas los ", "labios   ", "que me tienta besar.", "/n"], ["Un cent\u00edmetro ", "m\u00e1s y no resp", "ondo de mi/nHay peligro de amor, se resp"], ["ira en el aire/nY no vas a salv"], ["arte de m", "\u00ed", "/nTentaci"], ["\u00f3n de quer", "erte de coraz\u00f3n a cora", "zooo", "\u00f3n/n"], ["Tentaci", "n de llev", "arte pero al \u00faltimo rinc", "\u00f3n", "/n"], ["Tentaci", "n que por un b", "eso sea yo tu perdici", "oon", "/n"], ["Tentaci", "n de enamor", "arte", "", "", "", "", "", "", "", "", "/n"], ["Tan rendida de amo", "r hasta mis braz", "os/n"], ["Me seduce \u00e9ste j", "uego que cae de madu", "ro/nY como el vino m\u00e1s"], [" puro me lo quiero tom", "ar", "/n"], ["Tentaci", "n de quere", "rte de coraz\u00f3n a coraz", "ooo", "n/n"], ["Tentaci", "n de llev", "arte pero al \u00faltimo rinc", "\u00f3n", "/n"], ["Tentaci", "n que por un b", "eso sea yo tu perdici", "oon", "/n"], ["Tentaci", "n de enamor", "arte", "", "", "", "", "", "", "/n"], ["Tentaci", "n de enamor", "arte", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "SS_qQ24tLGA", "delay": 0}]}
+{
+    "cancion": "tentacion",
+    "banda": "sandro",
+    "escala": "F",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "Gm",
+                    "Gm",
+                    "C",
+                    "F",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "F",
+                    "F",
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Est  es una canción en español de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "E",
+            "st  e",
+            "s  una canción en es",
+            "paño  de rock argentino.",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta e",
+            "s  u",
+            "n",
+            "a ",
+            "c",
+            "a",
+            "n",
+            "c",
+            "i",
+            "ó",
+            "n",
+            "",
+            "en espa",
+            "ño  de rock argentino.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Es",
+            "t  e",
+            "u",
+            "n",
+            "a",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "canción en español de rock argentino. /n Esta",
+            "e",
+            "s",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "un",
+            "a  canción en español de rock",
+            "a",
+            "r",
+            "g",
+            "e",
+            "n",
+            "t",
+            "i/n"
+        ],
+        [
+            "Esta es",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "una canción en español de rock argentino/n"
+        ],
+        [
+            "M",
+            "e  seduce este",
+            "fueg  que cae d",
+            "maduro",
+            "como el mundo más",
+            "pur /n Me l",
+            "o  quiero t",
+            "om",
+            "a ",
+            "",
+            "/n"
+        ],
+        [
+            "Tentació/n"
+        ],
+        [
+            "De quer",
+            "ert  corazón",
+            "cor",
+            "azó ",
+            "",
+            "/n"
+        ],
+        [
+            "Tent",
+            "ació /n D",
+            "e  quererte",
+            "per  al último",
+            "rin",
+            "c ",
+            "",
+            "/n"
+        ],
+        [
+            "Ten",
+            "tació /n Qu",
+            "de un beso se",
+            "a  yo tu pe",
+            "rdició ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tentación/n"
+        ],
+        [
+            "De e",
+            "namora",
+            "r /n De e",
+            "nam",
+            "ora",
+            "rt ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tentació",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "De",
+            "enamorart ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "SS_qQ24tLGA",
+            "delay": 17990.0
+        }
+    ],
+    "calidad": 1
+}

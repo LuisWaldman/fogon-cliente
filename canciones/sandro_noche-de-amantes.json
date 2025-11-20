@@ -1,1 +1,335 @@
-{"cancion": "Noche-de-amantes", "banda": "sandro", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "Dm", "E", "E7"]}, {"nombre": "parte2", "acordes": ["Am"]}, {"nombre": "parte3", "acordes": ["E"]}, {"nombre": "parte4", "acordes": ["Dm", "G", "C", "Am", "Dm", "E", "Am", "Dm"]}], "orden_partes": [0, 0, 0, 0, 1, 2, 0, 1, 0, 0, 1, 3, 2, 0, 1]}, "letras": [["antes perdi", "dos,", "/nnoche de vi"], ["ejas mem", "orias/nde amores solos y olv"], ["idos,", "/nen cada am"], ["ante una histo", "ria./nLa calle esta desol"], ["ada,", "/ny hay mucho fr"], ["\u00edo en mi almo", "hada/nya no tengo de tu al"], ["iento,", "/nel cal"], ["or que acostumbr", "aba./nMi coraz\u00f3n ya des"], ["hecho/nmi mano desespe"], ["rada/nbusc\u00e1ndote por el "], ["lecho/nmas de ti no queda n"], ["ada,/nmas de "], ["ti no queda n", "ada/nNoche de n"], ["oches pasa", "das,", "/ncuando tu a"], ["mor yo ten", "a/nsi hay una ley sobre a"], ["mores,", "/nte juro "], ["no lo sab", "a./nUna ley de amores vi"], ["ejos,", "/nque destruy\u00f3 cora"], ["zones", "/npara un amor como el m"], ["\u00edo,/nno existen ley ni raz"], ["ones.", "/nPero ante tanta igno"], ["rancia,", "/nDios justo me ha sentenci"], ["ado/nhabr\u00e1 una ley sobre a"], ["mores,", "/nporque s"], ["oy un conden", "ado"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "Azpk8rsIP9Q", "delay": 0}]}
+{
+    "cancion": "Noche-de-amantes",
+    "banda": "sandro",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "E",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E7",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "E7",
+                    "E7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Dm",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Noch",
+            "e  de amantes p",
+            "erdido",
+            "s ",
+            "noche d",
+            "e  viejas",
+            "memorias.",
+            "/n"
+        ],
+        [
+            "De a",
+            "more  solos",
+            "olvi",
+            "dos ",
+            "en cad",
+            "a  mando una",
+            "historia ",
+            "/n"
+        ],
+        [
+            "La call",
+            "e  está d",
+            "eso",
+            "lad ",
+            "hay muc",
+            "h  frío en m",
+            "i  almohad",
+            "a /n"
+        ],
+        [
+            "Ya n",
+            "o  tengo d",
+            "e  tu alient",
+            "e",
+            "l ",
+            "calo  que",
+            "acostum",
+            "brab /n"
+        ],
+        [
+            "Mi cora",
+            "zó  ya deshe",
+            "ch  mi mano deses",
+            "perada  buscán",
+            "dot  por el hecho más d",
+            "e ti. /n N",
+            "queda na",
+            "da ",
+            "más d",
+            "e  ti n",
+            "o  queda n",
+            "ada",
+            ". ",
+            "/n"
+        ],
+        [
+            "Noc",
+            "h  de noc",
+            "he  pasad",
+            "as ",
+            "c",
+            "uand  tu amo",
+            "r  yo ten",
+            "ía /n"
+        ],
+        [
+            "S",
+            "i  hay una l",
+            "e  sobre",
+            "amores",
+            "",
+            "te juro n",
+            "o  lo sab",
+            "ía /n"
+        ],
+        [
+            "U",
+            "n  ley de",
+            "amore  vi",
+            "ejo ",
+            "qu  de",
+            "struy  cor",
+            "azones /n"
+        ],
+        [
+            "Par",
+            "a  un amor com",
+            "el m",
+            "í  n",
+            "o  existen l",
+            "e  ni ra",
+            "zones/n"
+        ],
+        [
+            "Pe",
+            "r  ante tan",
+            "t  igno",
+            "ranci",
+            "a /n"
+        ],
+        [
+            "Dios justo me ha s",
+            "entencia",
+            "do /n Ha",
+            "br  una",
+            "le  sob",
+            "r  amore",
+            "s ",
+            "",
+            "",
+            "porque so",
+            "un",
+            "cond",
+            "enad",
+            "o ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Azpk8rsIP9Q",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

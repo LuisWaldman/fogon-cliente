@@ -1,1 +1,363 @@
-{"cancion": "Hace-tiempo-mucho-tiempo", "banda": "sandro", "escala": "Gm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Gm", "F", "Eb", "Cm", "D", "Gm", "Gm7", "Eb", "Cm", "D", "Gm", "Gm7", "Eb", "F", "Bb", "D", "F7", "Bb", "F", "Gm", "Cm", "G", "Cm", "F", "D7", "Gm", "Eb", "Cm7", "D", "C7sus4", "Cm7", "D", "Gm", "Gm7", "Eb", "F", "Bb", "D7", "F7", "Bb", "F", "Gm", "Cm", "G", "Cm", "F", "D7", "Gm", "Eb", "Cm7", "D", "F7", "Bb", "F", "Gm", "Cm7", "C7sus4", "Cm7", "D7", "Gm", "Gm7", "Eb", "D7", "Gm"]}], "orden_partes": [0]}, "letras": [[], ["empo que no escucho melod", "as/nQue despierten en mi aleg"], ["r\u00eda", "/nHace tiempo"], [", mucho tiempo/nAlegr"], ["\u00edas, de escuchar como can", "tabas/nSin pensar mientras and"], ["abas", "/nPor la casa tuya y"], [" m\u00eda  ", "Ah/n"], ["Hace tie", "mpo  q", "ue la casa esta vac\u00ed", "a/nHace ti"], ["empo ", "que me suelo despertar", "/nCon un ll"], ["anto ", "que ha mojado mis meji", "llas/nY es mi l"], ["lanto ", "  si hace tanto/nque no est"], ["\u00e1s", "", "", "/nHace ti"], ["empo que ha marchado tu tern", "ura/nSi en la vida nada "], ["dura", "/nEl amor tambi\u00e9n se"], [" va", "/n"], ["Hace tie", "mpo  q", "ue la casa esta vac\u00ed", "a/nHace ti"], ["empo ", "que me suelo despertar", "/nCon un ll"], ["anto ", "que ha mojado mis meji", "llas/nY es mi l"], ["lanto ", "  si hace tanto/nque no est"], ["\u00e1s", "/nHace ti"], ["empo,", "/nque detuve los re"], ["lojes/nPues es"], ["pero", "", "", "/nque me vuelvas a be"], ["sar", "", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "xibkIu2pmAQ", "delay": 0}]}
+{
+    "cancion": "Hace-tiempo-mucho-tiempo",
+    "banda": "sandro",
+    "escala": "Gm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Gm7",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Cm7",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "F",
+                    "F",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm7",
+                    "Gm7",
+                    "Gm7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Gm7",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Eb",
+                    "Eb",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "F7",
+                    "F7",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Cm7",
+                    "Cm7",
+                    "Eb",
+                    "F",
+                    "Cm"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "F7",
+                    "F7",
+                    "F7",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Cm7",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "Eb",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Ha",
+            "c  tiempo",
+            "q",
+            "u",
+            "no escuch",
+            "melod",
+            "ías ",
+            "que",
+            "despierte  m",
+            "i  alegr",
+            "ía /n"
+        ],
+        [
+            "Hace",
+            "tiempo ",
+            "mucho ti",
+            "empo ",
+            "alegrí",
+            "a ",
+            "de e",
+            "scucha  como c",
+            "anta",
+            "bas ",
+            "sin pen",
+            "sa  mientras a",
+            "ndabas/n"
+        ],
+        [
+            "P",
+            "o  la cas",
+            "a  tuya",
+            "mí",
+            "a ",
+            "/n"
+        ],
+        [
+            "Hace tie",
+            "mpo ",
+            "q",
+            "u  la casa",
+            "e  amosía./n"
+        ],
+        [
+            "H",
+            "ace  tie",
+            "mpo ",
+            "",
+            "que me suelo d",
+            "esperta  c",
+            "on ",
+            "u  lla",
+            "nt  q",
+            "ue  h",
+            "a  mojado mi",
+            "s  medallas.",
+            "es mi",
+            "ll",
+            "an",
+            "t  si hace t",
+            "ant  que no",
+            "está",
+            "s /n"
+        ],
+        [
+            "H",
+            "ace  tie",
+            "mpo ",
+            "",
+            "que ha march",
+            "ad  tu ter",
+            "nura ",
+            "/n"
+        ],
+        [
+            "Si en la vid",
+            "a  nada dura",
+            "",
+            "",
+            "el amor tambi",
+            "é  se v",
+            "a ",
+            "",
+            "/n"
+        ],
+        [
+            "Hace tiem",
+            "po ",
+            "que l",
+            "a  casa e",
+            "amosía./n"
+        ],
+        [
+            "Hac",
+            "e  tiemp",
+            "o ",
+            "que me",
+            "suel  desp",
+            "erta ",
+            "con un",
+            "llan",
+            "t  q",
+            "u  ha m",
+            "ojad  mis med",
+            "allas ",
+            "es mi l",
+            "la",
+            "nt  s",
+            "i  hace tant",
+            "o  que no es",
+            "tás /n"
+        ],
+        [
+            "Hace ti",
+            "empo ",
+            "",
+            "que detuve",
+            "lo  rel",
+            "ojes /n Pu",
+            "e  e",
+            "s",
+            "p",
+            "e  q",
+            "u  m",
+            "vuelvas",
+            "b",
+            "es",
+            "ar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 143,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "xibkIu2pmAQ",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

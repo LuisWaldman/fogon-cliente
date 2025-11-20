@@ -1,1 +1,258 @@
-{"cancion": "Las-Manos", "banda": "sandro", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "Dm", "G7", "C", "Am", "Dm", "B7", "E7"]}, {"nombre": "parte2", "acordes": ["Am", "Dm", "B7", "C", "Am", "Dm", "B7", "E7"]}], "orden_partes": [0, 1, 1, 1, 1, 1]}, "letras": [["mosas son las m", "anos/ndel hum"], ["ilde labrado", "r;/nque se s"], ["umen en la tie", "rra,/nque trab"], ["ajan sol a so", "l./nQu\u00e9 bo"], ["nitas son las m", "anos/nde una novia "], ["en el alta", "r;/ny qu\u00e9 t"], ["ristes son las m", "anos/nque van "], ["en un funera", "l./nDiga ust"], ["ed, si hay m\u00e1s ter", "nura/nque se pu"], ["eda imagina", "r/nque en las m"], ["anos peque", "\u00f1itas/nde los n"], ["i\u00f1os al rez", "ar./nTodo aqu"], ["el que tenga ma", "dre/nno podr"], ["\u00e1 jam\u00e1s ne", "gar/nque las m"], ["anos de una ma", "dre/nno se pu"], ["eden compara", "r./nY aqu"], ["el que no la te", "nga.../nque perd"], ["one mi canci", "n,/nquiero hab"], ["lar de manos s", "antas,/nlas de m"], ["adres \u00a1esas s", "on!/nPero hay m"], ["anos que son ga", "rras,/nceg"], ["adas por la ambici", "n,/nque ord"], ["enan \u00a1a la gu", "erra!/ny si"], ["embran desolaci", "n."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "FtUwy3xJKRk", "delay": 0}]}
+{
+    "cancion": "Las-Manos",
+    "banda": "sandro",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "C",
+                    "Dm",
+                    "Dm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "Dm",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "B7",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "C",
+                    "C",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "E7",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "B7",
+                    "Am",
+                    "E7",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "B7",
+                    "B7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "E7",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E7",
+                    "E7",
+                    "B7",
+                    "C",
+                    "E7",
+                    "E7",
+                    "C",
+                    "Am",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "letras": [
+        [
+            "las mano",
+            "del h",
+            "umild",
+            "labrador/n"
+        ],
+        [
+            "Que se s",
+            "umen  e",
+            "n  la tierra,",
+            "que tr",
+            "abajan  s",
+            "ol  sol/n"
+        ],
+        [
+            "Que bo",
+            "nita  so",
+            "n  las manos",
+            "d  una no",
+            "vi  e",
+            "el altar",
+            "que tr",
+            "iste  so",
+            "n  las manos",
+            "qu  v",
+            "ale  u",
+            "n  funeral/n"
+        ],
+        [
+            "Diga us",
+            "te  si hay m",
+            "ás  ternura",
+            "qu  se p",
+            "ueda  im",
+            "agina /n Q",
+            "ue  las m",
+            "anos  peq",
+            "ueña  d",
+            "e  los",
+            "niño  a",
+            "l  rezar/n"
+        ],
+        [
+            "Todo a",
+            "quel  que",
+            "teng  mad",
+            "r  no, no",
+            "podr  n",
+            "i  canegar/n"
+        ],
+        [
+            "Que l",
+            "as  manos d",
+            "e  una ma",
+            "dr  n",
+            "o  se pueden",
+            "compa",
+            "r ",
+            "aq",
+            "ue  que no la t",
+            "enga  qu",
+            "e  perdo",
+            "n  mi ca",
+            "nció /n Qu",
+            "ier  habla",
+            "de manos",
+            "altas ",
+            "las de madr",
+            "e  esas s",
+            "on /n Pe",
+            "r  hay manos q",
+            "ue  son",
+            "garra",
+            "s  cegada",
+            "por la am",
+            "bició /n Q",
+            "u  orde",
+            "na ",
+            "guerr ",
+            "sie",
+            "mbr  de",
+            "solac",
+            "ió /n"
+        ],
+        [
+            "Pero hay dos manos",
+            "qu  el hombre hace t",
+            "iempo  ya olvidó/n"
+        ],
+        [
+            "Manos, manos que fu",
+            "ero  golpeadas, humill",
+            "ada  por el odio el rinc",
+            "ó /n Manos que hicieron mirar,",
+            "manos que dieron",
+            "amo  m",
+            "ire  bien, quiero que vean",
+            "pues son las manos de /n Dios",
+            ""
+        ]
+    ],
+    "bpm": 103,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "FtUwy3xJKRk",
+            "delay": 10650.0
+        }
+    ],
+    "calidad": 1
+}

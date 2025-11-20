@@ -1,1 +1,394 @@
-{"cancion": "cancion-de-alicia-en-el-pais", "banda": "seru-giran", "escala": "Em", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Em", "Em", "Em", "A", "A2", "A", "A2", "A", "C#m", "D", "E/D", "A4", "A", "Esus4", "E", "A", "A2", "A", "A2", "A", "C#m", "D", "E/D", "C#7sus4", "C#7", "F#m/C#", "F#/C#", "Em", "Em", "Em", "Em", "Am", "G", "F", "Asus4", "Asus4", "Dm/A", "Fm7/A", "D/A", "Asus4", "Asus4", "Dm/A", "Fm7/A", "D/A", "Asus4", "E/G#", "Asus4", "E", "E/G#", "Asus4", "E", "E", "Gm", "Em"]}], "orden_partes": [0]}, "letras": [["     2\u00c2\u00aa guitarra arriva de la 1\u00c2\u00ba:(X2)/n"], ["em - 5- 5- - - 2- 2- - 0- 0- 0- - - - - -/n"], ["Melod\u00c3\u00ada:/n"], ["Quien sabe ", "A - l", "i - c", "ia est", "e pa\u00c3\u00ads", "/n"], ["no estuvo h", "echo por", "-que ", "si", "", "/n"], ["te vas a", " ir,", " vas", " a s", "alir", "/n"], ["pero te q", "uedas/n"], ["donde mas v", "as a ir?", "/ny es que "], ["aqu\u00c3\u00ad sabes,/n"], ["    el trabalenguas, trabalenguas/n"], ["   el asesino te asesina/n"], ["y es mucho para ti/n"], ["Se acabo ese juego que te/nha"], ["cia fe", " liz", "         uhh", "h/n"], ["No cuentes lo que viste en los jardines/nel sue\u00c3\u00b1o a"], ["cabo/nya no hay m"], ["orsas    ", "      ni to", "rtugas./n"], ["Un r\u00c3\u00ado de cabezas aplastadas/npor el mismo "], ["pie/njuegan cr"], ["icket    ", "      bajo la lu", "na/n"], ["Estamos en la tierra de n", "adie - pero es m\u00c3\u00ad", "a-/nlos"], [" inocentes son los cul", "pables -dice su se\u00c3\u00b1or\u00c3", "\u00ada/nel rey de esp"], ["adas./n"], ["dm - - - - - - - - - - - 5- 7- - - - - - - - -/n"], ["Espero que les suene bien, y cualquier duda mandenme un mail..."]], "medias": [{"tipo": "Youtube", "id": "YRNFye2SysM", "delay": 0}]}
+{
+    "cancion": "cancion-de-alicia-en-el-pais",
+    "banda": "seru-giran",
+    "escala": "Em",
+    "bpm": 117,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "A2",
+                    "D",
+                    "D",
+                    "A",
+                    "A",
+                    "D",
+                    "C#7sus4",
+                    "C#7sus4",
+                    "F#m/C#",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Em",
+                    "Asus4",
+                    "Asus4",
+                    "Asus4"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Asus4",
+                    "Dm/A",
+                    "Dm/A",
+                    "D/A",
+                    "D/A",
+                    "Em",
+                    "Asus4",
+                    "Asus4",
+                    "Asus4"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Asus4",
+                    "Asus4",
+                    "D/A",
+                    "D/A",
+                    "E/G#",
+                    "E/G#",
+                    "Asus4",
+                    "Asus4"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Asus4",
+                    "E/G#",
+                    "Asus4",
+                    "Em",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E",
+                    "Asus4",
+                    "D",
+                    "D",
+                    "D/A",
+                    "D/A",
+                    "D/A",
+                    "D/A",
+                    "D/A"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "Asus4",
+                    "Asus4",
+                    "Asus4",
+                    "Asus4"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "Asus4",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "E/G#",
+                    "D/A",
+                    "E/G#",
+                    "E/G#"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Em",
+                    "A",
+                    "A2",
+                    "D",
+                    "D"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "A",
+                    "A",
+                    "A",
+                    "C#7sus4",
+                    "F#m/C#",
+                    "F#m/C#",
+                    "F#m/C#",
+                    "F#m/C#"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Q",
+            "uien sabe, /n Alic",
+            "e  si este paí",
+            "s  no estuvo hec",
+            "h  porque sí",
+            ". /n Te vas ir",
+            ",  vas sali",
+            "r  pero te que",
+            "da  donde más va",
+            "s  ir.",
+            "es que aquí,",
+            "sabes, el trabaleng",
+            "uas  e",
+            "l  asesi",
+            "n  te asesi",
+            "n  es mucho par",
+            "a  ti./n"
+        ],
+        [
+            "Se acabó ese juego q",
+            "u  te hacía f",
+            "eli",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "N",
+            "o  cuentes lo que viste e",
+            "los jardines, el sueño",
+            "acabó /n"
+        ],
+        [
+            "Y",
+            "no hay mons",
+            "as ",
+            "ni tortu",
+            "gas ",
+            "un río de",
+            "cabeza  aplastadas p",
+            "o  el mismo pie.",
+            "/n"
+        ],
+        [
+            "Juegan c",
+            "ríquet, ",
+            "bajo la l",
+            "una",
+            ",  estamos e",
+            "n  la tierra de na",
+            "die  pero es m",
+            "ía. /n"
+        ],
+        [
+            "Lo",
+            "s  inocentes son los culp",
+            "ables  dice su señ",
+            "oría  el rey d",
+            "e  espadas.",
+            "/n"
+        ],
+        [
+            "N",
+            "o  cuentes que hay detrás de a",
+            "que  espejo no tendrás",
+            "poder ",
+            "ni",
+            "abogados ",
+            "n",
+            "i  testigo",
+            "s /n"
+        ],
+        [
+            "Enciende los candi",
+            "le  que los brujos piens",
+            "a  envolver.",
+            "/n"
+        ],
+        [
+            "A",
+            "nublarno  e",
+            "l  cam",
+            "ino  es",
+            "tamo  en l",
+            "a  tierra de todos,",
+            "en la vida",
+            ". /n"
+        ],
+        [
+            "Sobre el pasado",
+            "sobre el futuro rin",
+            "a  sobre mirada",
+            "s querida /n Alicia.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Qu",
+            "ié  sabe mí si est",
+            "país n",
+            "estuvo hecho por",
+            "qu  sí./n"
+        ],
+        [
+            "T  vas ir, vas",
+            "salir, vas salir, vas salir, vas salir, vas salir. /n Per",
+            "o  qué quedas,",
+            "dónde vas sal",
+            "ir,  es que a",
+            "quí  sabes,",
+            "entraba lejos, en",
+            "trab  lejos./n"
+        ],
+        [
+            "El asesino te",
+            "asesin  e",
+            "s  mucho para ti./n"
+        ],
+        [
+            "S  a",
+            "cabó  se ac",
+            "ab  ese, se ac",
+            "ab  ese juego, se aca",
+            "b  ese juego que te hac",
+            "í  feliz.",
+            ""
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "YRNFye2SysM",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

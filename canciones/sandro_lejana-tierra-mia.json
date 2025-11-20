@@ -1,1 +1,403 @@
-{"cancion": "lejana-tierra-mia", "banda": "sandro", "escala": "Cm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Cm", "Bb", "Ab", "G", "Fm", "Cm7", "G7", "Cm", "Bb", "Ab", "G", "Fm", "Eb", "Cm", "G7", "C", "Cmaj7", "Dm7", "Am/C", "D#dim7", "Dm7", "G7", "Dm7", "G7", "C", "C7", "F", "Fm", "C", "Dm7", "G", "C", "F", "Em", "Dm", "C", "G", "D7", "G", "Cm", "Bb", "Ab", "G", "Fm", "Cm7", "D7", "G7", "Cm", "Bb", "Ab", "G", "Fm", "Cm7", "G7", "C", "Cmaj7", "Dm7", "Am/C", "D#dim7", "Dm7", "G7", "Dm7", "G7", "C", "C7", "F", "Fm", "C", "Dm7", "G", "C"]}], "orden_partes": [0]}, "letras": [["Lejana tierra m", "\u00eda/nBajo tu c"], ["ielo, bajo tu ci", "elo", "/nQuiero morirme un "], ["d\u00eda/nCon tu cons"], ["uelo, con tu consu", "elo/nY o\u00edr el canto de"], [" oro/nDe tus camp"], ["anas que siempre a", "oro", "/nNo s\u00e9 si al contemp"], ["larte al regre", "sar", "/nSabr\u00e1 re\u00edr o ll"], ["orar/nSilencio de mi al"], ["dea", "/nQue ya no q"], ["uiebran  ", "     las serena", "tas", "/nY un ardiente ro"], ["meo, ay/nBajo una d"], ["ulce luna de pl", "ata/nY en un balc\u00f3n flo"], ["rido/nSe oye el murmullo de un juram"], ["ento", "/nQue la brisa lle"], ["v\u00f3 con el rumor", "/nDe otras cui"], ["tas de amor", "/n"], ["Siempre est\u00e1 e", "l balc\u00f3n ", "con su flor y", " su sol/n"], ["T\u00fa no est\u00e1s ", "faltas t\u00fa ", "con tu amor/n"], ["Lejana tierra m", "a/nDe mis a"], ["mores como te no", "mbro", "/nEn mis noches sin s"], ["ue\u00f1o/nCon las pup"], ["ilas ll", "enas de asom", "bro/nDime, estrellita "], ["m\u00eda/nQue no son "], ["vanas mis espera", "nzas", "/nBien sabes t\u00fa que "], ["pronto he de volver", "/nA E  viejo quer"], ["er/nSilencio de mi al"], ["dea", "/nQue ya no q"], ["uiebran  ", "     las serena", "tas", "/nY un ardiente ro"], ["meo, ay/nBajo una d"], ["ulce luna de pl", "ata/nY en un balc\u00f3n flo"], ["rido/nSe oye el murmullo de un juram"], ["ento", "/nQue la brisa lle"], ["v\u00f3 con el rumor", "/nDe otras cui"], ["tas de amor", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "Q8Rp-jSnoss", "delay": 0}]}
+{
+    "cancion": "lejana-tierra-mia",
+    "banda": "sandro",
+    "escala": "Cm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Fm",
+                    "Cm",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Ab"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Fm",
+                    "Fm",
+                    "G7",
+                    "Cm7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Ab",
+                    "Ab",
+                    "Ab",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Cm",
+                    "Ab",
+                    "Ab",
+                    "Fm",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Ab",
+                    "Dm7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C",
+                    "C",
+                    "F",
+                    "C7",
+                    "G7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C",
+                    "Fm",
+                    "C",
+                    "Cm",
+                    "Dm7",
+                    "G",
+                    "G",
+                    "G",
+                    "F",
+                    "F",
+                    "F",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D7",
+                    "D7",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "G",
+                    "Cm",
+                    "Cm",
+                    "Cm7",
+                    "Bb",
+                    "Bb",
+                    "Bb",
+                    "Fm",
+                    "Fm",
+                    "G7",
+                    "Cm7",
+                    "Cm7",
+                    "G7",
+                    "G7",
+                    "Cm",
+                    "Cm",
+                    "Bb",
+                    "Ab",
+                    "Ab",
+                    "Fm",
+                    "Fm",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "Cm7",
+                    "C",
+                    "G7",
+                    "G7",
+                    "G7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "C",
+                    "C",
+                    "Ab",
+                    "Ab",
+                    "Fm",
+                    "Fm",
+                    "Fm"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "G7",
+                    "G7",
+                    "G7",
+                    "Ab",
+                    "Dm7",
+                    "G7",
+                    "G7",
+                    "G7",
+                    "C",
+                    "C",
+                    "F",
+                    "F",
+                    "G7",
+                    "C7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "C",
+                    "Fm",
+                    "C",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Cm",
+                    "Dm7",
+                    "G",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Fm"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Dej",
+            "á  la tierr",
+            "mí",
+            "a  bajo tu c",
+            "ielo  ba",
+            "jo  tu ci",
+            "elo /n"
+        ],
+        [
+            "Quiero morir",
+            "m  un d",
+            "í  con t",
+            "u  consue",
+            "lo  con t",
+            "consue",
+            "lo  oí",
+            "el cant",
+            "de oro d",
+            "e  tus campan",
+            "as  que si",
+            "empr  hay o",
+            "ro /n N",
+            "o  sé si al cont",
+            "emplart  al",
+            "reg",
+            "res",
+            "a  sab",
+            "r  reír",
+            "",
+            "llo",
+            "rar /n S",
+            "ilenci",
+            "de mi al",
+            "dea  q",
+            "ue  el diablo qu",
+            "iebr  l",
+            "a  ser",
+            "enata ",
+            "/n"
+        ],
+        [
+            "De un ard",
+            "ient  rom",
+            "er ",
+            "bajo una d",
+            "ulc  lu",
+            "n  de pl",
+            "ata ",
+            "",
+            "en un balc",
+            "ó  explod",
+            "ido  siempre e",
+            "l  burb",
+            "uj  de u",
+            "n  jur",
+            "amen",
+            "to /n"
+        ],
+        [
+            "Que en labr",
+            "i  se llevo con e",
+            "l  rum",
+            "o  de o",
+            "tra  cuitas d",
+            "e  am",
+            "or /n S",
+            "iemp",
+            "está e",
+            "l ",
+            "balcó",
+            "con",
+            "s  flo",
+            "s",
+            "u  sol./n"
+        ],
+        [
+            "Tú n",
+            "o  estás,",
+            "fa",
+            "lt  t",
+            "ú  co",
+            "n  tu a",
+            "mor",
+            ". /n"
+        ],
+        [
+            "Le",
+            "jan  tier",
+            "r  mí",
+            "a  de m",
+            "i  amore",
+            "s  como t",
+            "enombr",
+            "o /n De mis n",
+            "oche  sin su",
+            "eño  con l",
+            "a  pupi",
+            "la  llenas d",
+            "e asombro. /n D",
+            "ime",
+            "estrellit",
+            "mía, que n",
+            "o  son van",
+            "a  mis esp",
+            "eranza",
+            "s /n Bien s",
+            "abes  tú que p",
+            "ront  v",
+            "ol",
+            "ve",
+            "",
+            "mi v",
+            "iej  q",
+            "uer",
+            "er /n"
+        ],
+        [
+            "Silenci  de mi",
+            "aldea",
+            "que el diabl",
+            "quieb",
+            "r  la s",
+            "erena",
+            "ta /n"
+        ],
+        [
+            "De u",
+            "n  ardiente r",
+            "omer ",
+            "bajo una",
+            "dulc  l",
+            "un  d",
+            "e  plata.",
+            "",
+            "en un",
+            "balcó  expl",
+            "odido  s",
+            "iempr  el bur",
+            "buj  de u",
+            "n  jur",
+            "ament",
+            "o /n"
+        ],
+        [
+            "Que en labri",
+            "s  se llevo c",
+            "o  el r",
+            "umo ",
+            "d",
+            "e",
+            "",
+            "otras cui",
+            "ta  d",
+            "e  amor",
+            ". ",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de /n Amara .org"
+        ]
+    ],
+    "bpm": 161,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "Q8Rp-jSnoss",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

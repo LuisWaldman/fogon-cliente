@@ -1,1 +1,360 @@
-{"cancion": "la-cancion-de-hollywood", "banda": "seru-giran", "escala": "G7M", "bpm": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["G7M", "G7", "G", "G7M", "G", "G7M", "G7", "G", "G7M", "G", "G-Gmaj7-G-Gmaj7", "A", "E", "C#m9", "C#m", "A", "E", "C#m", "A", "E", "C#m", "A", "E", "C#m", "C-Cmaj7-C-Cmaj7", "F#m", "A9", "E/B", "C#m", "G", "B7/F#", "F#m", "C9", "G7M", "G7", "G", "G7M", "G", "G7M", "G7", "G", "G7M", "G", "G-Gmaj7-G-Gmaj7", "A", "E", "C#m9", "A", "E", "C#m", "A", "E", "C#m", "A", "E", "C#m", "C-Cmaj7-C-Cmaj7", "G", "B7/F#", "F#m9", "F/G", "C#m9", "C#m", "C#m9", "C#m", "B4", "C/D", "Bb/C", "D/B", "E/B", "C/D", "Bb/C", "D/B", "E/B", "C7M/D", "Bm", "C6", "Bm", "Em", "Cm7", "F/C", "Eb/Bb", "F6/C", "Bb/D", "Bb6/F", "Em7(9)", "F7(add9)", "Em7(9)", "F6", "F/Eb", "D\u00c2\u00b0", "C#m9", "C#m", "C#m9", "C7M", "Fmaj7(11+)", "Bm", "Em", "C", "Bm", "Em", "C", "Bm", "Em", "C", "Bm", "Em", "G", "B7", "E", "D/E", "E", "D/E", "E", "D/E", "E", "D/E", "E", "D/E", "E", "D/E", "E", "D/E", "E"]}], "orden_partes": [0]}, "letras": [["Es el fi", "n/n"], ["De una c", "omedia americ", "ana/n"], ["Un jard\u00c3", "\u00adn/n"], ["Dos que s", "e aman m\u00c3\u00bas", "ica para v", "iol\u00c3\u00adn/n"], ["Luz d", "e gas", "", "/n"], ["El cielo es t", "an az", "ul pintado/n"], ["La ci", "udad", "/n"], ["Un decor", "ado: vid", "rio, cart\u00c3\u00b3n y aserr\u00c3", "\u00adn/n"], ["Ya s\u00c3\u00a9, d", "ir\u00c3\u00a1n, es ilusi\u00c3\u00b3n, es como e", "l primer ", "amor/n"], ["Hollywood est\u00c3\u00a1 desierto ", "tengo que volver al ", "sol", "/n"], ["Quien qu", "err\u00c3\u00a1/n"], ["Tu coraz", "\u00c3\u00b3n de marque", "sina/n"], ["Tu vejez", "/n"], ["Estrella ", "en ruinas/n"], ["Rubia pase", "ando en Rolls Royce/n"], ["Es el", " fin", "/n"], ["Del inf", "inito en cin", "erama/n"], ["Es el", " fin", "", "/n"], ["De este ", "programa, tiempo ", "de meditaci\u00c3\u00b3n/n"], ["Hollywood esta desierto te", "ngo que volver al so", "l", "/n"], [], ["Adi\u00c3\u00b3", "s/n"], ["Adi\u00c3\u00b3", "s/n"], ["Par\u00c3\u00ad", "s/n"], ["New Y", "ork", "/nEs la tie"], ["rra en que naciste sos vo", "s/nTus pel\u00c3\u00ad"], ["culas no exi", "sten adi\u00c3\u00b3", "s/n"], [], [], [], [], ["(solo ", "guitar", "ra) F", "#m - G", "7(add9) - c#m - c#m - bsus4/nHollywo"], ["od esta desierto ten", "go que volver al sol", "", "", "", "/n"], [], [], []], "medias": [{"tipo": "Youtube", "id": "kRTZDCJaaGw", "delay": 0}]}
+{
+    "cancion": "la-cancion-de-hollywood",
+    "banda": "seru-giran",
+    "escala": "G7M",
+    "bpm": 117,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E/B",
+                    "E/B",
+                    "E/B",
+                    "E/B",
+                    "E/B",
+                    "E/B"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "G7M",
+                    "G7M"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G7M",
+                    "G7M",
+                    "G",
+                    "G A",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "A",
+                    "E",
+                    "E",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "C#m",
+                    "G",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "B7/F#",
+                    "G",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "A9",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#",
+                    "B7/F#"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "B7/F#"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "letras": [
+        [
+            "azul pinta",
+            "do  la c",
+            "iuda  c",
+            "on  decorad",
+            "o  víctima, cartón",
+            "acervil ",
+            "/n"
+        ],
+        [
+            "Y  se d",
+            "irá  desilusiones c",
+            "omo  el primer",
+            "amor ",
+            "olíguelo está desi",
+            "erto  tengo que volver a",
+            "l  sol.",
+            "",
+            "¿Quié",
+            "n  querrá t",
+            "u  corazón d",
+            "e  marquesina?/n"
+        ],
+        [
+            "Tu v",
+            "eje",
+            "estrella en ruina pr",
+            "opi  paseando el r",
+            "ostro /n"
+        ],
+        [
+            "E",
+            "s  el",
+            "fin ",
+            "infinito en s",
+            "inorama  e",
+            "s  el f",
+            "in,  es",
+            "t  programa, ti",
+            "emp  de medi",
+            "tación/n"
+        ],
+        [
+            "Y",
+            "a  se dirán des",
+            "ilusione  como e",
+            "l  primer amo",
+            "r  ol",
+            "íguel  está desierto, tengo q",
+            "ue  volver al sol",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "diós,  adi",
+            "ós /n"
+        ],
+        [
+            "Adiós.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "A",
+            "diós ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Adió",
+            "s /n Ya se dirán des",
+            "ilusione  co",
+            "m  el primer am",
+            "or  olíguelo",
+            "est",
+            "á  desierto, tengo q",
+            "ue  volver al s",
+            "ol. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Adiós."
+        ]
+    ],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "kRTZDCJaaGw",
+            "delay": 26490.0
+        }
+    ],
+    "calidad": 1
+}

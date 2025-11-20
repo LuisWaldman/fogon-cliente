@@ -1,1 +1,436 @@
-{"cancion": "Al-Abrir-La-Puerta", "banda": "sandro", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "Dm", "E", "Am", "Dm", "G", "C", "Dm", "E", "Am", "F", "E", "Dm", "E", "Am", "Dm", "G", "C", "Dm", "E", "Am", "F", "E", "Am", "Dm", "G", "C", "Am", "Dm", "G", "C", "Dm", "E", "Am", "F", "E", "E", "Am", "Dm", "G", "C", "Dm", "E", "Am", "F", "E", "Am", "F", "E", "Am"]}], "orden_partes": [0]}, "letras": [["   Quiz\u00e1", "s al ", "abrir la puer", "ta/nEsperanzas "], ["muertas n", "acer\u00e1n en m", "\u00ed/n"], ["Quiz\u00e1s ", "vuelva a ser tu d", "ue\u00f1o/nFabricando "], ["sue\u00f1os hoy llegu\u00e9 hasta", " aqu\u00ed/nQuiz"], ["\u00e1s e", "star\u00e1s cam", "biada/nTal vez tu "], ["mirada s", "ea siempre ig", "ual/n"], ["Quiz\u00e1s ", "con aquellos m", "odos/nDestruyas del"], [" todo m", "i sue\u00f1o fin", "al/n"], ["Quiz\u00e1s ", "sea una sonr", "isa", "/nComo suave "], ["brisa", "/nQue llegue hasta "], ["m\u00ed/nQui"], ["z\u00e1s ", "un gesto extra", "ado/nTal vez asom"], ["brado se refleje en t", "i/n"], ["Quiz\u00e1s vuelva a arrepen", "tirme/nPues habr\u00e1s de h"], ["erirme ", "con tu proced", "er/nQui"], ["z\u00e1s ", "lo mejor es i", "rme/nAntes de ren"], ["dirme ante t", "i otra vez", "/nAntes de ren"], ["dirme ante t", "\u00ed...ante t\u00ed otra ", "vez"]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "M2eDFpAqwBY", "delay": 0}]}
+{
+    "cancion": "Al-Abrir-La-Puerta",
+    "banda": "sandro",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "F",
+                    "F",
+                    "F",
+                    "Am",
+                    "Dm",
+                    "G",
+                    "G",
+                    "G",
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "F",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "G",
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "G",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "Am",
+                    "G",
+                    "G",
+                    "G",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "F",
+                    "E",
+                    "E",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "G",
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "Am",
+                    "F",
+                    "F",
+                    "F",
+                    "F",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Quizás a",
+            "l  abrir la p",
+            "uerta  es",
+            "peranza  mu",
+            "erta  nac",
+            "erá  en m",
+            "í. /n"
+        ],
+        [
+            "Qui",
+            "zá  vuel",
+            "v  ser tu d",
+            "ueñ  fab",
+            "ricand  sue",
+            "ño  hoy lleg",
+            "u  hasta aqu",
+            "í ",
+            "/n"
+        ],
+        [
+            "Quizá",
+            "estarás ca",
+            "mbiad  t",
+            "al  vez tu mi",
+            "rad  sea",
+            "siempre ",
+            "igua",
+            "l /n Qu",
+            "izá  c",
+            "o  aquellos m",
+            "odos  de",
+            "struya  del to",
+            "d  mi sue",
+            "ñ  fina",
+            "l /n"
+        ],
+        [
+            "Qui",
+            "zá  sea un",
+            "a  sonr",
+            "is  como s",
+            "uave  brisa",
+            "qu  llegu",
+            "é  hasta mí",
+            ". /n"
+        ],
+        [
+            "Qui",
+            "zá  un gesto",
+            "extraña",
+            "d  tal vez a",
+            "sombrad",
+            "se reflej",
+            "e  en ti.",
+            "/n"
+        ],
+        [
+            "Quiz",
+            "á  vuelva a",
+            "rrepenti",
+            "rm  pues ahora has de h",
+            "erirme  c",
+            "on  tu proc",
+            "eder ",
+            "/n"
+        ],
+        [
+            "Quizá",
+            "s  lo mejor es",
+            "irm",
+            "e  antes de arr",
+            "endirm  ante t",
+            "i  otr",
+            "vez.",
+            "",
+            "/n"
+        ],
+        [
+            "Qui",
+            "zá  estarás ca",
+            "mbiad",
+            "tal",
+            "ve  tu mirada sea siem",
+            "pr  igual.",
+            "/n"
+        ],
+        [
+            "Quiz",
+            "á  con aquellos m",
+            "odo  destruyas de",
+            "todo mi sueño f",
+            "inal. ",
+            "",
+            "/n"
+        ],
+        [
+            "Q",
+            "uizás  sea u",
+            "na  son",
+            "ris  com",
+            "suave bri",
+            "s  que lle",
+            "gu  hasta m",
+            "í /n"
+        ],
+        [
+            "Qui",
+            "zá  un gest",
+            "extraña",
+            "d  tal vez a",
+            "sombra",
+            "se refle",
+            "j  en ti.",
+            "/n"
+        ],
+        [
+            "Q",
+            "uizá  vuelva",
+            "arrepentir",
+            "pues habrás de h",
+            "erirme  c",
+            "on  tu pro",
+            "ceder ",
+            "/n"
+        ],
+        [
+            "Qui",
+            "zá  lo mejor es",
+            "irm",
+            "e  antes de arr",
+            "endirm  ante t",
+            "i  otr",
+            "vez.",
+            "",
+            "/n"
+        ],
+        [
+            "Q",
+            "uizás  vuel",
+            "v  arrepe",
+            "ntirm  pu",
+            "e  habrás de herirme con t",
+            "u  proceder.",
+            "/n"
+        ],
+        [
+            "Quizá  l",
+            "o  mejor es",
+            "irm  a",
+            "nte  de arre",
+            "ndirm  ante t",
+            "i",
+            ", ",
+            "ante ti ot",
+            "r  vez.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 161,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "M2eDFpAqwBY",
+            "delay": 3750.0
+        }
+    ],
+    "calidad": 1
+}

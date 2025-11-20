@@ -1,1 +1,423 @@
-{"cancion": "Por-ese-palpitar", "banda": "sandro", "escala": "Gm7", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Gm7", "C7", "Bb/F", "Gm7"]}, {"nombre": "parte2", "acordes": ["A7", "Dm7"]}, {"nombre": "parte3", "acordes": ["A7", "Dm"]}, {"nombre": "parte4", "acordes": ["D7"]}], "orden_partes": [0, 1, 2, 0, 1, 1, 1, 1, 1, 3, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1]}, "letras": [["tar/nque tiene tu mi"], ["rar/nque t\u00fa debes su"], ["frir/nigual que sufro "], ["yo/npor esta situa"], ["ci\u00f3n/nque nubla la raz"], ["\u00f3n/nsin "], ["permitir pens", "ar/nEn que ha de conclu"], ["ir/nel drama singu"], ["lar/ntratando simul"], ["ar/ntan solo una amis"], ["tad/nmientras en reali"], ["dad/nse agita la pas"], ["i\u00f3n/nque mu"], ["erde el coraz", "\u00f3n/ny qu"], ["e obliga a ca", "llar", "/nyo te "], ["amo...", "...yo te am", "o/n"], ["A: Tus labios de rub", "\u00ed/n   de rojo carne"], ["s\u00ed/n   mil cosas sin ha"], ["blar/n   y yo que estoy a"], ["qu\u00ed/n   sentado frente a "], ["ti/n   me siento desan"], ["grar/n   sin "], ["poder convers", "ar/n   tratando de de"], ["cir/n   tal vez ser\u00e1 m"], ["ejor/n   para no vernos "], ["mas/n   total que mas me "], ["da/n   ya se que sufri"], ["r\u00e9/n   pero al final ten"], ["dr\u00e9/n   tran"], ["quilo el coraz", "\u00f3n/n   y al "], ["fin podr\u00e9 gr", "itar/n"], ["   yo te a", "mo/n"], ["   yo te a", "mo/n"], ["   yo te a", "    a ", "  mo", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "LPUo4Cgc76k", "delay": 0}]}
+{
+    "cancion": "Por-ese-palpitar",
+    "banda": "sandro",
+    "escala": "Gm7",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Bb/F",
+                    "Bb/F",
+                    "Bb/F",
+                    "Bb/F",
+                    "Bb/F",
+                    "C7",
+                    "C7",
+                    "Bb/F",
+                    "Bb/F",
+                    "Gm7",
+                    "Bb/F",
+                    "A7",
+                    "C7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Dm",
+                    "Dm",
+                    "A7",
+                    "A7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "Bb/F"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Gm7",
+                    "Gm7",
+                    "Gm7",
+                    "A7",
+                    "Dm",
+                    "A7",
+                    "Dm7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "Bb/F",
+                    "Bb/F",
+                    "Gm7",
+                    "Gm7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A7",
+                    "Dm7",
+                    "Dm7",
+                    "Gm7"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Gm7",
+                    "Bb/F",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "C7",
+                    "Bb/F",
+                    "Gm7",
+                    "Gm7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "Dm7",
+                    "Dm7",
+                    "Dm7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "C7",
+                    "C7"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "D7",
+                    "D7"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "D7",
+                    "D7",
+                    "C7",
+                    "C7",
+                    "Bb/F",
+                    "Bb/F",
+                    "Gm7",
+                    "Gm7"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "Dm7",
+                    "A7",
+                    "Dm7",
+                    "Dm7",
+                    "Gm7",
+                    "Gm7"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "Bb/F",
+                    "C7",
+                    "C7",
+                    "C7",
+                    "Bb/F",
+                    "Bb/F",
+                    "Gm7"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "Gm7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte13",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "Dm7",
+                    "Dm7"
+                ]
+            },
+            {
+                "nombre": "parte14",
+                "acordes": [
+                    "Dm7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte15",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte16",
+                "acordes": [
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ]
+    },
+    "letras": [
+        [
+            "pal",
+            "pita  q",
+            "u  tiene tu mir",
+            "a /n Y",
+            "o  puedo pre",
+            "senti  que t",
+            "u  debes s",
+            "ufri ",
+            "igua  que sufro y",
+            "o /n P",
+            "o  esta situa",
+            "ció  que nu",
+            "bl  la raz",
+            "ó  sin perm",
+            "itir  pensar/n"
+        ],
+        [
+            "En que ha d",
+            "e  conc",
+            "lui  e",
+            "l  drama singul",
+            "a  qu",
+            "existe entre los d",
+            "o /n Tratan",
+            "d  sim",
+            "ula  ta",
+            "n  solo una amistad/n"
+        ],
+        [
+            "Mientras e",
+            "n  realida",
+            "se a",
+            "git  la pasi",
+            "ó  que muerde",
+            "e  corazón",
+            "que obl",
+            "ig  ca",
+            "lla /n Y",
+            "o  te a",
+            "mo  y",
+            "o  te a",
+            "m /n Tus la",
+            "bio  derru",
+            "b  dentro focar",
+            "m /n S",
+            "i  parece",
+            "murmurar",
+            "mi  cosas sin",
+            "habla ",
+            "yo que estoy",
+            "aqu",
+            "sentado frent",
+            "e ti /n M",
+            "e  siento desan",
+            "gra  sin p",
+            "ode  conversar/n"
+        ],
+        [
+            "Trat",
+            "and  de dec",
+            "i  ta",
+            "l  vez será mejor/n"
+        ],
+        [
+            "Me",
+            "march  yo de aq",
+            "u  para n",
+            "o  vernos má/n"
+        ],
+        [
+            "Tota",
+            "l  que más me d",
+            "a /n Ya s",
+            "é  que sufriré p",
+            "er  al fi",
+            "na  tendré/n"
+        ],
+        [
+            "Tranquilo e",
+            "l  corazón",
+            "al fin podr",
+            "grit",
+            "a /n Y",
+            "o  te amo",
+            ",  y",
+            "o  te am",
+            "",
+            "/n"
+        ],
+        [
+            "Y",
+            "o  te a",
+            "m  por sobre todas l",
+            "a  cosas del mund",
+            "o /n"
+        ],
+        [
+            "Tus l",
+            "abio  de",
+            "rrub  dent",
+            "r  focarme/n"
+        ],
+        [
+            "Si",
+            "parece  murm",
+            "ura  mil cosa",
+            "s  sin hablar",
+            "yo q",
+            "u  estoy aq",
+            "u  sentad",
+            "frente ti/n"
+        ],
+        [
+            "M  siento d",
+            "esangra  si",
+            "n  poder conve",
+            "rsa /n T",
+            "ratando  de d",
+            "eci  t",
+            "a  vez será m",
+            "ejo /n"
+        ],
+        [
+            "M  marché yo de a",
+            "quí  para n",
+            "o  vernos m",
+            "ás /n T",
+            "ota  que má",
+            "me da ya s",
+            "é  que sufriré/n"
+        ],
+        [
+            "Pe",
+            "r  al final tendré/n"
+        ],
+        [
+            "Tranquil",
+            "el corazó",
+            "al fin p",
+            "odr  gritar/n"
+        ],
+        [
+            "Y",
+            "o  te a",
+            "mo  y",
+            "o  te am/n"
+        ],
+        [
+            "Y",
+            "o  t",
+            "e  a",
+            "m",
+            "o ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Subtítulos realizados por la comunidad de /n Amara .org"
+        ]
+    ],
+    "bpm": 161,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "LPUo4Cgc76k",
+            "delay": 20290.0
+        }
+    ],
+    "calidad": 1
+}
