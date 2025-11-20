@@ -1,68 +1,67 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { Pantalla } from '../../modelo/pantalla'
-import { Display } from '../../modelo/display/display'
-import { HelperDisplay } from '../../modelo/display/helperDisplay'
-import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { useAppStore } from '../../stores/appStore'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
 const props = defineProps<{
   compas: number
   cancion: Cancion
 }>()
+const scrollTop = ref(0)
 const pantalla = new Pantalla()
-const configuracionPantalla = pantalla.getConfiguracionPantalla()
 const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
-const renglones = ref([] as string[])
-const displayRef = ref(new Display(configuracionPantalla.columnas))
-const helperNombreAcordes = HelperDisplayAcordesLatino.getInstance()
-const appStore = useAppStore()
-helperNombreAcordes.latino = appStore.perfil.CifradoLatino
 
-const emit = defineEmits(['clickCompas'])
-function clickCompas(compas: number) {
-  emit('clickCompas', compas)
-}
-watch(
-  () => props.cancion,
-  (cancion: Cancion) => {
-    ActualizarCancion(cancion)
-  },
-)
-const helperDisplay = new HelperDisplay()
-function ActualizarCancion(cancion: Cancion) {
-  displayRef.value = helperDisplay.getDisplay(
-    cancion,
-    configuracionPantalla.columnas,
-  )
-}
-
-
+const mostrandoRenglon = ref(0)
+const mostrandoPalabra = ref(0)
+const letras = ref([] as string[][])
 
 watch(
   () => props.compas,
-  () => {
+  (newCompas) => {
+    let totalCompases = 0
+    for (let i = 0; i < props.cancion.letras.renglones.length; i++) {
+      let compasesxparte = 0
+      if (props.cancion.letras.renglones[i])
+        compasesxparte = props.cancion.letras.renglones[i].length
+
+      if (newCompas < totalCompases + compasesxparte) {
+        mostrandoRenglon.value = i
+        mostrandoPalabra.value = newCompas - totalCompases
+
+        break
+      }
+      totalCompases += compasesxparte
+    }
     const configPantalla = pantalla.getConfiguracionPantalla()
     if (configPantalla.AutoScroll === false) return
-    
-    // Centrar el texto que está sonando usando el DOM
+
+    // Centrar el acorde que está sonando usando el DOM
     scrollToCurrentChord()
   },
 )
 
+function styleDivTocar() {
+  return {
+    height: pantalla.getAltoPantalla() + 'px',
+  }
+}
+
 function scrollToCurrentChord() {
-  // Usar setTimeout para asegurar que el DOM se haya actualizado
+  // Usar nextTick para asegurar que el DOM se haya actualizado
   setTimeout(() => {
     if (!letraDiv.value) return
 
-    // Buscar el elemento que está actualmente sonando
-    const currentElement = letraDiv.value.querySelector('.en_compas')
+    // Buscar el elemento del acorde que está actualmente sonando
+    const currentChordElement = letraDiv.value.querySelector(
+      '.acordediv.en_compas',
+    )
 
-    if (currentElement) {
+    if (currentChordElement) {
       // Obtener la posición del elemento relativa al contenedor
       const containerRect = letraDiv.value.getBoundingClientRect()
-      const elementRect = currentElement.getBoundingClientRect()
+      const elementRect = currentChordElement.getBoundingClientRect()
 
       // Calcular la posición actual del elemento relativa al scroll
       const elementTop =
@@ -81,141 +80,179 @@ function scrollToCurrentChord() {
   }, 50) // Pequeño delay para asegurar que el DOM se actualice
 }
 
-function styleDivTocar() {
-  return {
-    height: pantalla.getAltoPantalla() + 'px',
-  }
-}
-let yaActualizado = false
-function Actualizado() {
-  if (yaActualizado) return false
-  yaActualizado = true
-  if (
-    props.cancion.letras.renglones.length > 0 &&
-    renglones.value.length === 0
-  ) {
-    ActualizarCancion(props.cancion)
+function Actualizar() {
+  if (letras.value.length === 0) {
+    console.log('actualizar letras')
   }
   return false
 }
-function Actualizar() {
-  ActualizarCancion(props.cancion)
+
+const handleScroll = () => {
+  if (letraDiv.value) {
+    scrollTop.value = letraDiv.value.scrollTop // Actualiza la posición del scroll
+  }
 }
+// Añadir el evento de scroll cuando se monta el componente
+class ParteLetraYAcorde {
+  conEnter: boolean = false
+  acorde: string = ''
+  letra: string = ''
+  nroCompas: number = -1
+  constructor(
+    acorde: string,
+    letra: string,
+    nroCompas: number,
+    conEnter: boolean = false,
+  ) {
+    this.acorde = acorde
+    this.letra = letra
+    this.nroCompas = nroCompas
+    this.conEnter = conEnter
+  }
+}
+const refparteLetraYAcorde = ref<ParteLetraYAcorde[]>([])
+
+function calcularCompaces() {
+  const parteLetraYAcorde: ParteLetraYAcorde[] = []
+
+  const helperNombreAcordes = HelperDisplayAcordesLatino.getInstance()
+  const appStore = useAppStore()
+  helperNombreAcordes.latino = appStore.perfil.CifradoLatino
+  const acordes = props.cancion.acordes.GetTodosLosAcordes()
+  const letra = props.cancion.letras.renglones.flat()
+  for (let i = 0; i < letra.length; i++) {
+    const texto = letra[i]
+    let acorde = '?'
+    if (i < acordes.length) {
+      acorde = helperNombreAcordes.GetAcorde(acordes[i])
+    }
+    if (texto.includes('/n')) {
+      const partes = texto.split('/n')
+      for (let j = 0; j < partes.length; j++) {
+        const toadd = new ParteLetraYAcorde(
+          j === 0 ? acorde : '',
+          partes[j],
+          i,
+          j == partes.length - 1 ? false : true,
+        )
+        parteLetraYAcorde.push(toadd)
+      }
+    } else {
+      const toadd = new ParteLetraYAcorde(acorde, texto, i)
+
+      parteLetraYAcorde.push(toadd)
+    }
+  }
+  refparteLetraYAcorde.value = parteLetraYAcorde
+}
+
+onMounted(() => {
+  calcularCompaces()
+  if (letraDiv.value) {
+    letraDiv.value.addEventListener('scroll', handleScroll)
+  }
+})
+
+// Eliminar el evento de scroll cuando se desmonta el componente
+onUnmounted(() => {
+  if (letraDiv.value) {
+    letraDiv.value.removeEventListener('scroll', handleScroll)
+  }
+})
 
 defineExpose({ Actualizar })
 </script>
 <template>
-  <div>
-    <div v-if="Actualizado()">.. No cargada ..</div>
+  <div class="componenteMusical">
     <div
-      style="position: relative"
-      class="componenteMusical"
-      :style="styleDivTocar()"
       ref="letraDiv"
+      class="overflow-auto divDeLetra"
+      :style="styleDivTocar()"
     >
-      <div
-        v-for="(verso, index) in displayRef.Versos"
-        :key="index"
-        style="position: relative"
-      >
-        <div
-          class="renglonDisplay"
-          v-for="(renglon, index) in verso.renglonesDisplay"
-          :key="index"
-          :style="{ position: 'relative', paddingTop: '30px', minHeight: '60px' }"
-        >
-          <!-- Contenedor para acordes con altura fija -->
-          <div class="acordes-container">
+      <div style="display: flex; flex-wrap: wrap">
+        <template v-for="(parte, _index) in refparteLetraYAcorde" :key="_index">
+          <div>
+            <div class="conteinerDiv">
+              <div
+                class="acordediv"
+                v-if="parte.acorde != ''"
+                :class="{ en_compas: parte.nroCompas === compas }"
+              >
+                {{ parte.acorde }}
+              </div>
+            </div>
             <div
-              v-for="(acorde, acordeIndex) in renglon.acordes"
-              :style="{
-                position: 'absolute',
-                left: acorde.left + 'px',
-                top: '0px',
-                whiteSpace: 'nowrap',
-                textAlign: 'center',
-                minWidth: '20px'
+              class="divletra"
+              :class="{
+                espacio: parte.letra.endsWith(' '),
+                en_compas: parte.nroCompas === compas,
               }"
-              @click="clickCompas(acorde.compas)"
-              :key="acordeIndex"
-              :class="{ en_compas: acorde.compas === compas }"
-              class="acordediv"
             >
-              {{ helperNombreAcordes.GetAcorde(acorde.contenido) }}
+              {{ parte.letra }} 
             </div>
           </div>
-
-          <!-- Contenedor para letras -->
-          <div class="divletra" style="display: flex; position: relative; z-index: 1;">
-            <div
-              v-for="(parte, parteIndex) in renglon.partes"
-              :class="{ en_compas: parte.compas === compas }"
-              :key="parteIndex"
-              @click="clickCompas(parte.compas)"
-              :style="{ position: 'relative' }"
-            >
-              {{ parte.contenido }}
-            </div>
-          </div>
-        </div>
+          <div class="break" v-if="parte.conEnter"></div>
+        </template>
       </div>
+
+      <div>&nbsp;</div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.resumen {
-  position: absolute;
-  top: 20px;
-  left: 5%;
-}
 .componenteMusical {
-  padding-top: 30px;
-  width: 100%;
-  height: 100%;
+  color: #a9a8f6;
+  padding: 6px;
+}
+.read-the-docs {
+  color: #888;
+}
+
+.break {
+  flex-basis: 100%;
+}
+.parte {
+  display: flex;
+}
+
+.divDeLetra {
+  font-size: var(--tamanio-letra);
+  color: #ffffff;
   scrollbar-color: black transparent;
   scrollbar-width: thin;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.renglonDisplay {
-  z-index: 10;
-  margin-bottom: 15px;
 }
 
-.acordes-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 30px;
-  z-index: 2;
+.noacorde {
+  margin: 1px;
+  padding: 6px;
 }
 
-.divletra {
-  font-size: var(--tamanio-letra);
-  color: white;
-  width: max-content;
-  min-width: 100%;
-  margin-top: 5px;
-}
-
-.acordediv {
-  font-size: var(--tamanio-acorde);
-  padding: 2px 4px;
-  border-radius: 3px;
-  display: inline-block;
-  color: #a9a8f6;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid transparent;
-  line-height: 1.2;
-  max-width: 80px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.ordenparte {
+  border: 1px solid #888;
+  width: 25%;
 }
 
 .en_compas {
   color: rgb(121, 102, 233);
+}
+.espacio {
+  margin-right: 1ch;
+}
+
+.conteinerDiv {
+  margin: 1px;
+  padding: 5px;
+  height: calc(var(--tamanio-acorde) + 10px);
+}
+
+.acordediv {
+  font-size: var(--tamanio-acorde);
+  margin: 1px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #a9a8f6;
+  margin-right: 4px;
 }
 
 .acordediv.en_compas {
@@ -223,6 +260,5 @@ defineExpose({ Actualizar })
   font-weight: bold;
   border: 1px solid rgb(194, 6, 6);
   background-color: white;
-  z-index: 3;
 }
 </style>
