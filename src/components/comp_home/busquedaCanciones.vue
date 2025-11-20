@@ -19,8 +19,8 @@ helper.latino = appStore.perfil.CifradoLatino
 
 // Definir emisores
 const emit = defineEmits<{
-  resultados: [canciones: ItemIndiceCancion[]],
-  borrar: [void],
+  resultados: [canciones: ItemIndiceCancion[]]
+  borrar: [void]
 }>()
 function Borrar() {
   busqueda.value = ''
@@ -259,7 +259,9 @@ function VerFiltros() {
     >
       <button @click="buscarCanciones()">Buscar</button>
       <button @click="VerFiltros()">Filtros</button>
-      <button @click="Borrar()" v-if="appStore.busqueda.length > 0">Borrar</button>
+      <button @click="Borrar()" v-if="appStore.busqueda.length > 0">
+        Borrar
+      </button>
     </div>
 
     <div
