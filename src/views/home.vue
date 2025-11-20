@@ -95,6 +95,7 @@ function handleResultados(canciones: ItemIndiceCancion[]) {
   refResultadoCanciones.value = canciones
   viendoTexto.value = 'Mostrando ' + canciones.length + '  de búsqueda'
   viendoCanciones.value = canciones
+  appStore.busqueda = canciones
 }
 
 async function clickOpcion(viendostr: string) {
