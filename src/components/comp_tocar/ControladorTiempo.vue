@@ -99,13 +99,13 @@ function arreglartexto(texto: string): string {
 <template>
   <div class="controladortiempo">
     <div class="controls">
-      <button
-        class="boton_controller boton_controllerplay"
+      <div
+        class="boton_controllerplay"
         @click="play"
         v-if="appStore.estadoReproduccion === 'pausado'"
       >
         ▶️
-      </button>
+      </div>
 
       <button
         class="boton_controller"
@@ -138,18 +138,18 @@ function arreglartexto(texto: string): string {
         </tr>
       </tbody>
     </table>
-    <button
+    <div
       class="boton_controller boton_controllerplay ocultocelu"
       @click="next"
       v-if="appStore.listaReproduccion.length > 0"
     >
       ⏭️
-    </button>
+  </div>
     <div
-      class="playlist-container"
+      class="  playlist-container"
       v-if="appStore.listaReproduccion.length > 0"
     >
-      <button class="boton_controller" @click="togglePlaylist">📋</button>
+      <button style="margin-top: 10px;" @click="togglePlaylist">📋</button>
       <div class="playlist-dropdown" v-if="showPlaylist">
         <div class="playlist-header">Lista de Reproducción</div>
         <div
@@ -216,16 +216,6 @@ function arreglartexto(texto: string): string {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.boton_controller {
-  border-radius: 3px;
-  color: #a9a8f6;
-  background-color: black;
-  font-size: 20px;
-  border: 1px solid #a9a8f6;
-  width: 46px;
-  margin: 3px;
-  height: 46px;
 }
 
 .boton_controllerplay {
