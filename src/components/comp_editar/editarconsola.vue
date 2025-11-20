@@ -87,7 +87,7 @@ function onTextareaScroll() {
           <div class="acordeconsola" v-else>{{ verso.nroRenglon }}</div>
         </div>
       </div>
-      <div style="height: 800px">
+      <div class="divTextConteiner">
         <textarea
           class="textArea"
           ref="refTextarea"
@@ -119,7 +119,7 @@ function onTextareaScroll() {
 <style scoped>
 .textArea {
   height: 100%;
-  width: 1000px;
+  width: 100%;
   overflow-x: auto; /* Scroll horizontal si es necesario */
   overflow-y: auto; /* Scroll vertical si es necesario */
   white-space: pre; /* No hacer wrap automático */
@@ -167,5 +167,21 @@ function onTextareaScroll() {
 .rimaconsonante {
   background-color: rgb(187, 187, 81);
   color: white;
+}
+
+.divTextConteiner {
+  height: 800px;
+  width: 1500px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .divTextConteiner {
+    width: 700px;
+  }
+
+  .textArea {
+    width: 400px;
+  }
 }
 </style>

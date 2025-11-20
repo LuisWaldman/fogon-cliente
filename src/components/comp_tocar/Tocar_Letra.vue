@@ -34,17 +34,9 @@ watch(
     }
     const configPantalla = pantalla.getConfiguracionPantalla()
     if (configPantalla.AutoScroll === false) return
-    const largoPantalla = pantalla.getAltoPantalla()
-    const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    const tamanioLetra = configPantalla.tamanioLetra
-    const nuevaPos =
-      configPantalla.factorScroll * (renglon * tamanioLetra) -
-      largoPantalla / 10
-    if (nuevaPos < largoPantalla / 10) {
-      moverScroll(0)
-      return
-    }
-    moverScroll(nuevaPos)
+
+    // Centrar el texto que está sonando usando el DOM
+    scrollToCurrentChord()
   },
 )
 
@@ -54,8 +46,34 @@ function styleDivTocar() {
   }
 }
 
-function moverScroll(posX: number) {
-  letraDiv.value?.scrollTo({ top: posX, behavior: 'smooth' })
+function scrollToCurrentChord() {
+  // Usar setTimeout para asegurar que el DOM se haya actualizado
+  setTimeout(() => {
+    if (!letraDiv.value) return
+
+    // Buscar el elemento que está actualmente sonando
+    const currentElement = letraDiv.value.querySelector('.en_compas')
+
+    if (currentElement) {
+      // Obtener la posición del elemento relativa al contenedor
+      const containerRect = letraDiv.value.getBoundingClientRect()
+      const elementRect = currentElement.getBoundingClientRect()
+
+      // Calcular la posición actual del elemento relativa al scroll
+      const elementTop =
+        elementRect.top - containerRect.top + letraDiv.value.scrollTop
+
+      // Calcular la posición para centrar el elemento
+      const containerHeight = letraDiv.value.clientHeight
+      const scrollTo = elementTop - containerHeight / 2 + elementRect.height / 2
+
+      // Hacer scroll suave al elemento centrado
+      letraDiv.value.scrollTo({
+        top: Math.max(0, scrollTo),
+        behavior: 'smooth',
+      })
+    }
+  }, 50) // Pequeño delay para asegurar que el DOM se actualice
 }
 
 function Actualizar() {

@@ -38,43 +38,45 @@ function ActualizarCancion(cancion: Cancion) {
   )
 }
 
-function CalcularRenglon(newCompas: number): number {
-  let renglon = 0
-  let encontrado = false
-  for (let i = 0; i < displayRef.value.Versos.length; i++) {
-    const verso = displayRef.value.Versos[i]
-    for (let j = 0; j < verso.renglonesDisplay.length; j++) {
-      for (let k = 0; k < verso.renglonesDisplay[j].partes.length; k++) {
-        const partes = verso.renglonesDisplay[j].partes[k]
-        if (partes.compas === newCompas) {
-          encontrado = true
-          return renglon < 3 ? 0 : renglon - 3
-        }
-      }
-      renglon++
-    }
-    if (encontrado) break
-  }
-  return renglon
-}
-
 watch(
   () => props.compas,
-  (newCompas) => {
-    const renglon = CalcularRenglon(newCompas)
+  () => {
     const configPantalla = pantalla.getConfiguracionPantalla()
     if (configPantalla.AutoScroll === false) return
-    const ScrollTo =
-      renglon *
-      (configuracionPantalla.tamanioLetra +
-        configuracionPantalla.tamanioAcorde) *
-      configuracionPantalla.factorScroll
-    moverScroll(ScrollTo)
+
+    // Centrar el texto que está sonando usando el DOM
+    scrollToCurrentChord()
   },
 )
 
-function moverScroll(posX: number) {
-  letraDiv.value?.scrollTo({ top: posX, behavior: 'smooth' })
+function scrollToCurrentChord() {
+  // Usar setTimeout para asegurar que el DOM se haya actualizado
+  setTimeout(() => {
+    if (!letraDiv.value) return
+
+    // Buscar el elemento que está actualmente sonando
+    const currentElement = letraDiv.value.querySelector('.en_compas')
+
+    if (currentElement) {
+      // Obtener la posición del elemento relativa al contenedor
+      const containerRect = letraDiv.value.getBoundingClientRect()
+      const elementRect = currentElement.getBoundingClientRect()
+
+      // Calcular la posición actual del elemento relativa al scroll
+      const elementTop =
+        elementRect.top - containerRect.top + letraDiv.value.scrollTop
+
+      // Calcular la posición para centrar el elemento
+      const containerHeight = letraDiv.value.clientHeight
+      const scrollTo = elementTop - containerHeight / 2 + elementRect.height / 2
+
+      // Hacer scroll suave al elemento centrado
+      letraDiv.value.scrollTo({
+        top: Math.max(0, scrollTo),
+        behavior: 'smooth',
+      })
+    }
+  }, 50) // Pequeño delay para asegurar que el DOM se actualice
 }
 
 function styleDivTocar() {
@@ -118,33 +120,47 @@ defineExpose({ Actualizar })
           class="renglonDisplay"
           v-for="(renglon, index) in verso.renglonesDisplay"
           :key="index"
-          :style="{ position: 'relative' }"
+          :style="{
+            position: 'relative',
+            paddingTop: '30px',
+            minHeight: '60px',
+          }"
         >
-          <div class="divletra" style="display: flex">
+          <!-- Contenedor para acordes con altura fija -->
+          <div class="acordes-container">
+            <div
+              v-for="(acorde, acordeIndex) in renglon.acordes"
+              :style="{
+                position: 'absolute',
+                left: acorde.left + 'px',
+                top: '0px',
+                whiteSpace: 'nowrap',
+                textAlign: 'center',
+                minWidth: '20px',
+              }"
+              @click="clickCompas(acorde.compas)"
+              :key="acordeIndex"
+              :class="{ en_compas: acorde.compas === compas }"
+              class="acordediv"
+            >
+              {{ helperNombreAcordes.GetAcorde(acorde.contenido) }}
+            </div>
+          </div>
+
+          <!-- Contenedor para letras -->
+          <div
+            class="divletra"
+            style="display: flex; position: relative; z-index: 1"
+          >
             <div
               v-for="(parte, parteIndex) in renglon.partes"
               :class="{ en_compas: parte.compas === compas }"
               :key="parteIndex"
               @click="clickCompas(parte.compas)"
+              :style="{ position: 'relative' }"
             >
               {{ parte.contenido }}
             </div>
-          </div>
-
-          <div
-            v-for="(acorde, acordeIndex) in renglon.acordes"
-            :style="{
-              'z-index': '-1',
-              position: 'absolute',
-              left: acorde.left + 'px',
-              top: '-' + (configuracionPantalla.tamanioAcorde + 2) + 'px',
-            }"
-            @click="clickCompas(acorde.compas)"
-            :key="acordeIndex"
-            :class="{ en_compas: acorde.compas === compas }"
-            class="acordediv"
-          >
-            {{ helperNombreAcordes.GetAcorde(acorde.contenido) }}
           </div>
         </div>
       </div>
@@ -167,20 +183,40 @@ defineExpose({ Actualizar })
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.renglonDisplay {
+  z-index: 10;
+  margin-bottom: 15px;
+}
+
+.acordes-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  z-index: 2;
+}
+
 .divletra {
   font-size: var(--tamanio-letra);
   color: white;
-  margin-bottom: var(--tamanio-acorde);
   width: max-content;
   min-width: 100%;
+  margin-top: 5px;
 }
+
 .acordediv {
   font-size: var(--tamanio-acorde);
-  margin: 1px;
-  border-radius: 5px;
+  padding: 2px 4px;
+  border-radius: 3px;
   display: inline-block;
   color: #a9a8f6;
-  margin-right: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid transparent;
+  line-height: 1.2;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .en_compas {
@@ -192,9 +228,6 @@ defineExpose({ Actualizar })
   font-weight: bold;
   border: 1px solid rgb(194, 6, 6);
   background-color: white;
-}
-
-.renglonDisplay {
-  z-index: 10;
+  z-index: 3;
 }
 </style>

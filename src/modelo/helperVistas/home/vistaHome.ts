@@ -1,7 +1,7 @@
 import type { StrategyVista } from './strategyVista'
 import { StrategyVistaDefault } from './strategyVistaDefault'
 import type { ItemIndiceCancion } from '../../cancion/ItemIndiceCancion'
-import { StrategyVistaUltimas50 } from './strategyVistaUltimas50'
+import { StrategyVistaInicio } from './strategyVistaInicio'
 import { StrategyVistaLocal } from './strategyVistaListasLocal'
 import { StrategyVistaServer } from './strategyVistaListaServer'
 import { StrategyCancionesLocal } from './strategyVistaCancionesLocal'
@@ -15,7 +15,7 @@ export class vistaHome {
   public viendoCanciones: ItemIndiceCancion[] = []
   public viendoListas: string[] = []
   public viendoLista: string = ''
-  private strategia: StrategyVista = new StrategyVistaUltimas50(this)
+  private strategia: StrategyVista = new StrategyVistaInicio(this)
 
   public async iniciar() {
     await this.strategia.iniciar()
@@ -50,7 +50,7 @@ export class vistaHome {
 
   public cambiarStrategia() {
     if (this.viendo === 'inicio') {
-      this.strategia = new StrategyVistaUltimas50(this)
+      this.strategia = new StrategyVistaInicio(this)
     } else if (this.viendo === 'listas') {
       if (this.viendoOrigen === 'localstorage') {
         this.strategia = new StrategyVistaLocal(this)

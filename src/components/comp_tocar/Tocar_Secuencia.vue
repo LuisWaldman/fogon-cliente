@@ -188,6 +188,7 @@ helper.latino = appStore.perfil.CifradoLatino
   margin-top: 10px;
 }
 .nombreParte {
+  text-decoration: underline;
   font-size: large;
   font-weight: bold;
 }
