@@ -122,33 +122,40 @@ defineExpose({ Actualizar })
           class="renglonDisplay"
           v-for="(renglon, index) in verso.renglonesDisplay"
           :key="index"
-          :style="{ position: 'relative' }"
+          :style="{ position: 'relative', paddingTop: '30px', minHeight: '60px' }"
         >
-          <div class="divletra" style="display: flex">
+          <!-- Contenedor para acordes con altura fija -->
+          <div class="acordes-container">
+            <div
+              v-for="(acorde, acordeIndex) in renglon.acordes"
+              :style="{
+                position: 'absolute',
+                left: acorde.left + 'px',
+                top: '0px',
+                whiteSpace: 'nowrap',
+                textAlign: 'center',
+                minWidth: '20px'
+              }"
+              @click="clickCompas(acorde.compas)"
+              :key="acordeIndex"
+              :class="{ en_compas: acorde.compas === compas }"
+              class="acordediv"
+            >
+              {{ helperNombreAcordes.GetAcorde(acorde.contenido) }}
+            </div>
+          </div>
+
+          <!-- Contenedor para letras -->
+          <div class="divletra" style="display: flex; position: relative; z-index: 1;">
             <div
               v-for="(parte, parteIndex) in renglon.partes"
               :class="{ en_compas: parte.compas === compas }"
               :key="parteIndex"
               @click="clickCompas(parte.compas)"
+              :style="{ position: 'relative' }"
             >
               {{ parte.contenido }}
             </div>
-          </div>
-
-          <div
-            v-for="(acorde, acordeIndex) in renglon.acordes"
-            :style="{
-              'z-index': '-1',
-              position: 'absolute',
-              left: acorde.left + 'px',
-              top: '-20px',
-            }"
-            @click="clickCompas(acorde.compas)"
-            :key="acordeIndex"
-            :class="{ en_compas: acorde.compas === compas }"
-            class="acordediv"
-          >
-            {{ helperNombreAcordes.GetAcorde(acorde.contenido) }}
           </div>
         </div>
       </div>
@@ -171,20 +178,40 @@ defineExpose({ Actualizar })
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.renglonDisplay {
+  z-index: 10;
+  margin-bottom: 15px;
+}
+
+.acordes-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  z-index: 2;
+}
+
 .divletra {
   font-size: var(--tamanio-letra);
   color: white;
-  margin-bottom: 25px;
   width: max-content;
   min-width: 100%;
+  margin-top: 5px;
 }
+
 .acordediv {
   font-size: var(--tamanio-acorde);
-  margin: 1px;
-  border-radius: 5px;
+  padding: 2px 4px;
+  border-radius: 3px;
   display: inline-block;
   color: #a9a8f6;
-  margin-right: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid transparent;
+  line-height: 1.2;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .en_compas {
@@ -196,9 +223,6 @@ defineExpose({ Actualizar })
   font-weight: bold;
   border: 1px solid rgb(194, 6, 6);
   background-color: white;
-}
-
-.renglonDisplay {
-  z-index: 10;
+  z-index: 3;
 }
 </style>
