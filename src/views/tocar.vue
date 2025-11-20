@@ -10,6 +10,7 @@ import TocarMidi from '../components/comp_tocar/Tocar_Midi.vue'
 import TocarAcorde from '../components/comp_tocar/Tocar_Acordes.vue'
 import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
+import MetronomoDesarrollador from '../components/comp_tocar/metronomodesarrollador.vue'
 import Secuencia from '../components/comp_tocar/Tocar_Secuencia.vue'
 import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
@@ -53,15 +54,22 @@ function stopRafLoop() {
   }
 }
 
+function VerEstado() {
+  if (
+    appStore.estadoReproduccion === 'Reproduciendo' ||
+    appStore.estadoReproduccion === 'Iniciando'
+  ) {
+    startRafLoop()
+  } else {
+    stopRafLoop()
+  }
+}
+VerEstado()
 // Watch for changes in playback state and start/stop RAF loop
 watch(
   () => appStore.estadoReproduccion,
-  (nuevo) => {
-    if (nuevo === 'Reproduciendo' || nuevo === 'Iniciando') {
-      startRafLoop()
-    } else {
-      stopRafLoop()
-    }
+  () => {
+    VerEstado()
   },
 )
 
@@ -190,6 +198,9 @@ function GetStyleOverlay() {
 }
 
 function GetStyleSecuencia() {
+  if (!vista.value.viendoSecuencia) {
+    return `height: 0px;`
+  }
   return `height: ${vista.value.anchoParte}px;`
 }
 
@@ -365,7 +376,11 @@ const refAdvertencia = ref(true)
     <div class="controladoresTiempo">
       <ControladorTiempo> </ControladorTiempo>
 
-      <Metronomo ref="metronomeRef"></Metronomo>
+      <MetronomoDesarrollador
+        ref="metronomeRef"
+        v-if="appStore.perfil.ModoDesarrollador"
+      ></MetronomoDesarrollador>
+      <Metronomo v-else></Metronomo>
     </div>
   </div>
 </template>

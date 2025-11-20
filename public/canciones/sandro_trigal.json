@@ -1,1 +1,221 @@
-{"cancion": "Trigal", "banda": "sandro", "escala": "Dm", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Dm", "Gm", "A7"]}, {"nombre": "parte2", "acordes": ["Dm"]}], "orden_partes": [0, 0, 0, 0, 0, 0, 0, 0, 1]}, "letras": [["GAL  ", "C NDE E S MAN", "OS SE DIA", " TAN", "/nSE COM"], ["PRIMEN Y ARDB", "A TAN", "/nEL CO"], ["LOR DE TU TRI", "GAL./nTR"], ["IGAL, ", "AY! TRI", "GAL", "/nDAME EL TR"], ["IGAL DE TUS A", "MOD S", "/nPARA CA"], ["LMAR VIEJOS C L", "OD S", "/nCON EL "], ["PAN DE TU TRI", "GAL,", "/nCON EL "], ["PAN DE TU TRI", "GAL."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "UfRnaBqMN6s", "delay": 0}]}
+{
+    "cancion": "Trigal",
+    "banda": "sandro",
+    "escala": "Dm",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Gm",
+                    "Gm",
+                    "A7",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "A7",
+                    "Gm",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm",
+                    "Gm"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7",
+                    "A7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Tr",
+            "igar  donde mis ma",
+            "no  se dilatan",
+            ",  se compr",
+            "ime  arrebata",
+            "n /n El colo",
+            "r  de tu trig",
+            "al  trigal,",
+            "ay, tri",
+            "gal /n Dame el tr",
+            "iga  de tus amor",
+            "e  para cal",
+            "ma  viejos dolor",
+            "es /n Con el",
+            "pa  de tu tri",
+            "gal  con el",
+            "pa  de tu trig",
+            "al  trigal,",
+            "ay  triga",
+            "l /n Trigo ma",
+            "dur  allí en tu pel",
+            "o  robo q",
+            "uizá  la luz al so",
+            "l /n Yo soy e",
+            "l  dueño de tu fru",
+            "to  soy e",
+            "l  molino de tu amor",
+            ",  ay, trigal./n"
+        ],
+        [
+            "Dame t",
+            "u  surco dame vid",
+            "a  borra m",
+            "i  tiempo esta herid",
+            "a /n Si e",
+            "s  mi otro trig",
+            "al  que si e",
+            "s  mi otro triga",
+            "l ",
+            "¡Trig",
+            "al ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Trigo m",
+            "adur  allí en tu pel",
+            "o  robo q",
+            "uizás  la luz al s",
+            "ol /n Yo soy e",
+            "l  dueño de tu fr",
+            "uto  soy e",
+            "l  molino de tu amo",
+            "r  ay, trigal./n"
+        ],
+        [
+            "Dame t",
+            "u  surco dame vid",
+            "a  borra m",
+            "i  tiempo esta herida./n"
+        ],
+        [
+            "Si e",
+            "s  mi otro tri",
+            "gal  si e",
+            "s  mi otro tri",
+            "gal  que si",
+            "e  mi otro trigal.",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 89,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "UfRnaBqMN6s",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

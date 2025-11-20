@@ -1,1 +1,212 @@
-{"cancion": "la-vida-continua", "banda": "sandro", "escala": "Am", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Am", "E", "F", "E", "Am", "E", "Am", "Am", "E", "F", "E", "Dm", "G", "C", "Am", "Dm", "Am", "E", "Am", "Dm", "G", "C", "Am", "Dm", "E", "Am", "A7", "Dm", "G", "C", "Am", "Dm", "E", "Am", "E", "Am", "Am", "E", "F", "E", "Dm", "G", "C", "F", "Dm", "Am", "E", "Am", "A7", "Dm", "G", "C", "Am", "Dm", "E", "Am", "A7", "Dm", "G", "C", "Am", "Dm", "E", "Am", "A7", "Dm", "G", "C", "Am", "Dm", "E", "Am"]}], "orden_partes": [0]}, "letras": [[], ["Tu la muje", "r, yo", " el placer,", " tu l", "a virtud, y", "o la i", "nquietud,", "/n"], ["Dos para amar nada ma", "s, y despues, la pasi", "n, que vendra mas y ma", "s/n"], ["Ven la noche se nos va", ", de prisa y sin tener", " piedad de nuestro amor", "/nAferrate de "], ["mi y dame tu calo", "r, alivia mi agonia", ".", "/nAy! "], ["ven que quiero la ilusi", "n, de morir junto a t", "i, besandote mi amor", ",/nPero la realid"], ["ad es solo una verda", "d, la vida contin", "aa", "", "/n"], ["Ven quedat", "e, junto a mi, ", "sin hablar,", " ven ", " quie", "reme, sin temer, si", "n pensar", "/n"], ["Ven besame, porque el ti", "empo se va, y despue", "s del adios...nada mas", "", "/n"], ["Ven la noche se nos va", ", de prisa y sin tener", " piedad de nuestro amor", "/nAferrate de "], ["mi y dame tu calo", "r, alivia mi agonia", ".", "/nAy! "], ["ven que quiero la ilusi", "n, de morir junto a t", "i, besandote mi amor", ",/nPero la realid"], ["ad es solo una verda", "d, la vida contin", "aa", "/nAy! "], ["ven que quiero la ilusi", "n, de morir junto a t", "i, besandote mi amor", ",/nPero la realid"], ["ad es solo una verda", "d, la vida contin", "aa..."]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "jAN4lmm4BT0", "delay": 0}]}
+{
+    "cancion": "la-vida-continua",
+    "banda": "sandro",
+    "escala": "Am",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "E",
+                    "F",
+                    "E",
+                    "E",
+                    "Am",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F",
+                    "F",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "E",
+                    "E",
+                    "G",
+                    "C",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "E",
+                    "F",
+                    "F"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "E",
+                    "G",
+                    "G",
+                    "C",
+                    "Dm",
+                    "Am",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G",
+                    "G",
+                    "C",
+                    "Am",
+                    "Dm",
+                    "E",
+                    "Am",
+                    "Am",
+                    "G",
+                    "G",
+                    "C",
+                    "Am",
+                    "Dm",
+                    "E",
+                    "Am"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    "letras": [
+        [
+            "la mujer,",
+            "yo e",
+            "l  placer,",
+            "tú l",
+            "a  virtud,",
+            "yo l",
+            "a  inquietud, d",
+            "os  p",
+            "ar  amar n",
+            "ad  más",
+            "después l",
+            "a  pasión q",
+            "ue  vendrá má",
+            "s  más",
+            ". /n"
+        ],
+        [
+            "D  la noche s",
+            "e  nos va de prisa s",
+            "in  tener piedad de nue",
+            "str  amor, aferra",
+            "t  de mí dame t",
+            "u  calor, alivia m",
+            "i  agon",
+            "ía /n Ay",
+            ",  ven que quiero la il",
+            "usió  de morir junto",
+            "ti, besándote m",
+            "amor, pero la reali",
+            "da  es solo una ver",
+            "dad  la vida co",
+            "ntinúa/n"
+        ],
+        [
+            "V",
+            "en,  q",
+            "uédat  junto",
+            "mí, sin h",
+            "ablar. /n V",
+            "en, ",
+            "quíreme sin te",
+            "mer  sin pens",
+            "ar /n Ven",
+            ",  b",
+            "ésam  porque e",
+            "l  tiempo s",
+            "e  va d",
+            "espué  ver/n"
+        ],
+        [
+            "Dios nad",
+            "más./n"
+        ],
+        [
+            "D",
+            "e  la noche se nos v",
+            "a  de prisa sin ten",
+            "e  piedad de nuestro amo",
+            "r  aferrate de m",
+            "í  dame tu calo",
+            "r  alivia mi a",
+            "gonía/n"
+        ],
+        [
+            "Ay, ven q",
+            "u  quiero la ilusión d",
+            "e  morir junto ti,",
+            "besándote mi amor, p",
+            "er  la realidad es",
+            "sol  una verdad, l",
+            "a  vida contin",
+            "úa /n A",
+            "y,  ven que quier",
+            "o  la ilusión de mo",
+            "ri  junto ti, besá",
+            "ndot  mi amor, pero l",
+            "a  realidad es solo u",
+            "n  verdad, la vida",
+            "continúa."
+        ]
+    ],
+    "bpm": 117,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "jAN4lmm4BT0",
+            "delay": 15140.0
+        }
+    ],
+    "calidad": 1
+}

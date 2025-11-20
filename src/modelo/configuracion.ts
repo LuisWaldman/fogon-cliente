@@ -25,8 +25,8 @@ export class VistaTocar {
   public altoReproductor: number = 400 // Alto del reproductor
   public anchoTerciaria: number = 30 // Ancho de la parte terciaria
   public altoPantallaDescuento: number = 200 // Nueva propiedad
-  public AutoScroll: boolean = true
-  public factorScroll: number = 1.4 // Nueva propiedad para el factor de scroll
+  public AutoScroll: boolean = false
+  public factorScroll: number = 1 // Nueva propiedad para el factor de scroll
   public columnas: number = 78 // Nueva propiedad para el número de columnas
 }
 

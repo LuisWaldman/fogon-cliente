@@ -4,6 +4,7 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 import { CompasEditable } from './compaseditable'
 import editSecuencia from './editSecuencia.vue'
+import editAcordes from './editAcordesCancion.vue'
 import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
@@ -87,13 +88,22 @@ function estiloVistaPrincipal() {
 }
 
 function estiloVistaSecundaria() {
-  return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`
+  return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: ${pantalla.getAltoPantalla()}px; overflow-x: auto;`
 }
 </script>
 <template>
-  <div style="display: flex">
+  <div
+    :style="{
+      height: pantalla.getAltoPantalla() + 'px',
+      overflow: 'hidden',
+      display: 'flex',
+    }"
+  >
     <div :style="estiloVistaPrincipal()">
-      <div class="editdivconteiner">
+      <div
+        class="editdivconteiner"
+        :style="{ height: pantalla.getAltoPantalla() + 'px', overflow: 'auto' }"
+      >
         <div
           class="editrenglon"
           v-for="(renglon, indexrenglon) in compaces"
@@ -122,6 +132,7 @@ function estiloVistaSecundaria() {
       </div>
     </div>
     <div :style="estiloVistaSecundaria()">
+      <editAcordes></editAcordes>
       <editSecuencia
         ref="ctrlSecuencia"
         :cancion="cancion"

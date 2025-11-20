@@ -121,52 +121,8 @@ function arreglartexto(texto: string): string {
       >
         ⏹️
       </button>
-      <button
-        class="boton_controller boton_controllerplay"
-        @click="next"
-        v-if="appStore.listaReproduccion.length > 0"
-      >
-        ⏭️
-      </button>
-      <div
-        class="playlist-container"
-        v-if="appStore.listaReproduccion.length > 0"
-      >
-        <button class="boton_controller" @click="togglePlaylist">📋</button>
-        <div class="playlist-dropdown" v-if="showPlaylist">
-          <div class="playlist-header">Lista de Reproducción</div>
-          <div
-            v-for="(cancion, index) in appStore.listaReproduccion"
-            :key="index"
-            class="playlist-item"
-            :class="{ active: index === appStore.nroCancion }"
-            @click="selectSong(index)"
-          >
-            <div class="song-info">
-              <div class="song-title">
-                <emoticonOrigen :origen="cancion.origenUrl" />
-                {{ arreglartexto(cancion.cancion) }}
-              </div>
-              <div class="song-artist">{{ arreglartexto(cancion.banda) }}</div>
-            </div>
-            <div class="song-duration">
-              {{
-                tiempo.formatSegundos(
-                  (60 / cancion.bpm) *
-                    cancion.totalCompases *
-                    cancion.compasCantidad,
-                )
-              }}
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <table
-      width="100%"
-      style="table-layout: fixed; margin-left: 12px"
-      margin="0"
-    >
+    <table width="100%" style="table-layout: fixed" margin="0">
       <tbody>
         <tr>
           <td :colspan="appStore.cancion?.totalCompases">
@@ -182,6 +138,46 @@ function arreglartexto(texto: string): string {
         </tr>
       </tbody>
     </table>
+    <button
+      class="boton_controller boton_controllerplay ocultocelu"
+      @click="next"
+      v-if="appStore.listaReproduccion.length > 0"
+    >
+      ⏭️
+    </button>
+    <div
+      class="playlist-container"
+      v-if="appStore.listaReproduccion.length > 0"
+    >
+      <button class="boton_controller" @click="togglePlaylist">📋</button>
+      <div class="playlist-dropdown" v-if="showPlaylist">
+        <div class="playlist-header">Lista de Reproducción</div>
+        <div
+          v-for="(cancion, index) in appStore.listaReproduccion"
+          :key="index"
+          class="playlist-item"
+          :class="{ active: index === appStore.nroCancion }"
+          @click="selectSong(index)"
+        >
+          <div class="song-info">
+            <div class="song-title">
+              <emoticonOrigen :origen="cancion.origenUrl" />
+              {{ arreglartexto(cancion.cancion) }}
+            </div>
+            <div class="song-artist">{{ arreglartexto(cancion.banda) }}</div>
+          </div>
+          <div class="song-duration">
+            {{
+              tiempo.formatSegundos(
+                (60 / cancion.bpm) *
+                  cancion.totalCompases *
+                  cancion.compasCantidad,
+              )
+            }}
+          </div>
+        </div>
+      </div>
+    </div>
 
     <span class="spnTiempo"
       >{{ tiempoActual }}
@@ -349,6 +345,8 @@ function arreglartexto(texto: string): string {
     font-size: 12px;
     width: 28px;
     height: 28px;
+    padding: 0px;
+    margin: 0px;
   }
   .boton_controllerplay {
     font-size: 16px !important;
@@ -379,6 +377,18 @@ function arreglartexto(texto: string): string {
 @media (max-width: 600px) {
   .partes_control {
     display: none !important;
+  }
+  .spnTiempo {
+    display: none !important;
+  }
+  .ocultocelu {
+    display: none !important;
+  }
+  .rango_compas {
+    margin-left: 0px !important;
+  }
+  .controladortiempo {
+    margin-left: 0px;
   }
 }
 </style>

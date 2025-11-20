@@ -1,1 +1,238 @@
-{"cancion": "Penas", "banda": "sandro", "escala": "Em", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["Em", "Am", "Em", "Am"]}, {"nombre": "parte2", "acordes": ["Em", "Am", "B7", "Em", "Am", "Em", "Am", "Em"]}, {"nombre": "parte3", "acordes": ["F#m", "B7", "E", "G#m", "Bm", "C#7", "F#m", "B7"]}, {"nombre": "parte4", "acordes": ["E", "C#m", "F#m", "B7"]}, {"nombre": "parte5", "acordes": ["F#7", "B7"]}], "orden_partes": [0, 1, 2, 3, 3, 3, 0, 0, 1, 4]}, "letras": [["Nadie me dari", "a dos", " dias de vid", "a /np"], ["or la forma en qu", "e me encuentro hoy", "; /nt"], ["engo la mira", "da de", " ansiedad vac\u00ed", "a, /n"], ["ya no hay alegri", "a donde voy", ". /nP"], ["enas y pe", "nas y pe", "nas ", " /nh"], ["ay dentro de m", "i  /n"], ["y ya no se ir", "an  /n"], ["porque a mi la", "do  /ntu no es"], ["tas", ". /nT"], ["e recordar", "e  /nc"], ["omo algo que se f", "ue /ns"], ["olo un sue\u00f1o her", "moso /ny nada m"], ["as. ", "", "", "/n"], ["Si me perdon", "aras, si", " todo olvidar", "as, /n"], ["si tu amor volvi", "era junto a mi", ", /nq"], ["ue feliz ser", "a, y", "a no llorar", "a /n"], ["solo vivir", "a para t", ". "]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "pIhIAxDeOwQ", "delay": 0}]}
+{
+    "cancion": "Penas",
+    "banda": "sandro",
+    "escala": "Em",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "C#m",
+                    "C#m"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "Am",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G#m",
+                    "G#m C#7",
+                    "F#m",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "B7",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "F#m",
+                    "G#m",
+                    "G#m C#7",
+                    "F#m",
+                    "E",
+                    "F#m",
+                    "F#m",
+                    "B7",
+                    "C#m",
+                    "F#m"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "G#m",
+                    "G#m",
+                    "G#m C#7",
+                    "E",
+                    "F#m",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "B7",
+                    "B7",
+                    "C#m",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    "letras": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Esta es una canción en español de rock argentino. /n E",
+            "st ",
+            "e",
+            "s",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "una c",
+            "anció en español de rock argentino. /n T",
+            "recordaré com",
+            "o  algo que fue, sol",
+            "o  un sueño hermoso nada m",
+            "ás./n"
+        ],
+        [
+            "Si m",
+            "e  perdonaras, si t",
+            "odo  olvidaras, si t",
+            "u  amor volviera junto",
+            "mí, qu",
+            "e  feliz sería,",
+            "ya no lloraría, s",
+            "olo  viviría para t",
+            "i. /n"
+        ],
+        [
+            "Penas penas",
+            "pena  hay",
+            "dentr  de mí",
+            "y  no se irán porq",
+            "u  mi lado tú no es",
+            "tás /n Te r",
+            "ecordar  como a",
+            "lg  que fue, solo un su",
+            "eñ  hermoso nada má",
+            "s ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Pen",
+            "a  pe",
+            "na  hay dentro d",
+            "e  mí ya no s",
+            "e  irán porque mi l",
+            "ado  tú no estás",
+            ". /n Te reco",
+            "rdar  como algo que f",
+            "ue,  solo un sueño her",
+            "mos  nada más./n"
+        ],
+        [
+            "Penas pe",
+            "na  pen",
+            "a  hay dentro de m",
+            "í  ya no se irá",
+            "n  porque mi lado tú",
+            "n  estás./n"
+        ],
+        [
+            "Te recordaré c",
+            "om  algo que fue,",
+            "solo un sueño hermoso nad",
+            "más. /n Pen",
+            "a  penas p",
+            "enas. ",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 95,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "pIhIAxDeOwQ",
+            "delay": 0.0
+        }
+    ],
+    "calidad": 1
+}

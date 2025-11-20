@@ -1,1 +1,184 @@
-{"cancion": "Las-colinas-del-amor", "banda": "sandro", "escala": "C", "tempo": 60, "compas_cantidad": 4, "compas_unidad": 4, "acordes": {"partes": [{"nombre": "parte1", "acordes": ["C", "G", "F", "C", "G", "G", "D", "Em", "C", "D", "G", "Em", "B", "Em", "C", "B7", "Em", "C", "D", "G", "D", "Em", "Bm", "C", "D", "G", "G", "D", "Em", "C", "D", "G", "D", "Em", "B", "Em", "C", "B7", "Em", "C", "D", "G", "B7", "Em", "A", "D", "B7", "Em", "C", "Em", "C", "D", "C", "G", "D", "G", "G", "D", "Em", "C", "D", "G", "D", "Em", "B7", "Em", "C", "B7", "Em", "C", "D", "G", "B7", "Em", "A", "D", "B7", "Em", "C", "B7", "Em", "C", "D", "C", "G", "D", "G", "C", "G"]}], "orden_partes": [0]}, "letras": [[], ["El cielo es sie", "mpre azul", "/n"], ["Y el r\u00edo en ", "su vaga", "r/nPregunta por tu am"], ["or", "/nY espera tu lle"], ["gar", "/nNo s\u00e9 por"], ["qu\u00e9 no e", "st\u00e1s", "/nNo s\u00e9 porq"], ["u\u00e9 no es", "t\u00e1s", "", "", "", "", "", "/n"], ["Colinas de", "l amor", "", "/nNos vieron c"], ["amina", "r/nY el olmo "], ["se qued", "\u00f3/n"], ["Sin sombra para da", "r", "/nNo s\u00e9 por"], ["qu\u00e9 no es", "t\u00e1s/n"], ["No s\u00e9 porq", "ue no est", "s/nEl t"], ["iempo, la ge", "nte sa", "luda y va", "/nSonri"], ["endo al prese", "nte/nY "], ["t\u00fa n", "o est\u00e1s ", "t\u00fa ", "no est", "s", "", "", "/n"], ["El viento en s", "u vagar", "", "/nSe lleva "], ["algo de m", "\u00ed/nSu desca"], ["mado anda", "r", "/nMe habla siempre de "], ["ti", "/nNo s\u00e9 por"], ["qu\u00e9 no es", "t\u00e1s/n"], ["No s\u00e9 porq", "ue no est", "s/nEl t"], ["iempo, la ge", "nte sa", "luda y va", "/nSonri"], ["endo al prese", "nte/nY "], ["t\u00fa ", "no est", "s no t", "\u00fa n", "o est\u00e1", "s", "", "", "", "", ""]], "bpm": 80, "etiquetas": [], "medias": [{"tipo": "Youtube", "id": "tdcX09JD6vg", "delay": 0}]}
+{
+    "cancion": "Las-colinas-del-amor",
+    "banda": "sandro",
+    "escala": "C",
+    "tempo": 60,
+    "compas_cantidad": 4,
+    "compas_unidad": 4,
+    "acordes": {
+        "partes": [
+            {
+                "nombre": "parte0",
+                "acordes": [
+                    "Em",
+                    "Em",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Em",
+                    "G",
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "D",
+                    "C",
+                    "C",
+                    "C",
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "Em",
+                    "C",
+                    "B7",
+                    "D",
+                    "G",
+                    "Em",
+                    "B7",
+                    "B7",
+                    "B7",
+                    "B7"
+                ]
+            },
+            {
+                "nombre": "parte2",
+                "acordes": [
+                    "D",
+                    "D",
+                    "D",
+                    "D",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "G",
+                    "G",
+                    "D",
+                    "D",
+                    "Em",
+                    "C",
+                    "B7",
+                    "D",
+                    "G",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em",
+                    "Em"
+                ]
+            }
+        ],
+        "orden_partes": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "letras": [
+        [
+            "espera tu",
+            "lleg",
+            "a /n No sé p",
+            "or  qué no e",
+            "stás,  n",
+            "o  sé por q",
+            "u  no est",
+            "á ",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Col",
+            "ina  de l",
+            "abor  n",
+            "os  vie",
+            "ro  cami",
+            "na ",
+            "el olmo s",
+            "e  qu",
+            "ed  sin",
+            "sombr  para",
+            "da",
+            "r /n No sé po",
+            "r  qué no e",
+            "stás  n",
+            "o  sé por qu",
+            "no estás /n El",
+            "tiemp  la ge",
+            "nt  saluda",
+            "v  sonriendo",
+            "a  presente t",
+            "ú  no estás",
+            "tú n",
+            "est",
+            "á ",
+            "/n"
+        ],
+        [
+            "El vien",
+            "t  en su v",
+            "aga ",
+            "s  lleva al",
+            "g  de m",
+            "í /n S",
+            "u  descamado",
+            "anda  m",
+            "e  habl",
+            "a  siempre d",
+            "e  ti/n"
+        ],
+        [
+            "No sé po",
+            "qué no es",
+            "tás  n",
+            "o  sé por qué",
+            "n estás /n El t",
+            "iemp  la ge",
+            "nt  saluda v",
+            "a  sonriendo a",
+            "l  presente t",
+            "ú  no estás,",
+            "no, tú no e",
+            "stá ",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "bpm": 135,
+    "etiquetas": [],
+    "medias": [
+        {
+            "tipo": "Youtube",
+            "id": "tdcX09JD6vg",
+            "delay": 25090.0
+        }
+    ],
+    "calidad": 1
+}

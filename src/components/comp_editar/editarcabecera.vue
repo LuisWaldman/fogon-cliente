@@ -3,6 +3,7 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import editarescala from './editarescala.vue'
 import editararchivo from './editararchivo.vue'
 import editarmedias from './editarmedias.vue'
+import editaryoutube from './editarYoutube.vue'
 import editartiempo from './editartiempo.vue'
 import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
 import SpanSilabas from './spanSilabas.vue'
@@ -217,11 +218,17 @@ function DescargarJSON() {
       "
     >
       <editarmedias
-        v-if="viendo == 'medias'"
+        v-if="viendo == 'medias' && appStore.perfil.ModoDesarrollador"
         :cancion="cancion"
         :origen="origen"
         @cerrar="clickCerrar"
       ></editarmedias>
+      <editaryoutube
+        v-if="viendo == 'medias'"
+        :cancion="cancion"
+        :origen="origen"
+        @cerrar="clickCerrar"
+      ></editaryoutube>
       <editararchivo
         v-if="viendo == 'archivo'"
         @cerrar="clickCerrar"
