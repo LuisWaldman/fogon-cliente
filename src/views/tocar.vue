@@ -194,6 +194,9 @@ function GetStyleOverlay() {
 }
 
 function GetStyleSecuencia() {
+  if (!vista.value.viendoSecuencia) {
+    return `height: 0px;`
+  }
   return `height: ${vista.value.anchoParte}px;`
 }
 
