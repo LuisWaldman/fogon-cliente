@@ -176,7 +176,6 @@ function onTextareaScroll() {
 }
 
 @media (max-width: 768px) {
-  
   .divTextConteiner {
     width: 700px;
   }

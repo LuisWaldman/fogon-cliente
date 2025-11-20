@@ -123,10 +123,7 @@ export class ReproductorConectado extends Reproductor {
           `Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time inicio ${sincro.timeInicio} con diferencia de ${dif} ms`,
         )
         appStore.sesSincroCancion.timeInicio = sincro.timeInicio
-        this.cliente.sincronizarReproduccion(
-          appStore.sesSincroCancion.desdeCompas,
-          sincro.timeInicio,
-        )
+        this.cliente.sincronizarReproduccion(0, sincro.timeInicio)
       }
     }
   }

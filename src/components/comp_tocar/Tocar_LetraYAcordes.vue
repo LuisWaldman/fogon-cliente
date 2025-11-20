@@ -188,7 +188,7 @@ defineExpose({ Actualizar })
                 en_compas: parte.nroCompas === compas,
               }"
             >
-              {{ parte.letra }} 
+              {{ parte.letra }}
             </div>
           </div>
           <div class="break" v-if="parte.conEnter"></div>

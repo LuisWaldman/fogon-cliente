@@ -38,14 +38,12 @@ function ActualizarCancion(cancion: Cancion) {
   )
 }
 
-
-
 watch(
   () => props.compas,
   () => {
     const configPantalla = pantalla.getConfiguracionPantalla()
     if (configPantalla.AutoScroll === false) return
-    
+
     // Centrar el texto que está sonando usando el DOM
     scrollToCurrentChord()
   },
@@ -122,7 +120,11 @@ defineExpose({ Actualizar })
           class="renglonDisplay"
           v-for="(renglon, index) in verso.renglonesDisplay"
           :key="index"
-          :style="{ position: 'relative', paddingTop: '30px', minHeight: '60px' }"
+          :style="{
+            position: 'relative',
+            paddingTop: '30px',
+            minHeight: '60px',
+          }"
         >
           <!-- Contenedor para acordes con altura fija -->
           <div class="acordes-container">
@@ -134,7 +136,7 @@ defineExpose({ Actualizar })
                 top: '0px',
                 whiteSpace: 'nowrap',
                 textAlign: 'center',
-                minWidth: '20px'
+                minWidth: '20px',
               }"
               @click="clickCompas(acorde.compas)"
               :key="acordeIndex"
@@ -146,7 +148,10 @@ defineExpose({ Actualizar })
           </div>
 
           <!-- Contenedor para letras -->
-          <div class="divletra" style="display: flex; position: relative; z-index: 1;">
+          <div
+            class="divletra"
+            style="display: flex; position: relative; z-index: 1"
+          >
             <div
               v-for="(parte, parteIndex) in renglon.partes"
               :class="{ en_compas: parte.compas === compas }"

@@ -144,12 +144,12 @@ function arreglartexto(texto: string): string {
       v-if="appStore.listaReproduccion.length > 0"
     >
       ⏭️
-  </div>
+    </div>
     <div
-      class="  playlist-container"
+      class="playlist-container"
       v-if="appStore.listaReproduccion.length > 0"
     >
-      <button style="margin-top: 10px;" @click="togglePlaylist">📋</button>
+      <button style="margin-top: 10px" @click="togglePlaylist">📋</button>
       <div class="playlist-dropdown" v-if="showPlaylist">
         <div class="playlist-header">Lista de Reproducción</div>
         <div
