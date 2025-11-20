@@ -376,7 +376,10 @@ const refAdvertencia = ref(true)
     <div class="controladoresTiempo">
       <ControladorTiempo> </ControladorTiempo>
 
-      <MetronomoDesarrollador ref="metronomeRef" v-if="appStore.perfil.ModoDesarrollador"></MetronomoDesarrollador>
+      <MetronomoDesarrollador
+        ref="metronomeRef"
+        v-if="appStore.perfil.ModoDesarrollador"
+      ></MetronomoDesarrollador>
       <Metronomo v-else></Metronomo>
     </div>
   </div>
