@@ -169,8 +169,8 @@ function cambiar(id: number, idx: number = 0) {
   }
   .beat {
     font-size: 14px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 2px;
+    padding-right: 2px;
     margin: 2px;
   }
   .divPrevia {

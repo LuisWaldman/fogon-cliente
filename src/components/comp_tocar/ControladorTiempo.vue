@@ -121,8 +121,30 @@ function arreglartexto(texto: string): string {
       >
         ⏹️
       </button>
-      <button
-        class="boton_controller boton_controllerplay"
+     
+    </div>
+    <table
+      width="100%"
+      style="table-layout: fixed;"
+      margin="0"
+    >
+      <tbody>
+        <tr>
+          <td :colspan="appStore.cancion?.totalCompases">
+            <input
+              type="range"
+              min="-1"
+              :max="appStore.cancion?.totalCompases"
+              v-model="currentCompas"
+              @input="updateCompas()"
+              class="rango_compas"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+     <button
+        class="boton_controller boton_controllerplay ocultocelu"
         @click="next"
         v-if="appStore.listaReproduccion.length > 0"
       >
@@ -161,27 +183,6 @@ function arreglartexto(texto: string): string {
           </div>
         </div>
       </div>
-    </div>
-    <table
-      width="100%"
-      style="table-layout: fixed; margin-left: 12px"
-      margin="0"
-    >
-      <tbody>
-        <tr>
-          <td :colspan="appStore.cancion?.totalCompases">
-            <input
-              type="range"
-              min="-1"
-              :max="appStore.cancion?.totalCompases"
-              v-model="currentCompas"
-              @input="updateCompas()"
-              class="rango_compas"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
 
     <span class="spnTiempo"
       >{{ tiempoActual }}
@@ -234,6 +235,7 @@ function arreglartexto(texto: string): string {
 
 .boton_controllerplay {
   font-size: 30px !important;
+  
 }
 
 .spnTiempo {
@@ -349,6 +351,8 @@ function arreglartexto(texto: string): string {
     font-size: 12px;
     width: 28px;
     height: 28px;
+    padding: 0px;
+    margin: 0px;
   }
   .boton_controllerplay {
     font-size: 16px !important;
@@ -379,6 +383,18 @@ function arreglartexto(texto: string): string {
 @media (max-width: 600px) {
   .partes_control {
     display: none !important;
+  }
+  .spnTiempo {
+    display: none !important;
+  }
+  .ocultocelu {
+    display: none !important;
+  }
+  .rango_compas {
+    margin-left: 0px !important;
+  }
+  .controladortiempo {
+    margin-left: 0px;
   }
 }
 </style>
