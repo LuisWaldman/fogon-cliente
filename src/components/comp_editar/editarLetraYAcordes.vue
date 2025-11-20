@@ -4,6 +4,7 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 import { CompasEditable } from './compaseditable'
 import editSecuencia from './editSecuencia.vue'
+import editAcordes from './editAcordesCancion.vue'
 import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
@@ -122,6 +123,7 @@ function estiloVistaSecundaria() {
       </div>
     </div>
     <div :style="estiloVistaSecundaria()">
+      <editAcordes></editAcordes>
       <editSecuencia
         ref="ctrlSecuencia"
         :cancion="cancion"
