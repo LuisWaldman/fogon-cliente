@@ -97,6 +97,10 @@ function handleResultados(canciones: ItemIndiceCancion[]) {
   viendoCanciones.value = canciones
   appStore.busqueda = canciones
 }
+function borrarResultados() {
+  appStore.busqueda = []
+  Cargar()
+}
 
 async function clickOpcion(viendostr: string) {
   if (viendo.value === viendostr) return
@@ -408,6 +412,7 @@ async function AgregarALista(index: number, listaseleccionada: string) {
       <!-- Componente de búsqueda -->
       <busquedaCanciones
         @resultados="handleResultados"
+        @borrar="borrarResultados"
         v-if="viendo === 'inicio'"
       />
 

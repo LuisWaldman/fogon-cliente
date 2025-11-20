@@ -19,9 +19,13 @@ helper.latino = appStore.perfil.CifradoLatino
 
 // Definir emisores
 const emit = defineEmits<{
-  resultados: [canciones: ItemIndiceCancion[]]
+  resultados: [canciones: ItemIndiceCancion[]],
+  borrar: [void],
 }>()
-
+function Borrar() {
+  busqueda.value = ''
+  emit('borrar')
+}
 const refResultadoCanciones = ref<ItemIndiceCancion[]>(
   appStore.aplicacion.indiceHelper.BusquedaCanciones,
 )
@@ -239,7 +243,7 @@ function VerFiltros() {
         type="text"
         v-model="busqueda"
         placeholder="Buscar..."
-        style="width: 60%"
+        class="input-busqueda"
         @keydown.enter="buscarCanciones()"
       />
       {{ refEstadoBusqueda }}
@@ -255,6 +259,7 @@ function VerFiltros() {
     >
       <button @click="buscarCanciones()">Buscar</button>
       <button @click="VerFiltros()">Filtros</button>
+      <button @click="Borrar()" v-if="appStore.busqueda.length > 0">Borrar</button>
     </div>
 
     <div
@@ -604,5 +609,16 @@ function VerFiltros() {
   border-radius: 4px;
   background-color: white;
   color: black;
+}
+
+.input-busqueda {
+  width: 60%;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .input-busqueda {
+    width: 90%;
+  }
 }
 </style>
