@@ -18,14 +18,6 @@ const letras = ref([] as string[][])
 watch(
   () => props.compas,
   (newCompas) => {
-    const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
-    const configPantalla = pantalla.getConfiguracionPantalla()
-    if (configPantalla.AutoScroll === false) return
-    const tamanioLetra = configPantalla.tamanioLetra
-    let ve = renglon * tamanioLetra * 2
-    ve -= tamanioLetra * 20
-    const nuevaPos = Math.max(ve, 0)
-    moverScroll(nuevaPos)
 
     let totalCompases = 0
     for (let i = 0; i < props.cancion.letras.renglones.length; i++) {
@@ -41,6 +33,15 @@ watch(
       }
       totalCompases += compasesxparte
     }
+    const configPantalla = pantalla.getConfiguracionPantalla()
+    if (configPantalla.AutoScroll === false) return
+    const renglon = props.cancion.letras.RenglonDelCompas(newCompas)
+    const tamanioLetra = configPantalla.tamanioLetra
+    let ve = renglon * tamanioLetra * 2
+    ve -= tamanioLetra * 20
+    const nuevaPos = Math.max(ve, 0)
+    moverScroll(nuevaPos)
+
   },
 )
 
