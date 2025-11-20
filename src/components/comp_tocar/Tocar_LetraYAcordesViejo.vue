@@ -1,0 +1,200 @@
+<script setup lang="ts">
+import { ref, watch } from 'vue'
+import { Cancion } from '../../modelo/cancion/cancion'
+import { Pantalla } from '../../modelo/pantalla'
+import { Display } from '../../modelo/display/display'
+import { HelperDisplay } from '../../modelo/display/helperDisplay'
+import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
+
+const props = defineProps<{
+  compas: number
+  cancion: Cancion
+}>()
+const pantalla = new Pantalla()
+const configuracionPantalla = pantalla.getConfiguracionPantalla()
+const letraDiv = ref<HTMLElement | null>(null) // Ref to the div
+const renglones = ref([] as string[])
+const displayRef = ref(new Display(configuracionPantalla.columnas))
+const helperNombreAcordes = HelperDisplayAcordesLatino.getInstance()
+const appStore = useAppStore()
+helperNombreAcordes.latino = appStore.perfil.CifradoLatino
+
+const emit = defineEmits(['clickCompas'])
+function clickCompas(compas: number) {
+  emit('clickCompas', compas)
+}
+watch(
+  () => props.cancion,
+  (cancion: Cancion) => {
+    ActualizarCancion(cancion)
+  },
+)
+const helperDisplay = new HelperDisplay()
+function ActualizarCancion(cancion: Cancion) {
+  displayRef.value = helperDisplay.getDisplay(
+    cancion,
+    configuracionPantalla.columnas,
+  )
+}
+
+function CalcularRenglon(newCompas: number): number {
+  let renglon = 0
+  let encontrado = false
+  for (let i = 0; i < displayRef.value.Versos.length; i++) {
+    const verso = displayRef.value.Versos[i]
+    for (let j = 0; j < verso.renglonesDisplay.length; j++) {
+      for (let k = 0; k < verso.renglonesDisplay[j].partes.length; k++) {
+        const partes = verso.renglonesDisplay[j].partes[k]
+        if (partes.compas === newCompas) {
+          encontrado = true
+          return renglon < 3 ? 0 : renglon - 3
+        }
+      }
+      renglon++
+    }
+    if (encontrado) break
+  }
+  return renglon
+}
+
+watch(
+  () => props.compas,
+  (newCompas) => {
+    const renglon = CalcularRenglon(newCompas)
+    const configPantalla = pantalla.getConfiguracionPantalla()
+    if (configPantalla.AutoScroll === false) return
+    const ScrollTo =
+      renglon *
+      (configuracionPantalla.tamanioLetra +
+        configuracionPantalla.tamanioAcorde) *
+      configuracionPantalla.factorScroll
+    moverScroll(ScrollTo)
+  },
+)
+
+function moverScroll(posX: number) {
+  letraDiv.value?.scrollTo({ top: posX, behavior: 'smooth' })
+}
+
+function styleDivTocar() {
+  return {
+    height: pantalla.getAltoPantalla() + 'px',
+  }
+}
+let yaActualizado = false
+function Actualizado() {
+  if (yaActualizado) return false
+  yaActualizado = true
+  if (
+    props.cancion.letras.renglones.length > 0 &&
+    renglones.value.length === 0
+  ) {
+    ActualizarCancion(props.cancion)
+  }
+  return false
+}
+function Actualizar() {
+  ActualizarCancion(props.cancion)
+}
+
+defineExpose({ Actualizar })
+</script>
+<template>
+  <div>
+    <div v-if="Actualizado()">.. No cargada ..</div>
+    <div
+      style="position: relative"
+      class="componenteMusical"
+      :style="styleDivTocar()"
+      ref="letraDiv"
+    >
+      <div
+        v-for="(verso, index) in displayRef.Versos"
+        :key="index"
+        style="position: relative"
+      >
+        <div
+          class="renglonDisplay"
+          v-for="(renglon, index) in verso.renglonesDisplay"
+          :key="index"
+          :style="{ position: 'relative' }"
+        >
+          <div class="divletra" style="display: flex">
+            <div
+              v-for="(parte, parteIndex) in renglon.partes"
+              :class="{ en_compas: parte.compas === compas }"
+              :key="parteIndex"
+              @click="clickCompas(parte.compas)"
+            >
+              {{ parte.contenido }}
+            </div>
+          </div>
+
+          <div
+            v-for="(acorde, acordeIndex) in renglon.acordes"
+            :style="{
+              'z-index': '-1',
+              position: 'absolute',
+              left: acorde.left + 'px',
+              top: '-' + (configuracionPantalla.tamanioAcorde + 2) + 'px',
+            }"
+            @click="clickCompas(acorde.compas)"
+            :key="acordeIndex"
+            :class="{ en_compas: acorde.compas === compas }"
+            class="acordediv"
+          >
+            {{ helperNombreAcordes.GetAcorde(acorde.contenido) }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.resumen {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+}
+.componenteMusical {
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  scrollbar-color: black transparent;
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.divletra {
+  font-size: var(--tamanio-letra);
+  color: white;
+  margin-bottom: var(--tamanio-acorde);
+  width: max-content;
+  min-width: 100%;
+}
+.acordediv {
+  font-size: var(--tamanio-acorde);
+  margin: 1px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #a9a8f6;
+  margin-right: 4px;
+}
+
+.en_compas {
+  color: rgb(121, 102, 233);
+}
+
+.acordediv.en_compas {
+  color: rgb(194, 6, 6) !important;
+  font-weight: bold;
+  border: 1px solid rgb(194, 6, 6);
+  background-color: white;
+}
+
+.renglonDisplay {
+  z-index: 10;
+}
+</style>

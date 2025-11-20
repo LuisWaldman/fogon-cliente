@@ -54,11 +54,14 @@ function stopRafLoop() {
 }
 
 function VerEstado() {
-    if (appStore.estadoReproduccion === 'Reproduciendo' || appStore.estadoReproduccion === 'Iniciando') {
-      startRafLoop()
-    } else {
-      stopRafLoop()
-    }
+  if (
+    appStore.estadoReproduccion === 'Reproduciendo' ||
+    appStore.estadoReproduccion === 'Iniciando'
+  ) {
+    startRafLoop()
+  } else {
+    stopRafLoop()
+  }
 }
 VerEstado()
 // Watch for changes in playback state and start/stop RAF loop
