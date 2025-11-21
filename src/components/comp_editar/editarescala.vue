@@ -76,7 +76,17 @@ function clickConfirmarCambiarEscala() {
       <thead>
         <tr>
           <th></th>
-          <th v-for="(nota, index) in Escala" :key="index">
+          <th 
+            v-for="(nota, index) in Escala" 
+            :key="index"
+            :class="{
+              'tonicaprincipal': index === 0,
+              'tonicarelativa': index === 2 || index === 5,
+              'subdominante': index === 1 || index === 3,
+              'dominantesecundaria': index === 6,
+              'dominante': index === 4
+            }"
+          >
             {{ labelGradosEscala[index] }} - {{ nota }}
           </th>
           <th></th>
@@ -85,7 +95,17 @@ function clickConfirmarCambiarEscala() {
       <tbody>
         <tr>
           <td>Notas</td>
-          <td v-for="(nota, index) in NotasPosicionadasEscala" :key="index">
+          <td 
+            v-for="(nota, index) in NotasPosicionadasEscala" 
+            :key="index"
+            :class="{
+              'tonicaprincipal': index === 0,
+              'tonicarelativa': index === 2 || index === 5,
+              'subdominante': index === 1 || index === 3,
+              'dominantesecundaria': index === 6,
+              'dominante': index === 4
+            }"
+          >
             <span
               class="notaPosicionada"
               v-for="(notaPosicionada, posIndex) in nota"
@@ -115,7 +135,17 @@ function clickConfirmarCambiarEscala() {
     >
           </td>
 
-          <td v-for="(nota, index) in NuevaEscala" :key="index">
+          <td 
+            v-for="(nota, index) in NuevaEscala" 
+            :key="index"
+            :class="{
+              'tonicaprincipal': index === 0,
+              'tonicarelativa': index === 2 || index === 5,
+              'subdominante': index === 1 || index === 3,
+              'dominantesecundaria': index === 6,
+              'dominante': index === 4
+            }"
+          >
             {{ labelGradosEscala[index] }} - {{ nota }}
           </td>
           <td></td>
@@ -125,6 +155,13 @@ function clickConfirmarCambiarEscala() {
           <td
             v-for="(nota, index) in NuevasNotasPosicionadasEscala"
             :key="index"
+            :class="{
+              'tonicaprincipal': index === 0,
+              'tonicarelativa': index === 2 || index === 5,
+              'subdominante': index === 1 || index === 3,
+              'dominantesecundaria': index === 6,
+              'dominante': index === 4
+            }"
           >
             <span
               class="notaPosicionada"
@@ -151,7 +188,73 @@ th {
   font-weight: bold;
 }
 th {
-  background-color: #353333;
   color: #a9a8f6;
+}
+
+/* Modificadores para cabeceras (th) */
+th.tonicaprincipal {
+  background: 
+    radial-gradient(ellipse at center bottom, transparent 60%, #DAA520 100%),
+    linear-gradient(to bottom, #DAA520, transparent 70%) !important;
+  color: #FFF !important;
+  font-weight: bold;
+}
+
+th.tonicarelativa {
+  background: 
+    radial-gradient(ellipse at center bottom, transparent 60%, #B8860B 100%),
+    linear-gradient(to bottom, #B8860B, transparent 70%) !important;
+  color: #FFF !important;
+  font-weight: bold;
+}
+
+th.subdominante {
+  background: 
+    radial-gradient(ellipse at center bottom, transparent 60%, #B8651B 100%),
+    linear-gradient(to bottom, #B8651B, transparent 70%) !important;
+  color: #FFF !important;
+  font-weight: bold;
+}
+
+th.dominantesecundaria {
+  background: 
+    radial-gradient(ellipse at center bottom, transparent 60%, #CC4125 100%),
+    linear-gradient(to bottom, #CC4125, transparent 70%) !important;
+  color: #FFF !important;
+  font-weight: bold;
+}
+
+th.dominante {
+  background: 
+    radial-gradient(ellipse at center bottom, transparent 60%, #8B0000 100%),
+    linear-gradient(to bottom, #8B0000, transparent 70%) !important;
+  color: #FFF !important;
+  font-weight: bold;
+}
+
+/* Modificadores para celdas (td) */
+td.tonicaprincipal {
+  background: linear-gradient(to center, rgba(218, 165, 32, 0.1), transparent);
+  border: 2px solid #DAA520;
+}
+
+td.tonicarelativa {
+  background: linear-gradient(to center, rgba(184, 134, 11, 0.1), transparent);
+  border: 2px solid #B8860B;
+}
+
+td.subdominante {
+  background: linear-gradient(to center, rgba(210, 105, 30, 0.1), transparent);
+  border: 2px solid #B8651B;
+}
+
+td.dominantesecundaria {
+  background: linear-gradient(to center, rgba(205, 92, 92, 0.1), transparent);
+  border: 2px solid #CC4125;
+}
+
+td.dominante {
+  background: linear-gradient(to center, rgba(160, 82, 45, 0.1), transparent);
+  border: 2px solid #8B0000;
 }
 </style>
