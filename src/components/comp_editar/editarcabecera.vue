@@ -529,8 +529,8 @@ function DescargarJSON() {
 }
 
 .edintandoCtrl {
-  border: 2px solid #cfda41;
-  background: linear-gradient(135deg, #000000 0%, #cfda41 100%);
+  border: 2px solid #92974e;
+  background: linear-gradient(55deg, #000000 50%, #cfda41 100%);
 }
 .titulocancion {
   width: 400px;
