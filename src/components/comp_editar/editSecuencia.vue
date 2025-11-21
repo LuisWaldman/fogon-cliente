@@ -124,7 +124,6 @@ defineExpose({ Actualizar })
     .. No cargada ..
   </div>
   <div>
-
     <button v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia">
       AGREGAR SECUENCIA
     </button>

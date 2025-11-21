@@ -67,24 +67,21 @@ function clickConfirmarCambiarEscala() {
 }
 </script>
 <template>
-  <div>
-    
-    
-  </div>
+  <div></div>
   <div>
     <table style="border-collapse: collapse; width: 100%">
       <thead>
         <tr>
           <th></th>
-          <th 
-            v-for="(nota, index) in Escala.slice(0, 7)" 
+          <th
+            v-for="(nota, index) in Escala.slice(0, 7)"
             :key="index"
             :class="{
-              'tonicaprincipal': index === 0,
-              'tonicarelativa': index === 2 || index === 5,
-              'subdominante': index === 1 || index === 3,
-              'dominantesecundaria': index === 6,
-              'dominante': index === 4
+              tonicaprincipal: index === 0,
+              tonicarelativa: index === 2 || index === 5,
+              subdominante: index === 1 || index === 3,
+              dominantesecundaria: index === 6,
+              dominante: index === 4,
             }"
           >
             {{ labelGradosEscala[index] }} - {{ nota }}
@@ -94,15 +91,15 @@ function clickConfirmarCambiarEscala() {
       <tbody>
         <tr>
           <td>Notas</td>
-          <td 
-            v-for="(nota, index) in NotasPosicionadasEscala.slice(0, 7)" 
+          <td
+            v-for="(nota, index) in NotasPosicionadasEscala.slice(0, 7)"
             :key="index"
             :class="{
-              'tonicaprincipal': index === 0,
-              'tonicarelativa': index === 2 || index === 5,
-              'subdominante': index === 1 || index === 3,
-              'dominantesecundaria': index === 6,
-              'dominante': index === 4
+              tonicaprincipal: index === 0,
+              tonicarelativa: index === 2 || index === 5,
+              subdominante: index === 1 || index === 3,
+              dominantesecundaria: index === 6,
+              dominante: index === 4,
             }"
           >
             <span
@@ -127,22 +124,23 @@ function clickConfirmarCambiarEscala() {
               </option>
             </select>
             <button
-      class="lblCabecera"
-      v-if="toEscala != desdeEscala"
-      @click="clickConfirmarCambiarEscala"
-      >✔️</button
-    >
+              class="lblCabecera"
+              v-if="toEscala != desdeEscala"
+              @click="clickConfirmarCambiarEscala"
+            >
+              ✔️
+            </button>
           </td>
 
           <td
             v-for="(nota, index) in NuevasNotasPosicionadasEscala.slice(0, 7)"
             :key="index"
             :class="{
-              'tonicaprincipal': index === 0,
-              'tonicarelativa': index === 2 || index === 5,
-              'subdominante': index === 1 || index === 3,
-              'dominantesecundaria': index === 6,
-              'dominante': index === 4
+              tonicaprincipal: index === 0,
+              tonicarelativa: index === 2 || index === 5,
+              subdominante: index === 1 || index === 3,
+              dominantesecundaria: index === 6,
+              dominante: index === 4,
             }"
           >
             <span
@@ -175,68 +173,68 @@ th {
 
 /* Modificadores para cabeceras (th) */
 th.tonicaprincipal {
-  background: 
-    radial-gradient(ellipse at center bottom, transparent 60%, #DAA520 100%),
-    linear-gradient(to bottom, #DAA520, transparent 70%) !important;
-  color: #FFF !important;
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #daa520 100%),
+    linear-gradient(to bottom, #daa520, transparent 70%) !important;
+  color: #fff !important;
   font-weight: bold;
 }
 
 th.tonicarelativa {
-  background: 
-    radial-gradient(ellipse at center bottom, transparent 60%, #B8860B 100%),
-    linear-gradient(to bottom, #B8860B, transparent 70%) !important;
-  color: #FFF !important;
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #b8860b 100%),
+    linear-gradient(to bottom, #b8860b, transparent 70%) !important;
+  color: #fff !important;
   font-weight: bold;
 }
 
 th.subdominante {
-  background: 
-    radial-gradient(ellipse at center bottom, transparent 60%, #B8651B 100%),
-    linear-gradient(to bottom, #B8651B, transparent 70%) !important;
-  color: #FFF !important;
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #b8651b 100%),
+    linear-gradient(to bottom, #b8651b, transparent 70%) !important;
+  color: #fff !important;
   font-weight: bold;
 }
 
 th.dominantesecundaria {
-  background: 
-    radial-gradient(ellipse at center bottom, transparent 60%, #CC4125 100%),
-    linear-gradient(to bottom, #CC4125, transparent 70%) !important;
-  color: #FFF !important;
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #cc4125 100%),
+    linear-gradient(to bottom, #cc4125, transparent 70%) !important;
+  color: #fff !important;
   font-weight: bold;
 }
 
 th.dominante {
-  background: 
-    radial-gradient(ellipse at center bottom, transparent 60%, #8B0000 100%),
-    linear-gradient(to bottom, #8B0000, transparent 70%) !important;
-  color: #FFF !important;
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #8b0000 100%),
+    linear-gradient(to bottom, #8b0000, transparent 70%) !important;
+  color: #fff !important;
   font-weight: bold;
 }
 
 /* Modificadores para celdas (td) */
 td.tonicaprincipal {
   background: linear-gradient(to center, rgba(218, 165, 32, 0.1), transparent);
-  border: 2px solid #DAA520;
+  border: 2px solid #daa520;
 }
 
 td.tonicarelativa {
   background: linear-gradient(to center, rgba(184, 134, 11, 0.1), transparent);
-  border: 2px solid #B8860B;
+  border: 2px solid #b8860b;
 }
 
 td.subdominante {
   background: linear-gradient(to center, rgba(210, 105, 30, 0.1), transparent);
-  border: 2px solid #B8651B;
+  border: 2px solid #b8651b;
 }
 
 td.dominantesecundaria {
   background: linear-gradient(to center, rgba(205, 92, 92, 0.1), transparent);
-  border: 2px solid #CC4125;
+  border: 2px solid #cc4125;
 }
 
 td.dominante {
   background: linear-gradient(to center, rgba(160, 82, 45, 0.1), transparent);
-  border: 2px solid #8B0000;
+  border: 2px solid #8b0000;
 }
 </style>

@@ -133,10 +133,7 @@ function clickEditar() {
               object-fit: cover;
             "
           />
-          <span
-            v-if="appStore.rolSesion === 'director'"
-            class="director-badge"
-          >
+          <span v-if="appStore.rolSesion === 'director'" class="director-badge">
             🪄
           </span>
         </button>

@@ -136,32 +136,26 @@ function estiloVistaSecundaria() {
         </div>
       </div>
     </div>
-    <div :style="{width: 100 - pantalla.getConfiguracionPantalla().anchoPrincipal + '%'}">
-      <div >
-      
-    <button @click="cambiarVistaLateral('acordes')">🎸 ACORDES</button>
-    <button @click="cambiarVistaLateral('partes')">
-      PARTES
-    </button>
-    <button @click="cambiarVistaLateral('secuencia')">
-      SECUENCIA
-    </button>
-
+    <div
+      :style="{
+        width: 100 - pantalla.getConfiguracionPantalla().anchoPrincipal + '%',
+      }"
+    >
+      <div>
+        <button @click="cambiarVistaLateral('acordes')">🎸 ACORDES</button>
+        <button @click="cambiarVistaLateral('partes')">PARTES</button>
+        <button @click="cambiarVistaLateral('secuencia')">SECUENCIA</button>
       </div>
       <div :style="estiloVistaSecundaria()">
-
-      <editAcordes
-        v-if="vistaLateral === 'acordes'"
-      ></editAcordes>
-      <editSecuencia
-      v-if="vistaLateral === 'secuencia'"
-        ref="ctrlSecuencia"
-        :cancion="cancion"
-        :compas="editandoCompas"
-      ></editSecuencia>
+        <editAcordes v-if="vistaLateral === 'acordes'"></editAcordes>
+        <editSecuencia
+          v-if="vistaLateral === 'secuencia'"
+          ref="ctrlSecuencia"
+          :cancion="cancion"
+          :compas="editandoCompas"
+        ></editSecuencia>
+      </div>
     </div>
-    </div>
-    
   </div>
 </template>
 

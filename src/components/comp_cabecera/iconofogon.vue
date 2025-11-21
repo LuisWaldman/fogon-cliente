@@ -61,7 +61,7 @@ function clickFogon() {
               "
               alt="Profile image"
             />
-            
+
             <span
               v-if="user.RolSesion === 'director'"
               class="director-badge-icon"
