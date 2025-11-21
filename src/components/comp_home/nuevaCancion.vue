@@ -52,8 +52,8 @@ const sonetoSegundaParte: string[] = [
 ]
 const parteMusical = ['', '', '', '/n']
 const modeloLetraId = ref(0)
-const reftema = ref('')
-const refbanda = ref('')
+const reftema = ref('tema')
+const refbanda = ref('banda')
 const refBPM = ref(80)
 const refcompas = ref('4_4')
 const funciones = [
@@ -309,9 +309,7 @@ function chgPuente() {
       </div>
 
       <div class="modal-footer">
-        <button @click="emit('cerrar')" class="btn-secondary">
-          Cancelar
-        </button>
+        <button @click="emit('cerrar')" class="btn-secondary">Cancelar</button>
         <button @click="nuevaCancion()" class="btn-primary">
           ➕ Crear Canción
         </button>
@@ -608,46 +606,47 @@ function chgPuente() {
 }
 
 /* Responsive design */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .modal-content {
     width: 95%;
     margin: 20px;
     max-height: calc(100vh - 40px);
   }
-  
+
   .modal-header,
   .modal-body,
   .modal-footer {
     padding: 16px;
   }
-  
+
   .modal-header h2 {
     font-size: 1.3rem;
   }
-  
+
   .input-row {
     flex-direction: column;
     gap: 0;
   }
-  
+
   .input-group.half {
     margin-bottom: 16px;
   }
-  
+
   .option-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 6px;
   }
-  
+
   .modal-footer {
     flex-direction: column-reverse;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     width: 100%;
   }
-}@media (max-width: 480px) {
+}
+@media (max-width: 480px) {
   .modal-content {
     width: 100%;
     height: 100%;
@@ -655,7 +654,7 @@ function chgPuente() {
     border-radius: 0;
     margin: 0;
   }
-  
+
   .modal-header {
     border-radius: 0;
   }
