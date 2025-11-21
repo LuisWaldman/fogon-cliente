@@ -57,9 +57,6 @@ function changeToEscala() {
 }
 
 const emit = defineEmits(['cerrar'])
-function clickCancelarCambiarEscala() {
-  emit('cerrar', false)
-}
 function clickConfirmarCambiarEscala() {
   helperMuisca.ActualizarEscala(
     appStore.editandocancion,
@@ -71,15 +68,8 @@ function clickConfirmarCambiarEscala() {
 </script>
 <template>
   <div>
-    <span class="lblCabecera" @click="clickCancelarCambiarEscala"
-      >[cancelar]</span
-    >
-    <span
-      class="lblCabecera"
-      v-if="toEscala != desdeEscala"
-      @click="clickConfirmarCambiarEscala"
-      >[confirmar]</span
-    >
+    
+    
   </div>
   <div>
     <table style="border-collapse: collapse; width: 100%">
@@ -117,6 +107,12 @@ function clickConfirmarCambiarEscala() {
                 {{ nota }}
               </option>
             </select>
+            <button
+      class="lblCabecera"
+      v-if="toEscala != desdeEscala"
+      @click="clickConfirmarCambiarEscala"
+      >✔️</button
+    >
           </td>
 
           <td v-for="(nota, index) in NuevaEscala" :key="index">
