@@ -16,11 +16,6 @@ const renglones = ref([] as string[])
 const Acordes = ref([] as string[][])
 const CompasAcorde = ref([] as number[][])
 const AcordesLeft = ref([] as number[][])
-const vistaLateral = ref('secuencia')
-function cambiarVistaLateral(vista: string) {
-  vistaLateral.value = vista
-}
-
 watch(
   () => props.cancion,
   (cancion: Cancion) => {
