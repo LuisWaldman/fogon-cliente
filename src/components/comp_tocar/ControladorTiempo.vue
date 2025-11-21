@@ -107,20 +107,20 @@ function arreglartexto(texto: string): string {
         ▶️
       </div>
 
-      <button
-        class="boton_controller"
+      <div
+        class="boton_controllerplay"
         @click="pause"
         v-if="appStore.estadoReproduccion !== 'pausado'"
       >
         ⏸️
-      </button>
-      <button
-        class="boton_controller"
+      </div>
+      <div
+        class="boton_controllerplay"
         @click="stop"
         v-if="appStore.estadoReproduccion !== 'pausado'"
       >
         ⏹️
-      </button>
+      </div>
     </div>
     <table width="100%" style="table-layout: fixed" margin="0">
       <tbody>

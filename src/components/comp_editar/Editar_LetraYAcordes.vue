@@ -16,7 +16,6 @@ const renglones = ref([] as string[])
 const Acordes = ref([] as string[][])
 const CompasAcorde = ref([] as number[][])
 const AcordesLeft = ref([] as number[][])
-
 watch(
   () => props.cancion,
   (cancion: Cancion) => {

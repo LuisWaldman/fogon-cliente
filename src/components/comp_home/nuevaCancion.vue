@@ -52,8 +52,8 @@ const sonetoSegundaParte: string[] = [
 ]
 const parteMusical = ['', '', '', '/n']
 const modeloLetraId = ref(0)
-const reftema = ref('')
-const refbanda = ref('')
+const reftema = ref('tema')
+const refbanda = ref('banda')
 const refBPM = ref(80)
 const refcompas = ref('4_4')
 const funciones = [
@@ -182,172 +182,500 @@ function chgPuente() {
 </script>
 
 <template>
-  <div class="vistaedit">
-    <div class="tituloeditSize">NUEVA CANCION</div>
+  <div class="modal-backdrop" @click="emit('cerrar')">
+    <div class="modal-content" @click.stop>
+      <div class="modal-header">
+        <h2>🎵 Nueva Canción</h2>
+        <button class="close-btn" @click="emit('cerrar')" aria-label="Cerrar">
+          ✕
+        </button>
+      </div>
 
-    <div class="config-row">
-      <span>Tema</span>
+      <div class="modal-body">
+        <div class="form-section">
+          <div class="input-group">
+            <label for="tema">🎤 Tema</label>
+            <input
+              id="tema"
+              type="text"
+              placeholder="Ingrese el título de la canción"
+              v-model="reftema"
+              class="form-input"
+            />
+          </div>
 
-      <input
-        type="text"
-        placeholder="Ingrese el título de la canción"
-        v-model="reftema"
-        width="100%"
-      />
-    </div>
+          <div class="input-group">
+            <label for="banda">🎸 Banda</label>
+            <input
+              id="banda"
+              type="text"
+              placeholder="Ingrese el nombre de la banda"
+              v-model="refbanda"
+              class="form-input"
+            />
+          </div>
+        </div>
 
-    <div class="config-row">
-      <span>Banda</span>
-      <input
-        type="text"
-        placeholder="Ingrese el nombre de la banda"
-        width="100%"
-        v-model="refbanda"
-      />
-    </div>
+        <div class="form-section">
+          <div class="input-row">
+            <div class="input-group half">
+              <label for="bpm">⏱️ Tempo (BPM)</label>
+              <input
+                id="bpm"
+                type="number"
+                v-model="refBPM"
+                min="40"
+                max="240"
+                class="form-input"
+              />
+            </div>
+            <div class="input-group half">
+              <label for="compas">🎼 Compás</label>
+              <select id="compas" v-model="refcompas" class="">
+                <option value="2_4">2/4</option>
+                <option value="3_4">3/4</option>
+                <option value="4_4">4/4</option>
+              </select>
+            </div>
+          </div>
+        </div>
 
-    <div class="config-row">
-      <span>⏱️ TEMPO</span>
-      <input type="number" v-model="refBPM" min="40" max="240" />
-      <select v-model="refcompas">
-        <option value="2_4">2/4</option>
-        <option value="3_4">3/4</option>
-        <option value="4_4">4/4</option>
-      </select>
-    </div>
+        <div class="form-section">
+          <div class="input-row">
+            <div class="input-group half">
+              <label for="modelo">📝 Modelo de Letra</label>
+              <select id="modelo" v-model="modeloLetraId" class="">
+                <option
+                  v-for="(modelo, index) in modeloLetra"
+                  :key="index"
+                  :value="index"
+                >
+                  {{ modelo }}
+                </option>
+              </select>
+            </div>
+            <div class="input-group half">
+              <label>🎼 Escala</label>
+              <SelectEscala v-model="refescala" />
+            </div>
+          </div>
+        </div>
 
-    <div class="config-row">
-      <span>📝 MODELO DE LETRA</span>
-      <select v-model="modeloLetraId">
-        <option
-          v-for="(modelo, index) in modeloLetra"
-          :key="index"
-          :value="index"
-        >
-          {{ modelo }}
-        </option>
-      </select>
-    </div>
+        <div class="form-section">
+          <label class="section-label">🎵 Funciones Armónicas</label>
+          <div class="option-grid">
+            <button
+              v-for="funcion in funciones"
+              :key="funcion"
+              type="button"
+              class="option-btn"
+              :class="{ selected: funcionesSeleccionadas.has(funcion) }"
+              @click="toggleFuncion(funcion)"
+            >
+              {{ funcion }}
+            </button>
+          </div>
+        </div>
 
-    <div class="config-row">
-      🎸 Escala
-      <SelectEscala v-model="refescala" />
-    </div>
-
-    <div class="config-row">
-      <span>Funciones</span>
-      <div class="divFunciones">
-        <div
-          v-for="funcion in funciones"
-          :key="funcion"
-          class="clickeableVista"
-          :class="{ seleccionada: funcionesSeleccionadas.has(funcion) }"
-          @click="toggleFuncion(funcion)"
-        >
-          {{ funcion }}
+        <div class="form-section">
+          <label class="section-label">🎼 Estructura</label>
+          <div class="option-grid">
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: conIntro }"
+              @click="chgIntro()"
+            >
+              Intro
+            </button>
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: conPuente }"
+              @click="chgPuente()"
+            >
+              Puente
+            </button>
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: conOutro }"
+              @click="chgOutro()"
+            >
+              Outro
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="config-row">
-      <span>Con partes</span>
-      <div class="divFunciones">
-        <div
-          class="clickeableVista"
-          :class="{ seleccionada: conIntro }"
-          @click="chgIntro()"
-        >
-          INTRO
-        </div>
-        <div
-          class="clickeableVista"
-          :class="{ seleccionada: conOutro }"
-          @click="chgOutro()"
-        >
-          OUTRO
-        </div>
-        <div
-          class="clickeableVista"
-          :class="{ seleccionada: conPuente }"
-          @click="chgPuente()"
-        >
-          PUENTE
-        </div>
+      <div class="modal-footer">
+        <button @click="emit('cerrar')" class="btn-secondary">Cancelar</button>
+        <button @click="nuevaCancion()" class="btn-primary">
+          ➕ Crear Canción
+        </button>
       </div>
-    </div>
-
-    <div class="botonera">
-      <button @click="nuevaCancion()" class="btnGuardar">
-        ➕ Nueva Cancion
-      </button>
-      <button @click="emit('cerrar')" class="btnGuardar">Cancelar</button>
     </div>
   </div>
 </template>
 <style scoped>
-.seleccionada {
-  font-weight: bold;
-  background-color: rgb(223, 177, 51);
-}
-.vistaedit {
-  font-size: x-large;
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  max-width: 70%;
-  font: 2em;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: rgb(41, 37, 37);
-  color: white;
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
-  border: 3px solid #8b4513;
+  backdrop-filter: blur(4px);
 }
-.config-row {
+
+/* Modal content */
+.modal-content {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 2px solid #6a4c93;
+  color: white;
+}
+
+/* Modal header */
+.modal-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 3px;
-}
-.config-row span {
-  margin-right: 6px;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(106, 76, 147, 0.3);
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  border-radius: 14px 14px 0 0;
+  color: white;
 }
 
-.config-box {
-  align-items: center;
-  margin-right: 20px;
-}
-
-.clickeableVista {
-  cursor: pointer;
-  min-width: 60px;
-  padding: 3px;
-  text-align: center;
-  border: 1px solid #ccc;
-  margin: 5px;
-}
-.tituloeditSize {
-  font-size: x-large;
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-  background-color: rgb(209, 169, 38);
 }
-.botonera {
-  margin-top: 15px;
-  text-align: right;
-}
-.divFunciones {
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #2d2825;
+  padding: 4px 8px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
 }
+
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal body */
+.modal-body {
+  padding: 24px;
+}
+
+/* Form sections */
+.form-section {
+  margin-bottom: 24px;
+}
+
+.section-label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #a78bfa;
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #a78bfa;
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.input-group.half {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Form inputs */
+.form-input,
+.form-select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 16px;
+  border: 2px solid rgba(106, 76, 147, 0.4);
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: white !important;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a78bfa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  background-color: #333333;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+  color: white !important;
+}
+
+.form-select:focus {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238b5cf6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Select dropdown styling */
+.form-select option {
+  background-color: #2a2a2a !important;
+  color: white !important;
+  padding: 8px 16px;
+  border: none;
+  font-size: 1rem;
+}
+
+.form-select option:hover {
+  background-color: #6a4c93 !important;
+  color: white !important;
+}
+
+.form-select option:checked,
+.form-select option:selected {
+  background-color: #8b5cf6 !important;
+  color: white !important;
+  font-weight: 500;
+}
+
+/* Styled selects to match Escala */
+.simple-select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a78bfa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 12px center !important;
+  background-size: 16px !important;
+  padding: 12px 16px !important;
+  padding-right: 40px !important;
+  min-height: 48px !important;
+  background-color: #2a2a2a !important;
+  color: white !important;
+  border: 2px solid rgba(106, 76, 147, 0.4) !important;
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+}
+
+.simple-select:focus {
+  background-color: #333333 !important;
+  color: white !important;
+  border-color: #8b5cf6 !important;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2) !important;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238b5cf6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e") !important;
+}
+
+/* Option grid */
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.option-btn {
+  padding: 10px 16px;
+  border: 2px solid rgba(106, 76, 147, 0.4);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.option-btn:hover {
+  border-color: #8b5cf6;
+  background-color: rgba(139, 92, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+.option-btn.selected {
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  border-color: #6a4c93;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(106, 76, 147, 0.4);
+}
+
+/* Modal footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 24px;
+  border-top: 1px solid rgba(106, 76, 147, 0.3);
+  background-color: rgba(26, 26, 26, 0.5);
+  border-radius: 0 0 14px 14px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(106, 76, 147, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(106, 76, 147, 0.5);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid rgba(106, 76, 147, 0.4);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #6a4c93;
+  transform: translateY(-1px);
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-  .vistaedit {
-    left: 3%;
-    top: 10%;
-    font-size: small;
+  .modal-content {
+    width: 95%;
+    margin: 20px;
+    max-height: calc(100vh - 40px);
   }
-  .botonera {
-    text-align: center;
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 16px;
   }
+
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .input-group.half {
+    margin-bottom: 16px;
+  }
+
+  .option-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 6px;
+  }
+
+  .modal-footer {
+    flex-direction: column-reverse;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .modal-header {
+    border-radius: 0;
+  }
+}
+
+/* Scrollbar styling */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(106, 76, 147, 0.1);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(106, 76, 147, 0.4);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(106, 76, 147, 0.6);
 }
 </style>

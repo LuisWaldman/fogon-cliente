@@ -13,6 +13,11 @@ const props = defineProps<{
 }>()
 const editandoCompas = ref(props.compas)
 
+const vistaLateral = ref('secuencia')
+function cambiarVistaLateral(vista: string) {
+  vistaLateral.value = vista
+}
+
 const compaces = ref<CompasEditable[][]>([])
 const refParteSeleccionada = ref<number>(-1)
 function seleccionarParte(compas: CompasEditable) {
@@ -88,7 +93,7 @@ function estiloVistaPrincipal() {
 }
 
 function estiloVistaSecundaria() {
-  return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: ${pantalla.getAltoPantalla()}px; overflow-x: auto;`
+  return `height: ${pantalla.getAltoPantalla()}px; overflow-x: auto;`
 }
 </script>
 <template>
@@ -131,13 +136,25 @@ function estiloVistaSecundaria() {
         </div>
       </div>
     </div>
-    <div :style="estiloVistaSecundaria()">
-      <editAcordes></editAcordes>
-      <editSecuencia
-        ref="ctrlSecuencia"
-        :cancion="cancion"
-        :compas="editandoCompas"
-      ></editSecuencia>
+    <div
+      :style="{
+        width: 100 - pantalla.getConfiguracionPantalla().anchoPrincipal + '%',
+      }"
+    >
+      <div>
+        <button @click="cambiarVistaLateral('acordes')">🎸 ACORDES</button>
+        <button @click="cambiarVistaLateral('partes')">PARTES</button>
+        <button @click="cambiarVistaLateral('secuencia')">SECUENCIA</button>
+      </div>
+      <div :style="estiloVistaSecundaria()">
+        <editAcordes v-if="vistaLateral === 'acordes'"></editAcordes>
+        <editSecuencia
+          v-if="vistaLateral === 'secuencia'"
+          ref="ctrlSecuencia"
+          :cancion="cancion"
+          :compas="editandoCompas"
+        ></editSecuencia>
+      </div>
     </div>
   </div>
 </template>

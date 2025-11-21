@@ -57,9 +57,6 @@ function changeToEscala() {
 }
 
 const emit = defineEmits(['cerrar'])
-function clickCancelarCambiarEscala() {
-  emit('cerrar', false)
-}
 function clickConfirmarCambiarEscala() {
   helperMuisca.ActualizarEscala(
     appStore.editandocancion,
@@ -70,32 +67,41 @@ function clickConfirmarCambiarEscala() {
 }
 </script>
 <template>
-  <div>
-    <span class="lblCabecera" @click="clickCancelarCambiarEscala"
-      >[cancelar]</span
-    >
-    <span
-      class="lblCabecera"
-      v-if="toEscala != desdeEscala"
-      @click="clickConfirmarCambiarEscala"
-      >[confirmar]</span
-    >
-  </div>
+  <div></div>
   <div>
     <table style="border-collapse: collapse; width: 100%">
       <thead>
         <tr>
           <th></th>
-          <th v-for="(nota, index) in Escala" :key="index">
+          <th
+            v-for="(nota, index) in Escala.slice(0, 7)"
+            :key="index"
+            :class="{
+              tonicaprincipal: index === 0,
+              tonicarelativa: index === 2 || index === 5,
+              subdominante: index === 1 || index === 3,
+              dominantesecundaria: index === 6,
+              dominante: index === 4,
+            }"
+          >
             {{ labelGradosEscala[index] }} - {{ nota }}
           </th>
-          <th></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Notas</td>
-          <td v-for="(nota, index) in NotasPosicionadasEscala" :key="index">
+          <td
+            v-for="(nota, index) in NotasPosicionadasEscala.slice(0, 7)"
+            :key="index"
+            :class="{
+              tonicaprincipal: index === 0,
+              tonicarelativa: index === 2 || index === 5,
+              subdominante: index === 1 || index === 3,
+              dominantesecundaria: index === 6,
+              dominante: index === 4,
+            }"
+          >
             <span
               class="notaPosicionada"
               v-for="(notaPosicionada, posIndex) in nota"
@@ -117,18 +123,25 @@ function clickConfirmarCambiarEscala() {
                 {{ nota }}
               </option>
             </select>
+            <button
+              class="lblCabecera"
+              v-if="toEscala != desdeEscala"
+              @click="clickConfirmarCambiarEscala"
+            >
+              ✔️
+            </button>
           </td>
 
-          <td v-for="(nota, index) in NuevaEscala" :key="index">
-            {{ labelGradosEscala[index] }} - {{ nota }}
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Nuevas Notas</td>
           <td
-            v-for="(nota, index) in NuevasNotasPosicionadasEscala"
+            v-for="(nota, index) in NuevasNotasPosicionadasEscala.slice(0, 7)"
             :key="index"
+            :class="{
+              tonicaprincipal: index === 0,
+              tonicarelativa: index === 2 || index === 5,
+              subdominante: index === 1 || index === 3,
+              dominantesecundaria: index === 6,
+              dominante: index === 4,
+            }"
           >
             <span
               class="notaPosicionada"
@@ -155,7 +168,73 @@ th {
   font-weight: bold;
 }
 th {
-  background-color: #353333;
   color: #a9a8f6;
+}
+
+/* Modificadores para cabeceras (th) */
+th.tonicaprincipal {
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #cfda41 100%),
+    linear-gradient(to bottom, #cfda41, transparent 70%) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+th.tonicarelativa {
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #cfda41 100%),
+    linear-gradient(to bottom, #ddba59, transparent 70%) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+th.subdominante {
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #b8651b 100%),
+    linear-gradient(to bottom, #d1a442, transparent 70%) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+th.dominantesecundaria {
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #cc4125 100%),
+    linear-gradient(to bottom, #cc4125, transparent 70%) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+th.dominante {
+  background:
+    radial-gradient(ellipse at center bottom, transparent 60%, #8b0000 100%),
+    linear-gradient(to bottom, #8b0000, transparent 70%) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+/* Modificadores para celdas (td) */
+td.tonicaprincipal {
+  background: linear-gradient(to center, rgba(218, 165, 32, 0.1), transparent);
+  border: 2px solid #daa520;
+}
+
+td.tonicarelativa {
+  background: linear-gradient(to center, rgba(184, 134, 11, 0.1), transparent);
+  border: 2px solid #b8860b;
+}
+
+td.subdominante {
+  background: linear-gradient(to center, rgba(210, 105, 30, 0.1), transparent);
+  border: 2px solid #b8651b;
+}
+
+td.dominantesecundaria {
+  background: linear-gradient(to center, rgba(205, 92, 92, 0.1), transparent);
+  border: 2px solid #cc4125;
+}
+
+td.dominante {
+  background: linear-gradient(to center, rgba(160, 82, 45, 0.1), transparent);
+  border: 2px solid #8b0000;
 }
 </style>

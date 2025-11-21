@@ -48,14 +48,22 @@ function GetStylePantallaEdit() {
 }
 
 function estiloVistaPrincipal() {
-  if (viendo.value == 'editartexto' || viendo.value == 'acordes') {
+  if (
+    viendo.value == 'editartexto' ||
+    viendo.value == 'acordes' ||
+    viendo.value == 'escala'
+  ) {
     return `width: 100%; height: 100%`
   }
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
 }
 
 function estiloVistaSecundaria() {
-  if (viendo.value == 'editartexto' || viendo.value == 'acordes') {
+  if (
+    viendo.value == 'editartexto' ||
+    viendo.value == 'acordes' ||
+    viendo.value == 'escala'
+  ) {
     return `width: 0%; height: 100%`
   }
   return `width: ${100 - pantalla.getConfiguracionPantalla().anchoPrincipal}%;`

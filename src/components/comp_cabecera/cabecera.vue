@@ -111,7 +111,7 @@ function clickEditar() {
 
       <div class="dropdown dropdown-superior-derecha ms-auto">
         <button
-          style="background-color: #353333; border: none"
+          style="background-color: #353333; border: none; position: relative"
           class="btn btn-secondary dropdown-toggle"
           type="button"
           id="dropdownMenuButton"
@@ -133,6 +133,9 @@ function clickEditar() {
               object-fit: cover;
             "
           />
+          <span v-if="appStore.rolSesion === 'director'" class="director-badge">
+            🪄
+          </span>
         </button>
         <ul
           class="dropdown-menu dropdown-menu-end"
@@ -240,6 +243,16 @@ function clickEditar() {
 <style scoped>
 .editando {
   background-color: #f5da09 !important;
+}
+
+.director-badge {
+  position: absolute;
+  top: -2px;
+  left: -12px;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: xx-large;
+  line-height: 1;
 }
 
 .compartir_sesion {
