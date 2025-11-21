@@ -77,7 +77,7 @@ function clickConfirmarCambiarEscala() {
         <tr>
           <th></th>
           <th 
-            v-for="(nota, index) in Escala" 
+            v-for="(nota, index) in Escala.slice(0, 7)" 
             :key="index"
             :class="{
               'tonicaprincipal': index === 0,
@@ -89,14 +89,13 @@ function clickConfirmarCambiarEscala() {
           >
             {{ labelGradosEscala[index] }} - {{ nota }}
           </th>
-          <th></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Notas</td>
           <td 
-            v-for="(nota, index) in NotasPosicionadasEscala" 
+            v-for="(nota, index) in NotasPosicionadasEscala.slice(0, 7)" 
             :key="index"
             :class="{
               'tonicaprincipal': index === 0,
@@ -135,25 +134,8 @@ function clickConfirmarCambiarEscala() {
     >
           </td>
 
-          <td 
-            v-for="(nota, index) in NuevaEscala" 
-            :key="index"
-            :class="{
-              'tonicaprincipal': index === 0,
-              'tonicarelativa': index === 2 || index === 5,
-              'subdominante': index === 1 || index === 3,
-              'dominantesecundaria': index === 6,
-              'dominante': index === 4
-            }"
-          >
-            {{ labelGradosEscala[index] }} - {{ nota }}
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Nuevas Notas</td>
           <td
-            v-for="(nota, index) in NuevasNotasPosicionadasEscala"
+            v-for="(nota, index) in NuevasNotasPosicionadasEscala.slice(0, 7)"
             :key="index"
             :class="{
               'tonicaprincipal': index === 0,
