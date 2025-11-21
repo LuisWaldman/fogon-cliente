@@ -174,16 +174,16 @@ th {
 /* Modificadores para cabeceras (th) */
 th.tonicaprincipal {
   background:
-    radial-gradient(ellipse at center bottom, transparent 60%, #daa520 100%),
-    linear-gradient(to bottom, #daa520, transparent 70%) !important;
+    radial-gradient(ellipse at center bottom, transparent 60%, #cfda41 100%),
+    linear-gradient(to bottom, #cfda41, transparent 70%) !important;
   color: #fff !important;
   font-weight: bold;
 }
 
 th.tonicarelativa {
   background:
-    radial-gradient(ellipse at center bottom, transparent 60%, #b8860b 100%),
-    linear-gradient(to bottom, #b8860b, transparent 70%) !important;
+    radial-gradient(ellipse at center bottom, transparent 60%, #cfda41 100%),
+    linear-gradient(to bottom, #ddba59, transparent 70%) !important;
   color: #fff !important;
   font-weight: bold;
 }
@@ -191,7 +191,7 @@ th.tonicarelativa {
 th.subdominante {
   background:
     radial-gradient(ellipse at center bottom, transparent 60%, #b8651b 100%),
-    linear-gradient(to bottom, #b8651b, transparent 70%) !important;
+    linear-gradient(to bottom, #d1a442, transparent 70%) !important;
   color: #fff !important;
   font-weight: bold;
 }
