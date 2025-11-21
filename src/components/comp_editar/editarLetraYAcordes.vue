@@ -147,7 +147,10 @@ function estiloVistaSecundaria() {
         <button @click="cambiarVistaLateral('secuencia')">SECUENCIA</button>
       </div>
       <div :style="estiloVistaSecundaria()">
-        <editAcordes v-if="vistaLateral === 'acordes'"></editAcordes>
+        <editAcordes
+          :cancion="cancion"
+          v-if="vistaLateral === 'acordes'"
+        ></editAcordes>
         <editSecuencia
           v-if="vistaLateral === 'secuencia'"
           ref="ctrlSecuencia"
