@@ -50,6 +50,7 @@ function clickFogon() {
             v-for="(user, idx) in appStore.usuariosSesion"
             :key="idx"
             :style="getPositionStyle(idx, appStore.usuariosSesion.length)"
+            class="user-container"
           >
             <img
               class="profile-image"
@@ -60,6 +61,13 @@ function clickFogon() {
               "
               alt="Profile image"
             />
+            
+            <span
+              v-if="user.RolSesion === 'director'"
+              class="director-badge-icon"
+            >
+              🪄
+            </span>
           </div>
         </div>
 
@@ -174,6 +182,10 @@ function clickFogon() {
   top: 0;
   left: 0;
 }
+.user-container {
+  position: relative;
+}
+
 .profile-image {
   width: 30px;
   height: 30px;
@@ -183,6 +195,17 @@ function clickFogon() {
   align-items: center;
   justify-content: center;
   background-color: #f0f0f0;
+}
+
+.director-badge-icon {
+  position: absolute;
+  bottom: -5px;
+  left: -10px;
+  border: 3px solid #b40c0c;
+  border-radius: 50%;
+  background-color: #d6431e;
+  font-size: small;
+  line-height: 1;
 }
 .div-imagen {
   position: relative;
