@@ -5,6 +5,7 @@ import { useAppStore } from '../../stores/appStore'
 import { CompasEditable } from './compaseditable'
 import editSecuencia from './editSecuencia.vue'
 import editAcordes from './editAcordesCancion.vue'
+import editPartes from './editPartesCancion.vue'
 import { Pantalla } from '../../modelo/pantalla'
 const props = defineProps<{
   compas: number
@@ -145,19 +146,19 @@ function estiloVistaSecundaria() {
       }"
     >
       <div class="botoneraLateral">
-        <button 
+        <button
           @click="cambiarVistaLateral('acordes')"
           :class="{ active: vistaLateral === 'acordes' }"
         >
           🎸 ACORDES
         </button>
-        <button 
+        <button
           @click="cambiarVistaLateral('partes')"
           :class="{ active: vistaLateral === 'partes' }"
         >
           📋 PARTES
         </button>
-        <button 
+        <button
           @click="cambiarVistaLateral('secuencia')"
           :class="{ active: vistaLateral === 'secuencia' }"
         >
@@ -170,6 +171,14 @@ function estiloVistaSecundaria() {
           :cancion="cancion"
           v-if="vistaLateral === 'acordes'"
         ></editAcordes>
+
+        <editPartes
+          v-if="vistaLateral === 'partes'"
+          :cancion="cancion"
+          :acordesCancion="acordesCancion"
+          :parteSeleccionada="refParteSeleccionada"
+        ></editPartes>
+
         <editSecuencia
           v-if="vistaLateral === 'secuencia'"
           ref="ctrlSecuencia"
@@ -268,7 +277,11 @@ function estiloVistaSecundaria() {
 }
 
 .botoneraLateral button.active {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3), rgba(106, 112, 15, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(106, 112, 15, 0.3)
+  );
   border-color: #a9a8f6;
   color: #fff;
   box-shadow: 0 0 20px rgba(169, 168, 246, 0.4);
@@ -285,7 +298,7 @@ function estiloVistaSecundaria() {
     gap: 4px;
     padding: 8px;
   }
-  
+
   .botoneraLateral button {
     width: 100%;
     font-size: 0.8rem;
