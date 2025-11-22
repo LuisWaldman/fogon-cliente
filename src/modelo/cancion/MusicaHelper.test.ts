@@ -32,6 +32,85 @@ describe('MusicaHelper', () => {
       'G',
     ])
   })
+  it('Escalas con bemoles', () => {
+    const helper = new MusicaHelper()
+
+    // Escala de Eb mayor (3 bemoles: Bb, Eb, Ab)
+    expect(helper.GetAcordesdeescala('Eb')).toEqual([
+      'Eb',
+      'Fm',
+      'Gm',
+      'Ab',
+      'Bb',
+      'Cm',
+      'Ddim',
+    ])
+
+    // Escala de Bb mayor (2 bemoles: Bb, Eb)
+    expect(helper.GetAcordesdeescala('Bb')).toEqual([
+      'Bb',
+      'Cm',
+      'Dm',
+      'Eb',
+      'F',
+      'Gm',
+      'Adim',
+    ])
+
+    // Escala de F mayor (1 bemol: Bb)
+    expect(helper.GetAcordesdeescala('F')).toEqual([
+      'F',
+      'Gm',
+      'Am',
+      'Bb',
+      'C',
+      'Dm',
+      'Edim',
+    ])
+
+    // Escala de Ab mayor (4 bemoles: Bb, Eb, Ab, Db)
+    expect(helper.GetAcordesdeescala('Ab')).toEqual([
+      'Ab',
+      'Bbm',
+      'Cm',
+      'Db',
+      'Eb',
+      'Fm',
+      'Gdim',
+    ])
+
+    // Escala de Db mayor (5 bemoles: Bb, Eb, Ab, Db, Gb)
+    expect(helper.GetAcordesdeescala('Db')).toEqual([
+      'Db',
+      'Ebm',
+      'Fm',
+      'Gb',
+      'Ab',
+      'Bbm',
+      'Cdim',
+    ])
+
+    // Escalas menores con bemoles
+    expect(helper.GetAcordesdeescala('Cm')).toEqual([
+      'Cm',
+      'Ddim',
+      'Eb',
+      'Fm',
+      'Gm',
+      'Ab',
+      'Bb',
+    ])
+
+    expect(helper.GetAcordesdeescala('Fm')).toEqual([
+      'Fm',
+      'Gdim',
+      'Ab',
+      'Bbm',
+      'Cm',
+      'Db',
+      'Eb',
+    ])
+  })
   it('GetNotasdeescala returns correct notes for different scales', () => {
     const helper = new MusicaHelper()
 

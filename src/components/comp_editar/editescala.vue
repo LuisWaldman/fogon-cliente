@@ -17,8 +17,8 @@ const NotasPosicionadasEscala = ref([] as string[][])
 const Escala = ref([] as string[])
 const labelGradosEscala = ref(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'])
 
-const helperMuisca = new MusicaHelper()
-const TodasLasNotas = ref(helperMuisca.GetNotas())
+const helperMusica = new MusicaHelper()
+const TodasLasNotas = ref(helperMusica.GetNotas())
 function clickCambiarEscala() {
   if (cambiandoEscalaEstado.value == '') {
     if (appStore.editandocancion.escala) {
@@ -28,11 +28,11 @@ function clickCambiarEscala() {
         desdeEscala.value = desdeEscala.value.replace('m', '')
       }
       // Obtener la escala de acordes basada en la escala actual
-      Escala.value = helperMuisca.GetAcordesdeescala(
+      Escala.value = helperMusica.GetAcordesdeescala(
         appStore.editandocancion.escala,
       )
 
-      NotasPosicionadasEscala.value = helperMuisca.GetNotasPosicionadasEscala(
+      NotasPosicionadasEscala.value = helperMusica.GetNotasPosicionadasEscala(
         appStore.editandocancion,
         Escala.value,
       )

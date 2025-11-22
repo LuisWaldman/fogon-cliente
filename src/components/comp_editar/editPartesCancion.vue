@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
-import { VistaParte } from './vistaParteCancion';
+import { VistaParte } from './vistaParteCancion'
 
 const props = defineProps<{
   cancion: Cancion
@@ -69,7 +69,7 @@ clickCambiarEscala()
         <div class="compas">
           <div class="parteCompasEntero">LA</div>
         </div>
-        
+
         <div class="compas">
           <div class="parteCompasMitad">LA</div>
           <div class="parteCompasMitad">SOL</div>
@@ -78,13 +78,12 @@ clickCambiarEscala()
         <div class="compas">
           <div class="parteCompasEntero">RE</div>
         </div>
-        
+
         <div class="compas">
           <div class="parteCompasCuarto">LA</div>
           <div class="parteCompasMitad">SOL</div>
           <div class="parteCompasCuarto">SOL7</div>
         </div>
-
       </div>
     </div>
   </div>
@@ -402,29 +401,29 @@ td.dominante {
   .conteinerCompases {
     gap: 6px;
   }
-  
+
   .compas:has(.parteCompasEntero) {
     min-width: 60px;
   }
-  
+
   .compas:has(.parteCompasMitad) {
     min-width: 100px;
   }
-  
+
   .compas:has(.parteCompasCuarto) {
     min-width: 140px;
   }
-  
+
   .parteCompasEntero {
     font-size: 0.9rem;
     padding: 6px;
   }
-  
+
   .parteCompasMitad {
     font-size: 0.8rem;
     padding: 4px;
   }
-  
+
   .parteCompasCuarto {
     font-size: 0.7rem;
     padding: 3px;
