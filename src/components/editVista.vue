@@ -42,29 +42,7 @@ function ClickSetModoVista(modo: string) {
   refModoVista.value = modo
   configPantalla.value.modo = modo
 }
-function cancelarConfiguracionPantalla() {
-  configPantalla.value.muestra = exvistapantalla.value.muestra
-  configPantalla.value.reproduce = exvistapantalla.value.reproduce
-  configPantalla.value.invertido = exvistapantalla.value.invertido
-  configPantalla.value.modo = exvistapantalla.value.modo
-  configPantalla.value.columnas = exvistapantalla.value.columnas
-  configPantalla.value.altoPantallaDescuento =
-    exvistapantalla.value.altoPantallaDescuento
-  configPantalla.value.altoPantallaDescuento =
-    exvistapantalla.value.altoPantallaDescuento
-  configPantalla.value.anchoPrincipal = exvistapantalla.value.anchoPrincipal
-  configPantalla.value.tamanioAcorde = exvistapantalla.value.tamanioAcorde
-  configPantalla.value.tamanioAcordesolo =
-    exvistapantalla.value.tamanioAcordesolo
-  configPantalla.value.tamanioLetra = exvistapantalla.value.tamanioLetra
-  configPantalla.value.tamanioParte = exvistapantalla.value.tamanioParte
-  configPantalla.value.tamanioAcordeParte =
-    exvistapantalla.value.tamanioAcordeParte
-  configPantalla.value.factorScroll = exvistapantalla.value.factorScroll
-  configPantalla.value.altoReproductor = exvistapantalla.value.altoReproductor
-  pantalla.setearEstilos()
-  emit('cerrar')
-}
+
 watch(configPantalla.value, () => {
   pantalla.setearEstilos()
 })
@@ -151,335 +129,787 @@ function ClickSoloMidi() {
 </script>
 
 <template>
-  <div class="vistaedit">
-    <div class="tituloeditSize">VISTA GENERAL</div>
-    <div class="config-row">
-      👁️‍🗨️ Viendo
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: verLetra }"
-        @click="ClickViendoLetra()"
-      >
-        📝 LETRA
-        <input
-          type="number"
-          min="8"
-          max="80"
-          v-model.number="configPantalla.tamanioLetra"
-          @click.stop
-        />
-        <span>px</span>
+  <div class="modal-backdrop" @click="emit('cerrar')">
+    <div class="modal-content" @click.stop>
+      <div class="modal-header">
+        <h2>⚙️ Configuración de Vista</h2>
+        <button class="close-btn" @click="emit('cerrar')" aria-label="Cerrar">
+          ✕
+        </button>
       </div>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: verAcordes }"
-        @click="ClickViendoAcordes()"
-      >
-        🎸 ACORDES
-        <input
-          type="number"
-          min="8"
-          max="80"
-          v-model.number="configPantalla.tamanioAcorde"
-          @click.stop
-        />
-        <span>px</span>
-      </div>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: verPartitura }"
-        @click="ClickViendoPartitura()"
-      >
-        🎼 PARTITURA
-      </div>
-    </div>
-    <div>
-      <div class="config-row">
-        ▶️ Toca
-        <div
-          class="clickeableVista"
-          :class="{ seleccionada: soloVideo }"
-          @click="ClickSoloVideo()"
-        >
-          VIDEO 🎬
+
+      <div class="modal-body">
+        <div class="form-section">
+          <label class="section-label">👁️‍🗨️ Vista</label>
+          <div class="option-grid">
+            <div
+              class="option-btn with-input"
+              :class="{ selected: verLetra }"
+              @click="ClickViendoLetra()"
+            >
+              <span>📝 LETRA</span>
+              <div class="input-group-inline">
+                <input
+                  type="number"
+                  min="8"
+                  max="80"
+                  v-model.number="configPantalla.tamanioLetra"
+                  @click.stop
+                  class="size-input"
+                />
+                <span class="unit">px</span>
+              </div>
+            </div>
+            <div
+              class="option-btn with-input"
+              :class="{ selected: verAcordes }"
+              @click="ClickViendoAcordes()"
+            >
+              <span>🎸 ACORDES</span>
+              <div class="input-group-inline">
+                <input
+                  type="number"
+                  min="8"
+                  max="80"
+                  v-model.number="configPantalla.tamanioAcorde"
+                  @click.stop
+                  class="size-input"
+                />
+                <span class="unit">px</span>
+              </div>
+            </div>
+            <div
+              class="option-btn"
+              :class="{ selected: verPartitura }"
+              @click="ClickViendoPartitura()"
+            >
+              🎼 PARTITURA
+            </div>
+          </div>
         </div>
-        <div
-          class="clickeableVista"
-          :class="{ seleccionada: soloMidi }"
-          @click="ClickSoloMidi()"
-        >
-          MIDI 🎹
+        <div class="form-section">
+          <label class="section-label">▶️ Reproducción</label>
+          <div class="option-grid">
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: soloVideo }"
+              @click="ClickSoloVideo()"
+            >
+              🎬 VIDEO
+            </button>
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: soloMidi }"
+              @click="ClickSoloMidi()"
+            >
+              🎹 MIDI
+            </button>
+          </div>
+
+          <div v-if="soloMidi || soloVideo" class="input-group">
+            <label>📏 Alto Reproductor</label>
+            <div class="range-group">
+              <input
+                type="range"
+                min="3"
+                max="398"
+                v-model.number="configPantalla.altoReproductor"
+                class="range-input"
+              />
+              <span class="range-value"
+                >{{ configPantalla.altoReproductor }}px</span
+              >
+            </div>
+          </div>
         </div>
-        <div v-if="soloMidi || soloVideo">
-          <div><span style="font-size: small">Alto Reproductor</span></div>
-          <div>
+
+        <div
+          class="form-section"
+          v-if="
+            configPantalla.muestra !== 'cuadrado' &&
+            configPantalla.muestra !== ''
+          "
+        >
+          <label class="section-label">📜 Configuración de Scroll</label>
+          <div class="checkbox-grid">
+            <label class="checkbox-item">
+              <input type="checkbox" v-model="configPantalla.AutoScroll" />
+              <span class="checkmark"></span>
+              Auto Scroll
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label>⚡ Factor Scroll</label>
             <input
-              type="range"
-              style="width: 100%"
-              min="3"
-              max="398"
-              v-model.number="configPantalla.altoReproductor"
+              type="number"
+              min="0.2"
+              max="3"
+              step="0.1"
+              v-model.number="configPantalla.factorScroll"
+              class="form-input"
             />
+          </div>
+        </div>
+
+        <div
+          class="form-section"
+          v-if="configPantalla.muestra === 'letrayacordes'"
+        >
+          <div class="input-group">
+            <label>📏 Caracteres por renglón</label>
+            <div class="range-group">
+              <input
+                type="range"
+                min="10"
+                max="120"
+                v-model.number="configPantalla.columnas"
+                class="range-input"
+              />
+              <span class="range-value">{{ configPantalla.columnas }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-section">
+          <label class="section-label">📱 Modo de Vista</label>
+          <div class="option-grid">
+            <button
+              type="button"
+              class="option-btn layout-btn"
+              :class="{ selected: refModoVista === 'simple' }"
+              @click="ClickSetModoVista('simple')"
+            >
+              <span class="layout-icon">│</span>
+              Simple
+            </button>
+            <button
+              type="button"
+              class="option-btn layout-btn"
+              :class="{ selected: refModoVista === 'doble' }"
+              @click="ClickSetModoVista('doble')"
+            >
+              <span class="layout-icon">│ │</span>
+              Doble
+            </button>
+            <button
+              type="button"
+              class="option-btn layout-btn"
+              :class="{ selected: refModoVista === 'triple' }"
+              @click="ClickSetModoVista('triple')"
+            >
+              <span class="layout-icon">│ │ │</span>
+              Triple
+            </button>
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: configPantalla.invertido }"
+              @click="configPantalla.invertido = !configPantalla.invertido"
+            >
+              ↩️ Invertido
+            </button>
+          </div>
+        </div>
+        <div class="form-section">
+          <div class="input-group">
+            <label v-if="refModoVista !== 'simple'">📐 % Ancho Principal</label>
+            <label v-if="refModoVista === 'simple'">📐 % Alto Principal</label>
+            <div class="range-group">
+              <input
+                type="range"
+                min="3"
+                max="98"
+                v-model.number="configPantalla.anchoPrincipal"
+                class="range-input"
+              />
+              <span class="range-value"
+                >{{ configPantalla.anchoPrincipal }}%</span
+              >
+            </div>
+          </div>
+
+          <div class="input-group" v-if="refModoVista === 'triple'">
+            <label>📐 % Ancho Terciaria</label>
+            <div class="range-group">
+              <input
+                type="range"
+                min="3"
+                max="98"
+                v-model.number="configPantalla.anchoTerciaria"
+                class="range-input"
+              />
+              <span class="range-value"
+                >{{ configPantalla.anchoTerciaria }}%</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <label class="section-label">📋 Segunda Columna</label>
+          <div class="option-grid">
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: configPantalla.viendoSecuencia }"
+              @click="
+                configPantalla.viendoSecuencia = !configPantalla.viendoSecuencia
+              "
+            >
+              🎵 Secuencia
+            </button>
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: configPantalla.viendoInstrucciones }"
+              @click="
+                configPantalla.viendoInstrucciones =
+                  !configPantalla.viendoInstrucciones
+              "
+            >
+              📖 Instrucciones
+            </button>
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: configPantalla.viendoCuadrado }"
+              @click="
+                configPantalla.viendoCuadrado = !configPantalla.viendoCuadrado
+              "
+            >
+              ⬜ Cuadrado
+            </button>
+          </div>
+        </div>
+
+        <div class="form-section" v-if="refModoVista === 'triple'">
+          <label class="section-label">📋 Tercera Columna</label>
+          <div class="option-grid">
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: configPantalla.viendoSecuencia3 }"
+              @click="
+                configPantalla.viendoSecuencia3 =
+                  !configPantalla.viendoSecuencia3
+              "
+            >
+              🎵 Secuencia
+            </button>
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: configPantalla.viendoInstrucciones3 }"
+              @click="
+                configPantalla.viendoInstrucciones3 =
+                  !configPantalla.viendoInstrucciones3
+              "
+            >
+              📖 Instrucciones
+            </button>
+            <button
+              type="button"
+              class="option-btn"
+              :class="{ selected: configPantalla.viendoCuadrado3 }"
+              @click="
+                configPantalla.viendoCuadrado3 = !configPantalla.viendoCuadrado3
+              "
+            >
+              ⬜ Cuadrado
+            </button>
+          </div>
+        </div>
+        <div
+          class="form-section"
+          v-if="
+            configPantalla.viendoSecuencia3 || configPantalla.viendoSecuencia
+          "
+        >
+          <label class="section-label">🎵 Configuración de Secuencia</label>
+          <div class="input-row">
+            <div class="input-group half">
+              <label>📏 Tamaño Parte</label>
+              <div class="range-group">
+                <input
+                  type="range"
+                  min="8"
+                  max="40"
+                  v-model.number="configPantalla.tamanioParte"
+                  class="range-input"
+                />
+                <span class="range-value"
+                  >{{ configPantalla.tamanioParte }}px</span
+                >
+              </div>
+            </div>
+            <div class="input-group half">
+              <label>📐 Ancho Parte</label>
+              <div class="range-group">
+                <input
+                  type="range"
+                  min="0"
+                  max="1000"
+                  v-model.number="configPantalla.anchoParte"
+                  class="range-input"
+                />
+                <span class="range-value"
+                  >{{ configPantalla.anchoParte }}%</span
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div
-        class="config-row"
-        v-if="
-          configPantalla.muestra !== 'cuadrado' && configPantalla.muestra !== ''
-        "
-      >
-        <div class="config-box">
-          <input type="checkbox" v-model="configPantalla.AutoScroll" />
-          <span>Auto Scroll</span>
-        </div>
-        <div class="config-box">
-          <span>Factor Scroll</span>
-          <input
-            type="number"
-            min="0.2"
-            max="3"
-            step="0.1"
-            v-model.number="configPantalla.factorScroll"
-          />
-        </div>
+      <div class="modal-footer">
+        <button @click="guardarConfiguracionPantalla()" class="btn-primary">
+          💾 Guardar Configuración
+        </button>
       </div>
-      <!-- 
-      <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
-        <input type="checkbox" v-model="configPantalla.viendoResumenVerso" />
-        <span>Modo poeta</span>
-      </div>
--->
-      <div class="config-row" v-if="configPantalla.muestra === 'letrayacordes'">
-        <span>Caracteres por renglon</span>
-        <input
-          type="range"
-          min="10"
-          max="120"
-          v-model.number="configPantalla.columnas"
-        />
-        <span>{{ configPantalla.columnas }}</span>
-      </div>
-    </div>
-    <div class="config-row">
-      <span>Vista</span>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: refModoVista === 'simple' }"
-        @click="ClickSetModoVista('simple')"
-      >
-        |
-      </div>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: refModoVista === 'doble' }"
-        @click="ClickSetModoVista('doble')"
-      >
-        | |
-      </div>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: refModoVista === 'triple' }"
-        @click="ClickSetModoVista('triple')"
-      >
-        | | |
-      </div>
-      <div @click="configPantalla.invertido = !configPantalla.invertido">
-        <div
-          class="clickeableVista"
-          :class="{ seleccionada: configPantalla.invertido }"
-        >
-          ↩️
-        </div>
-      </div>
-    </div>
-    <div class="config-row">
-      <span v-if="refModoVista !== 'simple'">% Ancho</span>
-      <span v-if="refModoVista === 'simple'">% Alto</span>
-      <div style="width: 50%">
-        <input
-          type="range"
-          style="width: 100%"
-          min="3"
-          max="98"
-          v-model.number="configPantalla.anchoPrincipal"
-        />
-      </div>
-
-      <span>{{ configPantalla.anchoPrincipal }} </span>
-    </div>
-    <div class="config-row" v-if="refModoVista === 'triple'">
-      <span>% Terciaria</span>
-
-      <div style="width: 50%">
-        <input
-          type="range"
-          style="width: 100%"
-          min="3"
-          max="98"
-          v-model.number="configPantalla.anchoTerciaria"
-        />
-      </div>
-
-      <span>{{ configPantalla.anchoTerciaria }} </span>
-    </div>
-    <div
-      :style="{
-        display: 'flex',
-        'flex-direction': configPantalla.invertido
-          ? 'column-reverse'
-          : 'column',
-      }"
-    ></div>
-
-    <div class="config-row">
-      <span>2da columna</span>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: configPantalla.viendoSecuencia }"
-        @click="
-          configPantalla.viendoSecuencia = !configPantalla.viendoSecuencia
-        "
-      >
-        Secuencia
-      </div>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: configPantalla.viendoInstrucciones }"
-        @click="
-          configPantalla.viendoInstrucciones =
-            !configPantalla.viendoInstrucciones
-        "
-      >
-        Instrucciones
-      </div>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: configPantalla.viendoCuadrado }"
-        @click="configPantalla.viendoCuadrado = !configPantalla.viendoCuadrado"
-      >
-        Cuadrado
-      </div>
-    </div>
-    <div class="config-row" v-if="refModoVista === 'triple'">
-      <span>3ra columna</span>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: configPantalla.viendoSecuencia3 }"
-        @click="
-          configPantalla.viendoSecuencia3 = !configPantalla.viendoSecuencia3
-        "
-      >
-        Secuencia
-      </div>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: configPantalla.viendoInstrucciones3 }"
-        @click="
-          configPantalla.viendoInstrucciones3 =
-            !configPantalla.viendoInstrucciones3
-        "
-      >
-        Instrucciones
-      </div>
-      <div
-        class="clickeableVista"
-        :class="{ seleccionada: configPantalla.viendoCuadrado3 }"
-        @click="
-          configPantalla.viendoCuadrado3 = !configPantalla.viendoCuadrado3
-        "
-      >
-        Cuadrado
-      </div>
-    </div>
-    <div
-      class="config-row"
-      v-if="configPantalla.viendoSecuencia3 || configPantalla.viendoSecuencia"
-    >
-      <span>Secuencia</span>
-      <input
-        type="range"
-        min="8"
-        max="40"
-        v-model.number="configPantalla.tamanioParte"
-      />
-      <span>{{ configPantalla.tamanioParte }} px</span>
-
-      <span style="margin-left: 20px">Ancho Parte</span>
-      <input
-        type="range"
-        min="0"
-        max="1000"
-        v-model.number="configPantalla.anchoParte"
-      />
-      <span>{{ configPantalla.anchoParte }} %</span>
-    </div>
-
-    <div class="botonera">
-      <button @click="guardarConfiguracionPantalla()" class="btnGuardar">
-        Guardar
-      </button>
-      <button @click="cancelarConfiguracionPantalla()" class="btnGuardar">
-        Cancelar
-      </button>
     </div>
   </div>
 </template>
 <style scoped>
-.seleccionada {
-  font-weight: bold;
-  background-color: rgb(223, 177, 51);
-}
-.vistaedit {
-  font-size: x-large;
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  font: 2em;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: rgb(41, 37, 37);
-  color: white;
-  z-index: 1000;
-  border: 3px solid #8b4513;
-}
-.config-row {
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-.config-box {
-  align-items: center;
-  margin-right: 20px;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
 }
 
-.clickeableVista {
-  cursor: pointer;
-  min-width: 60px;
-  padding: 3px;
-  text-align: center;
-  border: 1px solid #ccc;
-  margin: 5px;
+/* Modal content */
+.modal-content {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 2px solid #6a4c93;
+  color: white;
 }
-.tituloeditSize {
-  font-size: x-large;
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(106, 76, 147, 0.3);
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  border-radius: 14px 14px 0 0;
+  color: white;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
   font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #2d2825;
+  padding: 4px 8px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal body */
+.modal-body {
+  padding: 24px;
+}
+
+/* Form sections */
+.form-section {
+  margin-bottom: 24px;
+}
+
+.section-label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #a78bfa;
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #a78bfa;
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.input-group.half {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Form inputs */
+.form-input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 16px;
+  border: 2px solid rgba(106, 76, 147, 0.4);
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: white !important;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  background-color: #333333;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+  color: white !important;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Size inputs for inline use */
+.size-input {
+  width: 60px;
+  padding: 4px 8px;
+  border: 1px solid rgba(106, 76, 147, 0.4);
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 0.85rem;
   text-align: center;
-  margin-bottom: 10px;
-  background-color: rgb(209, 169, 38);
 }
-.botonera {
-  margin-top: 15px;
+
+.size-input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  background-color: #333333;
+}
+
+.input-group-inline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.unit {
+  font-size: 0.8rem;
+  color: #a78bfa;
+}
+
+/* Range inputs */
+.range-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.range-input {
+  flex: 1;
+  height: 6px;
+  background: #2a2a2a;
+  border: 1px solid rgba(106, 76, 147, 0.4);
+  border-radius: 3px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.range-input::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.range-input::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.range-value {
+  min-width: 50px;
   text-align: right;
+  color: #a78bfa;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
+
+/* Option grid */
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.option-btn {
+  padding: 10px 16px;
+  border: 2px solid rgba(106, 76, 147, 0.4);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.option-btn:hover {
+  border-color: #8b5cf6;
+  background-color: rgba(139, 92, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+.option-btn.selected {
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  border-color: #6a4c93;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(106, 76, 147, 0.4);
+}
+
+.option-btn.with-input {
+  padding: 8px 12px;
+}
+
+/* Layout buttons */
+.layout-btn {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.layout-icon {
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: #a78bfa;
+}
+
+.option-btn.selected .layout-icon {
+  color: white;
+}
+
+/* Checkbox styling */
+.checkbox-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.checkbox-item input[type='checkbox'] {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(106, 76, 147, 0.4);
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.checkbox-item input[type='checkbox']:checked + .checkmark {
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  border-color: #6a4c93;
+}
+
+.checkbox-item input[type='checkbox']:checked + .checkmark::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Modal footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 24px;
+  border-top: 1px solid rgba(106, 76, 147, 0.3);
+  background-color: rgba(26, 26, 26, 0.5);
+  border-radius: 0 0 14px 14px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(106, 76, 147, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(106, 76, 147, 0.5);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid rgba(106, 76, 147, 0.4);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #6a4c93;
+  transform: translateY(-1px);
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-  .vistaedit {
-    left: 3%;
-    top: 10%;
-    font-size: small;
+  .modal-content {
+    width: 95%;
+    margin: 20px;
+    max-height: calc(100vh - 40px);
   }
-  .botonera {
-    text-align: center;
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 16px;
   }
+
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .input-group.half {
+    margin-bottom: 16px;
+  }
+
+  .option-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 6px;
+  }
+
+  .modal-footer {
+    flex-direction: column-reverse;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .modal-header {
+    border-radius: 0;
+  }
+}
+
+/* Scrollbar styling */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(106, 76, 147, 0.1);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(106, 76, 147, 0.4);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(106, 76, 147, 0.6);
 }
 </style>

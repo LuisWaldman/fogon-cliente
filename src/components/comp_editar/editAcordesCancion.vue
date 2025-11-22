@@ -42,7 +42,6 @@ function clickCambiarEscala() {
 clickCambiarEscala()
 </script>
 <template>
-  <div></div>
   <div>
     <table style="border-collapse: collapse; width: 100%">
       <thead>
@@ -86,6 +85,12 @@ clickCambiarEscala()
         </tr>
       </tbody>
     </table>
+  </div>
+  <div>
+    <div>
+      <button>AGREGAR ACORDE</button>
+      <button>QUITAR ACORDE</button>
+    </div>
   </div>
 </template>
 <style scoped>

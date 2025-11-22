@@ -1,6 +1,7 @@
 import { ItemIndiceCancion } from './ItemIndiceCancion'
 
 export class ListasDBManager {
+  private static readonly DEFAULT_LIST = 'favoritos'
   private dbName = 'ListasCanciones'
   private version = 1
   private db: IDBDatabase | null = null
@@ -28,8 +29,8 @@ export class ListasDBManager {
 
   private async ensureDefaultList(): Promise<void> {
     const listas = await this.GetListas()
-    if (!listas.includes('nueva')) {
-      await this.AgregarLista('nueva')
+    if (!listas.includes(ListasDBManager.DEFAULT_LIST)) {
+      await this.AgregarLista(ListasDBManager.DEFAULT_LIST)
     }
   }
 
@@ -52,8 +53,10 @@ export class ListasDBManager {
   }
 
   async BorrarLista(nameLista: string): Promise<void> {
-    if (nameLista === 'nueva') {
-      throw new Error('No se puede borrar la lista "nueva"')
+    if (nameLista === ListasDBManager.DEFAULT_LIST) {
+      throw new Error(
+        `No se puede borrar la lista "${ListasDBManager.DEFAULT_LIST}"`,
+      )
     }
 
     if (!this.db) await this.initDB()
@@ -69,8 +72,10 @@ export class ListasDBManager {
   }
 
   async RenombrarLista(nameLista: string, nuevoNombre: string): Promise<void> {
-    if (nameLista === 'nueva') {
-      throw new Error('No se puede renombrar la lista "nueva"')
+    if (nameLista === ListasDBManager.DEFAULT_LIST) {
+      throw new Error(
+        `No se puede renombrar la lista "${ListasDBManager.DEFAULT_LIST}"`,
+      )
     }
 
     if (!this.db) await this.initDB()

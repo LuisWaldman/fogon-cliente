@@ -239,28 +239,40 @@ function VerFiltros() {
         align-items: center;
       "
     >
-      <input
-        type="text"
-        v-model="busqueda"
-        placeholder="Buscar..."
-        class="input-busqueda"
-        @keydown.enter="buscarCanciones()"
-      />
-      {{ refEstadoBusqueda }}
+      <div class="search-input-container">
+        <input
+          type="text"
+          v-model="busqueda"
+          placeholder="Buscar canciones, bandas, artistas..."
+          class="input-busqueda"
+          @keydown.enter="buscarCanciones()"
+        />
+        <div class="search-status" v-if="refEstadoBusqueda">
+          {{ refEstadoBusqueda }}
+        </div>
+      </div>
     </div>
 
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 10px;
-      "
-    >
-      <button @click="buscarCanciones()">Buscar</button>
-      <button @click="VerFiltros()">Filtros</button>
-      <button @click="Borrar()" v-if="appStore.busqueda.length > 0">
-        Borrar
+    <div class="search-actions">
+      <button @click="buscarCanciones()" class="search-btn primary">
+        <span class="btn-icon">🔍</span>
+        <span class="btn-text">Buscar</span>
+      </button>
+      <button
+        @click="VerFiltros()"
+        class="search-btn secondary"
+        :class="{ active: viendoFiltros }"
+      >
+        <span class="btn-icon">⚙️</span>
+        <span class="btn-text">Filtros</span>
+      </button>
+      <button
+        @click="Borrar()"
+        v-if="appStore.busqueda.length > 0"
+        class="search-btn danger"
+      >
+        <span class="btn-icon">🗑️</span>
+        <span class="btn-text">Borrar</span>
       </button>
     </div>
 
@@ -528,48 +540,237 @@ function VerFiltros() {
 <style scoped>
 .primer-parrafo {
   font-size: x-large;
+  margin-bottom: 20px;
+  color: #a9a8f6;
+  font-weight: 600;
 }
 
-.filtro {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 4px 8px;
+/* Search Input Styles */
+.search-input-container {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.input-busqueda {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  border: 2px solid rgba(169, 168, 246, 0.3);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #a9a8f6;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-busqueda:focus {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 0 25px rgba(169, 168, 246, 0.2);
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
+}
+
+.input-busqueda::placeholder {
+  color: rgba(169, 168, 246, 0.5);
+  font-style: italic;
+}
+
+.search-status {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: rgba(169, 168, 246, 0.1);
+  border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 6px;
+  color: #a9a8f6;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Search Actions */
+.search-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-height: 48px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.search-btn:hover::before {
+  left: 100%;
+}
+
+.btn-icon {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn.primary {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.search-btn.primary:hover {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 6px 25px rgba(169, 168, 246, 0.3);
+  transform: translateY(-3px);
+}
+
+.search-btn.secondary {
+  border-color: rgba(108, 117, 125, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(108, 117, 125, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.search-btn.secondary:hover,
+.search-btn.secondary.active {
+  border-color: rgba(169, 168, 246, 0.8);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+  box-shadow: 0 6px 25px rgba(169, 168, 246, 0.2);
+  transform: translateY(-3px);
+}
+
+.search-btn.danger {
+  border-color: rgba(220, 53, 69, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(220, 53, 69, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.search-btn.danger:hover {
+  border-color: rgba(220, 53, 69, 0.8);
+  box-shadow: 0 6px 25px rgba(220, 53, 69, 0.3);
+  transform: translateY(-3px);
+}
+
+.search-btn:active {
+  transform: translateY(0);
+}
+
+/* Filter Styles */
+.filtro {
+  margin: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
   cursor: default;
   position: relative;
-  min-width: 120px;
-  border: 1px solid transparent;
+  min-width: 140px;
+  border: 2px solid rgba(169, 168, 246, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
 }
+
 .filtro .filtro-header {
   font-weight: 600;
   cursor: pointer;
   font-size: 14px;
+  color: #a9a8f6;
+  text-align: center;
+  padding: 4px 0;
 }
+
+.filtro:hover {
+  border-color: rgba(169, 168, 246, 0.4);
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .filtro.seleccionado {
-  background-color: rgba(138, 43, 226);
-  border: 1px solid rgba(138, 43, 226, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+  border-color: rgba(169, 168, 246, 0.6);
   color: white;
-  padding: 6px 12px;
   min-width: 200px;
+  box-shadow: 0 4px 15px rgba(169, 168, 246, 0.2);
 }
 
 /* Dropdown styles */
 .dropdown-container {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .dropdown-header {
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  padding: 8px 12px;
-  border-radius: 4px;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.1),
+    rgba(0, 0, 0, 0.8)
+  );
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  padding: 10px 14px;
+  border-radius: 6px;
   cursor: pointer;
   user-select: none;
-  color: #333;
+  color: #a9a8f6;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .dropdown-header:hover {
-  background-color: #e9ecef;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.9)
+  );
+  border-color: rgba(169, 168, 246, 0.5);
 }
 
 .dropdown-content {
@@ -577,50 +778,167 @@ function VerFiltros() {
   top: 100%;
   left: 0;
   right: 0;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.95),
+    rgba(44, 44, 44, 0.8)
+  );
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  max-height: 200px;
+  max-height: 250px;
   overflow-y: auto;
-  padding: 5px 0;
+  padding: 8px 0;
+  backdrop-filter: blur(10px);
 }
 
 .checkbox-item {
   display: flex;
   align-items: center;
-  padding: 8px 12px;
+  padding: 10px 16px;
   cursor: pointer;
-  color: #333;
+  color: #a9a8f6;
   font-size: 14px;
+  transition: all 0.2s ease;
 }
 
 .checkbox-item:hover {
-  background-color: #f8f9fa;
+  background: rgba(169, 168, 246, 0.1);
+  color: #fff;
 }
 
 .checkbox-item input[type='checkbox'] {
-  margin-right: 8px;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
+
 .selectVideo {
-  margin-top: 8px;
+  margin-top: 10px;
   width: 100%;
-  padding: 4px;
-  font-size: normal;
-  border-radius: 4px;
-  background-color: white;
-  color: black;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  background: rgba(0, 0, 0, 0.7);
+  color: #a9a8f6;
+  outline: none;
+  cursor: pointer;
 }
 
-.input-busqueda {
-  width: 60%;
+.selectVideo:focus {
+  border-color: rgba(169, 168, 246, 0.6);
+  box-shadow: 0 0 10px rgba(169, 168, 246, 0.2);
 }
 
-/* Responsive design for mobile devices */
+/* Responsive design */
 @media (max-width: 768px) {
-  .input-busqueda {
-    width: 90%;
+  .search-input-container {
+    max-width: 90%;
   }
+
+  .input-busqueda {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+
+  .search-actions {
+    gap: 8px;
+  }
+
+  .btn-text {
+    display: none;
+  }
+
+  .search-btn {
+    min-width: 48px;
+    padding: 12px 16px;
+  }
+
+  .filtro {
+    min-width: 120px;
+    margin: 6px;
+  }
+
+  .filtro.seleccionado {
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .primer-parrafo {
+    font-size: 1.5rem;
+  }
+
+  .input-busqueda {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
+  .search-btn {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    min-height: 44px;
+  }
+
+  .filtro {
+    min-width: 100px;
+    margin: 4px;
+    padding: 4px 8px;
+  }
+
+  .filtro .filtro-header {
+    font-size: 13px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .input-busqueda,
+  .search-btn,
+  .filtro {
+    border-width: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .input-busqueda,
+  .search-btn,
+  .filtro,
+  .dropdown-header,
+  .checkbox-item {
+    transition: none;
+  }
+
+  .search-btn::before {
+    display: none;
+  }
+
+  .input-busqueda:focus,
+  .search-btn:hover {
+    transform: none;
+  }
+}
+
+/* Custom scrollbar for dropdown */
+.dropdown-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: rgba(169, 168, 246, 0.5);
+  border-radius: 3px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(169, 168, 246, 0.7);
 }
 </style>
