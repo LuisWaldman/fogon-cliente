@@ -247,12 +247,15 @@ function clickEditar() {
 
 .director-badge {
   position: absolute;
-  top: -2px;
+  bottom: -2px;
   left: -12px;
   border-radius: 50%;
   padding: 2px;
-  font-size: xx-large;
+  font-size: x-large;
   line-height: 1;
+  border: 3px solid #b40c0c;
+  border-radius: 50%;
+  background-color: #d6431e;
 }
 
 .compartir_sesion {
