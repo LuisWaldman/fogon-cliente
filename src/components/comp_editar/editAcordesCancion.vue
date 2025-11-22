@@ -86,13 +86,12 @@ clickCambiarEscala()
       </tbody>
     </table>
   </div>
+  <div>
     <div>
-        <div>
-                <button>AGREGAR ACORDE</button>
-                <button>QUITAR ACORDE</button>
-        </div>
+      <button>AGREGAR ACORDE</button>
+      <button>QUITAR ACORDE</button>
+    </div>
   </div>
-
 </template>
 <style scoped>
 td,

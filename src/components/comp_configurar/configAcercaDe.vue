@@ -22,9 +22,8 @@
             (Facultad de Ingeniería - Universidad de Buenos Aires).
           </p>
           <p>
-              La motivación principal fue crear una herramienta para compartir el
-              conocimiento musical, usando tecnologías web modernas.
-            
+            La motivación principal fue crear una herramienta para compartir el
+            conocimiento musical, usando tecnologías web modernas.
           </p>
         </div>
       </div>
@@ -251,7 +250,8 @@
 
       <div class="contact-info">
         <p class="version-info">
-          <strong>Versión:</strong> 1.0.0 | <strong>Última actualización:</strong>
+          <strong>Versión:</strong> 1.0.0 |
+          <strong>Última actualización:</strong>
           Noviembre 2024
         </p>
         <p class="dedication">
@@ -316,7 +316,9 @@
   padding: 30px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   border: 1px solid #4a5568;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .info-card:hover {
@@ -594,26 +596,26 @@
   .about-container {
     padding: 15px;
   }
-  
+
   .header-section {
     padding: 20px;
   }
-  
+
   .header-section h1 {
     font-size: 2em;
   }
-  
+
   .info-card {
     padding: 20px;
   }
-  
+
   .challenges-grid,
   .tech-categories,
   .acknowledgments-content,
   .repo-links {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-section {
     padding: 20px;
   }

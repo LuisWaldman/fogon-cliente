@@ -170,7 +170,8 @@ function Borrar(cancion: ItemIndiceCancion) {
             <div class="divDetalle">
               <div class="contDetalles">
                 <div class="divItemDetalle">
-                  <strong>Calidad:</strong> {{ vectorCalidades[cancion.calidad] }}
+                  <strong>Calidad:</strong>
+                  {{ vectorCalidades[cancion.calidad] }}
                 </div>
 
                 <div class="divItemDetalle duracion-detalle">
@@ -184,7 +185,9 @@ function Borrar(cancion: ItemIndiceCancion) {
                   }}
                 </div>
                 <div class="divItemDetalle">
-                  <strong>Compás:</strong> {{ cancion.compasCantidad }}/{{ cancion.compasUnidad }}
+                  <strong>Compás:</strong> {{ cancion.compasCantidad }}/{{
+                    cancion.compasUnidad
+                  }}
                 </div>
                 <div
                   class="divItemDetalle"
@@ -205,7 +208,8 @@ function Borrar(cancion: ItemIndiceCancion) {
                   class="divItemDetalle"
                   v-if="cancion.pentagramas.length > 0"
                 >
-                  🎼 <strong>Partitura:</strong> {{ cancion.pentagramas.length }}
+                  🎼 <strong>Partitura:</strong>
+                  {{ cancion.pentagramas.length }}
                 </div>
               </div>
 
@@ -279,7 +283,11 @@ function Borrar(cancion: ItemIndiceCancion) {
 
 /* Header Styles */
 .tabla-canciones thead {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.15), rgba(106, 112, 15, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.15),
+    rgba(106, 112, 15, 0.15)
+  );
   border-bottom: 2px solid rgba(169, 168, 246, 0.3);
 }
 
@@ -298,7 +306,7 @@ function Borrar(cancion: ItemIndiceCancion) {
 }
 
 /* Filter Input Styles */
-.tabla-canciones input[type="text"] {
+.tabla-canciones input[type='text'] {
   width: 100%;
   padding: 12px 16px;
   border: 2px solid rgba(169, 168, 246, 0.3);
@@ -309,7 +317,7 @@ function Borrar(cancion: ItemIndiceCancion) {
   transition: all 0.3s ease;
 }
 
-.tabla-canciones input[type="text"]:focus {
+.tabla-canciones input[type='text']:focus {
   outline: none;
   border-color: rgba(169, 168, 246, 0.8);
   box-shadow: 0 0 20px rgba(169, 168, 246, 0.2);
@@ -373,7 +381,11 @@ function Borrar(cancion: ItemIndiceCancion) {
 
 /* Detail Panel Styles */
 .divDetalle {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(44, 44, 44, 0.5));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.9),
+    rgba(44, 44, 44, 0.5)
+  );
   border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 12px;
   margin: 16px;
@@ -471,19 +483,23 @@ function Borrar(cancion: ItemIndiceCancion) {
 
 /* State Styles */
 .tocando {
-  background: linear-gradient(135deg, 
-    rgba(106, 112, 15, 0.3) 0%, 
-    rgba(169, 168, 246, 0.2) 50%, 
-    rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(106, 112, 15, 0.3) 0%,
+    rgba(169, 168, 246, 0.2) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   border-left: 4px solid #6a700f;
   animation: pulse 2s infinite;
 }
 
 .tocandodetalle {
-  background: linear-gradient(135deg, 
-    rgba(0, 0, 0, 0.9) 0%, 
-    rgba(106, 112, 15, 0.2) 50%, 
-    rgba(169, 168, 246, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(106, 112, 15, 0.2) 50%,
+    rgba(169, 168, 246, 0.1) 100%
+  );
   border-left: 4px solid #6a700f;
 }
 
@@ -493,8 +509,13 @@ function Borrar(cancion: ItemIndiceCancion) {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 /* Loading and Empty States */
@@ -582,7 +603,7 @@ function Borrar(cancion: ItemIndiceCancion) {
   .tabla-canciones {
     border: 2px solid #a9a8f6;
   }
-  
+
   .tabla-canciones td,
   .tabla-canciones th {
     border: 1px solid rgba(169, 168, 246, 0.5);
@@ -595,14 +616,14 @@ function Borrar(cancion: ItemIndiceCancion) {
   .botoneraDetalle button,
   .divItemDetalle,
   .tabla-canciones th span,
-  .tabla-canciones input[type="text"] {
+  .tabla-canciones input[type='text'] {
     transition: none;
   }
-  
+
   .tocando {
     animation: none;
   }
-  
+
   .tabla-canciones tbody tr:hover,
   .botoneraDetalle button:hover,
   .itemSeleccionable:hover {

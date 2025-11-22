@@ -262,7 +262,7 @@ function clickMas(masmenos: string) {
   flex: 1;
   text-align: center;
   padding: 10px;
-  
+
   margin: 0 2px;
   padding-top: 0px;
   border-radius: 5px;

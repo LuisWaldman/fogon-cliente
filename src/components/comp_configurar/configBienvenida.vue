@@ -73,10 +73,21 @@
         <div class="feature-icon">🎛️</div>
         <h3>Herramientas Musicales</h3>
         <ul class="feature-list">
-          <li><strong>Afinador:</strong> Mantén tu instrumento perfectamente afinado</li>
-          <li><strong>Control de tempo:</strong> Ajusta la velocidad de reproducción</li>
-          <li><strong>Transposición:</strong> Cambia la tonalidad según tu necesidad</li>
-          <li><strong>Metrónomo integrado:</strong> Practica con el tempo correcto</li>
+          <li>
+            <strong>Afinador:</strong> Mantén tu instrumento perfectamente
+            afinado
+          </li>
+          <li>
+            <strong>Control de tempo:</strong> Ajusta la velocidad de
+            reproducción
+          </li>
+          <li>
+            <strong>Transposición:</strong> Cambia la tonalidad según tu
+            necesidad
+          </li>
+          <li>
+            <strong>Metrónomo integrado:</strong> Practica con el tempo correcto
+          </li>
         </ul>
       </div>
 
@@ -97,10 +108,16 @@
         <div class="feature-icon">📱</div>
         <h3>Aplicación Progresiva</h3>
         <ul class="feature-list">
-          <li><strong>Funciona offline:</strong> Accede a tu música sin conexión</li>
+          <li>
+            <strong>Funciona offline:</strong> Accede a tu música sin conexión
+          </li>
           <li><strong>Instalable:</strong> Úsala como app nativa</li>
-          <li><strong>Responsive:</strong> Perfecta en cualquier dispositivo</li>
-          <li><strong>Rendimiento optimizado:</strong> Carga rápida y fluida</li>
+          <li>
+            <strong>Responsive:</strong> Perfecta en cualquier dispositivo
+          </li>
+          <li>
+            <strong>Rendimiento optimizado:</strong> Carga rápida y fluida
+          </li>
         </ul>
       </div>
     </div>
@@ -206,7 +223,9 @@
   padding: 25px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border: 1px solid #4a5568;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
@@ -333,15 +352,15 @@
   .welcome-header h1 {
     font-size: 2em;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .steps {
     grid-template-columns: 1fr;
   }
-  
+
   .divBienvenida {
     padding: 15px;
   }
