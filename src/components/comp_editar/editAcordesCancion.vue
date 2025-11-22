@@ -108,10 +108,12 @@ clickCambiarEscala()
     </table>
   </div>
   <div>
-    <div>
+    <div class="acordesInfo">
       {{ props.acordesCancion.join(', ') }}
-      <button @click="agregarAcorde">AGREGAR ACORDE</button>
-      <button>QUITAR ACORDE</button>
+    </div>
+    <div class="botoneraAcordes">
+      <button @click="agregarAcorde">🎸 AGREGAR </button>
+      <button>🗑️ QUITAR </button>
     </div>
   </div>
 </template>
@@ -195,5 +197,77 @@ td.dominantesecundaria {
 td.dominante {
   background: linear-gradient(to center, rgba(160, 82, 45, 0.1), transparent);
   border: 2px solid #8b0000;
+}
+
+/* Acordes info styling */
+.acordesInfo {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  color: #a9a8f6;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Button Styles - matching previous component style */
+.botoneraAcordes {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  flex-wrap: wrap;
+}
+
+.botoneraAcordes button {
+  padding: 12px 20px;
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 8px;
+  background: rgba(169, 168, 246, 0.1);
+  color: #a9a8f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+  flex: 1;
+  min-width: 140px;
+}
+
+.botoneraAcordes button:hover {
+  background: rgba(169, 168, 246, 0.2);
+  border-color: rgba(169, 168, 246, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(169, 168, 246, 0.3);
+  color: #fff;
+}
+
+.botoneraAcordes button:active {
+  transform: translateY(0);
+}
+
+/* Responsive design for buttons */
+@media (max-width: 768px) {
+  .botoneraAcordes {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+  }
+  
+  .botoneraAcordes button {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 10px 16px;
+    min-width: unset;
+  }
+  
+  .acordesInfo {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
 }
 </style>
