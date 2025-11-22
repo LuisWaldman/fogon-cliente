@@ -3,11 +3,27 @@ import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
+import nuevoAcorde from './nuevoAcorde.vue'
 
-defineProps<{
+const props = defineProps<{
   cancion: Cancion
+  acordesCancion: string[]
 }>()
 
+const refagregandoAcorde = ref(false)
+function agregarAcorde() {
+  refagregandoAcorde.value = true
+}
+function cerrarAgregando() {
+  refagregandoAcorde.value = false
+}
+
+function agregoAcorde(nuevoAcorde: string) {
+  if (!props.acordesCancion.includes(nuevoAcorde)) {
+    props.acordesCancion.push(nuevoAcorde)
+  }
+  refagregandoAcorde.value = false
+}
 const toEscala = ref('')
 const desdeEscala = ref('')
 const esMenor = ref(false)
@@ -20,7 +36,7 @@ const helperMuisca = new MusicaHelper()
 
 function clickCambiarEscala() {
   if (appStore.editandocancion.escala) {
-    desdeEscala.value = appStore.editandocancion.escala
+    desdeEscala.value = props.cancion.escala
     if (desdeEscala.value.includes('m')) {
       esMenor.value = true
       desdeEscala.value = desdeEscala.value.replace('m', '')
@@ -42,6 +58,11 @@ function clickCambiarEscala() {
 clickCambiarEscala()
 </script>
 <template>
+  <nuevoAcorde
+    v-if="refagregandoAcorde"
+    @cerrar="cerrarAgregando"
+    @agregar="agregoAcorde"
+  ></nuevoAcorde>
   <div>
     <table style="border-collapse: collapse; width: 100%">
       <thead>
@@ -88,7 +109,8 @@ clickCambiarEscala()
   </div>
   <div>
     <div>
-      <button>AGREGAR ACORDE</button>
+      {{ props.acordesCancion.join(', ') }}
+      <button @click="agregarAcorde">AGREGAR ACORDE</button>
       <button>QUITAR ACORDE</button>
     </div>
   </div>

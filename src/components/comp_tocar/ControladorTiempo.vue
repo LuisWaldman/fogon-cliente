@@ -185,7 +185,11 @@ function arreglartexto(texto: string): string {
   align-items: center;
   width: 100%;
   margin: 4px 0;
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.08), rgba(169, 168, 246, 0.04));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.08),
+    rgba(169, 168, 246, 0.04)
+  );
   border: 2px solid rgba(169, 168, 246, 0.3);
   border-radius: 12px;
   margin-left: 10px;
@@ -356,7 +360,11 @@ function arreglartexto(texto: string): string {
   position: absolute;
   bottom: 100%;
   left: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 30, 0.95));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.95),
+    rgba(20, 20, 30, 0.95)
+  );
   border: 2px solid rgba(169, 168, 246, 0.4);
   border-radius: 16px;
   min-width: 320px;
@@ -364,7 +372,9 @@ function arreglartexto(texto: string): string {
   max-height: 350px;
   overflow: hidden;
   z-index: 1000;
-  box-shadow: 0 -8px 32px rgba(169, 168, 246, 0.3), 0 -2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 -8px 32px rgba(169, 168, 246, 0.3),
+    0 -2px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 8px;
   backdrop-filter: blur(20px);
   animation: slideUp 0.3s ease-out;
@@ -443,7 +453,11 @@ function arreglartexto(texto: string): string {
 }
 
 .playlist-item.active {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.25), rgba(169, 168, 246, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.25),
+    rgba(169, 168, 246, 0.15)
+  );
   border-left: 4px solid #a9a8f6;
   padding-left: 12px;
 }
@@ -509,7 +523,7 @@ function arreglartexto(texto: string): string {
     padding-left: 4px;
     margin: 2px;
   }
-  
+
   .boton_controller {
     font-size: 12px;
     width: 28px;
@@ -517,14 +531,14 @@ function arreglartexto(texto: string): string {
     padding: 0px;
     margin: 0px;
   }
-  
+
   .boton_controllerplay {
     font-size: 20px !important;
     min-width: 36px;
     min-height: 36px;
     padding: 6px;
   }
-  
+
   .spnTiempo {
     font-size: 14px;
     padding: 6px 8px;
@@ -589,15 +603,15 @@ function arreglartexto(texto: string): string {
   .partes_control {
     display: none !important;
   }
-  
+
   .spnTiempo {
     display: none !important;
   }
-  
+
   .ocultocelu {
     display: none !important;
   }
-  
+
   .rango_compas {
     margin: 0 !important;
   }

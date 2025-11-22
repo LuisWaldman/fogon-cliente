@@ -6,7 +6,6 @@ import { CompasEditable } from './compaseditable'
 import editSecuencia from './editSecuencia.vue'
 import editAcordes from './editAcordesCancion.vue'
 import { Pantalla } from '../../modelo/pantalla'
-
 const props = defineProps<{
   compas: number
   cancion: Cancion
@@ -14,6 +13,10 @@ const props = defineProps<{
 const editandoCompas = ref(props.compas)
 
 const vistaLateral = ref('secuencia')
+const acordesCancion = ref<string[]>([])
+
+acordesCancion.value = [...new Set(props.cancion.acordes.GetTodosLosAcordes())]
+
 function cambiarVistaLateral(vista: string) {
   vistaLateral.value = vista
 }
@@ -148,6 +151,7 @@ function estiloVistaSecundaria() {
       </div>
       <div :style="estiloVistaSecundaria()">
         <editAcordes
+          :acordesCancion="acordesCancion"
           :cancion="cancion"
           v-if="vistaLateral === 'acordes'"
         ></editAcordes>
