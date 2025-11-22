@@ -3,26 +3,15 @@ import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
-import { VistaParte } from './vistaParteCancion'
 
 const props = defineProps<{
   cancion: Cancion
   acordesCancion: string[]
 }>()
-const VistaPartes = ref(VistaParte.GetFromCancion(props.cancion))
+
 const refagregandoAcorde = ref(false)
 function agregarAcorde() {
   refagregandoAcorde.value = true
-}
-function cerrarAgregando() {
-  refagregandoAcorde.value = false
-}
-
-function agregoAcorde(nuevoAcorde: string) {
-  if (!props.acordesCancion.includes(nuevoAcorde)) {
-    props.acordesCancion.push(nuevoAcorde)
-  }
-  refagregandoAcorde.value = false
 }
 const toEscala = ref('')
 const desdeEscala = ref('')

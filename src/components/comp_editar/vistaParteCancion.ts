@@ -3,6 +3,7 @@ import type { VistaAcorde } from './vistaParteAcorde'
 
 export class VistaParte {
   static GetFromCancion(cancion: Cancion): VistaParte[] {
+    console.log('VistaParte.GetFromCancion no implementado', cancion)
     return []
   }
   nombre: string = ''
