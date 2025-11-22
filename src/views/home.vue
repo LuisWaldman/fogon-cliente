@@ -441,33 +441,56 @@ async function AgregarALista(index: number, listaseleccionada: string) {
               </option>
             </select>
           </div>
-          
+
           <div class="actions-container">
-            <button @click="AbrirNuevo" v-if="viendo === 'canciones'" class="action-btn primary">
+            <button
+              @click="AbrirNuevo"
+              v-if="viendo === 'canciones'"
+              class="action-btn primary"
+            >
               <span class="btn-icon">➕</span>
               <span class="button-text">Nueva Canción</span>
             </button>
             <subirCancion v-if="viendo === 'canciones'"></subirCancion>
 
-            <button @click="tocarLista" v-if="viendo === 'listas'" class="action-btn play" :disabled="!viendoLista">
+            <button
+              @click="tocarLista"
+              v-if="viendo === 'listas'"
+              class="action-btn play"
+              :disabled="!viendoLista"
+            >
               <span class="btn-icon">▶</span>
               <span class="button-text">Tocar Lista</span>
             </button>
-            <button @click="addingLista = true" v-if="viendo === 'listas'" class="action-btn success">
+            <button
+              @click="addingLista = true"
+              v-if="viendo === 'listas'"
+              class="action-btn success"
+            >
               <span class="btn-icon">➕</span>
               <span class="button-text">Nueva Lista</span>
             </button>
-            <button @click="renombrarLista" v-if="viendo === 'listas'" class="action-btn warning" :disabled="!viendoLista">
+            <button
+              @click="renombrarLista"
+              v-if="viendo === 'listas'"
+              class="action-btn warning"
+              :disabled="!viendoLista"
+            >
               <span class="btn-icon">🔄</span>
               <span class="button-text">Renombrar</span>
             </button>
-            <button @click="borrarLista" v-if="viendo === 'listas'" class="action-btn danger" :disabled="!viendoLista">
+            <button
+              @click="borrarLista"
+              v-if="viendo === 'listas'"
+              class="action-btn danger"
+              :disabled="!viendoLista"
+            >
               <span class="btn-icon">🗑</span>
               <span class="button-text">Borrar</span>
             </button>
           </div>
         </div>
-        
+
         <div v-if="addingLista || renamingLista" class="lista-form-container">
           <div class="form-row">
             <input
@@ -476,11 +499,17 @@ async function AgregarALista(index: number, listaseleccionada: string) {
                 renamingLista ? 'Nuevo nombre de la lista' : 'Nueva lista'
               "
               class="lista-input"
-              @keydown.enter="renamingLista ? confirmarRenombrarLista() : confirmarNuevaLista()"
+              @keydown.enter="
+                renamingLista
+                  ? confirmarRenombrarLista()
+                  : confirmarNuevaLista()
+              "
             />
             <button
               @click="
-                renamingLista ? confirmarRenombrarLista() : confirmarNuevaLista()
+                renamingLista
+                  ? confirmarRenombrarLista()
+                  : confirmarNuevaLista()
               "
               class="action-btn confirm"
               :disabled="!nuevaLista.trim()"
@@ -590,7 +619,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 }
 
 .lista-select.loading {
-  background: linear-gradient(45deg, rgba(169, 168, 246, 0.1), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(
+    45deg,
+    rgba(169, 168, 246, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
   animation: loading-pulse 1.5s ease-in-out infinite;
 }
 
@@ -638,7 +671,12 @@ async function AgregarALista(index: number, listaseleccionada: string) {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
   transition: left 0.5s;
 }
 
@@ -655,7 +693,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 /* Button variants */
 .action-btn.primary {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .action-btn.primary:hover {
@@ -666,7 +708,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 .action-btn.play {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .action-btn.play:hover:not(:disabled) {
@@ -677,7 +723,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 .action-btn.success {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .action-btn.success:hover {
@@ -688,7 +738,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 .action-btn.warning {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .action-btn.warning:hover:not(:disabled) {
@@ -699,7 +753,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 .action-btn.danger {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .action-btn.danger:hover:not(:disabled) {
@@ -710,7 +768,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 .action-btn.confirm {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .action-btn.confirm:hover:not(:disabled) {
@@ -721,7 +783,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 .action-btn.cancel {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .action-btn.cancel:hover {
@@ -747,7 +813,11 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 /* Form Container */
 .lista-form-container {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.4)
+  );
   border: 1px solid rgba(169, 168, 246, 0.2);
   border-radius: 12px;
   padding: 16px;
@@ -787,7 +857,8 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 /* Loading animation */
 @keyframes loading-pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -802,29 +873,29 @@ async function AgregarALista(index: number, listaseleccionada: string) {
     align-items: stretch;
     gap: 12px;
   }
-  
+
   .select-container {
     max-width: none;
   }
-  
+
   .actions-container {
     justify-content: center;
   }
-  
+
   .button-text {
     display: none;
   }
-  
+
   .action-btn {
     min-width: 44px;
     padding: 10px 12px;
   }
-  
+
   .form-row {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .lista-input {
     min-width: auto;
   }
@@ -834,17 +905,17 @@ async function AgregarALista(index: number, listaseleccionada: string) {
   .lista-controls-container {
     width: 95%;
   }
-  
+
   .actions-container {
     gap: 6px;
   }
-  
+
   .action-btn {
     font-size: 0.8rem;
     padding: 8px 10px;
     min-height: 40px;
   }
-  
+
   .lista-select,
   .lista-input {
     font-size: 0.9rem;
@@ -858,7 +929,7 @@ async function AgregarALista(index: number, listaseleccionada: string) {
   .lista-input {
     border-width: 3px;
   }
-  
+
   .action-btn {
     border-width: 3px;
   }
@@ -871,15 +942,15 @@ async function AgregarALista(index: number, listaseleccionada: string) {
   .lista-input {
     transition: none;
   }
-  
+
   .action-btn::before {
     display: none;
   }
-  
+
   .loading-pulse {
     animation: none;
   }
-  
+
   .action-btn:hover {
     transform: none;
   }

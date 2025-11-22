@@ -258,11 +258,19 @@ function VerFiltros() {
         <span class="btn-icon">🔍</span>
         <span class="btn-text">Buscar</span>
       </button>
-      <button @click="VerFiltros()" class="search-btn secondary" :class="{ active: viendoFiltros }">
+      <button
+        @click="VerFiltros()"
+        class="search-btn secondary"
+        :class="{ active: viendoFiltros }"
+      >
         <span class="btn-icon">⚙️</span>
         <span class="btn-text">Filtros</span>
       </button>
-      <button @click="Borrar()" v-if="appStore.busqueda.length > 0" class="search-btn danger">
+      <button
+        @click="Borrar()"
+        v-if="appStore.busqueda.length > 0"
+        class="search-btn danger"
+      >
         <span class="btn-icon">🗑️</span>
         <span class="btn-text">Borrar</span>
       </button>
@@ -622,7 +630,12 @@ function VerFiltros() {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
   transition: left 0.5s;
 }
 
@@ -638,7 +651,11 @@ function VerFiltros() {
 
 .search-btn.primary {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .search-btn.primary:hover {
@@ -649,20 +666,32 @@ function VerFiltros() {
 
 .search-btn.secondary {
   border-color: rgba(108, 117, 125, 0.5);
-  background: linear-gradient(135deg, rgba(108, 117, 125, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(108, 117, 125, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .search-btn.secondary:hover,
 .search-btn.secondary.active {
   border-color: rgba(169, 168, 246, 0.8);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
   box-shadow: 0 6px 25px rgba(169, 168, 246, 0.2);
   transform: translateY(-3px);
 }
 
 .search-btn.danger {
   border-color: rgba(220, 53, 69, 0.5);
-  background: linear-gradient(135deg, rgba(220, 53, 69, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(220, 53, 69, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .search-btn.danger:hover {
@@ -703,7 +732,11 @@ function VerFiltros() {
 }
 
 .filtro.seleccionado {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
   border-color: rgba(169, 168, 246, 0.6);
   color: white;
   min-width: 200px;
@@ -716,7 +749,11 @@ function VerFiltros() {
 }
 
 .dropdown-header {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.1), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.1),
+    rgba(0, 0, 0, 0.8)
+  );
   border: 1px solid rgba(169, 168, 246, 0.3);
   padding: 10px 14px;
   border-radius: 6px;
@@ -728,7 +765,11 @@ function VerFiltros() {
 }
 
 .dropdown-header:hover {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.9)
+  );
   border-color: rgba(169, 168, 246, 0.5);
 }
 
@@ -737,7 +778,11 @@ function VerFiltros() {
   top: 100%;
   left: 0;
   right: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(44, 44, 44, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.95),
+    rgba(44, 44, 44, 0.8)
+  );
   border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 8px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -793,30 +838,30 @@ function VerFiltros() {
   .search-input-container {
     max-width: 90%;
   }
-  
+
   .input-busqueda {
     padding: 14px 16px;
     font-size: 1rem;
   }
-  
+
   .search-actions {
     gap: 8px;
   }
-  
+
   .btn-text {
     display: none;
   }
-  
+
   .search-btn {
     min-width: 48px;
     padding: 12px 16px;
   }
-  
+
   .filtro {
     min-width: 120px;
     margin: 6px;
   }
-  
+
   .filtro.seleccionado {
     min-width: 160px;
   }
@@ -826,24 +871,24 @@ function VerFiltros() {
   .primer-parrafo {
     font-size: 1.5rem;
   }
-  
+
   .input-busqueda {
     padding: 12px 14px;
     font-size: 0.95rem;
   }
-  
+
   .search-btn {
     font-size: 0.9rem;
     padding: 10px 14px;
     min-height: 44px;
   }
-  
+
   .filtro {
     min-width: 100px;
     margin: 4px;
     padding: 4px 8px;
   }
-  
+
   .filtro .filtro-header {
     font-size: 13px;
   }
@@ -867,11 +912,11 @@ function VerFiltros() {
   .checkbox-item {
     transition: none;
   }
-  
+
   .search-btn::before {
     display: none;
   }
-  
+
   .input-busqueda:focus,
   .search-btn:hover {
     transform: none;

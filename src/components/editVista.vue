@@ -42,29 +42,7 @@ function ClickSetModoVista(modo: string) {
   refModoVista.value = modo
   configPantalla.value.modo = modo
 }
-function cancelarConfiguracionPantalla() {
-  configPantalla.value.muestra = exvistapantalla.value.muestra
-  configPantalla.value.reproduce = exvistapantalla.value.reproduce
-  configPantalla.value.invertido = exvistapantalla.value.invertido
-  configPantalla.value.modo = exvistapantalla.value.modo
-  configPantalla.value.columnas = exvistapantalla.value.columnas
-  configPantalla.value.altoPantallaDescuento =
-    exvistapantalla.value.altoPantallaDescuento
-  configPantalla.value.altoPantallaDescuento =
-    exvistapantalla.value.altoPantallaDescuento
-  configPantalla.value.anchoPrincipal = exvistapantalla.value.anchoPrincipal
-  configPantalla.value.tamanioAcorde = exvistapantalla.value.tamanioAcorde
-  configPantalla.value.tamanioAcordesolo =
-    exvistapantalla.value.tamanioAcordesolo
-  configPantalla.value.tamanioLetra = exvistapantalla.value.tamanioLetra
-  configPantalla.value.tamanioParte = exvistapantalla.value.tamanioParte
-  configPantalla.value.tamanioAcordeParte =
-    exvistapantalla.value.tamanioAcordeParte
-  configPantalla.value.factorScroll = exvistapantalla.value.factorScroll
-  configPantalla.value.altoReproductor = exvistapantalla.value.altoReproductor
-  pantalla.setearEstilos()
-  emit('cerrar')
-}
+
 watch(configPantalla.value, () => {
   pantalla.setearEstilos()
 })
@@ -486,7 +464,6 @@ function ClickSoloMidi() {
       </div>
 
       <div class="modal-footer">
-        
         <button @click="guardarConfiguracionPantalla()" class="btn-primary">
           💾 Guardar Configuración
         </button>
