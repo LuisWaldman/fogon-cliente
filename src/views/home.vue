@@ -417,68 +417,80 @@ async function AgregarALista(index: number, listaseleccionada: string) {
       />
 
       <div
-        style="width: 90%"
+        class="lista-controls-container"
         v-if="viendo === 'listas' || viendo === 'canciones'"
       >
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-          "
-        >
-          <select v-if="cargandoListas" style="width: 70%">
-            <option disabled selected>🔥Cargando...</option>
-          </select>
-          <select
-            v-model="viendoLista"
-            @change="cambioLista"
-            style="width: 70%"
-            v-if="viendo === 'listas' && cargandoListas == false"
-          >
-            <option
-              v-for="(lista, index) in viendoListas"
-              :key="index"
-              :value="lista"
+        <div class="lista-main-row">
+          <div class="select-container">
+            <select v-if="cargandoListas" class="lista-select loading">
+              <option disabled selected>🔥 Cargando...</option>
+            </select>
+            <select
+              v-model="viendoLista"
+              @change="cambioLista"
+              class="lista-select"
+              v-if="viendo === 'listas' && cargandoListas == false"
             >
-              {{ lista }}
-            </option>
-          </select>
-          <div style="margin-left: auto">
-            <button @click="AbrirNuevo" v-if="viendo === 'canciones'">
-              ➕<span class="button-text">Nueva Cancion</span>
+              <option value="">Selecciona una lista...</option>
+              <option
+                v-for="(lista, index) in viendoListas"
+                :key="index"
+                :value="lista"
+              >
+                {{ lista }}
+              </option>
+            </select>
+          </div>
+          
+          <div class="actions-container">
+            <button @click="AbrirNuevo" v-if="viendo === 'canciones'" class="action-btn primary">
+              <span class="btn-icon">➕</span>
+              <span class="button-text">Nueva Canción</span>
             </button>
             <subirCancion v-if="viendo === 'canciones'"></subirCancion>
 
-            <button @click="tocarLista" v-if="viendo === 'listas'">
-              ▶<span class="button-text">Tocar Lista</span>
+            <button @click="tocarLista" v-if="viendo === 'listas'" class="action-btn play" :disabled="!viendoLista">
+              <span class="btn-icon">▶</span>
+              <span class="button-text">Tocar Lista</span>
             </button>
-            <button @click="addingLista = true" v-if="viendo === 'listas'">
-              ➕<span class="button-text">Nueva Lista</span>
+            <button @click="addingLista = true" v-if="viendo === 'listas'" class="action-btn success">
+              <span class="btn-icon">➕</span>
+              <span class="button-text">Nueva Lista</span>
             </button>
-            <button @click="renombrarLista" v-if="viendo === 'listas'">
-              🔄<span class="button-text"> Renombrar</span>
+            <button @click="renombrarLista" v-if="viendo === 'listas'" class="action-btn warning" :disabled="!viendoLista">
+              <span class="btn-icon">🔄</span>
+              <span class="button-text">Renombrar</span>
             </button>
-            <button @click="borrarLista" v-if="viendo === 'listas'">
-              🗑<span class="button-text"> Borrar</span>
+            <button @click="borrarLista" v-if="viendo === 'listas'" class="action-btn danger" :disabled="!viendoLista">
+              <span class="btn-icon">🗑</span>
+              <span class="button-text">Borrar</span>
             </button>
           </div>
         </div>
-        <div v-if="addingLista || renamingLista">
-          <input
-            v-model="nuevaLista"
-            :placeholder="
-              renamingLista ? 'Nuevo nombre de la lista' : 'Nueva lista'
-            "
-          />
-          <button
-            @click="
-              renamingLista ? confirmarRenombrarLista() : confirmarNuevaLista()
-            "
-          >
-            {{ renamingLista ? 'Renombrar' : 'Agregar' }}
-          </button>
-          <button @click="cancelarOperacion">Cancelar</button>
+        
+        <div v-if="addingLista || renamingLista" class="lista-form-container">
+          <div class="form-row">
+            <input
+              v-model="nuevaLista"
+              :placeholder="
+                renamingLista ? 'Nuevo nombre de la lista' : 'Nueva lista'
+              "
+              class="lista-input"
+              @keydown.enter="renamingLista ? confirmarRenombrarLista() : confirmarNuevaLista()"
+            />
+            <button
+              @click="
+                renamingLista ? confirmarRenombrarLista() : confirmarNuevaLista()
+              "
+              class="action-btn confirm"
+              :disabled="!nuevaLista.trim()"
+            >
+              {{ renamingLista ? 'Renombrar' : 'Agregar' }}
+            </button>
+            <button @click="cancelarOperacion" class="action-btn cancel">
+              Cancelar
+            </button>
+          </div>
         </div>
       </div>
 
@@ -513,7 +525,6 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 .config-menu-item {
   flex: 1;
   text-align: center;
-
   margin: 0px;
   border-radius: 5px;
   padding-bottom: 5px;
@@ -534,10 +545,343 @@ async function AgregarALista(index: number, listaseleccionada: string) {
   background-color: blueviolet;
 }
 
-/* Hide button text on mobile devices */
+/* Lista Controls Styles */
+.lista-controls-container {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.lista-main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.select-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+.lista-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid rgba(169, 168, 246, 0.3);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #a9a8f6;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.lista-select:focus {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 0 20px rgba(169, 168, 246, 0.2);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.lista-select:hover {
+  border-color: rgba(169, 168, 246, 0.6);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lista-select.loading {
+  background: linear-gradient(45deg, rgba(169, 168, 246, 0.1), rgba(0, 0, 0, 0.7));
+  animation: loading-pulse 1.5s ease-in-out infinite;
+}
+
+.lista-select option {
+  background: rgba(0, 0, 0, 0.9);
+  color: #a9a8f6;
+  padding: 8px;
+}
+
+.lista-select option:hover {
+  background: rgba(169, 168, 246, 0.2);
+}
+
+/* Actions Container */
+.actions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-height: 44px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.action-btn:hover::before {
+  left: 100%;
+}
+
+.btn-icon {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+/* Button variants */
+.action-btn.primary {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.action-btn.primary:hover {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-btn.play {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.action-btn.play:hover:not(:disabled) {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-btn.success {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.action-btn.success:hover {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-btn.warning {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.action-btn.warning:hover:not(:disabled) {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-btn.danger {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.action-btn.danger:hover:not(:disabled) {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-btn.confirm {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.action-btn.confirm:hover:not(:disabled) {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+.action-btn.cancel {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.action-btn.cancel:hover {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.action-btn:disabled::before {
+  display: none;
+}
+
+.action-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Form Container */
+.lista-form-container {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lista-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid rgba(169, 168, 246, 0.3);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #a9a8f6;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.lista-input:focus {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 0 20px rgba(169, 168, 246, 0.2);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lista-input::placeholder {
+  color: rgba(169, 168, 246, 0.5);
+}
+
+/* Loading animation */
+@keyframes loading-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
+  .lista-main-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .select-container {
+    max-width: none;
+  }
+  
+  .actions-container {
+    justify-content: center;
+  }
+  
   .button-text {
     display: none;
+  }
+  
+  .action-btn {
+    min-width: 44px;
+    padding: 10px 12px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .lista-input {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .lista-controls-container {
+    width: 95%;
+  }
+  
+  .actions-container {
+    gap: 6px;
+  }
+  
+  .action-btn {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+    min-height: 40px;
+  }
+  
+  .lista-select,
+  .lista-input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .lista-select,
+  .lista-input {
+    border-width: 3px;
+  }
+  
+  .action-btn {
+    border-width: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .action-btn,
+  .lista-select,
+  .lista-input {
+    transition: none;
+  }
+  
+  .action-btn::before {
+    display: none;
+  }
+  
+  .loading-pulse {
+    animation: none;
+  }
+  
+  .action-btn:hover {
+    transform: none;
   }
 }
 </style>
