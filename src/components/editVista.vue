@@ -30,7 +30,6 @@ exvistapantalla.value.tamanioLetra = configPantalla.value.tamanioLetra
 exvistapantalla.value.tamanioParte = configPantalla.value.tamanioParte
 exvistapantalla.value.tamanioAcordeParte =
   configPantalla.value.tamanioAcordeParte
-exvistapantalla.value.factorScroll = configPantalla.value.factorScroll
 exvistapantalla.value.columnas = configPantalla.value.columnas
 
 function guardarConfiguracionPantalla() {
@@ -241,17 +240,6 @@ function ClickSoloMidi() {
             </label>
           </div>
 
-          <div class="input-group">
-            <label>⚡ Factor Scroll</label>
-            <input
-              type="number"
-              min="0.2"
-              max="3"
-              step="0.1"
-              v-model.number="configPantalla.factorScroll"
-              class="form-input"
-            />
-          </div>
         </div>
 
         <div
