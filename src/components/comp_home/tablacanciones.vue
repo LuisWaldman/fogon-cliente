@@ -387,25 +387,25 @@ function Borrar(cancion: ItemIndiceCancion) {
     rgba(44, 44, 44, 0.5)
   );
   border: 1px solid rgba(169, 168, 246, 0.3);
-  border-radius: 12px;
-  margin: 16px;
-  padding: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  margin: 2px;
+  padding: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .contDetalles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 4px;
+  margin-bottom: 6px;
 }
 
 .divItemDetalle {
-  padding: 12px 16px;
+  padding: 4px 8px;
   background: rgba(169, 168, 246, 0.05);
   border: 1px solid rgba(169, 168, 246, 0.2);
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
   color: #a9a8f6;
   transition: all 0.3s ease;
 }
@@ -435,19 +435,19 @@ function Borrar(cancion: ItemIndiceCancion) {
 /* Button Styles */
 .botoneraDetalle {
   display: flex;
-  gap: 12px;
+  gap: 6px;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 4px;
 }
 
 .botoneraDetalle button {
-  padding: 12px 20px;
-  border: 2px solid rgba(169, 168, 246, 0.5);
-  border-radius: 8px;
+  padding: 6px 12px;
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 4px;
   background: rgba(169, 168, 246, 0.1);
   color: #a9a8f6;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -472,13 +472,13 @@ function Borrar(cancion: ItemIndiceCancion) {
 
 .botoneraDetalle select {
   flex: 1;
-  min-width: 200px;
-  padding: 12px 16px;
-  border: 2px solid rgba(169, 168, 246, 0.3);
-  border-radius: 8px;
+  min-width: 150px;
+  padding: 6px 8px;
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  border-radius: 4px;
   background: rgba(0, 0, 0, 0.6);
   color: #a9a8f6;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 /* State Styles */
@@ -551,23 +551,23 @@ function Borrar(cancion: ItemIndiceCancion) {
   }
 
   .divDetalle {
-    margin: 8px;
-    padding: 16px;
+    margin: 1px;
+    padding: 4px;
   }
 
   .contDetalles {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 3px;
   }
 
   .divItemDetalle {
-    padding: 10px 12px;
-    font-size: 0.9rem;
+    padding: 3px 6px;
+    font-size: 0.75rem;
   }
 
   .botoneraDetalle {
     flex-direction: column;
-    gap: 8px;
+    gap: 2px;
   }
 
   .botoneraDetalle button,
