@@ -41,10 +41,9 @@ const appStore = useAppStore()
 }
 
 .metronono {
-  border: 1px solid #a9a8f6;
   border-radius: 10px;
   font-size: 27px;
-  margin: 4px;
+  margin-left: 4px;
 }
 
 .beat {
@@ -54,8 +53,8 @@ const appStore = useAppStore()
   margin: 4px;
   padding-left: 14px;
   padding-right: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 .beat_activo {
   background-color: rgb(235, 67, 16);
