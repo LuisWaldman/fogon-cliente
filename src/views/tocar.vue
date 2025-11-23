@@ -218,7 +218,17 @@ const refAdvertencia = ref(true)
 </script>
 
 <template>
-  <div class="tocar-fluid">
+      <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
+      <img
+        src="/img/iconogrande.png"
+        style="width: 300px; height: auto"
+        class="logo vue"
+        alt="Vue logo"
+      />
+      <div>{{ appStore.estadosApp.texto }}</div>
+    </div>
+     
+  <div class="tocar-fluid" v-if="appStore.estadosApp.estado === 'ok'">
     <sincronizarMedias
       v-if="refSincronizandoMedios"
       @cerrar="clickCerrarMedios"
