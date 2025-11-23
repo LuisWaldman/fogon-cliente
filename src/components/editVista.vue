@@ -239,7 +239,6 @@ function ClickSoloMidi() {
               Auto Scroll
             </label>
           </div>
-
         </div>
 
         <div
