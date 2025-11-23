@@ -3,7 +3,6 @@ import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
-import nuevoAcorde from './nuevoAcorde.vue'
 
 const props = defineProps<{
   cancion: Cancion
@@ -13,16 +12,6 @@ const props = defineProps<{
 const refagregandoAcorde = ref(false)
 function agregarAcorde() {
   refagregandoAcorde.value = true
-}
-function cerrarAgregando() {
-  refagregandoAcorde.value = false
-}
-
-function agregoAcorde(nuevoAcorde: string) {
-  if (!props.acordesCancion.includes(nuevoAcorde)) {
-    props.acordesCancion.push(nuevoAcorde)
-  }
-  refagregandoAcorde.value = false
 }
 const toEscala = ref('')
 const desdeEscala = ref('')
@@ -58,11 +47,35 @@ function clickCambiarEscala() {
 clickCambiarEscala()
 </script>
 <template>
-  <nuevoAcorde
-    v-if="refagregandoAcorde"
-    @cerrar="cerrarAgregando"
-    @agregar="agregoAcorde"
-  ></nuevoAcorde>
+  <div>
+    <div
+      class="clsParte"
+      v-for="(parte, indexparte) in props.cancion.acordes.partes"
+      :key="indexparte"
+    >
+      <div>{{ parte.nombre }}</div>
+      <div class="conteinerCompases">
+        <div class="compas">
+          <div class="parteCompasEntero">LA</div>
+        </div>
+
+        <div class="compas">
+          <div class="parteCompasMitad">LA</div>
+          <div class="parteCompasMitad">SOL</div>
+        </div>
+
+        <div class="compas">
+          <div class="parteCompasEntero">RE</div>
+        </div>
+
+        <div class="compas">
+          <div class="parteCompasCuarto">LA</div>
+          <div class="parteCompasMitad">SOL</div>
+          <div class="parteCompasCuarto">SOL7</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div>
     <table style="border-collapse: collapse; width: 100%">
       <thead>
@@ -248,6 +261,162 @@ td.dominante {
 
 .botoneraAcordes button:active {
   transform: translateY(0);
+}
+
+/* Estilos para las partes y compases */
+.clsParte {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 4px solid #a9a8f6;
+  border-radius: 4px;
+}
+
+.clsParte > div:first-child {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #a9a8f6;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.conteinerCompases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.compas {
+  display: flex;
+  min-height: 40px;
+  border: 1px solid rgba(169, 168, 246, 0.4);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: stretch;
+  position: relative;
+}
+
+/* Compás con acorde entero (simple) */
+.compas:has(.parteCompasEntero) {
+  min-width: 80px;
+  background: rgba(169, 168, 246, 0.1);
+  border: 2px solid rgba(169, 168, 246, 0.6);
+}
+
+/* Compás con dos mitades (doble) */
+.compas:has(.parteCompasMitad) {
+  min-width: 120px;
+  background: rgba(255, 165, 0, 0.1);
+  border: 2px solid rgba(255, 165, 0, 0.6);
+}
+
+/* Compás con combinación (cuádruple) */
+.compas:has(.parteCompasCuarto) {
+  min-width: 160px;
+  background: rgba(255, 69, 0, 0.1);
+  border: 2px solid rgba(255, 69, 0, 0.6);
+}
+
+.parteCompasEntero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a9a8f6;
+  background: rgba(169, 168, 246, 0.2);
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.parteCompasMitad {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffb347;
+  background: rgba(255, 165, 0, 0.2);
+  border-radius: 2px;
+  margin: 2px;
+  padding: 6px;
+  border-right: 1px solid rgba(255, 165, 0, 0.4);
+}
+
+.parteCompasMitad:last-child {
+  border-right: none;
+}
+
+.parteCompasCuarto {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ff6347;
+  background: rgba(255, 69, 0, 0.2);
+  border-radius: 2px;
+  margin: 1px;
+  padding: 4px;
+  border-right: 1px solid rgba(255, 69, 0, 0.4);
+}
+
+.parteCompasCuarto:last-child {
+  border-right: none;
+}
+
+/* Efectos hover para los acordes */
+.parteCompasEntero:hover {
+  background: rgba(169, 168, 246, 0.4);
+  color: #fff;
+}
+
+.parteCompasMitad:hover {
+  background: rgba(255, 165, 0, 0.4);
+  color: #fff;
+}
+
+.parteCompasCuarto:hover {
+  background: rgba(255, 69, 0, 0.4);
+  color: #fff;
+}
+
+/* Responsive design para compases */
+@media (max-width: 768px) {
+  .conteinerCompases {
+    gap: 6px;
+  }
+
+  .compas:has(.parteCompasEntero) {
+    min-width: 60px;
+  }
+
+  .compas:has(.parteCompasMitad) {
+    min-width: 100px;
+  }
+
+  .compas:has(.parteCompasCuarto) {
+    min-width: 140px;
+  }
+
+  .parteCompasEntero {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .parteCompasMitad {
+    font-size: 0.8rem;
+    padding: 4px;
+  }
+
+  .parteCompasCuarto {
+    font-size: 0.7rem;
+    padding: 3px;
+  }
 }
 
 /* Responsive design for buttons */

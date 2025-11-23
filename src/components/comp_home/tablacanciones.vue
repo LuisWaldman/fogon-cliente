@@ -408,6 +408,7 @@ function Borrar(cancion: ItemIndiceCancion) {
   font-size: 0.85rem;
   color: #a9a8f6;
   transition: all 0.3s ease;
+  text-align: left;
 }
 
 .divItemDetalle:hover {
@@ -551,7 +552,7 @@ function Borrar(cancion: ItemIndiceCancion) {
   }
 
   .divDetalle {
-    margin: 1px;
+    margin: 0;
     padding: 4px;
   }
 

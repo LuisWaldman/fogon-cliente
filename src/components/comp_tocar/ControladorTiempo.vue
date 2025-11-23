@@ -122,22 +122,14 @@ function arreglartexto(texto: string): string {
         ⏹️
       </div>
     </div>
-    <table width="100%" style="table-layout: fixed" margin="0">
-      <tbody>
-        <tr>
-          <td :colspan="appStore.cancion?.totalCompases">
-            <input
-              type="range"
-              min="-1"
-              :max="appStore.cancion?.totalCompases"
-              v-model="currentCompas"
-              @input="updateCompas()"
-              class="rango_compas"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <input
+      type="range"
+      min="-1"
+      :max="appStore.cancion?.totalCompases"
+      v-model="currentCompas"
+      @input="updateCompas()"
+      class="rango_compas"
+    />
     <div
       class="boton_controller boton_controllerplay ocultocelu"
       @click="next"
@@ -190,24 +182,47 @@ function arreglartexto(texto: string): string {
 <style scoped>
 .controladortiempo {
   display: flex;
+  align-items: center;
   width: 100%;
-  margin: 3px;
-  border: 1px solid #a9a8f6;
-  border-radius: 8px;
+  margin: 4px 0;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.08),
+    rgba(169, 168, 246, 0.04)
+  );
+  border: 2px solid rgba(169, 168, 246, 0.3);
+  border-radius: 12px;
   margin-left: 10px;
-  padding: 5px;
+  padding: 6px 12px;
+  box-shadow: 0 4px 12px rgba(169, 168, 246, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  gap: 8px;
+  height: 48px;
 }
+
+.controladortiempo:hover {
+  border-color: rgba(169, 168, 246, 0.5);
+  box-shadow: 0 6px 20px rgba(169, 168, 246, 0.25);
+  transform: translateY(-1px);
+}
+
 .columnacontrol {
   margin: 1px !important;
   padding: 1px !important;
 }
+
 .controls {
   display: flex;
+  align-items: center;
+  gap: 8px;
 }
+
 .clsEditando {
   background-color: black;
   color: #a9a8f6;
 }
+
 .titulocontorltiempo {
   font-size: 38px;
   padding-left: 12px;
@@ -219,23 +234,92 @@ function arreglartexto(texto: string): string {
 }
 
 .boton_controllerplay {
-  font-size: 30px !important;
+  font-size: 20px !important;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: rgba(169, 168, 246, 0.1);
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  color: #a9a8f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.boton_controllerplay:hover {
+  background: rgba(169, 168, 246, 0.2);
+  border-color: rgba(169, 168, 246, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(169, 168, 246, 0.3);
+}
+
+.boton_controllerplay:active {
+  transform: scale(0.95);
 }
 
 .spnTiempo {
-  font-size: 26px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a9a8f6;
+  background: rgba(169, 168, 246, 0.1);
+  border: 1px solid rgba(169, 168, 246, 0.2);
   border-radius: 8px;
-
-  padding: 1px;
+  padding: 4px 8px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.5px;
+  min-width: 110px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .rango_compas {
-  accent-color: '#a9a8f6';
-  width: 100%;
-  margin-left: 10px;
-  padding: 0px;
+  accent-color: #a9a8f6;
+  flex: 1;
+  margin: 0 8px;
+  padding: 0;
+  height: 6px;
+  background: rgba(169, 168, 246, 0.2);
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rango_compas::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #a9a8f6;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(169, 168, 246, 0.4);
+  transition: all 0.2s ease;
+}
+
+.rango_compas::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 3px 10px rgba(169, 168, 246, 0.6);
+}
+
+.rango_compas::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #a9a8f6;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 6px rgba(169, 168, 246, 0.4);
+  transition: all 0.2s ease;
+}
+
+.rango_compas::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 3px 10px rgba(169, 168, 246, 0.6);
 }
 
 .titulocancioncontrol {
@@ -244,93 +328,202 @@ function arreglartexto(texto: string): string {
 
 .playlist-container {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.playlist-container button {
+  background: rgba(169, 168, 246, 0.1);
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  color: #a9a8f6;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  margin-top: 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+}
+
+.playlist-container button:hover {
+  background: rgba(169, 168, 246, 0.2);
+  border-color: rgba(169, 168, 246, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(169, 168, 246, 0.3);
 }
 
 .playlist-dropdown {
   position: absolute;
   bottom: 100%;
   left: 0;
-  background-color: black;
-  border: 1px solid #a9a8f6;
-  border-radius: 8px;
-  min-width: 300px;
-  max-width: 400px;
-  max-height: 300px;
-  overflow-y: auto;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.95),
+    rgba(20, 20, 30, 0.95)
+  );
+  border: 2px solid rgba(169, 168, 246, 0.4);
+  border-radius: 16px;
+  min-width: 320px;
+  max-width: 420px;
+  max-height: 350px;
+  overflow: hidden;
   z-index: 1000;
-  box-shadow: 0 -4px 6px rgba(169, 168, 246, 0.3);
-  margin-bottom: 5px;
+  box-shadow:
+    0 -8px 32px rgba(169, 168, 246, 0.3),
+    0 -2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+  backdrop-filter: blur(20px);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.playlist-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.playlist-dropdown::-webkit-scrollbar-track {
+  background: rgba(169, 168, 246, 0.1);
+  border-radius: 3px;
+}
+
+.playlist-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(169, 168, 246, 0.4);
+  border-radius: 3px;
+}
+
+.playlist-dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(169, 168, 246, 0.6);
 }
 
 .playlist-header {
-  padding: 10px;
-  background-color: #a9a8f6;
-  color: black;
-  font-weight: bold;
+  padding: 16px;
+  background: linear-gradient(135deg, #a9a8f6, #8b8af0);
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
   text-align: center;
-  border-radius: 8px 8px 0 0;
+  border-radius: 14px 14px 0 0;
   order: -1;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
 }
 
 .playlist-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 12px;
-  border-bottom: 1px solid #333;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(169, 168, 246, 0.1);
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.playlist-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(169, 168, 246, 0.3), transparent);
+  transition: width 0.3s ease;
+}
+
+.playlist-item:hover::before {
+  width: 100%;
 }
 
 .playlist-item:hover {
-  background-color: rgba(169, 168, 246, 0.1);
+  background-color: rgba(169, 168, 246, 0.15);
+  transform: translateX(4px);
 }
 
 .playlist-item.active {
-  background-color: rgba(169, 168, 246, 0.2);
-  border-left: 3px solid #a9a8f6;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.25),
+    rgba(169, 168, 246, 0.15)
+  );
+  border-left: 4px solid #a9a8f6;
+  padding-left: 12px;
+}
+
+.playlist-item.active::before {
+  width: 100%;
 }
 
 .playlist-item:last-child {
   border-bottom: none;
+  border-radius: 0 0 14px 14px;
 }
 
 .song-info {
   flex: 1;
   min-width: 0;
+  z-index: 1;
+  position: relative;
 }
 
 .song-title {
-  font-weight: bold;
+  font-weight: 600;
   color: #a9a8f6;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 14px;
+  font-size: 15px;
+  margin-bottom: 2px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .song-artist {
   color: #ccc;
-  font-size: 12px;
+  font-size: 13px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  opacity: 0.8;
 }
 
 .song-duration {
-  color: #999;
+  color: #a9a8f6;
   font-size: 12px;
-  margin-left: 8px;
+  font-weight: 500;
+  margin-left: 12px;
   white-space: nowrap;
+  background: rgba(169, 168, 246, 0.1);
+  padding: 4px 8px;
+  border-radius: 8px;
+  z-index: 1;
+  position: relative;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .controladortiempo {
+    padding: 8px 12px;
+    gap: 8px;
+    margin: 4px 0;
+  }
+
   .titulocontorltiempo {
     font-size: 18px;
     padding-left: 4px;
     margin: 2px;
   }
+
   .boton_controller {
     font-size: 12px;
     width: 28px;
@@ -338,47 +531,106 @@ function arreglartexto(texto: string): string {
     padding: 0px;
     margin: 0px;
   }
+
   .boton_controllerplay {
-    font-size: 16px !important;
+    font-size: 20px !important;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 6px;
   }
+
   .spnTiempo {
-    font-size: 12px;
+    font-size: 14px;
+    padding: 6px 8px;
+    min-width: 100px;
+  }
+
+  .rango_compas {
+    margin: 0 8px;
+    height: 4px;
+  }
+
+  .rango_compas::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+  }
+
+  .rango_compas::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
   }
 
   .playlist-dropdown {
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 280px;
+    max-width: 320px;
     right: 0;
     left: auto;
     bottom: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
-  .song-title,
+  .playlist-header {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .playlist-item {
+    padding: 10px 12px;
+  }
+
+  .song-title {
+    font-size: 13px;
+  }
+
   .song-artist {
     font-size: 11px;
   }
 
   .song-duration {
     font-size: 10px;
+    padding: 3px 6px;
+    margin-left: 8px;
   }
 }
 
 @media (max-width: 600px) {
+  .controladortiempo {
+    margin-left: 0px;
+    padding: 6px 8px;
+    gap: 6px;
+  }
+
   .partes_control {
     display: none !important;
   }
+
   .spnTiempo {
     display: none !important;
   }
+
   .ocultocelu {
     display: none !important;
   }
+
   .rango_compas {
-    margin-left: 0px !important;
+    margin: 0 !important;
   }
-  .controladortiempo {
-    margin-left: 0px;
+
+  .boton_controllerplay {
+    font-size: 18px !important;
+    min-width: 32px;
+    min-height: 32px;
+    padding: 4px;
+  }
+
+  .playlist-container button {
+    padding: 6px 8px;
+    font-size: 16px;
+  }
+
+  .playlist-dropdown {
+    min-width: 260px;
+    max-width: 280px;
   }
 }
 </style>

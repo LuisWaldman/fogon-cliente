@@ -247,7 +247,7 @@ function VerFiltros() {
           class="input-busqueda"
           @keydown.enter="buscarCanciones()"
         />
-        <div class="search-status" v-if="refEstadoBusqueda">
+        <div class="search-status" v-if="refEstadoBusqueda.trim() !== ''">
           {{ refEstadoBusqueda }}
         </div>
       </div>

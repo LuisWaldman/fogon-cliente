@@ -305,7 +305,24 @@ export class MusicaHelper {
 
   // Devuelve el numero de nota
   numeroNota(nota: string): number {
-    return this.notas.indexOf(nota)
+    const index = this.notas.indexOf(nota)
+    if (index !== -1) return index
+
+    // Si no se encuentra, buscar equivalencia enarmónica
+    const equivalenciasBemolSostenido: { [key: string]: string } = {
+      Db: 'C#',
+      Eb: 'D#',
+      Gb: 'F#',
+      Ab: 'G#',
+      Bb: 'A#',
+    }
+
+    const equivalente = equivalenciasBemolSostenido[nota]
+    if (equivalente) {
+      return this.notas.indexOf(equivalente)
+    }
+
+    return -1
   }
   // Devuelve el numero de nota
   nombreNota(nota: number): string {
@@ -332,7 +349,6 @@ export class MusicaHelper {
       notaInd += modoSusecion[i]
       acordes.push(this.notas[notaInd % this.notas.length])
     }
-
     return acordes
   }
 
@@ -377,7 +393,7 @@ export class MusicaHelper {
       )
     }
 
-    return acordes
+    return corregirBemoles(acordes)
   }
 
   esMenor(nota1: string, nota2: string) {
@@ -469,4 +485,53 @@ export class MusicaHelper {
     }
     return toRet
   }
+}
+
+function corregirBemoles(acordes: string[]): string[] {
+  // Mapeo de equivalencias enarmónicas sostenido -> bemol
+  const equivalencias: { [key: string]: string } = {
+    'C#': 'Db',
+    'D#': 'Eb',
+    'F#': 'Gb',
+    'G#': 'Ab',
+    'A#': 'Bb',
+  }
+
+  // Solo escalas que TRADICIONALMENTE usan bemoles en notación musical estándar
+  // Incluimos tanto la notación de bemoles como sus equivalencias enarmónicas
+  const escalasBemoles = [
+    'F',
+    'Bb',
+    'Eb',
+    'Ab',
+    'Db',
+    'Gb',
+    'D#',
+    'G#',
+    'C#',
+    'A#',
+  ]
+
+  // También escalas menores que corresponden a escalas mayores de bemoles
+  const escalasMenuoresBemoles = ['Dm', 'Gm', 'Cm', 'Fm', 'Bbm', 'Ebm']
+
+  const primerAcorde = acordes[0] || ''
+  const primeraNota = primerAcorde.replace(/[^A-G#b]/g, '') // Quitar sufijos como 'm', 'dim', etc.
+
+  // Solo convertir si es una escala tradicional de bemoles o ya contiene bemoles
+  if (
+    escalasBemoles.includes(primeraNota) ||
+    escalasMenuoresBemoles.includes(primerAcorde) ||
+    primeraNota.includes('b')
+  ) {
+    return acordes.map((acorde) => {
+      let resultado = acorde
+      for (const [sostenido, bemol] of Object.entries(equivalencias)) {
+        resultado = resultado.replace(sostenido, bemol)
+      }
+      return resultado
+    })
+  }
+
+  return acordes
 }

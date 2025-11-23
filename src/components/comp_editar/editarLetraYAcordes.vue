@@ -5,8 +5,8 @@ import { useAppStore } from '../../stores/appStore'
 import { CompasEditable } from './compaseditable'
 import editSecuencia from './editSecuencia.vue'
 import editAcordes from './editAcordesCancion.vue'
+import editPartes from './editPartesCancion.vue'
 import { Pantalla } from '../../modelo/pantalla'
-
 const props = defineProps<{
   compas: number
   cancion: Cancion
@@ -14,6 +14,10 @@ const props = defineProps<{
 const editandoCompas = ref(props.compas)
 
 const vistaLateral = ref('secuencia')
+const acordesCancion = ref<string[]>([])
+
+acordesCancion.value = [...new Set(props.cancion.acordes.GetTodosLosAcordes())]
+
 function cambiarVistaLateral(vista: string) {
   vistaLateral.value = vista
 }
@@ -141,16 +145,40 @@ function estiloVistaSecundaria() {
         width: 100 - pantalla.getConfiguracionPantalla().anchoPrincipal + '%',
       }"
     >
-      <div>
-        <button @click="cambiarVistaLateral('acordes')">🎸 ACORDES</button>
-        <button @click="cambiarVistaLateral('partes')">PARTES</button>
-        <button @click="cambiarVistaLateral('secuencia')">SECUENCIA</button>
+      <div class="botoneraLateral">
+        <button
+          @click="cambiarVistaLateral('acordes')"
+          :class="{ active: vistaLateral === 'acordes' }"
+        >
+          🎸 ACORDES
+        </button>
+        <button
+          @click="cambiarVistaLateral('partes')"
+          :class="{ active: vistaLateral === 'partes' }"
+        >
+          📋 PARTES
+        </button>
+        <button
+          @click="cambiarVistaLateral('secuencia')"
+          :class="{ active: vistaLateral === 'secuencia' }"
+        >
+          🎵 SECUENCIA
+        </button>
       </div>
       <div :style="estiloVistaSecundaria()">
         <editAcordes
+          :acordesCancion="acordesCancion"
           :cancion="cancion"
           v-if="vistaLateral === 'acordes'"
         ></editAcordes>
+
+        <editPartes
+          v-if="vistaLateral === 'partes'"
+          :cancion="cancion"
+          :acordesCancion="acordesCancion"
+          :parteSeleccionada="refParteSeleccionada"
+        ></editPartes>
+
         <editSecuencia
           v-if="vistaLateral === 'secuencia'"
           ref="ctrlSecuencia"
@@ -215,5 +243,66 @@ function estiloVistaSecundaria() {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   margin-right: 2px;
+}
+
+/* Button Styles - matching table component style */
+.botoneraLateral {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(169, 168, 246, 0.2);
+  flex-wrap: wrap;
+}
+
+.botoneraLateral button {
+  padding: 12px 16px;
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 8px;
+  background: rgba(169, 168, 246, 0.1);
+  color: #a9a8f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+}
+
+.botoneraLateral button:hover:not(.active) {
+  background: rgba(169, 168, 246, 0.2);
+  border-color: rgba(169, 168, 246, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(169, 168, 246, 0.3);
+}
+
+.botoneraLateral button.active {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(106, 112, 15, 0.3)
+  );
+  border-color: #a9a8f6;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(169, 168, 246, 0.4);
+}
+
+.botoneraLateral button:active {
+  transform: translateY(0);
+}
+
+/* Responsive design for buttons */
+@media (max-width: 768px) {
+  .botoneraLateral {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+  }
+
+  .botoneraLateral button {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 10px 12px;
+  }
 }
 </style>

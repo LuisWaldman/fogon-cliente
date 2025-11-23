@@ -52,8 +52,9 @@ function manejarSeleccionArchivo(event: Event) {
 </script>
 
 <template>
-  <button @click="abrirDialogoArchivo">
-    ⬆️<span class="button-text"> SUBIR</span>
+  <button @click="abrirDialogoArchivo" class="action-btn primary">
+    <span class="btn-icon">⬆️</span>
+    <span class="button-text">Subir Canción</span>
   </button>
 
   <input
@@ -66,6 +67,109 @@ function manejarSeleccionArchivo(event: Event) {
 </template>
 
 <style scoped>
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-height: 44px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.action-btn:hover::before {
+  left: 100%;
+}
+
+.btn-icon {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.action-btn.primary {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.action-btn.primary:hover {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .button-text {
+    display: none;
+  }
+
+  .action-btn {
+    min-width: 44px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .action-btn {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+    min-height: 40px;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .action-btn {
+    border-width: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .action-btn {
+    transition: none;
+  }
+
+  .action-btn::before {
+    display: none;
+  }
+
+  .action-btn:hover {
+    transform: none;
+  }
+}
+
 .nombreCancion {
   font-weight: bold;
   border: 1px solid #ccc;

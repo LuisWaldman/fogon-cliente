@@ -35,8 +35,7 @@ watch(
           const configuracionPantalla = pantalla.getConfiguracionPantalla()
           const tamanioLetra = configuracionPantalla.tamanioLetra
           const tamanioAcorde = configuracionPantalla.tamanioAcorde
-          const factorScroll = configuracionPantalla.factorScroll // Usar la nueva propiedad
-          let ve = index * (tamanioLetra + tamanioAcorde) * factorScroll
+          let ve = index * (tamanioLetra + tamanioAcorde)
           ve -= (tamanioLetra + tamanioAcorde) * 10
           const nuevaPos = Math.max(ve, 0)
           moverScroll(nuevaPos)

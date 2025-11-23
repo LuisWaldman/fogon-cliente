@@ -52,8 +52,14 @@ export default class Aplicacion {
   onMounted() {
     const appStore = useAppStore()
     appStore.estadosApp.texto = 'Iniciando aplicacion...'
-    appStore.perfil =
-      this.configuracion.perfil || new Perfil('', '', '', '', '')
+
+    if (this.configuracion.perfil == null) {
+      const numeroAleatorio = Math.floor(Math.random() * 12) + 1
+      const imagen = `/img/usuariofantasma${numeroAleatorio}.${numeroAleatorio === 1 ? 'png' : 'jpg'}`
+      this.configuracion.perfil = new Perfil(imagen, 'nuevo', '', '', '')
+      this.configuracion.guardarEnLocalStorage()
+    }
+    appStore.perfil = this.configuracion.perfil
     if (navigator.onLine) {
       const servidor = this.GetServerDefault()
       if (servidor) {
