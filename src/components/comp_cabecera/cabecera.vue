@@ -350,7 +350,7 @@ function clickEditar() {
 
 .navbar {
   padding: 10px;
-  border: 6px solid #8b4513;
+  border: 6px solid #977997;
   border-left: 1px solid #a9a8f6;
   border-bottom: 0px solid #a9a8f6;
   margin-bottom: 0px;
