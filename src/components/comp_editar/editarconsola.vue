@@ -97,7 +97,11 @@ function onTextareaScroll() {
         ></textarea>
       </div>
       <div class="preview" ref="refPreviewVerso">
-        <div v-for="(verso, index) in refTextoResumido.renglones" :key="index">
+        <div
+          v-for="(verso, index) in refTextoResumido.renglones"
+          :key="index"
+          class="versoResumen"
+        >
           <div class="acordeconsola" v-if="verso.Rima.trim() != ''">
             <div
               class="letraRima"
@@ -173,6 +177,11 @@ function onTextareaScroll() {
   height: 800px;
   width: 1500px;
   overflow: hidden;
+}
+.versoResumen {
+  white-space: nowrap;
+  overflow: hidden;
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 768px) {
