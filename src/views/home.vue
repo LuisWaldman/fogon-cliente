@@ -418,7 +418,10 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
       <div
         class="lista-controls-container"
-        v-if="((viendo === 'listas' && viendoOrigen != 'reproduccion' ) || viendo === 'canciones')"
+        v-if="
+          (viendo === 'listas' && viendoOrigen != 'reproduccion') ||
+          viendo === 'canciones'
+        "
       >
         <div class="lista-main-row">
           <div class="select-container">

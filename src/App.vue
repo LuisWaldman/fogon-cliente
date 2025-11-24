@@ -59,7 +59,7 @@ function abrirVistaEdicion() {
       @abrirVistaEdicion="abrirVistaEdicion"
       @editarCancion="clickEditar"
     />
-    <router-view/>
+    <router-view />
     <editVista
       v-if="refEditandoVista"
       @cerrar="cerrareditarPantalla"
