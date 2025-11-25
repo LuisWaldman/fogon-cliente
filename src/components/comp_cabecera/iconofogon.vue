@@ -152,7 +152,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          MOSTRAR MADRE
+          MOSTRAR 330
         </div>
         <div
           class="titulo-Fogon"

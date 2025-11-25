@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useAppStore } from '../../stores/appStore'
-import qr from './qr.vue'
 import iconofogon from './iconofogon.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
-
+import compartirSesion from '../compartir.vue'
 import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
 const helperNotas = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
@@ -13,12 +12,10 @@ helperNotas.latino = appStore.perfil.CifradoLatino
 // Define el evento
 const emit = defineEmits(['abrirVistaEdicion', 'editarCancion'])
 
-const copiado = ref(false)
 const urlcompartida = ref('')
 const compartiendo = ref(false)
 
 function compartir() {
-  copiado.value = false
   urlcompartida.value =
     window.location.origin +
     '/tocar?sesion=' +
@@ -29,13 +26,6 @@ function compartir() {
 
 function dejarDeCompartir() {
   compartiendo.value = false
-}
-
-function copiarUrl() {
-  if (urlcompartida.value) {
-    navigator.clipboard.writeText(urlcompartida.value)
-    copiado.value = true
-  }
 }
 
 const crearSesion = () => {
@@ -217,27 +207,12 @@ function clickEditar() {
       </div>
     </div>
   </nav>
-  <div class="compartir_sesion" v-if="compartiendo">
-    <div>
-      <qr :url="urlcompartida"></qr>
-    </div>
-    <div style="background-color: #353333; display: flex">
-      <span style="margin: 3px">{{ urlcompartida }}</span>
-      <button v-if="!copiado" class="btn btn-secondary" @click="copiarUrl">
-        <i class="bi bi-clipboard"></i>
-        Copiar URL
-      </button>
-      <div v-if="copiado" style="border: 1px solid; margin-left: 10px">
-        Copiado
-      </div>
-    </div>
-    <div style="display: flex; justify-content: center; margin-top: 20px">
-      <button class="btn btn-secondary" @click="dejarDeCompartir">
-        <i class="bi bi-x-circle"></i>
-        Cerrar
-      </button>
-    </div>
-  </div>
+  <compartirSesion
+    v-if="compartiendo"
+    :titulo="`Fogon: ${appStore.sesion.nombre}`"
+    :link="urlcompartida"
+    @cerrar="dejarDeCompartir"
+  />
 </template>
 
 <style scoped>
@@ -256,17 +231,6 @@ function clickEditar() {
   border: 3px solid #b40c0c;
   border-radius: 50%;
   background-color: #d6431e;
-}
-
-.compartir_sesion {
-  position: absolute;
-  top: 160px;
-  border: 7px double #a9a8f6;
-  color: #a9a8f6;
-  padding: 5px 10px;
-  border-radius: 5px;
-  z-index: 1000;
-  backdrop-filter: blur(2px);
 }
 
 .titulocancioncontrol {
@@ -366,10 +330,6 @@ function clickEditar() {
   text-align: left;
 }
 @media (max-width: 768px) {
-  .compartir_sesion {
-    left: 10px;
-  }
-
   .navbar {
     padding: 0;
     margin: 0;

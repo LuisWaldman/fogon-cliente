@@ -2,64 +2,251 @@
     "cancion": "cumbia-en-mi-tierra",
     "banda": "damas-gratis",
     "escala": "Am",
-    "tempo": 60,
+    "tempo": 80,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
-                "nombre": "parte1",
+                "nombre": "parte0",
                 "acordes": [
                     "Am",
-                    "G",
-                    "C"
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte1",
+                "acordes": [
+                    "Am"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "D",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte3",
+                "acordes": [
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte4",
+                "acordes": [
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte5",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
+                    "E",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am",
+                    "Am"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
+                    "Am",
+                    "Am",
+                    "G",
                     "E",
                     "Am",
                     "G",
-                    "Am"
+                    "Am",
+                    "Am",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte9",
+                "acordes": [
+                    "E",
+                    "G",
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte10",
+                "acordes": [
+                    "G",
+                    "G"
+                ]
+            },
+            {
+                "nombre": "parte11",
+                "acordes": [
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "G",
+                    "E",
+                    "E"
+                ]
+            },
+            {
+                "nombre": "parte12",
+                "acordes": [
+                    "E",
+                    "E",
+                    "E",
+                    "E"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            1
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ]
     },
     "letras": [
         [
-            "Cumbia en mi tierra/n"
+            "Cumbi",
+            "a en mi tie",
+            "rra ",
+            "/n"
         ],
         [
-            "cumbia sabrosa/ncumbia que b"
+            "Sabor /n"
         ],
         [
-            "aila mi v",
-            "erde palmera",
-            "/ny huele el aroma de r"
+            "Cumbia \n\nDe /n"
         ],
         [
-            "osa/ncumbia que baila mi be"
+            "Monterrey  \n\nArgentina /n"
         ],
         [
-            "lla are",
-            "nosa."
+            "Como si estuvieramos en \n\nColom",
+            "bia /n"
+        ],
+        [
+            "Cumbia en mi tier",
+            "ra, cumbia sabrosa \n\nCumbia que bail ",
+            "mi verde palmeja huel ",
+            "el aroma de rosa \n\nCumbia del mar ",
+            "cumbia sabrosa \n\nCumbia que bail",
+            "a mi bella arenosa \n\nCumbia del mar ",
+            "cumbia sabrosa \n\nCumbia que bail",
+            "a mi bella arenosa ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
+        ],
+        [
+            "Cumbia en mi t",
+            "ierra, cumbia sabrosa \n\nCumbia que b",
+            "aila mi verde palmeja ",
+            "huele el aroma de rosa \n\nCumbia del ",
+            "mar, cumbia sabrosa \n\nCumbia que baila mi bella arenosa \n\nCumbia que ",
+            "baila  mi bella arenosa \n\nCumbia del ",
+            "mar, cumbia sabrosa \n\nCumbia que ",
+            "baila mi bella arenosa ",
+            "el \n\nTrophy /n"
+        ],
+        [
+            "Mac \n\nEl /n"
+        ],
+        [
+            "Inter el \n\nT",
+            "rophy \n\nTango de \n\nPacheco ",
+            "",
+            "/n"
+        ],
+        [
+            "P",
+            "ara toda la raza que escucha cumbia ",
+            "colombiana  \n\nAcá les damos una ",
+            "dosis del amor /n"
+        ],
+        [
+            "A",
+            "rgentina \n\nColombi /n"
+        ],
+        [
+            "Chile \n\nV",
+            "enezuela \n\nPuerto \n\nRic",
+            "o \n\nEcuador \n\nParag",
+            "uay \n\nMéxico en",
+            "tero ",
+            "",
+            "este es el salu",
+            "do \n\nDe los chicos de /n"
+        ],
+        [
+            "Tomas \n\nGratis ",
+            "de \n\nPacheco \n\nPacheco ",
+            "",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 89,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "eDaWGKvcF0I",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "procesando": 1,
+    "calidad": 1
 }
