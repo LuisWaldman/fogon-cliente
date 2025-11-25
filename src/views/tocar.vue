@@ -397,6 +397,7 @@ const refAdvertencia = ref(true)
 
 <style scoped>
 .controladoresTiempo {
+  user-select: none;
   width: 100%;
   position: absolute;
   bottom: 0;

@@ -208,7 +208,7 @@ defineExpose({ Actualizar })
 }
 
 .en_compas {
-  color: rgb(121, 102, 233);
+  color: rgb(238, 73, 73);
 }
 .espacio {
   margin-right: 1ch;
