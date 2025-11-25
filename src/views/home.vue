@@ -58,6 +58,7 @@ const nuevaLista = ref<string>('')
 const addingLista = ref<boolean>(false)
 const renamingLista = ref<boolean>(false)
 const ListasEnStorage = ref<string[]>([])
+const viendoOpcionesLista = ref<boolean>(false)
 listasManager.GetListas().then((listas: string[]) => {
   ListasEnStorage.value = listas
 })
@@ -466,31 +467,44 @@ async function AgregarALista(index: number, listaseleccionada: string) {
               <span class="button-text">Tocar Lista</span>
             </button>
             <button
-              @click="addingLista = true"
-              v-if="viendo === 'listas'"
-              class="action-btn success"
+              @click="viendoOpcionesLista = !viendoOpcionesLista"
+              v-if="viendo === 'listas' && !viendoOpcionesLista"
+              class="action-btn primary"
             >
-              <span class="btn-icon">➕</span>
-              <span class="button-text">Nueva Lista</span>
+              +
             </button>
-            <button
-              @click="renombrarLista"
-              v-if="viendo === 'listas'"
-              class="action-btn warning"
-              :disabled="!viendoLista"
-            >
-              <span class="btn-icon">🔄</span>
-              <span class="button-text">Renombrar</span>
-            </button>
-            <button
-              @click="borrarLista"
-              v-if="viendo === 'listas'"
-              class="action-btn danger"
-              :disabled="!viendoLista"
-            >
-              <span class="btn-icon">🗑</span>
-              <span class="button-text">Borrar</span>
-            </button>
+            <template v-if="viendo === 'listas' && viendoOpcionesLista">
+              <button @click="addingLista = true" class="action-btn success">
+                <span class="btn-icon">➕</span>
+                <span class="button-text">Nueva Lista</span>
+              </button>
+              <button class="action-btn primary" :disabled="!viendoLista">
+                <span class="btn-icon">🔗</span>
+                <span class="button-text">Compartir</span>
+              </button>
+              <button
+                @click="renombrarLista"
+                class="action-btn warning"
+                :disabled="!viendoLista"
+              >
+                <span class="btn-icon">🔄</span>
+                <span class="button-text">Renombrar</span>
+              </button>
+              <button
+                @click="borrarLista"
+                class="action-btn danger"
+                :disabled="!viendoLista"
+              >
+                <span class="btn-icon">🗑</span>
+                <span class="button-text">Borrar</span>
+              </button>
+              <button
+                @click="viendoOpcionesLista = false"
+                class="action-btn primary"
+              >
+                −
+              </button>
+            </template>
           </div>
         </div>
 

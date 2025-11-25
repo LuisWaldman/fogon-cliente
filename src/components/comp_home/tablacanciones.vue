@@ -57,6 +57,7 @@ function arreglartexto(texto: string): string {
 const viendoFiltroTabla = ref(false)
 const filtroTexto = ref<string>('')
 const viendoDetalle = ref<number | null>(null)
+const viendoOpcionesExtra = ref<number | null>(null)
 
 const cancionesFiltradas = computed(() => {
   if (!viendoFiltroTabla.value) return props.canciones
@@ -213,12 +214,27 @@ function Borrar(cancion: ItemIndiceCancion) {
                 </div>
               </div>
 
-              <div class="botoneraDetalle">
+              <div class="botoneraDetalle botoneraExtra">
                 <button @click="Reproducir(cancion, index)">▶ Tocar</button>
                 <button @click="agregandoLista = true">🗒️ Lista</button>
-                <button @click="Borrar(cancion)" v-if="verBorrar">
-                  🗑 Borrar
+                <button
+                  @click="
+                    viendoOpcionesExtra =
+                      viendoOpcionesExtra === index ? null : index
+                  "
+                  v-if="viendoOpcionesExtra !== index"
+                >
+                  +
                 </button>
+                <template v-if="viendoOpcionesExtra === index">
+                  <button>🔗 Compartir</button>
+                  <button @click="Borrar(cancion)" v-if="verBorrar">
+                    🗑️ Borrar
+                  </button>
+                  <button>✏️ Editar</button>
+                  <button>↕️ Reordenar</button>
+                  <button @click="viendoOpcionesExtra = null">−</button>
+                </template>
               </div>
 
               <div class="botoneraDetalle" v-if="agregandoLista">
@@ -437,9 +453,13 @@ function Borrar(cancion: ItemIndiceCancion) {
 .botoneraDetalle {
   display: flex;
   gap: 6px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   margin-top: 4px;
+}
+
+.botoneraExtra {
+  justify-content: flex-end;
 }
 
 .botoneraDetalle button {
