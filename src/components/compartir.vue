@@ -45,20 +45,14 @@ function copiarUrl() {
             :class="{ copied: copiado }"
             @click="copiarUrl"
           >
-            <span v-if="!copiado">
-              📋 Copiar URL
-            </span>
-            <span v-else>
-              ✅ Copiado
-            </span>
+            <span v-if="!copiado"> 📋 Copiar URL </span>
+            <span v-else> ✅ Copiado </span>
           </button>
         </div>
       </div>
 
       <div class="modal-footer">
-        <button @click="emit('cerrar')" class="btn-primary">
-          Cerrar
-        </button>
+        <button @click="emit('cerrar')" class="btn-primary">Cerrar</button>
       </div>
     </div>
   </div>
