@@ -1,9 +1,9 @@
-z
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
 import emoticonOrigen from './emoticonOrigen.vue'
+import compartirctrl from '../compartir.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
 const helper = HelperDisplayAcordesLatino.getInstance()
@@ -81,9 +81,23 @@ function Reproducir(cancion: ItemIndiceCancion, index: number) {
 function Borrar(cancion: ItemIndiceCancion) {
   emit('borrar', cancion)
 }
+const compartiendo = ref(false)
+function dejarDeCompartir() {
+  compartiendo.value = false
+}
+function Compartir() {
+  compartiendo.value = true
+}
 </script>
 
 <template>
+  
+  <compartirctrl
+    v-if="compartiendo"
+    :titulo="`Compartir Cancion`"
+    :link="`link de la cancion`"
+    @cerrar="dejarDeCompartir"
+  />
   <table class="tabla-canciones">
     <thead>
       <tr>
@@ -227,7 +241,7 @@ function Borrar(cancion: ItemIndiceCancion) {
                   +
                 </button>
                 <template v-if="viendoOpcionesExtra === index">
-                  <button>🔗 Compartir</button>
+                  <button @click="Compartir">🔗 Compartir</button>
                   <button @click="Borrar(cancion)" v-if="verBorrar">
                     🗑️ Borrar
                   </button>
