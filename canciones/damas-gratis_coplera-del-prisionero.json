@@ -2,48 +2,85 @@
     "cancion": "coplera-del-prisionero",
     "banda": "damas-gratis",
     "escala": "Dm",
-    "tempo": 60,
+    "tempo": 80,
     "compas_cantidad": 4,
     "compas_unidad": 4,
     "acordes": {
         "partes": [
             {
+                "nombre": "parte0",
+                "acordes": [
+                    "Am",
+                    "A",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "C"
+                ]
+            },
+            {
                 "nombre": "parte1",
                 "acordes": [
                     "Dm",
-                    "A",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
                     "Dm"
                 ]
             },
             {
                 "nombre": "parte2",
                 "acordes": [
-                    "C",
-                    "F",
-                    "A",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
                     "Dm"
                 ]
             },
             {
                 "nombre": "parte3",
                 "acordes": [
-                    "Gm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
                     "C",
-                    "F",
-                    "Gm"
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
                 "nombre": "parte4",
                 "acordes": [
-                    "Bb",
-                    "A",
                     "Dm",
                     "Dm",
-                    "D7",
-                    "Gm",
+                    "Dm",
+                    "Dm",
                     "C",
-                    "F"
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "Dm",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
                 ]
             },
             {
@@ -51,104 +88,185 @@
                 "acordes": [
                     "Dm",
                     "C",
-                    "Bb",
-                    "A7",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte6",
+                "acordes": [
                     "Dm",
-                    "Bb",
+                    "Dm",
+                    "Dm",
+                    "Gm",
+                    "C",
+                    "Gm",
                     "A",
+                    "A",
+                    "D7",
+                    "D7",
                     "Dm"
+                ]
+            },
+            {
+                "nombre": "parte7",
+                "acordes": [
+                    "Dm",
+                    "F C",
+                    "A7",
+                    "C"
+                ]
+            },
+            {
+                "nombre": "parte8",
+                "acordes": [
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "C",
+                    "Am",
+                    "C",
+                    "A",
+                    "A"
                 ]
             }
         ],
         "orden_partes": [
             0,
-            0,
             1,
-            1,
-            0,
             2,
-            0,
             3,
-            4
+            4,
+            5,
+            6,
+            7,
+            8
         ]
     },
     "letras": [
         [
-            "amos prisione",
-            "ros carceler",
-            "os/nEst"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "amos prisione",
-            "ros carceler",
-            "os/n"
+            "La c",
+            "anción es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Yo de estos torpes barr",
-            "otes, ",
-            "tú del mied",
-            "o/n"
+            "La canción es una canción en español de rock argentino. ",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "Yo de estos torpes barr",
-            "otes, ",
-            "tu del miedo",
-            ".../nLe "
+            "La canc",
+            "ión es ",
+            "una ",
+            "",
+            "",
+            "canción en e",
+            "spañol de rock argentino. ",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "regale la pal",
-            "oma al hijo del carceler",
-            "o/nCuentan que le dej"
+            "La canción es ",
+            "una ",
+            "can",
+            "ció",
+            "en español de rock argentino. \n\nLa ",
+            "canción es una canción ",
+            "en ",
+            "",
+            "",
+            "",
+            "español de rock ",
+            "ar",
+            "ge",
+            "nt",
+            "ino. /n"
         ],
         [
-            " ir tan s",
-            "ólo por verle el vu",
-            "elo/nQue herm"
+            "La canción es una canción ",
+            "en español de rock ar",
+            "genti",
+            "no. ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "/n"
         ],
         [
-            "oso va a ser el mu",
-            "ndo del hij",
-            "o del carceler",
-            "o/nDel h"
+            "Se regale la ",
+            "paloma al hijo del c",
+            "arcelero. \n\nCuenta que la di",
+            "jo él, tan solo por ver",
+            "le el vuelo. \n\nQue hermoso va ",
+            "ser el mundo del hijo del c",
+            "arcelero, del hijo del c",
+            "arcelero. \n\nNo ",
+            "sé, no recu",
+            "erdo bien, que ",
+            "quería el carcelero. /n"
         ],
         [
-            "ijo del ca",
-            "rcele",
-            "ro.../n"
+            "C",
+            "reo que una cumbia mía para ",
+            "aguantar  el silencio, par",
+            "a aguantar el silencio /n"
         ],
         [
-            "No sé",
-            ", No recuerdo bi",
-            "en/nQue quer"
-        ],
-        [
-            "ía el carcel",
-            "ero/nCreo qu"
-        ],
-        [
-            "e una",
-            " cum",
-            "bia m",
-            "ía/nPara aguantarse el sile"
-        ],
-        [
-            "ncio/nPara aguant"
-        ],
-        [
-            "arse e",
-            "l silen",
-            "cio..."
+            "Esta",
+            "mos prisioneros, carceleros, e",
+            "stamos prisioneros, ",
+            "carceleros. \n\nYo de estos tor",
+            "pes va roter, tú ",
+            "del miedo. \n\nYo de estos tor",
+            "pes va roter, tú ",
+            "del miedo. ",
+            ""
         ]
     ],
-    "bpm": 80,
+    "bpm": 83,
     "medias": [
         {
             "tipo": "Youtube",
             "id": "o7sf5ZQ_S7c",
-            "delay": 0
+            "delay": 0.0
         }
     ],
     "etiquetas": [
         "Cumbia"
-    ]
+    ],
+    "procesando": 1,
+    "calidad": 1
 }
