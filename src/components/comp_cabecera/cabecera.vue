@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useAppStore } from '../../stores/appStore'
-import qr from './qr.vue'
+import qr from '../qr.vue'
 import iconofogon from './iconofogon.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 
