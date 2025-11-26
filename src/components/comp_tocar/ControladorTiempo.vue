@@ -131,7 +131,7 @@ function arreglartexto(texto: string): string {
       class="rango_compas"
     />
     <div
-      class="boton_controller boton_controllerplay ocultocelu"
+      class="boton_controllerplay ocultocelu"
       @click="next"
       v-if="appStore.listaReproduccion.length > 0"
     >
@@ -141,7 +141,7 @@ function arreglartexto(texto: string): string {
       class="playlist-container"
       v-if="appStore.listaReproduccion.length > 0"
     >
-      <button style="margin-top: 10px" @click="togglePlaylist">📋</button>
+      <button @click="togglePlaylist">📋</button>
       <div class="playlist-dropdown" v-if="showPlaylist">
         <div class="playlist-header">Lista de Reproducción</div>
         <div
@@ -371,7 +371,7 @@ function arreglartexto(texto: string): string {
   max-width: 420px;
   max-height: 350px;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 9999;
   box-shadow:
     0 -8px 32px rgba(169, 168, 246, 0.3),
     0 -2px 8px rgba(0, 0, 0, 0.5);
