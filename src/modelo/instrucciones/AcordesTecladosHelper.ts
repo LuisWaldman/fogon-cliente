@@ -1,6 +1,6 @@
 import { AcordesTeclas } from './AcordesTeclas'
 
-export class AcordesPianoHelper {
+export class AcordesTecladosHelper {
   /**
    * Recibe un string y devuelve las notas del acorde para piano.
    * Retorna un objeto AcordesTeclas con el nombre del acorde y las teclas a tocar.
