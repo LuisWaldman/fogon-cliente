@@ -12,7 +12,8 @@ import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import MetronomoDesarrollador from '../components/comp_tocar/metronomodesarrollador.vue'
 import Secuencia from '../components/comp_tocar/Tocar_Secuencia.vue'
-import ProximosAcordes from '../components/comp_tocar/ProximosAcordes.vue'
+import InstruccionesAcordesGuitarra from '../components/comp_tocar/InstruccionesAcordesGuitarra.vue'
+import InstruccionesAcordesUkelele from '../components/comp_tocar/InstruccionesAcordesUkelele.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -215,6 +216,7 @@ function cambioestado(estado: number) {
 }
 
 const refAdvertencia = ref(true)
+const viendoInstrucciones = ref('ukelele')
 </script>
 
 <template>
@@ -250,11 +252,16 @@ const refAdvertencia = ref(true)
           :compas="appStore.compas"
         ></Secuencia>
 
-        <ProximosAcordes
+        <InstruccionesAcordesGuitarra
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          v-if="vista.viendoInstrucciones3"
-        ></ProximosAcordes>
+          v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'guitarra'"
+        ></InstruccionesAcordesGuitarra>
+        <InstruccionesAcordesUkelele
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'ukelele'"
+        ></InstruccionesAcordesUkelele>
 
         <TocarCuadrado
           v-if="vista.viendoCuadrado3"
@@ -368,12 +375,18 @@ const refAdvertencia = ref(true)
             ></Secuencia>
           </div>
 
-          <ProximosAcordes
+          <InstruccionesAcordesGuitarra
             :cancion="appStore.cancion"
             :compas="appStore.compas"
-            v-if="vista.viendoInstrucciones"
-          ></ProximosAcordes>
-
+            v-if="
+              vista.viendoInstrucciones && viendoInstrucciones == 'guitarra'
+            "
+          ></InstruccionesAcordesGuitarra>
+          <InstruccionesAcordesUkelele
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+            v-if="vista.viendoInstrucciones && viendoInstrucciones == 'ukelele'"
+          ></InstruccionesAcordesUkelele>
           <TocarCuadrado
             v-if="vista.viendoCuadrado"
             :cancion="appStore.cancion"
