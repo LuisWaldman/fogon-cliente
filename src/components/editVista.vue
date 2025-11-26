@@ -163,7 +163,7 @@ function ClickSoloMidi() {
               🎼 PARTITURA
             </div>
           </div>
-          
+
           <div v-if="verLetra" class="input-group">
             <label>📏 Tamaño Letra</label>
             <div class="range-group">
@@ -174,10 +174,12 @@ function ClickSoloMidi() {
                 v-model.number="configPantalla.tamanioLetra"
                 class="range-input"
               />
-              <span class="range-value">{{ configPantalla.tamanioLetra }}px</span>
+              <span class="range-value"
+                >{{ configPantalla.tamanioLetra }}px</span
+              >
             </div>
           </div>
-          
+
           <div v-if="verAcordes" class="input-group">
             <label>📏 Tamaño Acordes</label>
             <div class="range-group">
@@ -188,7 +190,9 @@ function ClickSoloMidi() {
                 v-model.number="configPantalla.tamanioAcorde"
                 class="range-input"
               />
-              <span class="range-value">{{ configPantalla.tamanioAcorde }}px</span>
+              <span class="range-value"
+                >{{ configPantalla.tamanioAcorde }}px</span
+              >
             </div>
           </div>
         </div>
@@ -250,7 +254,7 @@ function ClickSoloMidi() {
           class="form-section"
           v-if="configPantalla.muestra === 'letrayacordes'"
         >
-        <!-- 
+          <!-- 
           <div class="input-group">
             <label>📏 Caracteres por renglón</label>
             <div class="range-group">
@@ -602,8 +606,6 @@ function ClickSoloMidi() {
   color: rgba(255, 255, 255, 0.5);
 }
 
-
-
 /* Range inputs */
 .range-group {
   display: flex;
@@ -688,8 +690,6 @@ function ClickSoloMidi() {
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(106, 76, 147, 0.4);
 }
-
-
 
 /* Layout buttons */
 .layout-btn {

@@ -1,19 +1,17 @@
 <script setup lang="ts">
 import { ChordBox } from 'vexchords'
 import { onMounted, ref, watch } from 'vue'
-import {
-  AcordesGuitarra,
-  AcordesGuitarraHelper,
-} from '../../modelo/GuitarAcordes'
+import { AcordesGuitarraHelper } from '../../modelo/instrucciones/AcordesGuitarraHelper'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { useAppStore } from '../../stores/appStore'
+import type { AcordesCuerdas } from '../../modelo/instrucciones/AcordesCuerdas'
 
 const props = defineProps<{
   acorde: string
 }>()
 
 const controlDiv = ref<HTMLElement | null>(null)
-const refAcorde = ref<AcordesGuitarra | null>(null)
+const refAcorde = ref<AcordesCuerdas | null>(null)
 
 const helper = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
