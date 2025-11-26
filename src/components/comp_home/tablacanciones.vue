@@ -91,7 +91,6 @@ function Compartir() {
 </script>
 
 <template>
-  
   <compartirctrl
     v-if="compartiendo"
     :titulo="`Compartir Cancion`"
