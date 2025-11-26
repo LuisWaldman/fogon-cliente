@@ -152,7 +152,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          MOSTRAR 330
+          MUESTRA Y TOCA
         </div>
         <div
           class="titulo-Fogon"

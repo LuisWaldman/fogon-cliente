@@ -142,40 +142,18 @@ function ClickSoloMidi() {
           <label class="section-label">👁️‍🗨️ Vista</label>
           <div class="option-grid">
             <div
-              class="option-btn with-input"
+              class="option-btn"
               :class="{ selected: verLetra }"
               @click="ClickViendoLetra()"
             >
-              <span>📝 LETRA</span>
-              <div class="input-group-inline">
-                <input
-                  type="number"
-                  min="8"
-                  max="80"
-                  v-model.number="configPantalla.tamanioLetra"
-                  @click.stop
-                  class="size-input"
-                />
-                <span class="unit">px</span>
-              </div>
+              📝 LETRA
             </div>
             <div
-              class="option-btn with-input"
+              class="option-btn"
               :class="{ selected: verAcordes }"
               @click="ClickViendoAcordes()"
             >
-              <span>🎸 ACORDES</span>
-              <div class="input-group-inline">
-                <input
-                  type="number"
-                  min="8"
-                  max="80"
-                  v-model.number="configPantalla.tamanioAcorde"
-                  @click.stop
-                  class="size-input"
-                />
-                <span class="unit">px</span>
-              </div>
+              🎸 ACORDES
             </div>
             <div
               class="option-btn"
@@ -183,6 +161,38 @@ function ClickSoloMidi() {
               @click="ClickViendoPartitura()"
             >
               🎼 PARTITURA
+            </div>
+          </div>
+
+          <div v-if="verLetra" class="input-group">
+            <label>📏 Tamaño Letra</label>
+            <div class="range-group">
+              <input
+                type="range"
+                min="8"
+                max="80"
+                v-model.number="configPantalla.tamanioLetra"
+                class="range-input"
+              />
+              <span class="range-value"
+                >{{ configPantalla.tamanioLetra }}px</span
+              >
+            </div>
+          </div>
+
+          <div v-if="verAcordes" class="input-group">
+            <label>📏 Tamaño Acordes</label>
+            <div class="range-group">
+              <input
+                type="range"
+                min="8"
+                max="80"
+                v-model.number="configPantalla.tamanioAcorde"
+                class="range-input"
+              />
+              <span class="range-value"
+                >{{ configPantalla.tamanioAcorde }}px</span
+              >
             </div>
           </div>
         </div>
@@ -231,12 +241,11 @@ function ClickSoloMidi() {
             configPantalla.muestra !== ''
           "
         >
-          <label class="section-label">📜 Configuración de Scroll</label>
           <div class="checkbox-grid">
             <label class="checkbox-item">
               <input type="checkbox" v-model="configPantalla.AutoScroll" />
               <span class="checkmark"></span>
-              Auto Scroll
+              📜 Auto Scroll
             </label>
           </div>
         </div>
@@ -245,6 +254,7 @@ function ClickSoloMidi() {
           class="form-section"
           v-if="configPantalla.muestra === 'letrayacordes'"
         >
+          <!-- 
           <div class="input-group">
             <label>📏 Caracteres por renglón</label>
             <div class="range-group">
@@ -257,7 +267,7 @@ function ClickSoloMidi() {
               />
               <span class="range-value">{{ configPantalla.columnas }}</span>
             </div>
-          </div>
+          </div>-->
         </div>
         <div class="form-section">
           <label class="section-label">📱 Modo de Vista</label>
@@ -417,7 +427,7 @@ function ClickSoloMidi() {
           <label class="section-label">🎵 Configuración de Secuencia</label>
           <div class="input-row">
             <div class="input-group half">
-              <label>📏 Tamaño Parte</label>
+              <label>📏 Letra</label>
               <div class="range-group">
                 <input
                   type="range"
@@ -432,7 +442,7 @@ function ClickSoloMidi() {
               </div>
             </div>
             <div class="input-group half">
-              <label>📐 Ancho Parte</label>
+              <label>📐 Alto</label>
               <div class="range-group">
                 <input
                   type="range"
@@ -442,7 +452,7 @@ function ClickSoloMidi() {
                   class="range-input"
                 />
                 <span class="range-value"
-                  >{{ configPantalla.anchoParte }}%</span
+                  >{{ configPantalla.anchoParte }}px</span
                 >
               </div>
             </div>
@@ -596,36 +606,6 @@ function ClickSoloMidi() {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Size inputs for inline use */
-.size-input {
-  width: 60px;
-  padding: 4px 8px;
-  border: 1px solid rgba(106, 76, 147, 0.4);
-  border-radius: 4px;
-  background-color: #2a2a2a;
-  color: white;
-  font-size: 0.85rem;
-  text-align: center;
-}
-
-.size-input:focus {
-  outline: none;
-  border-color: #8b5cf6;
-  background-color: #333333;
-}
-
-.input-group-inline {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-top: 4px;
-}
-
-.unit {
-  font-size: 0.8rem;
-  color: #a78bfa;
-}
-
 /* Range inputs */
 .range-group {
   display: flex;
@@ -709,10 +689,6 @@ function ClickSoloMidi() {
   color: white;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(106, 76, 147, 0.4);
-}
-
-.option-btn.with-input {
-  padding: 8px 12px;
 }
 
 /* Layout buttons */

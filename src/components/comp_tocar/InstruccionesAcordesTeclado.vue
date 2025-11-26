@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
-import Acorde from './Acorde.vue'
+import AcordeTeclado from './AcordeTeclado.vue'
 
 const props = defineProps<{
   compas: number
@@ -51,12 +51,12 @@ onMounted(() => {
 
 <template>
   <div class="acordesPantalla">
-    <Acorde
+    <AcordeTeclado
       :acorde="acorde"
       v-for="(acorde, index) in acordes"
       :key="index"
       class="acordediv"
-    ></Acorde>
+    ></AcordeTeclado>
   </div>
 </template>
 
@@ -72,6 +72,7 @@ onMounted(() => {
 .acordediv {
   font-size: var(--tamanio-acorde-parte);
   margin: 1px;
+  min-width: 100px;
   padding: 5px;
   border-radius: 5px;
   display: inline-block;
@@ -112,8 +113,6 @@ onMounted(() => {
 .repeticion {
   display: inline-block;
   margin: 4px;
-}
-.acordesPantalla {
 }
 
 .tituloSecuencia {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ChordBox } from 'vexchords'
 import { onMounted, ref, watch } from 'vue'
-import { AcordesGuitarraHelper } from '../../modelo/instrucciones/AcordesGuitarraHelper'
+import { AcordesUkeleleHelper } from '../../modelo/instrucciones/AcordesUkeleleHelper'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { useAppStore } from '../../stores/appStore'
 import type { AcordesCuerdas } from '../../modelo/instrucciones/AcordesCuerdas'
@@ -19,7 +19,7 @@ helper.latino = appStore.perfil.CifradoLatino
 
 // Función para actualizar el acorde
 const updateAcorde = () => {
-  refAcorde.value = AcordesGuitarraHelper.getAcorde(props.acorde)
+  refAcorde.value = AcordesUkeleleHelper.getAcorde(props.acorde)
   drawChord()
 }
 
@@ -35,12 +35,12 @@ const drawChord = () => {
   div.id = selector
   controlDiv.value.appendChild(div)
 
-  // Crear el ChordBox con VexFlow
+  // Crear el ChordBox con VexFlow para ukelele (4 cuerdas)
   const chord = new ChordBox('#' + selector, {
     width: 100,
     height: 120,
     circleRadius: 5,
-    numStrings: 6,
+    numStrings: 4,
     numFrets: 4,
     showTuning: false,
     defaultColor: '#a9a8f6',
@@ -54,13 +54,13 @@ const drawChord = () => {
     stringWidth: 1,
   })
 
-  // Convertir los datos de AcordesGuitarra al formato de ChordBox
+  // Convertir los datos de AcordesUkelele al formato de ChordBox
   const chordData: Array<[number, number | string]> = []
   const barres: Array<{ fromString: number; toString: number; fret: number }> =
     []
 
-  // Las cuerdas en refAcorde.value.cuerda están en orden 1-6
-  // ChordBox espera [string, fret] donde string va de 1 (más aguda) a 6 (más grave)
+  // Las cuerdas en refAcorde.value.cuerda están en orden 1-4
+  // ChordBox espera [string, fret] donde string va de 1 (más aguda) a 4 (más grave)
   refAcorde.value.cuerda.forEach((nota, index) => {
     const stringNumber = index + 1
     if (nota === 'x') {
