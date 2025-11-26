@@ -72,6 +72,7 @@ onMounted(() => {
 .acordediv {
   font-size: var(--tamanio-acorde-parte);
   margin: 1px;
+  min-width: 100px;
   padding: 5px;
   border-radius: 5px;
   display: inline-block;
