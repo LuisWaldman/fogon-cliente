@@ -166,15 +166,19 @@ async function manejarSeleccionArchivo(event: Event) {
 </script>
 
 <template>
-  <span @click="abrirDialogoArchivo">[Subir MXL] {{ estadoSubida }}</span>
-  <input
-    ref="fileInput"
-    type="file"
-    accept=".mxl"
-    style="display: none"
-    @change="manejarSeleccionArchivo"
-  />
-  <div v-if="subido"></div>
+  <div class="upload-container">
+    <button @click="abrirDialogoArchivo" class="btn-upload">
+      📁 Subir MXL
+      <span v-if="estadoSubida" class="upload-status">{{ estadoSubida }}</span>
+    </button>
+    <input
+      ref="fileInput"
+      type="file"
+      accept=".mxl"
+      style="display: none"
+      @change="manejarSeleccionArchivo"
+    />
+  </div>
 
   <!-- Modal de selección de pentagramas -->
   <div v-if="mostrarModal" class="modal-backdrop" @click="cerrarModal">
@@ -295,6 +299,47 @@ async function manejarSeleccionArchivo(event: Event) {
   </div>
 </template>
 <style scoped>
+/* Upload button - matching editarLetraYAcordes style */
+.upload-container {
+  display: inline-block;
+}
+
+.btn-upload {
+  padding: 12px 16px;
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 8px;
+  background: rgba(169, 168, 246, 0.1);
+  color: #a9a8f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-upload:hover {
+  background: rgba(169, 168, 246, 0.2);
+  border-color: rgba(169, 168, 246, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(169, 168, 246, 0.3);
+}
+
+.btn-upload:active {
+  transform: translateY(0);
+}
+
+.upload-status {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #fff;
+}
+
 /* Modal backdrop */
 .modal-backdrop {
   position: fixed;
