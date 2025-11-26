@@ -131,7 +131,10 @@ function setinstrumentovolumen(
       >
         {{ instrumento }}
       </div>
-      <div v-if="InstrumentosSelecconados.includes(instrumento)" class="volumen-control">
+      <div
+        v-if="InstrumentosSelecconados.includes(instrumento)"
+        class="volumen-control"
+      >
         <span class="volumen-icono">🔊</span>
         <input
           type="range"

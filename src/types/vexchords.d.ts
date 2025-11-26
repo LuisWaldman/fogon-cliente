@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare module 'vexchords' {
-  const ChordBox: any
-  export default ChordBox
+  export class ChordBox {
+    constructor(selector: string, options?: any)
+    draw(config: any): void
+  }
 }
 /* eslint-enable @typescript-eslint/no-explicit-any */

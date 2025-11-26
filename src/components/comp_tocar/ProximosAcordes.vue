@@ -50,7 +50,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <span style="font-size: large">Proximos Acordes</span>
   <div class="acordesPantalla">
     <Acorde
       :acorde="acorde"
@@ -67,6 +66,7 @@ onMounted(() => {
 }
 .acordesPantalla {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .acordediv {

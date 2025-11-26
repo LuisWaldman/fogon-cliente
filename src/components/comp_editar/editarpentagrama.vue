@@ -93,8 +93,6 @@ refEstiloEditandoAcorde.value =
 const emit = defineEmits(['actualizoPentagrama'])
 const idPentagramaEditando = ref(0)
 
-
-
 function clickBorrarModo(modo: DisplayModoPentagrama) {
   props.cancion.pentagramas = props.cancion.pentagramas.filter(
     (penta) => penta.nombre != modo.Nombre,
@@ -184,9 +182,7 @@ function clickAddOkPentagrama() {
   <div class="pentagrama-container">
     <div class="botoneraLateral">
       <subirxml :cancion="cancion"></subirxml>
-      <button @click="clickAddPentagrama">
-        ➕ Agregar Pentagrama
-      </button>
+      <button @click="clickAddPentagrama">➕ Agregar Pentagrama</button>
       <button
         v-if="modos.length > 0"
         @click="clickBorrarModo(modos[editandoModo])"
@@ -194,9 +190,7 @@ function clickAddOkPentagrama() {
       >
         🗑️ Borrar Modo
       </button>
-      <button @click="clickCopiarEnPentagrama">
-        📋 Copiar en Pentagrama
-      </button>
+      <button @click="clickCopiarEnPentagrama">📋 Copiar en Pentagrama</button>
     </div>
 
     <div v-if="agregandoPentagrama" class="modal-agregar">
@@ -210,8 +204,12 @@ function clickAddOkPentagrama() {
         </select>
       </div>
       <div class="button-group">
-        <button @click="clickAddOkPentagrama" class="btn-success">✓ Aceptar</button>
-        <button @click="clickCancelAddPentagrama" class="btn-cancel">✗ Cancelar</button>
+        <button @click="clickAddOkPentagrama" class="btn-success">
+          ✓ Aceptar
+        </button>
+        <button @click="clickCancelAddPentagrama" class="btn-cancel">
+          ✗ Cancelar
+        </button>
       </div>
     </div>
 
@@ -233,7 +231,11 @@ function clickAddOkPentagrama() {
 
       <div class="form-group" v-if="modos[editandoModo].Claves.length > 1">
         <label>Clave</label>
-        <select v-model="editandoClave" @change="calcularPentagramaEditando()" class="styled-select">
+        <select
+          v-model="editandoClave"
+          @change="calcularPentagramaEditando()"
+          class="styled-select"
+        >
           <option
             v-for="clave in modos[editandoModo].Claves"
             :key="clave"
