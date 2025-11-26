@@ -166,7 +166,7 @@ function estiloVistaPrincipal() {
 function estiloVistaSecundaria() {
   let ancho = 100 - vista.value.anchoPrincipal - vista.value.anchoTerciaria
   let height = 100
-  let display = 'block'
+  let display = 'flex'
 
   const HaySegundaPantalla = viendoSecundaria()
   if (HaySegundaPantalla) {
@@ -411,6 +411,7 @@ const refAdvertencia = ref(true)
   padding: 0;
   overflow: hidden;
   position: relative;
+  z-index: 0;
 }
 
 .pantallaPlay {
