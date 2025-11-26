@@ -5,7 +5,6 @@ import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 import { MediaVista } from '../../modelo/reproduccion/MediaVista'
 import { useAppStore } from '../../stores/appStore'
 import { MidiHelper } from '../../modelo/midi/MidiHelper'
-import { Tiempo } from '../../modelo/tiempo'
 
 const props = defineProps<{
   compas: number
@@ -109,7 +108,6 @@ function stop() {
   midiPlayer.stop()
 }
 
-const tiempo = new Tiempo()
 function setinstrumentovolumen(
   instrumento: string,
   target: EventTarget | null,
@@ -133,7 +131,11 @@ function setinstrumentovolumen(
       >
         {{ instrumento }}
       </div>
-      <div v-if="InstrumentosSelecconados.includes(instrumento)">
+      <div
+        v-if="InstrumentosSelecconados.includes(instrumento)"
+        class="volumen-control"
+      >
+        <span class="volumen-icono">🔊</span>
         <input
           type="range"
           min="-10"
@@ -143,26 +145,100 @@ function setinstrumentovolumen(
         />
       </div>
     </div>
-    <div class="tiempoMidi">
-      TIEMPO:
-      {{ tiempo.formatSegundos(refTiempo / 1000) }}
-    </div>
   </div>
 </template>
 <style scoped>
-.tiempoMidi {
-  font-size: x-large;
-  border: 1px solid;
-  padding: 4px;
-}
-.seleccionado {
-  border: 1px solid;
-  background-color: lightcyan;
-  color: black;
-}
 .instrumento {
-  padding: 2px;
-  margin: 2px;
-  border: 1px solid;
+  background-color: #000000;
+  border: 2px solid #a9a8f6;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.instrumento:hover {
+  box-shadow: 0 4px 8px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.instrumento > div:first-child {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  user-select: none;
+  color: #a9a8f6;
+}
+
+.instrumento > div:first-child:hover {
+  background-color: #1a1a1a;
+}
+
+.seleccionado {
+  background-color: #2a2a4a;
+  color: #a9a8f6;
+  box-shadow: 0 3px 6px rgba(169, 168, 246, 0.4);
+}
+
+.seleccionado:hover {
+  background-color: #353560;
+}
+
+.volumen-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.volumen-icono {
+  font-size: 1.2rem;
+  min-width: 24px;
+}
+
+input[type='range'] {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: #333;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #a9a8f6;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(169, 168, 246, 0.4);
+  transition: all 0.2s ease;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  background: #8a88d6;
+  transform: scale(1.2);
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #a9a8f6;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(169, 168, 246, 0.4);
+  transition: all 0.2s ease;
+}
+
+input[type='range']::-moz-range-thumb:hover {
+  background: #8a88d6;
+  transform: scale(1.2);
 }
 </style>

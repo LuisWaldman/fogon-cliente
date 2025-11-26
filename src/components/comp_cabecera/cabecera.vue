@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useAppStore } from '../../stores/appStore'
 import iconofogon from './iconofogon.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
-import compartirSesion from '../compartir.vue'
+import compartirctrl from '../compartir.vue'
 import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
 const helperNotas = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
@@ -207,7 +207,7 @@ function clickEditar() {
       </div>
     </div>
   </nav>
-  <compartirSesion
+  <compartirctrl
     v-if="compartiendo"
     :titulo="`Fogon: ${appStore.sesion.nombre}`"
     :link="urlcompartida"

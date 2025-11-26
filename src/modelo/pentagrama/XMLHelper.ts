@@ -5,8 +5,94 @@ import { Part } from './xmlpentagrama/Part'
 import { Measure } from './xmlpentagrama/Measure'
 import { Note } from './xmlpentagrama/Note'
 import { Beam } from './xmlpentagrama/beam'
+export class XMLReumen {
+  bpm: number = 120
+  compasCantidad: number = 4
+  compasDenominador: number = 4
+}
 
 export class XMLHelper {
+  public XMLToResumen(xml: string): XMLReumen {
+    const resumen = new XMLReumen()
+    const parser = new XMLParser({
+      ignoreAttributes: false,
+      attributeNamePrefix: '',
+    })
+    const jsonObj = parser.parse(xml)
+    const scoreObj =
+      jsonObj['score-partwise'] || jsonObj['score-timewise'] || jsonObj
+
+    // Buscar el primer part y su primer measure con attributes
+    const partsRaw = scoreObj.part
+      ? Array.isArray(scoreObj.part)
+        ? scoreObj.part
+        : [scoreObj.part]
+      : []
+
+    if (partsRaw.length > 0) {
+      const firstPart = partsRaw[0]
+      const measuresRaw = firstPart.measure
+        ? Array.isArray(firstPart.measure)
+          ? firstPart.measure
+          : [firstPart.measure]
+        : []
+
+      // Buscar attributes en el primer compás
+      for (const m of measuresRaw) {
+        const attributes = m.attributes ?? m['attributes'] ?? undefined
+        if (attributes) {
+          // Extraer time signature (compás)
+          const time = attributes.time ?? attributes['time'] ?? undefined
+          if (time) {
+            const beats = time.beats ?? time['beats'] ?? undefined
+            const beatType = time['beat-type'] ?? time['beatType'] ?? undefined
+            if (beats) resumen.compasCantidad = Number(beats)
+            if (beatType) resumen.compasDenominador = Number(beatType)
+          }
+
+          // Extraer tempo (BPM) desde sound o direction
+          const sound = m.sound ?? m['sound'] ?? undefined
+          if (sound && sound.tempo) {
+            resumen.bpm = Number(sound.tempo)
+          }
+        }
+
+        // También buscar direction/metronome para BPM
+        const directionsRaw = m.direction
+          ? Array.isArray(m.direction)
+            ? m.direction
+            : [m.direction]
+          : []
+        for (const dir of directionsRaw) {
+          const dirType =
+            dir['direction-type'] ?? dir['directionType'] ?? undefined
+          if (dirType) {
+            const metronome =
+              dirType.metronome ?? dirType['metronome'] ?? undefined
+            if (metronome) {
+              const perMinute =
+                metronome['per-minute'] ?? metronome['perMinute'] ?? undefined
+              if (perMinute) {
+                resumen.bpm = Number(perMinute)
+              }
+            }
+          }
+          // También puede estar directamente en sound
+          const sound = dir.sound ?? dir['sound'] ?? undefined
+          if (sound && sound.tempo) {
+            resumen.bpm = Number(sound.tempo)
+          }
+        }
+
+        // Si ya encontramos información, salir
+        if (resumen.bpm !== 120 || resumen.compasCantidad !== 4) {
+          break
+        }
+      }
+    }
+
+    return resumen
+  }
   public XMLToPentagramas(xml: string): Pentagrama[] {
     const ret: Pentagrama[] = []
     const score = this.XMLTToScore(xml)
@@ -261,34 +347,28 @@ export class XMLHelper {
 function NormalizarInstrumentos(pentagramas: Pentagrama[]) {
   //const Instrumentos = InstrumentoMidi.GetInstrumentos()
   for (const p of pentagramas) {
-    if (!p.instrumento) {
+    // Asegurar que instrumento sea un string
+    if (!p.instrumento || typeof p.instrumento !== 'string') {
       p.instrumento = 'Piano'
     } else {
-      if (p.instrumento.includes('Flauta')) {
+      const instrumento = String(p.instrumento)
+      if (instrumento.includes('Flauta')) {
         p.instrumento = 'Flute' // corregir nombre
-      }
-      if (p.instrumento.includes('Clarinete')) {
+      } else if (instrumento.includes('Clarinete')) {
         p.instrumento = 'Clarinet' // corregir nombre
-      }
-      if (p.instrumento.includes('Saxos Alto')) {
+      } else if (instrumento.includes('Saxos Alto')) {
         p.instrumento = 'Alto Sax' // corregir nombre
-      }
-      if (p.instrumento.includes('Saxos Tenor')) {
+      } else if (instrumento.includes('Saxos Tenor')) {
         p.instrumento = 'Tenor Sax' // corregir nombre
-      }
-      if (p.instrumento.includes('Saxos Baritono')) {
+      } else if (instrumento.includes('Saxos Baritono')) {
         p.instrumento = 'Baritone Sax' // corregir nombre
-      }
-      if (p.instrumento.includes('Trompeta')) {
+      } else if (instrumento.includes('Trompeta')) {
         p.instrumento = 'Trumpet' // corregir nombre
-      }
-      if (p.instrumento.includes('Trompas en Fa')) {
+      } else if (instrumento.includes('Trompas en Fa')) {
         p.instrumento = 'French Horn' // corregir nombre
-      }
-      if (p.instrumento.includes('Trombon')) {
+      } else if (instrumento.includes('Trombon')) {
         p.instrumento = 'Trombone' // corregir nombre
-      }
-      if (p.instrumento.includes('Bombardino')) {
+      } else if (instrumento.includes('Bombardino')) {
         p.instrumento = 'Euphonium' // corregir nombre
       }
     }

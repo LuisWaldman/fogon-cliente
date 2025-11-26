@@ -90,12 +90,8 @@ refDisplayPentagrama.value.pentagramas[0].compases[0] =
 refEstiloEditandoAcorde.value =
   refPatrones.value[patronSeleccionado.value].GetEstilo()
 
-const emit = defineEmits(['cerrar', 'actualizoPentagrama'])
+const emit = defineEmits(['actualizoPentagrama'])
 const idPentagramaEditando = ref(0)
-
-function clickCancelarEdit() {
-  emit('cerrar')
-}
 
 function clickBorrarModo(modo: DisplayModoPentagrama) {
   props.cancion.pentagramas = props.cancion.pentagramas.filter(
@@ -183,43 +179,63 @@ function clickAddOkPentagrama() {
 }
 </script>
 <template>
-  <div>
-    <span @click="clickCancelarEdit">[Ok]</span>
-    <subirxml :cancion="cancion"></subirxml>
-    <span @click="clickAddPentagrama">[Agregar Pentagrama]</span>
-    <div v-if="agregandoPentagrama">
-      Clave nuevo pentagrama<select v-model="nuevoPentagramaClave">
-        <option value="Sol">Sol</option>
-        <option value="Fa">Fa</option>
-        <option value="Sol y Fa">Sol y Fa</option>
-        <option value="Bateria">Bateria</option>
-      </select>
-      <span @click="clickAddOkPentagrama">[Si]</span>
-      <span @click="clickCancelAddPentagrama">[No]</span>
-    </div>
-  </div>
-  <div v-if="modos.length > 0">
-    <div>
-      <strong>Nombre</strong>
-      <input v-model="modos[editandoModo].Nombre" /><span
+  <div class="pentagrama-container">
+    <div class="botoneraLateral">
+      <subirxml :cancion="cancion"></subirxml>
+      <button @click="clickAddPentagrama">➕ Agregar Pentagrama</button>
+      <button
+        v-if="modos.length > 0"
         @click="clickBorrarModo(modos[editandoModo])"
-        >[BORRAR]</span
+        class="btn-danger"
       >
-    </div>
-    <div>
-      <strong>Instrumento</strong>
-      <combo
-        :instrumento="modos[editandoModo].Instrumento"
-        @changeInstrumento="
-          (nuevo) => cambioInstrumento(modos[editandoModo], nuevo)
-        "
-      ></combo>
+        🗑️ Borrar Modo
+      </button>
+      <button @click="clickCopiarEnPentagrama">📋 Copiar en Pentagrama</button>
     </div>
 
-    <h5>
-      Clave
-      <template v-if="modos[editandoModo].Claves.length > 1">
-        <select v-model="editandoClave" @change="calcularPentagramaEditando()">
+    <div v-if="agregandoPentagrama" class="modal-agregar">
+      <div class="form-group">
+        <label>Clave nuevo pentagrama</label>
+        <select v-model="nuevoPentagramaClave" class="styled-select">
+          <option value="Sol">Sol</option>
+          <option value="Fa">Fa</option>
+          <option value="Sol y Fa">Sol y Fa</option>
+          <option value="Bateria">Bateria</option>
+        </select>
+      </div>
+      <div class="button-group">
+        <button @click="clickAddOkPentagrama" class="btn-success">
+          ✓ Aceptar
+        </button>
+        <button @click="clickCancelAddPentagrama" class="btn-cancel">
+          ✗ Cancelar
+        </button>
+      </div>
+    </div>
+
+    <div v-if="modos.length > 0" class="config-panel">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input v-model="modos[editandoModo].Nombre" class="styled-input" />
+      </div>
+
+      <div class="form-group">
+        <label>Instrumento</label>
+        <combo
+          :instrumento="modos[editandoModo].Instrumento"
+          @changeInstrumento="
+            (nuevo) => cambioInstrumento(modos[editandoModo], nuevo)
+          "
+        ></combo>
+      </div>
+
+      <div class="form-group" v-if="modos[editandoModo].Claves.length > 1">
+        <label>Clave</label>
+        <select
+          v-model="editandoClave"
+          @change="calcularPentagramaEditando()"
+          class="styled-select"
+        >
           <option
             v-for="clave in modos[editandoModo].Claves"
             :key="clave"
@@ -228,28 +244,203 @@ function clickAddOkPentagrama() {
             {{ clave === 'treble' ? 'Sol' : clave === 'bass' ? 'Fa' : clave }}
           </option>
         </select>
-      </template>
-    </h5>
-  </div>
+      </div>
+    </div>
 
-  <editarCompas
-    v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
-    :cancion="cancion"
-    :pentagramaId="idPentagramaEditando"
-    :compas="compas"
-    @actualizoPentagrama="emit('actualizoPentagrama')"
-  ></editarCompas>
-
-  <div>
-    <span @click="clickCopiarEnPentagrama">[COPIAR EN PENTAGRAMA]</span>
+    <div class="editor-panel">
+      <editarCompas
+        v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
+        :cancion="cancion"
+        :pentagramaId="idPentagramaEditando"
+        :compas="compas"
+        @actualizoPentagrama="emit('actualizoPentagrama')"
+      ></editarCompas>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.acorde-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
+.pentagrama-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* Button Styles - matching editarLetraYAcordes lateral */
+.botoneraLateral {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(169, 168, 246, 0.2);
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+
+.botoneraLateral button {
+  padding: 12px 16px;
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 8px;
+  background: rgba(169, 168, 246, 0.1);
+  color: #a9a8f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+}
+
+.botoneraLateral button:hover {
+  background: rgba(169, 168, 246, 0.2);
+  border-color: rgba(169, 168, 246, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(169, 168, 246, 0.3);
+}
+
+.botoneraLateral button:active {
+  transform: translateY(0);
+}
+
+.botoneraLateral button.btn-danger {
+  border-color: rgba(255, 99, 71, 0.5);
+  background: rgba(255, 99, 71, 0.1);
+  color: #ff6347;
+}
+
+.botoneraLateral button.btn-danger:hover {
+  border-color: rgba(255, 99, 71, 0.8);
+  background: rgba(255, 99, 71, 0.2);
+  box-shadow: 0 4px 16px rgba(255, 99, 71, 0.3);
+}
+
+/* Modal and Form Styles */
+.modal-agregar {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  color: #a9a8f6;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.styled-input,
+.styled-select {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(169, 168, 246, 0.1);
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.styled-input:focus,
+.styled-select:focus {
+  outline: none;
+  border-color: #a9a8f6;
+  background: rgba(169, 168, 246, 0.15);
+  box-shadow: 0 0 0 3px rgba(169, 168, 246, 0.1);
+}
+
+.styled-select option {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-success {
+  background: rgba(46, 204, 113, 0.1);
+  border-color: rgba(46, 204, 113, 0.5);
+  color: #2ecc71;
+}
+
+.btn-success:hover {
+  background: rgba(46, 204, 113, 0.2);
+  border-color: #2ecc71;
+  box-shadow: 0 4px 16px rgba(46, 204, 113, 0.3);
+}
+
+.btn-cancel {
+  background: rgba(231, 76, 60, 0.1);
+  border-color: rgba(231, 76, 60, 0.5);
+  color: #e74c3c;
+}
+
+.btn-cancel:hover {
+  background: rgba(231, 76, 60, 0.2);
+  border-color: #e74c3c;
+  box-shadow: 0 4px 16px rgba(231, 76, 60, 0.3);
+}
+
+/* Panels */
+.content-panel,
+.config-panel,
+.editor-panel {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.config-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .botoneraLateral {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+  }
+
+  .botoneraLateral button {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 10px 12px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .pentagrama-container {
+    padding: 8px;
+    gap: 8px;
+  }
 }
 </style>
