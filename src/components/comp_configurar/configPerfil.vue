@@ -503,9 +503,9 @@ function toggleCifradoLatino() {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(0, 0, 0, 0.2));
-  border: 1px solid rgba(138, 43, 226, 0.3);
-  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
 }
@@ -513,7 +513,7 @@ function toggleCifradoLatino() {
 label {
   font-weight: 600;
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #a9a8f6;
   margin-bottom: 0.5rem;
   display: block;
 }
@@ -522,21 +522,29 @@ input,
 textarea,
 select {
   width: 100%;
-  padding: 0.75rem;
+  padding: 12px 16px;
   border-radius: 8px;
-  border: 1px solid rgba(138, 43, 226, 0.4);
-  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(169, 168, 246, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   color: white !important;
   font-size: 1rem;
   transition: all 0.3s ease;
+  outline: none;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  outline: none;
-  border-color: blueviolet;
-  box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 0 20px rgba(169, 168, 246, 0.2);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: rgba(169, 168, 246, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 input:disabled {
@@ -544,22 +552,69 @@ input:disabled {
   cursor: not-allowed;
 }
 
+select {
+  cursor: pointer;
+}
+
+select option {
+  background: rgba(0, 0, 0, 0.9);
+  color: #a9a8f6;
+  padding: 8px;
+}
+
+select option:hover {
+  background: rgba(169, 168, 246, 0.2);
+}
+
 button {
-  padding: 0.6rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 2px solid transparent;
   border-radius: 8px;
-  border: none;
-  background: blueviolet;
-  color: white;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
+  min-height: 44px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+button:hover:not(:disabled)::before {
+  left: 100%;
 }
 
 button:hover:not(:disabled) {
-  background: #9932cc;
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.4);
 }
 
 button:active:not(:disabled) {
@@ -569,6 +624,12 @@ button:active:not(:disabled) {
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+button:disabled::before {
+  display: none;
 }
 
 .crlPerfil {
@@ -581,9 +642,9 @@ button:disabled {
 .crlPerfil > div > div {
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
   border-radius: 12px;
-  border: 1px solid rgba(138, 43, 226, 0.2);
+  border: 1px solid rgba(169, 168, 246, 0.2);
 }
 
 .fileUp {
@@ -602,16 +663,16 @@ button:disabled {
   height: 120px;
   cursor: pointer;
   border-radius: 50%;
-  border: 3px solid blueviolet;
+  border: 3px solid rgba(169, 168, 246, 0.6);
   transition: all 0.3s ease;
   object-fit: cover;
-  box-shadow: 0 4px 16px rgba(138, 43, 226, 0.3);
+  box-shadow: 0 4px 16px rgba(169, 168, 246, 0.3);
 }
 
 .profileImage:hover {
   transform: scale(1.05);
-  border-color: #9932cc;
-  box-shadow: 0 6px 20px rgba(138, 43, 226, 0.5);
+  border-color: rgba(169, 168, 246, 0.9);
+  box-shadow: 0 6px 20px rgba(169, 168, 246, 0.5);
 }
 
 .ctrlCabecera {
@@ -634,8 +695,8 @@ button:disabled {
   justify-content: space-between;
   padding: 0.75rem;
   margin-bottom: 0.5rem;
-  background: rgba(138, 43, 226, 0.1);
-  border: 1px solid rgba(138, 43, 226, 0.3);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.1), rgba(0, 0, 0, 0.4));
+  border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 8px;
   transition: all 0.2s ease;
   min-width: 200px;
@@ -643,18 +704,22 @@ button:disabled {
 }
 
 .instrMidi:hover {
-  background: rgba(138, 43, 226, 0.2);
+  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.5));
+  border-color: rgba(169, 168, 246, 0.5);
   transform: translateX(4px);
 }
 
 .instrMidi button {
   padding: 0.4rem 0.8rem;
-  background: rgba(220, 20, 60, 0.8);
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.3), rgba(0, 0, 0, 0.6));
+  border-color: rgba(220, 20, 60, 0.5);
   font-size: 1rem;
 }
 
 .instrMidi button:hover {
-  background: crimson;
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.5), rgba(0, 0, 0, 0.7));
+  border-color: rgba(220, 20, 60, 0.8);
+  box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
 }
 
 .agregarInstrumentos {
@@ -662,9 +727,9 @@ button:disabled {
   gap: 0.75rem;
   flex-wrap: wrap;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
   border-radius: 8px;
-  border: 1px solid rgba(138, 43, 226, 0.3);
+  border: 1px solid rgba(169, 168, 246, 0.2);
 }
 
 .agregarInstrumentos select {
@@ -685,7 +750,7 @@ button:disabled {
 input[type='checkbox'] {
   width: auto;
   cursor: pointer;
-  accent-color: blueviolet;
+  accent-color: rgba(169, 168, 246, 0.8);
 }
 
 /* Estilos para las opciones clickeables */
