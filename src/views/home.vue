@@ -319,10 +319,15 @@ async function AgregarALista(index: number, listaseleccionada: string) {
       })
   }
 }
+
+const advertenciaText = ref<string>("")
+const errorText = ref<string>("")
 </script>
 
 <template>
-  <nuevaCancion v-if="viendoNueva" @cerrar="CerrarNuevo"></nuevaCancion>
+<div class="advertencia" v-if="advertenciaText != ''" @click="advertenciaText = ''">{{ advertenciaText }}</div>
+<div class="error" v-if="errorText != ''" @click="errorText = ''">{{ errorText }}</div>
+<nuevaCancion v-if="viendoNueva" @cerrar="CerrarNuevo"></nuevaCancion>
   <div style="width: 100%">
     <div class="config-menu">
       <div class="config-menu-group">
@@ -971,5 +976,20 @@ async function AgregarALista(index: number, listaseleccionada: string) {
   .action-btn:hover {
     transform: none;
   }
+}
+
+.error {
+  width: 100%;
+  background-color: brown;
+  font-size: 1.2em;
+}
+
+
+.advertencia {
+  width: 100%;
+  background-color: rgb(238, 195, 115);
+  color: red;
+  font-size: 1.2em;
+  
 }
 </style>

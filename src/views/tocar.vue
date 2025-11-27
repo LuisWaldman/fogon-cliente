@@ -267,7 +267,7 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
 
       <div class="columnas lateral-container" :style="estiloVistaPrincipal()">
         <div
-          class="sinPentagrama"
+          class="error"
           v-if="
             appStore.cancion.pentagramas.length === 0 &&
             vista.muestra == 'partitura'
@@ -309,7 +309,16 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
             (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')
           "
         >
-          Acordes No Calibrados. Corregilos desde: ✍️ Editar
+          Acordes No Calibrados. Corregilos desde: ✍️ Editar 
+          <button
+            v-if="
+              appStore.cancion.calidad > -1 &&
+              appStore.estadosApp.estadoLogin === 'logueado'
+            "
+            @click="SolicitarCalibracion()"
+          >
+            Calibrar!
+          </button>
         </div>
         <TocarLetraAcorde
           v-if="
@@ -487,16 +496,19 @@ input[type='range'] {
     font-size: 1em;
   }
 }
-.sinPentagrama {
+.error {
   width: 100%;
   background-color: brown;
   font-size: 1.2em;
 }
+
+
 .advertencia {
   width: 100%;
-  background-color: rgb(219, 172, 85);
+  background-color: rgb(238, 195, 115);
   color: red;
   font-size: 1.2em;
+  
 }
 .overlay {
   position: absolute;
