@@ -5,6 +5,7 @@ import InstruccionesAcordesGuitarra from './InstruccionesAcordesGuitarra.vue'
 import InstruccionesAcordesUkelele from './InstruccionesAcordesUkelele.vue'
 import InstruccionesAcordesTeclado from './InstruccionesAcordesTeclado.vue'
 import InstruccionesAcordesGuitarraMelodica from './InstruccionesAcordesGuitarraMelodica.vue'
+import InstruccionesAcordesArmonica from './InstruccionesAcordesArmonica.vue'
 
 const props = defineProps<{
   compas: number
@@ -22,6 +23,8 @@ const componenteActual = computed(() => {
       return markRaw(InstruccionesAcordesTeclado)
     case 'guitarra-melodica':
       return markRaw(InstruccionesAcordesGuitarraMelodica)
+    case 'armonica':
+      return markRaw(InstruccionesAcordesArmonica)
     default:
       return null
   }

@@ -86,7 +86,7 @@ export class InstrumentoLineas {
 
   public static GetHarmonicaEstandar(): InstrumentoLineas {
     return new InstrumentoLineas(
-      [''],
+      ['A:'],
       [''],
       [
         '',

@@ -29,9 +29,10 @@ function calcularAcordes(compas: number) {
   }
 }
 const instrumento = ref<InstrumentoLineas>(
-  InstrumentoLineas.GetGuitarraEstandar(),
+  InstrumentoLineas.GetHarmonicaEstandar(),
 )
 
+const escalaArmonica = ref('C');
 function calcularCompaces(compas: number) {
   calcularAcordes(compas)
   compaces.value = []
@@ -44,6 +45,7 @@ function calcularCompaces(compas: number) {
         instrumento.value,
         acordesSplit,
         props.cancion.compasCantidad,
+        escalaArmonica.value,
       ),
     )
   }
@@ -68,10 +70,12 @@ watch(
 onMounted(() => {
   calcularCompaces(props.compas)
 })
+
 </script>
 
 <template>
   <div class="acordesArmonicoPantalla">
+  <div>Armonica en: {{ escalaArmonica }}</div> 
     <div class="contenidoAcordes">
       <div class="compas" v-for="(compas, indexcm) in compaces" :key="indexcm">
         <div class="nombreCuerdas" v-if="indexcm === 0 || indexcm % 4 === 0">
@@ -79,7 +83,7 @@ onMounted(() => {
             v-for="(cuerda, indexcu) in instrumento.nombreLinea"
             :key="indexcu"
           >
-            {{ cuerda }}
+            ➖
           </div>
         </div>
         <div class="cuerdas">
