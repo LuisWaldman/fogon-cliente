@@ -28,8 +28,10 @@ function calcularAcordes(compas: number) {
     }
   }
 }
-const instrumento = ref<InstrumentoLineas>(InstrumentoLineas.GetGuitarraEstandar())
-  
+const instrumento = ref<InstrumentoLineas>(
+  InstrumentoLineas.GetGuitarraEstandar(),
+)
+
 function calcularCompaces(compas: number) {
   calcularAcordes(compas)
   compaces.value = []
@@ -38,7 +40,11 @@ function calcularCompaces(compas: number) {
   for (let i = 0; i < acordes.value.length; i++) {
     const acordesSplit = acordes.value[i]
     newCompaces.push(
-      InstrumentoLineasCompasBuildHelper.getAcorde(instrumento.value, acordesSplit, props.cancion.compasCantidad),
+      InstrumentoLineasCompasBuildHelper.getAcorde(
+        instrumento.value,
+        acordesSplit,
+        props.cancion.compasCantidad,
+      ),
     )
   }
   compaces.value = newCompaces
@@ -66,42 +72,94 @@ onMounted(() => {
 
 <template>
   <div class="acordesArmonicoPantalla">
-    <div class="nombreCuerdas">
-      <div v-for="(cuerda, indexcu) in instrumento.notaLinea" :key="indexcu">{{ cuerda }}</div>
-    </div>
     <div class="contenidoAcordes">
-      
       <div class="compas" v-for="(compas, indexcm) in compaces" :key="indexcm">
-        <div class="parteCompas" v-for="(parte, indexp) in compas.valorGolpePorLinea" :key="indexp">
-          
-      <div v-for="(cuerda, indexcu) in parte" :key="indexcu">
-        
-        {{ cuerda }}
-      </div>
-
-         
-
+        <div class="nombreCuerdas" v-if="indexcm === 0 || indexcm % 4 === 0">
+          <div
+            v-for="(cuerda, indexcu) in instrumento.nombreLinea"
+            :key="indexcu"
+          >
+            {{ cuerda }}
+          </div>
         </div>
-
-
+        <div class="cuerdas">
+          <div
+            class="lineaCuerda"
+            v-for="(lineaCuerda, indexcu) in compas.valorGolpePorLinea"
+            :key="indexcu"
+          >
+            <span
+              class="parteCompas"
+              v-for="(valor, indexp) in lineaCuerda"
+              :key="indexp"
+            >
+              {{ valor == '' ? '&nbsp;' : valor }}
+            </span>
+          </div>
+        </div>
       </div>
     </div>
-
-    
-    
   </div>
 </template>
 
 <style scoped>
 .acordesArmonicoPantalla {
   display: flex;
+  flex-direction: column;
+  font-size: large;
 }
+
+.contenidoAcordes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .compas {
   display: flex;
-  flex-direction: column;
-}
-.parteCompas {
-  display: flex;
   flex-direction: row;
+  gap: 5px;
+  font-family: monospace;
+}
+
+.nombreCuerdas {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: monospace;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.cuerdas {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lineaCuerda {
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+}
+
+.lineaCuerda::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background-color: currentColor;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.parteCompas {
+  display: inline-block;
+  width: 3ch;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 </style>

@@ -14,25 +14,73 @@ export class InstrumentoLineas {
 
   public static GetGuitarraEstandar(): InstrumentoLineas {
     return new InstrumentoLineas(
-      ['E', 'B', 'G', 'D', 'A', 'E'],
-      ['E4', 'B3', 'G3', 'D3', 'A2', 'E2'],
-      ['x', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+      ['E', 'A', 'D', 'G', 'B', 'E'],
+      ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'],
+      [
+        '',
+        'x',
+        '0',
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '11',
+        '12',
+      ],
     )
   }
 
   public static GetUkeleleEstandar(): InstrumentoLineas {
     return new InstrumentoLineas(
-      ['A', 'E', 'C', 'G'],
-      ['A4', 'E4', 'C4', 'G4'],
-      ['x', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+      ['G', 'C', 'E', 'A'],
+      ['G4', 'C4', 'E4', 'A4'],
+      [
+        '',
+        'x',
+        '0',
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '11',
+        '12',
+      ],
     )
   }
 
   public static GetBajo4CuerdasEstandar(): InstrumentoLineas {
     return new InstrumentoLineas(
-      ['G', 'D', 'A', 'E'],
-      ['G2', 'D2', 'A1', 'E1'],
-      ['x', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+      ['E', 'A', 'D', 'G'],
+      ['E1', 'A1', 'D2', 'G2'],
+      [
+        '',
+        'x',
+        '0',
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '11',
+        '12',
+      ],
     )
   }
 
