@@ -74,7 +74,7 @@ const instrumentosFiltrados = computed(() =>
 
 // Opciones de instrumentos principales
 const instrumentosPrincipales = [
-  { value: 'teclado', label: 'Piano', tieneVariantes: true },
+  { value: 'teclado', label: 'Teclado', tieneVariantes: true },
   { value: 'guitarra', label: 'Guitarra', tieneVariantes: true },
   { value: 'ukelele', label: 'Ukelele', tieneVariantes: true },
   { value: 'harmonica', label: 'Bajo' },
@@ -124,13 +124,6 @@ function detectarInstrumentoYVariante() {
     } else {
       varianteInstrumento.value = ''
     }
-  } else if (instrActual.includes('teclado')) {
-    instrumentoBase.value = 'teclado'
-    if (instrActual.includes('melodica')) {
-      varianteInstrumento.value = 'melodica'
-    } else {
-      varianteInstrumento.value = ''
-    }
   } else {
     instrumentoBase.value = instrActual
     varianteInstrumento.value = ''
@@ -149,12 +142,6 @@ function actualizarInstrumento() {
     } else {
       perfil.value.instrumento = instrumentoBase.value
     }
-  } else if (instrumentoBase.value === 'teclado') {
-    if (varianteInstrumento.value === 'melodica') {
-      perfil.value.instrumento = 'teclado-melodica'
-    } else {
-      perfil.value.instrumento = 'teclado'
-    }
   } else {
     perfil.value.instrumento = instrumentoBase.value
     varianteInstrumento.value = ''
@@ -165,8 +152,7 @@ function actualizarInstrumento() {
 const mostrarVariantes = computed(
   () =>
     instrumentoBase.value === 'guitarra' ||
-    instrumentoBase.value === 'ukelele' ||
-    instrumentoBase.value === 'teclado',
+    instrumentoBase.value === 'ukelele',
 )
 
 function agregarInstrumentoFavorito() {
