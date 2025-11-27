@@ -1,6 +1,6 @@
 import { AcordesCuerdas } from './AcordesCuerdas'
 import type { InstrumentoLineas } from './InstrumentoLineas'
-import type { InstrumentoLineasCompas } from './InstrumentoLineasCompas'
+import { InstrumentoLineasCompas } from './InstrumentoLineasCompas'
 
 export class InstrumentoLineasCompasBuildHelper {
   /**
@@ -17,6 +17,13 @@ export class InstrumentoLineasCompasBuildHelper {
       compasCantidad,
       instrumento.notasPosibles[0],
     )
+    console.log(
+      'Harmonica helper getAcorde',
+      instrumento,
+      chordStr,
+      compasCantidad,
+    )
+
     return ret
   }
 }

@@ -15,6 +15,7 @@ import Secuencia from '../components/comp_tocar/Tocar_Secuencia.vue'
 import InstruccionesAcordesGuitarra from '../components/comp_tocar/InstruccionesAcordesGuitarra.vue'
 import InstruccionesAcordesUkelele from '../components/comp_tocar/InstruccionesAcordesUkelele.vue'
 import InstruccionesAcordesTeclado from '../components/comp_tocar/InstruccionesAcordesTeclado.vue'
+import InstruccionesAcordesGuitarraArmonico from '../components/comp_tocar/InstruccionesAcordesGuitarraArmonico.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -217,7 +218,7 @@ function cambioestado(estado: number) {
 }
 
 const refAdvertencia = ref(true)
-const viendoInstrucciones = ref('teclado')
+const viendoInstrucciones = ref('guitarra-armonico')
 </script>
 
 <template>
@@ -268,6 +269,14 @@ const viendoInstrucciones = ref('teclado')
           :compas="appStore.compas"
           v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'teclado'"
         ></InstruccionesAcordesTeclado>
+        <InstruccionesAcordesGuitarraArmonico
+          :cancion="appStore.cancion"
+          :compas="appStore.compas"
+          v-if="
+            vista.viendoInstrucciones3 &&
+            viendoInstrucciones == 'guitarra-armonico'
+          "
+        ></InstruccionesAcordesGuitarraArmonico>
 
         <TocarCuadrado
           v-if="vista.viendoCuadrado3"
@@ -398,6 +407,14 @@ const viendoInstrucciones = ref('teclado')
             :compas="appStore.compas"
             v-if="vista.viendoInstrucciones && viendoInstrucciones == 'teclado'"
           ></InstruccionesAcordesTeclado>
+          <InstruccionesAcordesGuitarraArmonico
+            :cancion="appStore.cancion"
+            :compas="appStore.compas"
+            v-if="
+              vista.viendoInstrucciones &&
+              viendoInstrucciones == 'guitarra-armonico'
+            "
+          ></InstruccionesAcordesGuitarraArmonico>
           <TocarCuadrado
             v-if="vista.viendoCuadrado"
             :cancion="appStore.cancion"
