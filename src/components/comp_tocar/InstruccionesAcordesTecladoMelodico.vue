@@ -5,6 +5,8 @@ import { watch } from 'vue'
 import { InstrumentoLineasCompasBuildHelperArmonica } from '../../modelo/instrucciones/InstrumentoLineasCompasBuildHelperArmonica'
 import type { InstrumentoLineasCompas } from '../../modelo/instrucciones/InstrumentoLineasCompas'
 import { InstrumentoLineas } from '../../modelo/instrucciones/InstrumentoLineas'
+import { InstrumentoTeclasCompasBuildHelper } from '../../modelo/instrucciones/InstrumentoTeclasCompasBuildHelper'
+import type { AcordesTeclasArmonico } from '../../modelo/instrucciones/AcordesTeclasArmonico'
 
 const props = defineProps<{
   compas: number
@@ -12,7 +14,7 @@ const props = defineProps<{
 }>()
 
 const acordes = ref([] as string[])
-const compaces = ref([] as InstrumentoLineasCompas[])
+const compaces = ref([] as AcordesTeclasArmonico[])
 const todosAcordes = ref(props.cancion.acordes.GetTodosLosAcordes() as string[])
 
 function calcularAcordes(compas: number) {
@@ -29,23 +31,20 @@ function calcularAcordes(compas: number) {
   }
 }
 const instrumento = ref<InstrumentoLineas>(
-  InstrumentoLineas.GetHarmonicaEstandar(),
+  InstrumentoLineas.GetGuitarraEstandar(),
 )
 
-const escalaArmonica = ref('C')
 function calcularCompaces(compas: number) {
   calcularAcordes(compas)
   compaces.value = []
 
-  const newCompaces: InstrumentoLineasCompas[] = []
+  const newCompaces: AcordesTeclasArmonico[] = []
   for (let i = 0; i < acordes.value.length; i++) {
     const acordesSplit = acordes.value[i]
     newCompaces.push(
-      InstrumentoLineasCompasBuildHelperArmonica.getAcorde(
-        instrumento.value,
+      InstrumentoTeclasCompasBuildHelper.getAcorde(
         acordesSplit,
-        props.cancion.compasCantidad,
-        escalaArmonica.value,
+        props.cancion.compasCantidad * 2,
       ),
     )
   }
@@ -73,36 +72,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="acordesArmonicoPantalla">
-    <div>Armonica en: {{ escalaArmonica }}</div>
-    <div class="contenidoAcordes">
-      <div class="compas" v-for="(compas, indexcm) in compaces" :key="indexcm">
-        <div class="nombreCuerdas" v-if="indexcm === 0 || indexcm % 4 === 0">
-          <div
-            v-for="(cuerda, indexcu) in instrumento.nombreLinea"
-            :key="indexcu"
-          >
-            ➖
-          </div>
-        </div>
-        <div class="cuerdas">
-          <div
-            class="lineaCuerda"
-            v-for="(lineaCuerda, indexcu) in compas.valorGolpePorLinea"
-            :key="indexcu"
-          >
-            <span
-              class="parteCompas"
-              v-for="(valor, indexp) in lineaCuerda"
-              :key="indexp"
-            >
-              {{ valor == '' ? '&nbsp;' : valor }}
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{ compaces }}
+
 </template>
 
 <style scoped>
