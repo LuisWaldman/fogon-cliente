@@ -33,7 +33,17 @@ function calcularAcordes(compas: number) {
 const instrumento = ref<InstrumentoLineas>(
   InstrumentoLineas.GetGuitarraEstandar(),
 )
-
+const desdeNota = ref(0)
+const hastaNota = ref(15)
+const muestraNotas = ref([] as string[])
+function calcularNotas() {
+  const notas: string[] = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+  for (let i = desdeNota.value; i <= hastaNota.value; i++) {
+    const nota = notas[i % 12]
+    const octava = Math.floor(i / 12)
+    muestraNotas.value.push(`${nota}${octava}`)
+  }
+}
 function calcularCompaces(compas: number) {
   calcularAcordes(compas)
   compaces.value = []
@@ -65,75 +75,28 @@ watch(
     calcularCompaces(newCompas)
   },
 )
-
 onMounted(() => {
+  calcularNotas()
   calcularCompaces(props.compas)
 })
 </script>
 
 <template>
+  <div class="instrucciones">
+    <div class="notasTecladoMelodico">
+      <div
+        v-for="nota in muestraNotas"
+        :key="nota"
+        class="notaTecladoMelodico"
+      >
+        {{ nota }}
+      </div>
+    </div>
+
+  </div>
   {{ compaces }}
 
 </template>
 
 <style scoped>
-.acordesArmonicoPantalla {
-  display: flex;
-  flex-direction: column;
-  font-size: large;
-}
-
-.contenidoAcordes {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.compas {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  font-family: monospace;
-}
-
-.nombreCuerdas {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-family: monospace;
-  font-weight: bold;
-  padding-right: 5px;
-}
-
-.cuerdas {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.lineaCuerda {
-  display: flex;
-  white-space: nowrap;
-  position: relative;
-}
-
-.lineaCuerda::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 1px;
-  background-color: currentColor;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.parteCompas {
-  display: inline-block;
-  width: 3ch;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
 </style>
