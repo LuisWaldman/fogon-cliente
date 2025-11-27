@@ -105,7 +105,7 @@ onMounted(() => {
 
 function detectarInstrumentoYVariante() {
   const instrActual = perfil.value.instrumento
-  
+
   if (instrActual.includes('guitarra')) {
     instrumentoBase.value = 'guitarra'
     if (instrActual.includes('ritmica')) {
@@ -138,13 +138,17 @@ function detectarInstrumentoYVariante() {
 }
 
 function actualizarInstrumento() {
-  if (instrumentoBase.value === 'guitarra' || instrumentoBase.value === 'ukelele') {
+  if (
+    instrumentoBase.value === 'guitarra' ||
+    instrumentoBase.value === 'ukelele'
+  ) {
     if (varianteInstrumento.value === 'ritmica') {
       perfil.value.instrumento = `${instrumentoBase.value}-ritmica`
     } else if (varianteInstrumento.value === 'melodica') {
-      perfil.value.instrumento = instrumentoBase.value === 'guitarra' 
-        ? 'punteobajo-melodica' 
-        : 'punteo-melodica'
+      perfil.value.instrumento =
+        instrumentoBase.value === 'guitarra'
+          ? 'punteobajo-melodica'
+          : 'punteo-melodica'
     } else {
       perfil.value.instrumento = instrumentoBase.value
     }
@@ -161,10 +165,11 @@ function actualizarInstrumento() {
   updateProfile()
 }
 
-const mostrarVariantes = computed(() => 
-  instrumentoBase.value === 'guitarra' || 
-  instrumentoBase.value === 'ukelele' || 
-  instrumentoBase.value === 'teclado'
+const mostrarVariantes = computed(
+  () =>
+    instrumentoBase.value === 'guitarra' ||
+    instrumentoBase.value === 'ukelele' ||
+    instrumentoBase.value === 'teclado',
 )
 
 function agregarInstrumentoFavorito() {
@@ -309,7 +314,7 @@ function toggleCifradoLatino() {
             {{ inst.label }}
           </option>
         </select>
-        
+
         <!-- Selector de variante para guitarra/ukelele -->
         <select
           v-if="mostrarVariantes"
@@ -318,7 +323,14 @@ function toggleCifradoLatino() {
           style="margin-top: 0.5rem"
         >
           <option value="">Normal</option>
-          <option v-if="instrumentoBase === 'guitarra' || instrumentoBase === 'ukelele'" value="ritmica">Rítmico</option>
+          <option
+            v-if="
+              instrumentoBase === 'guitarra' || instrumentoBase === 'ukelele'
+            "
+            value="ritmica"
+          >
+            Rítmico
+          </option>
           <option value="melodica">Melódico</option>
         </select>
       </div>
@@ -503,7 +515,11 @@ function toggleCifradoLatino() {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.4)
+  );
   border: 1px solid rgba(169, 168, 246, 0.2);
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -642,7 +658,11 @@ button:disabled::before {
 .crlPerfil > div > div {
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.4)
+  );
   border-radius: 12px;
   border: 1px solid rgba(169, 168, 246, 0.2);
 }
@@ -695,7 +715,11 @@ button:disabled::before {
   justify-content: space-between;
   padding: 0.75rem;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.1), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.1),
+    rgba(0, 0, 0, 0.4)
+  );
   border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 8px;
   transition: all 0.2s ease;
@@ -704,20 +728,32 @@ button:disabled::before {
 }
 
 .instrMidi:hover {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
   border-color: rgba(169, 168, 246, 0.5);
   transform: translateX(4px);
 }
 
 .instrMidi button {
   padding: 0.4rem 0.8rem;
-  background: linear-gradient(135deg, rgba(220, 20, 60, 0.3), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(220, 20, 60, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
   border-color: rgba(220, 20, 60, 0.5);
   font-size: 1rem;
 }
 
 .instrMidi button:hover {
-  background: linear-gradient(135deg, rgba(220, 20, 60, 0.5), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(
+    135deg,
+    rgba(220, 20, 60, 0.5),
+    rgba(0, 0, 0, 0.7)
+  );
   border-color: rgba(220, 20, 60, 0.8);
   box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
 }
@@ -727,7 +763,11 @@ button:disabled::before {
   gap: 0.75rem;
   flex-wrap: wrap;
   padding: 1rem;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.4)
+  );
   border-radius: 8px;
   border: 1px solid rgba(169, 168, 246, 0.2);
 }
@@ -772,16 +812,25 @@ div[style*='margin-top: 30%'] {
   bottom: 20px;
   left: 20px;
   padding: 0.5rem 1rem;
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.6)
+  );
   border-radius: 8px;
-  border: 1px solid rgba(138, 43, 226, 0.3);
+  border: 1px solid rgba(169, 168, 246, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 div[style*='margin-top: 30%']:hover {
-  background: rgba(0, 0, 0, 0.8);
-  border-color: blueviolet;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.9),
+    rgba(44, 44, 44, 0.8)
+  );
+  border-color: rgba(169, 168, 246, 0.6);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.2);
 }
 
 @media (max-width: 768px) {
