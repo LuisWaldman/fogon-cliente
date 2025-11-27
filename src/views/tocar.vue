@@ -12,10 +12,7 @@ import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import MetronomoDesarrollador from '../components/comp_tocar/metronomodesarrollador.vue'
 import Secuencia from '../components/comp_tocar/Tocar_Secuencia.vue'
-import InstruccionesAcordesGuitarra from '../components/comp_tocar/InstruccionesAcordesGuitarra.vue'
-import InstruccionesAcordesUkelele from '../components/comp_tocar/InstruccionesAcordesUkelele.vue'
-import InstruccionesAcordesTeclado from '../components/comp_tocar/InstruccionesAcordesTeclado.vue'
-import InstruccionesAcordesGuitarraArmonico from '../components/comp_tocar/InstruccionesAcordesGuitarraArmonico.vue'
+import InstruccionesAcordes from '../components/comp_tocar/InstruccionesAcordes.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -218,7 +215,7 @@ function cambioestado(estado: number) {
 }
 
 const refAdvertencia = ref(true)
-const viendoInstrucciones = ref('guitarra-armonico')
+const viendoInstrucciones = ref(appStore.perfil.instrumento)
 </script>
 
 <template>
@@ -254,29 +251,12 @@ const viendoInstrucciones = ref('guitarra-armonico')
           :compas="appStore.compas"
         ></Secuencia>
 
-        <InstruccionesAcordesGuitarra
+        <InstruccionesAcordes
+          v-if="vista.viendoInstrucciones3"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'guitarra'"
-        ></InstruccionesAcordesGuitarra>
-        <InstruccionesAcordesUkelele
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'ukelele'"
-        ></InstruccionesAcordesUkelele>
-        <InstruccionesAcordesTeclado
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'teclado'"
-        ></InstruccionesAcordesTeclado>
-        <InstruccionesAcordesGuitarraArmonico
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="
-            vista.viendoInstrucciones3 &&
-            viendoInstrucciones == 'guitarra-armonico'
-          "
-        ></InstruccionesAcordesGuitarraArmonico>
+          :viendoInstrucciones="viendoInstrucciones"
+        ></InstruccionesAcordes>
 
         <TocarCuadrado
           v-if="vista.viendoCuadrado3"
@@ -390,31 +370,12 @@ const viendoInstrucciones = ref('guitarra-armonico')
             ></Secuencia>
           </div>
 
-          <InstruccionesAcordesGuitarra
+          <InstruccionesAcordes
+            v-if="vista.viendoInstrucciones"
             :cancion="appStore.cancion"
             :compas="appStore.compas"
-            v-if="
-              vista.viendoInstrucciones && viendoInstrucciones == 'guitarra'
-            "
-          ></InstruccionesAcordesGuitarra>
-          <InstruccionesAcordesUkelele
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-            v-if="vista.viendoInstrucciones && viendoInstrucciones == 'ukelele'"
-          ></InstruccionesAcordesUkelele>
-          <InstruccionesAcordesTeclado
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-            v-if="vista.viendoInstrucciones && viendoInstrucciones == 'teclado'"
-          ></InstruccionesAcordesTeclado>
-          <InstruccionesAcordesGuitarraArmonico
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-            v-if="
-              vista.viendoInstrucciones &&
-              viendoInstrucciones == 'guitarra-armonico'
-            "
-          ></InstruccionesAcordesGuitarraArmonico>
+            :viendoInstrucciones="viendoInstrucciones"
+          ></InstruccionesAcordes>
           <TocarCuadrado
             v-if="vista.viendoCuadrado"
             :cancion="appStore.cancion"

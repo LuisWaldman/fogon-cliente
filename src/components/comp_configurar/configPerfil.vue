@@ -145,10 +145,7 @@ function actualizarInstrumento() {
     if (varianteInstrumento.value === 'ritmica') {
       perfil.value.instrumento = `${instrumentoBase.value}-ritmica`
     } else if (varianteInstrumento.value === 'melodica') {
-      perfil.value.instrumento =
-        instrumentoBase.value === 'guitarra'
-          ? 'punteobajo-melodica'
-          : 'punteo-melodica'
+      perfil.value.instrumento = `${instrumentoBase.value}-melodica`
     } else {
       perfil.value.instrumento = instrumentoBase.value
     }
