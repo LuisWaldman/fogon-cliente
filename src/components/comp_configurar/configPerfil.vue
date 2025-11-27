@@ -206,14 +206,16 @@ function toggleCifradoLatino() {
           v-model="perfil.instrumento"
           @change="updateProfile"
         >
-          <option value="voz">Voz</option>
           <option value="teclado">Teclado</option>
           <option value="guitarra">Guitarra</option>
           <option value="ukelele">Ukelele</option>
-          <option value="punteobajo">Punteo Bajo</option>
-          <option value="punteo">Punteo Guitarra</option>
-          <option value="harmonica">Harmonica</option>
-          <option value="percuicion">Percusion</option>
+          <option value="guitarra-ritmica">Guitarra Ritmica</option>
+          <option value="ukelele-ritmica">Ukelele Ritmica</option>
+          <option value="punteobajo-melodica">Guitarra Melodica</option>
+          <option value="punteo-melodica">Ukelele Melodica</option>
+          <option value="harmonica">Bajo</option>
+          <option value="armonica">Armonica</option>
+          <option value="percuicion">Percusión</option>
         </select>
       </div>
     </div>
