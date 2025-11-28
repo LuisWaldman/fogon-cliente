@@ -78,10 +78,7 @@ onMounted(() => {
     <div class="contenidoAcordes">
       <div class="compas" v-for="(compas, indexcm) in compaces" :key="indexcm">
         <div class="nombreCuerdas" v-if="indexcm === 0 || indexcm % 4 === 0">
-          <div
-            v-for="(_, indexcu) in instrumento.nombreLinea"
-            :key="indexcu"
-          >
+          <div v-for="(_, indexcu) in instrumento.nombreLinea" :key="indexcu">
             ➖
           </div>
         </div>

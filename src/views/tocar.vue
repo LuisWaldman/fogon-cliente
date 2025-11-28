@@ -309,7 +309,7 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
             (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')
           "
         >
-          Acordes No Calibrados. Corregilos desde: ✍️ Editar 
+          Acordes No Calibrados. Corregilos desde: ✍️ Editar
           <button
             v-if="
               appStore.cancion.calidad > -1 &&
@@ -502,13 +502,11 @@ input[type='range'] {
   font-size: 1.2em;
 }
 
-
 .advertencia {
   width: 100%;
   background-color: rgb(238, 195, 115);
   color: red;
   font-size: 1.2em;
-  
 }
 .overlay {
   position: absolute;

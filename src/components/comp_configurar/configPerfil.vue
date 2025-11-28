@@ -151,8 +151,7 @@ function actualizarInstrumento() {
 
 const mostrarVariantes = computed(
   () =>
-    instrumentoBase.value === 'guitarra' ||
-    instrumentoBase.value === 'ukelele',
+    instrumentoBase.value === 'guitarra' || instrumentoBase.value === 'ukelele',
 )
 
 function agregarInstrumentoFavorito() {
