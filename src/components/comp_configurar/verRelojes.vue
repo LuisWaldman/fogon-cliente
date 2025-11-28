@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { useAppStore } from '../../stores/appStore'
 import RelojControl from './VReloj.vue'
 import { onMounted, onUnmounted, ref } from 'vue'
 import { Reloj } from '../../modelo/reloj'
 import { HelperSincro } from '../../modelo/sincro/HelperSincro'
 import type { DelaySet } from '../../modelo/sincro/DelaySet'
+import { SincroSesion } from '../../modelo/sincro/SincroSesion'
+import { EstadoSincroCancion } from '../../modelo/sincro/EstadoSincroCancion'
 
 defineProps({
   mostrarCerrar: {
@@ -15,8 +16,12 @@ defineProps({
 
 const emit = defineEmits(['cerrar'])
 
-const appStore = useAppStore()
 const helper = HelperSincro.getInstance()
+
+const sesSincroCancion = ref<SincroSesion>(new SincroSesion(0, 0))
+const EstadoSincro = ref<EstadoSincroCancion>(
+    new EstadoSincroCancion(-1, 0, '-', 0),
+)
 
 const momentoLocal = ref(0)
 const momentoSincro = ref(0)
@@ -156,18 +161,18 @@ function cerrarRelojes() {
       <div style="display: flex">
         <div>
           <RelojControl
-            :fecha="appStore.sesSincroCancion.timeInicio"
+            :fecha="sesSincroCancion.timeInicio"
           ></RelojControl>
-          Desde: {{ appStore.sesSincroCancion.desdeCompas }}
+          Desde: {{ sesSincroCancion.desdeCompas }}
         </div>
       </div>
     </div>
 
     <div style="display: flex">
-      Golpe: {{ appStore.EstadoSincro.compas }} ,
-      {{ appStore.EstadoSincro.golpeEnCompas }}, estado:
-      {{ appStore.EstadoSincro.estado }} Delay:
-      {{ appStore.EstadoSincro.delay.toFixed(2) }} ms
+      Golpe: {{ EstadoSincro.compas }} ,
+      {{ EstadoSincro.golpeEnCompas }}, estado:
+      {{ EstadoSincro.estado }} Delay:
+      {{ EstadoSincro.delay.toFixed(2) }} ms
     </div>
     <div v-if="mostrarCerrar">
       <button @click="cerrarRelojes">Cerrar</button>

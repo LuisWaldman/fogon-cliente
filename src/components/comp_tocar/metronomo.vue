@@ -1,23 +1,28 @@
 <script setup lang="ts">
+import type { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 const appStore = useAppStore()
+defineProps<{
+  golpeEnCompas: number
+  cancion: Cancion
+  estadoReproduccion: string
+}>()
 </script>
 
 <template>
   <div class="divPrevia" v-if="appStore.estadoReproduccion == 'Iniciando'">
-    Empieza en {{ appStore.cancion.compasCantidad - appStore.golpeDelCompas }}
+    Empieza en {{ cancion.compasCantidad - golpeEnCompas }}
   </div>
-  <div v-if="appStore.cancion">
+  <div v-if="cancion">
     <div class="metronono">
       <div style="display: flex">
         <div
-          v-for="n in appStore.cancion.compasCantidad * 1"
+          v-for="n in cancion.compasCantidad * 1"
           :key="n"
           class="beat"
           :class="{
             beat_activo:
-              n - 1 === appStore.golpeDelCompas &&
-              appStore.estadoReproduccion === 'Reproduciendo',
+              n - 1 === golpeEnCompas && estadoReproduccion === 'Reproduciendo',
           }"
         >
           <span> {{ n }}</span>

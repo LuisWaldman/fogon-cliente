@@ -2,6 +2,7 @@
 import { useRouter } from 'vue-router'
 import { useAppStore } from '../../stores/appStore'
 
+const props = defineProps<{golpeDelCompas: number, conCancion: boolean, estadoReproduccion: string}>()
 const appStore = useAppStore()
 function getPositionStyle(index: number, total: number) {
   // Calculate angle from -120 degrees to 240 degrees (10 o'clock to 4 o'clock)
@@ -34,7 +35,7 @@ function clickFogon() {
   console.log('click_Fogon', router.currentRoute.value.path)
   if (router.currentRoute.value.path === '/tocar') {
     router.push('/')
-  } else if (appStore.cancion.acordes.ordenPartes.length > 0) {
+  } else if (props.conCancion) {
     router.push('/tocar')
   } else {
     router.push('/')
@@ -119,7 +120,7 @@ function clickFogon() {
             src="/img/llamaritomo1.png"
             v-if="
               appStore.estadoReproduccion !== 'pausado' &&
-              appStore.golpeDelCompas == 0
+                golpeDelCompas == 0
             "
             style="z-index: 3"
           />
@@ -127,21 +128,21 @@ function clickFogon() {
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/llamaritomo2.png"
-            v-if="appStore.golpeDelCompas == 1"
+            v-if="golpeDelCompas == 1"
             style="z-index: 3"
           />
           <img
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/llamaritomo3.png"
-            v-if="appStore.golpeDelCompas == 2"
+            v-if="golpeDelCompas == 2"
             style="z-index: 3"
           />
           <img
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/llamaritomo4.png"
-            v-if="appStore.golpeDelCompas == 3"
+            v-if="golpeDelCompas == 3"
             style="z-index: 3"
           />
         </div>

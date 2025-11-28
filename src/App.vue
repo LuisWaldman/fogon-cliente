@@ -38,7 +38,7 @@ function cerrareditarPantalla() {
 const router = useRouter()
 function clickEditar() {
   // Redirect to edit page for the current song
-  appStore.editandocancion = appStore.cancion
+  appStore.editandocancion = appStore.aplicacion.reproductor.cancion
   appStore.origenEditando = new OrigenCancion(
     appStore.origenCancion.origenUrl,
     appStore.origenCancion.fileName,

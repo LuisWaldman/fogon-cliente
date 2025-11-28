@@ -5,29 +5,35 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useAppStore } from '../../stores/appStore'
 
 import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
+import type { Cancion } from '../../modelo/cancion/cancion'
 const appStore = useAppStore()
 
 const tiempo = new Tiempo()
 const currentCompas = ref(0)
 const tiempoActual = ref('--:--')
 const showPlaylist = ref(false)
-
+const props = defineProps<{
+  golpeEnCompas: number
+  compas: number
+  cancion: Cancion
+  estadoReproduccion: string
+}>()
 watch(
-  () => appStore.golpeDelCompas,
+  () => props.golpeEnCompas,
   (newVal, oldVal) => {
     if (newVal !== oldVal) {
       tiempoActual.value = tiempo.formatSegundos(
-        appStore.cancion.duracionCompas * appStore.compas,
+        props.cancion.duracionCompas * props.compas,
       )
     }
   },
 )
 
 watch(
-  () => appStore.compas,
+  () => props.compas,
   (newVal) => {
     tiempoActual.value = tiempo.formatSegundos(
-      appStore.cancion.duracionCompas * appStore.compas,
+      props.cancion.duracionCompas * props.compas,
     )
     currentCompas.value = newVal
   },
@@ -125,7 +131,7 @@ function arreglartexto(texto: string): string {
     <input
       type="range"
       min="-1"
-      :max="appStore.cancion?.totalCompases"
+      :max="props.cancion?.totalCompases"
       v-model="currentCompas"
       @input="updateCompas()"
       class="rango_compas"
@@ -174,7 +180,7 @@ function arreglartexto(texto: string): string {
     <span class="spnTiempo"
       >{{ tiempoActual }}
       /
-      {{ tiempo.formatSegundos(appStore.cancion?.duracionCancion) }}
+      {{ tiempo.formatSegundos(props.cancion?.duracionCancion) }}
     </span>
   </div>
 </template>

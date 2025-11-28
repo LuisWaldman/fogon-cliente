@@ -27,15 +27,15 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       Logger.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
-      appStore.sesSincroCancion = new SincroSesion(
+      this.sesSincroCancion = new SincroSesion(
         desde,
         compas, // duracionGolpe
       )
       appStore.MediaVistas?.Iniciar?.()
       this.sincronizar()
-      if (appStore.cancion) {
-        if (appStore.compas < 0) {
-          appStore.compas = 0
+      if (this.reproductor.cancion) {
+        if (this.reproductor.compas < 0) {
+          this.reproductor.compas = 0
         }
       }
     })
@@ -45,18 +45,16 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     })
     this.cliente.setCompasActualizadoHandler((compas: number) => {
       Logger.log(`Compás actualizado a ${compas}`)
-      const appStore = useAppStore()
-      appStore.compas = compas
+      this.reproductor.compas = compas
     })
     this.cliente.setCancionSincronizadaHandler(
       (compas: number, desde: number) => {
-        const appStore = useAppStore()
-        console.log(
-          `En ${appStore.sesSincroCancion.timeInicio} Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time  ${desde}`,
+        Logger.log(
+          `En ${this.sesSincroCancion.timeInicio} Sincronizando inicio sesion  ${this.sesSincroCancion.timeInicio} , time  ${desde}`,
         )
         if (appStore.MediaVistas === null) {
-          appStore.sesSincroCancion.desdeCompas = compas
-          appStore.sesSincroCancion.timeInicio = desde
+          this.sesSincroCancion.desdeCompas = compas
+          this.sesSincroCancion.timeInicio = desde
         }
       },
     )
@@ -70,7 +68,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     const origen = new OrigenCancion('fogon', '', '')
     const cancion = await CancionManager.getInstance().Get(origen)
     const appStore = useAppStore()
-    appStore.cancion = cancion
+    this.reproductor.cancion = cancion
     appStore.origenCancion = origen
   }
 
@@ -95,23 +93,23 @@ export class StrategyReproductorConectado extends StrategyReproductor {
       const helper = HelperSincro.getInstance()
       const momento = helper.MomentoSincro()
       const sincro = helper.GetSincro(
-        appStore.EstadoSincro,
+        this.EstadoSincro,
         momento,
-        appStore.cancion!.duracionGolpe * 1000,
-        appStore.cancion!.compasCantidad,
+        this.reproductor.cancion!.duracionGolpe * 1000,
+        this.reproductor.cancion!.compasCantidad,
         0,
       )
       const dif = Math.abs(
         HelperSincro.Diferencia(
-          appStore.sesSincroCancion.timeInicio,
+          this.sesSincroCancion.timeInicio,
           sincro.timeInicio,
         ),
       )
       if (dif > 20) {
-        console.log(
-          `Sincronizando inicio sesion  ${appStore.sesSincroCancion.timeInicio} , time inicio ${sincro.timeInicio} con diferencia de ${dif} ms`,
+        Logger.log(
+          `Sincronizando inicio sesion  ${this.sesSincroCancion.timeInicio} , time inicio ${sincro.timeInicio} con diferencia de ${dif} ms`,
         )
-        appStore.sesSincroCancion.timeInicio = sincro.timeInicio
+        this.sesSincroCancion.timeInicio = sincro.timeInicio
         this.cliente.sincronizarReproduccion(0, sincro.timeInicio)
       }
     }

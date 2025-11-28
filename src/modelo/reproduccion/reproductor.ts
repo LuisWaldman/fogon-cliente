@@ -37,6 +37,9 @@ export class Reproductor {
   )
   compas: number = -1
   golpeDelCompas: number = 0 // Valor inicial predeterminado
+  constructor() {
+    this.cancion.archivo = ''
+  }
 
   public conectar(
     cliente: ClienteSocket,
@@ -83,8 +86,8 @@ export class Reproductor {
     if (cancionObtenida.pentagramas.length > 0) {
       appStore.estadosApp.texto = 'Cargando Midis...'
     }
-    appStore.cancion = cancionObtenida
-    appStore.compas = 0
+    this.cancion = cancionObtenida
+    this.compas = 0
     appStore.estadosApp.estado = 'ok'
     appStore.origenCancion = origen
   }

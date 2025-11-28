@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
-import { useAppStore } from '../../stores/appStore'
 import { CompasEditable } from './compaseditable'
 import editSecuencia from './editSecuencia.vue'
 import editAcordes from './editAcordesCancion.vue'
@@ -28,12 +27,9 @@ function seleccionarParte(compas: CompasEditable) {
   refParteSeleccionada.value = compas.nroSecuencia
 }
 function calcularCompaces() {
-  const appStore = useAppStore()
-  console.log('EditarLetraYAcordes mounted with compas:', appStore.compas)
   let renglon = []
   let renglones = []
   let letra = props.cancion.letras.GetTodosLosRenglones()
-  console.log('letra:', letra)
   let contSecuencia = 0
   let contAcordeEnSecuencia = 0
 

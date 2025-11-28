@@ -5,10 +5,14 @@ import iconofogon from './iconofogon.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import compartirctrl from '../compartir.vue'
 import emoticonOrigen from '../comp_home/emoticonOrigen.vue'
+import type { Cancion } from '../../modelo/cancion/cancion'
 const helperNotas = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
 helperNotas.latino = appStore.perfil.CifradoLatino
 
+const golpeDelCompas = ref(appStore.aplicacion.reproductor.golpeDelCompas)
+const cancion = ref<Cancion>(appStore.aplicacion.reproductor.cancion)
+const estadoReproduccion = ref(appStore.estadoReproduccion)
 // Define el evento
 const emit = defineEmits(['abrirVistaEdicion', 'editarCancion'])
 
@@ -75,8 +79,11 @@ function clickEditar() {
     :class="{ editando: $route.path === '/editar' }"
   >
     <div style="display: flex; width: 100%">
-      <iconofogon />
-
+      <iconofogon 
+        :golpeDelCompas="golpeDelCompas"
+        :conCancion="cancion.archivo !== ''"
+        :estadoReproduccion="estadoReproduccion"
+      />
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
         FOGON.AR
       </span>
@@ -84,11 +91,11 @@ function clickEditar() {
       <div v-if="$route.path === '/tocar'" class="divtitulocancioncontrol">
         <div class="encabezado">
           <emoticonOrigen :origen="appStore.origenCancion.origenUrl" />
-          {{ arreglartexto(appStore.cancion?.banda) }} -
-          <b>{{ helperNotas.GetAcorde(appStore.cancion?.escala) }}</b>
+          {{ arreglartexto( cancion?.banda) }} -
+          <b>{{ helperNotas.GetAcorde(cancion?.escala) }}</b>
         </div>
         <div class="cancionNombre">
-          {{ arreglartexto(appStore.cancion?.cancion) }}
+          {{ arreglartexto(cancion?.cancion) }}
         </div>
       </div>
 
