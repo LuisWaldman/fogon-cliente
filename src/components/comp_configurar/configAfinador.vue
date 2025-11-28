@@ -144,10 +144,7 @@ micHelper
     }
   })
   .catch((error) => {
-    Logger.logError(
-      'ESTADO MICRÓFONO',
-      `${error}`,
-    )
+    Logger.logError('ESTADO MICRÓFONO', `${error}`)
     refMicEstado.value = 'Error'
   })
 const escuchando = ref(false)
@@ -165,10 +162,7 @@ function Solicitar() {
       detectarFrecuencia()
     })
     .catch((error) => {
-      Logger.logError(
-        'SOLICITAR MICRÓFONO',
-        `${error}`,
-      )
+      Logger.logError('SOLICITAR MICRÓFONO', `${error}`)
       refMicEstado.value = 'Error'
     })
 }
@@ -224,10 +218,7 @@ function iniciarMidi() {
     })
     .catch((error) => {
       console.error('Error loading samples:', error)
-      Logger.logError(
-        'Cargando MIDI',
-        `${error}`,
-      )
+      Logger.logError('Cargando MIDI', `${error}`)
       CargandoMidi.value = false
     })
   Logger.log('MIDI Inicializado')
