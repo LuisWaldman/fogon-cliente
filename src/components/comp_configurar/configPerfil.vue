@@ -72,6 +72,88 @@ const instrumentosFiltrados = computed(() =>
   ),
 )
 
+// Opciones de instrumentos principales
+const instrumentosPrincipales = [
+  { value: 'teclado', label: 'Teclado', tieneVariantes: true },
+  { value: 'guitarra', label: 'Guitarra', tieneVariantes: true },
+  { value: 'ukelele', label: 'Ukelele', tieneVariantes: true },
+  { value: 'harmonica', label: 'Bajo' },
+  { value: 'armonica', label: 'Armónica' },
+  { value: 'percuicion', label: 'Percusión' },
+]
+
+const instrumentoBase = ref('')
+const varianteInstrumento = ref('')
+
+// Detectar el instrumento base al montar
+onMounted(() => {
+  if (config.perfil != null) {
+    perfil.value = config.perfil
+  }
+
+  imageBase64.value = perfil.value.imagen
+
+  // Login: cargar datos guardados
+  if (config.loginDefault && config.loginDefault.mantenerseLogeado) {
+    username.value = config.loginDefault.usuario
+    mantenerseLogeado.value = config.loginDefault.mantenerseLogeado
+  }
+
+  // Detectar instrumento base y variante
+  detectarInstrumentoYVariante()
+})
+
+function detectarInstrumentoYVariante() {
+  const instrActual = perfil.value.instrumento
+
+  if (instrActual.includes('guitarra')) {
+    instrumentoBase.value = 'guitarra'
+    if (instrActual.includes('ritmica')) {
+      varianteInstrumento.value = 'ritmica'
+    } else if (instrActual.includes('melodica')) {
+      varianteInstrumento.value = 'melodica'
+    } else {
+      varianteInstrumento.value = ''
+    }
+  } else if (instrActual.includes('ukelele')) {
+    instrumentoBase.value = 'ukelele'
+    if (instrActual.includes('ritmica')) {
+      varianteInstrumento.value = 'ritmica'
+    } else if (instrActual.includes('melodica')) {
+      varianteInstrumento.value = 'melodica'
+    } else {
+      varianteInstrumento.value = ''
+    }
+  } else {
+    instrumentoBase.value = instrActual
+    varianteInstrumento.value = ''
+  }
+}
+
+function actualizarInstrumento() {
+  if (
+    instrumentoBase.value === 'guitarra' ||
+    instrumentoBase.value === 'ukelele'
+  ) {
+    if (varianteInstrumento.value === 'ritmica') {
+      perfil.value.instrumento = `${instrumentoBase.value}-ritmica`
+    } else if (varianteInstrumento.value === 'melodica') {
+      perfil.value.instrumento = `${instrumentoBase.value}-melodica`
+    } else {
+      perfil.value.instrumento = instrumentoBase.value
+    }
+  } else {
+    perfil.value.instrumento = instrumentoBase.value
+    varianteInstrumento.value = ''
+  }
+  updateProfile()
+}
+
+const mostrarVariantes = computed(
+  () =>
+    instrumentoBase.value === 'guitarra' || instrumentoBase.value === 'ukelele',
+)
+
 function agregarInstrumentoFavorito() {
   if (
     instrumentoSeleccionado.value &&
@@ -203,17 +285,35 @@ function toggleCifradoLatino() {
         </div>
         <select
           id="instrument"
-          v-model="perfil.instrumento"
-          @change="updateProfile"
+          v-model="instrumentoBase"
+          @change="actualizarInstrumento"
         >
-          <option value="voz">Voz</option>
-          <option value="teclado">Teclado</option>
-          <option value="guitarra">Guitarra</option>
-          <option value="ukelele">Ukelele</option>
-          <option value="punteobajo">Punteo Bajo</option>
-          <option value="punteo">Punteo Guitarra</option>
-          <option value="harmonica">Harmonica</option>
-          <option value="percuicion">Percusion</option>
+          <option
+            v-for="inst in instrumentosPrincipales"
+            :key="inst.value"
+            :value="inst.value"
+          >
+            {{ inst.label }}
+          </option>
+        </select>
+
+        <!-- Selector de variante para guitarra/ukelele -->
+        <select
+          v-if="mostrarVariantes"
+          v-model="varianteInstrumento"
+          @change="actualizarInstrumento"
+          style="margin-top: 0.5rem"
+        >
+          <option value="">Normal</option>
+          <option
+            v-if="
+              instrumentoBase === 'guitarra' || instrumentoBase === 'ukelele'
+            "
+            value="ritmica"
+          >
+            Rítmico
+          </option>
+          <option value="melodica">Melódico</option>
         </select>
       </div>
     </div>
@@ -394,33 +494,161 @@ function toggleCifradoLatino() {
 
 <style scoped>
 .divPerfil {
-  margin-left: 20%;
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  font-size: x-large;
-  gap: 1rem;
-  border: 1px solid;
-  padding: 30px;
-  border-radius: 3%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.4)
+  );
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
+
 label {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #a9a8f6;
+  margin-bottom: 0.5rem;
+  display: block;
 }
+
 input,
-textarea {
+textarea,
+select {
   width: 100%;
-  padding: 0.5rem;
-  border-radius: 4px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 2px solid rgba(169, 168, 246, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   color: white !important;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 0 20px rgba(169, 168, 246, 0.2);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: rgba(169, 168, 246, 0.6);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+select {
+  cursor: pointer;
+}
+
+select option {
+  background: rgba(0, 0, 0, 0.9);
+  color: #a9a8f6;
+  padding: 8px;
+}
+
+select option:hover {
+  background: rgba(169, 168, 246, 0.2);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-height: 44px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+button:hover:not(:disabled)::before {
+  left: 100%;
+}
+
+button:hover:not(:disabled) {
+  border-color: rgba(169, 168, 246, 0.8);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+button:disabled::before {
+  display: none;
 }
 
 .crlPerfil {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-/* Oculta el input file */
+.crlPerfil > div > div {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.4)
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(169, 168, 246, 0.2);
+}
+
 .fileUp {
   display: none;
 }
@@ -428,45 +656,246 @@ textarea {
 .classBotonera {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
+
 .profileImage {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   cursor: pointer;
   border-radius: 50%;
-  border: 2px solid #ccc;
+  border: 3px solid rgba(169, 168, 246, 0.6);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(169, 168, 246, 0.3);
 }
+
+.profileImage:hover {
+  transform: scale(1.05);
+  border-color: rgba(169, 168, 246, 0.9);
+  box-shadow: 0 6px 20px rgba(169, 168, 246, 0.5);
+}
+
 .ctrlCabecera {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-right: 2rem;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
 }
+
 .ctrlImagen {
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .instrMidi {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
-  border: 1px solid;
-  padding: 5px;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.1),
+    rgba(0, 0, 0, 0.4)
+  );
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.instrMidi:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+  border-color: rgba(169, 168, 246, 0.5);
+  transform: translateX(4px);
+}
+
+.instrMidi button {
+  padding: 0.4rem 0.8rem;
+  background: linear-gradient(
+    135deg,
+    rgba(220, 20, 60, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+  border-color: rgba(220, 20, 60, 0.5);
+  font-size: 1rem;
+}
+
+.instrMidi button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(220, 20, 60, 0.5),
+    rgba(0, 0, 0, 0.7)
+  );
+  border-color: rgba(220, 20, 60, 0.8);
+  box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
+}
+
+.agregarInstrumentos {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.4)
+  );
+  border-radius: 8px;
+  border: 1px solid rgba(169, 168, 246, 0.2);
+}
+
+.agregarInstrumentos select {
+  flex: 1;
+  min-width: 150px;
+}
+
+.agregarInstrumentos button {
+  flex-shrink: 0;
+}
+
+.txtUser {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Estilos para checkboxes personalizados */
+input[type='checkbox'] {
+  width: auto;
+  cursor: pointer;
+  accent-color: rgba(169, 168, 246, 0.8);
+}
+
+/* Estilos para las opciones clickeables */
+.crlPerfil span[onclick],
+.crlPerfil span {
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s ease;
+}
+
+.crlPerfil span[onclick]:hover,
+.crlPerfil span:hover {
+  opacity: 0.8;
+}
+
+/* Contenedor del modo desarrollador */
+div[style*='margin-top: 30%'] {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.6)
+  );
+  border-radius: 8px;
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+div[style*='margin-top: 30%']:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.9),
+    rgba(44, 44, 44, 0.8)
+  );
+  border-color: rgba(169, 168, 246, 0.6);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.2);
 }
 
 @media (max-width: 768px) {
   .divPerfil {
-    font-size: small;
-    margin-left: 2%;
-    width: 95%;
-    overflow: hidden;
-    padding: 2px;
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 0.5rem;
   }
-  .ctrlImagen {
-    margin-right: 0rem;
+
+  .profileImage {
+    width: 80px;
+    height: 80px;
   }
+
   .ctrlCabecera {
-    margin-right: 0rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .ctrlImagen {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .instrMidi {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .agregarInstrumentos {
+    flex-direction: column;
+  }
+
+  .agregarInstrumentos select,
+  .agregarInstrumentos button {
+    width: 100%;
+  }
+
+  .txtUser {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .divPerfil {
+    padding: 0.75rem;
+  }
+
+  .profileImage {
+    width: 60px;
+    height: 60px;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
   }
 }
 </style>

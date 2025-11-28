@@ -250,7 +250,7 @@
 
       <div class="contact-info">
         <p class="version-info">
-          <strong>Versión:</strong> 1.0.0 |
+          <strong>Versión:</strong> {{ version }} |
           <strong>Última actualización:</strong>
           Noviembre 2024
         </p>
@@ -266,7 +266,9 @@
 </template>
 
 <script setup lang="ts">
-// No logic required for this static component
+// Obtener versión desde el package.json a través de vite.config.ts
+declare const __APP_VERSION__: string
+const version = __APP_VERSION__
 </script>
 
 <style scoped>

@@ -73,7 +73,7 @@ function guardarCambios(origenDestino: string) {
     .Save(
       new OrigenCancion(
         origenDestino,
-        props.origen.fileName,
+        props.cancion.archivo,
         props.origen.usuario,
       ),
       props.cancion,

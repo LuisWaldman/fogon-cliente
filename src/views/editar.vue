@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useAppStore } from '../stores/appStore'
-import cabecera from '../components/comp_editar/editarcabecera.vue'
+import cabecera from '../components/comp_editar/cabecera.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import EditarLetraAcorde from '../components/comp_editar/editarLetraYAcordes.vue'

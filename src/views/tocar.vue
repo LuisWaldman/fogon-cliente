@@ -12,9 +12,7 @@ import ControladorTiempo from '../components/comp_tocar/ControladorTiempo.vue'
 import Metronomo from '../components/comp_tocar/metronomo.vue'
 import MetronomoDesarrollador from '../components/comp_tocar/metronomodesarrollador.vue'
 import Secuencia from '../components/comp_tocar/Tocar_Secuencia.vue'
-import InstruccionesAcordesGuitarra from '../components/comp_tocar/InstruccionesAcordesGuitarra.vue'
-import InstruccionesAcordesUkelele from '../components/comp_tocar/InstruccionesAcordesUkelele.vue'
-import InstruccionesAcordesTeclado from '../components/comp_tocar/InstruccionesAcordesTeclado.vue'
+import InstruccionesAcordes from '../components/comp_tocar/InstruccionesAcordes.vue'
 import sincronizarMedias from '../components/comp_tocar/SincronizarMedias.vue'
 import { useAppStore } from '../stores/appStore'
 import { Pantalla } from '../modelo/pantalla'
@@ -217,7 +215,7 @@ function cambioestado(estado: number) {
 }
 
 const refAdvertencia = ref(true)
-const viendoInstrucciones = ref('teclado')
+const viendoInstrucciones = ref(appStore.perfil.instrumento)
 </script>
 
 <template>
@@ -253,21 +251,12 @@ const viendoInstrucciones = ref('teclado')
           :compas="appStore.compas"
         ></Secuencia>
 
-        <InstruccionesAcordesGuitarra
+        <InstruccionesAcordes
+          v-if="vista.viendoInstrucciones3"
           :cancion="appStore.cancion"
           :compas="appStore.compas"
-          v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'guitarra'"
-        ></InstruccionesAcordesGuitarra>
-        <InstruccionesAcordesUkelele
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'ukelele'"
-        ></InstruccionesAcordesUkelele>
-        <InstruccionesAcordesTeclado
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
-          v-if="vista.viendoInstrucciones3 && viendoInstrucciones == 'teclado'"
-        ></InstruccionesAcordesTeclado>
+          :viendoInstrucciones="viendoInstrucciones"
+        ></InstruccionesAcordes>
 
         <TocarCuadrado
           v-if="vista.viendoCuadrado3"
@@ -278,7 +267,7 @@ const viendoInstrucciones = ref('teclado')
 
       <div class="columnas lateral-container" :style="estiloVistaPrincipal()">
         <div
-          class="sinPentagrama"
+          class="error"
           v-if="
             appStore.cancion.pentagramas.length === 0 &&
             vista.muestra == 'partitura'
@@ -321,6 +310,15 @@ const viendoInstrucciones = ref('teclado')
           "
         >
           Acordes No Calibrados. Corregilos desde: ✍️ Editar
+          <button
+            v-if="
+              appStore.cancion.calidad > -1 &&
+              appStore.estadosApp.estadoLogin === 'logueado'
+            "
+            @click="SolicitarCalibracion()"
+          >
+            Calibrar!
+          </button>
         </div>
         <TocarLetraAcorde
           v-if="
@@ -381,23 +379,12 @@ const viendoInstrucciones = ref('teclado')
             ></Secuencia>
           </div>
 
-          <InstruccionesAcordesGuitarra
+          <InstruccionesAcordes
+            v-if="vista.viendoInstrucciones"
             :cancion="appStore.cancion"
             :compas="appStore.compas"
-            v-if="
-              vista.viendoInstrucciones && viendoInstrucciones == 'guitarra'
-            "
-          ></InstruccionesAcordesGuitarra>
-          <InstruccionesAcordesUkelele
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-            v-if="vista.viendoInstrucciones && viendoInstrucciones == 'ukelele'"
-          ></InstruccionesAcordesUkelele>
-          <InstruccionesAcordesTeclado
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
-            v-if="vista.viendoInstrucciones && viendoInstrucciones == 'teclado'"
-          ></InstruccionesAcordesTeclado>
+            :viendoInstrucciones="viendoInstrucciones"
+          ></InstruccionesAcordes>
           <TocarCuadrado
             v-if="vista.viendoCuadrado"
             :cancion="appStore.cancion"
@@ -509,14 +496,15 @@ input[type='range'] {
     font-size: 1em;
   }
 }
-.sinPentagrama {
+.error {
   width: 100%;
   background-color: brown;
   font-size: 1.2em;
 }
+
 .advertencia {
   width: 100%;
-  background-color: rgb(219, 172, 85);
+  background-color: rgb(238, 195, 115);
   color: red;
   font-size: 1.2em;
 }

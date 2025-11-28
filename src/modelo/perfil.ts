@@ -34,5 +34,8 @@ export class Perfil extends ObjetoPosteable {
     this.usuario = usuario
     this.descripcion = descripcion
     this.instrumento = instrumento
+    if (!this.instrumento) {
+      this.instrumento = 'teclado'
+    }
   }
 }
