@@ -2,6 +2,7 @@ import { io, Socket } from 'socket.io-client'
 import type { datosLogin } from '../datosLogin'
 import type { ObjetoPosteable } from '../objetoPosteable'
 import type { Servidor } from '../servidor'
+import { Logger } from '../logger'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
@@ -251,7 +252,7 @@ export class ClienteSocket {
       )
 
       if (this.intentosRealizados >= this.maxIntentos) {
-        console.log('Máximo número de intentos alcanzado, desconectando...')
+        Logger.log('Máximo número de intentos alcanzado, desconectando...')
         socket.disconnect()
         this.conexionStatusHandler?.('error')
       } else {
