@@ -2,6 +2,7 @@ import { Cancion } from './cancion'
 import { HelperJSON } from './HelperJSON'
 import { ItemIndiceCancion } from './ItemIndiceCancion'
 import { OrigenCancion } from './origencancion'
+import { Logger } from '../logger'
 
 export class CancionUrlManager {
   public static async GetCancion(
@@ -37,7 +38,7 @@ export class CancionUrlManager {
     if (desdeUrl.includes('localhost')) {
       desdeUrl = 'http://localhost:5173/'
     }
-    console.log('Getting Indice from', desdeUrl + 'indice.json')
+    Logger.log('Getting Indice from', desdeUrl + 'indice.json')
 
     const response = await fetch(desdeUrl + 'indice.json')
     const data = await response.json()

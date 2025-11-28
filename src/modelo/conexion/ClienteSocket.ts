@@ -281,11 +281,11 @@ export class ClienteSocket {
     })
 
     socket.on('mensajesesion', (msj: string) => {
-      console.log('mensajesesion received with mensaje:', msj)
+      Logger.log('mensajesesion received with mensaje:', msj)
       this.mensajesesionHandler?.(msj)
     })
     socket.on('rolSesion', (mensaje: string) => {
-      console.log('rolSesion received with mensaje:', mensaje)
+      Logger.log('rolSesion received with mensaje:', mensaje)
       this.rolSesionHandler?.(mensaje)
     })
     socket.on('sesionesActualizadas', () => {
@@ -302,9 +302,9 @@ export class ClienteSocket {
       console.error('loginFailed received with error:', error)
       this.loginFailedHandler?.(error)
     })
-    socket.on('ensesion', (sesion: string) => {
-      console.log('ensesion received with sesion:', sesion)
-      this.ensesionHandler?.(sesion)
+    socket.on('ensesion', (sesion: Sesion) => {
+      Logger.log('ensesion received with sesion:', sesion)
+      this.enSesionHandler?.(sesion)
     })
     socket.on('sesionFailed', (error: string) => {
       console.error('sesionFailed received with error:', error)
@@ -322,11 +322,11 @@ export class ClienteSocket {
       this.cancionDetenidaHandler?.()
     })
     socket.on('sincronizarRTC', (usuario: number) => {
-      console.log('sincronizarRTC received with usuario:', usuario)
+      Logger.log('sincronizarRTC received with usuario:', usuario)
       this.sincronizarRTCHandler?.(usuario)
     })
     socket.on('compasActualizado', (compas: number) => {
-      console.log('compasActualizado received with compas:', compas)
+      Logger.log('compasActualizado received with compas:', compas)
       this.compasActualizadoHandler?.(compas)
     })
     socket.on('sincronizar', (compas: number, delayms: number) => {
@@ -336,7 +336,7 @@ export class ClienteSocket {
       this.cancionSincronizadaHandler?.(compas, delayms)
     })
     socket.on('answerRTC', (SDP: string) => {
-      console.log('answerRTC received with SDP:', SDP)
+      Logger.log('answerRTC received with SDP:', SDP)
       this.answerRTCHandler?.(SDP)
     })
     socket.on('time', (hora: number) => {
@@ -354,7 +354,7 @@ export class ClienteSocket {
     })
 
     socket.on('nrocambiado', () => {
-      console.log('nrocambiado received')
+      Logger.log('nrocambiado received')
       this.nrocambiadoHandler?.()
     })
 

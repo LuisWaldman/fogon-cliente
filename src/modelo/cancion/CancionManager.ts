@@ -92,7 +92,7 @@ export class CancionManager {
       }
       return CancionIndexedDBManager.GetCancion(origencancion, this.db)
     }
-    console.log('Recuperando canción desde URL:', origencancion.origenUrl)
+    Logger.log('Recuperando canción desde URL:', origencancion.origenUrl)
     if (origencancion.origenUrl === 'server') {
       return CancionServerManager.GetCancion(origencancion, this.cliente)
     }
@@ -124,7 +124,7 @@ export class CancionManager {
 
     const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
     const ultimas = new UltimasCanciones()
-    console.log('Guardando en ultimas', item)
+    Logger.log('Guardando en ultimas', item)
     ultimas.agregar(item)
   }
 

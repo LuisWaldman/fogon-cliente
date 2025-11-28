@@ -245,7 +245,7 @@ export default class Aplicacion {
         .listasServerManager?.GetListas()
         .then((listas) => {
           appStore.listasEnServer = listas
-          console.log('Listas en server cargadas:', listas)
+          Logger.log('Listas en server cargadas:', listas)
         })
     })
     this.cliente.setLoginFailedHandler((error: string) => {
@@ -270,7 +270,7 @@ export default class Aplicacion {
       .then((response: unknown) => {
         const appStore = useAppStore()
         appStore.perfil = perfil
-        console.log('Profile updated successfully:', response)
+        Logger.log('Profile updated successfully:', response)
       })
       .catch((error: Error) => {
         console.error('Error updating profile:', error)
@@ -283,7 +283,7 @@ export default class Aplicacion {
     this.HTTPGet('usersesion')
       .then((response) => response.json())
       .then((data) => {
-        console.log('Perfiles obtenidos:', data)
+        Logger.log('Perfiles obtenidos:', data)
         const appStore = useAppStore()
         appStore.usuariosSesion = []
         data.forEach(
@@ -330,7 +330,7 @@ export default class Aplicacion {
       .then((response) => response.json())
       .then((data) => {
         const appStore = useAppStore()
-        console.log('Sesiones obtenidas:', data)
+        Logger.log('Sesiones obtenidas:', data)
         appStore.sesiones = []
         data.forEach(
           (item: {
