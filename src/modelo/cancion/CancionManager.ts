@@ -9,6 +9,7 @@ import { CancionIndexedDBManager } from './CancionIndexedDBManager'
 import { CancionSubidasManager } from './CancionSubidasUrlManager'
 import { CancionFogonManager } from './CancionFogonManager'
 import { ListasServerManager } from './ListasServerManager'
+import { Logger } from '../logger'
 
 export class CancionManager {
   private static instance: CancionManager
@@ -59,7 +60,7 @@ export class CancionManager {
     this.getDBConnection()
       .then((database) => {
         this.db = database
-        console.log('Conexión a IndexedDB establecida')
+        Logger.log('Conexión a IndexedDB establecida')
       })
       .catch((error) => {
         console.error('Error al conectar a IndexedDB:', error)

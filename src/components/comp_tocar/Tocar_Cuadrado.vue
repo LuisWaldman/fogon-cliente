@@ -7,6 +7,7 @@ import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
 import { InstrumentosRitmos } from './instrumentosritmos'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { useAppStore } from '../../stores/appStore'
+import { Logger } from '../../modelo/logger'
 
 const props = defineProps<{
   compas: number
@@ -110,7 +111,7 @@ const CargandoMidi = ref(false)
 
 let midiPlayer = new MidiPlayer()
 function iniciar() {
-  console.log('Cargar')
+  Logger.log('Cargar')
   midiPlayer = new MidiPlayer()
   fetch('InstrumentosMIDI/' + instrumento.value)
     .then((response) => response.json())
@@ -123,7 +124,7 @@ function iniciar() {
     .catch((error) => {
       console.error('Error loading samples:', error)
     })
-  console.log('Iniciar')
+  Logger.log('Iniciar')
 }
 
 function ActualizarInstrumento() {

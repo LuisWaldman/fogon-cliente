@@ -4,6 +4,7 @@ import { Reproductor } from './reproductor'
 import { SincroSesion } from '../sincro/SincroSesion'
 import { OrigenCancion } from '../cancion/origencancion'
 import { CancionManager } from '../cancion/CancionManager'
+import { Logger } from '../logger'
 import { Cancion } from '../cancion/cancion'
 import { HelperSincro } from '../sincro/HelperSincro'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
@@ -39,7 +40,7 @@ export class ReproductorConectado extends Reproductor {
       appStore.estadosApp.estado = 'ok'
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
-      console.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
+      Logger.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
       appStore.sesSincroCancion = new SincroSesion(
         desde,
         compas, // duracionGolpe
@@ -53,11 +54,11 @@ export class ReproductorConectado extends Reproductor {
       }
     })
     this.cliente.setCancionDetenidaHandler(() => {
-      console.log('Reproducción detenida')
+      Logger.log('Reproducción detenida')
       super.detenerReproduccion()
     })
     this.cliente.setCompasActualizadoHandler((compas: number) => {
-      console.log(`Compás actualizado a ${compas}`)
+      Logger.log(`Compás actualizado a ${compas}`)
       const appStore = useAppStore()
       appStore.compas = compas
     })

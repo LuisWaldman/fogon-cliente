@@ -5,6 +5,7 @@ import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
 import { MediaVista } from '../../modelo/reproduccion/MediaVista'
 import { useAppStore } from '../../stores/appStore'
 import { MidiHelper } from '../../modelo/midi/MidiHelper'
+import { Logger } from '../../modelo/logger'
 
 const props = defineProps<{
   compas: number
@@ -55,7 +56,7 @@ function iniciar() {
     midiCargado.value = false
     return
   }
-  console.log('Cargar')
+  Logger.log('Cargar')
   midiPlayer = new MidiPlayer()
   todosInstrumentos.value = [
     ...new Set(props.cancion.pentagramas.map((p) => p.instrumento)),
@@ -63,7 +64,7 @@ function iniciar() {
   InstrumentosSelecconados.value = [...todosInstrumentos.value]
   midiPlayer.cargarInstrumentos(todosInstrumentos.value).then(() => {
     midiCargado.value = true
-    console.log('Instrumentos cargados')
+    Logger.log('Instrumentos cargados')
     cargarCancion()
   })
 }

@@ -216,7 +216,7 @@ export class ClienteSocket {
       this.reconectando = false
       this.intentosRealizados = 0
       this.socket.disconnect()
-      console.log('socket disconnected manually')
+      Logger.log('socket disconnected manually')
     }
   }
 
@@ -238,7 +238,7 @@ export class ClienteSocket {
     )
 
     socket.on('connect', () => {
-      console.log('socket connected')
+      Logger.log('socket connected')
       this.intentosRealizados = 0 // Resetear en conexión exitosa
       this.reconectando = false
       this.conexionStatusHandler?.('conectado')
@@ -289,12 +289,12 @@ export class ClienteSocket {
       this.rolSesionHandler?.(mensaje)
     })
     socket.on('sesionesActualizadas', () => {
-      console.log('sesionesActualizadas received')
+      Logger.log('sesionesActualizadas received')
       this.sesionesActualizadasHandler?.()
     })
 
     socket.on('loginSuccess', () => {
-      console.log('loginSuccess received')
+      Logger.log('loginSuccess received')
       this.loginSuccessHandler?.()
     })
 
@@ -318,7 +318,7 @@ export class ClienteSocket {
       this.cancionSincronizadaHandler?.(compas, desde)
     })
     socket.on('cancionDetenida', () => {
-      console.log('cancionDetenida received')
+      Logger.log('cancionDetenida received')
       this.cancionDetenidaHandler?.()
     })
     socket.on('sincronizarRTC', (usuario: number) => {
@@ -344,12 +344,12 @@ export class ClienteSocket {
     })
 
     socket.on('actualizarusuarios', () => {
-      console.log('actualizarUsuarios received')
+      Logger.log('actualizarUsuarios received')
       this.actualizarUsuariosHandler?.()
     })
 
     socket.on('listacambiada', () => {
-      console.log('listacambiada received')
+      Logger.log('listacambiada received')
       this.listacambiadaHandler?.()
     })
 

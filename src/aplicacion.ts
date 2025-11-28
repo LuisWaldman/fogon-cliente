@@ -14,6 +14,7 @@ import type { MediaVista } from './modelo/reproduccion/MediaVista'
 import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 import type { Servidor } from './modelo/servidor'
 import { IndiceHelper } from './modelo/indices/IndiceHelper'
+import { Logger } from './modelo/logger'
 import type { Router } from 'vue-router'
 import type { ItemIndiceCancion } from './modelo/cancion/ItemIndiceCancion'
 
@@ -260,7 +261,7 @@ export default class Aplicacion {
     })
 
     this.cliente.setActualizarUsuariosHandler(() => {
-      console.log('Usuarios actualizados')
+      Logger.log('Usuarios actualizados')
       this.CargarUsuariosSesion()
     })
   }

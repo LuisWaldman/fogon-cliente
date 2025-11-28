@@ -4,6 +4,7 @@ import { useAppStore } from '../../stores/appStore'
 import { CancionManager } from '../cancion/CancionManager'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { ListaReproduccion } from './listareproduccion'
+import { Logger } from '../logger'
 
 export class Reproductor {
   protected cancion: string = ''
@@ -58,7 +59,7 @@ export class Reproductor {
         appStore.MediaVistas?.Iniciar?.()
       }
 
-      console.log(`Iniciando reproducción de la canción: ${momento}`)
+      Logger.log(`Iniciando reproducción de la canción: ${momento}`)
       if (appStore.compas < 0) {
         appStore.compas = 0
       }

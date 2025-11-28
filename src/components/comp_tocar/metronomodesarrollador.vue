@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { watch } from 'vue'
+import { Logger } from '../../modelo/logger'
 
 let midiPlayer = new MidiPlayer()
 import { useAppStore } from '../../stores/appStore'
@@ -26,7 +27,7 @@ function iniciar() {
     midiCargado.value = false
     return
   }
-  console.log('Cargar')
+  Logger.log('Cargar')
   midiPlayer = new MidiPlayer()
   fetch('InstrumentosMIDI/bateria.json')
     .then((response) => response.json())
@@ -38,7 +39,7 @@ function iniciar() {
     .catch((error) => {
       console.error('Error loading samples:', error)
     })
-  console.log('Iniciar')
+  Logger.log('Iniciar')
 }
 
 function tocar() {

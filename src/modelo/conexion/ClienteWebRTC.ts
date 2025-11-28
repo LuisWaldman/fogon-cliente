@@ -55,8 +55,8 @@ export class ClienteWebRTC {
 
   // Establece la oferta recibida
   async SetRemoteOffer(sdp: string): Promise<void> {
-    console.log('Estableciendo oferta remota SDP...')
-    const offerDesc = new RTCSessionDescription({ type: 'offer', sdp })
+    Logger.log('Estableciendo oferta remota SDP...')
+    const remoteOffer = new RTCSessionDescription({ type: 'offer', sdp })
     await this.peerConnection.setRemoteDescription(offerDesc)
   }
 
@@ -104,12 +104,12 @@ export class ClienteWebRTC {
   async SetRemoteSDP(sdp: string): Promise<void> {
     const desc = new RTCSessionDescription({ type: 'answer', sdp })
     await this.peerConnection.setRemoteDescription(desc)
-    console.log('✅ Respuesta SDP establecida correctamente')
+    Logger.log('✅ Respuesta SDP establecida correctamente')
   }
 
   cerrarYreiniciar() {
     // Close the data channel if it exists
-    console.log('Cerrando conexión WebRTC y reiniciando...')
+    Logger.log('Cerrando conexión WebRTC y reiniciando...')
     if (this.dataChannel && this.dataChannel.readyState === 'open') {
       this.dataChannel.close()
       this.dataChannel = null

@@ -4,6 +4,7 @@ import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
 import circulo from './circulo.vue'
 import selectEscala from '../SelectEscala.vue'
+import { Logger } from '../../modelo/logger'
 
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
@@ -211,7 +212,7 @@ function clickMidi() {
 }
 
 function iniciarMidi() {
-  console.log('Cargar MIDI')
+  Logger.log('Cargar MIDI')
   midiPlayer = new MidiPlayer()
   fetch('InstrumentosMIDI/' + instrumento.value)
     .then((response) => response.json())
@@ -226,7 +227,7 @@ function iniciarMidi() {
       useAppStore().errores.push(new Error(`Error loading samples: ${error}`))
       CargandoMidi.value = false
     })
-  console.log('MIDI Inicializado')
+  Logger.log('MIDI Inicializado')
 }
 
 function ActualizarInstrumentoMidi() {
