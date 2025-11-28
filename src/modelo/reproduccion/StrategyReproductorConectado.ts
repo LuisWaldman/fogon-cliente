@@ -20,10 +20,8 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     this.token = token
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler(async () => {
-      appStore.estadosApp.estado = ''
-      appStore.estadosApp.texto = 'Obteniendo cancion...'
       await this.GetCancionDelFogon()
-      appStore.estadosApp.estado = 'ok'
+      this.reproductor.SetEstado('pausada')
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       Logger.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
@@ -75,13 +73,13 @@ export class StrategyReproductorConectado extends StrategyReproductor {
   override async CargarCancion(cancion: ItemIndiceCancion) {
     const appStore = useAppStore()
     if (appStore.rolSesion != 'director') {
-      appStore.estadosApp.texto = 'Esperando que el director envie la cancion'
+      this.reproductor.SetEstado('cargando-dedirector')
     } else {
-      appStore.estadosApp.texto = 'Obteniendo cancion para enviar...'
+      this.reproductor.SetEstado('cargando-demanager')
       const cancionObtenida = await CancionManager.getInstance().Get(
         ItemIndiceCancion.GetOrigen(cancion),
       )
-      appStore.estadosApp.texto = 'Enviando cancion...'
+      this.reproductor.SetEstado('cargando-enviofogon')
       this.EnviarCancion(cancionObtenida)
     }
   }

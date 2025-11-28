@@ -13,6 +13,11 @@ import { EstadosAplicacion } from '../../EstadosAplicacion'
 import { OrigenCancion } from '../cancion/origencancion'
 
 export class Reproductor {
+  async listaActualizada() {
+    await this.strategyReproductor.CargarCancion(
+      this.listaReproduccion.GetCancion(),
+    )
+  }
   SetEstado(estado: string) {
     EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)
   }
@@ -53,7 +58,11 @@ export class Reproductor {
   ) {
     const reproductor = new StrategyReproductorConectado(this, cliente, token)
     this.strategyReproductor = reproductor
-    this.listaReproduccion = new ListaReproduccionConectada(cliente, token)
+    this.listaReproduccion = new ListaReproduccionConectada(
+      cliente,
+      token,
+      this,
+    )
     if (creandoSesion) {
       reproductor.EnviarCancion(this.cancion)
     } else {

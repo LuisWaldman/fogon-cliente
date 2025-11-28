@@ -10,9 +10,65 @@ const helperNotas = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
 helperNotas.latino = appStore.perfil.CifradoLatino
 
+
+const compas = ref(appStore.aplicacion.reproductor.compas)
 const golpeDelCompas = ref(appStore.aplicacion.reproductor.golpeDelCompas)
 const cancion = ref<Cancion>(appStore.aplicacion.reproductor.cancion)
+// requestAnimationFrame loop control
+let rafId: number | null = null
 const estadoReproduccion = ref(appStore.estadosApp.estadoReproduccion)
+async function EmpezarLoop() {
+  // reset counter when starting
+  const loop = async () => {
+    // stop if state changed
+    if (
+      appStore.estadosApp.estadoReproduccion !== 'Reproduciendo' &&
+      appStore.estadosApp.estadoReproduccion !== 'Iniciando'
+    ) {
+      rafId = null
+      return
+    }
+    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
+    compas.value = appStore.aplicacion.reproductor.compas
+    golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
+    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
+    rafId = requestAnimationFrame(loop)
+  }
+  // avoid multiple loops
+  if (rafId == null) {
+    rafId = requestAnimationFrame(loop)
+  }
+}
+
+function PararLoop() {
+  if (rafId != null) {
+    cancelAnimationFrame(rafId)
+    rafId = null
+  }
+}
+
+function VerEstado() {
+  if (appStore.estadosApp.estadoReproduccion == 'pausado') {
+    cancion.value = appStore.aplicacion.reproductor.cancion
+  }
+  if (
+    appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
+    appStore.estadosApp.estadoReproduccion === 'Iniciando'
+  ) {
+    EmpezarLoop()
+  } else {
+    PararLoop()
+  }
+}
+VerEstado()
+// Watch for changes in playback state and start/stop RAF loop
+watch(
+  () => appStore.estadosApp.estadoReproduccion,
+  () => {
+    VerEstado()
+  },
+)
+
 // Define el evento
 const emit = defineEmits(['abrirVistaEdicion', 'editarCancion'])
 
@@ -92,7 +148,7 @@ function clickEditar() {
     <div style="display: flex; width: 100%">
       <iconofogon
         :golpeDelCompas="golpeDelCompas"
-        :conCancion="cancion.archivo !== ''"
+        :conCancion="!estadoReproduccion.startsWith('cargando') && estadoReproduccion !== 'sin-cancion'"
         :estadoReproduccion="estadoReproduccion"
       />
       <span v-if="$route.path === '/'" class="titulocancioncontrol">

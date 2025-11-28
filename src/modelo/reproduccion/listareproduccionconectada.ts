@@ -5,21 +5,26 @@ import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { OrigenCancion } from '../cancion/origencancion'
 import type { ClienteSocket } from '../conexion/ClienteSocket'
 import { ListaReproduccion } from './listareproduccion'
+import type { Reproductor } from './reproductor'
 
 export class ListaReproduccionConectada extends ListaReproduccion {
   cliente: ClienteSocket
   token: string
+  reproductor: Reproductor
 
-  constructor(cliente: ClienteSocket, token: string) {
+  constructor(cliente: ClienteSocket, token: string, reproductor: Reproductor) {
     super()
     this.cliente = cliente
     this.token = token
+    this.reproductor = reproductor
     this.cliente.setListacambiadaHandler(async () => {
       await this.CargarLista()
-      this.CargarNroCancionActual()
+      await this.CargarNroCancionActual()
+      this.reproductor.listaActualizada()
     })
     this.cliente.setNrocambiadoHandler(async () => {
-      this.CargarNroCancionActual()
+      await this.CargarNroCancionActual()
+      this.reproductor.listaActualizada()
     })
     this.CargarLista().then(() => {
       this.CargarNroCancionActual()
