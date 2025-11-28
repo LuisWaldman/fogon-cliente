@@ -10,6 +10,7 @@ import { Letra } from '../cancion/letra'
 import { Acordes } from '../cancion/acordes'
 import { Cancion } from '../cancion/cancion'
 import { EstadosAplicacion } from '../../EstadosAplicacion'
+import { OrigenCancion } from '../cancion/origencancion'
 
 export class Reproductor {
   SetEstado(estado: string) {
@@ -31,8 +32,8 @@ export class Reproductor {
     this,
   )
   protected listaReproduccion: ListaReproduccion = new ListaReproduccion()
-  public estadoReproductor: string = 'inciando'
-  public detalleEstado: string = ''
+  public estadoReproductor: string = 'sin-cancion'
+  public origenCancion: OrigenCancion = new OrigenCancion('', '', '')
   public cancion: Cancion = new Cancion(
     'Cancion no cargada',
     'sin banda',

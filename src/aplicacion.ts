@@ -90,10 +90,6 @@ export default class Aplicacion {
   }
 
   async ClickTocar(origen: ItemIndiceCancion) {
-    const appStore = useAppStore()
-    appStore.estadosApp.paginaLista = ''
-    appStore.estadosApp.estado = 'cargando'
-    appStore.estadosApp.texto = 'Cargando cancion...'
     this.reproductor.ClickCancion(origen)
     this.router?.push('/tocar')
   }

@@ -43,6 +43,9 @@ async function startRafLoop() {
       return
     }
     await appStore.aplicacion.sincronizar()
+    compas.value = appStore.aplicacion.reproductor.compas
+    golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
+    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
     rafId = requestAnimationFrame(loop)
   }
   // avoid multiple loops
@@ -59,6 +62,9 @@ function stopRafLoop() {
 }
 
 function VerEstado() {
+  if (appStore.estadosApp.estadoReproduccion == 'pausado') {
+    cancion.value = appStore.aplicacion.reproductor.cancion
+  }
   if (
     appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
     appStore.estadosApp.estadoReproduccion === 'Iniciando'
@@ -222,7 +228,13 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
 </script>
 
 <template>
-  <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
+  <div
+    style="text-align: center"
+    v-if="
+      appStore.estadosApp.estado != 'ok' ||
+      appStore.estadosApp.estadoReproduccion == 'cargando-cancion'
+    "
+  >
     <img
       src="/img/iconogrande.png"
       style="width: 300px; height: auto"
@@ -232,7 +244,13 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
     <div>{{ appStore.estadosApp.texto }}</div>
   </div>
 
-  <div class="tocar-fluid" v-if="appStore.estadosApp.estado === 'ok'">
+  <div
+    class="tocar-fluid"
+    v-if="
+      appStore.estadosApp.estado === 'ok' &&
+      appStore.estadosApp.estadoReproduccion != 'cargando-cancion'
+    "
+  >
     <sincronizarMedias
       v-if="refSincronizandoMedios"
       @cerrar="clickCerrarMedios"

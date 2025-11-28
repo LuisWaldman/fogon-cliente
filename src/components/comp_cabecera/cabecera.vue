@@ -16,6 +16,17 @@ const estadoReproduccion = ref(appStore.estadosApp.estadoReproduccion)
 // Define el evento
 const emit = defineEmits(['abrirVistaEdicion', 'editarCancion'])
 
+import { watch } from 'vue'
+
+watch(
+  () => appStore.estadosApp.estadoReproduccion,
+  () => {
+    golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
+    cancion.value = appStore.aplicacion.reproductor.cancion
+    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
+  },
+)
+
 const urlcompartida = ref('')
 const compartiendo = ref(false)
 

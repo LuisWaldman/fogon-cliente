@@ -95,13 +95,13 @@ export class StrategyReproductor {
   }
 
   async CargarCancion(cancion: ItemIndiceCancion) {
-    const appStore = useAppStore()
+    this.reproductor.SetEstado('cargando-cancion')
     const cancionObtenida = await CancionManager.getInstance().Get(
       ItemIndiceCancion.GetOrigen(cancion),
     )
     this.reproductor.cancion = cancionObtenida
     this.reproductor.compas = 0
-    appStore.estadosApp.estado = 'ok'
-    appStore.origenCancion = ItemIndiceCancion.GetOrigen(cancion)
+    this.reproductor.SetEstado('pausado')
+    this.reproductor.origenCancion = ItemIndiceCancion.GetOrigen(cancion)
   }
 }

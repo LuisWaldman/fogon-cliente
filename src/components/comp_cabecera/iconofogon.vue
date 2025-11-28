@@ -123,7 +123,8 @@ function clickFogon() {
             :style="getImageStyle()"
             src="/img/llamaritomo1.png"
             v-if="
-              appStore.estadosApp.estadoReproduccion !== 'pausado' && golpeDelCompas == 0
+              appStore.estadosApp.estadoReproduccion !== 'pausado' &&
+              golpeDelCompas == 0
             "
             style="z-index: 3"
           />

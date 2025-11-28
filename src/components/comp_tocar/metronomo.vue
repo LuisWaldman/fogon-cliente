@@ -10,7 +10,10 @@ defineProps<{
 </script>
 
 <template>
-  <div class="divPrevia" v-if="appStore.estadosApp.estadoReproduccion == 'Iniciando'">
+  <div
+    class="divPrevia"
+    v-if="appStore.estadosApp.estadoReproduccion == 'Iniciando'"
+  >
     Empieza en {{ cancion.compasCantidad - golpeEnCompas }}
   </div>
   <div v-if="cancion">
