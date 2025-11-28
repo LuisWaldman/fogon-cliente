@@ -9,8 +9,12 @@ import { StrategyReproductorConectado } from './StrategyReproductorConectado'
 import { Letra } from '../cancion/letra'
 import { Acordes } from '../cancion/acordes'
 import { Cancion } from '../cancion/cancion'
+import { EstadosAplicacion } from '../../EstadosAplicacion'
 
 export class Reproductor {
+  SetEstado(estado: string) {
+    EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)
+  }
   sincronizar() {
     this.strategyReproductor.sincronizar()
   }

@@ -57,12 +57,6 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion.value = nuevoEstado
   }
 
-  const estadoReproduccion = ref<string>('pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
-  // Método para actualizar el estado de reproducción
-  const actualizarEstadoReproduccion = (nuevoEstado: string) => {
-    estadoReproduccion.value = nuevoEstado
-  }
-
   const usuariosSesion = ref([] as UserSesion[])
   return {
     estadosApp,
@@ -80,7 +74,6 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion,
     rolSesion,
     perfil,
-    estadoReproduccion,
     nroCancion,
     noticias,
     mensajes,
@@ -88,6 +81,5 @@ export const useAppStore = defineStore('app', () => {
     busqueda,
     actualizarEstado,
     actualizarEstadoConexion,
-    actualizarEstadoReproduccion,
   }
 })

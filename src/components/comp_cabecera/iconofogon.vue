@@ -2,7 +2,11 @@
 import { useRouter } from 'vue-router'
 import { useAppStore } from '../../stores/appStore'
 
-const props = defineProps<{golpeDelCompas: number, conCancion: boolean, estadoReproduccion: string}>()
+const props = defineProps<{
+  golpeDelCompas: number
+  conCancion: boolean
+  estadoReproduccion: string
+}>()
 const appStore = useAppStore()
 function getPositionStyle(index: number, total: number) {
   // Calculate angle from -120 degrees to 240 degrees (10 o'clock to 4 o'clock)
@@ -111,7 +115,7 @@ function clickFogon() {
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/llamaritomopausa.png"
-            v-if="appStore.estadoReproduccion === 'pausado'"
+            v-if="appStore.estadosApp.estadoReproduccion === 'pausado'"
             style="z-index: 3"
           />
           <img
@@ -119,8 +123,7 @@ function clickFogon() {
             :style="getImageStyle()"
             src="/img/llamaritomo1.png"
             v-if="
-              appStore.estadoReproduccion !== 'pausado' &&
-                golpeDelCompas == 0
+              appStore.estadosApp.estadoReproduccion !== 'pausado' && golpeDelCompas == 0
             "
             style="z-index: 3"
           />

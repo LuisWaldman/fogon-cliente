@@ -108,7 +108,7 @@ function arreglartexto(texto: string): string {
       <div
         class="boton_controllerplay"
         @click="play"
-        v-if="appStore.estadoReproduccion === 'pausado'"
+        v-if="appStore.estadosApp.estadoReproduccion === 'pausado'"
       >
         ▶️
       </div>
@@ -116,14 +116,14 @@ function arreglartexto(texto: string): string {
       <div
         class="boton_controllerplay"
         @click="pause"
-        v-if="appStore.estadoReproduccion !== 'pausado'"
+        v-if="appStore.estadosApp.estadoReproduccion !== 'pausado'"
       >
         ⏸️
       </div>
       <div
         class="boton_controllerplay"
         @click="stop"
-        v-if="appStore.estadoReproduccion !== 'pausado'"
+        v-if="appStore.estadosApp.estadoReproduccion !== 'pausado'"
       >
         ⏹️
       </div>

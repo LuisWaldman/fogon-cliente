@@ -12,7 +12,7 @@ helperNotas.latino = appStore.perfil.CifradoLatino
 
 const golpeDelCompas = ref(appStore.aplicacion.reproductor.golpeDelCompas)
 const cancion = ref<Cancion>(appStore.aplicacion.reproductor.cancion)
-const estadoReproduccion = ref(appStore.estadoReproduccion)
+const estadoReproduccion = ref(appStore.estadosApp.estadoReproduccion)
 // Define el evento
 const emit = defineEmits(['abrirVistaEdicion', 'editarCancion'])
 
@@ -79,7 +79,7 @@ function clickEditar() {
     :class="{ editando: $route.path === '/editar' }"
   >
     <div style="display: flex; width: 100%">
-      <iconofogon 
+      <iconofogon
         :golpeDelCompas="golpeDelCompas"
         :conCancion="cancion.archivo !== ''"
         :estadoReproduccion="estadoReproduccion"
@@ -91,7 +91,7 @@ function clickEditar() {
       <div v-if="$route.path === '/tocar'" class="divtitulocancioncontrol">
         <div class="encabezado">
           <emoticonOrigen :origen="appStore.origenCancion.origenUrl" />
-          {{ arreglartexto( cancion?.banda) }} -
+          {{ arreglartexto(cancion?.banda) }} -
           <b>{{ helperNotas.GetAcorde(cancion?.escala) }}</b>
         </div>
         <div class="cancionNombre">

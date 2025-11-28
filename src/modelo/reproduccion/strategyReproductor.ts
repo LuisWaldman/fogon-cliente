@@ -39,7 +39,7 @@ export class StrategyReproductor {
       if (this.reproductor.compas < 0) {
         this.reproductor.compas = 0
       }
-      appStore.estadoReproduccion = 'Iniciando'
+      this.reproductor.SetEstado('Iniciando')
       this.sincronizar()
     }
   }
@@ -48,7 +48,7 @@ export class StrategyReproductor {
     const appStore = useAppStore()
     // Pauso Medias
     appStore.MediaVistas?.Pausar?.()
-    appStore.estadoReproduccion = 'pausado'
+    this.reproductor.SetEstado('pausado')
     this.reproductor.golpeDelCompas = 0
   }
   updateCompas(compas: number) {
@@ -75,7 +75,7 @@ export class StrategyReproductor {
       this.EstadoSincro = est
       this.reproductor.compas = est.compas
       this.reproductor.golpeDelCompas = est.golpeEnCompas
-      appStore.estadoReproduccion = est.estado
+      this.reproductor.SetEstado(est.estado)
     } else {
       if (appStore.MediaVistas.GetTiempoDesdeInicio != null) {
         const tiempoDesdeInicio = appStore.MediaVistas.GetTiempoDesdeInicio()
@@ -88,7 +88,7 @@ export class StrategyReproductor {
           this.EstadoSincro = est
           this.reproductor.compas = est.compas
           this.reproductor.golpeDelCompas = est.golpeEnCompas
-          appStore.estadoReproduccion = est.estado
+          this.reproductor.SetEstado(est.estado)
         }
       }
     }

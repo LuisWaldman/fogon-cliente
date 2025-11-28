@@ -1,6 +1,10 @@
 import { useAppStore } from './stores/appStore'
 
 export class EstadosAplicacion {
+  SetEstadoReproduccion(estado: string) {
+    this.estadoReproduccion = estado
+    EstadosAplicacion.SetEstadosAplicacion(this)
+  }
   public estado: string = 'iniciando'
   public texto: string = '...'
   public paginaLista: string = ''

@@ -29,14 +29,15 @@ const golpeDelCompas = ref(appStore.aplicacion.reproductor.golpeDelCompas)
 const cancion = ref<Cancion>(appStore.aplicacion.reproductor.cancion)
 // requestAnimationFrame loop control
 let rafId: number | null = null
-const estadoReproduccion = ref(appStore.estadoReproduccion)
+const estadoReproduccion = ref(appStore.estadosApp.estadoReproduccion)
 async function startRafLoop() {
   // reset counter when starting
   const loop = async () => {
     // stop if state changed
+    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
     if (
-      appStore.estadoReproduccion !== 'Reproduciendo' &&
-      appStore.estadoReproduccion !== 'Iniciando'
+      appStore.estadosApp.estadoReproduccion !== 'Reproduciendo' &&
+      appStore.estadosApp.estadoReproduccion !== 'Iniciando'
     ) {
       rafId = null
       return
@@ -59,8 +60,8 @@ function stopRafLoop() {
 
 function VerEstado() {
   if (
-    appStore.estadoReproduccion === 'Reproduciendo' ||
-    appStore.estadoReproduccion === 'Iniciando'
+    appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
+    appStore.estadosApp.estadoReproduccion === 'Iniciando'
   ) {
     startRafLoop()
   } else {
@@ -70,7 +71,7 @@ function VerEstado() {
 VerEstado()
 // Watch for changes in playback state and start/stop RAF loop
 watch(
-  () => appStore.estadoReproduccion,
+  () => appStore.estadosApp.estadoReproduccion,
   () => {
     VerEstado()
   },
@@ -388,12 +389,13 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
     </div>
 
     <div class="controladoresTiempo">
-      <ControladorTiempo      
+      <ControladorTiempo
         :golpeEnCompas="golpeDelCompas"
         :cancion="cancion"
         :estadoReproduccion="estadoReproduccion"
         :compas="compas"
-      > </ControladorTiempo>
+      >
+      </ControladorTiempo>
 
       <MetronomoDesarrollador
         ref="metronomeRef"

@@ -20,7 +20,7 @@ const helper = HelperSincro.getInstance()
 
 const sesSincroCancion = ref<SincroSesion>(new SincroSesion(0, 0))
 const EstadoSincro = ref<EstadoSincroCancion>(
-    new EstadoSincroCancion(-1, 0, '-', 0),
+  new EstadoSincroCancion(-1, 0, '-', 0),
 )
 
 const momentoLocal = ref(0)
@@ -160,18 +160,15 @@ function cerrarRelojes() {
       <div>Inicio Cancion</div>
       <div style="display: flex">
         <div>
-          <RelojControl
-            :fecha="sesSincroCancion.timeInicio"
-          ></RelojControl>
+          <RelojControl :fecha="sesSincroCancion.timeInicio"></RelojControl>
           Desde: {{ sesSincroCancion.desdeCompas }}
         </div>
       </div>
     </div>
 
     <div style="display: flex">
-      Golpe: {{ EstadoSincro.compas }} ,
-      {{ EstadoSincro.golpeEnCompas }}, estado:
-      {{ EstadoSincro.estado }} Delay:
+      Golpe: {{ EstadoSincro.compas }} , {{ EstadoSincro.golpeEnCompas }},
+      estado: {{ EstadoSincro.estado }} Delay:
       {{ EstadoSincro.delay.toFixed(2) }} ms
     </div>
     <div v-if="mostrarCerrar">
