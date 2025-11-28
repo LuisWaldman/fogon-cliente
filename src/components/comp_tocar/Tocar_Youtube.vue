@@ -5,6 +5,7 @@ import type { Cancion } from '../../modelo/cancion/cancion'
 
 import { ref, onMounted, watch, onUnmounted } from 'vue'
 import { MediaVista } from '../../modelo/reproduccion/MediaVista'
+import { Logger } from '../../modelo/logger'
 
 const props = defineProps<{
   compas: number
@@ -74,7 +75,7 @@ onMounted(() => {
   const appStore = useAppStore()
   appStore.aplicacion.setMediaVista(mediaVista)
   for (var i = 0; i < props.cancion.medias.length; i++) {
-    console.log(props.cancion.medias[i])
+    Logger.log(props.cancion.medias[i])
     if (props.cancion.medias[i].tipo === 'Youtube') {
       media.value = props.cancion.medias[i].id
       urlYoutube.value = 'https://www.youtube.com/watch?v=' + media.value
@@ -86,7 +87,7 @@ onMounted(() => {
 const playerRef = ref<InstanceType<typeof YouTube> | null>(null)
 function onReady() {
   //playerRef.value?.playVideo();
-  console.log('Reproductor listo')
+  Logger.log('Reproductor listo')
 }
 function onStateChange(event: { data: number }) {
   console.log('Estado del reproductor:', event.data)

@@ -1,10 +1,13 @@
 import packageJson from '../../package.json'
 
 export class Logger {
-  static log(message: string): void {
+  static log(...args: unknown[]): void {
     const logLevel = Number(packageJson.log) || 0
     if (logLevel < 1) {
-      console.log(`[LOG]: ${message}`)
+      const formattedArgs = args.map(arg => 
+        typeof arg === 'string' ? arg : JSON.stringify(arg)
+      )
+      console.log('[LOG]:', ...formattedArgs)
     }
   }
 }

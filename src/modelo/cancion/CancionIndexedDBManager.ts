@@ -2,6 +2,7 @@ import type { Cancion } from './cancion'
 import { HelperJSON } from './HelperJSON'
 import { ItemIndiceCancion } from './ItemIndiceCancion'
 import { OrigenCancion } from './origencancion'
+import { Logger } from '../logger'
 
 export class CancionIndexedDBManager {
   public static async GetCancion(
@@ -20,7 +21,7 @@ export class CancionIndexedDBManager {
       request.onsuccess = (event) => {
         const result = (event.target as IDBRequest).result
         if (result) {
-          console.log('Canción recuperada de IndexedDB:', result)
+          Logger.log('Canción recuperada de IndexedDB:', result)
           const cancion = HelperJSON.JSONToCancion(result.contenido)
           cancion.archivo = origencancion.fileName
           resolve(cancion)
@@ -72,7 +73,7 @@ export class CancionIndexedDBManager {
 
       request.onsuccess = (event) => {
         const result = (event.target as IDBRequest).result
-        console.log('Índices recuperados de IndexedDB:', result)
+        Logger.log('Índices recuperados de IndexedDB:', result)
         resolve(result || [])
       }
 
@@ -104,7 +105,7 @@ export class CancionIndexedDBManager {
       const verificarComplecion = () => {
         operacionesCompletadas++
         if (operacionesCompletadas === totalOperaciones) {
-          console.log('Canción borrada completamente:', cancion.fileName)
+          Logger.log('Canción borrada completamente:', cancion.fileName)
           resolve()
         }
       }
@@ -112,7 +113,7 @@ export class CancionIndexedDBManager {
       // Borrar la canción del store de canciones
       const deleteCancionRequest = cancionesStore.delete(cancion.fileName)
       deleteCancionRequest.onsuccess = () => {
-        console.log('Canción borrada del store de canciones:', cancion.fileName)
+        Logger.log('Canción borrada del store de canciones:', cancion.fileName)
         verificarComplecion()
       }
       deleteCancionRequest.onerror = (event) => {
@@ -123,7 +124,7 @@ export class CancionIndexedDBManager {
       // Borrar la canción del índice
       const deleteIndiceRequest = indiceStore.delete(cancion.fileName)
       deleteIndiceRequest.onsuccess = () => {
-        console.log('Canción borrada del índice:', cancion.fileName)
+        Logger.log('Canción borrada del índice:', cancion.fileName)
         verificarComplecion()
       }
       deleteIndiceRequest.onerror = (event) => {
@@ -164,7 +165,7 @@ export class CancionIndexedDBManager {
     return new Promise((resolve, reject) => {
       const request = store.put(objetoAGuardar)
       request.onsuccess = () => {
-        console.log('Canción guardada en IndexedDB:', cancion)
+        Logger.log('Canción guardada en IndexedDB:', cancion)
 
         resolve()
       }
