@@ -1,3 +1,5 @@
+import { Logger } from '../logger'
+
 export class ClienteWebRTC {
   private peerConnection: RTCPeerConnection
   private dataChannel: RTCDataChannel | null = null // Allow null initially
@@ -57,7 +59,7 @@ export class ClienteWebRTC {
   async SetRemoteOffer(sdp: string): Promise<void> {
     Logger.log('Estableciendo oferta remota SDP...')
     const remoteOffer = new RTCSessionDescription({ type: 'offer', sdp })
-    await this.peerConnection.setRemoteDescription(offerDesc)
+    await this.peerConnection.setRemoteDescription(remoteOffer)
   }
 
   // Genera la respuesta SDP

@@ -2,7 +2,6 @@ import { Cancion } from './cancion'
 import { HelperJSON } from './HelperJSON'
 import { ItemIndiceCancion } from './ItemIndiceCancion'
 import { OrigenCancion } from './origencancion'
-import { Logger } from '../logger'
 
 export class CancionUrlManager {
   public static async GetCancion(
