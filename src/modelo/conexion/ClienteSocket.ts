@@ -246,11 +246,7 @@ export class ClienteSocket {
 
     socket.on('connect_error', (error) => {
       this.intentosRealizados++
-      console.error(
-        `Connection error (attempt ${this.intentosRealizados}/${this.maxIntentos}):`,
-        error.message,
-      )
-
+      Logger.logError('Conectando', error.message)
       if (this.intentosRealizados >= this.maxIntentos) {
         Logger.log('Máximo número de intentos alcanzado, desconectando...')
         socket.disconnect()
