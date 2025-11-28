@@ -52,6 +52,7 @@ onMounted(() => {
   cargandoCanciones.value = true
   cargandoListas.value = true
   Cargar()
+  verificarVersion()
 })
 
 const nuevaLista = ref<string>('')
@@ -322,10 +323,60 @@ async function AgregarALista(index: number, listaseleccionada: string) {
 
 const advertenciaText = ref<string>("")
 const errorText = ref<string>("")
+
+// Buscar ultima version
+declare const __APP_VERSION__: string
+const versionActual = __APP_VERSION__
+
+async function verificarVersion() {
+  try {
+    const response = await fetch(window.location.origin + '/index.html?_=' + Date.now(), {
+      cache: 'no-cache'
+    })
+    const html = await response.text()
+    
+    // Buscar el script principal que contiene la versión
+    const scriptMatch = html.match(/src="([^"]+\.js)"/)
+    if (!scriptMatch) return
+    
+    // Obtener el hash del archivo que indica la versión
+    const scriptUrl = scriptMatch[1]
+    const hashActual = scriptUrl.match(/index-([^.]+)\.js/)
+    
+    // Guardar el hash en localStorage
+    const hashGuardado = localStorage.getItem('app_version_hash')
+    const hashNuevo = hashActual ? hashActual[1] : null
+    
+    if (!hashGuardado && hashNuevo) {
+      // Primera vez, guardar
+      localStorage.setItem('app_version_hash', hashNuevo)
+      localStorage.setItem('app_version', versionActual)
+    } else if (hashGuardado && hashNuevo && hashGuardado !== hashNuevo) {
+      // Hay una nueva versión desplegada
+      advertenciaText.value = "Nueva versión disponible. Haz clic para actualizar"
+    }
+  } catch (error) {
+    console.error('Error al verificar versión:', error)
+  }
+}
+
+// Al hacer clic en la advertencia de actualización, recargar
+function clickAdvertencia() {
+  if (advertenciaText.value.toLowerCase().includes('actualizar') || advertenciaText.value.toLowerCase().includes('versión')) {
+    if (confirm('¿Deseas actualizar a la nueva versión?')) {
+      localStorage.removeItem('app_version_hash')
+      window.location.reload()
+    } else {
+      advertenciaText.value = ''
+    }
+  } else {
+    advertenciaText.value = ''
+  }
+}
 </script>
 
 <template>
-<div class="advertencia" v-if="advertenciaText != ''" @click="advertenciaText = ''">{{ advertenciaText }}</div>
+<div class="advertencia" v-if="advertenciaText != ''" @click="clickAdvertencia">{{ advertenciaText }}</div>
 <div class="error" v-if="errorText != ''" @click="errorText = ''">{{ errorText }}</div>
 <nuevaCancion v-if="viendoNueva" @cerrar="CerrarNuevo"></nuevaCancion>
   <div style="width: 100%">

@@ -2,7 +2,7 @@ import { AcordesCuerdas } from './AcordesCuerdas'
 import { InstrumentoLineas } from './InstrumentoLineas'
 import { InstrumentoLineasCompas } from './InstrumentoLineasCompas'
 
-export class InstrumentoLineasCompasBuildHelper {
+export class InstrumentoLineasCompasBuildHelperGuitarra {
   /**
    * Construye un compás de instrumento de líneas para guitarra a partir del nombre de un acorde.
    * Convierte los acordes definidos en formato de cuerdas al formato de líneas del instrumento.

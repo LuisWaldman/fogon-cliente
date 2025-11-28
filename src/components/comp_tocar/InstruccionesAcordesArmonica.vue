@@ -79,7 +79,7 @@ onMounted(() => {
       <div class="compas" v-for="(compas, indexcm) in compaces" :key="indexcm">
         <div class="nombreCuerdas" v-if="indexcm === 0 || indexcm % 4 === 0">
           <div
-            v-for="(cuerda, indexcu) in instrumento.nombreLinea"
+            v-for="(_, indexcu) in instrumento.nombreLinea"
             :key="indexcu"
           >
             ➖

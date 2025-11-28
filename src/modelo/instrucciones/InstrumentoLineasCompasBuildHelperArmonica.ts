@@ -1,4 +1,3 @@
-import { AcordesCuerdas } from './AcordesCuerdas'
 import type { InstrumentoLineas } from './InstrumentoLineas'
 import { InstrumentoLineasCompas } from './InstrumentoLineasCompas'
 

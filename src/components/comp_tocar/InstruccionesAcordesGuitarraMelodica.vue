@@ -2,9 +2,9 @@
 import { onMounted, ref } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
-import { InstrumentoLineasCompasBuildHelperArmonica } from '../../modelo/instrucciones/InstrumentoLineasCompasBuildHelperArmonica'
 import type { InstrumentoLineasCompas } from '../../modelo/instrucciones/InstrumentoLineasCompas'
 import { InstrumentoLineas } from '../../modelo/instrucciones/InstrumentoLineas'
+import { InstrumentoLineasCompasBuildHelperGuitarra } from '../../modelo/instrucciones/InstrumentoLineasCompasBuildHelperGuitarra'
 
 const props = defineProps<{
   compas: number
@@ -40,8 +40,7 @@ function calcularCompaces(compas: number) {
   for (let i = 0; i < acordes.value.length; i++) {
     const acordesSplit = acordes.value[i]
     newCompaces.push(
-      InstrumentoLineasCompasBuildHelperArmonica.getAcorde(
-        instrumento.value,
+      InstrumentoLineasCompasBuildHelperGuitarra.getAcorde(
         acordesSplit,
         props.cancion.compasCantidad,
       ),
