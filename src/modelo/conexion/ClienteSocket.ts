@@ -80,9 +80,9 @@ export class ClienteSocket {
   public setconexionStatusHandler(handler: (status: string) => void): void {
     this.conexionStatusHandler = handler
   }
-  private ensesionHandler?: (sesion: string) => void
+  private enSesionHandler?: (sesion: string) => void
   public setEnsesionHandler(handler: (sesion: string) => void): void {
-    this.ensesionHandler = handler
+    this.enSesionHandler = handler
   }
 
   private sesionFailedHandler?: (error: string) => void
@@ -298,7 +298,7 @@ export class ClienteSocket {
       console.error('loginFailed received with error:', error)
       this.loginFailedHandler?.(error)
     })
-    socket.on('ensesion', (sesion: Sesion) => {
+    socket.on('ensesion', (sesion: string) => {
       Logger.log('ensesion received with sesion:', sesion)
       this.enSesionHandler?.(sesion)
     })

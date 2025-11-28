@@ -1,6 +1,7 @@
 import * as Tone from 'tone'
 import type { MidiSecuencia } from './MidiSecuencia'
 import { InstrumentosManager } from './InstrumentosManager'
+import { Logger } from '../logger'
 
 export class MidiPlayer {
   compasUnidad: number = 4

@@ -35,6 +35,9 @@ export const useAppStore = defineStore('app', () => {
       new Letra([]),
     ),
   )
+  const compas = ref<number>(-1)
+  const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
+
   const listasEnServer = ref<string[]>([])
   const MediaVista = ref<MediaVista | null>(null)
   const estadosApp = ref<EstadosAplicacion>(new EstadosAplicacion())
@@ -56,8 +59,6 @@ export const useAppStore = defineStore('app', () => {
   const busqueda = ref<ItemIndiceCancion[]>([])
   const nroCancion = ref<number>(0)
   const mensajes = ref<string[]>([])
-  const compas = ref<number>(-1)
-  const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
 
   const noticias = ref<Noticia[]>([])
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))

@@ -23,6 +23,7 @@ const password = ref('')
 const mantenerseLogeado = ref(false) // Added ref for "mantenerseLogeado"
 import { GoogleLogin } from 'vue3-google-login'
 import { datosLogin } from '../../modelo/datosLogin'
+import { Logger } from '../../modelo/logger'
 
 // Load saved login data on component mount
 onMounted(() => {
@@ -56,10 +57,7 @@ function loginWithCredentials() {
       config.guardarEnLocalStorage()
     })
     .catch((error) => {
-      console.error('Error al crear el login seguro:', error)
-      appStore.errores.push(
-        new Error(`Error al crear el login seguro: ${error}`),
-      )
+      Logger.logError('Login Seguro', `${error}`)
       appStore.estadosApp.estadoLogin = 'error'
     })
 
@@ -73,9 +71,7 @@ function handleSuccess(response: unknown) {
 function handleError(error: unknown) {
   console.error('Error en el inicio de sesión con Google:', error)
   appStore.estadosApp.estadoLogin = 'error'
-  appStore.errores.push(
-    new Error(`Error en el inicio de sesión con Google: ${error}`),
-  )
+  Logger.logError('Login Google', `Error: ${error}`)
 }
 function logout() {
   mantenerseLogeado.value = false

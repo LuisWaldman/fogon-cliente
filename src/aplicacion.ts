@@ -5,7 +5,6 @@ import { datosLogin } from './modelo/datosLogin'
 import { ClienteSocket } from './modelo/conexion/ClienteSocket'
 import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
-import { ReproductorConectado } from './modelo/reproduccion/reproductorConectado'
 import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
 import { UserSesion } from './modelo/userSesion'
@@ -20,8 +19,6 @@ import type { ItemIndiceCancion } from './modelo/cancion/ItemIndiceCancion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
-  reproductorDesconectado: Reproductor = this.reproductor
-  reproductorConectado: ReproductorConectado | null = null
   configuracion: Configuracion = Configuracion.getInstance()
   indiceHelper: IndiceHelper = IndiceHelper.getInstance()
   cliente: ClienteSocket | null = null
@@ -176,8 +173,8 @@ export default class Aplicacion {
         appStore.estado = 'desconectado'
         appStore.estadosApp.estadoconeccion = 'desconectado'
         appStore.estadosApp.texto = 'Desconectado del servidor'
+        this.reproductor.desconectar()
         this.reproductor.detenerReproduccion()
-        this.reproductor = this.reproductorDesconectado
         // this.cliente = null
       }
       if (status === 'error') {
@@ -214,24 +211,16 @@ export default class Aplicacion {
       appStore.sesion.nombre = sesionCreada
       helper.ActualizarDelayRelojRTC()
       if (this.cliente != null) {
-        this.reproductorConectado = new ReproductorConectado(
-          this.cliente,
-          this.token,
-        )
-        this.reproductorConectado.GetCancionDelFogon()
         this.reproductor.detenerReproduccion()
-        this.reproductor = this.reproductorConectado
-        if (this.creandoSesion) {
-          this.reproductorConectado.EnviarCancion(appStore.cancion)
-        }
+        this.reproductor.conectar(this.cliente, this.token, this.creandoSesion)
         this.creandoSesion = false
       }
     })
     this.cliente.setSesionFailedHandler((error: string) => {
       console.error(`Error al crear sesión: ${error}`)
       const appStore = useAppStore()
-      appStore.errores.push(new Error(`Error al crear sesión: ${error}`))
       appStore.estadosApp.estadoSesion = 'error'
+      Logger.logError('Inicio sesion', error)
     })
     this.cliente.setRolSesionHandler((mensaje: string) => {
       const appStore = useAppStore()
@@ -249,10 +238,9 @@ export default class Aplicacion {
         })
     })
     this.cliente.setLoginFailedHandler((error: string) => {
-      console.error(`Error al Loguearse: ${error}`)
       const appStore = useAppStore()
-      appStore.errores.push(new Error(`Error al Loguearse: ${error}`))
       appStore.estadosApp.estadoLogin = 'error'
+      Logger.logError('Login', error)
     })
 
     this.cliente.setMensajesesionHandler((msj: string) => {
@@ -273,9 +261,7 @@ export default class Aplicacion {
         Logger.log('Profile updated successfully:', response)
       })
       .catch((error: Error) => {
-        console.error('Error updating profile:', error)
-        const appStore = useAppStore()
-        appStore.errores.push(new Error(`Error updating profile: ${error}`))
+        Logger.logError('Profile update', error.message)
       })
   }
 
@@ -317,11 +303,7 @@ export default class Aplicacion {
         )
       })
       .catch((error) => {
-        console.error('Error al obtener usuarios de la sesion:', error)
-        const appStore = useAppStore()
-        appStore.errores.push(
-          new Error(`Error al obtener usuarios de la sesion: ${error}`),
-        )
+        Logger.logError('Usuarios de la sesion', error.message)
       })
   }
 
@@ -353,11 +335,7 @@ export default class Aplicacion {
         )
       })
       .catch((error) => {
-        console.error('Error al obtener las sesiones del usuario:', error)
-        const appStore = useAppStore()
-        appStore.errores.push(
-          new Error(`Error al obtener las sesiones del usuario: ${error}`),
-        )
+        Logger.logError('Sesiones del usuario', error.message)
       })
   }
 
@@ -414,18 +392,17 @@ export default class Aplicacion {
 
   SalirSesion(): void {
     if (!this.cliente) {
-      console.error('Cliente no conectado. No se puede salir de la sesión.')
-      const appStore = useAppStore()
-      appStore.errores.push(
-        new Error('Cliente no conectado. No se puede salir de la sesión.'),
+      Logger.logError(
+        'SalirSesion',
+        'Cliente no conectado. No se puede salir de la sesión.',
       )
       return
     }
     const appStore = useAppStore()
     appStore.rolSesion = 'default'
     appStore.estadosApp.estadoSesion = 'desconectado'
+    this.reproductor.desconectar()
     this.reproductor.detenerReproduccion()
-    this.reproductor = this.reproductorDesconectado
     this.cliente.SalirSesion()
   }
 

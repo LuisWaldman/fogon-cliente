@@ -144,9 +144,9 @@ micHelper
     }
   })
   .catch((error) => {
-    console.error('Error al obtener el estado del micrófono:', error)
-    useAppStore().errores.push(
-      new Error(`Error al obtener el estado del micrófono: ${error}`),
+    Logger.logError(
+      'ESTADO MICRÓFONO',
+      `${error}`,
     )
     refMicEstado.value = 'Error'
   })
@@ -165,9 +165,9 @@ function Solicitar() {
       detectarFrecuencia()
     })
     .catch((error) => {
-      console.error('Error al solicitar permiso del micrófono:', error)
-      useAppStore().errores.push(
-        new Error(`Error al solicitar permiso del micrófono: ${error}`),
+      Logger.logError(
+        'SOLICITAR MICRÓFONO',
+        `${error}`,
       )
       refMicEstado.value = 'Error'
     })
@@ -224,7 +224,10 @@ function iniciarMidi() {
     })
     .catch((error) => {
       console.error('Error loading samples:', error)
-      useAppStore().errores.push(new Error(`Error loading samples: ${error}`))
+      Logger.logError(
+        'Cargando MIDI',
+        `${error}`,
+      )
       CargandoMidi.value = false
     })
   Logger.log('MIDI Inicializado')
