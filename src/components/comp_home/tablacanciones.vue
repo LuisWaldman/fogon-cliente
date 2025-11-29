@@ -96,11 +96,10 @@ const tituloCompartir = ref('')
 const linkCompartir = ref('')
 function Compartir(cancion: ItemIndiceCancion) {
   tituloCompartir.value =
-    arreglartexto(
-      `${cancion.banda} - ${cancion.cancion}`,
-    ) || 'Canción'
-    const masLinkServer = cancion.origenUrl == 'server' ? '&usuario=' + cancion.owner : ''
-    linkCompartir.value =
+    arreglartexto(`${cancion.banda} - ${cancion.cancion}`) || 'Canción'
+  const masLinkServer =
+    cancion.origenUrl == 'server' ? '&usuario=' + cancion.owner : ''
+  linkCompartir.value =
     window.location.origin +
     '/tocar?cancion=' +
     cancion.fileName +
@@ -174,12 +173,17 @@ watch(
             tocando: index === nroCancion && verCancionActual,
             seleccionado: index === viendoDetalle,
           }"
-          v-if="!(estadoConeccion != 'conectado' && cancion.origenUrl == 'server')"
+          v-if="
+            !(estadoConeccion != 'conectado' && cancion.origenUrl == 'server')
+          "
         >
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
-            }} <span v-if="cancion.origenUrl === 'server'"> - {{ cancion.owner }} </span>
+            }}
+            <span v-if="cancion.origenUrl === 'server'">
+              - {{ cancion.owner }}
+            </span>
 
             <div class="textoGrande">{{ arreglartexto(cancion.cancion) }}</div>
           </td>

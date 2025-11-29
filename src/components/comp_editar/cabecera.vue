@@ -70,16 +70,12 @@ defineExpose({ Actualizar })
 
 function guardarCambios(origenDestino: string) {
   let usuario = props.origen.usuario
-  if (appStore.estadosApp.estadoLogin === 'logueado'){
+  if (appStore.estadosApp.estadoLogin === 'logueado') {
     usuario = appStore.perfil.usuario
   }
   CancionManager.getInstance()
     .Save(
-      new OrigenCancion(
-        origenDestino,
-        props.cancion.archivo,
-        usuario,
-      ),
+      new OrigenCancion(origenDestino, props.cancion.archivo, usuario),
       props.cancion,
     )
     .catch((error) => {

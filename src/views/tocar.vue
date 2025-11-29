@@ -105,9 +105,10 @@ onMounted(() => {
   pantalla.setearEstilos()
   vista.value = pantalla.getConfiguracionPantalla()
   const urlParams = new URLSearchParams(window.location.search)
-  const sesionurl = urlParams.get('cancion')
-  if (sesionurl) {
-    const origen = OrigenCancion.GetFromQuery(sesionurl)
+  const CancionUrl = urlParams.get('cancion')
+  const UsuarioUrl = urlParams.get('usuario')
+  if (CancionUrl) {
+    const origen = OrigenCancion.GetFromQuery(CancionUrl, UsuarioUrl)
     appStore.aplicacion.reproductor.CargarCancion(origen)
   }
 })
