@@ -68,12 +68,11 @@ mediaVista.setSetTiempoDesdeInicio((numero: number) => {
 const appStore = useAppStore()
 
 onUnmounted(() => {
-  appStore.aplicacion.quitarMediaVista()
+  appStore.aplicacion.reproductor.quitarMediaVista()
 })
 
 onMounted(() => {
-  const appStore = useAppStore()
-  appStore.aplicacion.setMediaVista(mediaVista)
+  appStore.aplicacion.reproductor.setMediaVista(mediaVista)
   for (var i = 0; i < props.cancion.medias.length; i++) {
     Logger.log(props.cancion.medias[i])
     if (props.cancion.medias[i].tipo === 'Youtube') {
@@ -88,6 +87,7 @@ const playerRef = ref<InstanceType<typeof YouTube> | null>(null)
 function onReady() {
   //playerRef.value?.playVideo();
   Logger.log('Reproductor listo')
+  mediaVista.MediaCambioEstado?.('cargado')
 }
 function onStateChange(event: { data: number }) {
   console.log('Estado del reproductor:', event.data)

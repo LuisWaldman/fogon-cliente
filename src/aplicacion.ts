@@ -9,7 +9,6 @@ import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
 import { UserSesion } from './modelo/userSesion'
 import { CancionManager } from './modelo/cancion/CancionManager'
-import type { MediaVista } from './modelo/reproduccion/MediaVista'
 import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 import type { Servidor } from './modelo/servidor'
 import { IndiceHelper } from './modelo/indices/IndiceHelper'
@@ -77,16 +76,6 @@ export default class Aplicacion {
     await this.indiceHelper.CargarIndice()
     appStore.estadosApp.paginaLista = 'inicio'
     appStore.estadosApp.estado = 'ok'
-  }
-
-  setMediaVista(mediaVista: MediaVista): void {
-    const appStore = useAppStore()
-    appStore.MediaVistas = mediaVista
-  }
-
-  quitarMediaVista(): void {
-    const appStore = useAppStore()
-    appStore.MediaVistas = null
   }
 
   async ClickTocar(origen: ItemIndiceCancion) {

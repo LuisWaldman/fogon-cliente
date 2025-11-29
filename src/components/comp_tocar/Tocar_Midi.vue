@@ -39,6 +39,7 @@ function cargarCancion() {
     midiPlayer.compasUnidad = props.cancion.compasUnidad
     midiPlayer.loadSequence(props.cancion.pentagramas[i].instrumento, secuencia)
   }
+  mediaVista.MediaCambioEstado?.('cargado')
 }
 const todosInstrumentos = ref<string[]>([])
 const InstrumentosSelecconados = ref<string[]>([])
@@ -85,12 +86,12 @@ mediaVista.setGetEstado(() => {
 
 onUnmounted(() => {
   const appStore = useAppStore()
-  appStore.aplicacion.quitarMediaVista()
+  appStore.aplicacion.reproductor.quitarMediaVista()
 })
 
 onMounted(() => {
   const appStore = useAppStore()
-  appStore.aplicacion.setMediaVista(mediaVista)
+  appStore.aplicacion.reproductor.setMediaVista(mediaVista)
   iniciar()
   cargarCancion()
 })

@@ -14,8 +14,12 @@ export class MediaVista {
   public SetTiempoDesdeInicio?: (tiempo: number) => void
   public Iniciar?: () => void
   public Pausar?: () => void
+  public MediaCambioEstado?: (estado: string) => void
   public setGetTiempoDesdeInicio(handler: () => number): void {
     this.GetTiempoDesdeInicio = handler
+  }
+  public setMediaCambioEstado(handler: (estado: string) => void): void {
+    this.MediaCambioEstado = handler
   }
   public setGetEstado(handler: () => number): void {
     this.GetEstado = handler

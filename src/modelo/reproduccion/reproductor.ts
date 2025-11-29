@@ -11,10 +11,13 @@ import { Acordes } from '../cancion/acordes'
 import { Cancion } from '../cancion/cancion'
 import { EstadosAplicacion } from '../../EstadosAplicacion'
 import { OrigenCancion } from '../cancion/origencancion'
+import type { MediaVista } from './MediaVista'
 
 export class Reproductor {
-  ultimoUsuarioQueCambioEstado: number = 0
-  ultimoEstadoCambiado: string = ''
+  public ultimoUsuarioQueCambioEstado: number = 0
+  public ultimoEstadoCambiado: string = ''
+  MediaVista: MediaVista | null = null
+
   async listaActualizada() {
     await this.strategyReproductor.CargarCancion(
       this.listaReproduccion.GetCancion(),
@@ -23,10 +26,22 @@ export class Reproductor {
   SetEstado(estado: string) {
     EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)
     if (estado === 'pausado') {
-      const appStore = useAppStore()
-      appStore.MediaVistas?.Pausar?.()
+      this.MediaVista?.Pausar?.()
     }
   }
+
+  setMediaVista(mediaVista: MediaVista): void {
+    this.MediaVista = mediaVista
+    this.strategyReproductor.SetEstado('esperandoMedia')
+    mediaVista.setMediaCambioEstado((estado: string) => {
+      this.strategyReproductor.SetEstado(estado)
+    })
+  }
+
+  quitarMediaVista(): void {
+    this.MediaVista = null
+  }
+
   sincronizar() {
     this.strategyReproductor.sincronizar()
   }
@@ -102,7 +117,7 @@ export class Reproductor {
       appStore.listaReproduccion[appStore.nroCancion - 1],
     )
     const cancionObtenida = await CancionManager.getInstance().Get(origen)
-    appStore.MediaVistas = null
+    this.MediaVista = null
     if (cancionObtenida.pentagramas.length > 0) {
       appStore.estadosApp.texto = 'Cargando Midis...'
     }

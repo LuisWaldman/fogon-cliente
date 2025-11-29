@@ -16,7 +16,6 @@ export class StrategyReproductorConectado extends StrategyReproductor {
 
   constructor(reproductor: Reproductor, cliente: ClienteSocket, token: string) {
     super(reproductor)
-    const appStore = useAppStore()
     this.token = token
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler(async () => {
@@ -29,7 +28,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
         desde,
         compas, // duracionGolpe
       )
-      appStore.MediaVistas?.Iniciar?.()
+      this.reproductor.MediaVista?.Iniciar?.()
       this.sincronizar()
       if (this.reproductor.cancion) {
         if (this.reproductor.compas < 0) {
@@ -53,12 +52,16 @@ export class StrategyReproductorConectado extends StrategyReproductor {
         Logger.log(
           `En ${this.sesSincroCancion.timeInicio} Sincronizando inicio sesion  ${this.sesSincroCancion.timeInicio} , time  ${desde}`,
         )
-        if (appStore.MediaVistas === null) {
+        if (this.reproductor.MediaVista === null) {
           this.sesSincroCancion.desdeCompas = compas
           this.sesSincroCancion.timeInicio = desde
         }
       },
     )
+  }
+
+  override SetEstado(estado: string) {
+    this.cliente.cambiarEstado(estado)
   }
 
   async EnviarCancion(cancion: Cancion) {
@@ -89,8 +92,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
 
   override async sincronizar() {
     await super.sincronizar()
-    const appStore = useAppStore()
-    if (appStore.MediaVistas !== null) {
+    if (this.reproductor.MediaVista !== null) {
       const helper = HelperSincro.getInstance()
       const momento = helper.MomentoSincro()
       const sincro = helper.GetSincro(

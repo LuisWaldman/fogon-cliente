@@ -11,7 +11,6 @@ import { Sesion } from '../modelo/sesion'
 import type { UserSesion } from '../modelo/userSesion'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { EstadosAplicacion } from '../EstadosAplicacion'
-import type { MediaVista } from '../modelo/reproduccion/MediaVista'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 
 export const useAppStore = defineStore('app', () => {
@@ -21,7 +20,6 @@ export const useAppStore = defineStore('app', () => {
   const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
 
   const listasEnServer = ref<string[]>([])
-  const MediaVista = ref<MediaVista | null>(null)
   const estadosApp = ref<EstadosAplicacion>(new EstadosAplicacion())
   const editandocancion = ref<Cancion>(
     new Cancion(
@@ -65,7 +63,6 @@ export const useAppStore = defineStore('app', () => {
     origenCancion,
     listasEnServer,
     origenEditando,
-    MediaVistas: MediaVista,
     cancionModificada,
     editandocancion,
     listaReproduccion,
