@@ -21,6 +21,7 @@ import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { VistaTocar } from '../modelo/configuracion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import type { Cancion } from '../modelo/cancion/cancion'
+import { Logger } from '../modelo/logger'
 
 const viendoVideo = ref(false)
 const pantalla = new Pantalla()
@@ -118,7 +119,7 @@ function SolicitarCalibracion() {
       cancion.value,
     )
     .catch((error) => {
-      console.error('Error al guardar los cambios:', error)
+      Logger.logError('Error al solicitar calibración', error)
     })
 }
 
@@ -127,7 +128,6 @@ function getviendoVideo() {
     return false
   }
   if (vista.value.reproduce == 'video') {
-    console.log('viendoVideo true por video', cancion.value.medias.length)
     if (cancion.value.medias.length == 0) {
       return false
     }
@@ -183,7 +183,7 @@ function estiloVistaPrincipal() {
     ancho = 100
     height = vista.value.anchoPrincipal
   }
-  console.log('estiloVistaPrincipal', ancho, height, display)
+
   return `width: ${ancho}%; height: ${height}%; display: ${display};`
 }
 
@@ -234,7 +234,7 @@ function clickCerrarMedios() {
 }
 
 function cambioestado(estado: number) {
-  console.log('Cambio de estado en tocar.vue', estado)
+  Logger.log('Cambio de estado en tocar.vue', estado)
   appStore.aplicacion.CambioEstadoMedio(estado)
 }
 

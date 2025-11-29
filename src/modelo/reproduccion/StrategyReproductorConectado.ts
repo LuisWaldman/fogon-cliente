@@ -20,7 +20,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler(async () => {
       await this.GetCancionDelFogon()
-      this.reproductor.SetEstado('pausada')
+      this.reproductor.SetEstado('pausado')
     })
     this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
       Logger.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
@@ -61,6 +61,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
   }
 
   override SetEstado(estado: string) {
+    Logger.log(`Cambiando estado a ${estado} y notificando al servidor`)
     this.cliente.cambiarEstado(estado)
   }
 

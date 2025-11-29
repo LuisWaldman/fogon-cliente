@@ -34,7 +34,9 @@ export class Reproductor {
     this.MediaVista = mediaVista
     this.strategyReproductor.SetEstado('esperandoMedia')
     mediaVista.setMediaCambioEstado((estado: string) => {
-      this.strategyReproductor.SetEstado(estado)
+      if (estado === 'cargado') {
+        this.strategyReproductor.SetEstado('pausado')
+      }
     })
   }
 
