@@ -157,6 +157,8 @@ export default class Aplicacion {
       if (status === 'desconectado') {
         appStore.estado = 'desconectado'
         appStore.estadosApp.estadoconeccion = 'desconectado'
+        appStore.estadosApp.estadoSesion = 'desconectado'
+        appStore.estadosApp.estadoLogin = 'desconectado'
         appStore.estadosApp.texto = 'Desconectado del servidor'
         this.reproductor.desconectar()
         this.reproductor.detenerReproduccion()

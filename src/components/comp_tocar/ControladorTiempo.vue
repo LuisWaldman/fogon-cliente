@@ -122,14 +122,16 @@ function arreglartexto(texto: string): string {
       <div
         class="boton_controllerplay"
         @click="pause"
-        v-if="appStore.estadosApp.estadoReproduccion === 'Reproduciendo'"
+        v-if="appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
+          appStore.estadosApp.estadoReproduccion === 'Iniciando'"
       >
         ⏸️
       </div>
       <div
         class="boton_controllerplay"
         @click="stop"
-        v-if="appStore.estadosApp.estadoReproduccion === 'Reproduciendo'"
+        v-if="appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
+          appStore.estadosApp.estadoReproduccion === 'Iniciando'"
       >
         ⏹️
       </div>

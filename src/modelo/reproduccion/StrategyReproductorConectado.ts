@@ -22,20 +22,27 @@ export class StrategyReproductorConectado extends StrategyReproductor {
       await this.GetCancionDelFogon()
       this.reproductor.SetEstado('pausado')
     })
-    this.cliente.setCancionIniciadaHandler((compas: number, desde: number) => {
-      Logger.log(`Reproducción iniciada desde compás ${compas} en ${desde}`)
-      this.sesSincroCancion = new SincroSesion(
-        desde,
-        compas, // duracionGolpe
-      )
-      this.reproductor.MediaVista?.Iniciar?.()
-      this.sincronizar()
-      if (this.reproductor.cancion) {
-        if (this.reproductor.compas < 0) {
-          this.reproductor.compas = 0
+    this.cliente.setCancionIniciadaHandler(
+      (compas: number, desde: number, nroUsuario: number) => {
+        Logger.log(
+          `Reproducción iniciada desde compás ${compas} en ${desde} x ${nroUsuario}`,
+        )
+        this.reproductor.SetEstado('reproduciendo')
+        this.reproductor.ultimoUsuarioQueCambioEstado = nroUsuario
+        this.reproductor.ultimoEstadoCambiado = 'reproduciendo'
+        this.sesSincroCancion = new SincroSesion(
+          desde,
+          compas, // duracionGolpe
+        )
+        this.reproductor.MediaVista?.Iniciar?.()
+        this.sincronizar()
+        if (this.reproductor.cancion) {
+          if (this.reproductor.compas < 0) {
+            this.reproductor.compas = 0
+          }
         }
-      }
-    })
+      },
+    )
     this.cliente.setCancionCambioEstadoHandler(
       (estado: string, nroUsuario: number) => {
         this.reproductor.SetEstado(estado)
@@ -118,4 +125,22 @@ export class StrategyReproductorConectado extends StrategyReproductor {
       }
     }
   }
+
+  override async iniciarReproduccion() {
+    super.iniciarReproduccion()
+    this.cliente.iniciarReproduccion(
+      this.reproductor.compas,
+      this.sesSincroCancion.timeInicio,
+    )
+  }
+
+  override detenerReproduccion() {
+    this.reproductor.SetEstado('pausando')
+    this.cliente.cambiarEstado('pausado')
+  }
+
+  override updateCompas(compas: number) {
+    this.cliente.actualizarCompas(compas)
+  }
+
 }
