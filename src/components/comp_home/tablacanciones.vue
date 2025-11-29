@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
 import emoticonOrigen from './emoticonOrigen.vue'
@@ -53,7 +53,13 @@ function arreglartexto(texto: string): string {
 
   return processed
 }
-
+watch(
+  () => props.cargando,
+  () => {
+    
+  viendoDetalle.value = -1
+  },
+)
 const viendoFiltroTabla = ref(false)
 const filtroTexto = ref<string>('')
 const viendoDetalle = ref<number | null>(null)
