@@ -6,6 +6,7 @@ import emoticonOrigen from './emoticonOrigen.vue'
 import compartirctrl from '../compartir.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
 import { link } from 'fs'
+import { useAppStore } from '../../stores/appStore'
 
 const helper = HelperDisplayAcordesLatino.getInstance()
 const emit = defineEmits(['tocar', 'borrar'])
@@ -98,13 +99,22 @@ function Compartir(cancion: ItemIndiceCancion) {
     arreglartexto(
       `${cancion.banda} - ${cancion.cancion}`,
     ) || 'Canción'
+    const masLinkServer = cancion.origenUrl == 'server' ? '&usuario=' + cancion.owner : ''
     linkCompartir.value =
     window.location.origin +
     '/tocar?cancion=' +
-    cancion.fileName
-    ''
+    cancion.fileName +
+    masLinkServer
   compartiendo.value = true
 }
+const appStore = useAppStore()
+const estadoConeccion = ref(appStore.estadosApp.estadoconeccion)
+watch(
+  () => appStore.estadosApp.estadoconeccion,
+  (newValue) => {
+    estadoConeccion.value = newValue
+  },
+)
 </script>
 
 <template>
@@ -164,11 +174,12 @@ function Compartir(cancion: ItemIndiceCancion) {
             tocando: index === nroCancion && verCancionActual,
             seleccionado: index === viendoDetalle,
           }"
+          v-if="!(estadoConeccion != 'conectado' && cancion.origenUrl == 'server')"
         >
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
-            }}
+            }} <span v-if="cancion.origenUrl === 'server'"> - {{ cancion.owner }} </span>
 
             <div class="textoGrande">{{ arreglartexto(cancion.cancion) }}</div>
           </td>

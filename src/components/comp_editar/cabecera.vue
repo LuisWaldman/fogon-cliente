@@ -69,12 +69,16 @@ function Actualizar() {
 defineExpose({ Actualizar })
 
 function guardarCambios(origenDestino: string) {
+  let usuario = props.origen.usuario
+  if (appStore.estadosApp.estadoLogin === 'logueado'){
+    usuario = appStore.perfil.usuario
+  }
   CancionManager.getInstance()
     .Save(
       new OrigenCancion(
         origenDestino,
         props.cancion.archivo,
-        props.origen.usuario,
+        usuario,
       ),
       props.cancion,
     )
@@ -98,6 +102,7 @@ function DescargarJSON() {
 </script>
 
 <template>
+  {{ appStore.perfil.nombre }}
   <div class="navbarFogon">
     <div style="display: flex; flex-wrap: wrap">
       <div

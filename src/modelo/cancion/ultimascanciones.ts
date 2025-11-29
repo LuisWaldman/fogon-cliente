@@ -26,6 +26,7 @@ export class UltimasCanciones {
       (c) =>
         c.origenUrl === 'fogon' ||
         c.fileName !== cancion.fileName ||
+        c.owner !== cancion.owner ||
         c.origenUrl !== cancion.origenUrl,
     )
 
@@ -59,6 +60,7 @@ export class UltimasCanciones {
             toRet.compasUnidad = item.compasUnidad
             toRet.compasCantidad = item.compasCantidad
             toRet.bpm = item.bpm
+            toRet.owner = item.owner
             toRet.calidad = item.calidad
             return toRet
           })

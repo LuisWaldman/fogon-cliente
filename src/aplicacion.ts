@@ -215,6 +215,8 @@ export default class Aplicacion {
       const appStore = useAppStore()
       appStore.estado = 'logueado'
       appStore.estadosApp.estadoLogin = 'logueado'
+      appStore.perfil.usuario = this.datosUsuarioLogeado?.usuario || ''
+      Logger.log('Login exitoso')
       CancionManager.getInstance()
         .listasServerManager?.GetListas()
         .then((listas) => {
@@ -334,7 +336,9 @@ export default class Aplicacion {
   async HTTPPost(urlPost: string, body: ObjetoPosteable): Promise<Response> {
     return this.cliente?.HTTPPost(urlPost, body) as Promise<Response>
   }
+  datosUsuarioLogeado: datosLogin | null = null
   login(datos: datosLogin): boolean {
+    this.datosUsuarioLogeado = datos
     const appStore = useAppStore()
     appStore.estadosApp.estadoLogin = 'init-login'
     if (!this.cliente) {
