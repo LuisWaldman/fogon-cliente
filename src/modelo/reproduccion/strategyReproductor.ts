@@ -1,5 +1,6 @@
 import { CancionManager } from '../cancion/CancionManager'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
+import type { OrigenCancion } from '../cancion/origencancion'
 import { Logger } from '../logger'
 import { EstadoSincroCancion } from '../sincro/EstadoSincroCancion'
 import { HelperSincro } from '../sincro/HelperSincro'
@@ -98,13 +99,15 @@ export class StrategyReproductor {
   }
 
   async CargarCancion(cancion: ItemIndiceCancion) {
+    this.CargarCancionDeOrigen(ItemIndiceCancion.GetOrigen(cancion))
+  }
+
+  async CargarCancionDeOrigen(cancion: OrigenCancion) {
     this.reproductor.SetEstado('cargando-cancion')
-    const cancionObtenida = await CancionManager.getInstance().Get(
-      ItemIndiceCancion.GetOrigen(cancion),
-    )
+    const cancionObtenida = await CancionManager.getInstance().Get(cancion)
     this.reproductor.cancion = cancionObtenida
     this.reproductor.compas = 0
     this.reproductor.SetEstado('pausado')
-    this.reproductor.origenCancion = ItemIndiceCancion.GetOrigen(cancion)
+    this.reproductor.origenCancion = cancion
   }
 }

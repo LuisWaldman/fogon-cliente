@@ -5,6 +5,7 @@ import { Tiempo } from '../../modelo/tiempo'
 import emoticonOrigen from './emoticonOrigen.vue'
 import compartirctrl from '../compartir.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { link } from 'fs'
 
 const helper = HelperDisplayAcordesLatino.getInstance()
 const emit = defineEmits(['tocar', 'borrar'])
@@ -56,8 +57,7 @@ function arreglartexto(texto: string): string {
 watch(
   () => props.cargando,
   () => {
-    
-  viendoDetalle.value = -1
+    viendoDetalle.value = -1
   },
 )
 const viendoFiltroTabla = ref(false)
@@ -91,7 +91,18 @@ const compartiendo = ref(false)
 function dejarDeCompartir() {
   compartiendo.value = false
 }
-function Compartir() {
+const tituloCompartir = ref('')
+const linkCompartir = ref('')
+function Compartir(cancion: ItemIndiceCancion) {
+  tituloCompartir.value =
+    arreglartexto(
+      `${cancion.banda} - ${cancion.cancion}`,
+    ) || 'Canción'
+    linkCompartir.value =
+    window.location.origin +
+    '/tocar?cancion=' +
+    cancion.fileName
+    ''
   compartiendo.value = true
 }
 </script>
@@ -99,8 +110,8 @@ function Compartir() {
 <template>
   <compartirctrl
     v-if="compartiendo"
-    :titulo="`Compartir Cancion`"
-    :link="`link de la cancion`"
+    :titulo="tituloCompartir"
+    :link="linkCompartir"
     @cerrar="dejarDeCompartir"
   />
   <table class="tabla-canciones">
@@ -246,7 +257,7 @@ function Compartir() {
                   +
                 </button>
                 <template v-if="viendoOpcionesExtra === index">
-                  <button @click="Compartir">🔗 Compartir</button>
+                  <button @click="Compartir(cancion)">🔗 Compartir</button>
                   <button @click="Borrar(cancion)" v-if="verBorrar">
                     🗑️ Borrar
                   </button>

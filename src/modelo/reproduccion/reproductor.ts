@@ -56,6 +56,11 @@ export class Reproductor {
   detenerReproduccion() {
     this.strategyReproductor.detenerReproduccion()
   }
+
+  CargarCancion(cancion: OrigenCancion): Promise<void> {
+    return this.strategyReproductor.CargarCancionDeOrigen(cancion)
+  }
+
   protected strategyReproductor: StrategyReproductor = new StrategyReproductor(
     this,
   )

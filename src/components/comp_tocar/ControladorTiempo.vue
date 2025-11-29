@@ -107,7 +107,6 @@ function arreglartexto(texto: string): string {
     <div class="controls">
       <div
         class="boton_controllerplay"
-        
         v-if="appStore.estadosApp.estadoReproduccion === 'esperandoMedia'"
       >
         🔥

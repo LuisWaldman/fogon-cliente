@@ -104,6 +104,12 @@ onUnmounted(() => {
 onMounted(() => {
   pantalla.setearEstilos()
   vista.value = pantalla.getConfiguracionPantalla()
+  const urlParams = new URLSearchParams(window.location.search)
+  const sesionurl = urlParams.get('cancion')
+  if (sesionurl) {
+    const origen = OrigenCancion.GetFromQuery(sesionurl)
+    appStore.aplicacion.reproductor.CargarCancion(origen)
+  }
 })
 
 function SolicitarCalibracion() {

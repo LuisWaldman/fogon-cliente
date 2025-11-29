@@ -34,38 +34,62 @@ const ErrorRelojRTC = ref(helper.ErrorRelojRTC)
 
 const delayactualizar = ref(0)
 
-const reloj = new Reloj()
-reloj.duracionIntervalo = 1000 // 1 segundo
-reloj.setIniciaHandler(() => {
-  momentoLocal.value = helper.MomentoLocal()
-  momentoSincro.value = helper.MomentoSincro()
-})
-reloj.setIniciaCicloHandler(() => {
-  momentoLocal.value = helper.MomentoLocal()
-  actualizarDelay()
+momentoLocal.value = helper.MomentoLocal()
+momentoSincro.value = helper.MomentoSincro()
+
+let rafId: number | null = null
+
+async function EmpezarLoop() {
+  // reset counter when starting
+  const loop = async () => {
+    // stop if state changed
+    actualizarDelay()
+    rafId = requestAnimationFrame(loop)
+  }
+  // avoid multiple loops
+  if (rafId == null) {
+    rafId = requestAnimationFrame(loop)
+  }
+}
+
+function PararLoop() {
+  if (rafId != null) {
+    cancelAnimationFrame(rafId)
+    rafId = null
+  }
+}
+
+onUnmounted(() => {
+  PararLoop()
 })
 
 function actualizarDelay() {
+  const momentosincroActual = helper.MomentoSincro()
+  if (
+    Math.floor(momentosincroActual / 1000) ===
+    Math.floor(momentoSincro.value / 1000)
+  ) {
+    return
+  }
   momentoLocal.value = helper.MomentoLocal()
   momentoSincro.value = helper.MomentoSincro()
   delayReloj.value = helper.delayReloj
   ErrorReloj.value = helper.ErrorReloj
   const mili = momentoSincro.value % 1000
-  delayactualizar.value = 1000 - mili
+  delayactualizar.value = mili
   /*
   if (mili < 20) {
     delayactualizar.value = delayactualizar.value - mili
   }*/
-  reloj.setDelay(delayactualizar.value)
 }
 
 function actualizarMomento() {
   actualizandoMomento.value = true
-  reloj.iniciar()
 }
 
 onMounted(() => {
   actualizarMomento()
+  EmpezarLoop()
 })
 
 onUnmounted(() => {
@@ -73,7 +97,6 @@ onUnmounted(() => {
 })
 function dejarActualizarMomento() {
   actualizandoMomento.value = false
-  reloj.pausar()
 }
 const detalleCalculo = ref<DelaySet[]>([])
 const verDetalle = ref(false)
@@ -97,11 +120,6 @@ function sincronizar() {
   const helper = HelperSincro.getInstance()
   helper.ActualizarDelayReloj()
   detalleCalculo.value = helper.GetDetalleCalculo()
-}
-
-function cerrarRelojes() {
-  reloj.pausar()
-  emit('cerrar')
 }
 </script>
 
