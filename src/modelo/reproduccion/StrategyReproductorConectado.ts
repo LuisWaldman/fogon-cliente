@@ -142,5 +142,4 @@ export class StrategyReproductorConectado extends StrategyReproductor {
   override updateCompas(compas: number) {
     this.cliente.actualizarCompas(compas)
   }
-
 }

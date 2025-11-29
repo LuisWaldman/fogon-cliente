@@ -5,7 +5,6 @@ import { Tiempo } from '../../modelo/tiempo'
 import emoticonOrigen from './emoticonOrigen.vue'
 import compartirctrl from '../compartir.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
-import { link } from 'fs'
 import { useAppStore } from '../../stores/appStore'
 
 const helper = HelperDisplayAcordesLatino.getInstance()

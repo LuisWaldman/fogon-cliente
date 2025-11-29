@@ -2,9 +2,6 @@ import type { Cancion } from './cancion'
 import { OrigenCancion } from './origencancion'
 
 export class ItemIndiceCancion {
-  static GetFromQuery(sesionurl: string): ItemIndiceCancion {
-    return new ItemIndiceCancion('sitio', query, query)
-  }
   normalizartexto(texto: string): string {
     return texto
       .toLowerCase()

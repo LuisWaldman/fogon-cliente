@@ -98,7 +98,6 @@ function DescargarJSON() {
 </script>
 
 <template>
-  {{ appStore.perfil.nombre }}
   <div class="navbarFogon">
     <div style="display: flex; flex-wrap: wrap">
       <div

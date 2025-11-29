@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import RelojControl from './VReloj.vue'
 import { onMounted, onUnmounted, ref } from 'vue'
-import { Reloj } from '../../modelo/reloj'
 import { HelperSincro } from '../../modelo/sincro/HelperSincro'
 import type { DelaySet } from '../../modelo/sincro/DelaySet'
 import { SincroSesion } from '../../modelo/sincro/SincroSesion'
@@ -14,7 +13,6 @@ defineProps({
   },
 })
 
-const emit = defineEmits(['cerrar'])
 
 const helper = HelperSincro.getInstance()
 
