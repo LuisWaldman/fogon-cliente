@@ -10,7 +10,6 @@ const helperNotas = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
 helperNotas.latino = appStore.perfil.CifradoLatino
 
-
 const compas = ref(appStore.aplicacion.reproductor.compas)
 const golpeDelCompas = ref(appStore.aplicacion.reproductor.golpeDelCompas)
 const cancion = ref<Cancion>(appStore.aplicacion.reproductor.cancion)
@@ -148,7 +147,10 @@ function clickEditar() {
     <div style="display: flex; width: 100%">
       <iconofogon
         :golpeDelCompas="golpeDelCompas"
-        :conCancion="!estadoReproduccion.startsWith('cargando') && estadoReproduccion !== 'sin-cancion'"
+        :conCancion="
+          !estadoReproduccion.startsWith('cargando') &&
+          estadoReproduccion !== 'sin-cancion'
+        "
         :estadoReproduccion="estadoReproduccion"
       />
       <span v-if="$route.path === '/'" class="titulocancioncontrol">

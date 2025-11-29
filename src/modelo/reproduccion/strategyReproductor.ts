@@ -44,6 +44,10 @@ export class StrategyReproductor {
     }
   }
 
+  SetEstado(estado: string) {
+    this.reproductor.SetEstado(estado)
+  }
+
   detenerReproduccion() {
     const appStore = useAppStore()
     // Pauso Medias

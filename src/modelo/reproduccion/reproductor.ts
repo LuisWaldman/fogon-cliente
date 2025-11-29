@@ -13,6 +13,8 @@ import { EstadosAplicacion } from '../../EstadosAplicacion'
 import { OrigenCancion } from '../cancion/origencancion'
 
 export class Reproductor {
+  ultimoUsuarioQueCambioEstado: number = 0
+  ultimoEstadoCambiado: string = ''
   async listaActualizada() {
     await this.strategyReproductor.CargarCancion(
       this.listaReproduccion.GetCancion(),
@@ -20,6 +22,10 @@ export class Reproductor {
   }
   SetEstado(estado: string) {
     EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)
+    if (estado === 'pausado') {
+      const appStore = useAppStore()
+      appStore.MediaVistas?.Pausar?.()
+    }
   }
   sincronizar() {
     this.strategyReproductor.sincronizar()

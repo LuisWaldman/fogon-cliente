@@ -25,7 +25,7 @@ import type { Cancion } from '../modelo/cancion/cancion'
 const viendoVideo = ref(false)
 const pantalla = new Pantalla()
 const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
-  
+
 const appStore = useAppStore()
 const compas = ref(appStore.aplicacion.reproductor.compas)
 const golpeDelCompas = ref(appStore.aplicacion.reproductor.golpeDelCompas)
@@ -66,8 +66,10 @@ function PararLoop() {
 }
 const cargando = ref(false)
 function VerEstado() {
-  if (appStore.estadosApp.estadoReproduccion.startsWith('cargando') ||  appStore.estadosApp.estadoReproduccion === 'sin-cancion')
-  {
+  if (
+    appStore.estadosApp.estadoReproduccion.startsWith('cargando') ||
+    appStore.estadosApp.estadoReproduccion === 'sin-cancion'
+  ) {
     cargando.value = true
     return
   }
@@ -75,7 +77,7 @@ function VerEstado() {
   cancion.value = appStore.aplicacion.reproductor.cancion
   setviendoVideo()
   cargando.value = false
-  
+
   if (
     appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
     appStore.estadosApp.estadoReproduccion === 'Iniciando'
@@ -97,8 +99,6 @@ watch(
 onUnmounted(() => {
   PararLoop()
 })
-
-
 
 onMounted(() => {
   pantalla.setearEstilos()
@@ -243,10 +243,7 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
 </script>
 
 <template>
-  <div
-    style="text-align: center"
-    v-if="cargando"
-  >
+  <div style="text-align: center" v-if="cargando">
     <img
       src="/img/iconogrande.png"
       style="width: 300px; height: auto"
@@ -256,10 +253,7 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
     <div>{{ appStore.estadosApp.texto }}</div>
   </div>
 
-  <div
-    class="tocar-fluid"
-    v-if="cargando == false"
-  >
+  <div class="tocar-fluid" v-if="cargando == false">
     <sincronizarMedias
       v-if="refSincronizandoMedios"
       @cerrar="clickCerrarMedios"

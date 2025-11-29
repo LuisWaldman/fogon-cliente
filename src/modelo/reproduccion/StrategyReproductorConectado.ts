@@ -37,10 +37,13 @@ export class StrategyReproductorConectado extends StrategyReproductor {
         }
       }
     })
-    this.cliente.setCancionDetenidaHandler(() => {
-      Logger.log('Reproducción detenida')
-      super.detenerReproduccion()
-    })
+    this.cliente.setCancionCambioEstadoHandler(
+      (estado: string, nroUsuario: number) => {
+        this.reproductor.SetEstado(estado)
+        this.reproductor.ultimoUsuarioQueCambioEstado = nroUsuario
+        this.reproductor.ultimoEstadoCambiado = estado
+      },
+    )
     this.cliente.setCompasActualizadoHandler((compas: number) => {
       Logger.log(`Compás actualizado a ${compas}`)
       this.reproductor.compas = compas
