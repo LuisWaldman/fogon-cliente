@@ -1,136 +1,288 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { onMounted, ref, reactive } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import { useAppStore } from '../../stores/appStore'
 import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
+import { Parte } from '../../modelo/cancion/acordes'
 
 const props = defineProps<{
   cancion: Cancion
   acordesCancion: string[]
 }>()
+class ParteAcordes {
+  nombre: string
+  acordes: string[][]
+  colspan: number[][]
 
-const refagregandoAcorde = ref(false)
-function agregarAcorde() {
-  refagregandoAcorde.value = true
-}
-const toEscala = ref('')
-const desdeEscala = ref('')
-const esMenor = ref(false)
-const appStore = useAppStore()
-const NotasPosicionadasEscala = ref([] as string[][])
-const Escala = ref([] as string[])
-const labelGradosEscala = ref(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'])
-
-const helperMuisca = new MusicaHelper()
-
-function clickCambiarEscala() {
-  if (appStore.editandocancion.escala) {
-    desdeEscala.value = props.cancion.escala
-    if (desdeEscala.value.includes('m')) {
-      esMenor.value = true
-      desdeEscala.value = desdeEscala.value.replace('m', '')
-    }
-    // Obtener la escala de acordes basada en la escala actual
-    Escala.value = helperMuisca.GetAcordesdeescala(
-      appStore.editandocancion.escala,
-    )
-
-    NotasPosicionadasEscala.value = helperMuisca.GetNotasPosicionadasEscala(
-      appStore.editandocancion,
-      Escala.value,
-    )
-    toEscala.value = desdeEscala.value
-  } else {
-    toEscala.value = 'C'
+  constructor(nombre: string, acordes: string[][], colspan: number[][]) {
+    this.nombre = nombre
+    this.acordes = acordes
+    this.colspan = colspan
   }
 }
-clickCambiarEscala()
+const acordesDePartes = ref<ParteAcordes[]>([])
+function CargarCancion() {
+  acordesDePartes.value = []
+  for (const parte of props.cancion.acordes.partes) {
+    const acordesEnParte: string[][] = []
+    const colspan: number[][] = []
+    for (const acorde of parte.acordes) {
+      const division = acorde.split(' ')
+      acordesEnParte.push(division)
+      const colspanFila: number[] = []
+      if (division.length === 1) {
+        colspanFila.push(4)
+      } else if (division.length === 2) {
+        colspanFila.push(2, 2)
+      } else if (division.length === 3) {
+        colspanFila.push(2, 1, 1)
+      } else {
+        // Manejar otros casos si es necesario
+        for (let i = 0; i < division.length; i++) {
+          colspanFila.push(1)
+        }
+      }
+      colspan.push(colspanFila)
+    }
+
+    acordesDePartes.value.push(
+      new ParteAcordes(parte.nombre, acordesEnParte, colspan),
+    )
+  }
+}
+onMounted(() => {
+  CargarCancion()
+})
+const desdePosicion = ref(1)
+const hastaPosicion = ref(4)
+
+const exdesdePosicion = ref(1)
+const exhastaPosicion = ref(4)
+const proximoAcorde = ref('?')
+const editandoParte = ref(-1)
+const editandoCompas = ref(-1)
+const editandoNota = ref(-1)
+function clickNotaAcorde(parte: number, compas: number, nota: number) {
+  editandoCompas.value = compas
+  editandoParte.value = parte
+  editandoNota.value = nota
+  let desdeSpan = 0
+  for (let i = 0; i < nota; i++) {
+    desdeSpan += acordesDePartes.value[parte].colspan[compas][i]
+  }
+  desdePosicion.value = desdeSpan
+  hastaPosicion.value =
+    desdeSpan + acordesDePartes.value[parte].colspan[compas][nota]
+
+  exdesdePosicion.value = desdePosicion.value
+  exhastaPosicion.value = hastaPosicion.value
+}
+function agregar() {
+  props.cancion.acordes.partes.push(new Parte('Nueva Parte', []))
+  CargarCancion()
+}
+const quitando = ref(false)
+const reordenando = ref(false)
+function quitarOk(parteIndex: number) {
+  props.cancion.acordes.partes.splice(parteIndex, 1)
+  CargarCancion()
+  quitando.value = false
+}
+function quitar() {
+  editandoParte.value = -1
+  quitando.value = !quitando.value
+}
+
+function reordenar() {
+  editandoParte.value = -1
+  reordenando.value = !reordenando.value
+}
+const dragrandoOrden = ref(false)
+const dragenterOrden = ref(false)
+const dragenterAdd = reactive(new Map<string, boolean>())
+function onDragStartOrdenParte(event: DragEvent, indexparte: number) {
+  dragrandoOrden.value = true
+  event.dataTransfer!.setData('text/plain', indexparte.toString())
+}
+function onDragEndOrdenParte() {
+  dragrandoOrden.value = false
+}
+
+function onDragOverParte(event: DragEvent) {
+  event.preventDefault()
+}
+
+function onDragEnterOrdenParte() {
+  dragenterOrden.value = true
+}
+
+function onDragLeaveOrdenParte() {
+  dragenterOrden.value = false
+}
+
+function onDropOrdenParte(event: DragEvent, targetIndex: number) {
+  event.preventDefault()
+  const draggedIndex = parseInt(event.dataTransfer!.getData('text/plain'))
+  if (draggedIndex !== targetIndex) {
+    const part = props.cancion.acordes.partes.splice(draggedIndex, 1)[0]
+    props.cancion.acordes.partes.splice(targetIndex, 0, part)
+    CargarCancion()
+    alert(`Parte "${part.nombre}" movida a posición ${targetIndex + 1}`)
+  }
+  dragenterOrden.value = false
+}
+const drageandoAcorde = ref(false)
+function onDragEndAcorde() {
+  drageandoAcorde.value = false
+  dragenterAdd.clear()
+}
+function onDragStartAcorde(event: DragEvent, indexparte: number, nota?: string) {
+  drageandoAcorde.value = true
+  dragenterAdd.clear()
+  event.dataTransfer!.setData('text/plain', nota || '')
+}
+function onDragOverAdd(event: DragEvent) {
+  event.preventDefault()
+}
+function onDragEnterAdd(indexparte: number, compasindex: number) {
+  dragenterAdd.set(`${indexparte}-${compasindex}`, true)
+}
+function onDragLeaveAdd(indexparte: number, compasindex: number) {
+  dragenterAdd.set(`${indexparte}-${compasindex}`, false)
+}
+function onDropAdd(event: DragEvent, indexparte: number, compasindex: number) {
+  event.preventDefault()
+  const chord = event.dataTransfer!.getData('text/plain')
+  if (chord) {
+    props.cancion.acordes.partes[indexparte].acordes.push(chord)
+    CargarCancion()
+    alert(`Acorde "${chord}" agregado a nueva compás en parte "${props.cancion.acordes.partes[indexparte].nombre}"`)
+  }
+  dragenterAdd.clear()
+}
 </script>
 <template>
   <div>
-    <div
-      class="clsParte"
-      v-for="(parte, indexparte) in props.cancion.acordes.partes"
-      :key="indexparte"
-    >
-      <div>{{ parte.nombre }}</div>
-      <div class="conteinerCompases">
-        <div class="compas">
-          <div class="parteCompasEntero">LA</div>
+    <div v-for="(parte, indexparte) in acordesDePartes" :key="indexparte">
+      <div
+        class="destinoOrdenParte"
+        :class="{ destinoOrdenPartehover: dragenterOrden }"
+        v-if="dragrandoOrden"
+        @dragover="onDragOverParte"
+        @drop="(event) => onDropOrdenParte(event, indexparte)"
+        @dragenter="onDragEnterOrdenParte"
+        @dragleave="onDragLeaveOrdenParte"
+      ></div>
+      <div
+        class="clsParte"
+        @dragstart="(event) => onDragStartOrdenParte(event, indexparte)"
+        @dragend="onDragEndOrdenParte"
+        :draggable="reordenando"
+      >
+        <div
+          v-if="indexparte != editandoParte"
+          @click="editandoParte = indexparte"
+        >
+          {{ parte.nombre }}
+
+          <button @click="quitarOk(indexparte)" v-if="quitando">
+            🗑️ QUITAR
+          </button>
+        </div>
+        <div v-else>
+          <input v-model="parte.nombre" />
+          <div class="ctrlMandoEdit">
+            <div
+              class="notaCompas"
+              v-for="nota in props.acordesCancion"
+              :key="nota"
+              draggable="true"
+              @dragstart="(event) => onDragStartAcorde(event, indexparte, nota)"
+              @dragend="onDragEndAcorde"
+
+            >
+              {{ nota }}
+            </div>
+          </div>
         </div>
 
-        <div class="compas">
-          <div class="parteCompasMitad">LA</div>
-          <div class="parteCompasMitad">SOL</div>
-        </div>
-
-        <div class="compas">
-          <div class="parteCompasEntero">RE</div>
-        </div>
-
-        <div class="compas">
-          <div class="parteCompasCuarto">LA</div>
-          <div class="parteCompasMitad">SOL</div>
-          <div class="parteCompasCuarto">SOL7</div>
+        <div class="conteinerCompases">
+          <div class="conteinerCompas"
+          v-for="(compas, compasindex) in parte.acordes"
+          :key="compasindex">
+          <div
+            class="compas"
+            
+            
+          >
+            <div
+              class="notaCompas"
+              v-for="(nota, notindex) in compas"
+              :key="notindex"
+              draggable="true"
+              @dragstart="(event) => onDragStartAcorde(event, indexparte, nota)"
+              @dragend="onDragEndAcorde"
+            >
+              <select
+                v-model="parte.acordes[compasindex][notindex]"
+                v-if="indexparte == editandoParte"
+              >
+                <option v-for="nota in props.acordesCancion" :key="nota">
+                  {{ nota }}
+                </option>
+              </select>
+              <span
+                v-else
+                @click="clickNotaAcorde(indexparte, compasindex, notindex)"
+                >{{ nota }}</span
+              >
+            </div>
+          </div>
+          <div>+</div>
+          <div
+            class="destinoOrdenParte destinoOrdenPartehover"
+            v-if="dragenterAdd.get(`${indexparte}-${compasindex}`)"
+            @dragover="onDragOverAdd"
+            @drop="(event) => onDropAdd(event, indexparte, compasindex)"
+            @dragenter="onDragEnterAdd(indexparte, compasindex)"
+            @dragleave="onDragLeaveAdd(indexparte, compasindex)"
+          >+</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <table style="border-collapse: collapse; width: 100%">
-      <thead>
-        <tr>
-          <th
-            v-for="(nota, index) in Escala.slice(0, 7)"
-            :key="index"
-            :class="{
-              tonicaprincipal: index === 0,
-              tonicarelativa: index === 2 || index === 5,
-              subdominante: index === 1 || index === 3,
-              dominantesecundaria: index === 6,
-              dominante: index === 4,
-            }"
-          >
-            {{ labelGradosEscala[index] }} - {{ nota }}
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td
-            v-for="(nota, index) in NotasPosicionadasEscala.slice(0, 7)"
-            :key="index"
-            :class="{
-              tonicaprincipal: index === 0,
-              tonicarelativa: index === 2 || index === 5,
-              subdominante: index === 1 || index === 3,
-              dominantesecundaria: index === 6,
-              dominante: index === 4,
-            }"
-          >
-            <span
-              class="notaPosicionada"
-              v-for="(notaPosicionada, posIndex) in nota"
-              :key="posIndex"
-            >
-              {{ notaPosicionada }}
-            </span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div>
-    <div class="acordesInfo">
-      {{ props.acordesCancion.join(', ') }}
-    </div>
     <div class="botoneraAcordes">
-      <button @click="agregarAcorde">🎸 AGREGAR</button>
-      <button>🗑️ QUITAR</button>
+      <button @agregar="agregar">🎸 AGREGAR</button>
+      <button @click="quitar">🗑️ QUITAR</button>
+      <button @click="reordenar">↕️ REORDENAR</button>
     </div>
   </div>
 </template>
 <style scoped>
+.destinoOrdenParte {
+  border: 1px rgb(225, 226, 168) solid;
+  height: 7px;
+  background-color: #757061;
+}
+
+.destinoOrdenPartehover {
+  border: 2px rgb(225, 226, 168) solid;
+  height: 9px;
+  background-color: #a9a8f6;
+}
+
+.notaCompas {
+  padding: 4px 8px;
+  margin: 2px;
+  background: rgba(169, 168, 246, 0.2);
+  border-radius: 4px;
+  font-weight: 600;
+  color: #a9a8f6;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 td,
 th {
   border: 1px solid #a9a8f6;
@@ -277,7 +429,6 @@ td.dominante {
   font-weight: bold;
   color: #a9a8f6;
   margin-bottom: 8px;
-  text-decoration: underline;
 }
 
 .conteinerCompases {
@@ -438,5 +589,16 @@ td.dominante {
     padding: 12px;
     font-size: 0.9rem;
   }
+}
+.ctrlMandoEdit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.conteinerCompas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 </style>

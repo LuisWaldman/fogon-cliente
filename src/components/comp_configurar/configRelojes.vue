@@ -13,7 +13,6 @@ defineProps({
   },
 })
 
-
 const helper = HelperSincro.getInstance()
 
 const sesSincroCancion = ref<SincroSesion>(new SincroSesion(0, 0))
