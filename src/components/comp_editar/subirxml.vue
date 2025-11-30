@@ -82,9 +82,7 @@ async function manejarSeleccionArchivo(event: Event) {
     estadoSubida.value = 'error: extensión de archivo'
     return
   }
-  appStore.estadosApp.estado = ''
-  appStore.estadosApp.texto = 'Cargando MXL...'
-
+  
   const reader = new FileReader()
   reader.onload = async (e) => {
     try {
@@ -132,7 +130,6 @@ async function manejarSeleccionArchivo(event: Event) {
 
       if (!xmlContent) {
         estadoSubida.value = 'error: no se encontró archivo MusicXML en .mxl'
-        appStore.estadosApp.estado = 'ok'
         return
       }
 
@@ -152,7 +149,6 @@ async function manejarSeleccionArchivo(event: Event) {
 
       mostrarModal.value = true
       estadoSubida.value = `${pentagramasTemporales.value.length} pentagramas encontrados`
-      appStore.estadosApp.estado = 'ok'
     } catch (error) {
       console.error('Error al procesar el archivo MXL:', error)
       estadoSubida.value = 'error al procesar MXL'
