@@ -107,7 +107,7 @@ export default class Aplicacion {
     appStore.estadosApp.texto = 'Cargando cancion...'
     this.reproductor.Next()
   }
-  
+
   url = ''
   conectar(servidor: Servidor) {
     const config = Configuracion.getInstance()

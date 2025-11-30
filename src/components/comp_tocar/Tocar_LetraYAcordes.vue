@@ -176,7 +176,7 @@ defineExpose({ Actualizar })
               <div
                 class="acordediv"
                 v-if="parte.acorde != ''"
-                :class="{ en_compas: parte.nroCompas === compas  }"
+                :class="{ en_compas: parte.nroCompas === compas }"
               >
                 {{ parte.acorde }}
               </div>
