@@ -100,36 +100,12 @@ export default class Aplicacion {
     this.router?.push('/tocar')
   }
 
-  async ClickAgregarAListaReproduccion(item: ItemIndiceCancion) {
-    this.reproductor.AgregarAListaReproduccion(item)
-  }
-
-  updateCompas(compas: number) {
-    this.reproductor.updateCompas(compas)
-  }
-
-  play() {
-    this.reproductor.iniciarReproduccion()
-  }
-
-  async sincronizar() {
-    await this.reproductor.sincronizar()
-  }
   next() {
     const appStore = useAppStore()
     appStore.estadosApp.paginaLista = ''
     appStore.estadosApp.estado = 'cargando'
     appStore.estadosApp.texto = 'Cargando cancion...'
     this.reproductor.Next()
-  }
-
-  pause() {
-    this.reproductor.detenerReproduccion()
-  }
-
-  stop() {
-    this.reproductor.detenerReproduccion()
-    this.reproductor.updateCompas(0)
   }
 
   url = ''

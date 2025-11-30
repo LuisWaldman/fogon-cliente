@@ -46,7 +46,7 @@ async function EmpezarLoop() {
       rafId = null
       return
     }
-    await appStore.aplicacion.sincronizar()
+    await appStore.aplicacion.reproductor.sincronizar()
     estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
     compas.value = appStore.aplicacion.reproductor.compas
     golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
