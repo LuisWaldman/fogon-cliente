@@ -59,7 +59,7 @@ function abrirVistaEdicion() {
       @abrirVistaEdicion="abrirVistaEdicion"
       @editarCancion="clickEditar"
     />
-        <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
+    <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
       <img
         src="/img/iconogrande.png"
         style="width: 300px; height: auto"

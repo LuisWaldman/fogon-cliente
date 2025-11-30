@@ -56,12 +56,7 @@ function cargarModos() {
     }
   }
 }
-watch(
-  () => props.cancion,
-  () => {
-    Actualizar()
-  },
-)
+
 
 function verInstrumento(modo: DisplayModoPentagrama, index: number) {
   if (props.editando) {
@@ -81,7 +76,6 @@ function verInstrumento(modo: DisplayModoPentagrama, index: number) {
   Actualizar()
 }
 
-defineExpose({ Actualizar })
 </script>
 <template>
   <div class="componenteMusical">

@@ -82,7 +82,7 @@ async function manejarSeleccionArchivo(event: Event) {
     estadoSubida.value = 'error: extensión de archivo'
     return
   }
-  
+
   const reader = new FileReader()
   reader.onload = async (e) => {
     try {

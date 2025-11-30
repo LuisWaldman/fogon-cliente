@@ -98,7 +98,7 @@ watch(
     golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
 
     if (appStore.estadosApp.estadoReproduccion === 'update-compas') {
-      appStore.estadosApp.estadoReproduccion = 'pausado'      
+      appStore.estadosApp.estadoReproduccion = 'pausado'
     }
 
     VerEstado()
