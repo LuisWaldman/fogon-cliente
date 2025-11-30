@@ -157,7 +157,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          MUESTRA Y TOCA
+          FOGOOOooN
         </div>
         <div
           class="titulo-Fogon"
