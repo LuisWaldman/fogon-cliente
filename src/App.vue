@@ -59,7 +59,16 @@ function abrirVistaEdicion() {
       @abrirVistaEdicion="abrirVistaEdicion"
       @editarCancion="clickEditar"
     />
-    <router-view />
+        <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
+      <img
+        src="/img/iconogrande.png"
+        style="width: 300px; height: auto"
+        class="logo vue"
+        alt="Vue logo"
+      />
+      <div>{{ appStore.estadosApp.texto }}</div>
+    </div>
+    <router-view v-if="appStore.estadosApp.estado === 'ok'" />
     <editVista
       v-if="refEditandoVista"
       @cerrar="cerrareditarPantalla"

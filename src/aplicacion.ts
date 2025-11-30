@@ -85,8 +85,6 @@ export default class Aplicacion {
   async ClickTocarLista(lista: ItemIndiceCancion[]) {
     const appStore = useAppStore()
     appStore.estadosApp.paginaLista = ''
-    appStore.estadosApp.estado = 'cargando'
-    appStore.estadosApp.texto = 'Cargando lista de reproduccion...'
     await this.reproductor.ClickTocarLista(lista)
     this.router?.push('/tocar')
   }
@@ -94,8 +92,6 @@ export default class Aplicacion {
   async ClickCancionNro(nro: number) {
     const appStore = useAppStore()
     appStore.estadosApp.paginaLista = ''
-    appStore.estadosApp.estado = 'cargando'
-    appStore.estadosApp.texto = 'Cargando cancion...'
     this.reproductor.ClickCancionNro(nro)
     this.router?.push('/tocar')
   }
@@ -103,8 +99,6 @@ export default class Aplicacion {
   next() {
     const appStore = useAppStore()
     appStore.estadosApp.paginaLista = ''
-    appStore.estadosApp.estado = 'cargando'
-    appStore.estadosApp.texto = 'Cargando cancion...'
     this.reproductor.Next()
   }
 
@@ -342,7 +336,6 @@ export default class Aplicacion {
     }
     const appStore = useAppStore()
     appStore.rolSesion = 'director'
-    appStore.estadosApp.estado = ''
     appStore.estadosApp.texto = 'Creando sesión...'
     this.creandoSesion = true
     this.cliente.CrearSesion(nombre)
