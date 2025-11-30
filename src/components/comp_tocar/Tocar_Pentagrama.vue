@@ -57,7 +57,6 @@ function cargarModos() {
   }
 }
 
-
 function verInstrumento(modo: DisplayModoPentagrama, index: number) {
   if (props.editando) {
     localStorage.setItem('instrumentosPentagrama', modo.Nombre)
@@ -75,7 +74,6 @@ function verInstrumento(modo: DisplayModoPentagrama, index: number) {
   )
   Actualizar()
 }
-
 </script>
 <template>
   <div class="componenteMusical">

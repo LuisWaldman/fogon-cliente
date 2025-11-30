@@ -25,11 +25,14 @@ watch(
     if (props.renglon.pentagramas.length === 0) return
     const desdecompas = props.renglon.pentagramas[0].compases[0].nroCompas
     const hastacompas =
-       props.renglon.pentagramas[0].compases[
+      props.renglon.pentagramas[0].compases[
         props.renglon.pentagramas[0].compases.length - 1
       ].nroCompas
-      
-    if ((oldCompas >= desdecompas && oldCompas <= hastacompas) || (newCompas >= desdecompas && newCompas <= hastacompas)) {
+
+    if (
+      (oldCompas >= desdecompas && oldCompas <= hastacompas) ||
+      (newCompas >= desdecompas && newCompas <= hastacompas)
+    ) {
       Dibujar()
     }
   },
@@ -37,7 +40,7 @@ watch(
 
 const anchoPrimerStave = 60
 const anchoCompasStave = 200
-const refDibujado = ref<string>("")
+const refDibujado = ref<string>('')
 function Dibujar() {
   if (!scoreContainer.value) return
   scoreContainer.value.innerHTML = ''
@@ -48,8 +51,7 @@ function Dibujar() {
   const context = renderer.getContext()
   context.setFillStyle('#a9a8f6')
   context.setStrokeStyle('#a9a8f6')
-  refDibujado.value = "normal"
-  
+  refDibujado.value = 'normal'
 
   let x = 0
   for (const pentagrama of props.renglon.pentagramas) {
