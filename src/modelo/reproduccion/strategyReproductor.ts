@@ -106,7 +106,7 @@ export class StrategyReproductor {
     this.reproductor.SetEstado('cargando-cancion')
     const cancionObtenida = await CancionManager.getInstance().Get(cancion)
     this.reproductor.cancion = cancionObtenida
-    this.reproductor.compas = 0
+    this.reproductor.compas = -1
     this.reproductor.SetEstado('pausado')
     this.reproductor.origenCancion = cancion
   }

@@ -73,7 +73,7 @@ export class Reproductor {
     new Acordes([], []),
     new Letra([]),
   )
-  compas: number = -1
+  compas: number = 0
   golpeDelCompas: number = 0 // Valor inicial predeterminado
   constructor() {
     this.cancion.archivo = ''
@@ -129,7 +129,7 @@ export class Reproductor {
       appStore.estadosApp.texto = 'Cargando Midis...'
     }
     this.cancion = cancionObtenida
-    this.compas = 0
+    this.compas = -1
     appStore.estadosApp.estado = 'ok'
     appStore.origenCancion = origen
   }

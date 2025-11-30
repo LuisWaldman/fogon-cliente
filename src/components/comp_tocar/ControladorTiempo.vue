@@ -9,7 +9,7 @@ import type { Cancion } from '../../modelo/cancion/cancion'
 const appStore = useAppStore()
 
 const tiempo = new Tiempo()
-const currentCompas = ref(0)
+const currentCompas = ref(-1)
 const tiempoActual = ref('--:--')
 const showPlaylist = ref(false)
 const props = defineProps<{
@@ -142,7 +142,7 @@ function arreglartexto(texto: string): string {
     </div>
     <input
       type="range"
-      min="-1"
+      min="0"
       :max="props.cancion?.totalCompases"
       v-model="currentCompas"
       @input="updateCompas()"
