@@ -40,7 +40,7 @@ watch(
 )
 
 function play() {
-  appStore.aplicacion.play()
+  appStore.aplicacion.reproductor.iniciarReproduccion()
 }
 
 function next() {
@@ -48,16 +48,18 @@ function next() {
 }
 
 function pause() {
-  appStore.aplicacion.pause()
+  appStore.aplicacion.reproductor.detenerReproduccion()
 }
 
 function stop() {
-  appStore.aplicacion.stop()
+  appStore.aplicacion.reproductor.detenerReproduccion()
+  appStore.aplicacion.reproductor.updateCompas(0)
 }
 
 function updateCompas() {
   const toStr = currentCompas.value.toString()
-  appStore.aplicacion.updateCompas(parseInt(toStr) + 1)
+  appStore.aplicacion.reproductor.SetEstado('updateCompas')
+  appStore.aplicacion.reproductor.updateCompas(parseInt(toStr) + 1)
 }
 
 function togglePlaylist() {
@@ -114,7 +116,8 @@ function arreglartexto(texto: string): string {
       <div
         class="boton_controllerplay"
         @click="play"
-        v-if="appStore.estadosApp.estadoReproduccion === 'pausado'"
+        v-if="appStore.estadosApp.estadoReproduccion === 'pausado' ||
+          appStore.estadosApp.estadoReproduccion === 'compas-actalizado'"
       >
         ▶️
       </div>

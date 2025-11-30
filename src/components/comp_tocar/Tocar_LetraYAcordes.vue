@@ -8,7 +8,6 @@ import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAc
 const props = defineProps<{
   compas: number
   cancion: Cancion
-  estadoReproduccion: string
 }>()
 const scrollTop = ref(0)
 const pantalla = new Pantalla()

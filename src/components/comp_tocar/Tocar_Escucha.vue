@@ -232,7 +232,7 @@ const detectFrequency = () => {
   const appStore = useAppStore()
   if (refTodosLosAcordes.value.length > props.compas + 1) {
     if (refTodosLosAcordes.value[props.compas + 1] === EscuchandoAcorde.value) {
-      appStore.aplicacion.updateCompas(props.compas + 1)
+      appStore.aplicacion.reproductor.updateCompas(props.compas + 1)
     }
   }
 

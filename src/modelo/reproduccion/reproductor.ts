@@ -24,10 +24,10 @@ export class Reproductor {
     )
   }
   SetEstado(estado: string) {
-    EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)
-    if (estado === 'pausado') {
+    if (estado === 'pausado' && this.estadoReproductor == 'Reproduciendo') {
       this.MediaVista?.Pausar?.()
     }
+    EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)
   }
 
   setMediaVista(mediaVista: MediaVista): void {

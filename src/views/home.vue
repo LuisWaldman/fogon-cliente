@@ -288,7 +288,7 @@ function borrarLista() {
 
 async function AgregarALista(index: number, listaseleccionada: string) {
   if (listaseleccionada === 'actual') {
-    appStore.aplicacion.ClickAgregarAListaReproduccion(
+    appStore.aplicacion.reproductor.AgregarAListaReproduccion(
       viendoCanciones.value[index],
     )
     return
