@@ -1,13 +1,15 @@
 import { useAppStore } from '../../stores/appStore'
-import { CancionManager } from '../cancion/CancionManager'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 
 export class ListaReproduccion {
+  GetCancion(): ItemIndiceCancion {
+    const appStore = useAppStore()
+    return appStore.listaReproduccion[appStore.nroCancion]
+  }
   async ClickTocarLista(lista: ItemIndiceCancion[]) {
     const appStore = useAppStore()
     appStore.listaReproduccion = lista
     appStore.nroCancion = 0
-    return this.CargarCancion(appStore.listaReproduccion[appStore.nroCancion])
   }
   async InsertarEnListaReproduccion(cancion: ItemIndiceCancion) {
     const appStore = useAppStore()
@@ -31,25 +33,12 @@ export class ListaReproduccion {
     appStore.listaReproduccion = nuevaLista
   }
 
-  async CargarCancion(cancion: ItemIndiceCancion) {
-    const appStore = useAppStore()
-    const cancionObtenida = await CancionManager.getInstance().Get(
-      ItemIndiceCancion.GetOrigen(cancion),
-    )
-    appStore.cancion = cancionObtenida
-    appStore.compas = 0
-    appStore.estadosApp.estado = 'ok'
-    appStore.origenCancion = ItemIndiceCancion.GetOrigen(cancion)
-  }
-
   async ClickCancion(cancion: ItemIndiceCancion) {
     await this.InsertarEnListaReproduccion(cancion)
-    await this.CargarCancion(cancion)
   }
   async ClickCancionNro(nro: number) {
     const appStore = useAppStore()
     appStore.nroCancion = nro
-    await this.CargarCancion(appStore.listaReproduccion[nro])
   }
 
   Agregar(item: ItemIndiceCancion) {

@@ -5,6 +5,7 @@ import { ref, onMounted, computed } from 'vue'
 import { Configuracion } from '../../modelo/configuracion'
 import { datosLogin } from '../../modelo/datosLogin'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
+import { Logger } from '../../modelo/logger'
 
 const refInstrumentos = ref<InstrumentoMidi[]>(
   InstrumentoMidi.GetInstrumentos(),
@@ -207,8 +208,9 @@ function loginWithCredentials() {
       config.guardarEnLocalStorage()
     })
     .catch((error) => {
-      appStore.errores.push(
-        new Error(`Error al crear el login seguro: ${error}`),
+      Logger.logError(
+        'Login',
+        error instanceof Error ? error.message : String(error),
       )
       appStore.estadosApp.estadoLogin = 'error'
     })

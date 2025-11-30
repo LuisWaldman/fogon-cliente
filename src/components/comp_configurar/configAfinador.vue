@@ -4,6 +4,7 @@ import { MicHelper } from './micHelper'
 import { NotaAfinar } from './notaAfinar'
 import circulo from './circulo.vue'
 import selectEscala from '../SelectEscala.vue'
+import { Logger } from '../../modelo/logger'
 
 const tipoAfinacion = ref(440) // 440 Hz por defecto
 const cantidadNotas = ref(12) // Cantidad de notas en la afinación
@@ -143,10 +144,7 @@ micHelper
     }
   })
   .catch((error) => {
-    console.error('Error al obtener el estado del micrófono:', error)
-    useAppStore().errores.push(
-      new Error(`Error al obtener el estado del micrófono: ${error}`),
-    )
+    Logger.logError('ESTADO MICRÓFONO', `${error}`)
     refMicEstado.value = 'Error'
   })
 const escuchando = ref(false)
@@ -164,10 +162,7 @@ function Solicitar() {
       detectarFrecuencia()
     })
     .catch((error) => {
-      console.error('Error al solicitar permiso del micrófono:', error)
-      useAppStore().errores.push(
-        new Error(`Error al solicitar permiso del micrófono: ${error}`),
-      )
+      Logger.logError('SOLICITAR MICRÓFONO', `${error}`)
       refMicEstado.value = 'Error'
     })
 }
@@ -211,7 +206,7 @@ function clickMidi() {
 }
 
 function iniciarMidi() {
-  console.log('Cargar MIDI')
+  Logger.log('Cargar MIDI')
   midiPlayer = new MidiPlayer()
   fetch('InstrumentosMIDI/' + instrumento.value)
     .then((response) => response.json())
@@ -223,10 +218,10 @@ function iniciarMidi() {
     })
     .catch((error) => {
       console.error('Error loading samples:', error)
-      useAppStore().errores.push(new Error(`Error loading samples: ${error}`))
+      Logger.logError('Cargando MIDI', `${error}`)
       CargandoMidi.value = false
     })
-  console.log('MIDI Inicializado')
+  Logger.log('MIDI Inicializado')
 }
 
 function ActualizarInstrumentoMidi() {

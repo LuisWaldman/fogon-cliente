@@ -5,21 +5,26 @@ import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { OrigenCancion } from '../cancion/origencancion'
 import type { ClienteSocket } from '../conexion/ClienteSocket'
 import { ListaReproduccion } from './listareproduccion'
+import type { Reproductor } from './reproductor'
 
 export class ListaReproduccionConectada extends ListaReproduccion {
   cliente: ClienteSocket
   token: string
+  reproductor: Reproductor
 
-  constructor(cliente: ClienteSocket, token: string) {
+  constructor(cliente: ClienteSocket, token: string, reproductor: Reproductor) {
     super()
     this.cliente = cliente
     this.token = token
+    this.reproductor = reproductor
     this.cliente.setListacambiadaHandler(async () => {
       await this.CargarLista()
-      this.CargarNroCancionActual()
+      await this.CargarNroCancionActual()
+      this.reproductor.listaActualizada()
     })
     this.cliente.setNrocambiadoHandler(async () => {
-      this.CargarNroCancionActual()
+      await this.CargarNroCancionActual()
+      this.reproductor.listaActualizada()
     })
     this.CargarLista().then(() => {
       this.CargarNroCancionActual()
@@ -30,21 +35,6 @@ export class ListaReproduccionConectada extends ListaReproduccion {
     const nroCancion = await response.json()
     const appStore = useAppStore()
     appStore.nroCancion = nroCancion.nroCancion
-    this.CargarCancion(appStore.listaReproduccion[appStore.nroCancion])
-  }
-
-  override async CargarCancion(cancion: ItemIndiceCancion) {
-    const appStore = useAppStore()
-    if (appStore.rolSesion != 'director') {
-      appStore.estadosApp.texto = 'Esperando que el director envie la cancion'
-    } else {
-      appStore.estadosApp.texto = 'Obteniendo cancion para enviar...'
-      const cancionObtenida = await CancionManager.getInstance().Get(
-        ItemIndiceCancion.GetOrigen(cancion),
-      )
-      appStore.estadosApp.texto = 'Enviando cancion...'
-      this.EnviarCancion(cancionObtenida)
-    }
   }
 
   async EnviarCancion(cancion: Cancion) {
@@ -61,7 +51,6 @@ export class ListaReproduccionConectada extends ListaReproduccion {
 
   override async ClickTocarLista(lista: ItemIndiceCancion[]) {
     await this.cliente.HTTPPost('listasesion', lista)
-    return this.CargarCancion(lista[0])
   }
   override async InsertarEnListaReproduccion(cancion: ItemIndiceCancion) {
     await this.cliente.HTTPPost('tocar', cancion)
@@ -69,12 +58,9 @@ export class ListaReproduccionConectada extends ListaReproduccion {
 
   override async ClickCancion(cancion: ItemIndiceCancion) {
     await this.InsertarEnListaReproduccion(cancion)
-    await this.CargarCancion(cancion)
   }
   async ClickCancionNro(nro: number) {
     await this.cliente.HTTPPost('tocarnro', { Numero: nro })
-    const appStore = useAppStore()
-    return this.CargarCancion(appStore.listaReproduccion[nro])
   }
 
   async Agregar(item: ItemIndiceCancion) {

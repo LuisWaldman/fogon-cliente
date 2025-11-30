@@ -9,7 +9,7 @@ import configAcercaDe from '../components/comp_configurar/configAcercaDe.vue'
 import configBienvenida from '../components/comp_configurar/configBienvenida.vue'
 import configErrores from '../components/comp_configurar/configErrores.vue'
 
-import verRelojes from '../components/comp_configurar/verRelojes.vue'
+import configRelojes from '../components/comp_configurar/configRelojes.vue'
 import { useAppStore } from '../stores/appStore'
 import ConfigAfinador from '../components/comp_configurar/configAfinador.vue'
 import { Configuracion } from '../modelo/configuracion'
@@ -246,7 +246,7 @@ function clickMas(masmenos: string) {
         <configAcercaDe v-if="viendo == 'acercade'"></configAcercaDe>
         <configBienvenida v-if="viendo == 'bienvenida'"></configBienvenida>
         <ConfigAfinador v-if="viendo == 'afinar'"></ConfigAfinador>
-        <verRelojes v-if="viendo == 'relojes'"></verRelojes>
+        <configRelojes v-if="viendo == 'relojes'"></configRelojes>
         <configErrores v-if="viendo == 'errores'"></configErrores>
       </div>
     </div>

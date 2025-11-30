@@ -268,7 +268,7 @@ function borrarLista() {
         .listasServerManager?.BorrarLista(viendoLista.value)
         .then(() => {
           appStore.listasEnServer = appStore.listasEnServer.filter(
-            (lista) => lista !== viendoLista.value,
+            (lista: string) => lista !== viendoLista.value,
           )
           viendoListas.value = appStore.listasEnServer
           viendoLista.value = ''

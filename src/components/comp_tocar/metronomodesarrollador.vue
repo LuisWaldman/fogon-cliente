@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { watch } from 'vue'
-
+import { Logger } from '../../modelo/logger'
+const props = defineProps<{
+  golpeEnCompas: number
+  cancion: Cancion
+  estadoReproduccion: string
+}>()
 let midiPlayer = new MidiPlayer()
-import { useAppStore } from '../../stores/appStore'
 import { MidiPlayer } from '../../modelo/midi/MidiPlayer'
-const appStore = useAppStore()
+import type { Cancion } from '../../modelo/cancion/cancion'
 const midiCargado = ref(false)
 let sonidoxgolpe = ref([1, 1, 1, 1, 1, 1, 1, 1, 1])
 const instrumentosBateria = [
@@ -26,7 +30,7 @@ function iniciar() {
     midiCargado.value = false
     return
   }
-  console.log('Cargar')
+  Logger.log('Cargar')
   midiPlayer = new MidiPlayer()
   fetch('InstrumentosMIDI/bateria.json')
     .then((response) => response.json())
@@ -38,7 +42,7 @@ function iniciar() {
     .catch((error) => {
       console.error('Error loading samples:', error)
     })
-  console.log('Iniciar')
+  Logger.log('Iniciar')
 }
 
 function tocar() {
@@ -47,14 +51,14 @@ function tocar() {
   }
 
   const note =
-    instrumentosBateria[sonidoxgolpe.value[appStore.golpeDelCompas + 1]].nota
+    instrumentosBateria[sonidoxgolpe.value[props.golpeEnCompas + 1]].nota
   if (note != '') {
     midiPlayer.tocarysoltar(note, 0.05, 0)
   }
 }
 
 watch(
-  () => appStore.golpeDelCompas,
+  () => props.golpeEnCompas,
   (newVal, oldVal) => {
     if (newVal !== oldVal) {
       tocar()
@@ -68,20 +72,19 @@ function cambiar(id: number, idx: number = 0) {
 </script>
 
 <template>
-  <div class="divPrevia" v-if="appStore.estadoReproduccion == 'Iniciando'">
-    Empieza en {{ appStore.cancion.compasCantidad - appStore.golpeDelCompas }}
+  <div class="divPrevia" v-if="estadoReproduccion == 'Iniciando'">
+    Empieza en {{ cancion.compasCantidad - golpeEnCompas }}
   </div>
-  <div v-if="appStore.cancion">
+  <div v-if="cancion">
     <div class="metronono">
       <div style="display: flex">
         <div
-          v-for="n in appStore.cancion.compasCantidad * 1"
+          v-for="n in cancion.compasCantidad * 1"
           :key="n"
           class="beat"
           :class="{
             beat_activo:
-              n - 1 === appStore.golpeDelCompas &&
-              appStore.estadoReproduccion === 'Reproduciendo',
+              n - 1 === golpeEnCompas && estadoReproduccion === 'Reproduciendo',
           }"
         >
           <span v-if="!midiCargado"> {{ n }}</span>

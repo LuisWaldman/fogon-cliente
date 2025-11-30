@@ -1,6 +1,7 @@
 import * as Tone from 'tone'
 import type { MidiSecuencia } from './MidiSecuencia'
 import { InstrumentosManager } from './InstrumentosManager'
+import { Logger } from '../logger'
 
 export class MidiPlayer {
   compasUnidad: number = 4
@@ -33,7 +34,7 @@ export class MidiPlayer {
 
   public setInstrument(samples: { [note: string]: string }): void {
     this.instrument = new Tone.Sampler(samples).toDestination()
-    console.log('Instrumento MIDI configurado')
+    Logger.log('Instrumento MIDI configurado')
   }
 
   // Nuevo: Método para configurar el volumen de un instrumento específico
@@ -106,7 +107,7 @@ export class MidiPlayer {
     }, secuencia.notas).start(0)
 
     this.part.loop = false
-    console.log('Secuencia cargada')
+    Logger.log('Secuencia cargada')
   }
 
   // ▶️ Control de reproducción

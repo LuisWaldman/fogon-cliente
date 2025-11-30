@@ -9,6 +9,7 @@ import { CancionIndexedDBManager } from './CancionIndexedDBManager'
 import { CancionSubidasManager } from './CancionSubidasUrlManager'
 import { CancionFogonManager } from './CancionFogonManager'
 import { ListasServerManager } from './ListasServerManager'
+import { Logger } from '../logger'
 
 export class CancionManager {
   private static instance: CancionManager
@@ -59,7 +60,7 @@ export class CancionManager {
     this.getDBConnection()
       .then((database) => {
         this.db = database
-        console.log('Conexión a IndexedDB establecida')
+        Logger.log('Conexión a IndexedDB establecida')
       })
       .catch((error) => {
         console.error('Error al conectar a IndexedDB:', error)
@@ -91,7 +92,7 @@ export class CancionManager {
       }
       return CancionIndexedDBManager.GetCancion(origencancion, this.db)
     }
-    console.log('Recuperando canción desde URL:', origencancion.origenUrl)
+    Logger.log('Recuperando canción desde URL:', origencancion.origenUrl)
     if (origencancion.origenUrl === 'server') {
       return CancionServerManager.GetCancion(origencancion, this.cliente)
     }
@@ -123,7 +124,7 @@ export class CancionManager {
 
     const item = ItemIndiceCancion.BuildFromCancion(cancion, origen)
     const ultimas = new UltimasCanciones()
-    console.log('Guardando en ultimas', item)
+    Logger.log('Guardando en ultimas', item)
     ultimas.agregar(item)
   }
 

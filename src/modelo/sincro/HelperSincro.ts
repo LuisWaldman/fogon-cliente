@@ -5,6 +5,7 @@ import { DelayCalculador } from './DelayCalculador'
 import { DelaySet } from './DelaySet'
 import { ClienteWebRTC } from '../conexion/ClienteWebRTC'
 import type { SDPStruct } from '../conexion/SDPStruct'
+import { Logger } from '../logger'
 
 export class HelperSincro {
   GetDetalleCalculo(): DelaySet[] {
@@ -97,7 +98,7 @@ export class HelperSincro {
       this.IniciarActualizacionRTC(sdp)
     })
     this.clienteRTC.GetSDP().then((sdp) => {
-      console.log('SDP generado, enviando al servidor...', sdp)
+      Logger.log('SDP generado, enviando al servidor...', sdp)
       this.cliente?.HTTPPost('webrtc', { sdp: sdp })
     })
     this.SetClienteRTC()
@@ -146,7 +147,7 @@ export class HelperSincro {
     this.clienteRTC?.setOnReiniciarHandler(() => {
       this.clienteRTC = new ClienteWebRTC()
       this.clienteRTC.GetSDP().then((sdp) => {
-        console.log('SDP generado, enviando al servidor...', sdp)
+        Logger.log('SDP generado, enviando al servidor...', sdp)
         this.cliente?.HTTPPost('updatertc', { sdp: sdp })
       })
       this.SetClienteRTC()

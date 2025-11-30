@@ -20,25 +20,37 @@ import { Pantalla } from '../modelo/pantalla'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { VistaTocar } from '../modelo/configuracion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
+import type { Cancion } from '../modelo/cancion/cancion'
+import { Logger } from '../modelo/logger'
 
+const viendoVideo = ref(false)
 const pantalla = new Pantalla()
+const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
+
 const appStore = useAppStore()
+const compas = ref(appStore.aplicacion.reproductor.compas)
+const golpeDelCompas = ref(appStore.aplicacion.reproductor.golpeDelCompas)
+const cancion = ref<Cancion>(appStore.aplicacion.reproductor.cancion)
 
 // requestAnimationFrame loop control
 let rafId: number | null = null
-
-async function startRafLoop() {
+const estadoReproduccion = ref(appStore.estadosApp.estadoReproduccion)
+async function EmpezarLoop() {
   // reset counter when starting
   const loop = async () => {
     // stop if state changed
     if (
-      appStore.estadoReproduccion !== 'Reproduciendo' &&
-      appStore.estadoReproduccion !== 'Iniciando'
+      appStore.estadosApp.estadoReproduccion !== 'Reproduciendo' &&
+      appStore.estadosApp.estadoReproduccion !== 'Iniciando'
     ) {
       rafId = null
       return
     }
     await appStore.aplicacion.sincronizar()
+    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
+    compas.value = appStore.aplicacion.reproductor.compas
+    golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
+    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
     rafId = requestAnimationFrame(loop)
   }
   // avoid multiple loops
@@ -47,46 +59,63 @@ async function startRafLoop() {
   }
 }
 
-function stopRafLoop() {
+function PararLoop() {
   if (rafId != null) {
     cancelAnimationFrame(rafId)
     rafId = null
   }
 }
-
+const cargando = ref(false)
 function VerEstado() {
   if (
-    appStore.estadoReproduccion === 'Reproduciendo' ||
-    appStore.estadoReproduccion === 'Iniciando'
+    appStore.estadosApp.estadoReproduccion.startsWith('cargando') ||
+    appStore.estadosApp.estadoReproduccion === 'sin-cancion'
   ) {
-    startRafLoop()
+    cargando.value = true
+    return
+  }
+
+  cancion.value = appStore.aplicacion.reproductor.cancion
+  setviendoVideo()
+  cargando.value = false
+
+  if (
+    appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
+    appStore.estadosApp.estadoReproduccion === 'Iniciando'
+  ) {
+    EmpezarLoop()
   } else {
-    stopRafLoop()
+    PararLoop()
   }
 }
 VerEstado()
 // Watch for changes in playback state and start/stop RAF loop
 watch(
-  () => appStore.estadoReproduccion,
+  () => appStore.estadosApp.estadoReproduccion,
   () => {
     VerEstado()
   },
 )
 
 onUnmounted(() => {
-  stopRafLoop()
+  PararLoop()
 })
-
-const vista: Ref<VistaTocar> = ref(pantalla.getConfiguracionPantalla())
 
 onMounted(() => {
   pantalla.setearEstilos()
   vista.value = pantalla.getConfiguracionPantalla()
+  const urlParams = new URLSearchParams(window.location.search)
+  const CancionUrl = urlParams.get('cancion')
+  const UsuarioUrl = urlParams.get('usuario')
+  if (CancionUrl) {
+    const origen = OrigenCancion.GetFromQuery(CancionUrl, UsuarioUrl)
+    appStore.aplicacion.reproductor.CargarCancion(origen)
+  }
 })
 
 function SolicitarCalibracion() {
   appStore.origenCancion.origenUrl = 'server'
-  appStore.cancion.calidad = -1
+  cancion.value.calidad = -1
   CancionManager.getInstance()
     .Save(
       new OrigenCancion(
@@ -94,18 +123,19 @@ function SolicitarCalibracion() {
         appStore.origenCancion.fileName,
         appStore.perfil.usuario,
       ),
-      appStore.cancion,
+      cancion.value,
     )
     .catch((error) => {
-      console.error('Error al guardar los cambios:', error)
+      Logger.logError('Error al solicitar calibración', error)
     })
 }
-function viendoVideo(): boolean {
+
+function getviendoVideo() {
   if (vista.value.reproduce == 'nada') {
     return false
   }
   if (vista.value.reproduce == 'video') {
-    if (appStore.cancion.medias.length == 0) {
+    if (cancion.value.medias.length == 0) {
       return false
     }
     if (
@@ -117,14 +147,15 @@ function viendoVideo(): boolean {
   }
   return (
     vista.value.reproduce === 'video' ||
-    (vista.value.reproduce === 'midi' &&
-      appStore.cancion.pentagramas.length > 0)
+    (vista.value.reproduce === 'midi' && cancion.value.pentagramas.length > 0)
   )
 }
-
+function setviendoVideo() {
+  viendoVideo.value = getviendoVideo()
+}
 function viendoSecundaria(): boolean {
   return (
-    viendoVideo() ||
+    viendoVideo.value ||
     vista.value.viendoCuadrado ||
     vista.value.viendoInstrucciones ||
     vista.value.viendoSecuencia
@@ -159,7 +190,7 @@ function estiloVistaPrincipal() {
     ancho = 100
     height = vista.value.anchoPrincipal
   }
-  console.log('estiloVistaPrincipal', ancho, height, display)
+
   return `width: ${ancho}%; height: ${height}%; display: ${display};`
 }
 
@@ -191,7 +222,7 @@ function estiloVistaTerciaria() {
   return `width: ${ancho}%;`
 }
 function GetStyleOverlay() {
-  if (!viendoVideo()) {
+  if (!viendoVideo.value) {
     return `top: 0px;`
   }
   return `top: ${vista.value.altoReproductor}px;`
@@ -210,7 +241,7 @@ function clickCerrarMedios() {
 }
 
 function cambioestado(estado: number) {
-  console.log('Cambio de estado en tocar.vue', estado)
+  Logger.log('Cambio de estado en tocar.vue', estado)
   appStore.aplicacion.CambioEstadoMedio(estado)
 }
 
@@ -219,7 +250,7 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
 </script>
 
 <template>
-  <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
+  <div style="text-align: center" v-if="cargando">
     <img
       src="/img/iconogrande.png"
       style="width: 300px; height: auto"
@@ -229,17 +260,13 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
     <div>{{ appStore.estadosApp.texto }}</div>
   </div>
 
-  <div class="tocar-fluid" v-if="appStore.estadosApp.estado === 'ok'">
+  <div class="tocar-fluid" v-if="cargando == false">
     <sincronizarMedias
       v-if="refSincronizandoMedios"
       @cerrar="clickCerrarMedios"
     ></sincronizarMedias>
 
-    <div
-      class="pantallaPlay"
-      :style="GetStylePantallaPlay()"
-      v-if="appStore.cancion"
-    >
+    <div class="pantallaPlay" :style="GetStylePantallaPlay()" v-if="cancion">
       <div
         class="columnas lateral-container"
         :style="estiloVistaTerciaria()"
@@ -247,21 +274,21 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
       >
         <Secuencia
           v-if="vista.viendoSecuencia3"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
+          :cancion="cancion"
+          :compas="compas"
         ></Secuencia>
 
         <InstruccionesAcordes
           v-if="vista.viendoInstrucciones3"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
+          :cancion="cancion"
+          :compas="compas"
           :viendoInstrucciones="viendoInstrucciones"
         ></InstruccionesAcordes>
 
         <TocarCuadrado
           v-if="vista.viendoCuadrado3"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
+          :cancion="cancion"
+          :compas="compas"
         ></TocarCuadrado>
       </div>
 
@@ -269,8 +296,7 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
         <div
           class="error"
           v-if="
-            appStore.cancion.pentagramas.length === 0 &&
-            vista.muestra == 'partitura'
+            cancion.pentagramas.length === 0 && vista.muestra == 'partitura'
           "
         >
           No hay partituras
@@ -281,16 +307,16 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
             vista.muestra == 'karaoke' &&
             vista.reproduce == 'video' &&
             refAdvertencia &&
-            appStore.cancion.calidad != undefined &&
-            appStore.cancion.calidad < 1
+            cancion.calidad != undefined &&
+            cancion.calidad < 1
           "
         >
-          <span v-if="appStore.cancion.calidad == -1">♻️ Recalibrando.</span>
+          <span v-if="cancion.calidad == -1">♻️ Recalibrando.</span>
           <span @click="refAdvertencia = false"
             >Texto No Calibrados. Corregilos desde: ✍️ Editar </span
           ><button
             v-if="
-              appStore.cancion.calidad > -1 &&
+              cancion.calidad > -1 &&
               appStore.estadosApp.estadoLogin === 'logueado'
             "
             @click="SolicitarCalibracion()"
@@ -304,15 +330,15 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
           v-if="
             refAdvertencia &&
             vista.reproduce == 'video' &&
-            appStore.cancion.calidad != undefined &&
-            appStore.cancion.calidad < 2 &&
+            cancion.calidad != undefined &&
+            cancion.calidad < 2 &&
             (vista.muestra == 'letrayacordes' || vista.muestra == 'acordes')
           "
         >
           Acordes No Calibrados. Corregilos desde: ✍️ Editar
           <button
             v-if="
-              appStore.cancion.calidad > -1 &&
+              cancion.calidad > -1 &&
               appStore.estadosApp.estadoLogin === 'logueado'
             "
             @click="SolicitarCalibracion()"
@@ -323,50 +349,46 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
         <TocarLetraAcorde
           v-if="
             vista.muestra == 'letrayacordes' ||
-            (appStore.cancion.pentagramas.length === 0 &&
-              vista.muestra == 'partitura')
+            (cancion.pentagramas.length === 0 && vista.muestra == 'partitura')
           "
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
+          :cancion="cancion"
+          :compas="compas"
         ></TocarLetraAcorde>
         <TocarCuadrado
           v-if="vista.muestra == 'cuadrado'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
+          :cancion="cancion"
+          :compas="compas"
         ></TocarCuadrado>
         <TocarLetra
           v-if="vista.muestra == 'karaoke'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
+          :cancion="cancion"
+          :compas="compas"
         ></TocarLetra>
         <TocarAcorde
           v-if="vista.muestra == 'acordes'"
-          :cancion="appStore.cancion"
-          :compas="appStore.compas"
+          :cancion="cancion"
+          :compas="compas"
         ></TocarAcorde>
         <TocarPentagrama
-          v-if="
-            vista.muestra == 'partitura' &&
-            appStore.cancion.pentagramas.length > 0
-          "
-          :cancion="appStore.cancion"
+          v-if="vista.muestra == 'partitura' && cancion.pentagramas.length > 0"
+          :cancion="cancion"
           :editando="false"
-          :compas="appStore.compas"
+          :compas="compas"
         ></TocarPentagrama>
       </div>
       <div class="columnas lateral-container" :style="estiloVistaSecundaria()">
-        <div v-if="viendoVideo()">
+        <div v-if="viendoVideo">
           <TocarYoutube
             v-if="vista.reproduce == 'video'"
             @cambioEstado="cambioestado"
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
+            :cancion="cancion"
+            :compas="compas"
           ></TocarYoutube>
           <TocarMidi
             v-if="vista.reproduce == 'midi'"
             @cambioEstado="cambioestado"
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
+            :cancion="cancion"
+            :compas="compas"
           ></TocarMidi>
         </div>
 
@@ -374,34 +396,48 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
           <div class="secuencia" :style="GetStyleSecuencia()">
             <Secuencia
               v-if="vista.viendoSecuencia"
-              :cancion="appStore.cancion"
-              :compas="appStore.compas"
+              :cancion="cancion"
+              :compas="compas"
             ></Secuencia>
           </div>
 
           <InstruccionesAcordes
             v-if="vista.viendoInstrucciones"
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
+            :cancion="cancion"
+            :compas="compas"
             :viendoInstrucciones="viendoInstrucciones"
           ></InstruccionesAcordes>
           <TocarCuadrado
             v-if="vista.viendoCuadrado"
-            :cancion="appStore.cancion"
-            :compas="appStore.compas"
+            :cancion="cancion"
+            :compas="compas"
           ></TocarCuadrado>
         </div>
       </div>
     </div>
 
     <div class="controladoresTiempo">
-      <ControladorTiempo> </ControladorTiempo>
+      <ControladorTiempo
+        :golpeEnCompas="golpeDelCompas"
+        :cancion="cancion"
+        :estadoReproduccion="estadoReproduccion"
+        :compas="compas"
+      >
+      </ControladorTiempo>
 
       <MetronomoDesarrollador
         ref="metronomeRef"
+        :golpeEnCompas="golpeDelCompas"
+        :cancion="cancion"
+        :estadoReproduccion="estadoReproduccion"
         v-if="appStore.perfil.ModoDesarrollador"
       ></MetronomoDesarrollador>
-      <Metronomo v-else></Metronomo>
+      <Metronomo
+        v-else
+        :cancion="cancion"
+        :estadoReproduccion="estadoReproduccion"
+        :golpeEnCompas="golpeDelCompas"
+      ></Metronomo>
     </div>
   </div>
 </template>

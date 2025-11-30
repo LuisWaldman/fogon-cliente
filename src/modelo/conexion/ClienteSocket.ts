@@ -2,6 +2,7 @@ import { io, Socket } from 'socket.io-client'
 import type { datosLogin } from '../datosLogin'
 import type { ObjetoPosteable } from '../objetoPosteable'
 import type { Servidor } from '../servidor'
+import { Logger } from '../logger'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
@@ -12,13 +13,13 @@ interface ServerToClientEvents {
   sesionFailed: (error: string) => void
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: string) => void
-  cancionActualizada: () => void
-  listacambiada: () => void
+  cancionActualizada: (nroUsuario: number) => void
+  listacambiada: (nroUsuario: number) => void
   nrocambiado: () => void
-  cancionIniciada: (compas: number, desde: number) => void
+  cancionIniciada: (compas: number, desde: number, nroUsuario: number) => void
   cancionSincronizada: (compas: number, desde: number) => void
-  cancionDetenida: () => void
-  compasActualizado: (compas: number) => void
+  cancionCambioEstado: (estado: string, nroUsuario: number) => void
+  compasActualizado: (compas: number, nroUsuario: number) => void
   sesionesActualizadas: () => void
   actualizarusuarios: () => void
   time: (hora: number) => void
@@ -30,7 +31,7 @@ interface ServerToClientEvents {
 interface ClientToServerEvents {
   iniciarReproduccion(compas: number, delayms: number): void
   sincronizarReproduccion(compas: number, delayms: number): void
-  detenerReproduccion: () => void
+  cambiarEstado: (estado: string) => void
   actualizarCompas: (compas: number) => void
   login: (modo: string, usuario: string, password: string) => void
   unirmesesion(sesion: string): void
@@ -70,8 +71,10 @@ export class ClienteSocket {
   public setAnswerRTCHandler(handler: (SDP: string) => void): void {
     this.answerRTCHandler = handler
   }
-  private cancionActualizadaHandler?: () => void
-  public setCancionActualizadaHandler(handler: () => void): void {
+  private cancionActualizadaHandler?: (nroUsuario: number) => void
+  public setCancionActualizadaHandler(
+    handler: (nroUsuario: number) => void,
+  ): void {
     this.cancionActualizadaHandler = handler
   }
 
@@ -79,9 +82,9 @@ export class ClienteSocket {
   public setconexionStatusHandler(handler: (status: string) => void): void {
     this.conexionStatusHandler = handler
   }
-  private ensesionHandler?: (sesion: string) => void
+  private enSesionHandler?: (sesion: string) => void
   public setEnsesionHandler(handler: (sesion: string) => void): void {
-    this.ensesionHandler = handler
+    this.enSesionHandler = handler
   }
 
   private sesionFailedHandler?: (error: string) => void
@@ -99,9 +102,13 @@ export class ClienteSocket {
     this.mensajesesionHandler = handler
   }
 
-  private cancionIniciadaHandler?: (compas: number, desde: number) => void
+  private cancionIniciadaHandler?: (
+    compas: number,
+    desde: number,
+    nroUsuario: number,
+  ) => void
   public setCancionIniciadaHandler(
-    handler: (compas: number, desde: number) => void,
+    handler: (compas: number, desde: number, nroUsuario: number) => void,
   ): void {
     this.cancionIniciadaHandler = handler
   }
@@ -113,9 +120,14 @@ export class ClienteSocket {
     this.cancionSincronizadaHandler = handler
   }
 
-  private cancionDetenidaHandler?: () => void
-  public setCancionDetenidaHandler(handler: () => void): void {
-    this.cancionDetenidaHandler = handler
+  private cancionCambioEstadoHandler?: (
+    estado: string,
+    nroUsuario: number,
+  ) => void
+  public setCancionCambioEstadoHandler(
+    handler: (estado: string, nroUsuario: number) => void,
+  ): void {
+    this.cancionCambioEstadoHandler = handler
   }
 
   public SalirSesion(): void {
@@ -131,8 +143,13 @@ export class ClienteSocket {
     this.rolSesionHandler = handler
   }
 
-  private compasActualizadoHandler?: (compas: number) => void
-  public setCompasActualizadoHandler(handler: (compas: number) => void): void {
+  private compasActualizadoHandler?: (
+    compas: number,
+    nroUsuario: number,
+  ) => void
+  public setCompasActualizadoHandler(
+    handler: (compas: number, nroUsuario: number) => void,
+  ): void {
     this.compasActualizadoHandler = handler
   }
 
@@ -146,8 +163,8 @@ export class ClienteSocket {
     this.actualizarUsuariosHandler = handler
   }
 
-  private listacambiadaHandler?: () => void
-  public setListacambiadaHandler(handler: () => void): void {
+  private listacambiadaHandler?: (nroUsuario: number) => void
+  public setListacambiadaHandler(handler: (nroUsuario: number) => void): void {
     this.listacambiadaHandler = handler
   }
 
@@ -215,7 +232,7 @@ export class ClienteSocket {
       this.reconectando = false
       this.intentosRealizados = 0
       this.socket.disconnect()
-      console.log('socket disconnected manually')
+      Logger.log('socket disconnected manually')
     }
   }
 
@@ -237,7 +254,7 @@ export class ClienteSocket {
     )
 
     socket.on('connect', () => {
-      console.log('socket connected')
+      Logger.log('socket connected')
       this.intentosRealizados = 0 // Resetear en conexión exitosa
       this.reconectando = false
       this.conexionStatusHandler?.('conectado')
@@ -245,13 +262,9 @@ export class ClienteSocket {
 
     socket.on('connect_error', (error) => {
       this.intentosRealizados++
-      console.error(
-        `Connection error (attempt ${this.intentosRealizados}/${this.maxIntentos}):`,
-        error.message,
-      )
-
+      Logger.logError('Conectando', error.message)
       if (this.intentosRealizados >= this.maxIntentos) {
-        console.log('Máximo número de intentos alcanzado, desconectando...')
+        Logger.log('Máximo número de intentos alcanzado, desconectando...')
         socket.disconnect()
         this.conexionStatusHandler?.('error')
       } else {
@@ -275,25 +288,26 @@ export class ClienteSocket {
       this.conectadoHandler?.(data.token)
     })
 
-    socket.on('cancionActualizada', () => {
-      this.cancionActualizadaHandler?.()
+    socket.on('cancionActualizada', (nroUsuario: number) => {
+      Logger.log('cancionActualizada received with nroUsuario:', nroUsuario)
+      this.cancionActualizadaHandler?.(nroUsuario)
     })
 
     socket.on('mensajesesion', (msj: string) => {
-      console.log('mensajesesion received with mensaje:', msj)
+      Logger.log('mensajesesion received with mensaje:', msj)
       this.mensajesesionHandler?.(msj)
     })
     socket.on('rolSesion', (mensaje: string) => {
-      console.log('rolSesion received with mensaje:', mensaje)
+      Logger.log('rolSesion received with mensaje:', mensaje)
       this.rolSesionHandler?.(mensaje)
     })
     socket.on('sesionesActualizadas', () => {
-      console.log('sesionesActualizadas received')
+      Logger.log('sesionesActualizadas received')
       this.sesionesActualizadasHandler?.()
     })
 
     socket.on('loginSuccess', () => {
-      console.log('loginSuccess received')
+      Logger.log('loginSuccess received')
       this.loginSuccessHandler?.()
     })
 
@@ -302,31 +316,47 @@ export class ClienteSocket {
       this.loginFailedHandler?.(error)
     })
     socket.on('ensesion', (sesion: string) => {
-      console.log('ensesion received with sesion:', sesion)
-      this.ensesionHandler?.(sesion)
+      Logger.log('ensesion received with sesion:', sesion)
+      this.enSesionHandler?.(sesion)
     })
     socket.on('sesionFailed', (error: string) => {
       console.error('sesionFailed received with error:', error)
       this.sesionFailedHandler?.(error)
     })
 
-    socket.on('cancionIniciada', (compas: number, desde: number) => {
-      this.cancionIniciadaHandler?.(compas, desde)
-    })
+    socket.on(
+      'cancionIniciada',
+      (compas: number, desde: number, nroUsuario: number) => {
+        Logger.log(
+          'cancionIniciada received with compas:',
+          compas,
+          'desde:',
+          desde,
+          'nroUsuario:',
+          nroUsuario,
+        )
+        this.cancionIniciadaHandler?.(compas, desde, nroUsuario)
+      },
+    )
     socket.on('cancionSincronizada', (compas: number, desde: number) => {
       this.cancionSincronizadaHandler?.(compas, desde)
     })
-    socket.on('cancionDetenida', () => {
-      console.log('cancionDetenida received')
-      this.cancionDetenidaHandler?.()
+    socket.on('cancionCambioEstado', (estado: string, nroUsuario: number) => {
+      Logger.log('cancionCambioEstado received with nroUsuario:', nroUsuario)
+      this.cancionCambioEstadoHandler?.(estado, nroUsuario)
     })
     socket.on('sincronizarRTC', (usuario: number) => {
-      console.log('sincronizarRTC received with usuario:', usuario)
+      Logger.log('sincronizarRTC received with usuario:', usuario)
       this.sincronizarRTCHandler?.(usuario)
     })
-    socket.on('compasActualizado', (compas: number) => {
-      console.log('compasActualizado received with compas:', compas)
-      this.compasActualizadoHandler?.(compas)
+    socket.on('compasActualizado', (compas: number, nroUsuario: number) => {
+      Logger.log(
+        'compasActualizado received with compas:',
+        compas,
+        'nroUsuario:',
+        nroUsuario,
+      )
+      this.compasActualizadoHandler?.(compas, nroUsuario)
     })
     socket.on('sincronizar', (compas: number, delayms: number) => {
       console.log(
@@ -335,7 +365,7 @@ export class ClienteSocket {
       this.cancionSincronizadaHandler?.(compas, delayms)
     })
     socket.on('answerRTC', (SDP: string) => {
-      console.log('answerRTC received with SDP:', SDP)
+      Logger.log('answerRTC received with SDP:', SDP)
       this.answerRTCHandler?.(SDP)
     })
     socket.on('time', (hora: number) => {
@@ -343,17 +373,17 @@ export class ClienteSocket {
     })
 
     socket.on('actualizarusuarios', () => {
-      console.log('actualizarUsuarios received')
+      Logger.log('actualizarUsuarios received')
       this.actualizarUsuariosHandler?.()
     })
 
-    socket.on('listacambiada', () => {
-      console.log('listacambiada received')
-      this.listacambiadaHandler?.()
+    socket.on('listacambiada', (nroUsuario: number) => {
+      Logger.log('listacambiada received with nroUsuario:', nroUsuario)
+      this.listacambiadaHandler?.(nroUsuario)
     })
 
     socket.on('nrocambiado', () => {
-      console.log('nrocambiado received')
+      Logger.log('nrocambiado received')
       this.nrocambiadoHandler?.()
     })
 
@@ -383,8 +413,8 @@ export class ClienteSocket {
     this.socket.emit('sincronizarReproduccion', compas, delayms)
   }
 
-  public detenerReproduccion(): void {
-    this.socket.emit('detenerReproduccion')
+  public cambiarEstado(estado: string): void {
+    this.socket.emit('cambiarEstado', estado)
   }
   public actualizarCompas(compas: number): void {
     this.socket.emit('actualizarCompas', compas)

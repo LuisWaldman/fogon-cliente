@@ -9,7 +9,14 @@ export class OrigenCancion {
     this.usuario = owner
   }
 
-  public static GetFromQuery(query: string): OrigenCancion {
-    return new OrigenCancion('sitio', query, query)
+  public static GetFromQuery(
+    cancion: string,
+    usuario: string | null,
+  ): OrigenCancion {
+    if (usuario === null || usuario === undefined || usuario === '') {
+      return new OrigenCancion('sitio', cancion, '')
+    } else {
+      return new OrigenCancion('server', cancion, usuario)
+    }
   }
 }

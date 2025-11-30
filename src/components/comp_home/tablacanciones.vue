@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import type { ItemIndiceCancion } from '../../modelo/cancion/ItemIndiceCancion'
 import { Tiempo } from '../../modelo/tiempo'
 import emoticonOrigen from './emoticonOrigen.vue'
 import compartirctrl from '../compartir.vue'
 import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAcordesLatino'
+import { useAppStore } from '../../stores/appStore'
 
 const helper = HelperDisplayAcordesLatino.getInstance()
 const emit = defineEmits(['tocar', 'borrar'])
@@ -53,7 +54,12 @@ function arreglartexto(texto: string): string {
 
   return processed
 }
-
+watch(
+  () => props.cargando,
+  () => {
+    viendoDetalle.value = -1
+  },
+)
 const viendoFiltroTabla = ref(false)
 const filtroTexto = ref<string>('')
 const viendoDetalle = ref<number | null>(null)
@@ -85,16 +91,35 @@ const compartiendo = ref(false)
 function dejarDeCompartir() {
   compartiendo.value = false
 }
-function Compartir() {
+const tituloCompartir = ref('')
+const linkCompartir = ref('')
+function Compartir(cancion: ItemIndiceCancion) {
+  tituloCompartir.value =
+    arreglartexto(`${cancion.banda} - ${cancion.cancion}`) || 'Canción'
+  const masLinkServer =
+    cancion.origenUrl == 'server' ? '&usuario=' + cancion.owner : ''
+  linkCompartir.value =
+    window.location.origin +
+    '/tocar?cancion=' +
+    cancion.fileName +
+    masLinkServer
   compartiendo.value = true
 }
+const appStore = useAppStore()
+const estadoConeccion = ref(appStore.estadosApp.estadoconeccion)
+watch(
+  () => appStore.estadosApp.estadoconeccion,
+  (newValue) => {
+    estadoConeccion.value = newValue
+  },
+)
 </script>
 
 <template>
   <compartirctrl
     v-if="compartiendo"
-    :titulo="`Compartir Cancion`"
-    :link="`link de la cancion`"
+    :titulo="tituloCompartir"
+    :link="linkCompartir"
     @cerrar="dejarDeCompartir"
   />
   <table class="tabla-canciones">
@@ -147,11 +172,17 @@ function Compartir() {
             tocando: index === nroCancion && verCancionActual,
             seleccionado: index === viendoDetalle,
           }"
+          v-if="
+            !(estadoConeccion != 'conectado' && cancion.origenUrl == 'server')
+          "
         >
           <td>
             <emoticonOrigen :origen="cancion.origenUrl" />{{
               arreglartexto(cancion.banda)
             }}
+            <span v-if="cancion.origenUrl === 'server'">
+              - {{ cancion.owner }}
+            </span>
 
             <div class="textoGrande">{{ arreglartexto(cancion.cancion) }}</div>
           </td>
@@ -240,7 +271,7 @@ function Compartir() {
                   +
                 </button>
                 <template v-if="viendoOpcionesExtra === index">
-                  <button @click="Compartir">🔗 Compartir</button>
+                  <button @click="Compartir(cancion)">🔗 Compartir</button>
                   <button @click="Borrar(cancion)" v-if="verBorrar">
                     🗑️ Borrar
                   </button>

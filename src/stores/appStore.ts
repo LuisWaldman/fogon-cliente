@@ -8,35 +8,18 @@ import { Letra } from '../modelo/cancion/letra'
 import { Noticia } from '../modelo/noticia'
 import { Perfil } from '../modelo/perfil'
 import { Sesion } from '../modelo/sesion'
-import { SincroSesion } from '../modelo/sincro/SincroSesion'
-import { EstadoSincroCancion } from '../modelo/sincro/EstadoSincroCancion'
 import type { UserSesion } from '../modelo/userSesion'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { EstadosAplicacion } from '../EstadosAplicacion'
-import type { MediaVista } from '../modelo/reproduccion/MediaVista'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
 
-  const sesSincroCancion = ref<SincroSesion>(new SincroSesion(0, 0))
-  const EstadoSincro = ref<EstadoSincroCancion>(
-    new EstadoSincroCancion(-1, 0, '-', 0),
-  )
   const rolSesion = ref<string>('') // invitado, participante, admin, owner
   const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
 
-  // Estados centrales en Pinia
-  const cancion = ref<Cancion>(
-    new Cancion(
-      'Cancion no cargada',
-      'sin banda',
-      new Acordes([], []),
-      new Letra([]),
-    ),
-  )
   const listasEnServer = ref<string[]>([])
-  const MediaVista = ref<MediaVista | null>(null)
   const estadosApp = ref<EstadosAplicacion>(new EstadosAplicacion())
   const editandocancion = ref<Cancion>(
     new Cancion(
@@ -56,10 +39,7 @@ export const useAppStore = defineStore('app', () => {
   const busqueda = ref<ItemIndiceCancion[]>([])
   const nroCancion = ref<number>(0)
   const mensajes = ref<string[]>([])
-  const compas = ref<number>(-1)
-  const golpeDelCompas = ref<number>(0) // Valor inicial predeterminado
 
-  const errores = ref<Error[]>([])
   const noticias = ref<Noticia[]>([])
   const perfil = ref<Perfil>(new Perfil('', '', '', '', ''))
   const estado = ref<string>('No iniciado')
@@ -75,12 +55,6 @@ export const useAppStore = defineStore('app', () => {
     estadoConexion.value = nuevoEstado
   }
 
-  const estadoReproduccion = ref<string>('pausado') // Estados : 'Pausado', 'Inicializando', 'Reproduciendo'
-  // Método para actualizar el estado de reproducción
-  const actualizarEstadoReproduccion = (nuevoEstado: string) => {
-    estadoReproduccion.value = nuevoEstado
-  }
-
   const usuariosSesion = ref([] as UserSesion[])
   return {
     estadosApp,
@@ -89,29 +63,20 @@ export const useAppStore = defineStore('app', () => {
     origenCancion,
     listasEnServer,
     origenEditando,
-    errores,
-    MediaVistas: MediaVista,
     cancionModificada,
-    cancion,
     editandocancion,
     listaReproduccion,
-    compas,
     sesion,
     estado,
     estadoConexion,
-    sesSincroCancion,
-    EstadoSincro,
     rolSesion,
     perfil,
-    estadoReproduccion,
     nroCancion,
-    golpeDelCompas,
     noticias,
     mensajes,
     sesiones,
     busqueda,
     actualizarEstado,
     actualizarEstadoConexion,
-    actualizarEstadoReproduccion,
   }
 })

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useAppStore } from '../../stores/appStore'
 import RelojControl from './VReloj.vue'
 import { onMounted, onUnmounted, ref } from 'vue'
-import { Reloj } from '../../modelo/reloj'
 import { HelperSincro } from '../../modelo/sincro/HelperSincro'
 import type { DelaySet } from '../../modelo/sincro/DelaySet'
+import { SincroSesion } from '../../modelo/sincro/SincroSesion'
+import { EstadoSincroCancion } from '../../modelo/sincro/EstadoSincroCancion'
 
 defineProps({
   mostrarCerrar: {
@@ -13,10 +13,12 @@ defineProps({
   },
 })
 
-const emit = defineEmits(['cerrar'])
-
-const appStore = useAppStore()
 const helper = HelperSincro.getInstance()
+
+const sesSincroCancion = ref<SincroSesion>(new SincroSesion(0, 0))
+const EstadoSincro = ref<EstadoSincroCancion>(
+  new EstadoSincroCancion(-1, 0, '-', 0),
+)
 
 const momentoLocal = ref(0)
 const momentoSincro = ref(0)
@@ -29,38 +31,62 @@ const ErrorRelojRTC = ref(helper.ErrorRelojRTC)
 
 const delayactualizar = ref(0)
 
-const reloj = new Reloj()
-reloj.duracionIntervalo = 1000 // 1 segundo
-reloj.setIniciaHandler(() => {
-  momentoLocal.value = helper.MomentoLocal()
-  momentoSincro.value = helper.MomentoSincro()
-})
-reloj.setIniciaCicloHandler(() => {
-  momentoLocal.value = helper.MomentoLocal()
-  actualizarDelay()
+momentoLocal.value = helper.MomentoLocal()
+momentoSincro.value = helper.MomentoSincro()
+
+let rafId: number | null = null
+
+async function EmpezarLoop() {
+  // reset counter when starting
+  const loop = async () => {
+    // stop if state changed
+    actualizarDelay()
+    rafId = requestAnimationFrame(loop)
+  }
+  // avoid multiple loops
+  if (rafId == null) {
+    rafId = requestAnimationFrame(loop)
+  }
+}
+
+function PararLoop() {
+  if (rafId != null) {
+    cancelAnimationFrame(rafId)
+    rafId = null
+  }
+}
+
+onUnmounted(() => {
+  PararLoop()
 })
 
 function actualizarDelay() {
+  const momentosincroActual = helper.MomentoSincro()
+  if (
+    Math.floor(momentosincroActual / 1000) ===
+    Math.floor(momentoSincro.value / 1000)
+  ) {
+    return
+  }
   momentoLocal.value = helper.MomentoLocal()
   momentoSincro.value = helper.MomentoSincro()
   delayReloj.value = helper.delayReloj
   ErrorReloj.value = helper.ErrorReloj
   const mili = momentoSincro.value % 1000
-  delayactualizar.value = 1000 - mili
+  delayactualizar.value = mili
   /*
   if (mili < 20) {
     delayactualizar.value = delayactualizar.value - mili
   }*/
-  reloj.setDelay(delayactualizar.value)
 }
 
 function actualizarMomento() {
   actualizandoMomento.value = true
-  reloj.iniciar()
 }
 
 onMounted(() => {
   actualizarMomento()
+  EmpezarLoop()
 })
 
 onUnmounted(() => {
@@ -68,7 +94,6 @@ onUnmounted(() => {
 })
 function dejarActualizarMomento() {
   actualizandoMomento.value = false
-  reloj.pausar()
 }
 const detalleCalculo = ref<DelaySet[]>([])
 const verDetalle = ref(false)
@@ -92,11 +117,6 @@ function sincronizar() {
   const helper = HelperSincro.getInstance()
   helper.ActualizarDelayReloj()
   detalleCalculo.value = helper.GetDetalleCalculo()
-}
-
-function cerrarRelojes() {
-  reloj.pausar()
-  emit('cerrar')
 }
 </script>
 
@@ -155,22 +175,16 @@ function cerrarRelojes() {
       <div>Inicio Cancion</div>
       <div style="display: flex">
         <div>
-          <RelojControl
-            :fecha="appStore.sesSincroCancion.timeInicio"
-          ></RelojControl>
-          Desde: {{ appStore.sesSincroCancion.desdeCompas }}
+          <RelojControl :fecha="sesSincroCancion.timeInicio"></RelojControl>
+          Desde: {{ sesSincroCancion.desdeCompas }}
         </div>
       </div>
     </div>
 
     <div style="display: flex">
-      Golpe: {{ appStore.EstadoSincro.compas }} ,
-      {{ appStore.EstadoSincro.golpeEnCompas }}, estado:
-      {{ appStore.EstadoSincro.estado }} Delay:
-      {{ appStore.EstadoSincro.delay.toFixed(2) }} ms
-    </div>
-    <div v-if="mostrarCerrar">
-      <button @click="cerrarRelojes">Cerrar</button>
+      Golpe: {{ EstadoSincro.compas }} , {{ EstadoSincro.golpeEnCompas }},
+      estado: {{ EstadoSincro.estado }} Delay:
+      {{ EstadoSincro.delay.toFixed(2) }} ms
     </div>
   </div>
 </template>
