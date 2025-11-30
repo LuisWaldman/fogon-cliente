@@ -50,9 +50,12 @@ export class StrategyReproductorConectado extends StrategyReproductor {
         this.reproductor.ultimoEstadoCambiado = estado
       },
     )
-    this.cliente.setCompasActualizadoHandler((compas: number) => {
+    this.cliente.setCompasActualizadoHandler((compas: number, nroUsuario: number) => {
       Logger.log(`Compás actualizado a ${compas}`)
       this.reproductor.compas = compas
+      this.reproductor.ultimoUsuarioQueCambioEstado = nroUsuario
+      this.reproductor.ultimoEstadoCambiado = 'update-compas'
+      this.reproductor.SetEstado('update-compas')
     })
     this.cliente.setCancionSincronizadaHandler(
       (compas: number, desde: number) => {

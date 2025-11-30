@@ -63,7 +63,7 @@ export class StrategyReproductor {
         compas * duracionCompas,
       )
     }
-    this.reproductor.SetEstado('compas-actalizado')
+    this.reproductor.SetEstado('update-compas')
   }
   async sincronizar() {
     const helper = HelperSincro.getInstance()
