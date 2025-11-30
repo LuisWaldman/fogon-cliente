@@ -549,10 +549,6 @@ function clickAdvertencia() {
                 <span class="btn-icon">➕</span>
                 <span class="button-text">Nueva Lista</span>
               </button>
-              <button class="action-btn primary" :disabled="!viendoLista">
-                <span class="btn-icon">🔗</span>
-                <span class="button-text">Compartir</span>
-              </button>
               <button
                 @click="renombrarLista"
                 class="action-btn warning"
