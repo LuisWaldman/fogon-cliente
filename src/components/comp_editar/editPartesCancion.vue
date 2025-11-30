@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { onMounted, ref, reactive } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
-import { useAppStore } from '../../stores/appStore'
-import { MusicaHelper } from '../../modelo/cancion/MusicaHelper'
 import { Parte } from '../../modelo/cancion/acordes'
 
 const props = defineProps<{
@@ -58,7 +56,6 @@ const hastaPosicion = ref(4)
 
 const exdesdePosicion = ref(1)
 const exhastaPosicion = ref(4)
-const proximoAcorde = ref('?')
 const editandoParte = ref(-1)
 const editandoCompas = ref(-1)
 const editandoNota = ref(-1)
@@ -136,7 +133,12 @@ function onDragEndAcorde() {
   drageandoAcorde.value = false
   dragenterAdd.clear()
 }
-function onDragStartAcorde(event: DragEvent, indexparte: number, nota?: string) {
+function onDragStartAcorde(
+  event: DragEvent,
+  indexparte: number,
+  nota?: string,
+) {
+  console.log('onDragStartAcorde PARA QUE COMPILE', { indexparte, nota })
   drageandoAcorde.value = true
   dragenterAdd.clear()
   event.dataTransfer!.setData('text/plain', nota || '')
@@ -151,12 +153,15 @@ function onDragLeaveAdd(indexparte: number, compasindex: number) {
   dragenterAdd.set(`${indexparte}-${compasindex}`, false)
 }
 function onDropAdd(event: DragEvent, indexparte: number, compasindex: number) {
+  console.log('onDropAdd PARA QUE COMPILE', { indexparte, compasindex })
   event.preventDefault()
   const chord = event.dataTransfer!.getData('text/plain')
   if (chord) {
     props.cancion.acordes.partes[indexparte].acordes.push(chord)
     CargarCancion()
-    alert(`Acorde "${chord}" agregado a nueva compás en parte "${props.cancion.acordes.partes[indexparte].nombre}"`)
+    alert(
+      `Acorde "${chord}" agregado a nueva compás en parte "${props.cancion.acordes.partes[indexparte].nombre}"`,
+    )
   }
   dragenterAdd.clear()
 }
@@ -199,7 +204,6 @@ function onDropAdd(event: DragEvent, indexparte: number, compasindex: number) {
               draggable="true"
               @dragstart="(event) => onDragStartAcorde(event, indexparte, nota)"
               @dragend="onDragEndAcorde"
-
             >
               {{ nota }}
             </div>
@@ -207,46 +211,48 @@ function onDropAdd(event: DragEvent, indexparte: number, compasindex: number) {
         </div>
 
         <div class="conteinerCompases">
-          <div class="conteinerCompas"
-          v-for="(compas, compasindex) in parte.acordes"
-          :key="compasindex">
           <div
-            class="compas"
-            
-            
+            class="conteinerCompas"
+            v-for="(compas, compasindex) in parte.acordes"
+            :key="compasindex"
           >
-            <div
-              class="notaCompas"
-              v-for="(nota, notindex) in compas"
-              :key="notindex"
-              draggable="true"
-              @dragstart="(event) => onDragStartAcorde(event, indexparte, nota)"
-              @dragend="onDragEndAcorde"
-            >
-              <select
-                v-model="parte.acordes[compasindex][notindex]"
-                v-if="indexparte == editandoParte"
+            <div class="compas">
+              <div
+                class="notaCompas"
+                v-for="(nota, notindex) in compas"
+                :key="notindex"
+                draggable="true"
+                @dragstart="
+                  (event) => onDragStartAcorde(event, indexparte, nota)
+                "
+                @dragend="onDragEndAcorde"
               >
-                <option v-for="nota in props.acordesCancion" :key="nota">
-                  {{ nota }}
-                </option>
-              </select>
-              <span
-                v-else
-                @click="clickNotaAcorde(indexparte, compasindex, notindex)"
-                >{{ nota }}</span
-              >
+                <select
+                  v-model="parte.acordes[compasindex][notindex]"
+                  v-if="indexparte == editandoParte"
+                >
+                  <option v-for="nota in props.acordesCancion" :key="nota">
+                    {{ nota }}
+                  </option>
+                </select>
+                <span
+                  v-else
+                  @click="clickNotaAcorde(indexparte, compasindex, notindex)"
+                  >{{ nota }}</span
+                >
+              </div>
             </div>
-          </div>
-          <div>+</div>
-          <div
-            class="destinoOrdenParte destinoOrdenPartehover"
-            v-if="dragenterAdd.get(`${indexparte}-${compasindex}`)"
-            @dragover="onDragOverAdd"
-            @drop="(event) => onDropAdd(event, indexparte, compasindex)"
-            @dragenter="onDragEnterAdd(indexparte, compasindex)"
-            @dragleave="onDragLeaveAdd(indexparte, compasindex)"
-          >+</div>
+            <div>+</div>
+            <div
+              class="destinoOrdenParte destinoOrdenPartehover"
+              v-if="dragenterAdd.get(`${indexparte}-${compasindex}`)"
+              @dragover="onDragOverAdd"
+              @drop="(event) => onDropAdd(event, indexparte, compasindex)"
+              @dragenter="onDragEnterAdd(indexparte, compasindex)"
+              @dragleave="onDragLeaveAdd(indexparte, compasindex)"
+            >
+              +
+            </div>
           </div>
         </div>
       </div>

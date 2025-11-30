@@ -186,9 +186,6 @@ function sincronizar() {
       estado: {{ EstadoSincro.estado }} Delay:
       {{ EstadoSincro.delay.toFixed(2) }} ms
     </div>
-    <div v-if="mostrarCerrar">
-      <button @click="cerrarRelojes">Cerrar</button>
-    </div>
   </div>
 </template>
 <style scoped>
