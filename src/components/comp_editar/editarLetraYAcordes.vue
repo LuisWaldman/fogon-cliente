@@ -172,7 +172,6 @@ function estiloVistaSecundaria() {
           v-if="vistaLateral === 'partes'"
           :cancion="cancion"
           :acordesCancion="acordesCancion"
-          :parteSeleccionada="refParteSeleccionada"
         ></editPartes>
 
         <editSecuencia
