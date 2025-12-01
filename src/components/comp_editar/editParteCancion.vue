@@ -65,7 +65,7 @@ function finalizarEdicion() {
 onMounted(() => {
   CargarCancion()
 })
-const draggeando = ref(true)
+const agregarAcordes = ref(false)
 </script>
 
 <template>
@@ -91,14 +91,20 @@ const draggeando = ref(true)
         <button @click="finalizarEdicion()" class="btnGuardar">✓ Listo</button>
       </div>
       <div class="ctrlMandoEdit">
-        Nuevos Acordes
+        <button @click="agregarAcordes = true" v-if="!agregarAcordes" class="btnGuardar">+ ACORDES</button>
+        <button @click="agregarAcordes = false" v-if="agregarAcordes" class="btnGuardar">✓ Listo</button>
+        <div v-if="agregarAcordes" style="display: flex;">
+
+        
         <div
           class="notaCompas"
+          
           v-for="nota in acordes"
           :key="nota"
           draggable="true"
         >
           {{ nota }}
+        </div>
         </div>
       </div>
     </div>
@@ -109,14 +115,14 @@ const draggeando = ref(true)
         v-for="(compas, compasindex) in compaces"
         :key="compasindex"
       >
-        <div v-if="draggeando">+</div>
+        <div v-if="agregarAcordes" class="nuevoCompas" >+</div>
         <div class="compas">
           <div
             class="notaContainer"
             v-for="(nota, notindex) in compas"
             :key="notindex"
           >
-            <div v-if="draggeando">+</div>
+            <div v-if="agregarAcordes" class="intoCompas">+</div>
             <div class="notaCompas">
               <select
                 v-model="compaces[compasindex][notindex]"
@@ -131,9 +137,10 @@ const draggeando = ref(true)
               <span v-else>{{ nota }}</span>
             </div>
           </div>
-          <div v-if="draggeando">+</div>
+          <div v-if="agregarAcordes" class="intoCompas">+</div>
         </div>
       </div>
+      <div v-if="agregarAcordes" class="nuevoCompas" >+</div>
     </div>
   </div>
 </template>
