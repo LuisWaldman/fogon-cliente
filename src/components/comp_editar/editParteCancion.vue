@@ -319,4 +319,66 @@ const agregarAcordes = ref(false)
 .notaContainer {
   display: flex;
 }
+
+/* Estilos para elementos de agregar acordes */
+.intoCompas {
+  padding: 4px 8px;
+  margin: 2px;
+  background: rgba(169, 168, 246, 0.1);
+  border: 1px dashed rgba(169, 168, 246, 0.3);
+  border-radius: 4px;
+  color: #a9a8f6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  min-height: 24px;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.intoCompas:hover {
+  background: rgba(169, 168, 246, 0.2);
+  border-color: rgba(169, 168, 246, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(169, 168, 246, 0.2);
+}
+
+.intoCompas:active {
+  transform: scale(0.95);
+}
+
+.nuevoCompas {
+  padding: 8px 12px;
+  margin: 4px;
+  background: rgba(169, 168, 246, 0.08);
+  border: 2px dashed rgba(169, 168, 246, 0.4);
+  border-radius: 6px;
+  color: #a9a8f6;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 1.2rem;
+  user-select: none;
+  backdrop-filter: blur(5px);
+}
+
+.nuevoCompas:hover {
+  background: rgba(169, 168, 246, 0.15);
+  border-color: rgba(169, 168, 246, 0.7);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(169, 168, 246, 0.3);
+}
+
+.nuevoCompas:active {
+  transform: translateY(0) scale(0.98);
+}
 </style>
