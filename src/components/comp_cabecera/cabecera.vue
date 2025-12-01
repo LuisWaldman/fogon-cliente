@@ -104,10 +104,7 @@ function dejarDeCompartir() {
 }
 
 const crearSesion = () => {
-  const nombreSesion = appStore.perfil?.nombre
-    ? `${appStore.perfil.nombre} fogon`
-    : 'default'
-
+  const nombreSesion = appStore.perfil?.nombreSesion
   appStore.aplicacion.CrearSesion(nombreSesion)
 }
 
