@@ -57,6 +57,21 @@ export default defineConfig({
       workbox: {
         // aumentar a 5 MiB
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+
+        runtimeCaching: [
+          {
+            // Cachear todas las imágenes
+            urlPattern: ({ request }) => request.destination === 'image',
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'images-cache',
+              expiration: {
+                maxEntries: 60, // máximo de imágenes guardadas
+                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 días
+              },
+            },
+          },
+        ],
       },
     }),
   ],

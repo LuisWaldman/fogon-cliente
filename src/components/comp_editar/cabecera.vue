@@ -200,13 +200,13 @@ function EnviarAlFogon() {
       <div class="divctrlEdit">
         <label>Guardar</label>
         <div>
-          <button @click="EnviarAlFogon()"
-          v-if="appStore.estadosApp.estadoSesion === 'conectado'">🔥</button>
+          <button
+            @click="EnviarAlFogon()"
+            v-if="appStore.estadosApp.estadoSesion === 'conectado'"
+          >
+            🔥
+          </button>
           <button @click="guardarCambios('local')">💾</button>
-          
-          
-
- 
 
           <button
             v-if="appStore.estadosApp.estadoLogin === 'logueado'"
