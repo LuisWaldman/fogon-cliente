@@ -3,6 +3,7 @@ import { onMounted, ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import { Parte } from '../../modelo/cancion/acordes'
 import EditParteCancion from './editParteCancion.vue'
+import EditParteCancionSoloLectura from './editParteCancionSoloLectura.vue'
 
 const props = defineProps<{
   cancion: Cancion
@@ -73,7 +74,8 @@ function onDropOrdenParte(event: DragEvent, targetIndex: number) {
 
 </script>
 <template>
-  <div>
+  <!-- ESTA REORDENANDO-->
+  <div v-if="reordenando">
     <div v-for="(parte, indexparte) in cancion.acordes.partes" :key="indexparte">
       <div
         class="destinoOrdenParte"
@@ -88,13 +90,13 @@ function onDropOrdenParte(event: DragEvent, targetIndex: number) {
         @dragstart="(event) => onDragStartOrdenParte(event, indexparte)"
         @dragend="onDragEndOrdenParte"
       >
-      <EditParteCancion
+      <EditParteCancionSoloLectura
         :parte="parte"
         :quitando="quitando"
         :moviendo="reordenando"
         :acordes="acordesCancion"
         :indexparte="indexparte"
-        @quitar-ok="handleQuitarOk"
+
       />
       </div>
     </div>
@@ -108,11 +110,32 @@ function onDropOrdenParte(event: DragEvent, targetIndex: number) {
         @dragleave="onDragLeaveOrdenParte"
       ></div>
   </div>
+
+
+<!-- NO ESTA REORDENANDO -->
+  <div v-if="!reordenando">
+    <div v-for="(parte, indexparte) in cancion.acordes.partes" :key="indexparte">
+     
+      <div draggable="false"
+        @dragstart="(event) => onDragStartOrdenParte(event, indexparte)"
+        @dragend="onDragEndOrdenParte"
+      >
+      <EditParteCancion
+        :parte="parte"
+        :quitando="quitando"
+        :moviendo="reordenando"
+        :acordes="acordesCancion"
+        :indexparte="indexparte"
+      />
+      </div>
+    </div>
+         
+  </div>
   <div>
     <div class="botoneraAcordes">
-      <button @agregar="agregar">🎸 AGREGAR</button>
-      <button @click="quitar">🗑️ QUITAR</button>
-      <button @click="reordenar">↕️ REORDENAR</button>
+      <button @click="agregar">🎸 AGREGAR</button>
+      <button @click="quitar" :class="{ activo: quitando }">🗑️ QUITAR</button>
+      <button @click="reordenar" :class="{ activo: reordenando }">↕️ REORDENAR</button>
     </div>
   </div>
 </template>
@@ -269,6 +292,19 @@ td.dominante {
 
 .botoneraAcordes button:active {
   transform: translateY(0);
+}
+
+.botoneraAcordes button.activo {
+  background: rgba(169, 168, 246, 0.4);
+  border-color: #a9a8f6;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(169, 168, 246, 0.6);
+  transform: translateY(-1px);
+}
+
+.botoneraAcordes button.activo:hover {
+  background: rgba(169, 168, 246, 0.5);
+  box-shadow: 0 0 25px rgba(169, 168, 246, 0.8);
 }
 
 /* Estilos para las partes y compases */
