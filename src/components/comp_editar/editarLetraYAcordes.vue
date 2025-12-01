@@ -93,7 +93,7 @@ function estiloVistaPrincipal() {
 }
 
 function estiloVistaSecundaria() {
-  return `height: ${pantalla.getAltoPantalla()}px; overflow-x: auto;`
+  return `height: ${pantalla.getAltoPantalla() - 100}px; overflow-x: auto;`
 }
 </script>
 <template>
@@ -161,7 +161,7 @@ function estiloVistaSecundaria() {
           🎵 SECUENCIA
         </button>
       </div>
-      <div :style="estiloVistaSecundaria()">
+      <div :style="estiloVistaSecundaria()" class="edicion">
         <editAcordes
           :acordesCancion="acordesCancion"
           :cancion="cancion"
@@ -300,4 +300,22 @@ function estiloVistaSecundaria() {
     padding: 10px 12px;
   }
 }
+.edicion {
+  overflow-x: auto;
+  background: #000;
+  scrollbar-width: thin;
+  scrollbar-color: #444 #000;
+  }
+
+  /* Para navegadores Webkit */
+  .edicion::-webkit-scrollbar {
+    height: 6px;
+    background: #000;
+  }
+
+  .edicion::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 3px;
+  }
+
 </style>

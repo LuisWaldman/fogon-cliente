@@ -60,15 +60,18 @@ function onDragLeaveOrdenParte() {
   dragenterOrden.value = false
 }
 
+function AlternarParte(parteIndex: number, porParteIndex: number) {
+  const nuevoOrden = []
+  alert(`Moviendo parte ${parteIndex} a la posición ${porParteIndex}`)
+
+}
+
 function onDropOrdenParte(event: DragEvent, targetIndex: number) {
   event.preventDefault()
   const draggedIndex = parseInt(event.dataTransfer!.getData('text/plain'))
-  if (draggedIndex !== targetIndex) {
-    const part = props.cancion.acordes.partes.splice(draggedIndex, 1)[0]
-    props.cancion.acordes.partes.splice(targetIndex, 0, part)
-    CargarCancion()
-    alert(`Parte "${part.nombre}" movida a posición ${targetIndex + 1}`)
-  }
+
+  AlternarParte(draggedIndex, targetIndex)
+
   dragenterOrden.value = false
 }
 
@@ -105,7 +108,7 @@ function onDropOrdenParte(event: DragEvent, targetIndex: number) {
         :class="{ destinoOrdenPartehover: dragenterOrden }"
         v-if="dragrandoOrden"
         @dragover="onDragOverParte"
-        @drop="(event) => onDropOrdenParte(event, -1)"
+        @drop="(event) => onDropOrdenParte(event, cancion.acordes.partes.length)"
         @dragenter="onDragEnterOrdenParte"
         @dragleave="onDragLeaveOrdenParte"
       ></div>
