@@ -25,17 +25,22 @@ const categoriasExpandidas = ref<string[]>([])
 
 const instrumentosPorCategoria = computed(() => {
   const map: { [key: string]: InstrumentoMidi[] } = {}
+  categorias.value.forEach((cat) => {
+    map[cat] = []
+  })
   instrumentos.value.forEach((inst) => {
-    if (!map[inst.categoria]) map[inst.categoria] = []
-    map[inst.categoria].push(inst)
+    if (map[inst.categoria]) {
+      map[inst.categoria].push(inst)
+    }
   })
   return map
 })
 
 function getCategoriaDeInstrumento(instNombre: string): string | null {
+  if (!instNombre || instNombre.trim() === '') return null
   for (const cat of categorias.value) {
     if (
-      instrumentosPorCategoria.value[cat].some(
+      instrumentosPorCategoria.value[cat]?.some(
         (inst) => inst.nombre === instNombre,
       )
     ) {
@@ -46,7 +51,12 @@ function getCategoriaDeInstrumento(instNombre: string): string | null {
 }
 
 function expandirCategoriaSiNecesario(inst: string) {
-  if (perfil.value.instrumentosFavoritos.includes(inst)) return
+  if (
+    !inst ||
+    inst.trim() === '' ||
+    perfil.value.instrumentosFavoritos.includes(inst)
+  )
+    return
   const cat = getCategoriaDeInstrumento(inst)
   if (cat && !categoriasExpandidas.value.includes(cat)) {
     categoriasExpandidas.value = [cat]

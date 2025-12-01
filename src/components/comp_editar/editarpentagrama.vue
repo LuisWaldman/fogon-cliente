@@ -6,7 +6,7 @@ import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
 import editarCompas from '../comp_editar/editarCompasPentagrama.vue'
-import combo from '../comp_editar/comboInstrumentos.vue'
+import combo from '../SelectInstrumento.vue'
 
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { DisplayInstrumentoPentagrama } from '../../modelo/pentagrama/DisplayInstrumentoPentagrama'
@@ -188,7 +188,7 @@ function clickAddOkPentagrama() {
         @click="clickBorrarModo(modos[editandoModo])"
         class="btn-danger"
       >
-        🗑️ Borrar Modo
+        🗑️ Borrar Pentagrama
       </button>
       <button @click="clickCopiarEnPentagrama">📋 Copiar en Pentagrama</button>
     </div>
@@ -222,10 +222,8 @@ function clickAddOkPentagrama() {
       <div class="form-group">
         <label>Instrumento</label>
         <combo
-          :instrumento="modos[editandoModo].Instrumento"
-          @changeInstrumento="
-            (nuevo) => cambioInstrumento(modos[editandoModo], nuevo)
-          "
+          v-model="modos[editandoModo].Instrumento"
+          @update:modelValue="(nuevo) => cambioInstrumento(modos[editandoModo], nuevo)"
         ></combo>
       </div>
 
