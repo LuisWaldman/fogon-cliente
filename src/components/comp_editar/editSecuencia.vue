@@ -4,15 +4,17 @@ import { Cancion } from '../../modelo/cancion/cancion'
 import { watch } from 'vue'
 import { ResumenSecuencia } from '../../modelo/cancion/ResumenSecuencia'
 import { helperEditarAcorde } from './helperEditarAcorde'
-
-/*<span @click="click_editarsecuencia(index)" v-if="refEditandoSecuencia != index">🔄</span>
-        <span @click="click_Sieditarsecuencia(index)" v-if="refEditandoSecuencia == index">[Si]</span>
-        <span @click="click_Noeditarsecuencia(index)" v-if="refEditandoSecuencia == index">[No]</span>
-*/
-
 const refAcordesEditando = ref('')
 const refEditandoSecuencia = ref(-1)
 const refNombreEditando = ref('')
+
+const props = defineProps<{
+  compas: number
+  cancion: Cancion
+}>()
+const acordesPosibles = Array.from(new Set(props.cancion.acordes.GetTodosLosAcordes()))
+const compasesEnArray = ref<string[]>([])
+
 function clickEditarsecuencia(index: number) {
   refEditandoSecuencia.value = index
   const editandoParte = resumenSecuencia.value?.resumenPartes[index].parteId
@@ -40,11 +42,6 @@ function cambiarCompas(compas: number) {
   emit('cambioCompas', compas)
   //currentCompas.value = compas
 }
-
-const props = defineProps<{
-  compas: number
-  cancion: Cancion
-}>()
 
 const resumenSecuencia = ref<ResumenSecuencia>(
   ResumenSecuencia.GetResumen(props.cancion),
@@ -142,7 +139,6 @@ defineExpose({ Actualizar })
       >
         {{ parteSelect.nombre }}
       </option>
-      <option value="-1">Nueva</option>
     </select>
     <span @click="CortarSecuencia" v-if="compas != -1">[CORTAR]</span>
   </div>
@@ -187,19 +183,6 @@ defineExpose({ Actualizar })
               v-model="refNombreEditando"
             />
 
-            <div class="repeticion">
-              x
-              <span v-if="resumenSecuencia.parte === index"
-                >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /</span
-              >
-              <input
-                type="number"
-                min="0"
-                max="50"
-                v-model="parte.cantPartes"
-                @change="ClickActualizarSecuencia"
-              />
-            </div>
           </div>
           <div class="ordendiv" v-if="refEditandoSecuencia !== index">
             <span
@@ -222,6 +205,19 @@ defineExpose({ Actualizar })
               v-if="refEditandoSecuencia != index"
               >🔄</span
             >
+            <div class="repeticion">
+              x
+              <span v-if="resumenSecuencia.parte === index"
+                >&nbsp;{{ resumenSecuencia.repeticionparte + 1 }} /</span
+              >
+              <input
+                type="number"
+                min="0"
+                max="50"
+                v-model="parte.cantPartes"
+                @change="ClickActualizarSecuencia"
+              />
+            </div>
           </div>
           <input
             type="text"
