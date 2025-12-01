@@ -22,6 +22,9 @@ export class StrategyReproductor {
 
   iniciarReproduccion() {
     if (this.reproductor.cancion) {
+      if (this.reproductor.compas < 0) {
+        this.reproductor.compas = 0
+      }
       const helper = HelperSincro.getInstance()
       const momento = helper.MomentoSincro()
       this.sesSincroCancion = new SincroSesion(
@@ -35,9 +38,7 @@ export class StrategyReproductor {
       }
 
       Logger.log(`Iniciando reproducción de la canción: ${momento}`)
-      if (this.reproductor.compas < 0) {
-        this.reproductor.compas = 0
-      }
+
       this.reproductor.SetEstado('Iniciando')
       this.sincronizar()
     }

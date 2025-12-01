@@ -65,7 +65,65 @@ function finalizarEdicion() {
 onMounted(() => {
   CargarCancion()
 })
+
+const agregandoAcorde = ref('acorde')
+function actualizarParteAcorde() {
+   props.parte.acordes = compaces.value.map((compas) => compas.join(' '))
+}
+
+function agregarAcordeaCompas(compasIndex: number, notaIndex?: number) {
+  if (notaIndex !== undefined) {
+    // Insertar en posición específica dentro del compás
+    compaces.value[compasIndex].splice(notaIndex, 0, agregandoAcorde.value)
+  } else {
+    // Agregar al final del compás
+    compaces.value[compasIndex].push(agregandoAcorde.value)
+  }
+  actualizarParteAcorde()
+}
+
+function agregarCompas(compasIndex?: number) {
+  const nuevoCompas = [agregandoAcorde.value]
+  if (compasIndex !== undefined) {
+    // Insertar en posición específica
+    compaces.value.splice(compasIndex, 0, nuevoCompas)
+  } else {
+    // Agregar al final
+    compaces.value.push(nuevoCompas)
+  }
+  actualizarParteAcorde()
+}
+
+// Funciones para drag and drop
+function onDragStart(event: DragEvent, nota: string) {
+  agregandoAcorde.value = nota
+  if (event.dataTransfer) {
+    event.dataTransfer.setData('text/plain', nota)
+    event.dataTransfer.effectAllowed = 'copy'
+  }
+}
+
+function onDragOver(event: DragEvent) {
+  event.preventDefault()
+  if (event.dataTransfer) {
+    event.dataTransfer.dropEffect = 'copy'
+  }
+}
+
+function onDropNuevoCompas(event: DragEvent, compasIndex?: number) {
+  event.preventDefault()
+  agregarCompas(compasIndex)
+}
+
+function onDropIntoCompas(event: DragEvent, compasIndex: number, notaIndex?: number) {
+  event.preventDefault()
+  agregarAcordeaCompas(compasIndex, notaIndex)
+}
+
 const agregarAcordes = ref(false)
+
+
+
 </script>
 
 <template>
@@ -98,10 +156,10 @@ const agregarAcordes = ref(false)
         
         <div
           class="notaCompas"
-          
           v-for="nota in acordes"
           :key="nota"
           draggable="true"
+          @dragstart="onDragStart($event, nota)"
         >
           {{ nota }}
         </div>
@@ -115,14 +173,24 @@ const agregarAcordes = ref(false)
         v-for="(compas, compasindex) in compaces"
         :key="compasindex"
       >
-        <div v-if="agregarAcordes" class="nuevoCompas" >+</div>
+        <div 
+          v-if="agregarAcordes" 
+          class="nuevoCompas" 
+          @dragover="onDragOver"
+          @drop="onDropNuevoCompas($event, compasindex)"
+        >+</div>
         <div class="compas">
           <div
             class="notaContainer"
             v-for="(nota, notindex) in compas"
             :key="notindex"
           >
-            <div v-if="agregarAcordes" class="intoCompas">+</div>
+            <div 
+              v-if="agregarAcordes" 
+              class="intoCompas"
+              @dragover="onDragOver"
+              @drop="onDropIntoCompas($event, compasindex, notindex)"
+            >+</div>
             <div class="notaCompas">
               <select
                 v-model="compaces[compasindex][notindex]"
@@ -137,10 +205,20 @@ const agregarAcordes = ref(false)
               <span v-else>{{ nota }}</span>
             </div>
           </div>
-          <div v-if="agregarAcordes" class="intoCompas">+</div>
+          <div 
+            v-if="agregarAcordes" 
+            class="intoCompas"
+            @dragover="onDragOver"
+            @drop="onDropIntoCompas($event, compasindex)"
+          >+</div>
         </div>
       </div>
-      <div v-if="agregarAcordes" class="nuevoCompas" >+</div>
+      <div 
+        v-if="agregarAcordes" 
+        class="nuevoCompas" 
+        @dragover="onDragOver"
+        @drop="onDropNuevoCompas($event)"
+      >+</div>
     </div>
   </div>
 </template>
