@@ -13,17 +13,12 @@ const props = defineProps<{
 const compaces = ref<string[][]>([]);
 function CargarCancion() {
   const ncompaces = []
-  for (const acordesStr of props.parte.acordes) {
-    // Si acordesStr es un string, lo dividimos por espacios
-    if (typeof acordesStr === 'string') {
-      ncompaces.push(acordesStr.split(' ').filter(acorde => acorde.trim() !== ''))
-    } else if (Array.isArray(acordesStr)) {
-      // Si ya es un array, lo usamos directamente
-      ncompaces.push(acordesStr)
+  for (const acordesStr of props.parte.acordes) {    
+      ncompaces.push(acordesStr.split(' ') )
     }
-  }
   compaces.value = ncompaces
 }
+
 onMounted(() => {
   CargarCancion()
 })
@@ -41,71 +36,14 @@ function handleQuitarOk(parteIndex: number) {
 }
 
 const editandoParte = ref(false)
-const dragenterAdd = reactive(new Map<string, boolean>())
-
-// Funciones de drag and drop
-function onDragStartAcorde(event: DragEvent, nota: string) {
-  if (event.dataTransfer) {
-    event.dataTransfer.setData('text/plain', nota)
-    event.dataTransfer.effectAllowed = 'move'
-  }
-}
-
-function onDragEndAcorde() {
-  // Limpiar el estado de drag
-}
-
-function onDragOverAdd(event: DragEvent) {
-  event.preventDefault()
-  if (event.dataTransfer) {
-    event.dataTransfer.dropEffect = 'move'
-  }
-}
-
-function onDropAdd(event: DragEvent, compasIndex: number) {
-  event.preventDefault()
-  const nota = event.dataTransfer?.getData('text/plain')
-  if (nota && compaces.value[compasIndex]) {
-    // Agregar la nota al compás en la vista
-    compaces.value[compasIndex].push(nota)
-    actualizarAcordes()
-  }
-  // Limpiar estado de drag
-  dragenterAdd.clear()
-}
-
-function onDragEnterAdd(parteIndex: number, compasIndex: number) {
-  dragenterAdd.set(`${parteIndex}-${compasIndex}`, true)
-}
-
-function onDragLeaveAdd(parteIndex: number, compasIndex: number) {
-  dragenterAdd.set(`${parteIndex}-${compasIndex}`, false)
-}
-
-// Función para actualizar los acordes en el modelo cuando se cambia en la vista
-function actualizarAcordes() {
-  for (let i = 0; i < compaces.value.length; i++) {
-    if (props.parte.acordes[i] !== undefined) {
-      // Siempre guardamos como string separado por espacios
-      props.parte.acordes[i] = compaces.value[i].join(' ')
-    }
-  }
-}
-
-// Función para agregar una nueva nota a un compás
-function agregarNota(compasIndex: number) {
-  if (compaces.value[compasIndex] && props.acordes.length > 0) {
-    compaces.value[compasIndex].push(props.acordes[0])
-    actualizarAcordes()
-  }
-}
 
 // Función para finalizar la edición
 function finalizarEdicion() {
-  actualizarAcordes()
   editandoParte.value = false
 }
-
+onMounted(() => {
+  CargarCancion()
+})
 </script>
 
 <template>
@@ -131,8 +69,6 @@ function finalizarEdicion() {
           v-for="nota in acordes"
           :key="nota"
           draggable="true"
-          @dragstart="(event) => onDragStartAcorde(event, nota)"
-          @dragend="onDragEndAcorde"
         >
           {{ nota }}
         </div>
@@ -151,15 +87,11 @@ function finalizarEdicion() {
             v-for="(nota, notindex) in compas"
             :key="notindex"
             draggable="true"
-            @dragstart="
-              (event) => onDragStartAcorde(event, nota)
-            "
-            @dragend="onDragEndAcorde"
+            
           >
             <select
               v-model="compaces[compasindex][notindex]"
               v-if="editandoParte"
-              @change="actualizarAcordes"
             >
               <option v-for="acorde in acordes" :key="acorde" :value="acorde">
                 {{ acorde }}
@@ -171,23 +103,8 @@ function finalizarEdicion() {
             >
           </div>
         </div>
-        <div 
-          class="btnAgregar"
-          @click="agregarNota(compasindex)"
-          v-if="editandoParte"
-        >
-          +
-        </div>
-        <div
-          class="destinoOrdenParte destinoOrdenPartehover"
-          v-if="dragenterAdd.get(`${indexparte}-${compasindex}`)"
-          @dragover="onDragOverAdd"
-          @drop="(event) => onDropAdd(event, compasindex)"
-          @dragenter="onDragEnterAdd(indexparte, compasindex)"
-          @dragleave="onDragLeaveAdd(indexparte, compasindex)"
-        >
-          +
-        </div>
+        
+        
       </div>
     </div>
   </div>

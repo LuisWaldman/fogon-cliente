@@ -32,4 +32,12 @@ export class Acordes {
     }
     return ret
   }
+  GetDistintosAcordes() {
+    const todos = this.GetTodosLosAcordes()
+    const distintos: string[] = []
+    for (let i = 0; i < todos.length; i++) {
+      distintos.push(...todos[i].split(' )'))
+    }
+    return Array.from(new Set(distintos))
+  }
 }

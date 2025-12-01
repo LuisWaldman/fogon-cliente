@@ -15,7 +15,7 @@ const editandoCompas = ref(props.compas)
 const vistaLateral = ref('secuencia')
 const acordesCancion = ref<string[]>([])
 
-acordesCancion.value = [...new Set(props.cancion.acordes.GetTodosLosAcordes())]
+acordesCancion.value = props.cancion.acordes.GetDistintosAcordes()
 
 function cambiarVistaLateral(vista: string) {
   vistaLateral.value = vista
