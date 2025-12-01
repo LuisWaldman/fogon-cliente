@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, reactive, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import type { Parte } from '../../modelo/cancion/acordes';
 
 
@@ -36,6 +36,25 @@ function handleQuitarOk(parteIndex: number) {
 }
 
 const editandoParte = ref(false)
+
+// Función para manejar cambios en el combo de notas
+function manejarCambioNota(event: Event, compasIndex: number, notaIndex: number) {
+  const target = event.target as HTMLSelectElement
+  const nuevoValor = target.value
+  
+  if (nuevoValor === 'borrar') {
+    // Borrar la nota del compás
+    compaces.value[compasIndex].splice(notaIndex, 1)
+    
+    // Si el compás quedó vacío, borrarlo también
+    if (compaces.value[compasIndex].length === 0) {
+      compaces.value.splice(compasIndex, 1)
+    }
+    
+  }
+  // Reamar props.parte.acordes
+  props.parte.acordes = compaces.value.map(compas => compas.join(' '))
+}
 
 // Función para finalizar la edición
 function finalizarEdicion() {
@@ -92,10 +111,12 @@ onMounted(() => {
             <select
               v-model="compaces[compasindex][notindex]"
               v-if="editandoParte"
+              @change="manejarCambioNota($event, compasindex, notindex)"
             >
               <option v-for="acorde in acordes" :key="acorde" :value="acorde">
                 {{ acorde }}
               </option>
+              <option value="borrar">🗑️</option>
             </select>
             <span
               v-else
