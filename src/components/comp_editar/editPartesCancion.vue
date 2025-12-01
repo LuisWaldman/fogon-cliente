@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import type { Cancion } from '../../modelo/cancion/cancion'
 import { Parte } from '../../modelo/cancion/acordes'
 import EditParteCancion from './editParteCancion.vue'
@@ -10,17 +10,9 @@ const props = defineProps<{
   acordesCancion: string[]
 }>()
 
-const desdePosicion = ref(1)
-const hastaPosicion = ref(4)
-
-const exdesdePosicion = ref(1)
-const exhastaPosicion = ref(4)
 const editandoParte = ref(-1)
-const editandoCompas = ref(-1)
-const editandoNota = ref(-1)
 function agregar() {
   props.cancion.acordes.partes.push(new Parte('Nueva Parte', []))
-  CargarCancion()
 }
 const quitando = ref(false)
 const reordenando = ref(false)

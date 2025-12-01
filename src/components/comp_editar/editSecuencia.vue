@@ -13,15 +13,6 @@ const props = defineProps<{
   cancion: Cancion
 }>()
 
-function clickEditarsecuencia(index: number) {
-  refEditandoSecuencia.value = index
-  const editandoParte = resumenSecuencia.value?.resumenPartes[index].parteId
-  refNombreEditando.value = props.cancion.acordes.partes[editandoParte].nombre
-  refAcordesEditando.value = helperEditarAcorde.AcordesToRenglon(
-    props.cancion.acordes.partes[editandoParte].acordes,
-  )
-}
-
 function clickSieditarsecuencia() {
   const editandoParte =
     resumenSecuencia.value?.resumenPartes[refEditandoSecuencia.value].parteId
@@ -119,7 +110,11 @@ defineExpose({ Actualizar })
     .. No cargada ..
   </div>
   <div class="botoneraSecuencia">
-    <button v-if="!refActualizandoSecuencia" @click="ActualizarSecuencia" class="btnAccion">
+    <button
+      v-if="!refActualizandoSecuencia"
+      @click="ActualizarSecuencia"
+      class="btnAccion"
+    >
       ➕ AGREGAR SECUENCIA
     </button>
     <button
@@ -130,7 +125,11 @@ defineExpose({ Actualizar })
       ❌ CANCELAR
     </button>
 
-    <select v-model="ParteNuevaSecuencia" v-if="refActualizandoSecuencia" class="selectParte">
+    <select
+      v-model="ParteNuevaSecuencia"
+      v-if="refActualizandoSecuencia"
+      class="selectParte"
+    >
       <option
         v-for="(parteSelect, parteIndex) in cancion.acordes.partes"
         :key="parteIndex"
@@ -139,7 +138,9 @@ defineExpose({ Actualizar })
         {{ parteSelect.nombre }}
       </option>
     </select>
-    <button @click="CortarSecuencia" v-if="compas != -1" class="btnCortar">✂️ CORTAR</button>
+    <button @click="CortarSecuencia" v-if="compas != -1" class="btnCortar">
+      ✂️ CORTAR
+    </button>
   </div>
   <div style="display: flex; flex-wrap: wrap">
     <div
@@ -200,10 +201,12 @@ defineExpose({ Actualizar })
               {{ acorde }}
             </span>
 
-            
             <div class="repeticion">
               <span class="repeticionLabel">x</span>
-              <span v-if="resumenSecuencia.parte === index" class="repeticionActual">
+              <span
+                v-if="resumenSecuencia.parte === index"
+                class="repeticionActual"
+              >
                 {{ resumenSecuencia.repeticionparte + 1 }} /
               </span>
               <input
@@ -224,16 +227,10 @@ defineExpose({ Actualizar })
               placeholder="Ingrese acordes separados por espacios"
             />
             <div class="botonesEdicion">
-              <button
-                @click="clickSieditarsecuencia()"
-                class="btnGuardar"
-              >
+              <button @click="clickSieditarsecuencia()" class="btnGuardar">
                 ✓ Guardar
               </button>
-              <button
-                @click="clickNoeditarsecuencia()"
-                class="btnCancelar"
-              >
+              <button @click="clickNoeditarsecuencia()" class="btnCancelar">
                 ❌ Cancelar
               </button>
             </div>
