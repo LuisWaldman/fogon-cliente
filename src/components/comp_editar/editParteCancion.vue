@@ -67,20 +67,21 @@ onMounted(() => {
 
 <template>
   <div class="clsParte">
-    <div
-      v-if="!editandoParte"
-      @click="editandoParte = true"
-    >
-      {{ parte.nombre }}
-
-      <button @click="handleQuitarOk(indexparte)" v-if="quitando">
-        🗑️ QUITAR
-      </button>
+    <div v-if="!editandoParte" class="parteHeader">
+      <span class="parteNombre">{{ parte.nombre }}</span>
+      <div class="botonesAccion">
+        <button @click="editandoParte = true" class="btnEditar">
+          ✏️ EDITAR
+        </button>
+        <button @click="handleQuitarOk(indexparte)" v-if="quitando" class="btnQuitar">
+          🗑️ QUITAR
+        </button>
+      </div>
     </div>
     <div v-else>
       <div class="editHeader">
         <input v-model="parte.nombre" />
-        <button @click="finalizarEdicion()" class="btnGuardar">✓ Guardar</button>
+        <button @click="finalizarEdicion()" class="btnGuardar">✓ Listo</button>
       </div>
       <div class="ctrlMandoEdit">
         <div
@@ -216,35 +217,91 @@ onMounted(() => {
   color: #a9a8f6;
 }
 
-.btnGuardar {
-  padding: 5px 10px;
-  background: #a9a8f6;
-  color: #000;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+/* Estilos para el header de la parte */
+.parteHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.parteNombre {
+  font-size: 1.1rem;
   font-weight: bold;
+  color: #a9a8f6;
+}
+
+.botonesAccion {
+  display: flex;
+  gap: 8px;
+}
+
+/* Estilos de botones copiados del contenedor */
+.btnEditar,
+.btnGuardar,
+.btnQuitar,
+.btnAgregar {
+  padding: 8px 16px;
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 6px;
+  background: rgba(169, 168, 246, 0.1);
+  color: #a9a8f6;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+}
+
+.btnEditar:hover,
+.btnGuardar:hover,
+.btnQuitar:hover,
+.btnAgregar:hover {
+  background: rgba(169, 168, 246, 0.2);
+  border-color: rgba(169, 168, 246, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(169, 168, 246, 0.3);
+  color: #fff;
+}
+
+.btnEditar:active,
+.btnGuardar:active,
+.btnQuitar:active,
+.btnAgregar:active {
+  transform: translateY(0);
+}
+
+/* Estilos específicos para cada tipo de botón */
+.btnGuardar {
+  background: rgba(169, 168, 246, 0.3);
+  border-color: #a9a8f6;
 }
 
 .btnGuardar:hover {
-  background: #c4c3f8;
+  background: rgba(169, 168, 246, 0.4);
+  box-shadow: 0 0 15px rgba(169, 168, 246, 0.5);
+}
+
+.btnQuitar {
+  background: rgba(220, 53, 69, 0.1);
+  border-color: rgba(220, 53, 69, 0.5);
+  color: #dc3545;
+}
+
+.btnQuitar:hover {
+  background: rgba(220, 53, 69, 0.2);
+  border-color: rgba(220, 53, 69, 0.8);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
 }
 
 .btnAgregar {
-  padding: 4px 8px;
-  background: rgba(169, 168, 246, 0.3);
-  color: #a9a8f6;
   border: 1px dashed #a9a8f6;
-  border-radius: 3px;
-  cursor: pointer;
+  min-width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 30px;
-}
-
-.btnAgregar:hover {
-  background: rgba(169, 168, 246, 0.5);
 }
 
 
