@@ -27,19 +27,12 @@ export class HelperPentagramas {
   }
   public GetModos(cancion: Cancion): DisplayModoPentagrama[] {
     const modos: DisplayModoPentagrama[] = []
-    const instumentos = [
+    const nombres = [
       ...new Set(cancion.pentagramas.map((p) => p.nombre || 'noname')),
     ]
-    for (const pentagrama of instumentos) {
+    for (const pentagrama of nombres) {
       modos.push(new DisplayModoPentagrama(pentagrama, false))
     }
-    cancion.pentagramas.map((p) => {
-      const modoExistente = modos.find((m) => m.Nombre === p.nombre)
-      if (modoExistente) {
-        modoExistente.Instrumento = p.instrumento
-        modoExistente.Claves.push(p.clave)
-      }
-    })
     return modos
   }
   public creaDisplayPentagrama(

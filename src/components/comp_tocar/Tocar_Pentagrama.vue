@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import renglonPentagrama from './Tocar_renglonPentagrama.vue'
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted } from 'vue'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { DisplayPentagrama } from '../../modelo/pentagrama/displayPentagrama'
@@ -56,12 +56,6 @@ function cargarModos() {
     }
   }
 }
-watch(
-  () => props.cancion,
-  () => {
-    Actualizar()
-  },
-)
 
 function verInstrumento(modo: DisplayModoPentagrama, index: number) {
   if (props.editando) {
@@ -80,8 +74,6 @@ function verInstrumento(modo: DisplayModoPentagrama, index: number) {
   )
   Actualizar()
 }
-
-defineExpose({ Actualizar })
 </script>
 <template>
   <div class="componenteMusical">

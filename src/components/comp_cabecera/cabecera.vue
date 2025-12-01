@@ -31,6 +31,7 @@ async function EmpezarLoop() {
     compas.value = appStore.aplicacion.reproductor.compas
     golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
     estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
+
     rafId = requestAnimationFrame(loop)
   }
   // avoid multiple loops
@@ -47,6 +48,10 @@ function PararLoop() {
 }
 
 function VerEstado() {
+  cancion.value = appStore.aplicacion.reproductor.cancion
+  compas.value = appStore.aplicacion.reproductor.compas
+  golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
+
   if (appStore.estadosApp.estadoReproduccion == 'pausado') {
     cancion.value = appStore.aplicacion.reproductor.cancion
   }
@@ -99,10 +104,7 @@ function dejarDeCompartir() {
 }
 
 const crearSesion = () => {
-  const nombreSesion = appStore.perfil?.nombre
-    ? `${appStore.perfil.nombre} fogon`
-    : 'default'
-
+  const nombreSesion = appStore.perfil?.nombreSesion
   appStore.aplicacion.CrearSesion(nombreSesion)
 }
 

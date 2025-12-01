@@ -10,6 +10,7 @@ import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
 import { vistaHome } from '../modelo/helperVistas/home/vistaHome'
 import nuevaCancion from '../components/comp_home/nuevaCancion.vue'
 import subirCancion from '../components/comp_home/subircancion.vue'
+import { Logger } from '../modelo/logger'
 
 const viendoNueva = ref(false)
 const listasManager: ListasDBManager = new ListasDBManager()
@@ -80,10 +81,9 @@ function clickTocar(cancion: ItemIndiceCancion, indice: number) {
 }
 function tocarLista() {
   if (viendoLista.value == null || viendoLista.value === '') {
-    alert('Por favor, selecciona una lista para reproducir.')
     return
   }
-  console.log('Tocando lista:', viendoLista.value)
+  Logger.log('Tocando lista: ' + viendoLista.value)
   appStore.aplicacion.ClickTocarLista(viendoCanciones.value)
 }
 
@@ -154,7 +154,7 @@ watch(
 
 function confirmarNuevaLista() {
   if (nuevaLista.value.trim() === '') {
-    alert('El nombre de la lista no puede estar vacío.')
+    mostrarError('El nombre de la lista no puede estar vacío.')
     return
   }
   if (viendoListas.value == null) {
@@ -162,7 +162,7 @@ function confirmarNuevaLista() {
   }
 
   if (viendoListas.value.includes(nuevaLista.value)) {
-    alert('Ya existe una lista con ese nombre.')
+    mostrarError('Ya existe una lista con ese nombre.')
     return
   }
   if (viendoOrigen.value === 'server') {
@@ -186,7 +186,7 @@ function confirmarNuevaLista() {
 
 function renombrarLista() {
   if (!viendoLista.value) {
-    alert('Por favor, selecciona una lista para renombrar.')
+    mostrarError('Por favor, selecciona una lista para renombrar.')
     return
   }
   nuevaLista.value = viendoLista.value
@@ -195,7 +195,7 @@ function renombrarLista() {
 
 function confirmarRenombrarLista() {
   if (nuevaLista.value.trim() === '') {
-    alert('El nombre de la lista no puede estar vacío.')
+    mostrarError('El nombre de la lista no puede estar vacío.')
     return
   }
   if (nuevaLista.value === viendoLista.value) {
@@ -204,7 +204,7 @@ function confirmarRenombrarLista() {
     return
   }
   if (ListasEnStorage.value.includes(nuevaLista.value)) {
-    alert('Ya existe una lista con ese nombre.')
+    mostrarError('Ya existe una lista con ese nombre.')
     return
   }
   if (viendoOrigen.value === 'server') {
@@ -221,7 +221,11 @@ function confirmarRenombrarLista() {
         renamingLista.value = false
       })
       .catch(() => {
-        alert('Error al renombrar la lista.')
+        mostrarError('Error al renombrar la lista.')
+        Logger.logError(
+          'renombrandoLista',
+          'Error al renombrar la lista en el servidor.',
+        )
       })
     return
   }
@@ -239,7 +243,11 @@ function confirmarRenombrarLista() {
       renamingLista.value = false
     })
     .catch(() => {
-      alert('Error al renombrar la lista.')
+      mostrarError('Error al renombrar la lista.')
+      Logger.logError(
+        'renombrandoLista',
+        'Error al renombrar la lista en el almacenamiento local.',
+      )
     })
 }
 
@@ -251,11 +259,11 @@ function cancelarOperacion() {
 
 function borrarLista() {
   if (!viendoLista.value) {
-    alert('Por favor, selecciona una lista para borrar.')
+    mostrarError('Por favor, selecciona una lista para borrar.')
     return
   }
   if (!ListasEnStorage.value.includes(viendoLista.value)) {
-    alert('La lista seleccionada no existe.')
+    mostrarError('La lista seleccionada no existe.')
     return
   }
   if (
@@ -298,10 +306,16 @@ async function AgregarALista(index: number, listaseleccionada: string) {
     listasManager
       .AddCancion(nombreLista, viendoCanciones.value[index])
       .then(() => {
-        alert(`Canción agregada a la lista "${nombreLista}" en LocalStorage.`)
+        mostrarAdvertencia(
+          `Canción agregada a la lista "${nombreLista}" en LocalStorage.`,
+        )
       })
       .catch(() => {
-        alert('Error al agregar la canción a la lista.')
+        mostrarError('Error al agregar la canción a la lista.')
+        Logger.logError(
+          'agregarCancion',
+          'Error al agregar la canción a la lista en LocalStorage.',
+        )
       })
     return
   }
@@ -313,16 +327,28 @@ async function AgregarALista(index: number, listaseleccionada: string) {
         viendoCanciones.value[index],
       )
       .then(() => {
-        alert(`Canción agregada a la lista "${nombreLista}" en el servidor.`)
+        mostrarAdvertencia(
+          `Canción agregada a la lista "${nombreLista}" en el servidor.`,
+        )
       })
       .catch(() => {
-        alert('Error al agregar la canción a la lista en el servidor.')
+        mostrarError('Error al agregar la canción a la lista en el servidor.')
+        Logger.logError(
+          'agregarCancion',
+          'Error al agregar la canción a la lista en el servidor.',
+        )
       })
   }
 }
 
 const advertenciaText = ref<string>('')
 const errorText = ref<string>('')
+function mostrarError(texto: string) {
+  errorText.value = texto
+}
+function mostrarAdvertencia(texto: string) {
+  advertenciaText.value = texto
+}
 
 // Buscar ultima version
 declare const __APP_VERSION__: string
@@ -548,10 +574,6 @@ function clickAdvertencia() {
               <button @click="addingLista = true" class="action-btn success">
                 <span class="btn-icon">➕</span>
                 <span class="button-text">Nueva Lista</span>
-              </button>
-              <button class="action-btn primary" :disabled="!viendoLista">
-                <span class="btn-icon">🔗</span>
-                <span class="button-text">Compartir</span>
               </button>
               <button
                 @click="renombrarLista"

@@ -9,7 +9,6 @@ import type { Cancion } from '../../modelo/cancion/cancion'
 const appStore = useAppStore()
 
 const tiempo = new Tiempo()
-const currentCompas = ref(-1)
 const tiempoActual = ref('--:--')
 const showPlaylist = ref(false)
 const props = defineProps<{
@@ -18,6 +17,8 @@ const props = defineProps<{
   cancion: Cancion
   estadoReproduccion: string
 }>()
+const currentCompas = ref(props.compas)
+
 watch(
   () => props.golpeEnCompas,
   (newVal, oldVal) => {

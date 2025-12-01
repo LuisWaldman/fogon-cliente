@@ -7,8 +7,8 @@ import { Logger } from '../logger'
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
   loginSuccess: () => void
-  conectado: (data: { token: string }) => void
   loginFailed: (error: string) => void
+  conectado: (data: { token: string }) => void
   ensesion: (sesion: string) => void
   sesionFailed: (error: string) => void
   mensajesesion: (mensaje: string) => void

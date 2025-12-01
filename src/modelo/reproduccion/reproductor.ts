@@ -24,7 +24,7 @@ export class Reproductor {
     )
   }
   SetEstado(estado: string) {
-    if (estado === 'pausado' && this.estadoReproductor == 'Reproduciendo') {
+    if (estado === 'pausado') {
       this.MediaVista?.Pausar?.()
     }
     EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)

@@ -93,6 +93,14 @@ VerEstado()
 watch(
   () => appStore.estadosApp.estadoReproduccion,
   () => {
+    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
+    compas.value = appStore.aplicacion.reproductor.compas
+    golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
+
+    if (appStore.estadosApp.estadoReproduccion === 'update-compas') {
+      appStore.estadosApp.estadoReproduccion = 'pausado'
+    }
+
     VerEstado()
   },
 )

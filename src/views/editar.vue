@@ -94,8 +94,6 @@ function clickCerrarEditar() {
 function Actualizar() {
   if (ctrlEditarTexto.value) {
     ctrlSecuencia.value.Actualizar()
-  } else {
-    ctrlTocarPentagrama.value.Actualizar()
   }
 }
 
