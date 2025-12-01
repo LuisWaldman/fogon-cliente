@@ -5,7 +5,8 @@ import type { Parte } from '../../modelo/cancion/acordes';
 
 const props = defineProps<{
   parte: Parte
-  quitando: boolean
+  quitando: boolean,
+  reordenando: boolean,
   indexparte: number
 }>()
 const compaces = ref<string[][]>([]);
@@ -45,13 +46,12 @@ function handleQuitarOk(parteIndex: number) {
 <template>
   <div class="clsParte">
     <div class="parteHeader">
-      {{ parte.nombre }} <span>↕️</span>
+      {{ parte.nombre }} <span v-if="reordenando">↕️</span>
       <button @click="handleQuitarOk(indexparte)" v-if="quitando">
         🗑️ QUITAR
       </button>
     </div>
-
-    <div class="conteinerCompases">
+    <div class="conteinerCompases" v-if="!reordenando">
       <div
         class="conteinerCompas"
         v-for="(compas, compasindex) in compaces"

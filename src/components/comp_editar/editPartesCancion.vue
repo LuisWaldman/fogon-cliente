@@ -61,9 +61,55 @@ function onDragLeaveOrdenParte() {
 }
 
 function AlternarParte(parteIndex: number, porParteIndex: number) {
-  const nuevoOrden = []
-  alert(`Moviendo parte ${parteIndex} a la posición ${porParteIndex}`)
+  // No hacer nada si es la misma posición
+  if (parteIndex === porParteIndex) {
+    return
+  }
 
+  // Crear una copia del array de partes para reordenar
+  const partesReordenadas = [...props.cancion.acordes.partes]
+  
+  // Extraer la parte que se está moviendo
+  const parteMovida = partesReordenadas.splice(parteIndex, 1)[0]
+  
+  // Insertar en la nueva posición
+  partesReordenadas.splice(porParteIndex, 0, parteMovida)
+  
+  // Actualizar el array de partes
+  props.cancion.acordes.partes = partesReordenadas
+  
+  // Crear un mapa de índices antiguos a nuevos índices
+  const mapaIndices = new Map<number, number>()
+  
+  // Calcular los nuevos índices después del movimiento
+  for (let i = 0; i < props.cancion.acordes.partes.length; i++) {
+    if (i < Math.min(parteIndex, porParteIndex)) {
+      // Índices antes del área afectada no cambian
+      mapaIndices.set(i, i)
+    } else if (i === porParteIndex) {
+      // La nueva posición recibe el índice de la parte movida
+      mapaIndices.set(parteIndex, i)
+    } else if (parteIndex < porParteIndex) {
+      // Moviendo hacia adelante: los índices entre parteIndex y porParteIndex se mueven hacia atrás
+      if (i > parteIndex && i <= porParteIndex) {
+        mapaIndices.set(i, i - 1)
+      } else {
+        mapaIndices.set(i, i)
+      }
+    } else {
+      // Moviendo hacia atrás: los índices entre porParteIndex y parteIndex se mueven hacia adelante
+      if (i >= porParteIndex && i < parteIndex) {
+        mapaIndices.set(i, i + 1)
+      } else {
+        mapaIndices.set(i, i)
+      }
+    }
+  }
+  
+  // Actualizar ordenPartes usando el mapa de índices
+  props.cancion.acordes.ordenPartes = props.cancion.acordes.ordenPartes.map(indiceViejo => {
+    return mapaIndices.get(indiceViejo) ?? indiceViejo
+  })
 }
 
 function onDropOrdenParte(event: DragEvent, targetIndex: number) {
@@ -96,7 +142,7 @@ function onDropOrdenParte(event: DragEvent, targetIndex: number) {
       <EditParteCancionSoloLectura
         :parte="parte"
         :quitando="quitando"
-        :moviendo="reordenando"
+        :reordenando="reordenando"
         :acordes="acordesCancion"
         :indexparte="indexparte"
 
@@ -145,13 +191,13 @@ function onDropOrdenParte(event: DragEvent, targetIndex: number) {
 <style scoped>
 .destinoOrdenParte {
   border: 1px rgb(225, 226, 168) solid;
-  height: 7px;
+  height: 13px;
   background-color: #757061;
 }
 
 .destinoOrdenPartehover {
   border: 2px rgb(225, 226, 168) solid;
-  height: 9px;
+  height: 13px;
   background-color: #a9a8f6;
 }
 
