@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
-import type { Parte } from '../../modelo/cancion/acordes';
-
+import type { Parte } from '../../modelo/cancion/acordes'
 
 const props = defineProps<{
   parte: Parte
@@ -10,12 +9,12 @@ const props = defineProps<{
   moviendo: boolean
   indexparte: number
 }>()
-const compaces = ref<string[][]>([]);
+const compaces = ref<string[][]>([])
 function CargarCancion() {
   const ncompaces = []
-  for (const acordesStr of props.parte.acordes) {    
-      ncompaces.push(acordesStr.split(' ') )
-    }
+  for (const acordesStr of props.parte.acordes) {
+    ncompaces.push(acordesStr.split(' '))
+  }
   compaces.value = ncompaces
 }
 
@@ -28,7 +27,7 @@ const emit = defineEmits<{
 }>()
 
 defineOptions({
-  name: 'EditParteCancion'
+  name: 'EditParteCancion',
 })
 
 function handleQuitarOk(parteIndex: number) {
@@ -38,22 +37,25 @@ function handleQuitarOk(parteIndex: number) {
 const editandoParte = ref(false)
 
 // Función para manejar cambios en el combo de notas
-function manejarCambioNota(event: Event, compasIndex: number, notaIndex: number) {
+function manejarCambioNota(
+  event: Event,
+  compasIndex: number,
+  notaIndex: number,
+) {
   const target = event.target as HTMLSelectElement
   const nuevoValor = target.value
-  
+
   if (nuevoValor === 'borrar') {
     // Borrar la nota del compás
     compaces.value[compasIndex].splice(notaIndex, 1)
-    
+
     // Si el compás quedó vacío, borrarlo también
     if (compaces.value[compasIndex].length === 0) {
       compaces.value.splice(compasIndex, 1)
     }
-    
   }
   // Reamar props.parte.acordes
-  props.parte.acordes = compaces.value.map(compas => compas.join(' '))
+  props.parte.acordes = compaces.value.map((compas) => compas.join(' '))
 }
 
 // Función para finalizar la edición
@@ -63,6 +65,7 @@ function finalizarEdicion() {
 onMounted(() => {
   CargarCancion()
 })
+const draggeando = ref(true)
 </script>
 
 <template>
@@ -73,7 +76,11 @@ onMounted(() => {
         <button @click="editandoParte = true" class="btnEditar">
           ✏️ EDITAR
         </button>
-        <button @click="handleQuitarOk(indexparte)" v-if="quitando" class="btnQuitar">
+        <button
+          @click="handleQuitarOk(indexparte)"
+          v-if="quitando"
+          class="btnQuitar"
+        >
           🗑️ QUITAR
         </button>
       </div>
@@ -84,6 +91,7 @@ onMounted(() => {
         <button @click="finalizarEdicion()" class="btnGuardar">✓ Listo</button>
       </div>
       <div class="ctrlMandoEdit">
+        Nuevos Acordes
         <div
           class="notaCompas"
           v-for="nota in acordes"
@@ -101,32 +109,30 @@ onMounted(() => {
         v-for="(compas, compasindex) in compaces"
         :key="compasindex"
       >
+        <div v-if="draggeando">+</div>
         <div class="compas">
           <div
-            class="notaCompas"
+            class="notaContainer"
             v-for="(nota, notindex) in compas"
             :key="notindex"
-            draggable="true"
-            
           >
-            <select
-              v-model="compaces[compasindex][notindex]"
-              v-if="editandoParte"
-              @change="manejarCambioNota($event, compasindex, notindex)"
-            >
-              <option v-for="acorde in acordes" :key="acorde" :value="acorde">
-                {{ acorde }}
-              </option>
-              <option value="borrar">🗑️</option>
-            </select>
-            <span
-              v-else
-              >{{ nota }}</span
-            >
+            <div v-if="draggeando">+</div>
+            <div class="notaCompas">
+              <select
+                v-model="compaces[compasindex][notindex]"
+                v-if="editandoParte"
+                @change="manejarCambioNota($event, compasindex, notindex)"
+              >
+                <option v-for="acorde in acordes" :key="acorde" :value="acorde">
+                  {{ acorde }}
+                </option>
+                <option value="borrar">🗑️</option>
+              </select>
+              <span v-else>{{ nota }}</span>
+            </div>
           </div>
+          <div v-if="draggeando">+</div>
         </div>
-        
-        
       </div>
     </div>
   </div>
@@ -303,6 +309,7 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
 }
-
-
+.notaContainer {
+  display: flex;
+}
 </style>

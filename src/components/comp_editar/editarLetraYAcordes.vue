@@ -305,17 +305,16 @@ function estiloVistaSecundaria() {
   background: #000;
   scrollbar-width: thin;
   scrollbar-color: #444 #000;
-  }
+}
 
-  /* Para navegadores Webkit */
-  .edicion::-webkit-scrollbar {
-    height: 6px;
-    background: #000;
-  }
+/* Para navegadores Webkit */
+.edicion::-webkit-scrollbar {
+  height: 6px;
+  background: #000;
+}
 
-  .edicion::-webkit-scrollbar-thumb {
-    background: #444;
-    border-radius: 3px;
-  }
-
+.edicion::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
 </style>

@@ -10,7 +10,6 @@ const props = defineProps<{
   acordesCancion: string[]
 }>()
 
-
 const desdePosicion = ref(1)
 const hastaPosicion = ref(4)
 
@@ -68,19 +67,19 @@ function AlternarParte(parteIndex: number, porParteIndex: number) {
 
   // Crear una copia del array de partes para reordenar
   const partesReordenadas = [...props.cancion.acordes.partes]
-  
+
   // Extraer la parte que se está moviendo
   const parteMovida = partesReordenadas.splice(parteIndex, 1)[0]
-  
+
   // Insertar en la nueva posición
   partesReordenadas.splice(porParteIndex, 0, parteMovida)
-  
+
   // Actualizar el array de partes
   props.cancion.acordes.partes = partesReordenadas
-  
+
   // Crear un mapa de índices antiguos a nuevos índices
   const mapaIndices = new Map<number, number>()
-  
+
   // Calcular los nuevos índices después del movimiento
   for (let i = 0; i < props.cancion.acordes.partes.length; i++) {
     if (i < Math.min(parteIndex, porParteIndex)) {
@@ -105,11 +104,13 @@ function AlternarParte(parteIndex: number, porParteIndex: number) {
       }
     }
   }
-  
+
   // Actualizar ordenPartes usando el mapa de índices
-  props.cancion.acordes.ordenPartes = props.cancion.acordes.ordenPartes.map(indiceViejo => {
-    return mapaIndices.get(indiceViejo) ?? indiceViejo
-  })
+  props.cancion.acordes.ordenPartes = props.cancion.acordes.ordenPartes.map(
+    (indiceViejo) => {
+      return mapaIndices.get(indiceViejo) ?? indiceViejo
+    },
+  )
 }
 
 function onDropOrdenParte(event: DragEvent, targetIndex: number) {
@@ -120,12 +121,14 @@ function onDropOrdenParte(event: DragEvent, targetIndex: number) {
 
   dragenterOrden.value = false
 }
-
 </script>
 <template>
   <!-- ESTA REORDENANDO-->
   <div v-if="reordenando">
-    <div v-for="(parte, indexparte) in cancion.acordes.partes" :key="indexparte">
+    <div
+      v-for="(parte, indexparte) in cancion.acordes.partes"
+      :key="indexparte"
+    >
       <div
         class="destinoOrdenParte"
         :class="{ destinoOrdenPartehover: dragenterOrden }"
@@ -135,56 +138,60 @@ function onDropOrdenParte(event: DragEvent, targetIndex: number) {
         @dragenter="onDragEnterOrdenParte"
         @dragleave="onDragLeaveOrdenParte"
       ></div>
-      <div reordenando="true" draggable="true"
+      <div
+        reordenando="true"
+        draggable="true"
         @dragstart="(event) => onDragStartOrdenParte(event, indexparte)"
         @dragend="onDragEndOrdenParte"
       >
-      <EditParteCancionSoloLectura
-        :parte="parte"
-        :quitando="quitando"
-        :reordenando="reordenando"
-        :acordes="acordesCancion"
-        :indexparte="indexparte"
-
-      />
+        <EditParteCancionSoloLectura
+          :parte="parte"
+          :quitando="quitando"
+          :reordenando="reordenando"
+          :acordes="acordesCancion"
+          :indexparte="indexparte"
+        />
       </div>
     </div>
-          <div
-        class="destinoOrdenParte"
-        :class="{ destinoOrdenPartehover: dragenterOrden }"
-        v-if="dragrandoOrden"
-        @dragover="onDragOverParte"
-        @drop="(event) => onDropOrdenParte(event, cancion.acordes.partes.length)"
-        @dragenter="onDragEnterOrdenParte"
-        @dragleave="onDragLeaveOrdenParte"
-      ></div>
+    <div
+      class="destinoOrdenParte"
+      :class="{ destinoOrdenPartehover: dragenterOrden }"
+      v-if="dragrandoOrden"
+      @dragover="onDragOverParte"
+      @drop="(event) => onDropOrdenParte(event, cancion.acordes.partes.length)"
+      @dragenter="onDragEnterOrdenParte"
+      @dragleave="onDragLeaveOrdenParte"
+    ></div>
   </div>
 
-
-<!-- NO ESTA REORDENANDO -->
+  <!-- NO ESTA REORDENANDO -->
   <div v-if="!reordenando">
-    <div v-for="(parte, indexparte) in cancion.acordes.partes" :key="indexparte">
-     
-      <div draggable="false"
+    <div
+      v-for="(parte, indexparte) in cancion.acordes.partes"
+      :key="indexparte"
+    >
+      <div
+        draggable="false"
         @dragstart="(event) => onDragStartOrdenParte(event, indexparte)"
         @dragend="onDragEndOrdenParte"
       >
-      <EditParteCancion
-        :parte="parte"
-        :quitando="quitando"
-        :moviendo="reordenando"
-        :acordes="acordesCancion"
-        :indexparte="indexparte"
-      />
+        <EditParteCancion
+          :parte="parte"
+          :quitando="quitando"
+          :moviendo="reordenando"
+          :acordes="acordesCancion"
+          :indexparte="indexparte"
+        />
       </div>
     </div>
-         
   </div>
   <div>
     <div class="botoneraAcordes">
       <button @click="agregar">🎸 AGREGAR</button>
       <button @click="quitar" :class="{ activo: quitando }">🗑️ QUITAR</button>
-      <button @click="reordenar" :class="{ activo: reordenando }">↕️ REORDENAR</button>
+      <button @click="reordenar" :class="{ activo: reordenando }">
+        ↕️ REORDENAR
+      </button>
     </div>
   </div>
 </template>

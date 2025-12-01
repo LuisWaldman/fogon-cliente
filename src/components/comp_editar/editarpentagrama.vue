@@ -223,7 +223,9 @@ function clickAddOkPentagrama() {
         <label>Instrumento</label>
         <combo
           v-model="modos[editandoModo].Instrumento"
-          @update:modelValue="(nuevo) => cambioInstrumento(modos[editandoModo], nuevo)"
+          @update:modelValue="
+            (nuevo) => cambioInstrumento(modos[editandoModo], nuevo)
+          "
         ></combo>
       </div>
 

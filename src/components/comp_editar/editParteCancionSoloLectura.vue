@@ -1,21 +1,22 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
-import type { Parte } from '../../modelo/cancion/acordes';
-
+import type { Parte } from '../../modelo/cancion/acordes'
 
 const props = defineProps<{
   parte: Parte
-  quitando: boolean,
-  reordenando: boolean,
+  quitando: boolean
+  reordenando: boolean
   indexparte: number
 }>()
-const compaces = ref<string[][]>([]);
+const compaces = ref<string[][]>([])
 function CargarCancion() {
   const ncompaces = []
   for (const acordesStr of props.parte.acordes) {
     // Si acordesStr es un string, lo dividimos por espacios
     if (typeof acordesStr === 'string') {
-      ncompaces.push(acordesStr.split(' ').filter(acorde => acorde.trim() !== ''))
+      ncompaces.push(
+        acordesStr.split(' ').filter((acorde) => acorde.trim() !== ''),
+      )
     } else if (Array.isArray(acordesStr)) {
       // Si ya es un array, lo usamos directamente
       ncompaces.push(acordesStr)
@@ -32,7 +33,7 @@ const emit = defineEmits<{
 }>()
 
 defineOptions({
-  name: 'EditParteCancionSoloLectura'
+  name: 'EditParteCancionSoloLectura',
 })
 
 function handleQuitarOk(parteIndex: number) {
@@ -40,7 +41,6 @@ function handleQuitarOk(parteIndex: number) {
 }
 
 // Solo modo lectura - sin funcionalidad de edición
-
 </script>
 
 <template>
@@ -121,6 +121,4 @@ function handleQuitarOk(parteIndex: number) {
   flex-wrap: wrap;
   gap: 8px;
 }
-
-
 </style>
