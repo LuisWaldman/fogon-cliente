@@ -82,6 +82,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     CancionManager.getInstance().Save(origenN, cancion)
   }
   async GetCancionDelFogon() {
+    this.reproductor.SetEstado('cargando-defogon')
     const origen = new OrigenCancion('fogon', '', '')
     const cancion = await CancionManager.getInstance().Get(origen)
     const appStore = useAppStore()

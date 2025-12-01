@@ -95,6 +95,10 @@ function DescargarJSON() {
   a.click()
   URL.revokeObjectURL(url)
 }
+function EnviarAlFogon() {
+  const origenN = new OrigenCancion('fogon', '', '')
+  CancionManager.getInstance().Save(origenN, props.cancion)
+}
 </script>
 
 <template>
@@ -196,7 +200,14 @@ function DescargarJSON() {
       <div class="divctrlEdit">
         <label>Guardar</label>
         <div>
+          <button @click="EnviarAlFogon()"
+          v-if="appStore.estadosApp.estadoSesion === 'conectado'">🔥</button>
           <button @click="guardarCambios('local')">💾</button>
+          
+          
+
+ 
+
           <button
             v-if="appStore.estadosApp.estadoLogin === 'logueado'"
             @click="guardarCambios('server')"
