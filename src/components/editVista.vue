@@ -207,11 +207,11 @@ function ClickSoloMidi() {
             <label class="section-label">🎼 Configuración de Partitura</label>
             <div class="input-row">
               <div class="input-group half">
-                <label>📊 Compases x Renglón</label>
+                <label>📊 Compases x Sistema</label>
                 <div class="range-group">
                   <input
                     type="range"
-                    min="2"
+                    min="1"
                     max="8"
                     v-model.number="configPantalla.compasesPorRenglon"
                     class="range-input"
