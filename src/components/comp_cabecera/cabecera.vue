@@ -52,9 +52,7 @@ function VerEstado() {
   cancion.value = appStore.aplicacion.reproductor.cancion
   compas.value = appStore.aplicacion.reproductor.compas
   golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
-  conCancion.value =
-    !appStore.estadosApp.estadoReproduccion.startsWith('cargando') &&
-    appStore.estadosApp.estadoReproduccion !== 'sin-cancion'
+  conCancion.value = appStore.estadosApp.estadoCarga == 'cargada'
 
   if (appStore.estadosApp.estadoReproduccion == 'pausa') {
     cancion.value = appStore.aplicacion.reproductor.cancion
@@ -72,6 +70,13 @@ VerEstado()
 // Watch for changes in playback state and start/stop RAF loop
 watch(
   () => appStore.estadosApp.estadoReproduccion,
+  () => {
+    VerEstado()
+  },
+)
+
+watch(
+  () => appStore.estadosApp.estadoCarga,
   () => {
     VerEstado()
   },

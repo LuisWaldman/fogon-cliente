@@ -104,7 +104,7 @@ export class StrategyReproductor {
   async CargarCancion(cancion: ItemIndiceCancion) {
     this.reproductor.SetEstadoCarga('cargando-demanager')
     await this.CargarCancionDeOrigen(ItemIndiceCancion.GetOrigen(cancion))
-    
+
     this.reproductor.SetEstadoCarga('cargada')
   }
 
@@ -112,7 +112,7 @@ export class StrategyReproductor {
     this.reproductor.SetEstadoCarga('cargando-demanager')
     const cancionObtenida = await CancionManager.getInstance().Get(cancion)
     this.reproductor.cancion = cancionObtenida
-    this.reproductor.compas = -1
+    this.reproductor.compas = 0
     this.reproductor.SetEstadoCarga('cargada')
     this.reproductor.SetEstado('pausa')
     this.reproductor.origenCancion = cancion

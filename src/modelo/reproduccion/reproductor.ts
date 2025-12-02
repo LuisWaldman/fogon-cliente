@@ -137,7 +137,7 @@ export class Reproductor {
       appStore.estadosApp.texto = 'Cargando Midis...'
     }
     this.cancion = cancionObtenida
-    this.compas = -1
+    this.compas = 0
     appStore.estadosApp.estado = 'ok'
     appStore.origenCancion = origen
   }

@@ -16,7 +16,7 @@ defineProps<{
   >
     Empieza en {{ cancion.compasCantidad - golpeEnCompas }}
   </div>
-  
+
   <div v-if="cancion">
     <div class="metronono">
       <div style="display: flex">
