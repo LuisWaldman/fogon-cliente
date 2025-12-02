@@ -118,7 +118,7 @@ function cambioModo(index: number) {
         @clickCompas="cambiarCompas"
         @clickCambioModo="cambioModo"
         :editando="true"
-        :compasx-renglon="1"
+        :compasx-renglon="pantalla.getConfiguracionPantalla().compasesPorRenglon"
         ref="ctrlTocarPentagrama"
       ></TocarPentagrama>
 
