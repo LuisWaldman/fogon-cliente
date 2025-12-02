@@ -35,6 +35,7 @@ export class HelperJSON {
         instrumento: pentagrama.instrumento,
         nombre: pentagrama.nombre,
         clave: pentagrama.clave,
+        instrfogon: pentagrama.instrfogon,
         compases: pentagrama.compases.map((compas) => ({
           notas: compas.notas,
           beams: compas.beams,
@@ -112,11 +113,13 @@ export class HelperJSON {
           instrumento: string
           nombre: string
           clave: string
+          instrfogon: string
           compases: { notas: PentagramaNotas[][]; beams?: PentagramaBeam[] }[]
         }) => {
           const pentagrama = new Pentagrama()
           pentagrama.instrumento = penta.instrumento
           pentagrama.clave = penta.clave
+          pentagrama.instrfogon = penta.instrfogon
           pentagrama.nombre = penta.nombre
           pentagrama.compases = [] // Asegurar que esté inicializado
           penta.compases.forEach(

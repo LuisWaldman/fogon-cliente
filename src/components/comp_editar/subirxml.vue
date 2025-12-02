@@ -269,10 +269,6 @@ async function manejarSeleccionArchivo(event: Event) {
                 <span class="detail-value">{{ pentagrama.clave }}</span>
               </div>
 
-              <div class="detail-row" v-if="pentagrama.esBeat">
-                <label>🥁 Es Beat:</label>
-                <span class="detail-value">✓</span>
-              </div>
             </div>
           </div>
         </div>
