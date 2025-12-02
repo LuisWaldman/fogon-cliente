@@ -16,6 +16,7 @@ defineProps<{
   >
     Empieza en {{ cancion.compasCantidad - golpeEnCompas }}
   </div>
+  
   <div v-if="cancion">
     <div class="metronono">
       <div style="display: flex">
@@ -25,7 +26,7 @@ defineProps<{
           class="beat"
           :class="{
             beat_activo:
-              n - 1 === golpeEnCompas && estadoReproduccion === 'Reproduciendo',
+              n - 1 === golpeEnCompas && estadoReproduccion === 'reproduciendo',
           }"
         >
           <span> {{ n }}</span>
