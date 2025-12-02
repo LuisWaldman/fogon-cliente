@@ -88,6 +88,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     const appStore = useAppStore()
     this.reproductor.cancion = cancion
     appStore.origenCancion = origen
+    this.reproductor.SetEstado('pausado')
   }
 
   override async CargarCancion(cancion: ItemIndiceCancion) {
