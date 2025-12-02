@@ -54,8 +54,8 @@ function Dibujar() {
   scoreContainer.value.innerHTML = ''
 
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-  const ancho = props.renglon.pentagramas.length * altoPentagrama.value
-  renderer.resize(900, ancho)
+  const alto = props.renglon.pentagramas.length * altoPentagrama.value
+  renderer.resize(900, alto)
   const context = renderer.getContext()
   
   // Escalar el pentagrama para cambiar distancia entre líneas
@@ -67,7 +67,7 @@ function Dibujar() {
 
   let x = 0
   for (const pentagrama of props.renglon.pentagramas) {
-    pentagrama.getStave(context, props.cancion, x, props.compas)
+    pentagrama.getStave(context, props.cancion, x, props.compas, anchoCompasStave.value)
     x += altoPentagrama.value
   }
 }
