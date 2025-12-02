@@ -204,17 +204,17 @@ function EnviarAlFogon() {
             @click="EnviarAlFogon()"
             v-if="appStore.estadosApp.estadoSesion === 'conectado'"
           >
-            🔥
+            🔥 FOGON
           </button>
-          <button @click="guardarCambios('local')">💾</button>
+          <button @click="guardarCambios('local')">💾 Local</button>
 
           <button
             v-if="appStore.estadosApp.estadoLogin === 'logueado'"
             @click="guardarCambios('server')"
           >
-            🗄️
+            🗄️ Servidor
           </button>
-          <button @click="DescargarJSON" class="btnDescarga">⬇️</button>
+          <button @click="DescargarJSON" class="btnDescarga">⬇️ Descargar</button>
         </div>
       </div>
     </div>
