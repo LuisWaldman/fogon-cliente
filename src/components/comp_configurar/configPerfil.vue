@@ -6,6 +6,7 @@ import { Configuracion } from '../../modelo/configuracion'
 import { datosLogin } from '../../modelo/datosLogin'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { Logger } from '../../modelo/logger'
+import SelectInstrumentoFogon  from '../SelectInstrumentoFogon.vue'
 
 const refInstrumentos = ref<InstrumentoMidi[]>(
   InstrumentoMidi.GetInstrumentos(),
@@ -73,18 +74,8 @@ const instrumentosFiltrados = computed(() =>
   ),
 )
 
-// Opciones de instrumentos principales
-const instrumentosPrincipales = [
-  { value: 'teclado', label: 'Teclado', tieneVariantes: true },
-  { value: 'guitarra', label: 'Guitarra', tieneVariantes: true },
-  { value: 'ukelele', label: 'Ukelele', tieneVariantes: true },
-  { value: 'harmonica', label: 'Bajo' },
-  { value: 'armonica', label: 'Armónica' },
-  { value: 'percuicion', label: 'Percusión' },
-]
-
-const instrumentoBase = ref('')
-const varianteInstrumento = ref('')
+// Instrumento Fogón ahora se maneja con el componente SelectInstrumentoFogon
+const instrumentoFogon = ref(perfil.value.instrumento || 'teclado')
 
 // Detectar el instrumento base al montar
 onMounted(() => {
@@ -100,60 +91,15 @@ onMounted(() => {
     mantenerseLogeado.value = config.loginDefault.mantenerseLogeado
   }
 
-  // Detectar instrumento base y variante
-  detectarInstrumentoYVariante()
+  // Inicializar el instrumento Fogón
+  instrumentoFogon.value = perfil.value.instrumento || 'teclado'
 })
 
-function detectarInstrumentoYVariante() {
-  const instrActual = perfil.value.instrumento
-
-  if (instrActual.includes('guitarra')) {
-    instrumentoBase.value = 'guitarra'
-    if (instrActual.includes('ritmica')) {
-      varianteInstrumento.value = 'ritmica'
-    } else if (instrActual.includes('melodica')) {
-      varianteInstrumento.value = 'melodica'
-    } else {
-      varianteInstrumento.value = ''
-    }
-  } else if (instrActual.includes('ukelele')) {
-    instrumentoBase.value = 'ukelele'
-    if (instrActual.includes('ritmica')) {
-      varianteInstrumento.value = 'ritmica'
-    } else if (instrActual.includes('melodica')) {
-      varianteInstrumento.value = 'melodica'
-    } else {
-      varianteInstrumento.value = ''
-    }
-  } else {
-    instrumentoBase.value = instrActual
-    varianteInstrumento.value = ''
-  }
-}
-
-function actualizarInstrumento() {
-  if (
-    instrumentoBase.value === 'guitarra' ||
-    instrumentoBase.value === 'ukelele'
-  ) {
-    if (varianteInstrumento.value === 'ritmica') {
-      perfil.value.instrumento = `${instrumentoBase.value}-ritmica`
-    } else if (varianteInstrumento.value === 'melodica') {
-      perfil.value.instrumento = `${instrumentoBase.value}-melodica`
-    } else {
-      perfil.value.instrumento = instrumentoBase.value
-    }
-  } else {
-    perfil.value.instrumento = instrumentoBase.value
-    varianteInstrumento.value = ''
-  }
+function onInstrumentoFogonChange(nuevoInstrumento: string) {
+  perfil.value.instrumento = nuevoInstrumento
+  instrumentoFogon.value = nuevoInstrumento
   updateProfile()
 }
-
-const mostrarVariantes = computed(
-  () =>
-    instrumentoBase.value === 'guitarra' || instrumentoBase.value === 'ukelele',
-)
 
 function agregarInstrumentoFavorito() {
   if (
@@ -285,38 +231,10 @@ function toggleCifradoLatino() {
         <div style="margin-bottom: 5px">
           <label for="instrument">Instrumento</label>
         </div>
-        <select
-          id="instrument"
-          v-model="instrumentoBase"
-          @change="actualizarInstrumento"
-        >
-          <option
-            v-for="inst in instrumentosPrincipales"
-            :key="inst.value"
-            :value="inst.value"
-          >
-            {{ inst.label }}
-          </option>
-        </select>
-
-        <!-- Selector de variante para guitarra/ukelele -->
-        <select
-          v-if="mostrarVariantes"
-          v-model="varianteInstrumento"
-          @change="actualizarInstrumento"
-          style="margin-top: 0.5rem"
-        >
-          <option value="">Normal</option>
-          <option
-            v-if="
-              instrumentoBase === 'guitarra' || instrumentoBase === 'ukelele'
-            "
-            value="ritmica"
-          >
-            Rítmico
-          </option>
-          <option value="melodica">Melódico</option>
-        </select>
+        <SelectInstrumentoFogon 
+          v-model="instrumentoFogon"
+          @update:modelValue="onInstrumentoFogonChange"
+        />
       </div>
     </div>
 

@@ -1,9 +1,12 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, defineAsyncComponent } from 'vue'
 import JSZip from 'jszip'
 import { XMLHelper, XMLReumen } from '../../modelo/pentagrama/XMLHelper'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
+
+const SelectInstrumento = defineAsyncComponent(() => import('../SelectInstrumento.vue'))
+const SelectInstrumentoFogon = defineAsyncComponent(() => import('../SelectInstrumentoFogon.vue'))
 
 const props = defineProps<{
   cancion: Cancion
@@ -139,6 +142,16 @@ async function manejarSeleccionArchivo(event: Event) {
       // Convertir XML a pentagramas y mostrar modal de selección
       pentagramasTemporales.value = xmlHelper.XMLToPentagramas(xmlContent)
 
+      // Inicializar instrumentos por defecto para cada pentagrama
+      pentagramasTemporales.value.forEach((pentagrama) => {
+        if (!pentagrama.instrfogon) {
+          pentagrama.instrfogon = 'teclado'
+        }
+        if (!pentagrama.instrumento) {
+          pentagrama.instrumento = pentagrama.instrumento || 'Piano'
+        }
+      })
+
       // Seleccionar todos por defecto
       pentagramasTemporales.value.forEach((_, index) => {
         pentagramasSeleccionados.value.add(index)
@@ -155,6 +168,18 @@ async function manejarSeleccionArchivo(event: Event) {
 
   // Limpiar el input para permitir seleccionar el mismo archivo nuevamente
   target.value = ''
+}
+
+function actualizarInstrumentoFogon(pentagramaIndex: number, nuevoInstrumento: string) {
+  if (pentagramasTemporales.value[pentagramaIndex]) {
+    pentagramasTemporales.value[pentagramaIndex].instrfogon = nuevoInstrumento
+  }
+}
+
+function actualizarInstrumentoMidi(pentagramaIndex: number, nuevoInstrumento: string) {
+  if (pentagramasTemporales.value[pentagramaIndex]) {
+    pentagramasTemporales.value[pentagramaIndex].instrumento = nuevoInstrumento
+  }
 }
 </script>
 
@@ -254,19 +279,27 @@ async function manejarSeleccionArchivo(event: Event) {
               </div>
 
               <div class="detail-row">
-                <label>🎸 Instrumento:</label>
-                <input
-                  type="text"
-                  v-model="pentagrama.instrumento"
+                <label>🎵 Instrumento Fogón:</label>
+                <SelectInstrumentoFogon 
+                  :modelValue="pentagrama.instrfogon || 'teclado'"
+                  @update:modelValue="(valor) => actualizarInstrumentoFogon(index, valor)"
                   @click.stop
-                  class="form-input"
-                  placeholder="Sin instrumento"
+                />
+              </div>
+
+              <div class="detail-row">
+                <label>🎸 Instrumento MIDI:</label>
+                <SelectInstrumento 
+                  :modelValue="pentagrama.instrumento || 'Piano'"
+                  @update:modelValue="(valor) => actualizarInstrumentoMidi(index, valor)"
+                  @click.stop
                 />
               </div>
 
               <div class="detail-row">
                 <label>🎹 Clave:</label>
-                <span class="detail-value">{{ pentagrama.clave }}</span>
+                <span class="detail-value" v-if="pentagrama.clave === 'treble'">SOL</span>
+                <span class="detail-value" v-if="pentagrama.clave === 'bass'">FA</span>
               </div>
             </div>
           </div>
