@@ -49,7 +49,7 @@ function GetStylePantallaEdit() {
 function estiloVistaPrincipal() {
   if (
     viendo.value == 'editartexto' ||
-    viendo.value == 'acordes' ||
+    viendo.value == 'acordes' || viendo.value == 'medias' ||
     viendo.value == 'escala' || viendo.value == 'pentagramas'
   ) {
     return `width: 100%; height: 100%`
@@ -105,11 +105,9 @@ const viendoModo = ref(0)
   ></cabecera>
   <div class="vistaEdit" :style="GetStylePantallaEdit()">
     <div :style="estiloVistaPrincipal()">
-     
-
       <TocarLetra
         v-if="
-          (viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') &&
+          (viendo == 'inicio' || viendo == 'medias' || viendo == 'tiempo' || viendo == 'video') &&
           vista.muestra == 'karaoke'
         "
         :cancion="appStore.editandocancion"
@@ -117,7 +115,7 @@ const viendoModo = ref(0)
       ></TocarLetra>
       <TocarLetraAcorde
         v-if="
-          (viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') &&
+          (viendo == 'inicio' || viendo == 'medias' || viendo == 'tiempo' || viendo == 'video') &&
           (vista.muestra == 'letrayacordes' ||
             vista.muestra == 'acordes' ||
             vista.muestra == 'partitura')
