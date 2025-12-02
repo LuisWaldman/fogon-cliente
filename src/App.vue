@@ -68,7 +68,8 @@ function abrirVistaEdicion() {
       />
       <div>{{ appStore.estadosApp.texto }}</div>
     </div>
-    <router-view v-if="appStore.estadosApp.estado === 'ok'" />
+    <router-view v-if="appStore.estadosApp.estado === 'ok' && 
+      !refEditandoVista" />
     <editVista
       v-if="refEditandoVista"
       @cerrar="cerrareditarPantalla"
