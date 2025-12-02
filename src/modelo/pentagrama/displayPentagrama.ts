@@ -5,6 +5,7 @@ import { HelperPentagramas } from './helperPentagramas'
 
 export class DisplayPentagrama {
   public renglones: DisplaySistemaPentagrama[] = []
+  public compasxRenglon: number = 4
 
   GetSistema(idsistema: number): DisplaySistemaPentagrama {
     if (this.renglones.length <= idsistema) {
@@ -27,7 +28,7 @@ export class DisplayPentagrama {
       const compPenta = helper.creaCompasPentagrama(pentagrama, i, escala)
       nInstru.compases.push(compPenta)
 
-      if ((i + 1) % 4 === 0) {
+      if ((i + 1) % this.compasxRenglon === 0) {
         renglon = this.GetSistema(sistema)
         renglon.pentagramas.push(nInstru)
         nInstru = new DisplayInstrumentoPentagrama([], pentagrama.clave)

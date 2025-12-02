@@ -532,70 +532,335 @@ function clickEscala() {
 </template>
 
 <style scoped>
-.contDatos {
-  border: 1px solid;
-  margin: 5px;
-  padding: 5px;
-}
-.sonandoNota {
-  background-color: lightgreen;
-  color: black;
-  font-weight: bold;
-}
-
-.dropdown-superior-derecha {
-  position: absolute;
-  left: 100%;
-}
-
-.viendoFrecuencia {
-  background-color: rgb(133, 104, 202);
-  color: white;
-  padding: 2px;
-  border: 1px solid black;
-}
+/* Contenedor principal del afinador */
 .divAfinador {
   position: relative;
-  width: 90%;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.08) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.1);
 }
 
-.quinta {
-  font-size: larger;
-  background-color: lightyellow;
+/* Contenedores de datos mejorados */
+.contDatos {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.15) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  border: 1px solid rgba(169, 168, 246, 0.4);
+  border-radius: 10px;
+  margin: 8px;
+  padding: 15px 18px;
+  min-width: 200px;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
 }
-.octava {
-  background-color: lightgrey;
-  font-size: x-large;
+
+.contDatos:hover {
+  border-color: #a9a8f6;
+  box-shadow: 0 4px 15px rgba(169, 168, 246, 0.2);
+  transform: translateY(-2px);
 }
-.clsNota {
-  padding: 1px;
-  height: 30px;
+
+.contDatos > div:first-child {
+  color: #a9a8f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
 }
-.ctrlMostrando {
-  background-color: rgb(209, 169, 38);
-  color: white;
+
+.contDatos > div:last-child {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* Select mejorado dentro de contDatos */
+.contDatos select {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  border: 1px solid #a9a8f6;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  max-width: 200px;
+}
+
+.contDatos select:hover {
+  border-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(169, 168, 246, 0.2);
+}
+
+.contDatos select option {
+  background: #2d3748;
+  color: #ffffff;
+  padding: 8px;
+}
+
+/* Filas de cuerdas mejoradas */
+.divAfinador > div > div[style*='display: flex'][style*='height: 80px'] {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  border-radius: 8px;
+  margin: 6px 0;
+  padding: 10px 15px;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.2s ease;
+}
+
+.divAfinador > div > div[style*='display: flex'][style*='height: 80px']:hover {
+  border-color: rgba(169, 168, 246, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.15) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+/* Nota destacada cuando está sonando */
+.sonandoNota {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  border-color: #34d399 !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+}
+
+/* Dropdown superior derecha */
+.dropdown-superior-derecha {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.dropdown-superior-derecha button {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  border: 1px solid #a9a8f6;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 12px;
+}
+
+.dropdown-superior-derecha button:hover {
+  background: linear-gradient(135deg, #a9a8f6 0%, #8b7cf6 100%);
+  border-color: #ffffff;
+}
+
+/* Indicador de frecuencia */
+.viendoFrecuencia {
+  background: linear-gradient(135deg, #a9a8f6 0%, #8b7cf6 100%);
+  color: #ffffff;
+  padding: 6px 12px;
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 6px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor del círculo */
 .circuloConteiner {
   display: flex;
-}
-.ctrlAfinador {
-  font-size: large;
-  padding: 13px;
-  border: 1px solid;
-  margin-bottom: 10px;
-  cursor: pointer;
+  gap: 20px;
+  align-items: flex-start;
 }
 
+/* Controles del afinador */
 .divctrlAfinador {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  min-width: 250px;
+  gap: 12px;
 }
 
+.ctrlAfinador {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  border: 1px solid rgba(169, 168, 246, 0.4);
+  border-radius: 10px;
+  padding: 15px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.ctrlAfinador:hover {
+  border-color: #a9a8f6;
+  box-shadow: 0 4px 15px rgba(169, 168, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+.ctrlAfinador span {
+  color: #a9a8f6;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Control activo/mostrando */
+.ctrlMostrando {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2) 0%,
+    rgba(207, 218, 65, 0.1) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  border: 2px solid #a9a8f6;
+  box-shadow: 0 0 20px rgba(169, 168, 246, 0.4);
+}
+
+.ctrlMostrando span {
+  color: #ffffff;
+}
+
+/* Select dentro de controles */
+.ctrlAfinador select {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  border: 1px solid #a9a8f6;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.ctrlAfinador select:hover {
+  border-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(169, 168, 246, 0.2);
+}
+
+/* Estilos para notas específicas */
+.quinta {
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #000000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.octava {
+  background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.clsNota {
+  padding: 6px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
+  .divAfinador {
+    padding: 15px;
+  }
+
   .circuloConteiner {
     display: block;
+    gap: 15px;
+  }
+
+  .divctrlAfinador {
+    margin-right: 0;
+    margin-bottom: 20px;
+    min-width: auto;
+  }
+
+  .contDatos {
+    min-width: auto;
+    margin: 5px 0;
+    padding: 12px 15px;
+  }
+
+  .contDatos > div:last-child {
+    font-size: 1.5rem;
+  }
+
+  .ctrlAfinador {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+
+  .dropdown-superior-derecha {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .divAfinador {
+    padding: 12px;
+  }
+
+  .contDatos {
+    padding: 10px 12px;
+  }
+
+  .contDatos > div:last-child {
+    font-size: 1.3rem;
+  }
+
+  .ctrlAfinador {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .ctrlAfinador span {
+    font-size: 1rem;
+  }
+}
+
+/* Animación de entrada */
+.divAfinador {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>

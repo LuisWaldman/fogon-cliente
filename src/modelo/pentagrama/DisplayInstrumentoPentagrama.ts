@@ -8,12 +8,12 @@ export class DisplayInstrumentoPentagrama {
     cancion: Cancion,
     y: number = 0,
     compasActual: number,
+    anchoCompasStave: number = 200,
   ): Stave {
     let x = 0
     context.setFillStyle('#a9a8f6')
     context.setStrokeStyle('#a9a8f6')
-    const anchoPrimerStave = 100
-    const anchoCompasStave = 200
+    const anchoPrimerStave = anchoCompasStave * 0.3
     const stave = new Stave(x, y, anchoPrimerStave)
     //addKeySignature
     const key = `${cancion.escala}`

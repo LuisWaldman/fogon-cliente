@@ -31,6 +31,13 @@ exvistapantalla.value.tamanioParte = configPantalla.value.tamanioParte
 exvistapantalla.value.tamanioAcordeParte =
   configPantalla.value.tamanioAcordeParte
 exvistapantalla.value.columnas = configPantalla.value.columnas
+// Inicializar propiedades de pentagrama
+exvistapantalla.value.compasesPorRenglon =
+  configPantalla.value.compasesPorRenglon || 4
+exvistapantalla.value.anchoCompas = configPantalla.value.anchoCompas || 200
+exvistapantalla.value.altoCompas = configPantalla.value.altoCompas || 50
+exvistapantalla.value.escalaPentagrama =
+  configPantalla.value.escalaPentagrama || 0.6
 
 function guardarConfiguracionPantalla() {
   config.guardarEnLocalStorage()
@@ -193,6 +200,75 @@ function ClickSoloMidi() {
               <span class="range-value"
                 >{{ configPantalla.tamanioAcorde }}px</span
               >
+            </div>
+          </div>
+
+          <div v-if="verPartitura" class="form-section partitura-section">
+            <label class="section-label">🎼 Configuración de Partitura</label>
+            <div class="input-row">
+              <div class="input-group half">
+                <label>📊 Compases x Renglón</label>
+                <div class="range-group">
+                  <input
+                    type="range"
+                    min="2"
+                    max="8"
+                    v-model.number="configPantalla.compasesPorRenglon"
+                    class="range-input"
+                  />
+                  <span class="range-value">{{
+                    configPantalla.compasesPorRenglon
+                  }}</span>
+                </div>
+              </div>
+              <div class="input-group half">
+                <label>📐 Ancho Compás</label>
+                <div class="range-group">
+                  <input
+                    type="range"
+                    min="120"
+                    max="400"
+                    v-model.number="configPantalla.anchoCompas"
+                    class="range-input"
+                  />
+                  <span class="range-value"
+                    >{{ configPantalla.anchoCompas }}px</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-group half">
+                <label>📏 Alto Pentagrama</label>
+                <div class="range-group">
+                  <input
+                    type="range"
+                    min="30"
+                    max="120"
+                    v-model.number="configPantalla.altoCompas"
+                    class="range-input"
+                  />
+                  <span class="range-value"
+                    >{{ configPantalla.altoCompas }}px</span
+                  >
+                </div>
+              </div>
+              <div class="input-group half">
+                <label>🔍 Escala Líneas</label>
+                <div class="range-group">
+                  <input
+                    type="range"
+                    min="0.4"
+                    max="2.0"
+                    step="0.1"
+                    v-model.number="configPantalla.escalaPentagrama"
+                    class="range-input"
+                  />
+                  <span class="range-value">{{
+                    configPantalla.escalaPentagrama.toFixed(1)
+                  }}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -799,6 +875,25 @@ function ClickSoloMidi() {
   background-color: rgba(255, 255, 255, 0.15);
   border-color: #6a4c93;
   transform: translateY(-1px);
+}
+
+/* Partitura section styling */
+.partitura-section {
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.1) 0%,
+    rgba(106, 76, 147, 0.1) 100%
+  );
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+}
+
+.partitura-section .section-label {
+  color: #c4b5fd;
+  font-size: 1rem;
+  margin-bottom: 16px;
 }
 
 /* Responsive design */

@@ -141,9 +141,10 @@ function EnviarAlFogon() {
       >
         <label>BPM: {{ cancion.bpm }} </label>
         <div>
-          <label class="tituloEdit">{{
-            tiempo.formatSegundos(cancion.duracionCancion)
-          }}</label>
+          <label class="tituloEdit"
+            >DURACION:
+            {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
+          >
         </div>
       </div>
 
@@ -204,17 +205,19 @@ function EnviarAlFogon() {
             @click="EnviarAlFogon()"
             v-if="appStore.estadosApp.estadoSesion === 'conectado'"
           >
-            🔥
+            🔥 FOGON
           </button>
-          <button @click="guardarCambios('local')">💾</button>
+          <button @click="guardarCambios('local')">💾 Local</button>
 
           <button
             v-if="appStore.estadosApp.estadoLogin === 'logueado'"
             @click="guardarCambios('server')"
           >
-            🗄️
+            🗄️ Servidor
           </button>
-          <button @click="DescargarJSON" class="btnDescarga">⬇️</button>
+          <button @click="DescargarJSON" class="btnDescarga">
+            ⬇️ Descargar
+          </button>
         </div>
       </div>
     </div>
@@ -261,52 +264,270 @@ function EnviarAlFogon() {
 </template>
 
 <style scoped>
-.compartir_sesion {
+/* Navbar principal con diseño moderno - padding reducido */
+.navbarFogon {
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 50%, #353333 100%);
+  border: none;
+  border-bottom: 2px solid #a9a8f6;
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.15);
+  padding: 12px 20px 8px 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* Contenedor principal de controles con mejor layout - gap reducido */
+.navbarFogon > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: stretch;
+  margin-bottom: 0;
+}
+
+/* Estilos mejorados para cada control de edición - más compacto */
+.divctrlEdit {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.08) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 0;
+  min-width: 140px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.divctrlEdit::before {
+  content: '';
   position: absolute;
-  top: 160px;
-  border: 7px double #a9a8f6;
-  color: #a9a8f6;
-  padding: 5px 10px;
-  border-radius: 5px;
-
-  z-index: 1000;
-  backdrop-filter: blur(2px);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a9a8f6, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-/* Aumenta el tamaño de la fuente en pantallas grandes */
-@media (min-width: 1024px) {
-  .navbar-nav {
-    font-size: 1.5rem;
-  }
+.divctrlEdit:hover {
+  border-color: #a9a8f6;
+  box-shadow: 0 8px 25px rgba(169, 168, 246, 0.25);
+  transform: translateY(-2px);
 }
 
-.titulocancioncontrol {
+.divctrlEdit:hover::before {
+  opacity: 1;
+}
+
+/* Control activo/editando con mejor indicador visual */
+.edintandoCtrl {
+  border: 2px solid #a9a8f6;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2) 0%,
+    rgba(207, 218, 65, 0.1) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  box-shadow:
+    0 0 20px rgba(169, 168, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.edintandoCtrl::before {
+  opacity: 1;
+  background: linear-gradient(90deg, #cfda41, #a9a8f6, #cfda41);
+}
+
+/* Labels y títulos con mejor tipografía */
+.divctrlEdit label {
   color: #a9a8f6;
-  font-size: 2.5rem;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px; /* Adjust margin for spacing */
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.tituloEdit {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.titulocancion {
+  max-width: 350px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  flex-grow: 1; /* Allow title to take available space */
 }
 
-/* Añadir estilos para asegurar que el dropdown se despliegue hacia la derecha y no salga de la pantalla */
+/* Botones mejorados con estilo consistente */
+.divctrlEdit button {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  border: 1px solid #a9a8f6;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 12px;
+  margin: 3px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.divctrlEdit button:hover {
+  background: linear-gradient(135deg, #a9a8f6 0%, #8b7cf6 100%);
+  border-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(169, 168, 246, 0.3);
+}
+
+.divctrlEdit button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(169, 168, 246, 0.2);
+}
+
+/* Botón especial de descarga */
+.btnDescarga {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  border-color: #10b981 !important;
+}
+
+.btnDescarga:hover {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  border-color: #34d399 !important;
+}
+
+/* Mejoras en el layout de contenido de cada control */
+.divctrlEdit > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Estilos para íconos y emojis */
+.divctrlEdit label:first-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Panel secundario para editores - reducir margen */
+.navbarFogon > .divctrlEdit:last-child {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(169, 168, 246, 0.2);
+  border-radius: 12px;
+  margin-top: 8px;
+  padding: 15px;
+}
+
+/* Responsive design mejorado */
+@media (max-width: 768px) {
+  .navbarFogon {
+    padding: 10px 15px;
+  }
+
+  .navbarFogon > div:first-child {
+    gap: 8px;
+  }
+
+  .divctrlEdit {
+    min-width: 120px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+  }
+
+  .tituloEdit {
+    font-size: 1.1rem;
+  }
+
+  .divctrlEdit button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .titulocancion {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .divctrlEdit {
+    min-width: 100px;
+    padding: 10px 12px;
+  }
+
+  .divctrlEdit label {
+    font-size: 0.8rem;
+  }
+
+  .tituloEdit {
+    font-size: 1rem;
+  }
+}
+
+/* Estados especiales */
+.divctrlEdit .calidad-stars {
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+
+/* Animaciones y transiciones suaves */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.edintandoCtrl {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Compatibilidad con estilos existentes */
+.compartir_sesion {
+  position: absolute;
+  top: 160px;
+  border: 2px solid #a9a8f6;
+  background: rgba(0, 0, 0, 0.9);
+  color: #a9a8f6;
+  padding: 12px 16px;
+  border-radius: 12px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(169, 168, 246, 0.2);
+}
+
+/* Otros estilos mantenidos para compatibilidad */
 .dropdown-menu-end {
   right: 0;
   left: auto;
   min-width: 180px;
 }
 
-/* Estilos para dropdown anidado */
 .dropdown-submenu {
   position: relative;
 }
+
 .imgConectado {
   box-sizing: content-box;
   border: 6px double #a9a8f6;
 }
+
 .dropdown-submenu .dropdown-menu {
   top: 0;
   right: 100%;
@@ -345,221 +566,29 @@ function EnviarAlFogon() {
   z-index: 5;
 }
 
+/* Estilos específicos para Escala, Partituras y Video - texto más grande */
+.divctrlEdit:nth-child(2) .tituloEdit,
+.divctrlEdit:nth-child(6) .tituloEdit,
+.divctrlEdit:nth-child(7) .tituloEdit {
+  font-size: 2.5rem !important;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* En móviles también aumentar el tamaño */
 @media (max-width: 768px) {
-  .compartir_sesion {
-    left: 10;
-  }
-
-  .titulocancioncontrol {
-    font-size: 1.5rem; /* Reduce el tamaño del texto en móviles */
-    margin-left: 0; /* Alinea a la izquierda */
-    margin-right: 0; /* Elimina el margen derecho */
-    text-align: center; /* Centra el texto */
-  }
-
-  .dropdown-superior-derecha {
-    top: 0.5rem;
-    right: 0.5rem;
-  }
-
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos */
-  }
-
-  .nav-item {
-    margin-bottom: 10px; /* Espaciado entre los ítems */
-  }
-
-  .navbar-toggler {
-    font-size: 1.5rem; /* Hace el botón de despliegue más grande */
+  .divctrlEdit:nth-child(2) .tituloEdit,
+  .divctrlEdit:nth-child(6) .tituloEdit,
+  .divctrlEdit:nth-child(7) .tituloEdit {
+    font-size: 1.8rem !important;
   }
 }
 
-.logo-img {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.navbarFogon {
-  width: 100%;
-  border: 1px solid;
-  background-color: #353333 !important;
-}
-
-.titulo-App {
-  color: #a9a8f6;
-  font-size: 50px;
-  margin-left: 10px;
-  margin-right: auto;
-}
-
-.clsDivEditando {
-  border: 1px solid;
-  margin: 15px 10px 5px 10px;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.clsEditando {
-  background-color: black;
-  color: #a9a8f6;
-  font-size: 30px;
-  border: 1px solid;
-  margin: 5px;
-  padding: 5px;
-}
-.clsEditando:focus {
-  outline: none;
-  border-color: #f5da09; /* Cambia el color del borde al hacer foco */
-}
-.otras_paginas {
-  font-size: 30px;
-  display: flex;
-  border: 1px solid;
-  margin: 10px 10px 15px 10px;
-  right: 0 auto;
-  border-radius: 20px;
-  height: 44%;
-  margin-left: auto;
-}
-
-.otra_paginas {
-  margin-left: auto;
-  border: 1px solid;
-  margin: 5px 10px 5px 10px;
-  border-radius: 20px;
-  color: #a9a8f6 !important;
-  font-size: medium;
-}
-.conectado {
-  color: red;
-}
-.ctrl_menu {
-  margin: 4px;
-  padding: 10px 0px 10px 10px;
-  border-radius: 20px;
-  border: 1px solid;
-}
-
-.pagina_seleccionable {
-  display: flex;
-  border: 1px solid transparent;
-  margin: 10px 0px 10px 10px;
-}
-
-.pagina_seleccionable:hover {
-  border-color: black;
-}
-
-.active {
-  color: red;
-}
-
-.ilogo {
-  margin: 1px;
-  padding-right: 12px;
-  font-size: 50px;
-}
-
-.aladerecha {
-  margin-left: auto;
-}
-
-.navbar {
-  padding: 10px;
-  border: 6px solid #8b4513;
-  border-top: 1px solid #a9a8f6;
-  margin-bottom: 3px;
-}
-
-.navbar-brand {
-  color: #8b4513; /* Color marrón para un estilo de papel viejo */
-  font-size: 42px; /* Aumentar tamaño de la marca */
-  text-decoration: none;
-}
-
-.navbar-toggler {
-  border: none;
-  background-color: transparent;
-}
-
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: #8b4513;
-}
-
-.navbar-collapse {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-item {
-  list-style: none;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.dropdown-menu {
-  display: none;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-  display: flex;
-}
-
-.clase_tocar {
-  font-size: 30px;
-  padding: 10px;
-}
-.tituloEdit {
-  font-size: xx-large;
-  font-weight: bold;
-}
-.divctrlEdit {
-  padding: 12px;
-  margin-left: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1px solid;
-}
-
-.divctrlEdit button {
-  height: 80%;
-  font-size: large;
-}
-
-.edintandoCtrl {
-  border: 2px solid #92974e;
-  background: linear-gradient(55deg, #000000 50%, #cfda41 100%);
-}
-.titulocancion {
-  width: 400px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media (max-width: 768px) {
-  .divctrlEdit {
-    left: 0px;
-    top: 0px;
-    padding: 0px;
-    margin-left: 5px;
-    font-size: small;
-    font-size: small;
-  }
-  .tituloEdit {
-    font-size: medium;
+@media (max-width: 480px) {
+  .divctrlEdit:nth-child(2) .tituloEdit,
+  .divctrlEdit:nth-child(6) .tituloEdit,
+  .divctrlEdit:nth-child(7) .tituloEdit {
+    font-size: 1.5rem !important;
   }
 }
 </style>

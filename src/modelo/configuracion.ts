@@ -27,6 +27,11 @@ export class VistaTocar {
   public altoPantallaDescuento: number = 200 // Nueva propiedad
   public AutoScroll: boolean = true
   public columnas: number = 78 // Nueva propiedad para el número de columnas
+  // Propiedades para pentagrama
+  public compasesPorRenglon: number = 4 // Compases por renglón
+  public anchoCompas: number = 200 // Ancho de cada compás
+  public altoCompas: number = 50 // Alto de cada pentagrama
+  public escalaPentagrama: number = 0.6 // Escala del pentagrama
 }
 
 export class Configuracion {

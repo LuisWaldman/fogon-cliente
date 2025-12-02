@@ -35,6 +35,7 @@ function hacerNombreArchivo() {
 }
 </script>
 <template>
+  <div></div>
   <div class="ctrlEdit">
     <div>
       <label>Cancion:</label>
@@ -81,18 +82,204 @@ function hacerNombreArchivo() {
       <button class="lblCabecera" @click="clickCancelarCambiarDatos">❌</button>
     </div>
   </div>
-  <div></div>
 </template>
 <style scoped>
-.btnDescarga {
-  margin-left: 20px;
-}
-.input-editable {
-  font-size: large;
-  max-width: 240px;
-}
+/* Contenedor principal con diseño moderno */
 .ctrlEdit {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.12) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  border: 1px solid rgba(169, 168, 246, 0.4);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 10px 0;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.1);
+}
+
+/* Grupos de campos */
+.ctrlEdit > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Labels mejorados */
+label {
+  color: #a9a8f6;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+/* Inputs mejorados */
+.input-editable {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  border: 1px solid rgba(169, 168, 246, 0.5);
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.input-editable:focus {
+  border-color: #a9a8f6;
+  box-shadow: 0 0 0 2px rgba(169, 168, 246, 0.2);
+  background: linear-gradient(135deg, #5a6578 0%, #3d4758 100%);
+}
+
+.input-editable:hover {
+  border-color: rgba(169, 168, 246, 0.7);
+}
+
+/* Select mejorado */
+select {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  border: 1px solid #a9a8f6;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  min-width: 160px;
+  transition: all 0.2s ease;
+}
+
+select:hover {
+  border-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(169, 168, 246, 0.2);
+}
+
+select:focus {
+  border-color: #a9a8f6;
+  box-shadow: 0 0 0 2px rgba(169, 168, 246, 0.2);
+}
+
+select option {
+  background: #2d3748;
+  color: #ffffff;
+  padding: 8px;
+}
+
+/* Botones mejorados */
+button {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  border: 1px solid #a9a8f6;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #a9a8f6 0%, #8b7cf6 100%);
+  border-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(169, 168, 246, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(169, 168, 246, 0.2);
+}
+
+/* Clase específica para botones de cabecera */
+.lblCabecera {
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ctrlEdit {
+    padding: 12px 15px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctrlEdit > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.8rem;
+    min-width: auto;
+  }
+
+  .input-editable {
+    width: 100%;
+    max-width: none;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  select {
+    width: 100%;
+    min-width: auto;
+    font-size: 0.85rem;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ctrlEdit {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  label {
+    font-size: 0.75rem;
+  }
+
+  .input-editable {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  select {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    min-width: 35px;
+    height: 35px;
+  }
 }
 </style>

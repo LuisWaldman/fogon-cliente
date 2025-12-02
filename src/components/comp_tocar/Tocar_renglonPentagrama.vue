@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
+import { onMounted, ref, watch, computed } from 'vue'
 import { Renderer } from 'vexflow'
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
 import { Cancion } from '../../modelo/cancion/cancion'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   renglon: DisplaySistemaPentagrama
@@ -38,32 +39,51 @@ watch(
   },
 )
 
-const anchoPrimerStave = 60
-const anchoCompasStave = 200
+const pantalla = new Pantalla()
+const config = pantalla.getConfiguracionPantalla()
+
+// Valores dinámicos basados en configuración
+const anchoPrimerStave = computed(() => Math.min(config.anchoCompas * 0.3, 100))
+const anchoCompasStave = computed(() => config.anchoCompas || 200)
+const altoPentagrama = computed(() => config.altoCompas || 50)
+const escalaPentagrama = computed(() => config.escalaPentagrama || 0.6)
 const refDibujado = ref<string>('')
+
 function Dibujar() {
   if (!scoreContainer.value) return
   scoreContainer.value.innerHTML = ''
 
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-  const ancho = props.renglon.pentagramas.length * 100
-  renderer.resize(900, ancho)
+  const alto =
+    props.renglon.pentagramas.length * altoPentagrama.value +
+    altoPentagrama.value * 0.1
+  renderer.resize(900, alto)
   const context = renderer.getContext()
+
+  // Escalar el pentagrama para cambiar distancia entre líneas
+  context.scale(escalaPentagrama.value, escalaPentagrama.value)
+
   context.setFillStyle('#a9a8f6')
   context.setStrokeStyle('#a9a8f6')
   refDibujado.value = 'normal'
 
-  let x = 0
+  let y = 0
   for (const pentagrama of props.renglon.pentagramas) {
-    pentagrama.getStave(context, props.cancion, x, props.compas)
-    x += 100
+    pentagrama.getStave(
+      context,
+      props.cancion,
+      y,
+      props.compas,
+      anchoCompasStave.value,
+    )
+    y += altoPentagrama.value
   }
 }
 
 const emit = defineEmits(['clickCompas'])
 function handleClick(event: MouseEvent) {
   const compas = Math.floor(
-    (event.offsetX - anchoPrimerStave) / anchoCompasStave,
+    (event.offsetX - anchoPrimerStave.value) / anchoCompasStave.value,
   )
   emit(
     'clickCompas',

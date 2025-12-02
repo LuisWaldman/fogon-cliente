@@ -381,6 +381,7 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
           v-if="vista.muestra == 'partitura' && cancion.pentagramas.length > 0"
           :cancion="cancion"
           :editando="false"
+          :compasxRenglon="vista.compasesPorRenglon"
           :compas="compas"
         ></TocarPentagrama>
       </div>
