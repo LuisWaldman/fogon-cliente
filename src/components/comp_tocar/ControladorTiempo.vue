@@ -32,11 +32,11 @@ watch(
 
 watch(
   () => props.compas,
-  (newVal) => {
+  () => {
     tiempoActual.value = tiempo.formatSegundos(
       props.cancion.duracionCompas * props.compas,
     )
-    currentCompas.value = newVal
+    currentCompas.value = props.compas
   },
 )
 
@@ -60,7 +60,7 @@ function stop() {
 function updateCompas() {
   const toStr = currentCompas.value.toString()
   appStore.aplicacion.reproductor.SetEstado('updateCompas')
-  appStore.aplicacion.reproductor.updateCompas(parseInt(toStr) + 1)
+  appStore.aplicacion.reproductor.updateCompas(parseInt(toStr))
 }
 
 function togglePlaylist() {

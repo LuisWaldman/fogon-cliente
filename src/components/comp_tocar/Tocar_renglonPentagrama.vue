@@ -49,13 +49,6 @@ const altoPentagrama = computed(() => config.altoCompas || 50)
 const escalaPentagrama = computed(() => config.escalaPentagrama || 0.6)
 const refDibujado = ref<string>('')
 
-// Watcher para configuración de pentagrama
-watch(
-  [escalaPentagrama, altoPentagrama, anchoCompasStave],
-  () => {
-    Dibujar()
-  },
-)
 function Dibujar() {
   if (!scoreContainer.value) return
   scoreContainer.value.innerHTML = ''

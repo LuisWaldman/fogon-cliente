@@ -38,8 +38,10 @@ export class HelperPentagramas {
   public creaDisplayPentagrama(
     cancion: Cancion,
     modos: DisplayModoPentagrama[],
+    compasxRenglon?: number,
   ): DisplayPentagrama {
     const display = new DisplayPentagrama()
+    display.compasxRenglon = compasxRenglon || 4
     const pentagramas = cancion.pentagramas
     if (pentagramas.length === 0) {
       return display

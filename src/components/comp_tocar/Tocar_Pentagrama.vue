@@ -11,9 +11,11 @@ const props = defineProps<{
   compas: number
   cancion: Cancion
   editando: boolean
+  compasxRenglon: number
 }>()
 
 const display = ref<DisplayPentagrama>(new DisplayPentagrama())
+display.value.compasxRenglon = props.compasxRenglon
 const modos = ref<DisplayModoPentagrama[]>([])
 
 const helper = new HelperPentagramas()
@@ -23,7 +25,8 @@ onMounted(() => {
 
 function Actualizar() {
   cargarModos()
-  const newDisplay = helper.creaDisplayPentagrama(props.cancion, modos.value)
+  
+  const newDisplay = helper.creaDisplayPentagrama(props.cancion, modos.value, props.compasxRenglon)
   display.value = newDisplay
 }
 
