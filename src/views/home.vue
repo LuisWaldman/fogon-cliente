@@ -396,12 +396,8 @@ function clickAdvertencia() {
     advertenciaText.value.toLowerCase().includes('actualizar') ||
     advertenciaText.value.toLowerCase().includes('versión')
   ) {
-    if (confirm('¿Deseas actualizar a la nueva versión?')) {
       localStorage.removeItem('app_version_hash')
       window.location.reload()
-    } else {
-      advertenciaText.value = ''
-    }
   } else {
     advertenciaText.value = ''
   }
