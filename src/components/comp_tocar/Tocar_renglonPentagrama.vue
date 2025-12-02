@@ -54,7 +54,7 @@ function Dibujar() {
   scoreContainer.value.innerHTML = ''
 
   const renderer = new Renderer(scoreContainer.value, Renderer.Backends.SVG)
-  const alto = props.renglon.pentagramas.length * altoPentagrama.value
+  const alto = (props.renglon.pentagramas.length * altoPentagrama.value) + (altoPentagrama.value * 0.1)
   renderer.resize(900, alto)
   const context = renderer.getContext()
   
@@ -65,10 +65,10 @@ function Dibujar() {
   context.setStrokeStyle('#a9a8f6')
   refDibujado.value = 'normal'
 
-  let x = 0
+  let y = 0
   for (const pentagrama of props.renglon.pentagramas) {
-    pentagrama.getStave(context, props.cancion, x, props.compas, anchoCompasStave.value)
-    x += altoPentagrama.value
+    pentagrama.getStave(context, props.cancion, y, props.compas, anchoCompasStave.value)
+    y += altoPentagrama.value
   }
 }
 
