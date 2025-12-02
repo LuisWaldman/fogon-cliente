@@ -6,6 +6,7 @@ import { Pentagrama } from '../../modelo/cancion/pentagrama'
 import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { EstiloEditandoCompas } from '../../modelo/pentagrama/EstiloEditandoCompas'
 import editarCompas from '../comp_editar/editarCompasPentagrama.vue'
+import TocarPentagrama from '../../components/comp_tocar/Tocar_Pentagrama.vue'
 import combo from '../SelectInstrumento.vue'
 
 import { DisplaySistemaPentagrama } from '../../modelo/pentagrama/DisplaySistemaPentagrama'
@@ -16,6 +17,7 @@ import { DisplayNotaPentagrama } from '../../modelo/pentagrama/DisplayNotapentag
 import { PatronRitmico } from '../../modelo/pentagrama/PatronRitmico'
 import { HelperEditPentagrama } from '../../modelo/pentagrama/editPentagrama/helperEditCompasPentagrama'
 import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
+import { Pantalla } from '../../modelo/pantalla'
 
 const props = defineProps<{
   cancion: Cancion
@@ -26,6 +28,7 @@ const props = defineProps<{
 const modos = ref<DisplayModoPentagrama[]>([])
 const helper = new HelperPentagramas()
 
+const ctrlTocarPentagrama = ref()
 cargarModos()
 function cargarModos() {
   modos.value = helper.GetModos(props.cancion)
@@ -177,8 +180,50 @@ function clickAddOkPentagrama() {
   cargarModos()
   calcularPentagramaEditando()
 }
+
+
+
+const pantalla = new Pantalla()
+function estiloVistaPrincipal() {
+  return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
+}
+
+function estiloVistaSecundaria() {
+  return `height: ${pantalla.getAltoPantalla() - 100}px; overflow-x: auto;`
+}
+
+const viendoModo = ref(0)
+function cambioModo(index: number) {
+  viendoModo.value = index
+}
+const editandoCompas = ref(-1)
+function cambiarCompas(compas: number) {
+  editandoCompas.value = compas
+}
+const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
 </script>
 <template>
+  <div   :style="{
+      height: pantalla.getAltoPantalla() + 'px',
+      overflow: 'hidden',
+      display: 'flex',
+    }">
+  <div :style="estiloVistaPrincipal()">
+    
+     <TocarPentagrama
+        :cancion="cancion"
+        :compas="compas"
+        @clickCompas="cambiarCompas"
+        @clickCambioModo="cambioModo"
+        :editando="true"
+        ref="ctrlTocarPentagrama"
+        
+        :compasx-renglon="
+          compaces
+        "
+      ></TocarPentagrama>
+  </div>
+  <div :style="estiloVistaSecundaria()">
   <div class="pentagrama-container">
     <div class="botoneraLateral">
       <subirxml :cancion="cancion"></subirxml>
@@ -256,6 +301,8 @@ function clickAddOkPentagrama() {
         @actualizoPentagrama="emit('actualizoPentagrama')"
       ></editarCompas>
     </div>
+  </div>
+  </div>
   </div>
 </template>
 
