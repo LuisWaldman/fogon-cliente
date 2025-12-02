@@ -100,7 +100,12 @@ watch(
     if (appStore.estadosApp.estadoReproduccion === 'update-compas') {
       appStore.estadosApp.estadoReproduccion = 'pausado'
     }
-
+    if (appStore.estadosApp.estadoReproduccion === 'actualizando-fogon') {
+      appStore.estadosApp.estadoReproduccion = 'pausado'
+    }
+    if (appStore.estadosApp.estadoReproduccion === 'actualizado-fogonReproduciendo') {
+      appStore.estadosApp.estadoReproduccion = 'Reproduciendo'
+    }
     VerEstado()
   },
 )
