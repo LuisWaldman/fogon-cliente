@@ -121,8 +121,8 @@ function sincronizar() {
     <div>
       <div>
         <div style="display: flex">
-          Hora Local <RelojControl :fecha="momentoLocal"></RelojControl>Hora
-          Sincronizada
+          Segundo Local <RelojControl :fecha="momentoLocal"></RelojControl>Segundo
+          Sincronizado
           <RelojControl :fecha="momentoSincro"></RelojControl>
         </div>
       </div>
@@ -130,7 +130,7 @@ function sincronizar() {
       <div>
         <div>
           <div style="display: flex; align-items: center">
-            Diferencia con servidor: {{ Math.floor(delayReloj / 1000) }}s
+            🗄️ Diferencia con servidor: {{ Math.floor(delayReloj / 1000) }}s
             {{ (delayReloj % 1000).toFixed(0) }}ms +/-
             {{ ErrorReloj.toFixed(2) }}ms
             <div>
@@ -142,7 +142,7 @@ function sincronizar() {
           </div>
 
           <div v-if="SincronizadoRTC">
-            Diferencia con RTC: {{ Math.floor(delayRelojRTC / 1000) }}s
+            🔥 Diferencia con RTC: {{ Math.floor(delayRelojRTC / 1000) }}s
             {{ (delayRelojRTC % 1000).toFixed(0) }}ms +/-
             {{ ErrorRelojRTC.toFixed(2) }}ms
             <button @click="calcularDetalleRTC">🔍</button>
