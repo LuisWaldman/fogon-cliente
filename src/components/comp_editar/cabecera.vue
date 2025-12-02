@@ -141,7 +141,7 @@ function EnviarAlFogon() {
       >
         <label>BPM: {{ cancion.bpm }} </label>
         <div>
-          <label class="tituloEdit">TIEMPO: {{
+          <label class="tituloEdit">DURACION: {{
             tiempo.formatSegundos(cancion.duracionCancion)
           }}</label>
         </div>
