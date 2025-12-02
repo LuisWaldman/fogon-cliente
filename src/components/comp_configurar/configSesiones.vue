@@ -199,7 +199,7 @@ if (appStore.estadosApp.estadoSesion === 'conectado') {
 }
 
 /* Input styles */
-input[type="text"] {
+input[type='text'] {
   width: 100%;
   max-width: 400px;
   padding: 12px 16px;
@@ -213,13 +213,13 @@ input[type="text"] {
   outline: none;
 }
 
-input[type="text"]:focus {
+input[type='text']:focus {
   border-color: #8b5cf6;
   background: rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
 }
 
-input[type="text"]::placeholder {
+input[type='text']::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -394,7 +394,7 @@ tbody tr:last-child td {
   .configSesion {
     padding: 15px 10px;
   }
-  
+
   .configSesion h1 {
     font-size: 2em;
   }
@@ -425,7 +425,7 @@ tbody tr:last-child td {
     margin-bottom: 12px;
   }
 
-  input[type="text"] {
+  input[type='text'] {
     font-size: 0.9rem;
     padding: 10px 12px;
   }
@@ -472,13 +472,13 @@ button:focus {
   outline-offset: 2px;
 }
 
-input[type="text"]:focus {
+input[type='text']:focus {
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
 }
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
-  input[type="text"],
+  input[type='text'],
   button {
     border-width: 3px;
   }
@@ -487,7 +487,7 @@ input[type="text"]:focus {
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   button,
-  input[type="text"],
+  input[type='text'],
   tbody tr {
     transition: none;
   }

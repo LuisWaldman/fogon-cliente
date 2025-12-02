@@ -6,6 +6,7 @@ import { DelaySet } from './DelaySet'
 import { ClienteWebRTC } from '../conexion/ClienteWebRTC'
 import type { SDPStruct } from '../conexion/SDPStruct'
 import { Logger } from '../logger'
+import type { EstadoReproduccion } from '../../EstadosAplicacion'
 
 export class HelperSincro {
   GetDetalleCalculo(): DelaySet[] {
@@ -185,7 +186,7 @@ export class HelperSincro {
     duracionGolpe: number,
     golpesxcompas: number,
   ): EstadoSincroCancion {
-    let estadoReproduccion: 'Reproduciendo' | 'Iniciando'
+    let estadoReproduccion: EstadoReproduccion
     let compas: number
     let golpeDelCompas: number
     let deltaGolpe: number
@@ -194,14 +195,14 @@ export class HelperSincro {
     if (diferencia <= 0) {
       diferencia = diferencia * -1
       const golpe = Math.floor(diferencia / duracionGolpe)
-      estadoReproduccion = 'Reproduciendo'
+      estadoReproduccion = 'reproduciendo'
       deltaGolpe = diferencia - golpe * duracionGolpe
       deltaGolpe = duracionGolpe - deltaGolpe
       compas = sincro.desdeCompas + Math.floor(golpe / golpesxcompas)
       golpeDelCompas = golpe % golpesxcompas
     } else {
       const golpe = Math.floor(diferencia / duracionGolpe)
-      estadoReproduccion = 'Iniciando'
+      estadoReproduccion = 'iniciando'
       compas = sincro.desdeCompas
       deltaGolpe = diferencia - golpe * duracionGolpe
       golpeDelCompas = golpesxcompas - (golpe + 1)
@@ -220,7 +221,7 @@ export class HelperSincro {
     duracionGolpe: number,
     golpesxcompas: number,
   ): EstadoSincroCancion {
-    let estadoReproduccion: 'Reproduciendo' | 'Iniciando'
+    let estadoReproduccion: EstadoReproduccion
     let compas: number
     let golpeDelCompas: number
     let deltaGolpe: number
@@ -228,7 +229,7 @@ export class HelperSincro {
     let diferencia = momento
     if (diferencia > 0) {
       const golpe = Math.floor(diferencia / duracionGolpe)
-      estadoReproduccion = 'Reproduciendo'
+      estadoReproduccion = 'reproduciendo'
       deltaGolpe = diferencia - golpe * duracionGolpe
       deltaGolpe = duracionGolpe - deltaGolpe
       compas = Math.floor(golpe / golpesxcompas)
@@ -236,7 +237,7 @@ export class HelperSincro {
     } else {
       diferencia = diferencia * -1
       const golpe = Math.floor(diferencia / duracionGolpe)
-      estadoReproduccion = 'Iniciando'
+      estadoReproduccion = 'iniciando'
       deltaGolpe = diferencia - golpe * duracionGolpe
       golpeDelCompas = golpesxcompas - (golpe + 1)
       compas = 0
@@ -261,7 +262,7 @@ export class HelperSincro {
     let timeInicio: number
     let recuperadoDesdeCompas: number
 
-    if (estado.estado === 'Reproduciendo') {
+    if (estado.estado === 'reproduciendo') {
       const golpeFromCompas =
         (estado.compas - desdeCompas) * golpesxcompas + estado.golpeEnCompas
 

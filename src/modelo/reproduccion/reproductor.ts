@@ -9,7 +9,11 @@ import { StrategyReproductorConectado } from './StrategyReproductorConectado'
 import { Letra } from '../cancion/letra'
 import { Acordes } from '../cancion/acordes'
 import { Cancion } from '../cancion/cancion'
-import { EstadosAplicacion } from '../../EstadosAplicacion'
+import {
+  EstadosAplicacion,
+  type EstadoCargaReproduccion,
+  type EstadoReproduccion,
+} from '../../EstadosAplicacion'
 import { OrigenCancion } from '../cancion/origencancion'
 import type { MediaVista } from './MediaVista'
 
@@ -23,11 +27,15 @@ export class Reproductor {
       this.listaReproduccion.GetCancion(),
     )
   }
-  SetEstado(estado: string) {
-    if (estado === 'pausado') {
+  SetEstado(estado: EstadoReproduccion) {
+    if (estado === 'pausa') {
       this.MediaVista?.Pausar?.()
     }
     EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)
+  }
+
+  SetEstadoCarga(estado: EstadoCargaReproduccion) {
+    EstadosAplicacion.GetEstadosAplicacion().SetEstadoCarga(estado)
   }
 
   setMediaVista(mediaVista: MediaVista): void {
@@ -35,7 +43,7 @@ export class Reproductor {
     this.strategyReproductor.SetEstado('esperandoMedia')
     mediaVista.setMediaCambioEstado((estado: string) => {
       if (estado === 'cargado') {
-        this.strategyReproductor.SetEstado('pausado')
+        this.strategyReproductor.SetEstado('pausa')
       }
     })
   }

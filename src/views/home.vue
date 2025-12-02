@@ -396,8 +396,8 @@ function clickAdvertencia() {
     advertenciaText.value.toLowerCase().includes('actualizar') ||
     advertenciaText.value.toLowerCase().includes('versión')
   ) {
-      localStorage.removeItem('app_version_hash')
-      window.location.reload()
+    localStorage.removeItem('app_version_hash')
+    window.location.reload()
   } else {
     advertenciaText.value = ''
   }

@@ -12,7 +12,7 @@ defineProps<{
 <template>
   <div
     class="divPrevia"
-    v-if="appStore.estadosApp.estadoReproduccion == 'Iniciando'"
+    v-if="appStore.estadosApp.estadoReproduccion == 'iniciando'"
   >
     Empieza en {{ cancion.compasCantidad - golpeEnCompas }}
   </div>

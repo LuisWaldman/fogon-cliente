@@ -200,7 +200,7 @@ function EnviarAlFogon() {
 
       <div class="divctrlEdit">
         <label>Guardar</label>
-        <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: row">
           <button
             @click="EnviarAlFogon()"
             v-if="appStore.estadosApp.estadoSesion === 'conectado'"

@@ -1,3 +1,4 @@
+import type { EstadoReproduccion } from '../../EstadosAplicacion'
 import { CancionManager } from '../cancion/CancionManager'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import type { OrigenCancion } from '../cancion/origencancion'
@@ -11,7 +12,7 @@ export class StrategyReproductor {
   protected EstadoSincro: EstadoSincroCancion = new EstadoSincroCancion(
     -1,
     0,
-    '-',
+    'sin-cancion',
     0,
   )
   public reproductor: Reproductor
@@ -39,12 +40,12 @@ export class StrategyReproductor {
 
       Logger.log(`Iniciando reproducción de la canción: ${momento}`)
 
-      this.reproductor.SetEstado('Iniciando')
+      this.reproductor.SetEstado('iniciando')
       this.sincronizar()
     }
   }
 
-  SetEstado(estado: string) {
+  SetEstado(estado: EstadoReproduccion) {
     this.reproductor.SetEstado(estado)
   }
 
@@ -52,7 +53,7 @@ export class StrategyReproductor {
     if (this.reproductor.MediaVista !== null) {
       this.reproductor.MediaVista?.Pausar?.()
     }
-    this.reproductor.SetEstado('pausado')
+    this.reproductor.SetEstado('pausa')
     this.reproductor.golpeDelCompas = 0
   }
   updateCompas(compas: number) {
@@ -64,7 +65,7 @@ export class StrategyReproductor {
         compas * duracionCompas,
       )
     }
-    this.reproductor.SetEstado('update-compas')
+    this.reproductor.SetEstadoCarga('update-compas')
   }
   async sincronizar() {
     const helper = HelperSincro.getInstance()
@@ -101,15 +102,19 @@ export class StrategyReproductor {
   }
 
   async CargarCancion(cancion: ItemIndiceCancion) {
-    this.CargarCancionDeOrigen(ItemIndiceCancion.GetOrigen(cancion))
+    this.reproductor.SetEstadoCarga('cargando-demanager')
+    await this.CargarCancionDeOrigen(ItemIndiceCancion.GetOrigen(cancion))
+    
+    this.reproductor.SetEstadoCarga('cargada')
   }
 
   async CargarCancionDeOrigen(cancion: OrigenCancion) {
-    this.reproductor.SetEstado('cargando-cancion')
+    this.reproductor.SetEstadoCarga('cargando-demanager')
     const cancionObtenida = await CancionManager.getInstance().Get(cancion)
     this.reproductor.cancion = cancionObtenida
     this.reproductor.compas = -1
-    this.reproductor.SetEstado('pausado')
+    this.reproductor.SetEstadoCarga('cargada')
+    this.reproductor.SetEstado('pausa')
     this.reproductor.origenCancion = cancion
   }
 }

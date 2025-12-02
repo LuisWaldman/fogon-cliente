@@ -115,7 +115,7 @@ function clickFogon() {
             class="imagenicono"
             :style="getImageStyle()"
             src="/img/llamaritomopausa.png"
-            v-if="appStore.estadosApp.estadoReproduccion === 'pausado'"
+            v-if="appStore.estadosApp.estadoReproduccion === 'pausa'"
             style="z-index: 3"
           />
           <img
@@ -123,7 +123,7 @@ function clickFogon() {
             :style="getImageStyle()"
             src="/img/llamaritomo1.png"
             v-if="
-              appStore.estadosApp.estadoReproduccion === 'Reproduciendo' &&
+              appStore.estadosApp.estadoReproduccion === 'reproduciendo' &&
               golpeDelCompas == 0
             "
             style="z-index: 3"

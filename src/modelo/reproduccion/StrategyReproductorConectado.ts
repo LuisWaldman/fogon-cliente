@@ -1,3 +1,4 @@
+import type { EstadoReproduccion } from '../../EstadosAplicacion'
 import { useAppStore } from '../../stores/appStore'
 import type { Cancion } from '../cancion/cancion'
 import { CancionManager } from '../cancion/CancionManager'
@@ -20,7 +21,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     this.cliente = cliente
     this.cliente.setCancionActualizadaHandler(async () => {
       await this.GetCancionDelFogon()
-      this.reproductor.SetEstado('pausado')
+      this.reproductor.SetEstado('pausa')
     })
     this.cliente.setCancionIniciadaHandler(
       (compas: number, desde: number, nroUsuario: number) => {
@@ -44,7 +45,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
       },
     )
     this.cliente.setCancionCambioEstadoHandler(
-      (estado: string, nroUsuario: number) => {
+      (estado: EstadoReproduccion, nroUsuario: number) => {
         this.reproductor.SetEstado(estado)
         this.reproductor.ultimoUsuarioQueCambioEstado = nroUsuario
         this.reproductor.ultimoEstadoCambiado = estado
@@ -56,7 +57,7 @@ export class StrategyReproductorConectado extends StrategyReproductor {
         this.reproductor.compas = compas
         this.reproductor.ultimoUsuarioQueCambioEstado = nroUsuario
         this.reproductor.ultimoEstadoCambiado = 'update-compas'
-        this.reproductor.SetEstado('update-compas')
+        this.reproductor.SetEstadoCarga('update-compas')
       },
     )
     this.cliente.setCancionSincronizadaHandler(
@@ -82,30 +83,25 @@ export class StrategyReproductorConectado extends StrategyReproductor {
     CancionManager.getInstance().Save(origenN, cancion)
   }
   async GetCancionDelFogon() {
-    this.reproductor.SetEstado('cargando-defogon')
+    this.reproductor.SetEstadoCarga('cargando-defogon')
     const origen = new OrigenCancion('fogon', '', '')
     const cancion = await CancionManager.getInstance().Get(origen)
     const appStore = useAppStore()
     this.reproductor.cancion = cancion
     appStore.origenCancion = origen
-    if (this.reproductor.estadoReproductor == 'Reproduciendo') {
-      this.reproductor.SetEstado('actualizado-fogonReproduciendo')
-    } else {
-      this.reproductor.SetEstado('actualizado-fogon')
-    }
-
+    this.reproductor.SetEstadoCarga('cargada')
   }
 
   override async CargarCancion(cancion: ItemIndiceCancion) {
     const appStore = useAppStore()
     if (appStore.rolSesion != 'director') {
-      this.reproductor.SetEstado('cargando-dedirector')
+      this.reproductor.SetEstadoCarga('cargando-dedirector')
     } else {
-      this.reproductor.SetEstado('cargando-demanager')
+      this.reproductor.SetEstadoCarga('cargando-demanager')
       const cancionObtenida = await CancionManager.getInstance().Get(
         ItemIndiceCancion.GetOrigen(cancion),
       )
-      this.reproductor.SetEstado('cargando-enviofogon')
+      this.reproductor.SetEstadoCarga('cargando-enviofogon')
       this.EnviarCancion(cancionObtenida)
     }
   }
@@ -147,8 +143,8 @@ export class StrategyReproductorConectado extends StrategyReproductor {
   }
 
   override detenerReproduccion() {
-    this.reproductor.SetEstado('pausando')
-    this.cliente.cambiarEstado('pausado')
+    this.reproductor.SetEstado('pausa')
+    this.cliente.cambiarEstado('pausa')
   }
 
   override updateCompas(compas: number) {

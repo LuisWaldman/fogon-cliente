@@ -1,13 +1,15 @@
+import type { EstadoReproduccion } from '../../EstadosAplicacion'
+
 export class EstadoSincroCancion {
   compas: number
   golpeEnCompas: number
-  estado: string
+  estado: EstadoReproduccion
   delay: number
 
   constructor(
     compas: number,
     golpeEnCompas: number,
-    estado: string,
+    estado: EstadoReproduccion,
     delay: number,
   ) {
     this.compas = compas

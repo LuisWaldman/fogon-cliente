@@ -347,7 +347,11 @@ button:hover::before {
 
 /* Primary button (Agregar Servidor) - More discrete */
 .tabla th button {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
   border: 2px solid rgba(169, 168, 246, 0.5);
   color: #a9a8f6;
   font-weight: 600;
@@ -357,7 +361,11 @@ button:hover::before {
 
 .tabla th button:hover {
   border-color: rgba(169, 168, 246, 0.8);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
   box-shadow: 0 4px 20px rgba(169, 168, 246, 0.2);
   transform: translateY(-1px);
 }
@@ -427,7 +435,11 @@ button:disabled::before {
 
 /* Connected server row */
 .conectado {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.2) 100%) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.2) 0%,
+    rgba(5, 150, 105, 0.2) 100%
+  ) !important;
   border-left: 4px solid #10b981 !important;
   color: #ffffff !important;
   font-weight: 600;
@@ -438,7 +450,11 @@ button:disabled::before {
 }
 
 .conectado:hover {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.3) 0%, rgba(5, 150, 105, 0.3) 100%) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.3) 0%,
+    rgba(5, 150, 105, 0.3) 100%
+  ) !important;
 }
 
 /* Responsive design */
@@ -446,7 +462,7 @@ button:disabled::before {
   .config-sesion {
     padding: 15px 10px;
   }
-  
+
   .config-sesion h1 {
     font-size: 2em;
   }
@@ -456,7 +472,7 @@ button:disabled::before {
     padding: 12px 10px;
     font-size: 0.9rem;
   }
-  
+
   .tabla th button {
     padding: 8px 12px;
     font-size: 0.8rem;
@@ -467,7 +483,7 @@ button:disabled::before {
     font-size: 0.8rem;
     margin: 2px;
   }
-  
+
   .tabla input {
     font-size: 0.9rem;
     padding: 8px 10px;
@@ -479,13 +495,13 @@ button:disabled::before {
   .tabla td {
     padding: 8px;
   }
-  
+
   button {
     display: block;
     width: 100%;
     margin: 2px 0;
   }
-  
+
   .tabla td:last-child {
     text-align: left;
   }

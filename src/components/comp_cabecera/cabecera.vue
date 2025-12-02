@@ -22,8 +22,8 @@ async function EmpezarLoop() {
   const loop = async () => {
     // stop if state changed
     if (
-      appStore.estadosApp.estadoReproduccion !== 'Reproduciendo' &&
-      appStore.estadosApp.estadoReproduccion !== 'Iniciando'
+      appStore.estadosApp.estadoReproduccion !== 'reproduciendo' &&
+      appStore.estadosApp.estadoReproduccion !== 'iniciando'
     ) {
       rafId = null
       return
@@ -52,15 +52,16 @@ function VerEstado() {
   cancion.value = appStore.aplicacion.reproductor.cancion
   compas.value = appStore.aplicacion.reproductor.compas
   golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
-  conCancion.value = !appStore.estadosApp.estadoReproduccion.startsWith('cargando') &&
-          appStore.estadosApp.estadoReproduccion !== 'sin-cancion'
+  conCancion.value =
+    !appStore.estadosApp.estadoReproduccion.startsWith('cargando') &&
+    appStore.estadosApp.estadoReproduccion !== 'sin-cancion'
 
-  if (appStore.estadosApp.estadoReproduccion == 'pausado') {
+  if (appStore.estadosApp.estadoReproduccion == 'pausa') {
     cancion.value = appStore.aplicacion.reproductor.cancion
   }
   if (
-    appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
-    appStore.estadosApp.estadoReproduccion === 'Iniciando'
+    appStore.estadosApp.estadoReproduccion === 'reproduciendo' ||
+    appStore.estadosApp.estadoReproduccion === 'iniciando'
   ) {
     EmpezarLoop()
   } else {
@@ -151,8 +152,7 @@ function clickEditar() {
     <div style="display: flex; width: 100%">
       <iconofogon
         :golpeDelCompas="golpeDelCompas"
-        :conCancion="conCancion
-        "
+        :conCancion="conCancion"
         :estadoReproduccion="estadoReproduccion"
       />
       <span v-if="$route.path === '/'" class="titulocancioncontrol">

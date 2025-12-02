@@ -157,7 +157,7 @@ function SincronizarCon(usuario: string) {
 }
 
 /* Input styles */
-input[type="text"],
+input[type='text'],
 input#nombre {
   width: 100%;
   max-width: 400px;
@@ -172,14 +172,14 @@ input#nombre {
   outline: none;
 }
 
-input[type="text"]:focus,
+input[type='text']:focus,
 input#nombre:focus {
   border-color: #8b5cf6;
   background: rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
 }
 
-input[type="text"]::placeholder,
+input[type='text']::placeholder,
 input#nombre::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -360,7 +360,7 @@ form input {
   .configSesion {
     padding: 15px 10px;
   }
-  
+
   .configSesion h1 {
     font-size: 2em;
   }
@@ -391,7 +391,7 @@ form input {
     margin-bottom: 12px;
   }
 
-  input[type="text"],
+  input[type='text'],
   input#nombre {
     font-size: 0.9rem;
     padding: 10px 12px;
@@ -463,14 +463,14 @@ button:focus {
   outline-offset: 2px;
 }
 
-input[type="text"]:focus,
+input[type='text']:focus,
 input#nombre:focus {
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
 }
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
-  input[type="text"],
+  input[type='text'],
   input#nombre,
   button {
     border-width: 3px;
@@ -480,7 +480,7 @@ input#nombre:focus {
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   button,
-  input[type="text"],
+  input[type='text'],
   input#nombre,
   tbody tr {
     transition: none;
