@@ -105,7 +105,11 @@ function clickCancelar() {
 <style scoped>
 /* Contenedor principal con diseño moderno */
 .ctrlEdit {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.12) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.12) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   border: 1px solid rgba(169, 168, 246, 0.4);
   border-radius: 12px;
   padding: 15px 20px;
@@ -129,7 +133,7 @@ function clickCancelar() {
 }
 
 /* Range slider mejorado */
-input[type="range"] {
+input[type='range'] {
   background: linear-gradient(to right, #4a5568, #a9a8f6) !important;
   border-radius: 8px;
   height: 8px;
@@ -141,7 +145,7 @@ input[type="range"] {
   flex-shrink: 0;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 20px;
@@ -153,7 +157,7 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0 2px 8px rgba(169, 168, 246, 0.3);
 }
 
-input[type="range"]::-moz-range-thumb {
+input[type='range']::-moz-range-thumb {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -231,15 +235,15 @@ button:active {
     gap: 8px;
     flex-wrap: wrap;
   }
-  
-  input[type="range"] {
+
+  input[type='range'] {
     width: 120px;
   }
-  
+
   .lblCabecera {
     font-size: 0.8rem;
   }
-  
+
   button {
     padding: 8px 12px;
     font-size: 1rem;
@@ -254,28 +258,28 @@ button:active {
     gap: 6px;
     flex-wrap: wrap;
   }
-  
-  input[type="range"] {
+
+  input[type='range'] {
     width: 100px;
   }
-  
+
   .lblCabecera {
     font-size: 0.75rem;
   }
-  
+
   select {
     padding: 6px 10px;
     font-size: 0.9rem;
     min-width: 70px;
   }
-  
+
   button {
     padding: 6px 10px;
     font-size: 0.9rem;
     min-width: 35px;
     height: 35px;
   }
-  
+
   span {
     font-size: 0.85rem;
   }

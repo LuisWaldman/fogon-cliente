@@ -41,35 +41,42 @@ function scrollToCurrentChord() {
 
     // Buscar el renglón que contiene el compás actual
     let renglonActualIndex = -1
-    
+
     for (let i = 0; i < display.value.renglones.length; i++) {
       const renglon = display.value.renglones[i]
       if (renglon.pentagramas.length === 0) continue
-      
+
       const desdecompas = renglon.pentagramas[0].compases[0].nroCompas
-      const hastacompas = renglon.pentagramas[0].compases[renglon.pentagramas[0].compases.length - 1].nroCompas
-      
+      const hastacompas =
+        renglon.pentagramas[0].compases[
+          renglon.pentagramas[0].compases.length - 1
+        ].nroCompas
+
       if (props.compas >= desdecompas && props.compas <= hastacompas) {
         renglonActualIndex = i
         break
       }
     }
-    
+
     if (renglonActualIndex >= 0) {
-      const renglones = pentagramaDiv.value.querySelectorAll('.renglon-pentagrama')
+      const renglones = pentagramaDiv.value.querySelectorAll(
+        '.renglon-pentagrama',
+      )
       const renglonElement = renglones[renglonActualIndex]
-      
+
       if (renglonElement) {
         // Obtener la posición del renglón relativa al contenedor
         const containerRect = pentagramaDiv.value.getBoundingClientRect()
         const elementRect = renglonElement.getBoundingClientRect()
 
         // Calcular la posición actual del elemento relativa al scroll
-        const elementTop = elementRect.top - containerRect.top + pentagramaDiv.value.scrollTop
+        const elementTop =
+          elementRect.top - containerRect.top + pentagramaDiv.value.scrollTop
 
         // Calcular la posición para centrar el elemento
         const containerHeight = pentagramaDiv.value.clientHeight
-        const scrollTo = elementTop - containerHeight / 2 + elementRect.height / 2
+        const scrollTo =
+          elementTop - containerHeight / 2 + elementRect.height / 2
 
         // Hacer scroll suave al elemento centrado
         pentagramaDiv.value.scrollTo({
@@ -102,8 +109,12 @@ onMounted(() => {
 
 function Actualizar() {
   cargarModos()
-  
-  const newDisplay = helper.creaDisplayPentagrama(props.cancion, modos.value, props.compasxRenglon)
+
+  const newDisplay = helper.creaDisplayPentagrama(
+    props.cancion,
+    modos.value,
+    props.compasxRenglon,
+  )
   display.value = newDisplay
 }
 
@@ -186,7 +197,11 @@ onUnmounted(() => {
       </ul>
     </div>
 
-    <div v-for="(renglon, index) in display.renglones" :key="index" class="renglon-pentagrama">
+    <div
+      v-for="(renglon, index) in display.renglones"
+      :key="index"
+      class="renglon-pentagrama"
+    >
       <renglonPentagrama
         :compas="props.compas"
         :renglon="renglon"

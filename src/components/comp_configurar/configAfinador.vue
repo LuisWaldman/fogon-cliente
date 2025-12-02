@@ -538,7 +538,11 @@ function clickEscala() {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.08) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.08) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
   border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 12px;
   padding: 20px;
@@ -548,7 +552,11 @@ function clickEscala() {
 
 /* Contenedores de datos mejorados */
 .contDatos {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.15) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.15) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   border: 1px solid rgba(169, 168, 246, 0.4);
   border-radius: 10px;
   margin: 8px;
@@ -607,8 +615,12 @@ function clickEscala() {
 }
 
 /* Filas de cuerdas mejoradas */
-.divAfinador > div > div[style*="display: flex"][style*="height: 80px"] {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+.divAfinador > div > div[style*='display: flex'][style*='height: 80px'] {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 8px;
   margin: 6px 0;
@@ -618,9 +630,13 @@ function clickEscala() {
   transition: all 0.2s ease;
 }
 
-.divAfinador > div > div[style*="display: flex"][style*="height: 80px"]:hover {
+.divAfinador > div > div[style*='display: flex'][style*='height: 80px']:hover {
   border-color: rgba(169, 168, 246, 0.5);
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.15) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.15) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
 }
 
 /* Nota destacada cuando está sonando */
@@ -680,7 +696,11 @@ function clickEscala() {
 }
 
 .ctrlAfinador {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   border: 1px solid rgba(169, 168, 246, 0.4);
   border-radius: 10px;
   padding: 15px 18px;
@@ -705,7 +725,12 @@ function clickEscala() {
 
 /* Control activo/mostrando */
 .ctrlMostrando {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2) 0%, rgba(207, 218, 65, 0.1) 50%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2) 0%,
+    rgba(207, 218, 65, 0.1) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   border: 2px solid #a9a8f6;
   box-shadow: 0 0 20px rgba(169, 168, 246, 0.4);
 }
@@ -767,33 +792,33 @@ function clickEscala() {
   .divAfinador {
     padding: 15px;
   }
-  
+
   .circuloConteiner {
     display: block;
     gap: 15px;
   }
-  
+
   .divctrlAfinador {
     margin-right: 0;
     margin-bottom: 20px;
     min-width: auto;
   }
-  
+
   .contDatos {
     min-width: auto;
     margin: 5px 0;
     padding: 12px 15px;
   }
-  
+
   .contDatos > div:last-child {
     font-size: 1.5rem;
   }
-  
+
   .ctrlAfinador {
     padding: 12px 15px;
     font-size: 0.95rem;
   }
-  
+
   .dropdown-superior-derecha {
     top: 10px;
     right: 10px;
@@ -804,20 +829,20 @@ function clickEscala() {
   .divAfinador {
     padding: 12px;
   }
-  
+
   .contDatos {
     padding: 10px 12px;
   }
-  
+
   .contDatos > div:last-child {
     font-size: 1.3rem;
   }
-  
+
   .ctrlAfinador {
     padding: 10px 12px;
     font-size: 0.9rem;
   }
-  
+
   .ctrlAfinador span {
     font-size: 1rem;
   }

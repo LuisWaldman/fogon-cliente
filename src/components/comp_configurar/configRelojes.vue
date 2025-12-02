@@ -121,7 +121,8 @@ function sincronizar() {
     <div>
       <div>
         <div style="display: flex">
-          Segundo Local <RelojControl :fecha="momentoLocal"></RelojControl>Segundo
+          Segundo Local
+          <RelojControl :fecha="momentoLocal"></RelojControl>Segundo
           Sincronizado
           <RelojControl :fecha="momentoSincro"></RelojControl>
         </div>
@@ -164,13 +165,16 @@ function sincronizar() {
     </div>
 
     <div style="display: flex"></div>
-
   </div>
 </template>
 <style scoped>
 /* Contenedor principal con diseño moderno */
 .divRelojes {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.12) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.12) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   border: 1px solid rgba(169, 168, 246, 0.4);
   border-radius: 12px;
   padding: 20px 25px;
@@ -194,7 +198,7 @@ function sincronizar() {
 }
 
 /* Flexbox containers mejorados */
-.divRelojes div[style*="display: flex"] {
+.divRelojes div[style*='display: flex'] {
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
@@ -273,7 +277,11 @@ button:active {
 
 /* Elemento destacado en detalle */
 .highlight {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3) 0%, rgba(207, 218, 65, 0.2) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3) 0%,
+    rgba(207, 218, 65, 0.2) 100%
+  );
   border: 1px solid #a9a8f6;
   border-radius: 6px;
   padding: 8px 12px;
@@ -309,30 +317,30 @@ button:active {
     font-size: 1rem;
     margin: 8px 0;
   }
-  
-  .divRelojes div[style*="display: flex"] {
+
+  .divRelojes div[style*='display: flex'] {
     gap: 10px;
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .divRelojes > div:nth-child(3) > div > div {
     font-size: 0.9rem;
     padding: 8px 12px;
   }
-  
+
   button {
     padding: 6px 10px;
     font-size: 1rem;
     min-width: 35px;
     height: 35px;
   }
-  
+
   .detalleCalculo {
     padding: 12px;
     font-size: 0.9rem;
   }
-  
+
   .highlight {
     padding: 6px 10px;
     font-size: 0.9rem;
@@ -344,24 +352,24 @@ button:active {
     padding: 12px 15px;
     font-size: 0.95rem;
   }
-  
+
   .divRelojes > div:nth-child(3) > div > div {
     font-size: 0.85rem;
     padding: 6px 10px;
   }
-  
+
   button {
     padding: 5px 8px;
     font-size: 0.9rem;
     min-width: 30px;
     height: 30px;
   }
-  
+
   .detalleCalculo {
     padding: 10px;
     font-size: 0.85rem;
   }
-  
+
   .highlight {
     padding: 5px 8px;
     font-size: 0.85rem;

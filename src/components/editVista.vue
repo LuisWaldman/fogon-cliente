@@ -32,10 +32,12 @@ exvistapantalla.value.tamanioAcordeParte =
   configPantalla.value.tamanioAcordeParte
 exvistapantalla.value.columnas = configPantalla.value.columnas
 // Inicializar propiedades de pentagrama
-exvistapantalla.value.compasesPorRenglon = configPantalla.value.compasesPorRenglon || 4
+exvistapantalla.value.compasesPorRenglon =
+  configPantalla.value.compasesPorRenglon || 4
 exvistapantalla.value.anchoCompas = configPantalla.value.anchoCompas || 200
 exvistapantalla.value.altoCompas = configPantalla.value.altoCompas || 50
-exvistapantalla.value.escalaPentagrama = configPantalla.value.escalaPentagrama || 0.6
+exvistapantalla.value.escalaPentagrama =
+  configPantalla.value.escalaPentagrama || 0.6
 
 function guardarConfiguracionPantalla() {
   config.guardarEnLocalStorage()
@@ -214,9 +216,9 @@ function ClickSoloMidi() {
                     v-model.number="configPantalla.compasesPorRenglon"
                     class="range-input"
                   />
-                  <span class="range-value"
-                    >{{ configPantalla.compasesPorRenglon }}</span
-                  >
+                  <span class="range-value">{{
+                    configPantalla.compasesPorRenglon
+                  }}</span>
                 </div>
               </div>
               <div class="input-group half">
@@ -262,9 +264,9 @@ function ClickSoloMidi() {
                     v-model.number="configPantalla.escalaPentagrama"
                     class="range-input"
                   />
-                  <span class="range-value"
-                    >{{ configPantalla.escalaPentagrama.toFixed(1) }}</span
-                  >
+                  <span class="range-value">{{
+                    configPantalla.escalaPentagrama.toFixed(1)
+                  }}</span>
                 </div>
               </div>
             </div>
@@ -877,7 +879,11 @@ function ClickSoloMidi() {
 
 /* Partitura section styling */
 .partitura-section {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(106, 76, 147, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.1) 0%,
+    rgba(106, 76, 147, 0.1) 100%
+  );
   border: 1px solid rgba(139, 92, 246, 0.3);
   border-radius: 8px;
   padding: 16px;

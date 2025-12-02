@@ -141,9 +141,10 @@ function EnviarAlFogon() {
       >
         <label>BPM: {{ cancion.bpm }} </label>
         <div>
-          <label class="tituloEdit">DURACION: {{
-            tiempo.formatSegundos(cancion.duracionCancion)
-          }}</label>
+          <label class="tituloEdit"
+            >DURACION:
+            {{ tiempo.formatSegundos(cancion.duracionCancion) }}</label
+          >
         </div>
       </div>
 
@@ -214,7 +215,9 @@ function EnviarAlFogon() {
           >
             🗄️ Servidor
           </button>
-          <button @click="DescargarJSON" class="btnDescarga">⬇️ Descargar</button>
+          <button @click="DescargarJSON" class="btnDescarga">
+            ⬇️ Descargar
+          </button>
         </div>
       </div>
     </div>
@@ -283,7 +286,11 @@ function EnviarAlFogon() {
 
 /* Estilos mejorados para cada control de edición - más compacto */
 .divctrlEdit {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.08) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.08) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 12px;
   padding: 12px 16px;
@@ -320,11 +327,13 @@ function EnviarAlFogon() {
 /* Control activo/editando con mejor indicador visual */
 .edintandoCtrl {
   border: 2px solid #a9a8f6;
-  background: linear-gradient(135deg, 
-    rgba(169, 168, 246, 0.2) 0%, 
-    rgba(207, 218, 65, 0.1) 50%, 
-    rgba(0, 0, 0, 0.8) 100%);
-  box-shadow: 
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2) 0%,
+    rgba(207, 218, 65, 0.1) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  box-shadow:
     0 0 20px rgba(169, 168, 246, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
@@ -426,26 +435,26 @@ function EnviarAlFogon() {
   .navbarFogon {
     padding: 10px 15px;
   }
-  
+
   .navbarFogon > div:first-child {
     gap: 8px;
   }
-  
+
   .divctrlEdit {
     min-width: 120px;
     padding: 12px 16px;
     font-size: 0.85rem;
   }
-  
+
   .tituloEdit {
     font-size: 1.1rem;
   }
-  
+
   .divctrlEdit button {
     padding: 6px 10px;
     font-size: 0.8rem;
   }
-  
+
   .titulocancion {
     max-width: 250px;
   }
@@ -456,11 +465,11 @@ function EnviarAlFogon() {
     min-width: 100px;
     padding: 10px 12px;
   }
-  
+
   .divctrlEdit label {
     font-size: 0.8rem;
   }
-  
+
   .tituloEdit {
     font-size: 1rem;
   }
@@ -474,9 +483,15 @@ function EnviarAlFogon() {
 
 /* Animaciones y transiciones suaves */
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.7; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .edintandoCtrl {

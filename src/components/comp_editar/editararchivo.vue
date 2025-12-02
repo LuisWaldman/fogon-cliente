@@ -86,7 +86,11 @@ function hacerNombreArchivo() {
 <style scoped>
 /* Contenedor principal con diseño moderno */
 .ctrlEdit {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.12) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.12) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   border: 1px solid rgba(169, 168, 246, 0.4);
   border-radius: 12px;
   padding: 15px 20px;
@@ -217,32 +221,32 @@ button:active {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .ctrlEdit > div {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
     width: 100%;
   }
-  
+
   label {
     font-size: 0.8rem;
     min-width: auto;
   }
-  
+
   .input-editable {
     width: 100%;
     max-width: none;
     font-size: 0.9rem;
     padding: 10px 12px;
   }
-  
+
   select {
     width: 100%;
     min-width: auto;
     font-size: 0.85rem;
   }
-  
+
   button {
     padding: 8px 12px;
     font-size: 1rem;
@@ -256,21 +260,21 @@ button:active {
     padding: 10px 12px;
     gap: 8px;
   }
-  
+
   label {
     font-size: 0.75rem;
   }
-  
+
   .input-editable {
     font-size: 0.85rem;
     padding: 8px 10px;
   }
-  
+
   select {
     font-size: 0.8rem;
     padding: 6px 10px;
   }
-  
+
   button {
     padding: 6px 10px;
     font-size: 0.9rem;
