@@ -40,8 +40,8 @@ async function EmpezarLoop() {
   const loop = async () => {
     // stop if state changed
     if (
-      appStore.estadosApp.estadoReproduccion !== 'Reproduciendo' &&
-      appStore.estadosApp.estadoReproduccion !== 'Iniciando'
+      appStore.estadosApp.estadoReproduccion !== 'reproduciendo' &&
+      appStore.estadosApp.estadoReproduccion !== 'iniciando'
     ) {
       rafId = null
       return
@@ -67,21 +67,21 @@ function PararLoop() {
 }
 const cargando = ref(false)
 function VerEstado() {
-  if (
-    appStore.estadosApp.estadoReproduccion.startsWith('cargando') ||
-    appStore.estadosApp.estadoReproduccion === 'sin-cancion'
-  ) {
-    cargando.value = true
-    return
+  estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
+  compas.value = appStore.aplicacion.reproductor.compas
+  golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
+  cancion.value = appStore.aplicacion.reproductor.cancion
+
+  if (appStore.estadosApp.estadoCarga === 'update-compas') {
+    appStore.estadosApp.estadoCarga = 'cargada'
   }
 
-  cancion.value = appStore.aplicacion.reproductor.cancion
-  setviendoVideo()
   cargando.value = false
+  setviendoVideo()
 
   if (
-    appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
-    appStore.estadosApp.estadoReproduccion === 'Iniciando'
+    appStore.estadosApp.estadoReproduccion === 'reproduciendo' ||
+    appStore.estadosApp.estadoReproduccion === 'iniciando'
   ) {
     EmpezarLoop()
   } else {
@@ -93,18 +93,15 @@ VerEstado()
 watch(
   () => appStore.estadosApp.estadoReproduccion,
   () => {
-    estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
-    compas.value = appStore.aplicacion.reproductor.compas
-    golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
-
-    if (appStore.estadosApp.estadoReproduccion === 'update-compas') {
-      appStore.estadosApp.estadoReproduccion = 'pausado'
-    }
-
     VerEstado()
   },
 )
-
+watch(
+  () => appStore.estadosApp.estadoCarga,
+  () => {
+    VerEstado()
+  },
+)
 onUnmounted(() => {
   PararLoop()
 })

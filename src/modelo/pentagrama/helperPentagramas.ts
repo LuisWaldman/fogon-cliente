@@ -25,11 +25,17 @@ export class HelperPentagramas {
     }
     return pentagrama
   }
-  public GetModos(cancion: Cancion): DisplayModoPentagrama[] {
+  public GetModos(
+    cancion: Cancion,
+    editando: boolean,
+  ): DisplayModoPentagrama[] {
     const modos: DisplayModoPentagrama[] = []
-    const nombres = [
+    let nombres = [
       ...new Set(cancion.pentagramas.map((p) => p.nombre || 'noname')),
     ]
+    if (editando) {
+      nombres = cancion.pentagramas.map((p) => p.nombre + ' - ' + p.clave)
+    }
     for (const pentagrama of nombres) {
       modos.push(new DisplayModoPentagrama(pentagrama, false))
     }
@@ -37,7 +43,7 @@ export class HelperPentagramas {
   }
   public creaDisplayPentagrama(
     cancion: Cancion,
-    modos: DisplayModoPentagrama[],
+    modo: DisplayModoPentagrama,
     compasxRenglon?: number,
   ): DisplayPentagrama {
     const display = new DisplayPentagrama()
@@ -46,12 +52,21 @@ export class HelperPentagramas {
     if (pentagramas.length === 0) {
       return display
     }
-    const instOk = modos.filter((m) => m.Ver).map((m) => m.Nombre)
+    // Since modo is now a single DisplayModoPentagrama instead of an array
+
     for (let conPenta = 0; conPenta < cancion.pentagramas.length; conPenta++) {
-      if (instOk.includes(cancion.pentagramas[conPenta].nombre)) {
+      let mostrar = cancion.pentagramas[conPenta].nombre === modo.Nombre
+      if (modo.Nombre.includes(' - ')) {
+        const partes = modo.Nombre.split(' - ')
+        mostrar =
+          cancion.pentagramas[conPenta].nombre === partes[0] &&
+          cancion.pentagramas[conPenta].clave === partes[1]
+      }
+      if (mostrar) {
         display.AgregarPartitura(cancion.pentagramas[conPenta], cancion.escala)
       }
     }
+
     return display
   }
 

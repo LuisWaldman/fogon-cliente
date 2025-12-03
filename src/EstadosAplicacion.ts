@@ -1,19 +1,31 @@
 import { useAppStore } from './stores/appStore'
 
+export type EstadoReproduccion =
+  | 'sin-cancion'
+  | 'pausa'
+  | 'iniciando'
+  | 'reproduciendo'
+  | 'esperandoMedia'
+
+export type EstadoCargaReproduccion =
+  | 'sin-cancion'
+  | 'cargando-cancion'
+  | 'cargando-demanager'
+  | 'cargando-enviofogon'
+  | 'cargando-dedirector'
+  | 'update-compas'
+  | 'cargando-cancion'
+  | 'cargando-defogon'
+  | 'actualizando-compas'
+  | 'cargada'
+
 export class EstadosAplicacion {
-  SetEstadoReproduccion(estado: string) {
+  SetEstadoReproduccion(estado: EstadoReproduccion) {
     this.estadoReproduccion = estado
-    if (estado === 'cargando-demanager') {
-      this.texto = 'Obteniendo canción...'
-    } else if (estado === 'cargando-enviofogon') {
-      this.texto = 'Enviando canción al fogón...'
-    } else if (estado === 'cargando-dedirector') {
-      this.texto = 'Esperando que el director envíe la canción...'
-    } else if (estado === 'cargando-cancion') {
-      this.texto = 'Cargando canción...'
-    } else {
-      this.texto = ''
-    }
+    EstadosAplicacion.SetEstadosAplicacion(this)
+  }
+  SetEstadoCarga(estado: EstadoCargaReproduccion) {
+    this.estadoCarga = estado
     EstadosAplicacion.SetEstadosAplicacion(this)
   }
   public estado: string = 'iniciando'
@@ -22,7 +34,8 @@ export class EstadosAplicacion {
   public internet: boolean = true
   public estadoconeccion: string = 'desconectado'
   public estadoLogin: string = 'desconectado'
-  public estadoReproduccion: string = 'sin-cancion'
+  public estadoReproduccion: EstadoReproduccion = 'sin-cancion'
+  public estadoCarga: EstadoCargaReproduccion = 'sin-cancion'
   public estadoSesion: string = 'desconectado'
   public nombreServidor: string = ''
   public static GetEstadosAplicacion(): EstadosAplicacion {

@@ -200,7 +200,7 @@ function EnviarAlFogon() {
 
       <div class="divctrlEdit">
         <label>Guardar</label>
-        <div>
+        <div style="display: flex; flex-direction: row">
           <button
             @click="EnviarAlFogon()"
             v-if="appStore.estadosApp.estadoSesion === 'conectado'"
@@ -271,7 +271,7 @@ function EnviarAlFogon() {
   border: none;
   border-bottom: 2px solid #a9a8f6;
   box-shadow: 0 4px 20px rgba(169, 168, 246, 0.15);
-  padding: 12px 20px 8px 20px;
+  padding: 12px 10px 8px 10px;
   backdrop-filter: blur(10px);
 }
 
@@ -293,7 +293,6 @@ function EnviarAlFogon() {
   );
   border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 12px;
-  padding: 12px 16px;
   margin: 0;
   min-width: 140px;
   transition: all 0.3s ease;
@@ -427,13 +426,13 @@ function EnviarAlFogon() {
   border: 1px solid rgba(169, 168, 246, 0.2);
   border-radius: 12px;
   margin-top: 8px;
-  padding: 15px;
+  padding: 9px 10px;
 }
 
 /* Responsive design mejorado */
 @media (max-width: 768px) {
   .navbarFogon {
-    padding: 10px 15px;
+    padding: 5px 15px;
   }
 
   .navbarFogon > div:first-child {
@@ -442,7 +441,7 @@ function EnviarAlFogon() {
 
   .divctrlEdit {
     min-width: 120px;
-    padding: 12px 16px;
+    padding: 2px 6px;
     font-size: 0.85rem;
   }
 

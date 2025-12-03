@@ -10,6 +10,7 @@ const helperNotas = HelperDisplayAcordesLatino.getInstance()
 const appStore = useAppStore()
 helperNotas.latino = appStore.perfil.CifradoLatino
 
+const conCancion = ref(false)
 const compas = ref(appStore.aplicacion.reproductor.compas)
 const golpeDelCompas = ref(appStore.aplicacion.reproductor.golpeDelCompas)
 const cancion = ref<Cancion>(appStore.aplicacion.reproductor.cancion)
@@ -21,8 +22,8 @@ async function EmpezarLoop() {
   const loop = async () => {
     // stop if state changed
     if (
-      appStore.estadosApp.estadoReproduccion !== 'Reproduciendo' &&
-      appStore.estadosApp.estadoReproduccion !== 'Iniciando'
+      appStore.estadosApp.estadoReproduccion !== 'reproduciendo' &&
+      appStore.estadosApp.estadoReproduccion !== 'iniciando'
     ) {
       rafId = null
       return
@@ -51,13 +52,14 @@ function VerEstado() {
   cancion.value = appStore.aplicacion.reproductor.cancion
   compas.value = appStore.aplicacion.reproductor.compas
   golpeDelCompas.value = appStore.aplicacion.reproductor.golpeDelCompas
+  conCancion.value = appStore.estadosApp.estadoCarga == 'cargada'
 
-  if (appStore.estadosApp.estadoReproduccion == 'pausado') {
+  if (appStore.estadosApp.estadoReproduccion == 'pausa') {
     cancion.value = appStore.aplicacion.reproductor.cancion
   }
   if (
-    appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
-    appStore.estadosApp.estadoReproduccion === 'Iniciando'
+    appStore.estadosApp.estadoReproduccion === 'reproduciendo' ||
+    appStore.estadosApp.estadoReproduccion === 'iniciando'
   ) {
     EmpezarLoop()
   } else {
@@ -68,6 +70,13 @@ VerEstado()
 // Watch for changes in playback state and start/stop RAF loop
 watch(
   () => appStore.estadosApp.estadoReproduccion,
+  () => {
+    VerEstado()
+  },
+)
+
+watch(
+  () => appStore.estadosApp.estadoCarga,
   () => {
     VerEstado()
   },
@@ -115,7 +124,6 @@ function SalirSesion() {
 const unirseSesion = (sesion: string) => {
   appStore.aplicacion.UnirmeSesion(sesion)
 }
-
 function arreglartexto(texto: string): string {
   let processed = texto.replace(/-/g, ' ')
   if (processed.length === 0) return processed
@@ -149,10 +157,7 @@ function clickEditar() {
     <div style="display: flex; width: 100%">
       <iconofogon
         :golpeDelCompas="golpeDelCompas"
-        :conCancion="
-          !estadoReproduccion.startsWith('cargando') &&
-          estadoReproduccion !== 'sin-cancion'
-        "
+        :conCancion="conCancion"
         :estadoReproduccion="estadoReproduccion"
       />
       <span v-if="$route.path === '/'" class="titulocancioncontrol">

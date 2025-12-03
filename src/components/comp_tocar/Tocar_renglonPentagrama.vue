@@ -43,7 +43,7 @@ const pantalla = new Pantalla()
 const config = pantalla.getConfiguracionPantalla()
 
 // Valores dinámicos basados en configuración
-const anchoPrimerStave = computed(() => Math.min(config.anchoCompas * 0.3, 100))
+const anchoPrimerStave = computed(() => Math.min(config.anchoCompas * 0.5, 100))
 const anchoCompasStave = computed(() => config.anchoCompas || 200)
 const altoPentagrama = computed(() => config.altoCompas || 50)
 const escalaPentagrama = computed(() => config.escalaPentagrama || 0.6)
@@ -57,7 +57,7 @@ function Dibujar() {
   const alto =
     props.renglon.pentagramas.length * altoPentagrama.value +
     altoPentagrama.value * 0.1
-  renderer.resize(900, alto)
+  renderer.resize(1900, alto)
   const context = renderer.getContext()
 
   // Escalar el pentagrama para cambiar distancia entre líneas

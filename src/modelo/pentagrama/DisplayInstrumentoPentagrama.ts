@@ -13,7 +13,7 @@ export class DisplayInstrumentoPentagrama {
     let x = 0
     context.setFillStyle('#a9a8f6')
     context.setStrokeStyle('#a9a8f6')
-    const anchoPrimerStave = anchoCompasStave * 0.3
+    const anchoPrimerStave = Math.min(anchoCompasStave * 0.5, 100)
     const stave = new Stave(x, y, anchoPrimerStave)
     //addKeySignature
     const key = `${cancion.escala}`

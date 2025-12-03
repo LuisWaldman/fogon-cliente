@@ -59,7 +59,6 @@ function stop() {
 
 function updateCompas() {
   const toStr = currentCompas.value.toString()
-  appStore.aplicacion.reproductor.SetEstado('updateCompas')
   appStore.aplicacion.reproductor.updateCompas(parseInt(toStr))
 }
 
@@ -117,10 +116,7 @@ function arreglartexto(texto: string): string {
       <div
         class="boton_controllerplay"
         @click="play"
-        v-if="
-          appStore.estadosApp.estadoReproduccion === 'pausado' ||
-          appStore.estadosApp.estadoReproduccion === 'compas-actalizado'
-        "
+        v-if="appStore.estadosApp.estadoReproduccion === 'pausa'"
       >
         ▶️
       </div>
@@ -129,8 +125,8 @@ function arreglartexto(texto: string): string {
         class="boton_controllerplay"
         @click="pause"
         v-if="
-          appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
-          appStore.estadosApp.estadoReproduccion === 'Iniciando'
+          appStore.estadosApp.estadoReproduccion === 'reproduciendo' ||
+          appStore.estadosApp.estadoReproduccion === 'iniciando'
         "
       >
         ⏸️
@@ -139,8 +135,8 @@ function arreglartexto(texto: string): string {
         class="boton_controllerplay"
         @click="stop"
         v-if="
-          appStore.estadosApp.estadoReproduccion === 'Reproduciendo' ||
-          appStore.estadosApp.estadoReproduccion === 'Iniciando'
+          appStore.estadosApp.estadoReproduccion === 'reproduciendo' ||
+          appStore.estadosApp.estadoReproduccion === 'iniciando'
         "
       >
         ⏹️

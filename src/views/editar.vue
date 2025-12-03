@@ -4,7 +4,6 @@ import cabecera from '../components/comp_editar/cabecera.vue'
 import editAcordes from '../components/comp_editar/editAcordes.vue'
 import consolaAcordes from '../components/comp_editar/consolaAcordes.vue'
 import EditarLetraAcorde from '../components/comp_editar/editarLetraYAcordes.vue'
-import TocarPentagrama from '../components/comp_tocar/Tocar_Pentagrama.vue'
 import TocarLetra from '../components/comp_tocar/Tocar_Letra.vue'
 import TocarLetraAcorde from '../components/comp_tocar/Tocar_LetraYAcordes.vue'
 import Secuencia from '../components/comp_tocar/Tocar_Secuencia.vue'
@@ -51,7 +50,9 @@ function estiloVistaPrincipal() {
   if (
     viendo.value == 'editartexto' ||
     viendo.value == 'acordes' ||
-    viendo.value == 'escala'
+    viendo.value == 'medias' ||
+    viendo.value == 'escala' ||
+    viendo.value == 'pentagramas'
   ) {
     return `width: 100%; height: 100%`
   }
@@ -62,7 +63,8 @@ function estiloVistaSecundaria() {
   if (
     viendo.value == 'editartexto' ||
     viendo.value == 'acordes' ||
-    viendo.value == 'escala'
+    viendo.value == 'escala' ||
+    viendo.value == 'pentagramas'
   ) {
     return `width: 0%; height: 100%`
   }
@@ -70,7 +72,6 @@ function estiloVistaSecundaria() {
 }
 const ctrlEditarTexto = ref()
 const ctrlSecuencia = ref()
-const ctrlTocarPentagrama = ref()
 const ctrlCabecera = ref()
 function actualizarResumen() {
   ctrlCabecera.value.Actualizar()
@@ -92,15 +93,10 @@ function clickCerrarEditar() {
 }
 
 function Actualizar() {
-  if (ctrlEditarTexto.value) {
-    ctrlSecuencia.value.Actualizar()
-  }
+  ctrlSecuencia.value.Actualizar()
 }
 
 const viendoModo = ref(0)
-function cambioModo(index: number) {
-  viendoModo.value = index
-}
 </script>
 <template>
   <cabecera
@@ -111,20 +107,12 @@ function cambioModo(index: number) {
   ></cabecera>
   <div class="vistaEdit" :style="GetStylePantallaEdit()">
     <div :style="estiloVistaPrincipal()">
-      <TocarPentagrama
-        v-if="viendo === 'pentagramas'"
-        :cancion="appStore.editandocancion"
-        :compas="editandoCompas"
-        @clickCompas="cambiarCompas"
-        @clickCambioModo="cambioModo"
-        :editando="true"
-        :compasx-renglon="1"
-        ref="ctrlTocarPentagrama"
-      ></TocarPentagrama>
-
       <TocarLetra
         v-if="
-          (viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') &&
+          (viendo == 'inicio' ||
+            viendo == 'medias' ||
+            viendo == 'tiempo' ||
+            viendo == 'video') &&
           vista.muestra == 'karaoke'
         "
         :cancion="appStore.editandocancion"
@@ -132,7 +120,10 @@ function cambioModo(index: number) {
       ></TocarLetra>
       <TocarLetraAcorde
         v-if="
-          (viendo == 'inicio' || viendo == 'tiempo' || viendo == 'video') &&
+          (viendo == 'inicio' ||
+            viendo == 'medias' ||
+            viendo == 'tiempo' ||
+            viendo == 'video') &&
           (vista.muestra == 'letrayacordes' ||
             vista.muestra == 'acordes' ||
             vista.muestra == 'partitura')
@@ -148,7 +139,16 @@ function cambioModo(index: number) {
         ref="ctrlEditarTexto"
         @clickCompas="cambiarCompas"
       ></EditarLetraAcorde>
-
+      <editarpentagrama
+        v-if="viendo === 'pentagramas'"
+        @cerrar="clickCerrarEditar"
+        @actualizoPentagrama="Actualizar"
+        :cancion="appStore.editandocancion"
+        :compas="editandoCompas"
+        :editandoModo="viendoModo"
+        @clickCompas="cambiarCompas"
+      >
+      </editarpentagrama>
       <editartexto
         v-if="viendo == 'editartexto'"
         @actualizoTexto="actualizarResumen"
@@ -160,18 +160,6 @@ function cambioModo(index: number) {
       ></editartexto>
     </div>
 
-    <div :style="estiloVistaSecundaria()" v-if="viendo === 'pentagramas'">
-      <editarpentagrama
-        @cerrar="clickCerrarEditar"
-        @actualizoPentagrama="Actualizar"
-        :cancion="appStore.editandocancion"
-        :compas="editandoCompas"
-        :editandoModo="viendoModo"
-        @clickCompas="cambiarCompas"
-      >
-        >
-      </editarpentagrama>
-    </div>
     <div
       :style="estiloVistaSecundaria()"
       v-if="viendo !== 'pentagramas' && viendo !== 'editartexto'"

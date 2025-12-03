@@ -3,6 +3,7 @@ import type { datosLogin } from '../datosLogin'
 import type { ObjetoPosteable } from '../objetoPosteable'
 import type { Servidor } from '../servidor'
 import { Logger } from '../logger'
+import type { EstadoReproduccion } from '../../EstadosAplicacion'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
@@ -18,7 +19,7 @@ interface ServerToClientEvents {
   nrocambiado: () => void
   cancionIniciada: (compas: number, desde: number, nroUsuario: number) => void
   cancionSincronizada: (compas: number, desde: number) => void
-  cancionCambioEstado: (estado: string, nroUsuario: number) => void
+  cancionCambioEstado: (estado: EstadoReproduccion, nroUsuario: number) => void
   compasActualizado: (compas: number, nroUsuario: number) => void
   sesionesActualizadas: () => void
   actualizarusuarios: () => void
@@ -121,11 +122,11 @@ export class ClienteSocket {
   }
 
   private cancionCambioEstadoHandler?: (
-    estado: string,
+    estado: EstadoReproduccion,
     nroUsuario: number,
   ) => void
   public setCancionCambioEstadoHandler(
-    handler: (estado: string, nroUsuario: number) => void,
+    handler: (estado: EstadoReproduccion, nroUsuario: number) => void,
   ): void {
     this.cancionCambioEstadoHandler = handler
   }
@@ -341,10 +342,13 @@ export class ClienteSocket {
     socket.on('cancionSincronizada', (compas: number, desde: number) => {
       this.cancionSincronizadaHandler?.(compas, desde)
     })
-    socket.on('cancionCambioEstado', (estado: string, nroUsuario: number) => {
-      Logger.log('cancionCambioEstado received with nroUsuario:', nroUsuario)
-      this.cancionCambioEstadoHandler?.(estado, nroUsuario)
-    })
+    socket.on(
+      'cancionCambioEstado',
+      (estado: EstadoReproduccion, nroUsuario: number) => {
+        Logger.log('cancionCambioEstado received with nroUsuario:', nroUsuario)
+        this.cancionCambioEstadoHandler?.(estado, nroUsuario)
+      },
+    )
     socket.on('sincronizarRTC', (usuario: number) => {
       Logger.log('sincronizarRTC received with usuario:', usuario)
       this.sincronizarRTCHandler?.(usuario)

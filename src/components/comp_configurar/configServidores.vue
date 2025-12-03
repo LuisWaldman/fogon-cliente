@@ -208,75 +208,328 @@ const esServidorPorDefecto = computed(() => {
 
 <style scoped>
 .config-sesion {
+  max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  min-height: 100vh;
 }
+
+.config-sesion h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #a0aec0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .tabla {
-  width: 80%;
-  margin-left: 5%;
-  border: 1px solid;
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(169, 168, 246, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
 }
 
-.tabla th,
-.tabla td {
-  border: 1px solid;
-  padding: 8px;
+.tabla th {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  color: #ffffff;
+  padding: 16px 20px;
   text-align: left;
-  font-size: x-large;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid rgba(169, 168, 246, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.buttons {
-  margin: 10px 0;
-}
-.buttons button {
-  margin-right: 8px;
-}
-.respuestas {
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 4px;
+.tabla th:last-child {
+  text-align: center;
 }
 
-/* Estilos para la sección de administrar servidores */
-.admin-servidores {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.tabla td {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(169, 168, 246, 0.1);
+  color: #e0e0e0;
+  transition: all 0.3s ease;
 }
 
-.admin-servidores h3 {
-  margin-top: 0;
+.tabla td:last-child {
+  text-align: center;
 }
 
-.admin-servidores input {
-  margin-right: 5px;
-  margin-bottom: 5px;
+.tabla tbody tr {
+  transition: all 0.3s ease;
 }
 
-.admin-servidores ul {
-  list-style-type: none;
-  padding: 0;
+.tabla tbody tr:hover {
+  background: rgba(169, 168, 246, 0.1);
+  transform: translateX(2px);
 }
 
-.admin-servidores li {
-  padding: 5px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.admin-servidores li:last-child {
+.tabla tbody tr:last-child td {
   border-bottom: none;
 }
 
-.admin-servidores button {
-  margin-left: 10px;
+/* Input styles */
+.tabla input {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(169, 168, 246, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
 }
 
-.admin-servidores li button {
-  margin-left: 5px; /* Adjust margin for multiple buttons */
+.tabla input:focus {
+  border-color: #8b5cf6;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
 }
+
+.tabla input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Button styles - Discrete and dark tone similar to home.vue */
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: 2px solid rgba(169, 168, 246, 0.3);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #a9a8f6;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(169, 168, 246, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+/* Primary button (Agregar Servidor) - More discrete */
+.tabla th button {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+  border: 2px solid rgba(169, 168, 246, 0.5);
+  color: #a9a8f6;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.tabla th button:hover {
+  border-color: rgba(169, 168, 246, 0.8);
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+  box-shadow: 0 4px 20px rgba(169, 168, 246, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Action buttons - Subtle hover effects */
+button:hover {
+  border-color: rgba(169, 168, 246, 0.6);
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 8px rgba(169, 168, 246, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Specific button styling with discrete colors */
+/* Success button (Conectar) */
+.tabla tbody tr td button:nth-child(1) {
+  border-color: rgba(169, 168, 246, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  color: #a9a8f6;
+}
+
+.tabla tbody tr td button:nth-child(1):hover {
+  border-color: rgba(169, 168, 246, 0.7);
+  background: rgba(169, 168, 246, 0.1);
+  color: #ffffff;
+}
+
+/* Default button */
+.tabla tbody tr td button:nth-child(2) {
+  border-color: rgba(169, 168, 246, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  color: #a9a8f6;
+}
+
+.tabla tbody tr td button:nth-child(2):hover {
+  border-color: rgba(169, 168, 246, 0.7);
+  background: rgba(169, 168, 246, 0.1);
+  color: #ffffff;
+}
+
+/* Danger button (Eliminar) */
+.tabla tbody tr td button:nth-child(3) {
+  border-color: rgba(169, 168, 246, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  color: #a9a8f6;
+}
+
+.tabla tbody tr td button:nth-child(3):hover {
+  border-color: rgba(169, 168, 246, 0.7);
+  background: rgba(169, 168, 246, 0.15);
+  color: #ffffff;
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+button:disabled::before {
+  display: none;
+}
+
+/* Connected server row */
 .conectado {
-  color: white;
-  background-color: darkkhaki;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.2) 0%,
+    rgba(5, 150, 105, 0.2) 100%
+  ) !important;
+  border-left: 4px solid #10b981 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.conectado td {
+  color: #ffffff;
+}
+
+.conectado:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.3) 0%,
+    rgba(5, 150, 105, 0.3) 100%
+  ) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .config-sesion {
+    padding: 15px 10px;
+  }
+
+  .config-sesion h1 {
+    font-size: 2em;
+  }
+
+  .tabla th,
+  .tabla td {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+  }
+
+  .tabla th button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    margin: 2px;
+  }
+
+  .tabla input {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabla th,
+  .tabla td {
+    padding: 8px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+  }
+
+  .tabla td:last-child {
+    text-align: left;
+  }
+}
+
+/* Animation for new rows */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tabla tbody tr {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Focus states for accessibility */
+button:focus {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 2px;
+}
+
+.tabla input:focus {
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
 }
 </style>
