@@ -19,7 +19,6 @@ export class DisplayPentagrama {
 
   AgregarPartitura(pentagrama: Pentagrama, escala: string): void {
     // Clear existing renglones when adding a new partitura
-    this.renglones = []
 
     let sistema = 0
     let renglon = this.GetSistema(sistema)
