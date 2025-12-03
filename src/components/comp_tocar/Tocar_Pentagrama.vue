@@ -6,6 +6,7 @@ import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { DisplayPentagrama } from '../../modelo/pentagrama/displayPentagrama'
 import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
 import { Pantalla } from '../../modelo/pantalla'
+import { g } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
 
 const emit = defineEmits(['clickCompas', 'clickCambioModo'])
 const props = defineProps<{
@@ -102,16 +103,20 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
+  Redibujar()
+  if (pentagramaDiv.value) {
+    pentagramaDiv.value.addEventListener('scroll', handleScroll)
+  }
+})
+function Redibujar() {
+
   modos.value = helper.GetModos(props.cancion, props.editando)
   if (modos.value.length > 0) {
     modos.value[0].Ver = true
     modo.value = modos.value[0]
   }
   Actualizar()
-  if (pentagramaDiv.value) {
-    pentagramaDiv.value.addEventListener('scroll', handleScroll)
-  }
-})
+}
 
 function Actualizar() {
 
@@ -141,6 +146,9 @@ onUnmounted(() => {
   if (pentagramaDiv.value) {
     pentagramaDiv.value.removeEventListener('scroll', handleScroll)
   }
+})
+defineExpose({
+  Redibujar,
 })
 </script>
 <template>

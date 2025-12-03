@@ -17,7 +17,7 @@ const props = defineProps<{
 }>()
 const estadoSubida = ref('')
 const subido = ref(false)
-
+const emit = defineEmits(['actualizar'])
 // Variables para el modal de selección de pentagramas
 const mostrarModal = ref(false)
 const pentagramasTemporales = ref<Pentagrama[]>([])
@@ -58,6 +58,7 @@ function agregarPentagramasSeleccionados() {
   estadoSubida.value = `${pentagramasAAgregar.length} pentagramas cargados`
   subido.value = true
   cerrarModal()
+  emit('actualizar')
 }
 
 function cerrarModal() {

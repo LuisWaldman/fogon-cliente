@@ -31,7 +31,7 @@ const helper = new HelperPentagramas()
 const ctrlTocarPentagrama = ref()
 cargarModos()
 function cargarModos() {
-  modos.value = helper.GetModos(props.cancion)
+  modos.value = helper.GetModos(props.cancion, true)
 }
 const helperEdit = new HelperEditPentagrama()
 
@@ -189,6 +189,12 @@ function estiloVistaPrincipal() {
 function estiloVistaSecundaria() {
   return `height: ${pantalla.getAltoPantalla() - 100}px; overflow-x: auto;`
 }
+function actualizar() {
+  ctrlTocarPentagrama.value?.Redibujar()
+  cargarModos()
+  calcularPentagramaEditando()
+}
+  
 
 const viendoModo = ref(0)
 function cambioModo(index: number) {
@@ -222,7 +228,7 @@ const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
     <div :style="estiloVistaSecundaria()">
       <div class="pentagrama-container">
         <div class="botoneraLateral">
-          <subirxml :cancion="cancion"></subirxml>
+          <subirxml :cancion="cancion" @actualizar="actualizar"></subirxml>
           <button @click="clickAddPentagrama">➕ Agregar Pentagrama</button>
           <button
             v-if="modos.length > 0"
