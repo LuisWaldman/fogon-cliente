@@ -25,7 +25,7 @@ describe('Helper Sinro', () => {
     const helper = HelperSincro.getInstance()
     const est = helper.GetEstadoSincro(sincro, tiempo, 100, 4)
 
-    expect(est.estado).toBe('Reproduciendo')
+    expect(est.estado).toBe('reproduciendo')
     expect(est.compas).toBe(0)
     expect(est.golpeEnCompas).toBe(-0)
     expect(est.delay).toBe(100)
@@ -42,7 +42,7 @@ describe('Helper Sinro', () => {
     const helper = HelperSincro.getInstance()
     const est = helper.GetEstadoSincro(sincro, tiempo, 100, 4)
 
-    expect(est.estado).toBe('Reproduciendo')
+    expect(est.estado).toBe('reproduciendo')
     expect(est.compas).toBe(0)
     expect(est.golpeEnCompas).toBe(0)
     expect(est.delay).toBe(99)
@@ -60,7 +60,7 @@ describe('Helper Sinro', () => {
     const helper = HelperSincro.getInstance()
     const est = helper.GetEstadoSincro(sincro, tiempo, duracionGolpe, 4)
 
-    expect(est.estado).toBe('Reproduciendo')
+    expect(est.estado).toBe('reproduciendo')
     expect(est.compas).toBe(10)
     expect(est.golpeEnCompas).toBe(0)
     expect(est.delay).toBe(250)
@@ -98,7 +98,7 @@ describe('Helper Sinro', () => {
     const helper = HelperSincro.getInstance()
     const est = helper.GetEstadoSincro(sincro, tiempo, 100, 4)
 
-    expect(est.estado).toBe('Iniciando')
+    expect(est.estado).toBe('iniciando')
     expect(est.compas).toBe(0)
     expect(est.golpeEnCompas).toBe(3)
     expect(est.delay).toBe(1)
@@ -170,7 +170,7 @@ describe('Helper Sinro', () => {
     expect(estadoSincro.compas).toBe(0)
     expect(estadoSincro.golpeEnCompas).toBe(3)
     expect(estadoSincro.delay).toBe(50)
-    expect(estadoSincro.estado).toBe('Reproduciendo')
+    expect(estadoSincro.estado).toBe('reproduciendo')
   })
 
   it('GetSincro - Reproduciendo en el golpe 0', () => {

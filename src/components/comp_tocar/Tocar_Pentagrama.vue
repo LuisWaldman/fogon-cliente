@@ -6,7 +6,6 @@ import { HelperPentagramas } from '../../modelo/pentagrama/helperPentagramas'
 import { DisplayPentagrama } from '../../modelo/pentagrama/displayPentagrama'
 import type { DisplayModoPentagrama } from '../../modelo/pentagrama/displayModoPentagrama'
 import { Pantalla } from '../../modelo/pantalla'
-import { g } from 'vitest/dist/chunks/suite.d.FvehnV49.js'
 
 const emit = defineEmits(['clickCompas', 'clickCambioModo'])
 const props = defineProps<{
@@ -109,7 +108,6 @@ onMounted(() => {
   }
 })
 function Redibujar() {
-
   modos.value = helper.GetModos(props.cancion, props.editando)
   if (modos.value.length > 0) {
     modos.value[0].Ver = true
@@ -119,7 +117,6 @@ function Redibujar() {
 }
 
 function Actualizar() {
-
   // Find the currently visible mode
   const modoVisible = modo.value
   if (modoVisible) {
@@ -131,7 +128,6 @@ function Actualizar() {
     display.value = newDisplay
   }
 }
-
 
 function verInstrumento(index: number) {
   for (let i = 0; i < modos.value.length; i++) {

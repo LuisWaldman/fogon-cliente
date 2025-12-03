@@ -84,7 +84,7 @@ function cambiar(id: number, idx: number = 0) {
           class="beat"
           :class="{
             beat_activo:
-              n - 1 === golpeEnCompas && estadoReproduccion === 'Reproduciendo',
+              n - 1 === golpeEnCompas && estadoReproduccion === 'reproduciendo',
           }"
         >
           <span v-if="!midiCargado"> {{ n }}</span>
