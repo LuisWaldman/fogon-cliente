@@ -195,9 +195,9 @@ function actualizar() {
   calcularPentagramaEditando()
 }
 
-const viendoModo = ref(0)
-function cambioModo(index: number) {
-  viendoModo.value = index
+const viendoModo = ref<DisplayModoPentagrama | null>(null)
+function cambioModo(modo: DisplayModoPentagrama) {
+  viendoModo.value = modo
 }
 const editandoCompas = ref(-1)
 function cambiarCompas(compas: number) {
@@ -225,20 +225,10 @@ const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
       ></TocarPentagrama>
     </div>
     <div :style="estiloVistaSecundaria()">
-      <div class="pentagrama-container">
+      <div class="">
         <div class="botoneraLateral">
           <subirxml :cancion="cancion" @actualizar="actualizar"></subirxml>
           <button @click="clickAddPentagrama">➕ Agregar Pentagrama</button>
-          <button
-            v-if="modos.length > 0"
-            @click="clickBorrarModo(modos[editandoModo])"
-            class="btn-danger"
-          >
-            🗑️ Borrar Pentagrama
-          </button>
-          <button @click="clickCopiarEnPentagrama">
-            📋 Copiar en Pentagrama
-          </button>
         </div>
 
         <div v-if="agregandoPentagrama" class="modal-agregar">
@@ -305,6 +295,18 @@ const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
             :compas="compas"
             @actualizoPentagrama="emit('actualizoPentagrama')"
           ></editarCompas>
+        </div>
+        <div>
+          <button
+            v-if="viendoModo != null"
+            @click="clickBorrarModo(viendoModo)"
+            class="btn-danger"
+          >
+            🗑️ Borrar Pentagrama
+          </button>
+          <button @click="clickCopiarEnPentagrama">
+            📋 Copiar en Pentagrama
+          </button>
         </div>
       </div>
     </div>
