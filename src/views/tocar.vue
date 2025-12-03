@@ -65,7 +65,7 @@ function PararLoop() {
     rafId = null
   }
 }
-const cargando = ref(false)
+const cargando = ref(true)
 function VerEstado() {
   estadoReproduccion.value = appStore.estadosApp.estadoReproduccion
   compas.value = appStore.aplicacion.reproductor.compas
@@ -76,7 +76,7 @@ function VerEstado() {
     appStore.estadosApp.estadoCarga = 'cargada'
   }
 
-  cargando.value = false
+  cargando.value = !(appStore.estadosApp.estadoCarga === 'cargada')
   setviendoVideo()
 
   if (

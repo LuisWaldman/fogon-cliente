@@ -134,6 +134,7 @@ function verInstrumento(index: number) {
     modos.value[i].Ver = i === index
   }
   modo.value = modos.value[index]
+  emit('clickCambioModo', modo.value)
   Actualizar()
 }
 
