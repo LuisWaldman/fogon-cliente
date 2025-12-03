@@ -194,7 +194,6 @@ function actualizar() {
   cargarModos()
   calcularPentagramaEditando()
 }
-  
 
 const viendoModo = ref(0)
 function cambioModo(index: number) {
