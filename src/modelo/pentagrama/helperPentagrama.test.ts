@@ -20,7 +20,11 @@ describe('Helper Pentagrama', () => {
     const helperPentagrama = new HelperPentagramas()
     const cancion = Cancion.GetDefault('def')
     cancion.pentagramas = pentagramas
-    const modos = helperPentagrama.GetModos(cancion)
-    helperPentagrama.creaDisplayPentagrama(cancion, modos)
+    const modos = helperPentagrama.GetModos(cancion, false)
+    // Set the first mode to visible and use it
+    if (modos.length > 0) {
+      modos[0].Ver = true
+      helperPentagrama.creaDisplayPentagrama(cancion, modos[0])
+    }
   })
 })

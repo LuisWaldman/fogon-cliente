@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, computed, defineAsyncComponent } from 'vue'
+import { ref, computed } from 'vue'
 import { MidiHelper } from '../../modelo/midi/MidiHelper'
 import { Midi } from '@tonejs/midi'
 import { Cancion } from '../../modelo/cancion/cancion'
@@ -46,7 +46,7 @@ function manejarSeleccionArchivo(event: Event) {
       estadoSubida.value = 'MIDI Ok'
       objetoMidi.value = midi
       props.cancion.pentagramas = midiHelper.MidiToPentagramas(midi)
-      
+
       // Inicializar instrumentos por defecto para cada pentagrama
       props.cancion.pentagramas.forEach((pentagrama) => {
         if (!pentagrama.instrfogon) {
@@ -57,7 +57,7 @@ function manejarSeleccionArchivo(event: Event) {
           pentagrama.instrumento = pentagrama.instrumento || 'Piano'
         }
       })
-      
+
       estadoSubida.value = 'Pentagramas cargados'
       mostrarConfiguracion.value = true
     } catch (error) {
@@ -71,20 +71,26 @@ function manejarSeleccionArchivo(event: Event) {
   target.value = ''
 }
 
-function actualizarInstrumentoFogon(pentagramaIndex: number, nuevoInstrumento: string) {
+function actualizarInstrumentoFogon(
+  pentagramaIndex: number,
+  nuevoInstrumento: string,
+) {
   if (props.cancion.pentagramas[pentagramaIndex]) {
     props.cancion.pentagramas[pentagramaIndex].instrfogon = nuevoInstrumento
   }
 }
 
-function actualizarInstrumentoMidi(pentagramaIndex: number, nuevoInstrumento: string) {
+function actualizarInstrumentoMidi(
+  pentagramaIndex: number,
+  nuevoInstrumento: string,
+) {
   if (props.cancion.pentagramas[pentagramaIndex]) {
     props.cancion.pentagramas[pentagramaIndex].instrumento = nuevoInstrumento
   }
 }
 
-const tienePentagramas = computed(() => 
-  props.cancion.pentagramas && props.cancion.pentagramas.length > 0
+const tienePentagramas = computed(
+  () => props.cancion.pentagramas && props.cancion.pentagramas.length > 0,
 )
 </script>
 
@@ -104,39 +110,48 @@ const tienePentagramas = computed(() =>
     </div>
 
     <!-- Configuración de pentagramas después de cargar el MIDI -->
-    <div v-if="mostrarConfiguracion && tienePentagramas" class="configuracion-pentagramas">
+    <div
+      v-if="mostrarConfiguracion && tienePentagramas"
+      class="configuracion-pentagramas"
+    >
       <h3>Configuración de Pentagramas</h3>
       <div class="lista-pentagramas">
-        <div 
-          v-for="(pentagrama, index) in cancion.pentagramas" 
+        <div
+          v-for="(pentagrama, index) in cancion.pentagramas"
           :key="index"
           class="pentagrama-config"
         >
           <div class="pentagrama-header">
             <h4>Pentagrama {{ index + 1 }}</h4>
-            <span class="pentagrama-nombre">{{ pentagrama.nombre || 'Sin nombre' }}</span>
+            <span class="pentagrama-nombre">{{
+              pentagrama.nombre || 'Sin nombre'
+            }}</span>
           </div>
-          
+
           <div class="selectores-instrumentos">
             <div class="selector-grupo">
               <label>Instrumento Fogón:</label>
-              <SelectInstrumentoFogon 
+              <SelectInstrumentoFogon
                 :modelValue="pentagrama.instrfogon || 'teclado'"
-                @update:modelValue="(valor) => actualizarInstrumentoFogon(index, valor)"
+                @update:modelValue="
+                  (valor) => actualizarInstrumentoFogon(index, valor)
+                "
               />
             </div>
-            
+
             <div class="selector-grupo">
               <label>Instrumento MIDI:</label>
-              <SelectInstrumento 
+              <SelectInstrumento
                 :modelValue="pentagrama.instrumento || 'Piano'"
-                @update:modelValue="(valor) => actualizarInstrumentoMidi(index, valor)"
+                @update:modelValue="
+                  (valor) => actualizarInstrumentoMidi(index, valor)
+                "
               />
             </div>
           </div>
         </div>
       </div>
-      
+
       <div class="acciones-finales">
         <button @click="mostrarConfiguracion = false" class="btn-finalizar">
           Finalizar Configuración
@@ -160,7 +175,11 @@ const tienePentagramas = computed(() =>
 .btn-subir-midi {
   display: inline-block;
   padding: 12px 20px;
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
   border: 2px solid rgba(169, 168, 246, 0.5);
   border-radius: 8px;
   color: white;
@@ -170,14 +189,22 @@ const tienePentagramas = computed(() =>
 }
 
 .btn-subir-midi:hover {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.8)
+  );
   border-color: rgba(169, 168, 246, 0.8);
   box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
   transform: translateY(-2px);
 }
 
 .configuracion-pentagramas {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(44, 44, 44, 0.4));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(44, 44, 44, 0.4)
+  );
   border: 1px solid rgba(169, 168, 246, 0.2);
   border-radius: 12px;
   padding: 1.5rem;
@@ -196,7 +223,11 @@ const tienePentagramas = computed(() =>
 }
 
 .pentagrama-config {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(44, 44, 44, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(44, 44, 44, 0.3)
+  );
   border: 1px solid rgba(169, 168, 246, 0.3);
   border-radius: 8px;
   padding: 1rem;
@@ -249,7 +280,11 @@ const tienePentagramas = computed(() =>
 
 .btn-finalizar {
   padding: 12px 24px;
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.2), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
   border: 2px solid rgba(169, 168, 246, 0.5);
   border-radius: 8px;
   color: white;
@@ -259,7 +294,11 @@ const tienePentagramas = computed(() =>
 }
 
 .btn-finalizar:hover {
-  background: linear-gradient(135deg, rgba(169, 168, 246, 0.3), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(169, 168, 246, 0.3),
+    rgba(0, 0, 0, 0.8)
+  );
   border-color: rgba(169, 168, 246, 0.8);
   box-shadow: 0 4px 20px rgba(169, 168, 246, 0.3);
   transform: translateY(-2px);
@@ -269,7 +308,7 @@ const tienePentagramas = computed(() =>
   .selectores-instrumentos {
     grid-template-columns: 1fr;
   }
-  
+
   .pentagrama-header {
     flex-direction: column;
     align-items: flex-start;

@@ -181,8 +181,6 @@ function clickAddOkPentagrama() {
   calcularPentagramaEditando()
 }
 
-
-
 const pantalla = new Pantalla()
 function estiloVistaPrincipal() {
   return `width: ${pantalla.getConfiguracionPantalla().anchoPrincipal}%; height: 100%`
@@ -203,106 +201,108 @@ function cambiarCompas(compas: number) {
 const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
 </script>
 <template>
-  <div   :style="{
+  <div
+    :style="{
       height: pantalla.getAltoPantalla() + 'px',
       overflow: 'hidden',
       display: 'flex',
-    }">
-  <div :style="estiloVistaPrincipal()">
-    
-     <TocarPentagrama
+    }"
+  >
+    <div :style="estiloVistaPrincipal()">
+      <TocarPentagrama
         :cancion="cancion"
         :compas="compas"
         @clickCompas="cambiarCompas"
         @clickCambioModo="cambioModo"
         :editando="true"
         ref="ctrlTocarPentagrama"
-        
-        :compasx-renglon="
-          compaces
-        "
+        :compasx-renglon="compaces"
       ></TocarPentagrama>
-  </div>
-  <div :style="estiloVistaSecundaria()">
-  <div class="pentagrama-container">
-    <div class="botoneraLateral">
-      <subirxml :cancion="cancion"></subirxml>
-      <button @click="clickAddPentagrama">➕ Agregar Pentagrama</button>
-      <button
-        v-if="modos.length > 0"
-        @click="clickBorrarModo(modos[editandoModo])"
-        class="btn-danger"
-      >
-        🗑️ Borrar Pentagrama
-      </button>
-      <button @click="clickCopiarEnPentagrama">📋 Copiar en Pentagrama</button>
     </div>
-
-    <div v-if="agregandoPentagrama" class="modal-agregar">
-      <div class="form-group">
-        <label>Clave nuevo pentagrama</label>
-        <select v-model="nuevoPentagramaClave" class="styled-select">
-          <option value="Sol">Sol</option>
-          <option value="Fa">Fa</option>
-          <option value="Sol y Fa">Sol y Fa</option>
-          <option value="Bateria">Bateria</option>
-        </select>
-      </div>
-      <div class="button-group">
-        <button @click="clickAddOkPentagrama" class="btn-success">
-          ✓ Aceptar
-        </button>
-        <button @click="clickCancelAddPentagrama" class="btn-cancel">
-          ✗ Cancelar
-        </button>
-      </div>
-    </div>
-
-    <div v-if="modos.length > 0" class="config-panel">
-      <div class="form-group">
-        <label>Nombre</label>
-        <input v-model="modos[editandoModo].Nombre" class="styled-input" />
-      </div>
-
-      <div class="form-group">
-        <label>Instrumento</label>
-        <combo
-          v-model="modos[editandoModo].Instrumento"
-          @update:modelValue="
-            (nuevo) => cambioInstrumento(modos[editandoModo], nuevo)
-          "
-        ></combo>
-      </div>
-
-      <div class="form-group" v-if="modos[editandoModo].Claves.length > 1">
-        <label>Clave</label>
-        <select
-          v-model="editandoClave"
-          @change="calcularPentagramaEditando()"
-          class="styled-select"
-        >
-          <option
-            v-for="clave in modos[editandoModo].Claves"
-            :key="clave"
-            :value="clave"
+    <div :style="estiloVistaSecundaria()">
+      <div class="pentagrama-container">
+        <div class="botoneraLateral">
+          <subirxml :cancion="cancion"></subirxml>
+          <button @click="clickAddPentagrama">➕ Agregar Pentagrama</button>
+          <button
+            v-if="modos.length > 0"
+            @click="clickBorrarModo(modos[editandoModo])"
+            class="btn-danger"
           >
-            {{ clave === 'treble' ? 'Sol' : clave === 'bass' ? 'Fa' : clave }}
-          </option>
-        </select>
+            🗑️ Borrar Pentagrama
+          </button>
+          <button @click="clickCopiarEnPentagrama">
+            📋 Copiar en Pentagrama
+          </button>
+        </div>
+
+        <div v-if="agregandoPentagrama" class="modal-agregar">
+          <div class="form-group">
+            <label>Clave nuevo pentagrama</label>
+            <select v-model="nuevoPentagramaClave" class="styled-select">
+              <option value="Sol">Sol</option>
+              <option value="Fa">Fa</option>
+              <option value="Sol y Fa">Sol y Fa</option>
+              <option value="Bateria">Bateria</option>
+            </select>
+          </div>
+          <div class="button-group">
+            <button @click="clickAddOkPentagrama" class="btn-success">
+              ✓ Aceptar
+            </button>
+            <button @click="clickCancelAddPentagrama" class="btn-cancel">
+              ✗ Cancelar
+            </button>
+          </div>
+        </div>
+
+        <div v-if="modos.length > 0" class="config-panel">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input v-model="modos[editandoModo].Nombre" class="styled-input" />
+          </div>
+
+          <div class="form-group">
+            <label>Instrumento</label>
+            <combo
+              v-model="modos[editandoModo].Instrumento"
+              @update:modelValue="
+                (nuevo) => cambioInstrumento(modos[editandoModo], nuevo)
+              "
+            ></combo>
+          </div>
+
+          <div class="form-group" v-if="modos[editandoModo].Claves.length > 1">
+            <label>Clave</label>
+            <select
+              v-model="editandoClave"
+              @change="calcularPentagramaEditando()"
+              class="styled-select"
+            >
+              <option
+                v-for="clave in modos[editandoModo].Claves"
+                :key="clave"
+                :value="clave"
+              >
+                {{
+                  clave === 'treble' ? 'Sol' : clave === 'bass' ? 'Fa' : clave
+                }}
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="editor-panel">
+          <editarCompas
+            v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
+            :cancion="cancion"
+            :pentagramaId="idPentagramaEditando"
+            :compas="compas"
+            @actualizoPentagrama="emit('actualizoPentagrama')"
+          ></editarCompas>
+        </div>
       </div>
     </div>
-
-    <div class="editor-panel">
-      <editarCompas
-        v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
-        :cancion="cancion"
-        :pentagramaId="idPentagramaEditando"
-        :compas="compas"
-        @actualizoPentagrama="emit('actualizoPentagrama')"
-      ></editarCompas>
-    </div>
-  </div>
-  </div>
   </div>
 </template>
 

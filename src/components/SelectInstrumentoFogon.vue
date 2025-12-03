@@ -65,32 +65,36 @@ function detectarInstrumentoYVariante() {
 
 function actualizarInstrumento() {
   let nuevoInstrumento = instrumentoBase.value
-  
+
   if (
-    (instrumentoBase.value === 'guitarra' || 
-     instrumentoBase.value === 'ukelele' || 
-     instrumentoBase.value === 'teclado') && 
+    (instrumentoBase.value === 'guitarra' ||
+      instrumentoBase.value === 'ukelele' ||
+      instrumentoBase.value === 'teclado') &&
     varianteInstrumento.value
   ) {
     nuevoInstrumento = `${instrumentoBase.value}-${varianteInstrumento.value}`
   }
-  
+
   emit('update:modelValue', nuevoInstrumento)
 }
 
-const mostrarVariantes = computed(() =>
-  instrumentoBase.value === 'guitarra' || 
-  instrumentoBase.value === 'ukelele' || 
-  instrumentoBase.value === 'teclado'
+const mostrarVariantes = computed(
+  () =>
+    instrumentoBase.value === 'guitarra' ||
+    instrumentoBase.value === 'ukelele' ||
+    instrumentoBase.value === 'teclado',
 )
 
 // Inicializar al montar
 detectarInstrumentoYVariante()
 
 // Observar cambios en el modelValue
-watch(() => props.modelValue, () => {
-  detectarInstrumentoYVariante()
-})
+watch(
+  () => props.modelValue,
+  () => {
+    detectarInstrumentoYVariante()
+  },
+)
 </script>
 
 <template>

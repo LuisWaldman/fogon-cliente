@@ -5,8 +5,12 @@ import { XMLHelper, XMLReumen } from '../../modelo/pentagrama/XMLHelper'
 import { Cancion } from '../../modelo/cancion/cancion'
 import { Pentagrama } from '../../modelo/cancion/pentagrama'
 
-const SelectInstrumento = defineAsyncComponent(() => import('../SelectInstrumento.vue'))
-const SelectInstrumentoFogon = defineAsyncComponent(() => import('../SelectInstrumentoFogon.vue'))
+const SelectInstrumento = defineAsyncComponent(
+  () => import('../SelectInstrumento.vue'),
+)
+const SelectInstrumentoFogon = defineAsyncComponent(
+  () => import('../SelectInstrumentoFogon.vue'),
+)
 
 const props = defineProps<{
   cancion: Cancion
@@ -170,13 +174,19 @@ async function manejarSeleccionArchivo(event: Event) {
   target.value = ''
 }
 
-function actualizarInstrumentoFogon(pentagramaIndex: number, nuevoInstrumento: string) {
+function actualizarInstrumentoFogon(
+  pentagramaIndex: number,
+  nuevoInstrumento: string,
+) {
   if (pentagramasTemporales.value[pentagramaIndex]) {
     pentagramasTemporales.value[pentagramaIndex].instrfogon = nuevoInstrumento
   }
 }
 
-function actualizarInstrumentoMidi(pentagramaIndex: number, nuevoInstrumento: string) {
+function actualizarInstrumentoMidi(
+  pentagramaIndex: number,
+  nuevoInstrumento: string,
+) {
   if (pentagramasTemporales.value[pentagramaIndex]) {
     pentagramasTemporales.value[pentagramaIndex].instrumento = nuevoInstrumento
   }
@@ -280,26 +290,34 @@ function actualizarInstrumentoMidi(pentagramaIndex: number, nuevoInstrumento: st
 
               <div class="detail-row">
                 <label>🎵 Instrumento Fogón:</label>
-                <SelectInstrumentoFogon 
+                <SelectInstrumentoFogon
                   :modelValue="pentagrama.instrfogon || 'teclado'"
-                  @update:modelValue="(valor) => actualizarInstrumentoFogon(index, valor)"
+                  @update:modelValue="
+                    (valor) => actualizarInstrumentoFogon(index, valor)
+                  "
                   @click.stop
                 />
               </div>
 
               <div class="detail-row">
                 <label>🎸 Instrumento MIDI:</label>
-                <SelectInstrumento 
+                <SelectInstrumento
                   :modelValue="pentagrama.instrumento || 'Piano'"
-                  @update:modelValue="(valor) => actualizarInstrumentoMidi(index, valor)"
+                  @update:modelValue="
+                    (valor) => actualizarInstrumentoMidi(index, valor)
+                  "
                   @click.stop
                 />
               </div>
 
               <div class="detail-row">
                 <label>🎹 Clave:</label>
-                <span class="detail-value" v-if="pentagrama.clave === 'treble'">SOL</span>
-                <span class="detail-value" v-if="pentagrama.clave === 'bass'">FA</span>
+                <span class="detail-value" v-if="pentagrama.clave === 'treble'"
+                  >SOL</span
+                >
+                <span class="detail-value" v-if="pentagrama.clave === 'bass'"
+                  >FA</span
+                >
               </div>
             </div>
           </div>

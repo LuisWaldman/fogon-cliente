@@ -18,6 +18,7 @@ const props = defineProps<{
 const display = ref<DisplayPentagrama>(new DisplayPentagrama())
 display.value.compasxRenglon = props.compasxRenglon
 const modos = ref<DisplayModoPentagrama[]>([])
+const modo = ref<DisplayModoPentagrama | null>(null)
 
 const helper = new HelperPentagramas()
 const pantalla = new Pantalla()
@@ -101,6 +102,11 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
+  modos.value = helper.GetModos(props.cancion, props.editando)
+  if (modos.value.length > 0) {
+    modos.value[0].Ver = true
+    modo.value = modos.value[0]
+  }
   Actualizar()
   if (pentagramaDiv.value) {
     pentagramaDiv.value.addEventListener('scroll', handleScroll)
@@ -108,61 +114,25 @@ onMounted(() => {
 })
 
 function Actualizar() {
-  cargarModos()
 
-  const newDisplay = helper.creaDisplayPentagrama(
-    props.cancion,
-    modos.value,
-    props.compasxRenglon,
-  )
-  display.value = newDisplay
-}
-
-cargarModos()
-if (props.editando) {
-  const items = localStorage.getItem('instrumentosPentagrama') || ''
-  if (items.includes(',')) {
-    console.log('Borrando instrumentos seleccionados en modo editar')
-    localStorage.setItem('instrumentosPentagrama', items.split(',')[0] || '')
+  // Find the currently visible mode
+  const modoVisible = modo.value
+  if (modoVisible) {
+    const newDisplay = helper.creaDisplayPentagrama(
+      props.cancion,
+      modoVisible,
+      props.compasxRenglon,
+    )
+    display.value = newDisplay
   }
 }
 
-function cargarModos() {
-  const instrumentosenLocalstorage =
-    localStorage.getItem('instrumentosPentagrama') || ''
-  modos.value = helper.GetModos(props.cancion)
-  if (instrumentosenLocalstorage != '' && modos.value.length > 0) {
-    let encontradoTotal = false
-    modos.value.forEach((modo) => {
-      const encontrado = instrumentosenLocalstorage
-        .split(',')
-        .find((inst) => inst == modo.Nombre)
-      modo.Ver = encontrado ? true : false
-      if (encontrado) {
-        encontradoTotal = true
-      }
-    })
-    if (!encontradoTotal && modos.value.length > 0) {
-      modos.value[0].Ver = true
-    }
-  }
-}
 
-function verInstrumento(modo: DisplayModoPentagrama, index: number) {
-  if (props.editando) {
-    localStorage.setItem('instrumentosPentagrama', modo.Nombre)
-    Actualizar()
-    emit('clickCambioModo', index)
-    return
+function verInstrumento(index: number) {
+  for (let i = 0; i < modos.value.length; i++) {
+    modos.value[i].Ver = i === index
   }
-  modo.Ver = !modo.Ver
-  const instrumentosSeleccionados = modos.value
-    .filter((m) => m.Ver)
-    .map((m) => m.Nombre)
-  localStorage.setItem(
-    'instrumentosPentagrama',
-    instrumentosSeleccionados.join(','),
-  )
+  modo.value = modos.value[index]
   Actualizar()
 }
 
@@ -189,7 +159,7 @@ onUnmounted(() => {
         <li
           v-for="(modo, index) in modos"
           :key="index"
-          @click="verInstrumento(modo, index)"
+          @click="verInstrumento(index)"
         >
           <i class="bi bi-check-circle" v-if="modo.Ver"></i>
           {{ modo.Nombre }}

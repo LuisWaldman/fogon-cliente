@@ -49,8 +49,10 @@ function GetStylePantallaEdit() {
 function estiloVistaPrincipal() {
   if (
     viendo.value == 'editartexto' ||
-    viendo.value == 'acordes' || viendo.value == 'medias' ||
-    viendo.value == 'escala' || viendo.value == 'pentagramas'
+    viendo.value == 'acordes' ||
+    viendo.value == 'medias' ||
+    viendo.value == 'escala' ||
+    viendo.value == 'pentagramas'
   ) {
     return `width: 100%; height: 100%`
   }
@@ -61,7 +63,8 @@ function estiloVistaSecundaria() {
   if (
     viendo.value == 'editartexto' ||
     viendo.value == 'acordes' ||
-    viendo.value == 'escala'  || viendo.value == 'pentagramas'
+    viendo.value == 'escala' ||
+    viendo.value == 'pentagramas'
   ) {
     return `width: 0%; height: 100%`
   }
@@ -93,7 +96,6 @@ function Actualizar() {
   ctrlSecuencia.value.Actualizar()
 }
 
-
 const viendoModo = ref(0)
 </script>
 <template>
@@ -107,7 +109,10 @@ const viendoModo = ref(0)
     <div :style="estiloVistaPrincipal()">
       <TocarLetra
         v-if="
-          (viendo == 'inicio' || viendo == 'medias' || viendo == 'tiempo' || viendo == 'video') &&
+          (viendo == 'inicio' ||
+            viendo == 'medias' ||
+            viendo == 'tiempo' ||
+            viendo == 'video') &&
           vista.muestra == 'karaoke'
         "
         :cancion="appStore.editandocancion"
@@ -115,7 +120,10 @@ const viendoModo = ref(0)
       ></TocarLetra>
       <TocarLetraAcorde
         v-if="
-          (viendo == 'inicio' || viendo == 'medias' || viendo == 'tiempo' || viendo == 'video') &&
+          (viendo == 'inicio' ||
+            viendo == 'medias' ||
+            viendo == 'tiempo' ||
+            viendo == 'video') &&
           (vista.muestra == 'letrayacordes' ||
             vista.muestra == 'acordes' ||
             vista.muestra == 'partitura')
@@ -131,8 +139,8 @@ const viendoModo = ref(0)
         ref="ctrlEditarTexto"
         @clickCompas="cambiarCompas"
       ></EditarLetraAcorde>
-<editarpentagrama
-      v-if="viendo === 'pentagramas'"
+      <editarpentagrama
+        v-if="viendo === 'pentagramas'"
         @cerrar="clickCerrarEditar"
         @actualizoPentagrama="Actualizar"
         :cancion="appStore.editandocancion"
@@ -140,7 +148,6 @@ const viendoModo = ref(0)
         :editandoModo="viendoModo"
         @clickCompas="cambiarCompas"
       >
-        
       </editarpentagrama>
       <editartexto
         v-if="viendo == 'editartexto'"

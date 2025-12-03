@@ -6,7 +6,7 @@ import { Configuracion } from '../../modelo/configuracion'
 import { datosLogin } from '../../modelo/datosLogin'
 import { InstrumentoMidi } from '../../modelo/midi/InstrumentoMidi'
 import { Logger } from '../../modelo/logger'
-import SelectInstrumentoFogon  from '../SelectInstrumentoFogon.vue'
+import SelectInstrumentoFogon from '../SelectInstrumentoFogon.vue'
 
 const refInstrumentos = ref<InstrumentoMidi[]>(
   InstrumentoMidi.GetInstrumentos(),
@@ -231,7 +231,7 @@ function toggleCifradoLatino() {
         <div style="margin-bottom: 5px">
           <label for="instrument">Instrumento</label>
         </div>
-        <SelectInstrumentoFogon 
+        <SelectInstrumentoFogon
           v-model="instrumentoFogon"
           @update:modelValue="onInstrumentoFogonChange"
         />
