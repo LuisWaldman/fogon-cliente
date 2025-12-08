@@ -175,7 +175,7 @@ export class CancionManager {
       indiceItem.totalCompases = item.totalCompases || 0
       indiceItem.compasUnidad = item.compasUnidad || 0
       indiceItem.compasCantidad = item.compasCantidad || 4
-      indiceItem.bpm = item.bpm || 60
+      indiceItem.bpm = Number(item.bpm) || 60
       indiceItem.cantacordes = item.cantacordes || 0
       indiceItem.cantpartes = item.cantpartes || 0
       indiceItem.calidad = item.calidad || 1

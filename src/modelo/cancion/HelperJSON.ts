@@ -66,7 +66,7 @@ export class HelperJSON {
 
     const acordes = new Acordes(partes, ordenPartes)
 
-    let bpm = data.bpm
+    let bpm = Number(data.bpm)
     if (bpm === undefined) {
       bpm = 120 // valor por defecto
     }

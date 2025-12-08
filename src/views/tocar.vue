@@ -22,6 +22,7 @@ import { VistaTocar } from '../modelo/configuracion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import type { Cancion } from '../modelo/cancion/cancion'
 import { Logger } from '../modelo/logger'
+import type { EstadoCargaReproduccion } from '../EstadosAplicacion'
 
 const viendoVideo = ref(false)
 const pantalla = new Pantalla()
@@ -98,8 +99,18 @@ watch(
 )
 watch(
   () => appStore.estadosApp.estadoCarga,
-  () => {
+  (estadoCarga: EstadoCargaReproduccion) => {
     VerEstado()
+    if (
+      appStore.estadosApp.estadoReproduccion === 'pausa' &&
+      estadoCarga === 'cargada' &&
+      appStore.aplicacion.reproductor.yendoAlSiguiente
+    ) {
+      appStore.aplicacion.reproductor.yendoAlSiguiente = false
+      setTimeout(() => {
+        appStore.aplicacion.reproductor.iniciarReproduccion()
+      }, 1000)
+    }
   },
 )
 onUnmounted(() => {

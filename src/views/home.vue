@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { useAppStore } from '../stores/appStore'
-import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
+import nuevaCancion from '../components/comp_home/nuevaCancion.vue'
+import subirCancion from '../components/comp_home/subircancion.vue'
 import busquedaCanciones from '../components/comp_home/busquedaCanciones.vue'
 import tablacanciones from '../components/comp_home/tablacanciones.vue'
+import { useAppStore } from '../stores/appStore'
+import { UltimasCanciones } from '../modelo/cancion/ultimascanciones'
 import { onMounted, ref, watch } from 'vue'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 import { CancionManager } from '../modelo/cancion/CancionManager'
 import { ListasDBManager } from '../modelo/cancion/ListasDBManager'
 import { vistaHome } from '../modelo/helperVistas/home/vistaHome'
-import nuevaCancion from '../components/comp_home/nuevaCancion.vue'
-import subirCancion from '../components/comp_home/subircancion.vue'
 import { Logger } from '../modelo/logger'
 
 const viendoNueva = ref(false)
@@ -108,7 +108,8 @@ async function clickOpcion(viendostr: string) {
   if (viendo.value === viendostr) return
   cargandoCanciones.value = true
   cargandoListas.value = true
-  const conLista = appStore.listaReproduccion.length > 0
+  const conLista =
+    appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0
   const conLogin = appStore.estadosApp.estadoLogin === 'logueado' ? true : false
   await vistaControl.clickViendo(viendostr, conLogin, conLista)
   await Cargar()
@@ -135,7 +136,7 @@ async function clickOrigen(viendostr: string) {
 }
 
 watch(
-  () => appStore.nroCancion,
+  () => appStore.aplicacion.reproductor.listaReproduccion.nroCancion,
   () => {
     if (viendoOrigen.value === 'reproduccion' && viendo.value === 'listas') {
       Cargar()
@@ -144,7 +145,7 @@ watch(
 )
 
 watch(
-  () => appStore.listaReproduccion,
+  () => appStore.aplicacion.reproductor.listaReproduccion.lista,
   () => {
     if (viendoOrigen.value === 'reproduccion' && viendo.value === 'listas') {
       actualizarVista()
@@ -456,7 +457,10 @@ function clickAdvertencia() {
     <div class="config-menu">
       <div class="config-menu-group">
         <div
-          v-if="appStore.listaReproduccion.length && viendo === 'listas'"
+          v-if="
+            appStore.aplicacion.reproductor.listaReproduccion.lista.length &&
+            viendo === 'listas'
+          "
           @click="clickOrigen('reproduccion')"
           class="config-menu-item"
         >
@@ -465,7 +469,9 @@ function clickAdvertencia() {
             class="nav-link text-white"
             :class="{ activo: viendoOrigen === 'reproduccion' }"
           >
-            Reproduciendo ( {{ appStore.listaReproduccion.length }} )
+            Reproduciendo (
+            {{ appStore.aplicacion.reproductor.listaReproduccion.lista.length }}
+            )
           </a>
         </div>
         <div @click="clickOrigen('localstorage')" class="config-menu-item">
@@ -640,7 +646,9 @@ function clickAdvertencia() {
         :listasstore="ListasEnStorage"
         :cargando="cargandoCanciones"
         :agregarLista="AgregarALista"
-        :nro-cancion="appStore.nroCancion"
+        :nro-cancion="
+          appStore.aplicacion.reproductor.listaReproduccion.nroCancion
+        "
         :ver-cancion-actual="
           viendoOrigen === 'reproduccion' && viendo === 'listas'
         "

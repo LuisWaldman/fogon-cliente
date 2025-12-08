@@ -153,22 +153,27 @@ function arreglartexto(texto: string): string {
     <div
       class="boton_controllerplay ocultocelu"
       @click="next"
-      v-if="appStore.listaReproduccion.length > 0"
+      v-if="appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0"
     >
       ⏭️
     </div>
     <div
       class="playlist-container"
-      v-if="appStore.listaReproduccion.length > 0"
+      v-if="appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0"
     >
       <button @click="togglePlaylist">📋</button>
       <div class="playlist-dropdown" v-if="showPlaylist">
         <div class="playlist-header">Lista de Reproducción</div>
         <div
-          v-for="(cancion, index) in appStore.listaReproduccion"
+          v-for="(cancion, index) in appStore.aplicacion.reproductor
+            .listaReproduccion.lista"
           :key="index"
           class="playlist-item"
-          :class="{ active: index === appStore.nroCancion }"
+          :class="{
+            active:
+              index ===
+              appStore.aplicacion.reproductor.listaReproduccion.nroCancion,
+          }"
           @click="selectSong(index)"
         >
           <div class="song-info">

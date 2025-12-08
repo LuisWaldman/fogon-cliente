@@ -7,7 +7,7 @@ import type { ObjetoPosteable } from './modelo/objetoPosteable'
 import { Perfil } from './modelo/perfil'
 import { HelperSincro } from './modelo/sincro/HelperSincro'
 import { Sesion } from './modelo/sesion'
-import { UserSesion } from './modelo/userSesion'
+import { UserSesion, type RolesSesion } from './modelo/userSesion'
 import { CancionManager } from './modelo/cancion/CancionManager'
 import { UltimasCanciones } from './modelo/cancion/ultimascanciones'
 import type { Servidor } from './modelo/servidor'
@@ -97,8 +97,6 @@ export default class Aplicacion {
   }
 
   next() {
-    const appStore = useAppStore()
-    appStore.estadosApp.paginaLista = ''
     this.reproductor.Next()
   }
 
@@ -179,7 +177,7 @@ export default class Aplicacion {
       appStore.estadosApp.estadoSesion = 'error'
       Logger.logError('Inicio sesion', error)
     })
-    this.cliente.setRolSesionHandler((mensaje: string) => {
+    this.cliente.setRolSesionHandler((mensaje: RolesSesion) => {
       const appStore = useAppStore()
       appStore.rolSesion = mensaje
     })
@@ -235,7 +233,7 @@ export default class Aplicacion {
           (item: {
             ID: string
             Usuario: string
-            RolSesion: string
+            RolSesion: RolesSesion
             Perfil: {
               Usuario: string
               Imagen: string
@@ -343,7 +341,7 @@ export default class Aplicacion {
 
   UnirmeSesion(nombre: string): void {
     const appStore = useAppStore()
-    appStore.rolSesion = 'default'
+    appStore.rolSesion = 'admin'
     if (!this.cliente) {
       return
     }
@@ -359,7 +357,7 @@ export default class Aplicacion {
       return
     }
     const appStore = useAppStore()
-    appStore.rolSesion = 'default'
+    appStore.rolSesion = 'admin'
     appStore.estadosApp.estadoSesion = 'desconectado'
     this.reproductor.desconectar()
     this.reproductor.detenerReproduccion()

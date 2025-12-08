@@ -83,7 +83,11 @@ watch(
 )
 
 // Define el evento
-const emit = defineEmits(['abrirVistaEdicion', 'editarCancion'])
+const emit = defineEmits([
+  'abrirVistaEdicion',
+  'editarCancion',
+  'abrirVistaEdicionPermisos',
+])
 
 import { watch } from 'vue'
 
@@ -142,6 +146,10 @@ function arreglartexto(texto: string): string {
 
 function abrirVistaEdicion() {
   emit('abrirVistaEdicion')
+}
+
+function abrirVistaEdicionPermisos() {
+  emit('abrirVistaEdicionPermisos')
 }
 
 function clickEditar() {
@@ -237,6 +245,19 @@ function clickEditar() {
                   Crear Fogon
                 </a>
               </li>
+
+              <li v-if="appStore.estadosApp.estadoSesion === 'conectado'">
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  @click="abrirVistaEdicionPermisos"
+                >
+                  <i class="bi bi-shield-lock"></i>
+
+                  Administrar Fogon
+                </a>
+              </li>
+
               <div v-if="appStore.estadosApp.estadoSesion != 'conectado'">
                 <li v-for="(sesion, id) in appStore.sesiones" :key="id">
                   <a

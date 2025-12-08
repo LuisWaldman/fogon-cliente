@@ -1,4 +1,3 @@
-import { useAppStore } from '../../stores/appStore'
 import type { Cancion } from '../cancion/cancion'
 import { CancionManager } from '../cancion/CancionManager'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
@@ -33,8 +32,7 @@ export class ListaReproduccionConectada extends ListaReproduccion {
   async CargarNroCancionActual() {
     const response = await this.cliente.HTTPGET('numerocancion')
     const nroCancion = await response.json()
-    const appStore = useAppStore()
-    appStore.nroCancion = nroCancion.nroCancion
+    this.nroCancion = nroCancion.nroCancion
   }
 
   async EnviarCancion(cancion: Cancion) {
@@ -45,8 +43,7 @@ export class ListaReproduccionConectada extends ListaReproduccion {
   async CargarLista(): Promise<void> {
     const response = await this.cliente.HTTPGET('listasesion')
     const lista: ItemIndiceCancion[] = await response.json()
-    const appStore = useAppStore()
-    appStore.listaReproduccion = lista
+    this.lista = lista
   }
 
   override async ClickTocarLista(lista: ItemIndiceCancion[]) {

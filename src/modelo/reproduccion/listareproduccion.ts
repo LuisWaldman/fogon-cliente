@@ -1,48 +1,44 @@
-import { useAppStore } from '../../stores/appStore'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 
 export class ListaReproduccion {
+  lista: ItemIndiceCancion[] = []
+  nroCancion: number = 0
   GetCancion(): ItemIndiceCancion {
-    const appStore = useAppStore()
-    return appStore.listaReproduccion[appStore.nroCancion]
+    return this.lista[this.nroCancion]
   }
   async ClickTocarLista(lista: ItemIndiceCancion[]) {
-    const appStore = useAppStore()
-    appStore.listaReproduccion = lista
-    appStore.nroCancion = 0
+    this.lista = lista
+    this.nroCancion = 0
   }
   async InsertarEnListaReproduccion(cancion: ItemIndiceCancion) {
-    const appStore = useAppStore()
     const nuevaLista = []
-    if (appStore.nroCancion > appStore.listaReproduccion.length) {
-      appStore.nroCancion = appStore.listaReproduccion.length
+    if (this.nroCancion > this.lista.length) {
+      this.nroCancion = this.lista.length
     }
-    for (let i = 0; i < appStore.listaReproduccion.length; i++) {
-      if (i === appStore.nroCancion) {
-        nuevaLista.push(appStore.listaReproduccion[i])
+    for (let i = 0; i < this.lista.length; i++) {
+      if (i === this.nroCancion) {
+        nuevaLista.push(this.lista[i])
         nuevaLista.push(cancion)
       } else {
-        nuevaLista.push(appStore.listaReproduccion[i])
+        nuevaLista.push(this.lista[i])
       }
     }
-    if (appStore.listaReproduccion.length === 0) {
+    if (this.lista.length === 0) {
       nuevaLista.push(cancion)
     } else {
-      appStore.nroCancion++
+      this.nroCancion++
     }
-    appStore.listaReproduccion = nuevaLista
+    this.lista = nuevaLista
   }
 
   async ClickCancion(cancion: ItemIndiceCancion) {
     await this.InsertarEnListaReproduccion(cancion)
   }
   async ClickCancionNro(nro: number) {
-    const appStore = useAppStore()
-    appStore.nroCancion = nro
+    this.nroCancion = nro
   }
 
   Agregar(item: ItemIndiceCancion) {
-    const appStore = useAppStore()
-    appStore.listaReproduccion.push(item)
+    this.lista.push(item)
   }
 }

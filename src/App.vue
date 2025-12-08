@@ -4,6 +4,7 @@ import { useAppStore } from './stores/appStore'
 import Cabecera from './components/comp_cabecera/cabecera.vue'
 import { useRouter } from 'vue-router'
 import editVista from './components/editVista.vue'
+import editPermisos from './components/editPermisos.vue'
 import { OrigenCancion } from './modelo/cancion/origencancion'
 
 const appStore = useAppStore()
@@ -30,9 +31,23 @@ onMounted(() => {
   appStore.aplicacion.setRouter(router)
   appStore.aplicacion.onMounted()
 })
+
 const refEditandoVista = ref(false)
 function cerrareditarPantalla() {
   refEditandoVista.value = false
+}
+
+function abrirVistaEdicion() {
+  refEditandoVista.value = true
+}
+
+const refEditandoPermisos = ref(false)
+function cerrareditarPermisos() {
+  refEditandoPermisos.value = false
+}
+
+function abrirVistaEdicionPermisos() {
+  refEditandoPermisos.value = true
 }
 
 const router = useRouter()
@@ -47,10 +62,6 @@ function clickEditar() {
   appStore.cancionModificada = false
   router.push('/editar')
 }
-
-function abrirVistaEdicion() {
-  refEditandoVista.value = true
-}
 </script>
 
 <template>
@@ -58,6 +69,7 @@ function abrirVistaEdicion() {
     <Cabecera
       @abrirVistaEdicion="abrirVistaEdicion"
       @editarCancion="clickEditar"
+      @abrirVistaEdicionPermisos="abrirVistaEdicionPermisos"
     />
     <div style="text-align: center" v-if="appStore.estadosApp.estado != 'ok'">
       <img
@@ -75,6 +87,10 @@ function abrirVistaEdicion() {
       v-if="refEditandoVista"
       @cerrar="cerrareditarPantalla"
     ></editVista>
+    <editPermisos
+      v-if="refEditandoPermisos"
+      @cerrar="cerrareditarPermisos"
+    ></editPermisos>
   </div>
 </template>
 

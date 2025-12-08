@@ -113,8 +113,8 @@ export class StrategyReproductor {
     const cancionObtenida = await CancionManager.getInstance().Get(cancion)
     this.reproductor.cancion = cancionObtenida
     this.reproductor.compas = 0
-    this.reproductor.SetEstadoCarga('cargada')
     this.reproductor.SetEstado('pausa')
     this.reproductor.origenCancion = cancion
+    this.reproductor.SetEstadoCarga('cargada')
   }
 }
