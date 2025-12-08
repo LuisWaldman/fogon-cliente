@@ -8,7 +8,7 @@ import { Letra } from '../modelo/cancion/letra'
 import { Noticia } from '../modelo/noticia'
 import { Perfil } from '../modelo/perfil'
 import { Sesion } from '../modelo/sesion'
-import type { UserSesion } from '../modelo/userSesion'
+import type { RolesSesion, UserSesion } from '../modelo/userSesion'
 import { OrigenCancion } from '../modelo/cancion/origencancion'
 import { EstadosAplicacion } from '../EstadosAplicacion'
 import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
@@ -16,7 +16,7 @@ import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
 
-  const rolSesion = ref<string>('') // invitado, participante, admin, owner
+  const rolSesion = ref<RolesSesion>('visitante')
   const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
 
   const listasEnServer = ref<string[]>([])
