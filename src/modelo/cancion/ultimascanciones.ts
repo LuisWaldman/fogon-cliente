@@ -59,7 +59,7 @@ export class UltimasCanciones {
             toRet.totalCompases = item.totalCompases
             toRet.compasUnidad = item.compasUnidad
             toRet.compasCantidad = item.compasCantidad
-            toRet.bpm = item.bpm
+            toRet.bpm = Number(item.bpm)
             toRet.owner = item.owner
             toRet.calidad = item.calidad
             return toRet

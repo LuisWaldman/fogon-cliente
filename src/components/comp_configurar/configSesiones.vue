@@ -42,10 +42,8 @@ watch(
 
 watch(
   () => appStore.rolSesion,
-  (nuevoEstado) => {
-    if (nuevoEstado === 'conectado') {
+  () => {    
       cargarUsuariosSesion()
-    }
   },
 )
 

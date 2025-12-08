@@ -92,6 +92,11 @@ function onReady() {
 function onStateChange(event: { data: number }) {
   console.log('Estado del reproductor:', event.data)
   emit('cambioEstado', event.data)
+  
+  // Detectar cuando el video termine (estado 0)
+  if (event.data === 0) {
+    appStore.aplicacion.next()
+  }
 }
 </script>
 

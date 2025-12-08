@@ -10,6 +10,6 @@ export class StrategyListaReproduccion extends StrategyVista {
     // Implementación por defecto para iniciar la vistaHome
 
     const appStore = useAppStore()
-    this.vista.viendoCanciones = appStore.listaReproduccion
+    this.vista.viendoCanciones = appStore.aplicacion.reproductor.listaReproduccion.lista
   }
 }

@@ -4,6 +4,7 @@ import type { ObjetoPosteable } from '../objetoPosteable'
 import type { Servidor } from '../servidor'
 import { Logger } from '../logger'
 import type { EstadoReproduccion } from '../../EstadosAplicacion'
+import type { RolesSesion } from '../userSesion'
 
 interface ServerToClientEvents {
   replica: (usuario: string, datos: string[]) => void
@@ -13,7 +14,7 @@ interface ServerToClientEvents {
   ensesion: (sesion: string) => void
   sesionFailed: (error: string) => void
   mensajesesion: (mensaje: string) => void
-  rolSesion: (mensaje: string) => void
+  rolSesion: (mensaje: RolesSesion) => void
   cancionActualizada: (nroUsuario: number) => void
   listacambiada: (nroUsuario: number) => void
   nrocambiado: () => void
@@ -139,8 +140,8 @@ export class ClienteSocket {
     this.socket.emit('logout')
   }
 
-  private rolSesionHandler?: (mensaje: string) => void
-  public setRolSesionHandler(handler: (mensaje: string) => void): void {
+  private rolSesionHandler?: (mensaje: RolesSesion) => void
+  public setRolSesionHandler(handler: (mensaje: RolesSesion) => void): void {
     this.rolSesionHandler = handler
   }
 
@@ -298,7 +299,7 @@ export class ClienteSocket {
       Logger.log('mensajesesion received with mensaje:', msj)
       this.mensajesesionHandler?.(msj)
     })
-    socket.on('rolSesion', (mensaje: string) => {
+    socket.on('rolSesion', (mensaje: RolesSesion) => {
       Logger.log('rolSesion received with mensaje:', mensaje)
       this.rolSesionHandler?.(mensaje)
     })

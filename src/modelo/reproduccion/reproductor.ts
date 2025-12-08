@@ -1,5 +1,3 @@
-import { useAppStore } from '../../stores/appStore'
-import { CancionManager } from '../cancion/CancionManager'
 import { ItemIndiceCancion } from '../cancion/ItemIndiceCancion'
 import { ListaReproduccion } from './listareproduccion'
 import type { ClienteSocket } from '../conexion/ClienteSocket'
@@ -72,7 +70,7 @@ export class Reproductor {
   protected strategyReproductor: StrategyReproductor = new StrategyReproductor(
     this,
   )
-  protected listaReproduccion: ListaReproduccion = new ListaReproduccion()
+  public listaReproduccion: ListaReproduccion = new ListaReproduccion()
   public estadoReproductor: string = 'sin-cancion'
   public origenCancion: OrigenCancion = new OrigenCancion('', '', '')
   public cancion: Cancion = new Cancion(
@@ -125,21 +123,11 @@ export class Reproductor {
     )
   }
 
+  yendoAlSiguiente: boolean = false
+
   async Next() {
-    const appStore = useAppStore()
-    appStore.nroCancion++
-    const origen = ItemIndiceCancion.GetOrigen(
-      appStore.listaReproduccion[appStore.nroCancion - 1],
-    )
-    const cancionObtenida = await CancionManager.getInstance().Get(origen)
-    this.MediaVista = null
-    if (cancionObtenida.pentagramas.length > 0) {
-      appStore.estadosApp.texto = 'Cargando Midis...'
-    }
-    this.cancion = cancionObtenida
-    this.compas = 0
-    appStore.estadosApp.estado = 'ok'
-    appStore.origenCancion = origen
+    this.yendoAlSiguiente = true
+    this.ClickCancionNro(this.listaReproduccion.nroCancion + 1)
   }
 
   async AgregarAListaReproduccion(item: ItemIndiceCancion) {
