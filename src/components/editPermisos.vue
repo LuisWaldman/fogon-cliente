@@ -35,11 +35,20 @@ const emit = defineEmits(['cerrar'])
                 {{ user.Usuario }}
               </td>
 
-              <td style="display: flex;">
-                <button class="option-btn" :class="{ 'selected': user.RolSesion === 'director' }">Director</button>
-                <button class="option-btn" :class="{ 'selected': user.RolSesion === 'admin' }">Administrar</button>
-                </td>
-                
+              <td style="display: flex">
+                <button
+                  class="option-btn"
+                  :class="{ selected: user.RolSesion === 'director' }"
+                >
+                  Director
+                </button>
+                <button
+                  class="option-btn"
+                  :class="{ selected: user.RolSesion === 'admin' }"
+                >
+                  Administrar
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -493,5 +502,4 @@ const emit = defineEmits(['cerrar'])
 .modal-content::-webkit-scrollbar-thumb:hover {
   background: rgba(106, 76, 147, 0.6);
 }
-
 </style>

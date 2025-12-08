@@ -108,7 +108,8 @@ async function clickOpcion(viendostr: string) {
   if (viendo.value === viendostr) return
   cargandoCanciones.value = true
   cargandoListas.value = true
-  const conLista = appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0
+  const conLista =
+    appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0
   const conLogin = appStore.estadosApp.estadoLogin === 'logueado' ? true : false
   await vistaControl.clickViendo(viendostr, conLogin, conLista)
   await Cargar()
@@ -456,7 +457,10 @@ function clickAdvertencia() {
     <div class="config-menu">
       <div class="config-menu-group">
         <div
-          v-if="appStore.aplicacion.reproductor.listaReproduccion.lista.length && viendo === 'listas'"
+          v-if="
+            appStore.aplicacion.reproductor.listaReproduccion.lista.length &&
+            viendo === 'listas'
+          "
           @click="clickOrigen('reproduccion')"
           class="config-menu-item"
         >
@@ -465,7 +469,9 @@ function clickAdvertencia() {
             class="nav-link text-white"
             :class="{ activo: viendoOrigen === 'reproduccion' }"
           >
-            Reproduciendo ( {{ appStore.aplicacion.reproductor.listaReproduccion.lista.length }} )
+            Reproduciendo (
+            {{ appStore.aplicacion.reproductor.listaReproduccion.lista.length }}
+            )
           </a>
         </div>
         <div @click="clickOrigen('localstorage')" class="config-menu-item">
@@ -640,7 +646,9 @@ function clickAdvertencia() {
         :listasstore="ListasEnStorage"
         :cargando="cargandoCanciones"
         :agregarLista="AgregarALista"
-        :nro-cancion="appStore.aplicacion.reproductor.listaReproduccion.nroCancion"
+        :nro-cancion="
+          appStore.aplicacion.reproductor.listaReproduccion.nroCancion
+        "
         :ver-cancion-actual="
           viendoOrigen === 'reproduccion' && viendo === 'listas'
         "

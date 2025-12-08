@@ -165,10 +165,15 @@ function arreglartexto(texto: string): string {
       <div class="playlist-dropdown" v-if="showPlaylist">
         <div class="playlist-header">Lista de Reproducción</div>
         <div
-          v-for="(cancion, index) in appStore.aplicacion.reproductor.listaReproduccion.lista"
+          v-for="(cancion, index) in appStore.aplicacion.reproductor
+            .listaReproduccion.lista"
           :key="index"
           class="playlist-item"
-          :class="{ active: index === appStore.aplicacion.reproductor.listaReproduccion.nroCancion }"
+          :class="{
+            active:
+              index ===
+              appStore.aplicacion.reproductor.listaReproduccion.nroCancion,
+          }"
           @click="selectSong(index)"
         >
           <div class="song-info">

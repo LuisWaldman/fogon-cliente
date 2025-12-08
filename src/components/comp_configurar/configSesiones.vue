@@ -42,8 +42,8 @@ watch(
 
 watch(
   () => appStore.rolSesion,
-  () => {    
-      cargarUsuariosSesion()
+  () => {
+    cargarUsuariosSesion()
   },
 )
 
