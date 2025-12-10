@@ -41,7 +41,7 @@ function clickCancelarCambiarDatos() {
 function cambiarDatos() {
   delay.value = delayGolpe.value * duracionGolpe.value + sobranteDelay.value
   if (props.cancion.medias.length == 0) {
-    const media = new Media('youtube', id.value, delay.value)
+    const media = new Media('Youtube', id.value, delay.value)
     props.cancion.medias.push(media)
   } else {
     props.cancion.medias[0].id = id.value
