@@ -126,6 +126,12 @@ export class Reproductor {
   yendoAlSiguiente: boolean = false
 
   async Next() {
+    if (
+      this.listaReproduccion.nroCancion + 1 >=
+      this.listaReproduccion.lista.length
+    ) {
+      return
+    }
     this.yendoAlSiguiente = true
     this.ClickCancionNro(this.listaReproduccion.nroCancion + 1)
   }

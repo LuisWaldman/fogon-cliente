@@ -95,6 +95,7 @@ function onStateChange(event: { data: number }) {
 
   // Detectar cuando el video termine (estado 0)
   if (event.data === 0) {
+    
     appStore.aplicacion.next()
   }
 }
