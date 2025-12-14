@@ -249,7 +249,7 @@ function clickEditar() {
                 </a>
               </li>
 
-              <li v-if="appStore.estadosApp.estadoSesion === 'conectado'">
+              <li v-if="appStore.estadosApp.estadoSesion === 'conectado' && appStore.rolSesion !== 'visitante'">
                 <a
                   class="dropdown-item"
                   href="#"
