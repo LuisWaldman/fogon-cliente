@@ -17,6 +17,7 @@ export class Perfil extends ObjetoPosteable {
   descripcion: string
   instrumento: string
   nombreSesion: string = ''
+  nuevosEnSesionAdmin: boolean = true
   CifradoLatino: boolean = true
   ModoDesarrollador: boolean = false
   instrumentosFavoritos: string[] = []

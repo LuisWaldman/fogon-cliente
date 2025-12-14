@@ -343,6 +343,12 @@ function toggleCifradoLatino() {
                 v-model.lazy="perfil.nombreSesion"
                 @change="updateProfile"
               />
+
+              <div style="display: flex">
+                <input type="checkbox" v-model="perfil.nuevosEnSesionAdmin" />
+
+                <label for="coso">Todos Admin</label>
+              </div>
             </div>
             <div>
               <label for="coso">Usuario</label>

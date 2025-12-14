@@ -160,17 +160,24 @@ export default class Aplicacion {
     })
 
     this.cliente.connectar()
-    this.cliente.setEnsesionHandler((sesionCreada: string) => {
-      const appStore = useAppStore()
-      appStore.estadosApp.estadoSesion = 'conectado'
-      appStore.sesion.nombre = sesionCreada
-      helper.ActualizarDelayRelojRTC()
-      if (this.cliente != null) {
-        this.reproductor.detenerReproduccion()
-        this.reproductor.conectar(this.cliente, this.token, this.creandoSesion)
-        this.creandoSesion = false
-      }
-    })
+    this.cliente.setEnsesionHandler(
+      (sesionCreada: string, rol: RolesSesion) => {
+        const appStore = useAppStore()
+        appStore.estadosApp.estadoSesion = 'conectado'
+        appStore.rolSesion = rol
+        appStore.sesion.nombre = sesionCreada
+        helper.ActualizarDelayRelojRTC()
+        if (this.cliente != null) {
+          this.reproductor.detenerReproduccion()
+          this.reproductor.conectar(
+            this.cliente,
+            this.token,
+            this.creandoSesion,
+          )
+          this.creandoSesion = false
+        }
+      },
+    )
     this.cliente.setSesionFailedHandler((error: string) => {
       console.error(`Error al crear sesión: ${error}`)
       const appStore = useAppStore()
@@ -328,7 +335,7 @@ export default class Aplicacion {
     return true
   }
 
-  CrearSesion(nombre: string): void {
+  CrearSesion(): void {
     if (!this.cliente) {
       return
     }
@@ -336,7 +343,7 @@ export default class Aplicacion {
     appStore.rolSesion = 'director'
     appStore.estadosApp.texto = 'Creando sesión...'
     this.creandoSesion = true
-    this.cliente.CrearSesion(nombre)
+    this.cliente.CrearSesion('SESION HARDCODEADA', 'visitante')
   }
 
   UnirmeSesion(nombre: string): void {
