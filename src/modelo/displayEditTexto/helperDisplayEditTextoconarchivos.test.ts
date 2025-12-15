@@ -42,7 +42,6 @@ describe('Pruebo HelperDisplayEditTexto - Con archivos', () => {
     expect(resumen.versos).toBe(14) // Verificar que tiene 14 versos
     expect(resumen.renglones[0].LetraRima).toBe('A') // El algoritmo detecta rimas consonantes
     expect(resumen.rimas).toBe('soneto') // El algoritmo detecta rimas consonantes
-
   })
 
   it('Función archivoToLetra reutilizable', () => {

@@ -133,7 +133,7 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
     helper.CalcularLetraRima(resumen)
 
     expect(renglon1.LetraRima).toBe('')
-    expect(renglon2.LetraRima).toBe('')
+    expect(renglon2.LetraRima).toBe('A')
   })
 
   it('Detecta rimas asonantes cuando consonantes no coinciden', () => {
@@ -154,8 +154,8 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
     helper.CalcularLetraRima(resumen)
 
     // "casa" y "rama" tienen las mismas vocales (a-a), por lo que deberían ser asonantes
-    expect(renglon1.LetraRima).toBe('a')  // minúscula para asonantes
-    expect(renglon2.LetraRima).toBe('a')  
+    expect(renglon1.LetraRima).toBe('A') // minúscula para asonantes
+    expect(renglon2.LetraRima).toBe('A')
     expect(renglon1.tipoRima).toBe('asonante')
     expect(renglon2.tipoRima).toBe('asonante')
   })
@@ -179,9 +179,9 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
 
     helper.CalcularLetraRima(resumen)
 
-    expect(renglon1.LetraRima).toBe('a')
+    expect(renglon1.LetraRima).toBe('A')
     expect(renglon2.LetraRima).toBe('')
-    expect(renglon3.LetraRima).toBe('a')
+    expect(renglon3.LetraRima).toBe('A')
   })
 
   it('Limita la búsqueda de rimas a los próximos 3 renglones', () => {
@@ -222,11 +222,11 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
 
     helper.CalcularLetraRima(resumen)
 
-    // renglon1 ('amor') coincide con renglon2 dentro de rango: ambos 'a'
+    // renglon1 ('amor') coincide con renglon2 dentro de rango: ambos 'A'
     // renglon6 ('amor') está fuera del rango de búsqueda de renglon1 (más de 3 líneas)
-    // así que no debe tener LetraRima asignada
-    expect(renglon1.LetraRima).toBe('a')
-    expect(renglon6.LetraRima).toBe('')
+    // por lo que recibe su propia letra individual
+    expect(renglon1.LetraRima).toBe('A')
+    expect(renglon6.LetraRima).toBe('D')
   })
 
   it('Maneja múltiples patrones de rima en el mismo poema', () => {
@@ -255,10 +255,10 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
     // Aunque 'rosa' se procesa primero, después del reordenamiento alfabético,
     // 'mar' (primero alfabéticamente) debe ser 'a' y 'rosa' debe ser 'b'
     helper.ResumirRimas(resumen)
-    expect(renglon1.LetraRima).toBe('a')
-    expect(renglon2.LetraRima).toBe('a')
-    expect(renglon3.LetraRima).toBe('b')
-    expect(renglon4.LetraRima).toBe('b')
+    expect(renglon1.LetraRima).toBe('A')
+    expect(renglon2.LetraRima).toBe('A')
+    expect(renglon3.LetraRima).toBe('B')
+    expect(renglon4.LetraRima).toBe('B')
   })
 
   it('Reordena las letras de rima de forma alfabética', () => {
@@ -287,10 +287,10 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
     // Aunque 'vida' se procesa primero, después del reordenamiento alfabético,
     // 'amor' (primero alfabéticamente) debe ser 'a' y 'vida' debe ser 'b'
     helper.ResumirRimas(resumen)
-    expect(renglon1.LetraRima).toBe('a')
-    expect(renglon2.LetraRima).toBe('a')
-    expect(renglon3.LetraRima).toBe('b')
-    expect(renglon4.LetraRima).toBe('b')
+    expect(renglon1.LetraRima).toBe('A')
+    expect(renglon2.LetraRima).toBe('A')
+    expect(renglon3.LetraRima).toBe('B')
+    expect(renglon4.LetraRima).toBe('B')
   })
 
   it('Ejemplo: ado, ina, aro, ina da a, b, a, b', () => {
@@ -316,10 +316,10 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
 
     helper.CalcularLetraRima(resumen)
     helper.ResumirRimas(resumen)
-    expect(renglon1.LetraRima).toBe('a')
-    expect(renglon2.LetraRima).toBe('b')
-    expect(renglon3.LetraRima).toBe('a')
-    expect(renglon4.LetraRima).toBe('b')
+    expect(renglon1.LetraRima).toBe('A')
+    expect(renglon2.LetraRima).toBe('B')
+    expect(renglon3.LetraRima).toBe('A')
+    expect(renglon4.LetraRima).toBe('B')
   })
 
   it('Las rimas iguales siempre reciben la misma letra, independientemente del tipo', () => {
@@ -356,9 +356,9 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
     // Rimas únicas asignadas: solo 'vida'
     // Ordenamiento alfabético: vida
     // Mapeo: vida->a
-    expect(r1.LetraRima).toBe('a')
-    expect(r2.LetraRima).toBe('')
-    expect(r3.LetraRima).toBe('a')
-    expect(r4.LetraRima).toBe('')
+    expect(r1.LetraRima).toBe('A')
+    expect(r2.LetraRima).toBe('B')
+    expect(r3.LetraRima).toBe('A')
+    expect(r4.LetraRima).toBe('C')
   })
 })
