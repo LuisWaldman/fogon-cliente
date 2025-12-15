@@ -311,7 +311,7 @@ function clickEditar() {
             </a>
           </li>
 
-          <li v-if="$route.path === '/tocar'">
+          <li v-if="$route.path === '/tocar' &&appStore.rolSesion != 'visitante'">
             <a class="dropdown-item" href="#" @click="clickEditar">
               ✍️ Editar
             </a>

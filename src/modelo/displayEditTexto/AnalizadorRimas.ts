@@ -390,9 +390,7 @@ export class AnalizadorRimas {
       return 'sin rima'
     }
 
-    return consonantesCount >= asonantesCount
-      ? 'consonante'
-      : 'asonante'
+    return consonantesCount >= asonantesCount ? 'consonante' : 'asonante'
   }
 
   private esRenglonValidoParaRima(renglon: RenglonTexto): boolean {
