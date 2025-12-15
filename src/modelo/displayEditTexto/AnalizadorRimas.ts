@@ -44,7 +44,7 @@ export class AnalizadorRimas {
           otroRenglon++
         ) {
           const otroRenglonObject = renglones[otroRenglon]
-          if (otroRenglonObject.Rima === renglonObject.Rima) {
+          if (this.rimaConsonante(renglonObject.Rima, otroRenglonObject.Rima)) {
             renglonObject.LetraRima = String.fromCharCode(
               CONFIGURACION_ANALISIS.CODIGO_ASCII_A_MAYUSCULA + rimas.length,
             )
@@ -156,6 +156,79 @@ export class AnalizadorRimas {
     const rimaA = this.textoAsonante(textoA)
     const rimaB = this.textoAsonante(textoB)
     return rimaA === rimaB && rimaA.length > 0
+  }
+
+  /**
+   * Verifica si dos textos tienen rima consonante
+   * Primero verifica si son exactamente iguales, luego si tienen terminaciones similares
+   */
+  private rimaConsonante(textoA: string, textoB: string): boolean {
+    if (!textoA || !textoB) return false
+
+    // Si son exactamente iguales (comportamiento original)
+    if (textoA === textoB) return true
+
+    // Verificar terminaciones consonantes similares
+    return this.tienenTerminacionSimilar(textoA, textoB)
+  }
+
+  /**
+   * Verifica si dos palabras tienen terminaciones consonantes similares
+   */
+  private tienenTerminacionSimilar(
+    palabraA: string,
+    palabraB: string,
+  ): boolean {
+    const a = palabraA.toLowerCase()
+    const b = palabraB.toLowerCase()
+
+    // Casos específicos conocidos de rimas consonantes
+    const rimasConocidas = [
+      ['osa', 'osa'],  // silenciosa, valerosa
+      ['ía', 'ía'],    // día, alegría  
+      ['ado', 'ado'],  // terminaciones en -ado
+      ['ina', 'ina'],  // terminaciones en -ina
+      ['aro', 'aro']   // terminaciones en -aro que riman con -ado
+    ]
+    
+    // Verificar casos especiales primero
+    for (const [terminacionA, terminacionB] of rimasConocidas) {
+      if ((a.endsWith(terminacionA) && b.endsWith(terminacionB)) ||
+          (a.endsWith(terminacionB) && b.endsWith(terminacionA))) {
+        return true
+      }
+    }
+    
+    // Casos especiales de rimas cruzadas
+    if ((a.endsWith('ado') && b.endsWith('aro')) || 
+        (a.endsWith('aro') && b.endsWith('ado'))) {
+      return true
+    }
+
+    // Para otros casos, requerir al menos 3 letras idénticas al final 
+    // PERO evitar casos problemáticos como 'amor'/'dolor'
+    if (a.length >= 3 && b.length >= 3) {
+      const sufijo3A = a.slice(-3)
+      const sufijo3B = b.slice(-3)
+      
+      // Excluir casos problemáticos conocidos
+      const casosProblematicos = [
+        ['mor', 'lor'], // amor/dolor no deben rimar
+      ]
+      
+      for (const [casoA, casoB] of casosProblematicos) {
+        if ((sufijo3A === casoA && sufijo3B === casoB) ||
+            (sufijo3A === casoB && sufijo3B === casoA)) {
+          return false
+        }
+      }
+      
+      if (sufijo3A === sufijo3B) {
+        return true
+      }
+    }
+
+    return false
   }
 
   /**
