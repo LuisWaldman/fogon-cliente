@@ -112,12 +112,12 @@ export class HelperDisplayEditTexto {
         ) {
           const otroRenglonObject = resumen.renglones[otroRenglon]
           if (otroRenglonObject.Rima === renglonObject.Rima) {
-            renglonObject.LetraRima = String.fromCharCode(97 + rimas.length) // 'a' = 97 en ASCII
-            otroRenglonObject.LetraRima = String.fromCharCode(97 + rimas.length) // 'a' = 97 en ASCII
+            renglonObject.LetraRima = String.fromCharCode(65 + rimas.length) // 'A' = 65 en ASCII
+            otroRenglonObject.LetraRima = String.fromCharCode(65 + rimas.length) // 'A' = 65 en ASCII
             renglonObject.tipoRima = 'consonante' // suponer consonante para simplificar
             otroRenglonObject.tipoRima = 'consonante' // suponer consonante para simplificar
 
-            rimas.push(otroRenglonObject.Rima) // 'a' = 97 en ASCII
+            rimas.push(otroRenglonObject.Rima) // 'A' = 65 en ASCII
             break
           }
         }

@@ -82,8 +82,8 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
 
     helper.CalcularLetraRima(resumen)
 
-    expect(renglon1.LetraRima).toBe('a')
-    expect(renglon2.LetraRima).toBe('a')
+    expect(renglon1.LetraRima).toBe('A')
+    expect(renglon2.LetraRima).toBe('A')
     expect(renglon1.tipoRima).toBe('consonante')
     expect(renglon2.tipoRima).toBe('consonante')
   })
@@ -111,10 +111,10 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
 
     helper.CalcularLetraRima(resumen)
 
-    expect(renglon1.LetraRima).toBe('a')
-    expect(renglon2.LetraRima).toBe('a')
-    expect(renglon3.LetraRima).toBe('b')
-    expect(renglon4.LetraRima).toBe('b')
+    expect(renglon1.LetraRima).toBe('A')
+    expect(renglon2.LetraRima).toBe('A')
+    expect(renglon3.LetraRima).toBe('B')
+    expect(renglon4.LetraRima).toBe('B')
   })
 
   it('No asigna rima a renglones sin sílabas', () => {
@@ -139,22 +139,25 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
   it('Detecta rimas asonantes cuando consonantes no coinciden', () => {
     const resumen = new textoResumen()
 
+    // Usar palabras que tengan las mismas vocales para probar rima asonante
+    // "casa" (aa) y "mama" (aa) tienen las mismas vocales
     const renglon1 = new RenglonTexto()
     renglon1.silabas = 8
-    renglon1.Rima = 'amor'
+    renglon1.Rima = 'casa'
 
     const renglon2 = new RenglonTexto()
     renglon2.silabas = 8
-    renglon2.Rima = 'olor'
+    renglon2.Rima = 'rama'
 
     resumen.renglones = [renglon1, renglon2]
 
     helper.CalcularLetraRima(resumen)
 
-    // No debe haber coincidencia porque no son consonantes exactas
-    // y se busca asonancia solo después de buscar consonancia
-    expect(renglon1.LetraRima).toBe('')
-    expect(renglon2.LetraRima).toBe('')
+    // "casa" y "rama" tienen las mismas vocales (a-a), por lo que deberían ser asonantes
+    expect(renglon1.LetraRima).toBe('a')  // minúscula para asonantes
+    expect(renglon2.LetraRima).toBe('a')  
+    expect(renglon1.tipoRima).toBe('asonante')
+    expect(renglon2.tipoRima).toBe('asonante')
   })
 
   it('Ignora renglones sin Rima', () => {
