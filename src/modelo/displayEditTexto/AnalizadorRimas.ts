@@ -1,5 +1,5 @@
 import type { RenglonTexto } from './renglonResumen'
-import { TipoRima, CONFIGURACION_ANALISIS } from './constantes'
+import { CONFIGURACION_ANALISIS, type TipoRima } from './constantes'
 
 export class AnalizadorRimas {
   private rimasRegistradas: string[] = []
@@ -16,15 +16,6 @@ export class AnalizadorRimas {
     this.resumirRimasOriginal(renglones)
 
     return this.determinarTipoRimaPredominante(renglones)
-  }
-
-  /**
-   * Solo calcula las letras de rima sin reasignación final (para compatibilidad con tests)
-   */
-  public calcularLetraRimaSinReasignar(renglones: RenglonTexto[]): void {
-    this.rimasRegistradas = []
-    this.calcularLetraRimaOriginal(renglones)
-    // No llamar a resumirRimasOriginal para mantener las letras originales
   }
 
   /**
@@ -51,8 +42,8 @@ export class AnalizadorRimas {
             otroRenglonObject.LetraRima = String.fromCharCode(
               CONFIGURACION_ANALISIS.CODIGO_ASCII_A_MAYUSCULA + rimas.length,
             )
-            renglonObject.tipoRima = TipoRima.CONSONANTE
-            otroRenglonObject.tipoRima = TipoRima.CONSONANTE
+            renglonObject.tipoRima = 'consonante'
+            otroRenglonObject.tipoRima = 'consonante'
 
             rimas.push(otroRenglonObject.Rima)
             break
@@ -86,8 +77,8 @@ export class AnalizadorRimas {
             otroRenglonObject.LetraRima = String.fromCharCode(
               CONFIGURACION_ANALISIS.CODIGO_ASCII_A_MAYUSCULA + rimas.length,
             )
-            renglonObject.tipoRima = TipoRima.ASONANTE
-            otroRenglonObject.tipoRima = TipoRima.ASONANTE
+            renglonObject.tipoRima = 'asonante'
+            otroRenglonObject.tipoRima = 'asonante'
 
             rimas.push(otroRenglonObject.Rima)
             break
@@ -184,45 +175,51 @@ export class AnalizadorRimas {
 
     // Casos específicos conocidos de rimas consonantes
     const rimasConocidas = [
-      ['osa', 'osa'],  // silenciosa, valerosa
-      ['ía', 'ía'],    // día, alegría  
-      ['ado', 'ado'],  // terminaciones en -ado
-      ['ina', 'ina'],  // terminaciones en -ina
-      ['aro', 'aro']   // terminaciones en -aro que riman con -ado
+      ['osa', 'osa'], // silenciosa, valerosa
+      ['ía', 'ía'], // día, alegría
+      ['ado', 'ado'], // terminaciones en -ado
+      ['ina', 'ina'], // terminaciones en -ina
+      ['aro', 'aro'], // terminaciones en -aro que riman con -ado
     ]
-    
+
     // Verificar casos especiales primero
     for (const [terminacionA, terminacionB] of rimasConocidas) {
-      if ((a.endsWith(terminacionA) && b.endsWith(terminacionB)) ||
-          (a.endsWith(terminacionB) && b.endsWith(terminacionA))) {
+      if (
+        (a.endsWith(terminacionA) && b.endsWith(terminacionB)) ||
+        (a.endsWith(terminacionB) && b.endsWith(terminacionA))
+      ) {
         return true
       }
     }
-    
+
     // Casos especiales de rimas cruzadas
-    if ((a.endsWith('ado') && b.endsWith('aro')) || 
-        (a.endsWith('aro') && b.endsWith('ado'))) {
+    if (
+      (a.endsWith('ado') && b.endsWith('aro')) ||
+      (a.endsWith('aro') && b.endsWith('ado'))
+    ) {
       return true
     }
 
-    // Para otros casos, requerir al menos 3 letras idénticas al final 
+    // Para otros casos, requerir al menos 3 letras idénticas al final
     // PERO evitar casos problemáticos como 'amor'/'dolor'
     if (a.length >= 3 && b.length >= 3) {
       const sufijo3A = a.slice(-3)
       const sufijo3B = b.slice(-3)
-      
+
       // Excluir casos problemáticos conocidos
       const casosProblematicos = [
         ['mor', 'lor'], // amor/dolor no deben rimar
       ]
-      
+
       for (const [casoA, casoB] of casosProblematicos) {
-        if ((sufijo3A === casoA && sufijo3B === casoB) ||
-            (sufijo3A === casoB && sufijo3B === casoA)) {
+        if (
+          (sufijo3A === casoA && sufijo3B === casoB) ||
+          (sufijo3A === casoB && sufijo3B === casoA)
+        ) {
           return false
         }
       }
-      
+
       if (sufijo3A === sufijo3B) {
         return true
       }
@@ -240,7 +237,7 @@ export class AnalizadorRimas {
     // No llamar a resumirRimasOriginal para mantener las mayúsculas originales
   }
 
-  private detectarRimasConsonantes(renglones: RenglonTexto[]): void {
+  public detectarRimasConsonantes(renglones: RenglonTexto[]): void {
     for (let i = 0; i < renglones.length; i++) {
       const renglonActual = renglones[i]
 
@@ -256,7 +253,7 @@ export class AnalizadorRimas {
     }
   }
 
-  private detectarRimasAsonantes(renglones: RenglonTexto[]): void {
+  public detectarRimasAsonantes(renglones: RenglonTexto[]): void {
     for (let i = 0; i < renglones.length; i++) {
       const renglonActual = renglones[i]
 
@@ -328,8 +325,8 @@ export class AnalizadorRimas {
 
     renglon1.LetraRima = letraRima
     renglon2.LetraRima = letraRima
-    renglon1.tipoRima = TipoRima.CONSONANTE
-    renglon2.tipoRima = TipoRima.CONSONANTE
+    renglon1.tipoRima = 'consonante'
+    renglon2.tipoRima = 'consonante'
 
     this.rimasRegistradas.push(renglon2.Rima)
   }
@@ -345,13 +342,13 @@ export class AnalizadorRimas {
 
     renglon1.LetraRima = letraRima
     renglon2.LetraRima = letraRima
-    renglon1.tipoRima = TipoRima.ASONANTE
-    renglon2.tipoRima = TipoRima.ASONANTE
+    renglon1.tipoRima = 'asonante'
+    renglon2.tipoRima = 'asonante'
 
     this.rimasRegistradas.push(renglon2.Rima)
   }
 
-  private asignarLetrasRima(renglones: RenglonTexto[]): void {
+  public asignarLetrasRima(renglones: RenglonTexto[]): void {
     const rimasUnicas: string[] = []
 
     for (const renglon of renglones) {
@@ -379,10 +376,10 @@ export class AnalizadorRimas {
   private determinarTipoRimaPredominante(renglones: RenglonTexto[]): TipoRima {
     const versosConRima = renglones.filter((r) => r.silabas > 0)
     const consonantesCount = renglones.filter(
-      (r) => r.tipoRima === TipoRima.CONSONANTE,
+      (r) => r.tipoRima === 'consonante',
     ).length
     const asonantesCount = renglones.filter(
-      (r) => r.tipoRima === TipoRima.ASONANTE,
+      (r) => r.tipoRima === 'asonante',
     ).length
     const totalConRima = consonantesCount + asonantesCount
 
@@ -390,12 +387,12 @@ export class AnalizadorRimas {
       versosConRima.length * CONFIGURACION_ANALISIS.UMBRAL_RIMA_PREDOMINANTE
 
     if (totalConRima < umbral) {
-      return TipoRima.SIN_RIMA
+      return 'sin rima'
     }
 
     return consonantesCount >= asonantesCount
-      ? TipoRima.CONSONANTE
-      : TipoRima.ASONANTE
+      ? 'consonante'
+      : 'asonante'
   }
 
   private esRenglonValidoParaRima(renglon: RenglonTexto): boolean {

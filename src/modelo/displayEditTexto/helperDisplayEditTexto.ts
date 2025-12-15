@@ -4,6 +4,7 @@ import { textoResumen, silabasPrincipal } from './textoResumen'
 import { AnalizadorSilabas } from './AnalizadorSilabas'
 import { AnalizadorRimas } from './AnalizadorRimas'
 import { ProcesadorTexto } from './ProcesadorTexto'
+import { AnalizadorTipoTexto } from './analizadoresTexto/AnalizadorTipoTexto'
 
 export class HelperDisplayEditTexto {
   private readonly analizadorSilabas: AnalizadorSilabas
@@ -57,6 +58,7 @@ export class HelperDisplayEditTexto {
     resumen.renglones = resumenRenglones
     resumen.silabas = distribucionSilabas
     resumen.rimas = tipoRimaPredominante
+    resumen.rimas = AnalizadorTipoTexto.GetTipo(resumen)
 
     return resumen
   }

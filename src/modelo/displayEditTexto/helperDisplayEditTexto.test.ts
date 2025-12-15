@@ -381,13 +381,20 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
     renglon6.silabas = 8
     renglon6.Rima = 'amor'
 
-    resumen.renglones = [renglon1, renglon2, renglon3, renglon4, renglon5, renglon6]
+    resumen.renglones = [
+      renglon1,
+      renglon2,
+      renglon3,
+      renglon4,
+      renglon5,
+      renglon6,
+    ]
 
     helper.CalcularLetraRima(resumen)
 
     console.log('Letras asignadas:')
     console.log('renglon1 (amor):', renglon1.LetraRima)
-    console.log('renglon2 (amor):', renglon2.LetraRima)  
+    console.log('renglon2 (amor):', renglon2.LetraRima)
     console.log('renglon3 (dolor):', renglon3.LetraRima)
     console.log('renglon4 (nada):', renglon4.LetraRima)
     console.log('renglon5 (nada):', renglon5.LetraRima)
@@ -396,7 +403,7 @@ describe('Pruebo HelperDisplayEditTexto - CalcularLetraRima', () => {
     // Verificar las letras actualmente asignadas - ajustado según el resultado real
     expect(renglon1.LetraRima).toBe('A') // amor - primera letra
     expect(renglon2.LetraRima).toBe('A') // amor - debería ser igual a renglon1
-    expect(renglon3.LetraRima).toBe('B') // dolor - individual 
+    expect(renglon3.LetraRima).toBe('B') // dolor - individual
     expect(renglon4.LetraRima).toBe('B') // nada - segunda pareja (esperado B, no C)
     expect(renglon5.LetraRima).toBe('B') // nada - segunda pareja
     expect(renglon6.LetraRima).toBe('C') // amor - individual (fuera de rango, esperado C)

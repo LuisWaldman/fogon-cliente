@@ -5,7 +5,7 @@ export { AnalizadorRimas } from './AnalizadorRimas'
 export { ProcesadorTexto } from './ProcesadorTexto'
 
 // Exports de constantes y tipos
-export { TipoRima, CONFIGURACION_ANALISIS } from './constantes'
+export { CONFIGURACION_ANALISIS } from './constantes'
 export type { ConfiguracionAnalisis } from './constantes'
 
 // Exports de modelos existentes

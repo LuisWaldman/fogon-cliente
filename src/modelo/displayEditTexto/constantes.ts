@@ -1,8 +1,4 @@
-export enum TipoRima {
-  SIN_RIMA = 'sin rima',
-  CONSONANTE = 'consonante',
-  ASONANTE = 'asonante',
-}
+export type TipoRima = 'sin rima' | 'consonante' | 'asonante'
 
 export const CONFIGURACION_ANALISIS = {
   UMBRAL_RIMA_PREDOMINANTE: 0.7,

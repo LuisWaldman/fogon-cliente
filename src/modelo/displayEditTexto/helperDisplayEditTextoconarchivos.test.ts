@@ -32,7 +32,7 @@ describe('Pruebo HelperDisplayEditTexto - Con archivos', () => {
 
   it('Cuenta silabas sonetodelvino', () => {
     // Usar la función archivoToLetra para cargar y procesar el archivo
-    const filePath = join(__dirname, 'sonetodelvino.txt')
+    const filePath = join(__dirname + '/textos/', 'sonetodelvino.txt')
     const letra = archivoToLetra(filePath)
 
     const resumen = helper.getResumen(letra)
@@ -41,7 +41,21 @@ describe('Pruebo HelperDisplayEditTexto - Con archivos', () => {
     expect(resumen.renglones.length).toBe(14) // Un soneto tiene 14 versos
     expect(resumen.versos).toBe(14) // Verificar que tiene 14 versos
     expect(resumen.renglones[0].LetraRima).toBe('A') // El algoritmo detecta rimas consonantes
-    expect(resumen.rimas).toBe('soneto') // El algoritmo detecta rimas consonantes
+    expect(resumen.rimas).toBe('Soneto') // El algoritmo detecta rimas consonantes
+  })
+
+  it('Cuenta silabas Soneto V', () => {
+    // Usar la función archivoToLetra para cargar y procesar el archivo
+    const filePath = join(__dirname + '/textos/', 'sonetoV.txt')
+    const letra = archivoToLetra(filePath)
+
+    const resumen = helper.getResumen(letra)
+
+    // Verificar que la función archivoToLetra funciona correctamente
+    expect(resumen.renglones.length).toBe(14) // Un soneto tiene 14 versos
+    expect(resumen.versos).toBe(14) // Verificar que tiene 14 versos
+    expect(resumen.renglones[0].LetraRima).toBe('A') // El algoritmo detecta rimas consonantes
+    //expect(resumen.rimas).toBe('Soneto') // FALTA AGREGAR DETECCIÓN DE SONETO
   })
 
   it('Función archivoToLetra reutilizable', () => {
