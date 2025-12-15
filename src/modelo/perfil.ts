@@ -1,4 +1,5 @@
 import { ObjetoPosteable } from './objetoPosteable.ts'
+import type { RolesSesion } from './userSesion.ts'
 
 export class Perfil extends ObjetoPosteable {
   SetDefaults() {
@@ -17,7 +18,7 @@ export class Perfil extends ObjetoPosteable {
   descripcion: string
   instrumento: string
   nombreSesion: string = ''
-  nuevosEnSesionAdmin: boolean = true
+  defaultEnSesion: RolesSesion = 'visitante'
   CifradoLatino: boolean = true
   ModoDesarrollador: boolean = false
   instrumentosFavoritos: string[] = []

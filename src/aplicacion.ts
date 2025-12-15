@@ -343,7 +343,10 @@ export default class Aplicacion {
     appStore.rolSesion = 'director'
     appStore.estadosApp.texto = 'Creando sesión...'
     this.creandoSesion = true
-    this.cliente.CrearSesion('SESION HARDCODEADA', 'visitante')
+    this.cliente.CrearSesion(
+      this.configuracion.perfil?.nombreSesion,
+      this.configuracion.perfil?.defaultEnSesion,
+    )
   }
 
   UnirmeSesion(nombre: string): void {

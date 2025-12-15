@@ -213,13 +213,24 @@ function clickEditar() {
               object-fit: cover;
             "
           />
-          <span v-if="appStore.rolSesion === 'director' && appStore.estadosApp.estadoSesion === 'conectado'" class="director-badge">
+          <span
+            v-if="
+              appStore.rolSesion === 'director' &&
+              appStore.estadosApp.estadoSesion === 'conectado'
+            "
+            class="director-badge"
+          >
             🪄
           </span>
-          <span v-if="appStore.rolSesion === 'visitante' && appStore.estadosApp.estadoSesion === 'conectado'" class="visitante-badge">
+          <span
+            v-if="
+              appStore.rolSesion === 'visitante' &&
+              appStore.estadosApp.estadoSesion === 'conectado'
+            "
+            class="visitante-badge"
+          >
             👀
           </span>
-
         </button>
         <ul
           class="dropdown-menu dropdown-menu-end"
@@ -249,7 +260,12 @@ function clickEditar() {
                 </a>
               </li>
 
-              <li v-if="appStore.estadosApp.estadoSesion === 'conectado' && appStore.rolSesion !== 'visitante'">
+              <li
+                v-if="
+                  appStore.estadosApp.estadoSesion === 'conectado' &&
+                  appStore.rolSesion !== 'visitante'
+                "
+              >
                 <a
                   class="dropdown-item"
                   href="#"

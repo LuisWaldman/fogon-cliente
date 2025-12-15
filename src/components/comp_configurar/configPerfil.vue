@@ -345,9 +345,15 @@ function toggleCifradoLatino() {
               />
 
               <div style="display: flex">
-                <input type="checkbox" v-model="perfil.nuevosEnSesionAdmin" />
-
-                <label for="coso">Todos Admin</label>
+                <label for="coso">Rol Default</label>
+                <select
+                  v-model="perfil.defaultEnSesion"
+                  @change="updateProfile"
+                  style="margin-left: 10px"
+                >
+                  <option value="admin">Admin</option>
+                  <option value="visitante">Visitante</option>
+                </select>
               </div>
             </div>
             <div>

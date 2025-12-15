@@ -40,8 +40,7 @@ function clickFogon() {
   if (appStore.rolSesion === 'visitante') {
     if (router.currentRoute.value.path === '/tocar') {
       return
-    }
-    else {
+    } else {
       router.push('/tocar')
       return
     }

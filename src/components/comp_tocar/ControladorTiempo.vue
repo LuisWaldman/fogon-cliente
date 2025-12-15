@@ -153,8 +153,10 @@ function arreglartexto(texto: string): string {
     <div
       class="boton_controllerplay ocultocelu"
       @click="next"
-      v-if="appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0
-      && appStore.rolSesion != 'visitante'"
+      v-if="
+        appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0 &&
+        appStore.rolSesion != 'visitante'
+      "
     >
       ⏭️
     </div>
@@ -162,7 +164,9 @@ function arreglartexto(texto: string): string {
       class="playlist-container"
       v-if="appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0"
     >
-      <button @click="togglePlaylist"  v-if="appStore.rolSesion != 'visitante'">📋</button>
+      <button @click="togglePlaylist" v-if="appStore.rolSesion != 'visitante'">
+        📋
+      </button>
       <div class="playlist-dropdown" v-if="showPlaylist">
         <div class="playlist-header">Lista de Reproducción</div>
         <div
