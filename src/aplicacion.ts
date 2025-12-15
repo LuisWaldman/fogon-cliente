@@ -15,6 +15,7 @@ import { IndiceHelper } from './modelo/indices/IndiceHelper'
 import { Logger } from './modelo/logger'
 import type { Router } from 'vue-router'
 import type { ItemIndiceCancion } from './modelo/cancion/ItemIndiceCancion'
+import { OrigenCancion } from './modelo/cancion/origencancion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -81,6 +82,18 @@ export default class Aplicacion {
   async ClickTocar(origen: ItemIndiceCancion) {
     this.reproductor.ClickCancion(origen)
     this.router?.push('/tocar')
+  }
+
+  async ClickEditar(cancion: ItemIndiceCancion) {
+    await this.reproductor.ClickCancion(cancion)
+    const appStore = useAppStore()
+    appStore.editandocancion = appStore.aplicacion.reproductor.cancion
+    appStore.origenEditando = new OrigenCancion(
+      appStore.origenCancion.origenUrl,
+      appStore.origenCancion.fileName,
+      appStore.origenCancion.usuario,
+    )
+    this.router?.push('/editar')
   }
   async ClickTocarLista(lista: ItemIndiceCancion[]) {
     const appStore = useAppStore()
