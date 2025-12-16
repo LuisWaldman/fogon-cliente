@@ -16,7 +16,7 @@ import type { ItemIndiceCancion } from '../modelo/cancion/ItemIndiceCancion'
 export const useAppStore = defineStore('app', () => {
   const aplicacion = new Aplicacion()
 
-  const rolSesion = ref<RolesSesion>('visitante')
+  const rolSesion = ref<RolesSesion>('noasignado')
   const sesion = ref<Sesion>(new Sesion('', 0, '', 0, 0))
 
   const listasEnServer = ref<string[]>([])

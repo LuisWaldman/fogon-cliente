@@ -117,8 +117,7 @@ function dejarDeCompartir() {
 }
 
 const crearSesion = () => {
-  const nombreSesion = appStore.perfil?.nombreSesion
-  appStore.aplicacion.CrearSesion(nombreSesion)
+  appStore.aplicacion.CrearSesion()
 }
 
 function SalirSesion() {
@@ -214,8 +213,23 @@ function clickEditar() {
               object-fit: cover;
             "
           />
-          <span v-if="appStore.rolSesion === 'director'" class="director-badge">
+          <span
+            v-if="
+              appStore.rolSesion === 'director' &&
+              appStore.estadosApp.estadoSesion === 'conectado'
+            "
+            class="director-badge"
+          >
             🪄
+          </span>
+          <span
+            v-if="
+              appStore.rolSesion === 'visitante' &&
+              appStore.estadosApp.estadoSesion === 'conectado'
+            "
+            class="visitante-badge"
+          >
+            👀
           </span>
         </button>
         <ul
@@ -246,7 +260,12 @@ function clickEditar() {
                 </a>
               </li>
 
-              <li v-if="appStore.estadosApp.estadoSesion === 'conectado'">
+              <li
+                v-if="
+                  appStore.estadosApp.estadoSesion === 'conectado' &&
+                  appStore.rolSesion !== 'visitante'
+                "
+              >
                 <a
                   class="dropdown-item"
                   href="#"
@@ -292,7 +311,9 @@ function clickEditar() {
             </a>
           </li>
 
-          <li v-if="$route.path === '/tocar'">
+          <li
+            v-if="$route.path === '/tocar' && appStore.rolSesion != 'visitante'"
+          >
             <a class="dropdown-item" href="#" @click="clickEditar">
               ✍️ Editar
             </a>
@@ -323,7 +344,18 @@ function clickEditar() {
 .editando {
   background-color: #f5da09 !important;
 }
-
+.visitante-badge {
+  position: absolute;
+  bottom: -2px;
+  left: -12px;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: x-large;
+  line-height: 1;
+  border: 3px solid #727477;
+  border-radius: 50%;
+  background-color: #000000;
+}
 .director-badge {
   position: absolute;
   bottom: -2px;

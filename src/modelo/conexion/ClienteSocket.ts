@@ -11,7 +11,7 @@ interface ServerToClientEvents {
   loginSuccess: () => void
   loginFailed: (error: string) => void
   conectado: (data: { token: string }) => void
-  ensesion: (sesion: string) => void
+  ensesion: (sesion: string, rol: RolesSesion) => void
   sesionFailed: (error: string) => void
   mensajesesion: (mensaje: string) => void
   rolSesion: (mensaje: RolesSesion) => void
@@ -37,7 +37,7 @@ interface ClientToServerEvents {
   actualizarCompas: (compas: number) => void
   login: (modo: string, usuario: string, password: string) => void
   unirmesesion(sesion: string): void
-  crearsesion(sesion: string): void
+  crearsesion(sesion: string, rolDefault: RolesSesion): void
   mensajeasesion: (mensaje: string) => void
   salirsesion: () => void
   logout: () => void
@@ -84,8 +84,10 @@ export class ClienteSocket {
   public setconexionStatusHandler(handler: (status: string) => void): void {
     this.conexionStatusHandler = handler
   }
-  private enSesionHandler?: (sesion: string) => void
-  public setEnsesionHandler(handler: (sesion: string) => void): void {
+  private enSesionHandler?: (sesion: string, rol: RolesSesion) => void
+  public setEnsesionHandler(
+    handler: (sesion: string, rol: RolesSesion) => void,
+  ): void {
     this.enSesionHandler = handler
   }
 
@@ -317,9 +319,9 @@ export class ClienteSocket {
       console.error('loginFailed received with error:', error)
       this.loginFailedHandler?.(error)
     })
-    socket.on('ensesion', (sesion: string) => {
+    socket.on('ensesion', (sesion: string, rol: RolesSesion) => {
       Logger.log('ensesion received with sesion:', sesion)
-      this.enSesionHandler?.(sesion)
+      this.enSesionHandler?.(sesion, rol)
     })
     socket.on('sesionFailed', (error: string) => {
       console.error('sesionFailed received with error:', error)
@@ -398,8 +400,8 @@ export class ClienteSocket {
   public MensajeASesion(msj: string): void {
     this.socket.emit('mensajeasesion', msj)
   }
-  public CrearSesion(sesion: string): void {
-    this.socket.emit('crearsesion', sesion)
+  public CrearSesion(sesion: string, rolDefault: RolesSesion): void {
+    this.socket.emit('crearsesion', sesion, rolDefault)
   }
 
   public UnirmeSesion(sesion: string): void {

@@ -1,6 +1,6 @@
 import type { Perfil } from '../modelo/perfil'
 
-export type RolesSesion = 'director' | 'admin' | 'visitante'
+export type RolesSesion = 'director' | 'admin' | 'visitante' | 'noasignado'
 export class UserSesion {
   ID: string
   Usuario: string

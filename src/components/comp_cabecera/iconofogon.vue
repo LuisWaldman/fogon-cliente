@@ -37,6 +37,14 @@ function getImageStyle() {
 const router = useRouter()
 function clickFogon() {
   console.log('click_Fogon', router.currentRoute.value.path)
+  if (appStore.rolSesion === 'visitante') {
+    if (router.currentRoute.value.path === '/tocar') {
+      return
+    } else {
+      router.push('/tocar')
+      return
+    }
+  }
   if (router.currentRoute.value.path === '/tocar') {
     router.push('/')
   } else if (props.conCancion) {
@@ -157,7 +165,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          PRE BETA
+          PREBETA
         </div>
         <div
           class="titulo-Fogon"

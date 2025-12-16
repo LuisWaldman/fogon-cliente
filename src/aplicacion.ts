@@ -15,6 +15,7 @@ import { IndiceHelper } from './modelo/indices/IndiceHelper'
 import { Logger } from './modelo/logger'
 import type { Router } from 'vue-router'
 import type { ItemIndiceCancion } from './modelo/cancion/ItemIndiceCancion'
+import { OrigenCancion } from './modelo/cancion/origencancion'
 
 export default class Aplicacion {
   reproductor: Reproductor = new Reproductor()
@@ -81,6 +82,18 @@ export default class Aplicacion {
   async ClickTocar(origen: ItemIndiceCancion) {
     this.reproductor.ClickCancion(origen)
     this.router?.push('/tocar')
+  }
+
+  async ClickEditar(cancion: ItemIndiceCancion) {
+    await this.reproductor.ClickCancion(cancion)
+    const appStore = useAppStore()
+    appStore.editandocancion = appStore.aplicacion.reproductor.cancion
+    appStore.origenEditando = new OrigenCancion(
+      appStore.origenCancion.origenUrl,
+      appStore.origenCancion.fileName,
+      appStore.origenCancion.usuario,
+    )
+    this.router?.push('/editar')
   }
   async ClickTocarLista(lista: ItemIndiceCancion[]) {
     const appStore = useAppStore()
@@ -160,17 +173,24 @@ export default class Aplicacion {
     })
 
     this.cliente.connectar()
-    this.cliente.setEnsesionHandler((sesionCreada: string) => {
-      const appStore = useAppStore()
-      appStore.estadosApp.estadoSesion = 'conectado'
-      appStore.sesion.nombre = sesionCreada
-      helper.ActualizarDelayRelojRTC()
-      if (this.cliente != null) {
-        this.reproductor.detenerReproduccion()
-        this.reproductor.conectar(this.cliente, this.token, this.creandoSesion)
-        this.creandoSesion = false
-      }
-    })
+    this.cliente.setEnsesionHandler(
+      (sesionCreada: string, rol: RolesSesion) => {
+        const appStore = useAppStore()
+        appStore.estadosApp.estadoSesion = 'conectado'
+        appStore.rolSesion = rol
+        appStore.sesion.nombre = sesionCreada
+        helper.ActualizarDelayRelojRTC()
+        if (this.cliente != null) {
+          this.reproductor.detenerReproduccion()
+          this.reproductor.conectar(
+            this.cliente,
+            this.token,
+            this.creandoSesion,
+          )
+          this.creandoSesion = false
+        }
+      },
+    )
     this.cliente.setSesionFailedHandler((error: string) => {
       console.error(`Error al crear sesión: ${error}`)
       const appStore = useAppStore()
@@ -328,7 +348,7 @@ export default class Aplicacion {
     return true
   }
 
-  CrearSesion(nombre: string): void {
+  CrearSesion(): void {
     if (!this.cliente) {
       return
     }
@@ -336,7 +356,12 @@ export default class Aplicacion {
     appStore.rolSesion = 'director'
     appStore.estadosApp.texto = 'Creando sesión...'
     this.creandoSesion = true
-    this.cliente.CrearSesion(nombre)
+    if (this.configuracion.perfil) {
+      this.cliente.CrearSesion(
+        this.configuracion.perfil?.nombreSesion,
+        this.configuracion.perfil?.defaultEnSesion,
+      )
+    }
   }
 
   UnirmeSesion(nombre: string): void {

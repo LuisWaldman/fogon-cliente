@@ -1,0 +1,64 @@
+﻿import { describe, expect, it } from 'vitest'
+import { HelperDisplayEditTexto } from './helperDisplayEditTexto'
+import { Letra } from '../cancion/letra'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+/**
+ * Función que convierte el contenido de un archivo de texto en un objeto Letra
+ * @param filePath - Ruta al archivo de texto
+ * @returns Objeto Letra con el contenido procesado
+ */
+function archivoToLetra(filePath: string): Letra {
+  // Cargar el contenido del archivo
+  const fileContent = readFileSync(filePath, 'utf-8')
+
+  // Convertir el contenido en el formato esperado por Letra
+  // Filtrar líneas vacías para obtener solo las líneas con texto
+  const lineasTexto = fileContent
+    .trim()
+    .split('\n')
+    .filter((linea) => linea.trim() !== '') // Filtrar líneas vacías
+
+  // Crear un solo string con separadores /n para que HelperDisplayEditTexto lo procese correctamente
+  const textoConSeparadores = lineasTexto.join('/n')
+  const lineas = [[textoConSeparadores]]
+
+  return new Letra(lineas)
+}
+
+// Saltar estos tests en CI ya que dependen de archivos del sistema de archivos
+const runInCI = process.env.CI === 'true'
+const describeMethod = runInCI ? describe.skip : describe
+
+describeMethod('Pruebo HelperDisplayEditTexto - Con archivos', () => {
+  const helper = new HelperDisplayEditTexto()
+
+  it('Cuenta silabas sonetodelvino', () => {
+    // Usar la función archivoToLetra para cargar y procesar el archivo
+    const filePath = join(__dirname + '/textos/', 'sonetodelvino.txt')
+    const letra = archivoToLetra(filePath)
+
+    const resumen = helper.getResumen(letra)
+
+    // Verificar que la función archivoToLetra funciona correctamente
+    expect(resumen.renglones.length).toBe(14) // Un soneto tiene 14 versos
+    expect(resumen.versos).toBe(14) // Verificar que tiene 14 versos
+    expect(resumen.renglones[0].LetraRima).toBe('A') // El algoritmo detecta rimas consonantes
+    expect(resumen.rimas).toBe('Soneto') // El algoritmo detecta rimas consonantes
+  })
+
+  it('Cuenta silabas Soneto V', () => {
+    // Usar la función archivoToLetra para cargar y procesar el archivo
+    const filePath = join(__dirname + '/textos/', 'sonetoV.txt')
+    const letra = archivoToLetra(filePath)
+
+    const resumen = helper.getResumen(letra)
+
+    // Verificar que la función archivoToLetra funciona correctamente
+    expect(resumen.renglones.length).toBe(14) // Un soneto tiene 14 versos
+    expect(resumen.versos).toBe(14) // Verificar que tiene 14 versos
+    expect(resumen.renglones[0].LetraRima).toBe('A') // El algoritmo detecta rimas consonantes
+    //expect(resumen.rimas).toBe('Soneto') // FALTA AGREGAR DETECCIÓN DE SONETO
+  })
+})

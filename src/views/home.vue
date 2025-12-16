@@ -79,6 +79,10 @@ function clickTocar(cancion: ItemIndiceCancion, indice: number) {
     appStore.aplicacion.ClickTocar(cancion)
   }
 }
+
+function clickEditar(cancion: ItemIndiceCancion) {
+  appStore.aplicacion.ClickEditar(cancion)
+}
 function tocarLista() {
   if (viendoLista.value == null || viendoLista.value === '') {
     return
@@ -654,6 +658,7 @@ function clickAdvertencia() {
         "
         @borrar="clickBorrarLista"
         @tocar="clickTocar"
+        @editar="clickEditar"
         :ver-borrar="viendo != 'inicio'"
       />
     </div>

@@ -106,7 +106,7 @@ function arreglartexto(texto: string): string {
 
 <template>
   <div class="controladortiempo">
-    <div class="controls">
+    <div class="controls" v-if="appStore.rolSesion != 'visitante'">
       <div
         class="boton_controllerplay"
         v-if="appStore.estadosApp.estadoReproduccion === 'esperandoMedia'"
@@ -147,13 +147,28 @@ function arreglartexto(texto: string): string {
       min="0"
       :max="props.cancion?.totalCompases"
       v-model="currentCompas"
+      v-if="appStore.rolSesion != 'visitante'"
+      @input="updateCompas()"
+      class="rango_compas"
+    />
+
+    <input
+      type="range"
+      min="0"
+      :max="props.cancion?.totalCompases"
+      v-model="currentCompas"
+      disabled
+      v-if="appStore.rolSesion === 'visitante'"
       @input="updateCompas()"
       class="rango_compas"
     />
     <div
       class="boton_controllerplay ocultocelu"
       @click="next"
-      v-if="appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0"
+      v-if="
+        appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0 &&
+        appStore.rolSesion != 'visitante'
+      "
     >
       ⏭️
     </div>
@@ -161,7 +176,9 @@ function arreglartexto(texto: string): string {
       class="playlist-container"
       v-if="appStore.aplicacion.reproductor.listaReproduccion.lista.length > 0"
     >
-      <button @click="togglePlaylist">📋</button>
+      <button @click="togglePlaylist" v-if="appStore.rolSesion != 'visitante'">
+        📋
+      </button>
       <div class="playlist-dropdown" v-if="showPlaylist">
         <div class="playlist-header">Lista de Reproducción</div>
         <div

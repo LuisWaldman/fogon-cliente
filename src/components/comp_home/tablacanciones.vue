@@ -8,7 +8,7 @@ import { HelperDisplayAcordesLatino } from '../../modelo/display/helperDisplayAc
 import { useAppStore } from '../../stores/appStore'
 
 const helper = HelperDisplayAcordesLatino.getInstance()
-const emit = defineEmits(['tocar', 'borrar'])
+const emit = defineEmits(['tocar', 'borrar', 'editar'])
 const vectorCalidades: string[] = [
   'De Internet',
   'Texto Sincronizado',
@@ -86,6 +86,9 @@ function Reproducir(cancion: ItemIndiceCancion, index: number) {
 }
 function Borrar(cancion: ItemIndiceCancion) {
   emit('borrar', cancion)
+}
+function Editar(cancion: ItemIndiceCancion) {
+  emit('editar', cancion)
 }
 const compartiendo = ref(false)
 function dejarDeCompartir() {
@@ -275,7 +278,7 @@ watch(
                   <button @click="Borrar(cancion)" v-if="verBorrar">
                     🗑️ Borrar
                   </button>
-                  <button>✏️ Editar</button>
+                  <button @click="Editar(cancion)">✏️ Editar</button>
                   <button>↕️ Reordenar</button>
                   <button @click="viendoOpcionesExtra = null">−</button>
                 </template>

@@ -16,7 +16,7 @@ function cargarSesiones() {
 const msj = ref('')
 const appStore = useAppStore()
 function crearSesion() {
-  appStore.aplicacion.CrearSesion(newsesio.value.nombre)
+  appStore.aplicacion.CrearSesion()
 }
 
 function MensajeASesion(msj: string) {

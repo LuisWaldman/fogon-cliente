@@ -12,7 +12,7 @@ function cargarSesiones() {
 }
 const appStore = useAppStore()
 function crearSesion() {
-  appStore.aplicacion.CrearSesion(newsesio.value.nombre)
+  appStore.aplicacion.CrearSesion()
 }
 
 watch(

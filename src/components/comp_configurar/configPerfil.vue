@@ -343,6 +343,18 @@ function toggleCifradoLatino() {
                 v-model.lazy="perfil.nombreSesion"
                 @change="updateProfile"
               />
+
+              <div style="display: flex">
+                <label for="coso">Rol Default</label>
+                <select
+                  v-model="perfil.defaultEnSesion"
+                  @change="updateProfile"
+                  style="margin-left: 10px"
+                >
+                  <option value="admin">Admin</option>
+                  <option value="visitante">Visitante</option>
+                </select>
+              </div>
             </div>
             <div>
               <label for="coso">Usuario</label>
