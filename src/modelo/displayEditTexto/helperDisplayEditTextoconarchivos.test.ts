@@ -46,7 +46,7 @@ describe('Pruebo HelperDisplayEditTexto - Con archivos', () => {
 
   it('Cuenta silabas Soneto V', () => {
     // Usar la función archivoToLetra para cargar y procesar el archivo
-    const filePath = join(__dirname + '/textos/', 'sonetoV.txt')
+    const filePath = join(__dirname, 'sonetoV.txt')
     const letra = archivoToLetra(filePath)
 
     const resumen = helper.getResumen(letra)
