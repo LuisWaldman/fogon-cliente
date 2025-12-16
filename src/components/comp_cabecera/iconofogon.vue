@@ -165,7 +165,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          PRE BETA
+          PREBETA
         </div>
         <div
           class="titulo-Fogon"

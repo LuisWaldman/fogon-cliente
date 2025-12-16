@@ -282,7 +282,12 @@ const viendoInstrucciones = ref(appStore.perfil.instrumento)
       @cerrar="clickCerrarMedios"
     ></sincronizarMedias>
 
-    <div class="pantallaPlay" :style="GetStylePantallaPlay()" v-if="cancion">
+    <div
+      class="pantallaPlay notranslate"
+      :style="GetStylePantallaPlay()"
+      v-if="cancion"
+      translate="no"
+    >
       <div
         class="columnas lateral-container"
         :style="estiloVistaTerciaria()"

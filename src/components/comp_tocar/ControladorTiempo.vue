@@ -151,7 +151,7 @@ function arreglartexto(texto: string): string {
       @input="updateCompas()"
       class="rango_compas"
     />
-    
+
     <input
       type="range"
       min="0"
