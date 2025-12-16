@@ -147,6 +147,18 @@ function arreglartexto(texto: string): string {
       min="0"
       :max="props.cancion?.totalCompases"
       v-model="currentCompas"
+      v-if="appStore.rolSesion != 'visitante'"
+      @input="updateCompas()"
+      class="rango_compas"
+    />
+    
+    <input
+      type="range"
+      min="0"
+      :max="props.cancion?.totalCompases"
+      v-model="currentCompas"
+      disabled
+      v-if="appStore.rolSesion === 'visitante'"
       @input="updateCompas()"
       class="rango_compas"
     />
