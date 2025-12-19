@@ -52,7 +52,14 @@ function clickRol(user: string, rol: RolesSesion) {
                   class="option-btn"
                   :class="{ selected: user.RolSesion === 'admin' }"
                 >
-                  Administrar
+                  Administrador
+                </button>
+                <button
+                  @click="clickRol(user.ID, 'visitante')"
+                  class="option-btn"
+                  :class="{ selected: user.RolSesion === 'visitante' }"
+                >
+                  Visitante
                 </button>
               </td>
             </tr>
