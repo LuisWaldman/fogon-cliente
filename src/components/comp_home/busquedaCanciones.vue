@@ -243,6 +243,7 @@ function VerFiltros() {
         <input
           type="text"
           v-model="busqueda"
+          name="q"
           placeholder="Buscar canciones, bandas, artistas..."
           class="input-busqueda"
           @keydown.enter="buscarCanciones()"

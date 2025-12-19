@@ -177,7 +177,7 @@ function ClickSoloMidi() {
               <input
                 type="range"
                 min="8"
-                max="80"
+                max="200"
                 v-model.number="configPantalla.tamanioLetra"
                 class="range-input"
               />

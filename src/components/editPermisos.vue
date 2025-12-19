@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import type { RolesSesion } from '../modelo/userSesion'
 import { useAppStore } from '../stores/appStore'
 
 const appStore = useAppStore()
 const emit = defineEmits(['cerrar'])
+function clickRol(user: string, rol: RolesSesion) {
+  appStore.aplicacion.darRolAUsuario(parseInt(user), rol)
+}
 </script>
 
 <template>
@@ -39,10 +43,12 @@ const emit = defineEmits(['cerrar'])
                 <button
                   class="option-btn"
                   :class="{ selected: user.RolSesion === 'director' }"
+                  @click="clickRol(user.ID, 'director')"
                 >
                   Director
                 </button>
                 <button
+                  @click="clickRol(user.ID, 'admin')"
                   class="option-btn"
                   :class="{ selected: user.RolSesion === 'admin' }"
                 >
