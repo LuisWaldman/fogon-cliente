@@ -39,7 +39,7 @@ interface ClientToServerEvents {
   unirmesesion(sesion: string): void
   crearsesion(sesion: string, rolDefault: RolesSesion): void
   mensajeasesion: (mensaje: string) => void
-  setrolausuario: (idUsuario: string, rol: RolesSesion) => void
+  setrolausuario: (idUsuario: number, rol: RolesSesion) => void
   salirsesion: () => void
   logout: () => void
   gettime: () => void
@@ -442,7 +442,7 @@ export class ClienteSocket {
     return this.intentosRealizados
   }
 
-  public DarRolAUsuario(idUsuario: string, rol: RolesSesion): void {
+  public DarRolAUsuario(idUsuario: number, rol: RolesSesion): void {
     this.socket.emit('setrolausuario', idUsuario, rol)
   }
 }

@@ -409,10 +409,10 @@ export default class Aplicacion {
     this.cliente.MensajeASesion(msj)
   }
 
-  darRolAUsuario(idUsuario: string, rol: RolesSesion): void {
+  darRolAUsuario(idUsuario: number, rol: RolesSesion): void {
     if (!this.cliente) {
       return
     }
     this.cliente.DarRolAUsuario(idUsuario, rol)
-  } 
+  }
 }
