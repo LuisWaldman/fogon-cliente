@@ -188,6 +188,12 @@ export default class Aplicacion {
             this.creandoSesion,
           )
           this.creandoSesion = false
+          if (
+            sesionCreada == 'Fogon de Ari' &&
+            appStore.rolSesion == 'visitante'
+          ) {
+            this.router?.push('/tocar')
+          }
         }
       },
     )
@@ -291,6 +297,7 @@ export default class Aplicacion {
         const appStore = useAppStore()
         Logger.log('Sesiones obtenidas:', data)
         appStore.sesiones = []
+        let iniciarSesionAuto = false
         data.forEach(
           (item: {
             Nombre: string
@@ -308,8 +315,14 @@ export default class Aplicacion {
                 item.Longitud,
               ),
             )
+            if (item.Nombre === 'Fogon de Ari') {
+              iniciarSesionAuto = true
+            }
           },
         )
+        if (iniciarSesionAuto && appStore.rolSesion == 'noasignado') {
+          this.UnirmeSesion('Fogon de Ari')
+        }
       })
       .catch((error) => {
         Logger.logError('Sesiones del usuario', error.message)

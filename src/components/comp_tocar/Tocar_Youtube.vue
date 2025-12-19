@@ -38,7 +38,8 @@ watch(
         if (mediaItem.tipo === 'Youtube') {
           media.value = mediaItem.id
           delay.value = mediaItem.delay || 0
-          urlYoutube.value = 'https://www.youtube.com/embed/' + media.value + '?enablejsapi=1'
+          urlYoutube.value =
+            'https://www.youtube.com/embed/' + media.value + '?enablejsapi=1'
           shouldLoad.value = true // Set to true to load the video
           break
         }
@@ -77,7 +78,8 @@ onMounted(() => {
     Logger.log(props.cancion.medias[i])
     if (props.cancion.medias[i].tipo === 'Youtube') {
       media.value = props.cancion.medias[i].id
-      urlYoutube.value = 'https://www.youtube.com/embed/' + media.value + '?enablejsapi=1'
+      urlYoutube.value =
+        'https://www.youtube.com/embed/' + media.value + '?enablejsapi=1'
       break
     }
   }
