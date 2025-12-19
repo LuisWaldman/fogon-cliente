@@ -39,6 +39,7 @@ interface ClientToServerEvents {
   unirmesesion(sesion: string): void
   crearsesion(sesion: string, rolDefault: RolesSesion): void
   mensajeasesion: (mensaje: string) => void
+  setrolausuario: (idUsuario: string, rol: RolesSesion) => void
   salirsesion: () => void
   logout: () => void
   gettime: () => void
@@ -439,5 +440,9 @@ export class ClienteSocket {
   // Método para obtener el número de intentos realizados
   public getIntentosRealizados(): number {
     return this.intentosRealizados
+  }
+
+  public DarRolAUsuario(idUsuario: string, rol: RolesSesion): void {
+    this.socket.emit('setrolausuario', idUsuario, rol)
   }
 }
