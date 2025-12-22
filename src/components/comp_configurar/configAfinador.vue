@@ -323,7 +323,7 @@ const instrumentos = [
   {
     value: 'ukelele',
     label: 'Ukelele',
-    notas: [7, 12, 16, 21],
+    notas: [34, 27, 31, 36],
     nombres: ['4ta', '3ra', '2da', '1ra'],
   },
 ]
