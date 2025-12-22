@@ -189,7 +189,7 @@ export default class Aplicacion {
           )
           this.creandoSesion = false
           if (
-            sesionCreada == 'Fogon de Ari' &&
+            sesionCreada == 'Fogon de Luis' &&
             appStore.rolSesion == 'visitante'
           ) {
             this.router?.push('/tocar')
@@ -315,13 +315,13 @@ export default class Aplicacion {
                 item.Longitud,
               ),
             )
-            if (item.Nombre === 'Fogon de Ari') {
+            if (item.Nombre === 'Fogon de Luis') {
               iniciarSesionAuto = true
             }
           },
         )
         if (iniciarSesionAuto && appStore.rolSesion == 'noasignado') {
-          this.UnirmeSesion('Fogon de Ari')
+          this.UnirmeSesion('Fogon de Luis')
         }
       })
       .catch((error) => {

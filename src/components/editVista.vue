@@ -132,6 +132,45 @@ function ClickSoloMidi() {
     configPantalla.value.reproduce = 'midi'
   }
 }
+
+// Funciones de mapeo para convertir entre valores y opciones de tamaño
+function tamañoAValor(tamaño: string, min: number, max: number): number {
+  const valoresBase: Record<string, number> = {
+    'muy-chico': 9,
+    'chico': 18,
+    'normal': 26,
+    'grande': 50,
+    'muy-grande': 100,
+    'enorme': 150
+  }
+  
+  const valorBase = valoresBase[tamaño] || 26
+  
+  // Si el valor base está fuera del rango, ajustarlo al límite
+  if (valorBase < min) return min
+  if (valorBase > max) return max
+  
+  return valorBase
+}
+
+function valorATamaño(valor: number, min: number, max: number): string {
+  if (valor <= 13) return 'muy-chico'
+  if (valor <= 22) return 'chico'
+  if (valor <= 38) return 'normal'
+  if (valor <= 75) return 'grande'
+  if (valor <= 125) return 'muy-grande'
+  return 'enorme'
+}
+
+function cambiarTamaño(propiedad: keyof typeof configPantalla.value, tamaño: string, min: number, max: number) {
+  const valor = tamañoAValor(tamaño, min, max)
+  ;(configPantalla.value as any)[propiedad] = valor
+}
+
+function handleSelectChange(event: Event, propiedad: keyof typeof configPantalla.value, min: number, max: number) {
+  const target = event.target as HTMLSelectElement
+  cambiarTamaño(propiedad, target.value, min, max)
+}
 </script>
 
 <template>
@@ -174,13 +213,18 @@ function ClickSoloMidi() {
           <div v-if="verLetra" class="input-group">
             <label>📏 Tamaño Letra</label>
             <div class="range-group">
-              <input
-                type="range"
-                min="8"
-                max="200"
-                v-model.number="configPantalla.tamanioLetra"
-                class="range-input"
-              />
+              <select
+                :value="valorATamaño(configPantalla.tamanioLetra, 8, 200)"
+                @change="handleSelectChange($event, 'tamanioLetra', 8, 200)"
+                class="select-input"
+              >
+                <option value="muy-chico">Muy chico</option>
+                <option value="chico">Chico</option>
+                <option value="normal">Normal</option>
+                <option value="grande">Grande</option>
+                <option value="muy-grande">Muy grande</option>
+                <option value="enorme">Enorme</option>
+              </select>
               <span class="range-value"
                 >{{ configPantalla.tamanioLetra }}px</span
               >
@@ -190,13 +234,18 @@ function ClickSoloMidi() {
           <div v-if="verAcordes" class="input-group">
             <label>📏 Tamaño Acordes</label>
             <div class="range-group">
-              <input
-                type="range"
-                min="8"
-                max="80"
-                v-model.number="configPantalla.tamanioAcorde"
-                class="range-input"
-              />
+              <select
+                :value="valorATamaño(configPantalla.tamanioAcorde, 8, 80)"
+                @change="handleSelectChange($event, 'tamanioAcorde', 8, 80)"
+                class="select-input"
+              >
+                <option value="muy-chico">Muy chico</option>
+                <option value="chico">Chico</option>
+                <option value="normal">Normal</option>
+                <option value="grande">Grande</option>
+                <option value="muy-grande">Muy grande</option>
+                <option value="enorme">Enorme</option>
+              </select>
               <span class="range-value"
                 >{{ configPantalla.tamanioAcorde }}px</span
               >
@@ -209,13 +258,18 @@ function ClickSoloMidi() {
               <div class="input-group half">
                 <label>📊 Compases x Sistema</label>
                 <div class="range-group">
-                  <input
-                    type="range"
-                    min="1"
-                    max="8"
-                    v-model.number="configPantalla.compasesPorRenglon"
-                    class="range-input"
-                  />
+                  <select
+                    :value="valorATamaño(configPantalla.compasesPorRenglon, 1, 8)"
+                    @change="handleSelectChange($event, 'compasesPorRenglon', 1, 8)"
+                    class="select-input"
+                  >
+                    <option value="muy-chico">Muy chico</option>
+                    <option value="chico">Chico</option>
+                    <option value="normal">Normal</option>
+                    <option value="grande">Grande</option>
+                    <option value="muy-grande">Muy grande</option>
+                    <option value="enorme">Enorme</option>
+                  </select>
                   <span class="range-value">{{
                     configPantalla.compasesPorRenglon
                   }}</span>
@@ -224,13 +278,18 @@ function ClickSoloMidi() {
               <div class="input-group half">
                 <label>📐 Ancho Compás</label>
                 <div class="range-group">
-                  <input
-                    type="range"
-                    min="120"
-                    max="400"
-                    v-model.number="configPantalla.anchoCompas"
-                    class="range-input"
-                  />
+                  <select
+                    :value="valorATamaño(configPantalla.anchoCompas, 120, 400)"
+                    @change="handleSelectChange($event, 'anchoCompas', 120, 400)"
+                    class="select-input"
+                  >
+                    <option value="muy-chico">Muy chico</option>
+                    <option value="chico">Chico</option>
+                    <option value="normal">Normal</option>
+                    <option value="grande">Grande</option>
+                    <option value="muy-grande">Muy grande</option>
+                    <option value="enorme">Enorme</option>
+                  </select>
                   <span class="range-value"
                     >{{ configPantalla.anchoCompas }}px</span
                   >
@@ -241,13 +300,18 @@ function ClickSoloMidi() {
               <div class="input-group half">
                 <label>📏 Alto Pentagrama</label>
                 <div class="range-group">
-                  <input
-                    type="range"
-                    min="30"
-                    max="120"
-                    v-model.number="configPantalla.altoCompas"
-                    class="range-input"
-                  />
+                  <select
+                    :value="valorATamaño(configPantalla.altoCompas, 30, 120)"
+                    @change="handleSelectChange($event, 'altoCompas', 30, 120)"
+                    class="select-input"
+                  >
+                    <option value="muy-chico">Muy chico</option>
+                    <option value="chico">Chico</option>
+                    <option value="normal">Normal</option>
+                    <option value="grande">Grande</option>
+                    <option value="muy-grande">Muy grande</option>
+                    <option value="enorme">Enorme</option>
+                  </select>
                   <span class="range-value"
                     >{{ configPantalla.altoCompas }}px</span
                   >
@@ -256,14 +320,18 @@ function ClickSoloMidi() {
               <div class="input-group half">
                 <label>🔍 Escala Líneas</label>
                 <div class="range-group">
-                  <input
-                    type="range"
-                    min="0.4"
-                    max="2.0"
-                    step="0.1"
-                    v-model.number="configPantalla.escalaPentagrama"
-                    class="range-input"
-                  />
+                  <select
+                    :value="valorATamaño(configPantalla.escalaPentagrama, 0.4, 2.0)"
+                    @change="handleSelectChange($event, 'escalaPentagrama', 0.4, 2.0)"
+                    class="select-input"
+                  >
+                    <option value="muy-chico">Muy chico</option>
+                    <option value="chico">Chico</option>
+                    <option value="normal">Normal</option>
+                    <option value="grande">Grande</option>
+                    <option value="muy-grande">Muy grande</option>
+                    <option value="enorme">Enorme</option>
+                  </select>
                   <span class="range-value">{{
                     configPantalla.escalaPentagrama.toFixed(1)
                   }}</span>
@@ -296,13 +364,18 @@ function ClickSoloMidi() {
           <div v-if="soloMidi || soloVideo" class="input-group">
             <label>📏 Alto Reproductor</label>
             <div class="range-group">
-              <input
-                type="range"
-                min="3"
-                max="398"
-                v-model.number="configPantalla.altoReproductor"
-                class="range-input"
-              />
+              <select
+                :value="valorATamaño(configPantalla.altoReproductor, 3, 398)"
+                @change="handleSelectChange($event, 'altoReproductor', 3, 398)"
+                class="select-input"
+              >
+                <option value="muy-chico">Muy chico</option>
+                <option value="chico">Chico</option>
+                <option value="normal">Normal</option>
+                <option value="grande">Grande</option>
+                <option value="muy-grande">Muy grande</option>
+                <option value="enorme">Enorme</option>
+              </select>
               <span class="range-value"
                 >{{ configPantalla.altoReproductor }}px</span
               >
@@ -390,13 +463,18 @@ function ClickSoloMidi() {
             <label v-if="refModoVista !== 'simple'">📐 % Ancho Principal</label>
             <label v-if="refModoVista === 'simple'">📐 % Alto Principal</label>
             <div class="range-group">
-              <input
-                type="range"
-                min="3"
-                max="98"
-                v-model.number="configPantalla.anchoPrincipal"
-                class="range-input"
-              />
+              <select
+                :value="valorATamaño(configPantalla.anchoPrincipal, 3, 98)"
+                @change="handleSelectChange($event, 'anchoPrincipal', 3, 98)"
+                class="select-input"
+              >
+                <option value="muy-chico">Muy chico</option>
+                <option value="chico">Chico</option>
+                <option value="normal">Normal</option>
+                <option value="grande">Grande</option>
+                <option value="muy-grande">Muy grande</option>
+                <option value="enorme">Enorme</option>
+              </select>
               <span class="range-value"
                 >{{ configPantalla.anchoPrincipal }}%</span
               >
@@ -406,13 +484,18 @@ function ClickSoloMidi() {
           <div class="input-group" v-if="refModoVista === 'triple'">
             <label>📐 % Ancho Terciaria</label>
             <div class="range-group">
-              <input
-                type="range"
-                min="3"
-                max="98"
-                v-model.number="configPantalla.anchoTerciaria"
-                class="range-input"
-              />
+              <select
+                :value="valorATamaño(configPantalla.anchoTerciaria, 3, 98)"
+                @change="handleSelectChange($event, 'anchoTerciaria', 3, 98)"
+                class="select-input"
+              >
+                <option value="muy-chico">Muy chico</option>
+                <option value="chico">Chico</option>
+                <option value="normal">Normal</option>
+                <option value="grande">Grande</option>
+                <option value="muy-grande">Muy grande</option>
+                <option value="enorme">Enorme</option>
+              </select>
               <span class="range-value"
                 >{{ configPantalla.anchoTerciaria }}%</span
               >
@@ -505,13 +588,18 @@ function ClickSoloMidi() {
             <div class="input-group half">
               <label>📏 Letra</label>
               <div class="range-group">
-                <input
-                  type="range"
-                  min="8"
-                  max="40"
-                  v-model.number="configPantalla.tamanioParte"
-                  class="range-input"
-                />
+                <select
+                  :value="valorATamaño(configPantalla.tamanioParte, 8, 40)"
+                  @change="handleSelectChange($event, 'tamanioParte', 8, 40)"
+                  class="select-input"
+                >
+                  <option value="muy-chico">Muy chico</option>
+                  <option value="chico">Chico</option>
+                  <option value="normal">Normal</option>
+                  <option value="grande">Grande</option>
+                  <option value="muy-grande">Muy grande</option>
+                  <option value="enorme">Enorme</option>
+                </select>
                 <span class="range-value"
                   >{{ configPantalla.tamanioParte }}px</span
                 >
@@ -520,13 +608,18 @@ function ClickSoloMidi() {
             <div class="input-group half">
               <label>📐 Alto</label>
               <div class="range-group">
-                <input
-                  type="range"
-                  min="0"
-                  max="1000"
-                  v-model.number="configPantalla.anchoParte"
-                  class="range-input"
-                />
+                <select
+                  :value="valorATamaño(configPantalla.anchoParte, 0, 1000)"
+                  @change="handleSelectChange($event, 'anchoParte', 0, 1000)"
+                  class="select-input"
+                >
+                  <option value="muy-chico">Muy chico</option>
+                  <option value="chico">Chico</option>
+                  <option value="normal">Normal</option>
+                  <option value="grande">Grande</option>
+                  <option value="muy-grande">Muy grande</option>
+                  <option value="enorme">Enorme</option>
+                </select>
                 <span class="range-value"
                   >{{ configPantalla.anchoParte }}px</span
                 >
@@ -727,6 +820,38 @@ function ClickSoloMidi() {
   color: #a78bfa;
   font-weight: 500;
   font-size: 0.9rem;
+}
+
+/* Select inputs */
+.select-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 2px solid rgba(106, 76, 147, 0.4);
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.select-input:hover {
+  border-color: #8b5cf6;
+  background-color: #333333;
+}
+
+.select-input:focus {
+  border-color: #8b5cf6;
+  background-color: #333333;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.select-input option {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 8px;
 }
 
 /* Option grid */
