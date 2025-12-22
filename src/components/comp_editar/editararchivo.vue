@@ -29,9 +29,9 @@ function clickOkCambiarDatos() {
 
 function hacerNombreArchivo() {
   props.cancion.archivo =
-    props.cancion.banda.replace(/ /g, '_') +
-    '-' +
-    props.cancion.cancion.replace(/ /g, '_')
+    props.cancion.banda.replace(/ /g, '-') +
+    '_' +
+    props.cancion.cancion.replace(/ /g, '-')
 }
 </script>
 <template>
