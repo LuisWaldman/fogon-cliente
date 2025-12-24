@@ -2,9 +2,7 @@
   <div class="about-container">
     <div class="header-section">
       <h1>🎭 Acerca del Fogón</h1>
-      <p class="project-subtitle">
-        Y los conocimientos sobre los que se apoya
-      </p>
+      <p class="project-subtitle">Y los conocimientos sobre los que se apoya</p>
     </div>
 
     <div class="content-grid">
@@ -14,17 +12,20 @@
         <div class="physics-info">
           <p>
             El sonido es una onda mecánica que se propaga a través de medios
-            materiales, y su percepción depende de su <strong>frecuencia</strong>
-            (un Hertz es una vibración por segundo) que determina la altura tonal.
+            materiales, y su percepción depende de su
+            <strong>frecuencia</strong>
+            (un Hertz es una vibración por segundo) que determina la altura
+            tonal.
           </p>
           <p>
             <strong>Pitágoras</strong> (siglo VI a.C.) descubrió que las
-            relaciones matemáticas entre cuerdas vibrantes producian sonidos agradables.
-            Ej: (2:1)Una octava, (3:2)una quinta justa. (4:3)una cuarta justa.
+            relaciones matemáticas entre cuerdas vibrantes producian sonidos
+            agradables. Ej: (2:1)Una octava, (3:2)una quinta justa. (4:3)una
+            cuarta justa.
           </p>
-        <p>
-            <strong>Marin Mersenne</strong> (1588-1648) formuló las
-            leyes que gobiernan la vibración de cuerdas tensas.
+          <p>
+            <strong>Marin Mersenne</strong> (1588-1648) formuló las leyes que
+            gobiernan la vibración de cuerdas tensas.
           </p>
           <p>
             Las <strong>Leyes de Mersenne</strong> establecen que la frecuencia
@@ -66,8 +67,8 @@
               El ritmo es la organización del sonido en el tiempo. Los estudios
               sobre métrica y compás se desarrollaron desde el canto gregoriano,
               evolucionando hacia sistemas complejos de notación rítmica en el
-              Renacimiento y Barroco. La comprensión matemática del ritmo permite
-              su representación precisa en partituras.
+              Renacimiento y Barroco. La comprensión matemática del ritmo
+              permite su representación precisa en partituras.
             </p>
           </div>
           <div class="theory-section">
@@ -83,10 +84,10 @@
           <div class="theory-section">
             <h4>🎵 Melodía</h4>
             <p>
-              La melodía es la sucesión horizontal de sonidos. Los estudios sobre
-              escalas, modos y sistemas tonales han evolucionado desde los modos
-              griegos antiguos hasta la tonalidad moderna, proporcionando el
-              marco teórico para la composición y análisis musical.
+              La melodía es la sucesión horizontal de sonidos. Los estudios
+              sobre escalas, modos y sistemas tonales han evolucionado desde los
+              modos griegos antiguos hasta la tonalidad moderna, proporcionando
+              el marco teórico para la composición y análisis musical.
             </p>
           </div>
         </div>
@@ -126,8 +127,10 @@
             </li>
           </ul>
           <p class="acknowledgment-text">
-            <strong>Este proyecto fue posible gracias a los conocimientos
-            adquiridos en:</strong>
+            <strong
+              >Este proyecto fue posible gracias a los conocimientos adquiridos
+              en:</strong
+            >
           </p>
           <ul class="academic-acknowledgments">
             <li>
@@ -144,9 +147,9 @@
               fundamentos de comunicación en red y sincronización
             </li>
             <li>
-              <strong>Sistemas Distribuidos:</strong> Por los conceptos avanzados
-              de arquitecturas distribuidas aplicados en la sincronización
-              en tiempo real
+              <strong>Sistemas Distribuidos:</strong> Por los conceptos
+              avanzados de arquitecturas distribuidas aplicados en la
+              sincronización en tiempo real
             </li>
           </ul>
         </div>

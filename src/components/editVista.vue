@@ -303,9 +303,7 @@ function handleSelectChange(
                 <label>📊 Compases x Sistema</label>
                 <div class="range-group">
                   <select
-                    :value="
-                      valorATamaño(configPantalla.compasesPorRenglon)
-                    "
+                    :value="valorATamaño(configPantalla.compasesPorRenglon)"
                     @change="
                       handleSelectChange($event, 'compasesPorRenglon', 1, 8)
                     "
@@ -371,9 +369,7 @@ function handleSelectChange(
                 <label>🔍 Escala Líneas</label>
                 <div class="range-group">
                   <select
-                    :value="
-                      valorATamaño(configPantalla.escalaPentagrama)
-                    "
+                    :value="valorATamaño(configPantalla.escalaPentagrama)"
                     @change="
                       handleSelectChange($event, 'escalaPentagrama', 0.4, 2.0)
                     "
