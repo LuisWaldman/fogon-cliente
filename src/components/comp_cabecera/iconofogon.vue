@@ -165,7 +165,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          BARBARO BAR
+          CLARO QUE SI
         </div>
         <div
           class="titulo-Fogon"

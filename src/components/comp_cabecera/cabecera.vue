@@ -168,7 +168,7 @@ function clickEditar() {
         :estadoReproduccion="estadoReproduccion"
       />
       <span v-if="$route.path === '/'" class="titulocancioncontrol">
-        EL SHOW DE ARI
+        FOGON
       </span>
 
       <div v-if="$route.path === '/tocar'" class="divtitulocancioncontrol">
