@@ -258,7 +258,7 @@ function handleSelectChange(
             <label>📏 Tamaño Letra</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.tamanioLetra, 8, 200)"
+                :value="valorATamaño(configPantalla.tamanioLetra)"
                 @change="handleSelectChange($event, 'tamanioLetra', 8, 200)"
                 class="select-input"
               >
@@ -279,7 +279,7 @@ function handleSelectChange(
             <label>📏 Tamaño Acordes</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.tamanioAcorde, 8, 80)"
+                :value="valorATamaño(configPantalla.tamanioAcorde)"
                 @change="handleSelectChange($event, 'tamanioAcorde', 8, 80)"
                 class="select-input"
               >
@@ -303,9 +303,7 @@ function handleSelectChange(
                 <label>📊 Compases x Sistema</label>
                 <div class="range-group">
                   <select
-                    :value="
-                      valorATamaño(configPantalla.compasesPorRenglon, 1, 8)
-                    "
+                    :value="valorATamaño(configPantalla.compasesPorRenglon)"
                     @change="
                       handleSelectChange($event, 'compasesPorRenglon', 1, 8)
                     "
@@ -327,7 +325,7 @@ function handleSelectChange(
                 <label>📐 Ancho Compás</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.anchoCompas, 120, 400)"
+                    :value="valorATamaño(configPantalla.anchoCompas)"
                     @change="
                       handleSelectChange($event, 'anchoCompas', 120, 400)
                     "
@@ -351,7 +349,7 @@ function handleSelectChange(
                 <label>📏 Alto Pentagrama</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.altoCompas, 30, 120)"
+                    :value="valorATamaño(configPantalla.altoCompas)"
                     @change="handleSelectChange($event, 'altoCompas', 30, 120)"
                     class="select-input"
                   >
@@ -371,9 +369,7 @@ function handleSelectChange(
                 <label>🔍 Escala Líneas</label>
                 <div class="range-group">
                   <select
-                    :value="
-                      valorATamaño(configPantalla.escalaPentagrama, 0.4, 2.0)
-                    "
+                    :value="valorATamaño(configPantalla.escalaPentagrama)"
                     @change="
                       handleSelectChange($event, 'escalaPentagrama', 0.4, 2.0)
                     "
@@ -419,7 +415,7 @@ function handleSelectChange(
             <label>📏 Alto Reproductor</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.altoReproductor, 3, 398)"
+                :value="valorATamaño(configPantalla.altoReproductor)"
                 @change="handleSelectChange($event, 'altoReproductor', 3, 398)"
                 class="select-input"
               >
@@ -518,7 +514,7 @@ function handleSelectChange(
             <label v-if="refModoVista === 'simple'">📐 % Alto Principal</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.anchoPrincipal, 3, 98)"
+                :value="valorATamaño(configPantalla.anchoPrincipal)"
                 @change="handleSelectChange($event, 'anchoPrincipal', 3, 98)"
                 class="select-input"
               >
@@ -539,7 +535,7 @@ function handleSelectChange(
             <label>📐 % Ancho Terciaria</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.anchoTerciaria, 3, 98)"
+                :value="valorATamaño(configPantalla.anchoTerciaria)"
                 @change="handleSelectChange($event, 'anchoTerciaria', 3, 98)"
                 class="select-input"
               >
@@ -643,7 +639,7 @@ function handleSelectChange(
               <label>📏 Letra</label>
               <div class="range-group">
                 <select
-                  :value="valorATamaño(configPantalla.tamanioParte, 8, 40)"
+                  :value="valorATamaño(configPantalla.tamanioParte)"
                   @change="handleSelectChange($event, 'tamanioParte', 8, 40)"
                   class="select-input"
                 >
@@ -663,7 +659,7 @@ function handleSelectChange(
               <label>📐 Alto</label>
               <div class="range-group">
                 <select
-                  :value="valorATamaño(configPantalla.anchoParte, 0, 1000)"
+                  :value="valorATamaño(configPantalla.anchoParte)"
                   @change="handleSelectChange($event, 'anchoParte', 0, 1000)"
                   class="select-input"
                 >

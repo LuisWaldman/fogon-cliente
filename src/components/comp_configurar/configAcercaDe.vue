@@ -2,14 +2,161 @@
   <div class="about-container">
     <div class="header-section">
       <h1>🎭 Acerca del Fogón</h1>
-      <p class="project-subtitle">
-        Una plataforma digital para la educación y práctica musical
-      </p>
+      <p class="project-subtitle">Y los conocimientos sobre los que se apoya</p>
     </div>
 
     <div class="content-grid">
       <div class="info-card">
-        <div class="card-icon">👨🏻‍💻</div>
+        <div class="card-icon">�</div>
+        <h2>Física del Sonido</h2>
+        <div class="physics-info">
+          <p>
+            El sonido es una onda mecánica que se propaga a través de medios
+            materiales, y su percepción depende de su
+            <strong>frecuencia</strong>
+            (un Hertz es una vibración por segundo) que determina la altura
+            tonal.
+          </p>
+          <p>
+            <strong>Pitágoras</strong> (siglo VI a.C.) descubrió que las
+            relaciones matemáticas entre cuerdas vibrantes producian sonidos
+            agradables. Ej: (2:1)Una octava, (3:2)una quinta justa. (4:3)una
+            cuarta justa.
+          </p>
+          <p>
+            <strong>Marin Mersenne</strong> (1588-1648) formuló las leyes que
+            gobiernan la vibración de cuerdas tensas.
+          </p>
+          <p>
+            Las <strong>Leyes de Mersenne</strong> establecen que la frecuencia
+            de vibración de una cuerda es:
+          </p>
+          <ul>
+            <li>
+              Inversamente proporcional a su <strong>longitud</strong>: cuerdas
+              más cortas producen sonidos más agudos
+            </li>
+            <li>
+              Directamente proporcional a la raíz cuadrada de la
+              <strong>tensión</strong>: mayor tensión, mayor frecuencia
+            </li>
+            <li>
+              Inversamente proporcional a la raíz cuadrada de la
+              <strong>densidad lineal</strong>: cuerdas más pesadas vibran más
+              lento
+            </li>
+          </ul>
+          <p>
+            Estos principios físicos son fundamentales para la construcción y
+            afinación de todos los instrumentos de cuerda.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon">🎼</div>
+        <h2>Teoría Musical: Ritmo, Armonía y Melodía</h2>
+        <div class="music-theory-info">
+          <p>
+            La música occidental se construye sobre tres pilares fundamentales
+            que han sido objeto de estudio teórico durante siglos:
+          </p>
+          <div class="theory-section">
+            <h4>🥁 Ritmo</h4>
+            <p>
+              El ritmo es la organización del sonido en el tiempo. Los estudios
+              sobre métrica y compás se desarrollaron desde el canto gregoriano,
+              evolucionando hacia sistemas complejos de notación rítmica en el
+              Renacimiento y Barroco. La comprensión matemática del ritmo
+              permite su representación precisa en partituras.
+            </p>
+          </div>
+          <div class="theory-section">
+            <h4>🎹 Armonía</h4>
+            <p>
+              La armonía estudia la combinación simultánea de sonidos. Desde los
+              tratados de <strong>Jean-Philippe Rameau</strong> (1722) sobre la
+              teoría de los acordes, hasta los estudios modernos de armonía
+              funcional, este campo ha proporcionado las reglas para entender
+              cómo las notas se relacionan verticalmente en la música.
+            </p>
+          </div>
+          <div class="theory-section">
+            <h4>🎵 Melodía</h4>
+            <p>
+              La melodía es la sucesión horizontal de sonidos. Los estudios
+              sobre escalas, modos y sistemas tonales han evolucionado desde los
+              modos griegos antiguos hasta la tonalidad moderna, proporcionando
+              el marco teórico para la composición y análisis musical.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card computation-card">
+        <div class="card-icon">💻</div>
+        <h2>Computación y Música Digital</h2>
+        <div class="computation-info">
+          <p>
+            La revolución computacional transformó radicalmente la música. Los
+            fundamentos de la computación moderna, establecidos por
+            <strong>Alan Turing</strong> en su concepto de la
+            <em>Máquina Universal</em> (1936), abrieron la puerta al
+            procesamiento digital de audio y la síntesis computacional.
+          </p>
+          <p>
+            El uso de <strong>medios electrónicos</strong> para el cálculo y
+            generación de música permite:
+          </p>
+          <ul>
+            <li>
+              <strong>Síntesis digital:</strong> Generación de ondas sonoras
+              mediante algoritmos matemáticos
+            </li>
+            <li>
+              <strong>Análisis espectral:</strong> Descomposición de sonidos en
+              sus componentes frecuenciales
+            </li>
+            <li>
+              <strong>Procesamiento en tiempo real:</strong> Transformación y
+              efectos aplicados instantáneamente
+            </li>
+            <li>
+              <strong>Notación automática:</strong> Conversión entre
+              representaciones simbólicas y audio
+            </li>
+          </ul>
+          <p class="acknowledgment-text">
+            <strong
+              >Este proyecto fue posible gracias a los conocimientos adquiridos
+              en:</strong
+            >
+          </p>
+          <ul class="academic-acknowledgments">
+            <li>
+              <strong>✨ Arquitectura de Software</strong> (principalmente): Por
+              los principios de diseño, patrones arquitectónicos y mejores
+              prácticas que estructuran esta aplicación
+            </li>
+            <li>
+              <strong>Base de Datos:</strong> Por la comprensión de modelos de
+              datos y estructuras de almacenamiento eficiente
+            </li>
+            <li>
+              <strong>Introducción a los Sistemas Distribuidos:</strong> Por los
+              fundamentos de comunicación en red y sincronización
+            </li>
+            <li>
+              <strong>Sistemas Distribuidos:</strong> Por los conceptos
+              avanzados de arquitecturas distribuidas aplicados en la
+              sincronización en tiempo real
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon">�👨🏻‍💻</div>
         <h2>Sobre el Desarrollador</h2>
         <div class="developer-info">
           <p>
@@ -349,6 +496,96 @@ const version = __APP_VERSION__
   line-height: 1.6;
   color: #cbd5e0;
   margin-bottom: 15px;
+}
+
+.physics-info p,
+.music-theory-info p,
+.computation-info p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #cbd5e0;
+  margin-bottom: 15px;
+}
+
+.physics-info ul,
+.computation-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.physics-info li,
+.computation-info li {
+  padding: 8px 0;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+.physics-info li:before {
+  content: '⚛️';
+  margin-right: 10px;
+}
+
+.computation-info ul li:before {
+  content: '▸';
+  color: #6366f1;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.theory-section {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #6366f1;
+  border: 1px solid #475569;
+}
+
+.theory-section h4 {
+  color: #a0aec0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.theory-section p {
+  color: #cbd5e0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.computation-card {
+  background: linear-gradient(135deg, #3730a3 0%, #312e81 100%);
+}
+
+.acknowledgment-text {
+  color: #a0aec0;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.academic-acknowledgments {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  margin-top: 10px;
+}
+
+.academic-acknowledgments li {
+  padding: 10px 0;
+  border-bottom: 1px solid #475569;
+}
+
+.academic-acknowledgments li:last-child {
+  border-bottom: none;
+}
+
+.academic-acknowledgments li:before {
+  content: '🎓';
+  margin-right: 10px;
 }
 
 .objectives-list {
