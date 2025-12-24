@@ -41,10 +41,12 @@ export class AcordesUkeleleHelper {
       cuerda[0] = '2'
       cuerda[1] = '2'
       cuerda[2] = '2'
+      cuerda[3] = '2'
     }
     if (chordStr === 'G') {
-      cuerda[1] = '2'
-      cuerda[2] = '3'
+      cuerda[0] = '2'
+      cuerda[1] = '3'
+      cuerda[2] = '2'
     }
     if (chordStr === 'Dm') {
       cuerda[0] = '1'
@@ -52,7 +54,7 @@ export class AcordesUkeleleHelper {
       cuerda[2] = '2'
     }
     if (chordStr === 'F') {
-      cuerda[0] = '1'
+      cuerda[1] = '1'
       cuerda[3] = '2'
     }
     if (chordStr === 'B7') {
@@ -78,8 +80,8 @@ export class AcordesUkeleleHelper {
       cuerda[1] = '1'
     }
     if (chordStr === 'G7') {
-      cuerda[0] = '1'
-      cuerda[1] = '2'
+      cuerda[0] = '2'
+      cuerda[1] = '1'
       cuerda[2] = '2'
     }
     if (chordStr === 'Cmaj7') {
