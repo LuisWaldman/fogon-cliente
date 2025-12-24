@@ -3,21 +3,32 @@
     <div class="welcome-header">
       <h1>🎵 Bienvenido al Fogón 🎵</h1>
       <p class="subtitle">
-        Tu plataforma digital para compartir, estudiar y disfrutar la música
+        Tu plataforma digital para estudiar, crear, compartir  y disfrutar la música
       </p>
     </div>
 
     <div class="intro-section">
+    <h2>La musica como un sistema distribuido</h2>
       <p>
-        El Fogón es una aplicación web progresiva diseñada para músicos,
-        estudiantes y amantes de la música. Aquí podrás explorar un repertorio
-        diverso, estudiar partituras interactivas y conectarte con otros
-        músicos.
+        Tanenbaum y Van Steen  definen: "Un sistema distribuido es una colección de computadoras independientes que aparece ante sus usuarios como un sistema único y coherente" (1)
       </p>
+      <p>
+        Cuando varios musicos tocan juntos se organizan para combinar armonias, melodias y ritmos de modo que los escuchen como un sistema unico y coherente.
+      </p>
+      <p>
+        Para hacer estos los musicos se nutren de protocolos y mecanismos de coordinacion que les permiten sincronizarse y compartir informacion.
+      </p>
+      <p>
+        El Fogon es un sistema distribuido para ayudar a los musicos en esos quehaceres.
+      </p>
+      <p></p>
       <p class="getting-started">
-        <strong>¡Comencemos!</strong> Te recomendamos completar tu perfil y
+        <strong>¡Comencemos!</strong> Te recomendamos completar tu perfil, ajustar la vista y
         afinar tu instrumento antes de empezar.
       </p>
+      <div class="reference">
+        <p>(1) Andrew S. Tanenbaum y Maarten Van Steen (2007, Distributed Systems: Principles and Paradigms)</p>
+      </div>
     </div>
 
     <div class="features-grid">
