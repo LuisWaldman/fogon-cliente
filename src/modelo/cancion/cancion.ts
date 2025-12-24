@@ -76,6 +76,12 @@ export class Cancion {
     if (acordes < totalLetras) {
       console.log('Ajustando acordes a letras', acordes, totalLetras)
     }
+    if (this.archivo === '') {
+      this.archivo =
+        this.banda.toLowerCase().replace(/ /g, '-') +
+        '_' +
+        this.cancion.toLowerCase().replace(/ /g, '-')
+    }
   }
 
   constructor(

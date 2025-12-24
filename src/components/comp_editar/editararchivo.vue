@@ -28,11 +28,19 @@ function clickOkCambiarDatos() {
 }
 
 function hacerNombreArchivo() {
+  props.cancion.normalizar()
+
+  // Generar el nombre del archivo basándose en banda y canción
   props.cancion.archivo =
-    props.cancion.banda.replace(/ /g, '-') +
+    props.cancion.banda.toLowerCase().replace(/ /g, '-') +
     '_' +
-    props.cancion.cancion.replace(/ /g, '-')
+    props.cancion.cancion.toLowerCase().replace(/ /g, '-')
+
+  nombrecancion.value = props.cancion.cancion
+  nombrebanda.value = props.cancion.banda
+  nombrearchivo.value = props.cancion.archivo || 'archivo_noload'
 }
+hacerNombreArchivo()
 </script>
 <template>
   <div></div>

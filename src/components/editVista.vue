@@ -137,23 +137,23 @@ function ClickSoloMidi() {
 function tamañoAValor(tamaño: string, min: number, max: number): number {
   const valoresBase: Record<string, number> = {
     'muy-chico': 9,
-    'chico': 18,
-    'normal': 26,
-    'grande': 50,
+    chico: 18,
+    normal: 26,
+    grande: 50,
     'muy-grande': 100,
-    'enorme': 150
+    enorme: 150,
   }
-  
+
   const valorBase = valoresBase[tamaño] || 26
-  
+
   // Si el valor base está fuera del rango, ajustarlo al límite
   if (valorBase < min) return min
   if (valorBase > max) return max
-  
+
   return valorBase
 }
 
-function valorATamaño(valor: number, min: number, max: number): string {
+function valorATamaño(valor: number): string {
   if (valor <= 13) return 'muy-chico'
   if (valor <= 22) return 'chico'
   if (valor <= 38) return 'normal'
@@ -162,12 +162,56 @@ function valorATamaño(valor: number, min: number, max: number): string {
   return 'enorme'
 }
 
-function cambiarTamaño(propiedad: keyof typeof configPantalla.value, tamaño: string, min: number, max: number) {
+function cambiarTamaño(
+  propiedad: keyof typeof configPantalla.value,
+  tamaño: string,
+  min: number,
+  max: number,
+) {
   const valor = tamañoAValor(tamaño, min, max)
-  ;(configPantalla.value as any)[propiedad] = valor
+  switch (propiedad) {
+    case 'tamanioLetra':
+      configPantalla.value.tamanioLetra = valor
+      break
+    case 'tamanioAcorde':
+      configPantalla.value.tamanioAcorde = valor
+      break
+    case 'compasesPorRenglon':
+      configPantalla.value.compasesPorRenglon = valor
+      break
+    case 'anchoCompas':
+      configPantalla.value.anchoCompas = valor
+      break
+    case 'altoCompas':
+      configPantalla.value.altoCompas = valor
+      break
+    case 'escalaPentagrama':
+      configPantalla.value.escalaPentagrama = valor
+      break
+    case 'altoReproductor':
+      configPantalla.value.altoReproductor = valor
+      break
+    case 'anchoPrincipal':
+      configPantalla.value.anchoPrincipal = valor
+      break
+    case 'anchoTerciaria':
+      configPantalla.value.anchoTerciaria = valor
+      break
+    case 'tamanioParte':
+      configPantalla.value.tamanioParte = valor
+      break
+    case 'anchoParte':
+      configPantalla.value.anchoParte = valor
+      break
+  }
 }
 
-function handleSelectChange(event: Event, propiedad: keyof typeof configPantalla.value, min: number, max: number) {
+function handleSelectChange(
+  event: Event,
+  propiedad: keyof typeof configPantalla.value,
+  min: number,
+  max: number,
+) {
   const target = event.target as HTMLSelectElement
   cambiarTamaño(propiedad, target.value, min, max)
 }
@@ -259,8 +303,12 @@ function handleSelectChange(event: Event, propiedad: keyof typeof configPantalla
                 <label>📊 Compases x Sistema</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.compasesPorRenglon, 1, 8)"
-                    @change="handleSelectChange($event, 'compasesPorRenglon', 1, 8)"
+                    :value="
+                      valorATamaño(configPantalla.compasesPorRenglon, 1, 8)
+                    "
+                    @change="
+                      handleSelectChange($event, 'compasesPorRenglon', 1, 8)
+                    "
                     class="select-input"
                   >
                     <option value="muy-chico">Muy chico</option>
@@ -280,7 +328,9 @@ function handleSelectChange(event: Event, propiedad: keyof typeof configPantalla
                 <div class="range-group">
                   <select
                     :value="valorATamaño(configPantalla.anchoCompas, 120, 400)"
-                    @change="handleSelectChange($event, 'anchoCompas', 120, 400)"
+                    @change="
+                      handleSelectChange($event, 'anchoCompas', 120, 400)
+                    "
                     class="select-input"
                   >
                     <option value="muy-chico">Muy chico</option>
@@ -321,8 +371,12 @@ function handleSelectChange(event: Event, propiedad: keyof typeof configPantalla
                 <label>🔍 Escala Líneas</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.escalaPentagrama, 0.4, 2.0)"
-                    @change="handleSelectChange($event, 'escalaPentagrama', 0.4, 2.0)"
+                    :value="
+                      valorATamaño(configPantalla.escalaPentagrama, 0.4, 2.0)
+                    "
+                    @change="
+                      handleSelectChange($event, 'escalaPentagrama', 0.4, 2.0)
+                    "
                     class="select-input"
                   >
                     <option value="muy-chico">Muy chico</option>
