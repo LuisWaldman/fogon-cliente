@@ -173,68 +173,51 @@ th {
 
 /* Modificadores para cabeceras (th) */
 th.tonicaprincipal {
-  background:
-    radial-gradient(ellipse at center bottom, transparent 60%, #cfda41 100%),
-    linear-gradient(to bottom, #cfda41, transparent 70%) !important;
+ 
   color: #fff !important;
   font-weight: bold;
 }
 
 th.tonicarelativa {
-  background:
-    radial-gradient(ellipse at center bottom, transparent 60%, #cfda41 100%),
-    linear-gradient(to bottom, #ddba59, transparent 70%) !important;
+  
   color: #fff !important;
   font-weight: bold;
 }
 
 th.subdominante {
-  background:
-    radial-gradient(ellipse at center bottom, transparent 60%, #b8651b 100%),
-    linear-gradient(to bottom, #d1a442, transparent 70%) !important;
+  
   color: #fff !important;
   font-weight: bold;
 }
 
 th.dominantesecundaria {
-  background:
-    radial-gradient(ellipse at center bottom, transparent 60%, #cc4125 100%),
-    linear-gradient(to bottom, #cc4125, transparent 70%) !important;
   color: #fff !important;
   font-weight: bold;
 }
 
 th.dominante {
-  background:
-    radial-gradient(ellipse at center bottom, transparent 60%, #8b0000 100%),
-    linear-gradient(to bottom, #8b0000, transparent 70%) !important;
   color: #fff !important;
   font-weight: bold;
 }
 
 /* Modificadores para celdas (td) */
 td.tonicaprincipal {
-  background: linear-gradient(to center, rgba(218, 165, 32, 0.1), transparent);
   border: 2px solid #daa520;
 }
 
 td.tonicarelativa {
-  background: linear-gradient(to center, rgba(184, 134, 11, 0.1), transparent);
   border: 2px solid #b8860b;
 }
 
 td.subdominante {
-  background: linear-gradient(to center, rgba(210, 105, 30, 0.1), transparent);
   border: 2px solid #b8651b;
 }
 
 td.dominantesecundaria {
-  background: linear-gradient(to center, rgba(205, 92, 92, 0.1), transparent);
   border: 2px solid #cc4125;
 }
 
 td.dominante {
-  background: linear-gradient(to center, rgba(160, 82, 45, 0.1), transparent);
   border: 2px solid #8b0000;
 }
 </style>

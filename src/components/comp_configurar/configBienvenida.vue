@@ -9,30 +9,34 @@
     </div>
 
     <div class="intro-section">
-      <h2>La musica como un sistema distribuido</h2>
+      <h2>La música como un sistema distribuido</h2>
       <p>
         Tanenbaum y Van Steen definen: "Un sistema distribuido es una colección
         de computadoras independientes que aparece ante sus usuarios como un
         sistema único y coherente" (1)
       </p>
       <p>
-        Cuando varios musicos tocan juntos se organizan para combinar armonias,
-        melodias y ritmos de modo que los escuchen como un sistema unico y
+        La definicion coincide con la de un grupo musical que combina armonías, melodías y ritmos de modo 
+        que se escuche como un tema único y
         coherente.
       </p>
       <p>
-        Para hacer estos los musicos se nutren de protocolos y mecanismos de
-        coordinacion que les permiten sincronizarse y compartir informacion.
+        Para hacer esto los músicos se nutren de protocolos y mecanismos de
+        coordinación que les permiten sincronizarse y compartir información.
       </p>
       <p>
-        El Fogon es un sistema distribuido para ayudar a los musicos en esos
-        quehaceres.
+        Los avances en la ciencia y la ingeniería fueron incorporados por los músicos: Pitágoras sintetizó la Matemática y la Armonía, 
+        la imprenta permitió la publicación de partituras, la revolución industrial el metrónomo de Maelzel.
       </p>
-      <p></p>
-      <p class="getting-started">
-        <strong>¡Comencemos!</strong> Te recomendamos completar tu perfil,
-        ajustar la vista y afinar tu instrumento antes de empezar.
+      <p>
+        Desde que esta internet circulan archivos con paginas de acordes que evolucionaron a paginas multimedia, archivos MIDI, aplicaciones de edición de partituras, etc.
       </p>
+      <p>la aplicación El Fogón pone a disposición de los músicos estos avances y propone un nuevo enfoque: 
+        cada músico puede acceder con su dispositivo a un Estado compartido de 
+        compás, canción, acordes, partituras, repertorio, etc.
+       </p>
+      <p>Esto permite que varios músicos toquen juntos y en sincronía, compartiendo y actualizando información en tiempo real
+        , pero viendo cada uno la información de su instrumento</p>
       <div class="reference">
         <p>
           (1) Andrew S. Tanenbaum y Maarten Van Steen (2007, Distributed
