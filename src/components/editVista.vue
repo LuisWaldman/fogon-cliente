@@ -133,32 +133,75 @@ function ClickSoloMidi() {
   }
 }
 
-// Funciones de mapeo para convertir entre valores y opciones de tamaño
-function tamañoAValor(tamaño: string, min: number, max: number): number {
-  const valoresBase: Record<string, number> = {
-    'muy-chico': 9,
-    chico: 18,
-    normal: 26,
-    grande: 50,
-    'muy-grande': 100,
-    enorme: 150,
-  }
-
-  const valorBase = valoresBase[tamaño] || 26
-
-  // Si el valor base está fuera del rango, ajustarlo al límite
-  if (valorBase < min) return min
-  if (valorBase > max) return max
-
-  return valorBase
+// Diccionarios de opciones para cada tipo de configuración
+const opcionesCompasesPorRenglon: Record<string, { valor: number; label: string }> = {
+  '1-compas': { valor: 1, label: '1 compás' },
+  '2-compases': { valor: 2, label: '2 compases' },
+  '3-compases': { valor: 3, label: '3 compases' },
+  '4-compases': { valor: 4, label: '4 compases' },
+  '5-compases': { valor: 5, label: '5 compases' },
+  '6-compases': { valor: 6, label: '6 compases' },
 }
 
-function valorATamaño(valor: number): string {
-  if (valor <= 13) return 'muy-chico'
-  if (valor <= 22) return 'chico'
-  if (valor <= 38) return 'normal'
-  if (valor <= 75) return 'grande'
-  if (valor <= 125) return 'muy-grande'
+const opcionesEscalaPentagrama: Record<string, { valor: number; label: string }> = {
+  'cerocuatro': { valor: 0.4, label: '0.4' },
+  'ceroseis': { valor: 0.6, label: '0.6' },
+  'cerocho': { valor: 0.8, label: '0.8' },
+  'unocero': { valor: 1.0, label: '1.0' },
+  'unodos': { valor: 1.2, label: '1.2' },
+  'uno4': { valor: 1.4, label: '1.4' },
+}
+
+const opcionesGenericas: Record<string, number> = {
+  'muy-chico': 0.0,   // min
+  'chico': 0.2,         // 20% del rango
+  'normal': 0.4,        // 40% del rango
+  'grande': 0.6,        // 60% del rango
+  'muy-grande': 0.8,  // 80% del rango
+  'enorme': 1.0,        // max
+}
+
+// Funciones de mapeo para convertir entre valores y opciones de tamaño
+function tamañoAValor(tamaño: string, min: number, max: number, esCompases: boolean = false, esEscala: boolean = false): number {
+  // Casos especiales
+  if (esCompases) {
+    const opcion = opcionesCompasesPorRenglon[tamaño]
+    return opcion ? opcion.valor : 4 // default 4 compases
+  }
+  
+  if (esEscala) {
+    const opcion = opcionesEscalaPentagrama[tamaño]
+    return opcion ? opcion.valor : 1.0 // default 1.0
+  }
+
+  // Porcentajes relativos al rango [min, max] para opciones genéricas
+  const porcentaje = opcionesGenericas[tamaño] ?? 0.4 // default a 'normal'
+  const valor = Math.round(min + (max - min) * porcentaje)
+
+  return valor
+}
+
+function valorATamaño(valor: number, min: number, max: number, esCompases: boolean = false, esEscala: boolean = false): string {
+  // Casos especiales
+  if (esCompases) {
+    const entrada = Object.entries(opcionesCompasesPorRenglon).find(([_, opt]) => opt.valor === valor)
+    return entrada ? entrada[0] : '4-compases'
+  }
+  
+  if (esEscala) {
+    const entrada = Object.entries(opcionesEscalaPentagrama).find(([_, opt]) => Math.abs(opt.valor - valor) < 0.1)
+    return entrada ? entrada[0] : 'normal'
+  }
+
+  // Para opciones genéricas basadas en porcentaje
+  const rango = max - min
+  const porcentaje = (valor - min) / rango
+  
+  if (porcentaje <= 0.1) return 'muy-chico'
+  if (porcentaje <= 0.3) return 'chico'
+  if (porcentaje <= 0.5) return 'normal'
+  if (porcentaje <= 0.7) return 'grande'
+  if (porcentaje <= 0.9) return 'muy-grande'
   return 'enorme'
 }
 
@@ -168,7 +211,10 @@ function cambiarTamaño(
   min: number,
   max: number,
 ) {
-  const valor = tamañoAValor(tamaño, min, max)
+  const esCompases = propiedad === 'compasesPorRenglon'
+  const esEscala = propiedad === 'escalaPentagrama'
+  const valor = tamañoAValor(tamaño, min, max, esCompases, esEscala)
+  
   switch (propiedad) {
     case 'tamanioLetra':
       configPantalla.value.tamanioLetra = valor
@@ -258,7 +304,7 @@ function handleSelectChange(
             <label>📏 Tamaño Letra</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.tamanioLetra)"
+                :value="valorATamaño(configPantalla.tamanioLetra, 8, 200)"
                 @change="handleSelectChange($event, 'tamanioLetra', 8, 200)"
                 class="select-input"
               >
@@ -279,7 +325,7 @@ function handleSelectChange(
             <label>📏 Tamaño Acordes</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.tamanioAcorde)"
+                :value="valorATamaño(configPantalla.tamanioAcorde, 8, 80)"
                 @change="handleSelectChange($event, 'tamanioAcorde', 8, 80)"
                 class="select-input"
               >
@@ -303,18 +349,19 @@ function handleSelectChange(
                 <label>📊 Compases x Sistema</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.compasesPorRenglon)"
+                    :value="valorATamaño(configPantalla.compasesPorRenglon, 1, 6, true, false)"
                     @change="
-                      handleSelectChange($event, 'compasesPorRenglon', 1, 8)
+                      handleSelectChange($event, 'compasesPorRenglon', 1, 6)
                     "
                     class="select-input"
                   >
-                    <option value="muy-chico">Muy chico</option>
-                    <option value="chico">Chico</option>
-                    <option value="normal">Normal</option>
-                    <option value="grande">Grande</option>
-                    <option value="muy-grande">Muy grande</option>
-                    <option value="enorme">Enorme</option>
+                    <option
+                      v-for="(opcion, key) in opcionesCompasesPorRenglon"
+                      :key="key"
+                      :value="key"
+                    >
+                      {{ opcion.label }}
+                    </option>
                   </select>
                   <span class="range-value">{{
                     configPantalla.compasesPorRenglon
@@ -325,9 +372,9 @@ function handleSelectChange(
                 <label>📐 Ancho Compás</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.anchoCompas)"
+                    :value="valorATamaño(configPantalla.anchoCompas, 160, 400)"
                     @change="
-                      handleSelectChange($event, 'anchoCompas', 120, 400)
+                      handleSelectChange($event, 'anchoCompas', 160, 400)
                     "
                     class="select-input"
                   >
@@ -349,8 +396,8 @@ function handleSelectChange(
                 <label>📏 Alto Pentagrama</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.altoCompas)"
-                    @change="handleSelectChange($event, 'altoCompas', 30, 120)"
+                    :value="valorATamaño(configPantalla.altoCompas, 12, 120)"
+                    @change="handleSelectChange($event, 'altoCompas', 12, 120)"
                     class="select-input"
                   >
                     <option value="muy-chico">Muy chico</option>
@@ -369,18 +416,19 @@ function handleSelectChange(
                 <label>🔍 Escala Líneas</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.escalaPentagrama)"
+                    :value="valorATamaño(configPantalla.escalaPentagrama, 0.4, 2.0, false, true)"
                     @change="
                       handleSelectChange($event, 'escalaPentagrama', 0.4, 2.0)
                     "
                     class="select-input"
                   >
-                    <option value="muy-chico">Muy chico</option>
-                    <option value="chico">Chico</option>
-                    <option value="normal">Normal</option>
-                    <option value="grande">Grande</option>
-                    <option value="muy-grande">Muy grande</option>
-                    <option value="enorme">Enorme</option>
+                    <option
+                      v-for="(opcion, key) in opcionesEscalaPentagrama"
+                      :key="key"
+                      :value="key"
+                    >
+                      {{ opcion.label }}
+                    </option>
                   </select>
                   <span class="range-value">{{
                     configPantalla.escalaPentagrama.toFixed(1)
@@ -415,7 +463,7 @@ function handleSelectChange(
             <label>📏 Alto Reproductor</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.altoReproductor)"
+                :value="valorATamaño(configPantalla.altoReproductor, 3, 398)"
                 @change="handleSelectChange($event, 'altoReproductor', 3, 398)"
                 class="select-input"
               >
@@ -514,7 +562,7 @@ function handleSelectChange(
             <label v-if="refModoVista === 'simple'">📐 % Alto Principal</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.anchoPrincipal)"
+                :value="valorATamaño(configPantalla.anchoPrincipal, 3, 98)"
                 @change="handleSelectChange($event, 'anchoPrincipal', 3, 98)"
                 class="select-input"
               >
@@ -535,7 +583,7 @@ function handleSelectChange(
             <label>📐 % Ancho Terciaria</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.anchoTerciaria)"
+                :value="valorATamaño(configPantalla.anchoTerciaria, 3, 98)"
                 @change="handleSelectChange($event, 'anchoTerciaria', 3, 98)"
                 class="select-input"
               >
@@ -639,7 +687,7 @@ function handleSelectChange(
               <label>📏 Letra</label>
               <div class="range-group">
                 <select
-                  :value="valorATamaño(configPantalla.tamanioParte)"
+                  :value="valorATamaño(configPantalla.tamanioParte, 8, 40)"
                   @change="handleSelectChange($event, 'tamanioParte', 8, 40)"
                   class="select-input"
                 >
@@ -659,7 +707,7 @@ function handleSelectChange(
               <label>📐 Alto</label>
               <div class="range-group">
                 <select
-                  :value="valorATamaño(configPantalla.anchoParte)"
+                  :value="valorATamaño(configPantalla.anchoParte, 0, 1000)"
                   @change="handleSelectChange($event, 'anchoParte', 0, 1000)"
                   class="select-input"
                 >
