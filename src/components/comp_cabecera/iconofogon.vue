@@ -165,7 +165,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          FILMAME
+          EL FOGON
         </div>
         <div
           class="titulo-Fogon"
