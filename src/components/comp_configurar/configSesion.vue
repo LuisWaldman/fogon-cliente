@@ -8,11 +8,11 @@ const newsesio = ref(new Sesion('default', 0, '', 0, 0))
 const sesionDefault = ref('')
 sesionDefault.value = localStorage.getItem('sesionDefault') || ''
 function cargarSesiones() {
-  appStore.aplicacion.cargarSesiones()
+  appStore.aplicacion.sesionManager.cargarSesiones()
 }
 const appStore = useAppStore()
 function crearSesion() {
-  appStore.aplicacion.CrearSesion()
+  appStore.aplicacion.crearSesion()
 }
 
 watch(
@@ -32,7 +32,7 @@ watch(
 )
 
 function cargarUsuariosSesion() {
-  appStore.aplicacion.CargarUsuariosSesion()
+  appStore.aplicacion.sesionManager.cargarUsuariosSesion()
 }
 if (appStore.estadosApp.estadoSesion === 'conectado') {
   cargarUsuariosSesion()

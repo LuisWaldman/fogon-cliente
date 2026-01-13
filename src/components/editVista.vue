@@ -134,7 +134,10 @@ function ClickSoloMidi() {
 }
 
 // Diccionarios de opciones para cada tipo de configuración
-const opcionesCompasesPorRenglon: Record<string, { valor: number; label: string }> = {
+const opcionesCompasesPorRenglon: Record<
+  string,
+  { valor: number; label: string }
+> = {
   '1-compas': { valor: 1, label: '1 compás' },
   '2-compases': { valor: 2, label: '2 compases' },
   '3-compases': { valor: 3, label: '3 compases' },
@@ -143,32 +146,41 @@ const opcionesCompasesPorRenglon: Record<string, { valor: number; label: string 
   '6-compases': { valor: 6, label: '6 compases' },
 }
 
-const opcionesEscalaPentagrama: Record<string, { valor: number; label: string }> = {
-  'cerocuatro': { valor: 0.4, label: '0.4' },
-  'ceroseis': { valor: 0.6, label: '0.6' },
-  'cerocho': { valor: 0.8, label: '0.8' },
-  'unocero': { valor: 1.0, label: '1.0' },
-  'unodos': { valor: 1.2, label: '1.2' },
-  'uno4': { valor: 1.4, label: '1.4' },
+const opcionesEscalaPentagrama: Record<
+  string,
+  { valor: number; label: string }
+> = {
+  cerocuatro: { valor: 0.4, label: '0.4' },
+  ceroseis: { valor: 0.6, label: '0.6' },
+  cerocho: { valor: 0.8, label: '0.8' },
+  unocero: { valor: 1.0, label: '1.0' },
+  unodos: { valor: 1.2, label: '1.2' },
+  uno4: { valor: 1.4, label: '1.4' },
 }
 
 const opcionesGenericas: Record<string, number> = {
-  'muy-chico': 0.0,   // min
-  'chico': 0.2,         // 20% del rango
-  'normal': 0.4,        // 40% del rango
-  'grande': 0.6,        // 60% del rango
-  'muy-grande': 0.8,  // 80% del rango
-  'enorme': 1.0,        // max
+  'muy-chico': 0.0, // min
+  chico: 0.2, // 20% del rango
+  normal: 0.4, // 40% del rango
+  grande: 0.6, // 60% del rango
+  'muy-grande': 0.8, // 80% del rango
+  enorme: 1.0, // max
 }
 
 // Funciones de mapeo para convertir entre valores y opciones de tamaño
-function tamañoAValor(tamaño: string, min: number, max: number, esCompases: boolean = false, esEscala: boolean = false): number {
+function tamañoAValor(
+  tamaño: string,
+  min: number,
+  max: number,
+  esCompases: boolean = false,
+  esEscala: boolean = false,
+): number {
   // Casos especiales
   if (esCompases) {
     const opcion = opcionesCompasesPorRenglon[tamaño]
     return opcion ? opcion.valor : 4 // default 4 compases
   }
-  
+
   if (esEscala) {
     const opcion = opcionesEscalaPentagrama[tamaño]
     return opcion ? opcion.valor : 1.0 // default 1.0
@@ -181,22 +193,32 @@ function tamañoAValor(tamaño: string, min: number, max: number, esCompases: bo
   return valor
 }
 
-function valorATamaño(valor: number, min: number, max: number, esCompases: boolean = false, esEscala: boolean = false): string {
+function valorATamaño(
+  valor: number,
+  min: number,
+  max: number,
+  esCompases: boolean = false,
+  esEscala: boolean = false,
+): string {
   // Casos especiales
   if (esCompases) {
-    const entrada = Object.entries(opcionesCompasesPorRenglon).find(([_, opt]) => opt.valor === valor)
+    const entrada = Object.entries(opcionesCompasesPorRenglon).find(
+      ([, opt]) => opt.valor === valor,
+    )
     return entrada ? entrada[0] : '4-compases'
   }
-  
+
   if (esEscala) {
-    const entrada = Object.entries(opcionesEscalaPentagrama).find(([_, opt]) => Math.abs(opt.valor - valor) < 0.1)
+    const entrada = Object.entries(opcionesEscalaPentagrama).find(
+      ([, opt]) => Math.abs(opt.valor - valor) < 0.1,
+    )
     return entrada ? entrada[0] : 'normal'
   }
 
   // Para opciones genéricas basadas en porcentaje
   const rango = max - min
   const porcentaje = (valor - min) / rango
-  
+
   if (porcentaje <= 0.1) return 'muy-chico'
   if (porcentaje <= 0.3) return 'chico'
   if (porcentaje <= 0.5) return 'normal'
@@ -214,7 +236,7 @@ function cambiarTamaño(
   const esCompases = propiedad === 'compasesPorRenglon'
   const esEscala = propiedad === 'escalaPentagrama'
   const valor = tamañoAValor(tamaño, min, max, esCompases, esEscala)
-  
+
   switch (propiedad) {
     case 'tamanioLetra':
       configPantalla.value.tamanioLetra = valor
@@ -349,7 +371,15 @@ function handleSelectChange(
                 <label>📊 Compases x Sistema</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.compasesPorRenglon, 1, 6, true, false)"
+                    :value="
+                      valorATamaño(
+                        configPantalla.compasesPorRenglon,
+                        1,
+                        6,
+                        true,
+                        false,
+                      )
+                    "
                     @change="
                       handleSelectChange($event, 'compasesPorRenglon', 1, 6)
                     "
@@ -416,7 +446,15 @@ function handleSelectChange(
                 <label>🔍 Escala Líneas</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.escalaPentagrama, 0.4, 2.0, false, true)"
+                    :value="
+                      valorATamaño(
+                        configPantalla.escalaPentagrama,
+                        0.4,
+                        2.0,
+                        false,
+                        true,
+                      )
+                    "
                     @change="
                       handleSelectChange($event, 'escalaPentagrama', 0.4, 2.0)
                     "

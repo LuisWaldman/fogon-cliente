@@ -16,27 +16,35 @@
         sistema único y coherente" (1)
       </p>
       <p>
-        La definicion coincide con la de un grupo musical que combina armonías, melodías y ritmos de modo 
-        que se escuche como un tema único y
-        coherente.
+        La definicion coincide con la de un grupo musical que combina armonías,
+        melodías y ritmos de modo que se escuche como un tema único y coherente.
       </p>
       <p>
         Para hacer esto los músicos se nutren de protocolos y mecanismos de
         coordinación que les permiten sincronizarse y compartir información.
       </p>
       <p>
-        Los avances en la ciencia y la ingeniería fueron incorporados por los músicos: Pitágoras sintetizó la Matemática y la Armonía, 
-        la imprenta permitió la publicación de partituras, la revolución industrial el metrónomo de Maelzel.
+        Los avances en la ciencia y la ingeniería fueron incorporados por los
+        músicos: Pitágoras sintetizó la Matemática y la Armonía, la imprenta
+        permitió la publicación de partituras, la revolución industrial el
+        metrónomo de Maelzel.
       </p>
       <p>
-        Desde que esta internet circulan archivos con paginas de acordes que evolucionaron a paginas multimedia, archivos MIDI, aplicaciones de edición de partituras, etc.
+        Desde que esta internet circulan archivos con paginas de acordes que
+        evolucionaron a paginas multimedia, archivos MIDI, aplicaciones de
+        edición de partituras, etc.
       </p>
-      <p>la aplicación El Fogón pone a disposición de los músicos estos avances y propone un nuevo enfoque: 
-        cada músico puede acceder con su dispositivo a un Estado compartido de 
-        compás, canción, acordes, partituras, repertorio, etc.
-       </p>
-      <p>Esto permite que varios músicos toquen juntos y en sincronía, compartiendo y actualizando información en tiempo real
-        , pero viendo cada uno la información de su instrumento</p>
+      <p>
+        la aplicación El Fogón pone a disposición de los músicos estos avances y
+        propone un nuevo enfoque: cada músico puede acceder con su dispositivo a
+        un Estado compartido de compás, canción, acordes, partituras,
+        repertorio, etc.
+      </p>
+      <p>
+        Esto permite que varios músicos toquen juntos y en sincronía,
+        compartiendo y actualizando información en tiempo real , pero viendo
+        cada uno la información de su instrumento
+      </p>
       <div class="reference">
         <p>
           (1) Andrew S. Tanenbaum y Maarten Van Steen (2007, Distributed

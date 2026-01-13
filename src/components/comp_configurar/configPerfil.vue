@@ -23,7 +23,7 @@ const fileInputRef = ref<HTMLInputElement | null>(null)
 
 function updateProfileWeb() {
   perfil.value.imagen = imageBase64.value
-  appStore.aplicacion.enviarPerfil(perfil.value)
+  appStore.aplicacion.conexionManager.enviarPerfil(perfil.value)
 }
 
 function updateProfile() {

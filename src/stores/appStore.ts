@@ -1,7 +1,7 @@
 // src/stores/appStore.ts
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import Aplicacion from '../aplicacion'
+import Aplicacion from '../modelo/aplicacion/aplicacion'
 import { Cancion } from '../modelo/cancion/cancion'
 import { Acordes, Parte } from '../modelo/cancion/acordes'
 import { Letra } from '../modelo/cancion/letra'

@@ -134,19 +134,16 @@ th {
 
 /* Modificadores para cabeceras (th) */
 th.tonicaprincipal {
- 
   color: #fff !important;
   font-weight: bold;
 }
 
 th.tonicarelativa {
-  
   color: #fff !important;
   font-weight: bold;
 }
 
 th.subdominante {
-  
   color: #fff !important;
   font-weight: bold;
 }
