@@ -149,21 +149,37 @@ export default class Aplicacion {
       (status: string) => this.onStatusChange(status),
     )
 
-    // Configurar handlers adicionales
-    this.conexionManager.setMensajesesionHandler((msj: string) => {
-      appStore.mensajes.push(msj)
-    })
+    this.setupHandlers()
+  }
 
-    this.conexionManager.setSesionesActualizadasHandler(() => {
-      this.sesionManager.cargarSesiones('Fogon de Luis')
-    })
+  private setupHandlers(): void {
+    this.conexionManager.setMensajesesionHandler((msj: string) =>
+      this.handleMensajeSesion(msj),
+    )
 
-    this.conexionManager.setActualizarUsuariosHandler(() => {
-      this.sesionManager.cargarUsuariosSesion()
-    })
+    this.conexionManager.setSesionesActualizadasHandler(() =>
+      this.handleSesionesActualizadas(),
+    )
+
+    this.conexionManager.setActualizarUsuariosHandler(() =>
+      this.handleActualizarUsuarios(),
+    )
 
     this.sesionManager.setupHandlers('Fogon de Luis')
     this.autenticacionManager.setupHandlers()
+  }
+
+  private handleMensajeSesion(msj: string): void {
+    const appStore = useAppStore()
+    appStore.mensajes.push(msj)
+  }
+
+  private handleSesionesActualizadas(): void {
+    this.sesionManager.cargarSesiones('Fogon de Luis')
+  }
+
+  private handleActualizarUsuarios(): void {
+    this.sesionManager.cargarUsuariosSesion()
   }
 
   private onConectado(_token: string, config: Configuracion): void {
