@@ -11,24 +11,24 @@ function setSesionDefault() {
   sesionDefault.value = newsesio.value.nombre
 }
 function cargarSesiones() {
-  appStore.aplicacion.cargarSesiones()
+  appStore.aplicacion.sesionManager.cargarSesiones()
 }
 const msj = ref('')
 const appStore = useAppStore()
 function crearSesion() {
-  appStore.aplicacion.CrearSesion()
+  appStore.aplicacion.crearSesion()
 }
 
 function MensajeASesion(msj: string) {
-  appStore.aplicacion.MensajeASesion(msj)
+  appStore.aplicacion.mensajeASesion(msj)
 }
 
 function unirmeSesion(sesion: string) {
-  appStore.aplicacion.UnirmeSesion(sesion)
+  appStore.aplicacion.unirmeSesion(sesion)
 }
 
 function SalirSesion() {
-  appStore.aplicacion.SalirSesion()
+  appStore.aplicacion.salirSesion()
 }
 
 watch(
@@ -48,7 +48,7 @@ watch(
 )
 
 function cargarUsuariosSesion() {
-  appStore.aplicacion.CargarUsuariosSesion()
+  appStore.aplicacion.sesionManager.cargarUsuariosSesion()
 }
 if (appStore.estadosApp.estadoSesion === 'conectado') {
   cargarUsuariosSesion()

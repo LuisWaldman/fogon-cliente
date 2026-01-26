@@ -94,7 +94,7 @@ function moverScroll(posX: number) {
   border-radius: 5px;
 }
 .acorde {
-  font-size: var(--tamanio-acordesolo);
+  font-size: var(--tamanio-acorde);
   margin: 1px;
   padding: 5px;
   border: 1px solid;
