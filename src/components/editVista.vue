@@ -501,8 +501,8 @@ function handleSelectChange(
             <label>📏 Alto Reproductor</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.altoReproductor, 3, 1398)"
-                @change="handleSelectChange($event, 'altoReproductor', 3, 1398)"
+                :value="valorATamaño(configPantalla.altoReproductor, 3, 1000)"
+                @change="handleSelectChange($event, 'altoReproductor', 3, 1000)"
                 class="select-input"
               >
                 <option value="muy-chico">Muy chico</option>
