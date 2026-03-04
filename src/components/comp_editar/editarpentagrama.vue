@@ -216,7 +216,7 @@ const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
     <div :style="estiloVistaPrincipal()">
       <TocarPentagrama
         :cancion="cancion"
-        :compas="compas"
+        :compas="editandoCompas"
         @clickCompas="cambiarCompas"
         @clickCambioModo="cambioModo"
         :editando="true"
