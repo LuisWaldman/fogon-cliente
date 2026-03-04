@@ -165,7 +165,7 @@ function clickFogon() {
           class="titulo-Fogon"
           v-if="appStore.estadosApp.estadoSesion != 'conectado'"
         >
-          TTP FOGON 0.1
+          TTP FOGON 0.2
         </div>
         <div
           class="titulo-Fogon"
