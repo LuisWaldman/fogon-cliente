@@ -216,7 +216,7 @@ const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
     <div :style="estiloVistaPrincipal()">
       <TocarPentagrama
         :cancion="cancion"
-        :compas="compas"
+        :compas="editandoCompas"
         @clickCompas="cambiarCompas"
         @clickCambioModo="cambioModo"
         :editando="true"
@@ -289,10 +289,12 @@ const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
 
         <div class="editor-panel">
           <editarCompas
-            v-if="cancion.pentagramas[idPentagramaEditando] && compas >= 0"
+            v-if="
+              cancion.pentagramas[idPentagramaEditando] && editandoCompas >= 0
+            "
             :cancion="cancion"
             :pentagramaId="idPentagramaEditando"
-            :compas="compas"
+            :compas="editandoCompas"
             @actualizoPentagrama="emit('actualizoPentagrama')"
           ></editarCompas>
         </div>
