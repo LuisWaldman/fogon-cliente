@@ -289,7 +289,9 @@ const compaces = pantalla.getConfiguracionPantalla().compasesPorRenglon
 
         <div class="editor-panel">
           <editarCompas
-            v-if="cancion.pentagramas[idPentagramaEditando] && editandoCompas >= 0"
+            v-if="
+              cancion.pentagramas[idPentagramaEditando] && editandoCompas >= 0
+            "
             :cancion="cancion"
             :pentagramaId="idPentagramaEditando"
             :compas="editandoCompas"
