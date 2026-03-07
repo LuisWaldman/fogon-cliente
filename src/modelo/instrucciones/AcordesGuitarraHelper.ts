@@ -132,6 +132,25 @@ export class AcordesGuitarraHelper {
       cuerda[2] = '3'
       cuerda[1] = '3'
     }
+    if (chordStr === 'B') {
+      cejilla = 2
+      cuerda[5] = 'x'
+      cuerda[3] = '4'
+      cuerda[2] = '4'
+      cuerda[1] = '4'
+    }
+    if (chordStr === 'F#') {
+      cejilla = 2
+      cuerda[5] = 'x'
+      cuerda[3] = '4'
+      cuerda[2] = '3'
+    }
+    if (chordStr === 'C#m') {
+      cejilla = 4
+      cuerda[3] = '5'
+      cuerda[2] = '5'
+      cuerda[1] = '4'
+    }
     return new AcordesCuerdas(chordStr, cejilla, cuerda)
   }
 }

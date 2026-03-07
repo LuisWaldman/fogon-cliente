@@ -117,6 +117,25 @@ export class AcordesUkeleleHelper {
       cuerda[2] = '1'
       cuerda[3] = '1'
     }
+    if (chordStr === 'B') {
+      cuerda[0] = '2'
+      cuerda[1] = '2'
+      cuerda[2] = '3'
+      cuerda[3] = '4'
+    }
+    if (chordStr === 'F#') {
+      cejilla = 1
+      cuerda[0] = '1'
+      cuerda[1] = '2'
+      cuerda[2] = '1'
+      cuerda[3] = '3'
+    }
+    if (chordStr === 'C#m') {
+      cejilla = 4
+      cuerda[1] = '4'
+      cuerda[2] = '5'
+      cuerda[3] = '6'
+    }
 
     return new AcordesCuerdas(chordStr, cejilla, cuerda)
   }
