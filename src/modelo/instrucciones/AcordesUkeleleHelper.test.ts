@@ -259,5 +259,35 @@ describe('Pruebo Los acordes de ukelele', () => {
       expect(acorde.cuerda[2]).toBe('1')
       expect(acorde.cuerda[3]).toBe('1')
     })
+
+    it('debe devolver el acorde B correctamente', () => {
+      const acorde = AcordesUkeleleHelper.getAcorde('B')
+      expect(acorde.acorde).toBe('B')
+      expect(acorde.cejilla).toBe(0)
+      expect(acorde.cuerda[0]).toBe('2')
+      expect(acorde.cuerda[1]).toBe('2')
+      expect(acorde.cuerda[2]).toBe('3')
+      expect(acorde.cuerda[3]).toBe('4')
+    })
+
+    it('debe devolver el acorde F# correctamente con cejilla', () => {
+      const acorde = AcordesUkeleleHelper.getAcorde('F#')
+      expect(acorde.acorde).toBe('F#')
+      expect(acorde.cejilla).toBe(1)
+      expect(acorde.cuerda[0]).toBe('1')
+      expect(acorde.cuerda[1]).toBe('2')
+      expect(acorde.cuerda[2]).toBe('1')
+      expect(acorde.cuerda[3]).toBe('3')
+    })
+
+    it('debe devolver el acorde C#m correctamente con cejilla', () => {
+      const acorde = AcordesUkeleleHelper.getAcorde('C#m')
+      expect(acorde.acorde).toBe('C#m')
+      expect(acorde.cejilla).toBe(4)
+      expect(acorde.cuerda[0]).toBe('0')
+      expect(acorde.cuerda[1]).toBe('4')
+      expect(acorde.cuerda[2]).toBe('5')
+      expect(acorde.cuerda[3]).toBe('6')
+    })
   })
 })

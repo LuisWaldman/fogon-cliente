@@ -164,5 +164,23 @@ describe('Pruebo Los acordes de piano', () => {
       expect(acorde.acorde).toBe('Gm7')
       expect(acorde.teclas).toEqual(['G4', 'Bb4', 'D5', 'F5'])
     })
+
+    it('debe devolver el acorde B correctamente', () => {
+      const acorde = AcordesTecladosHelper.getAcorde('B')
+      expect(acorde.acorde).toBe('B')
+      expect(acorde.teclas).toEqual(['B4', 'D#5', 'F#5'])
+    })
+
+    it('debe devolver el acorde F# correctamente', () => {
+      const acorde = AcordesTecladosHelper.getAcorde('F#')
+      expect(acorde.acorde).toBe('F#')
+      expect(acorde.teclas).toEqual(['F#4', 'A#4', 'C#5'])
+    })
+
+    it('debe devolver el acorde C#m correctamente', () => {
+      const acorde = AcordesTecladosHelper.getAcorde('C#m')
+      expect(acorde.acorde).toBe('C#m')
+      expect(acorde.teclas).toEqual(['C#4', 'E4', 'G#4'])
+    })
   })
 })

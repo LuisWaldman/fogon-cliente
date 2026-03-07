@@ -133,8 +133,13 @@ function ClickSoloMidi() {
   }
 }
 
+interface OpcionSelector {
+  valor: number
+  label: string
+}
+
 // Opciones de cada combo con valores reales
-const opcionesCompasesPorRenglon = [
+const opcionesCompasesPorRenglon: OpcionSelector[] = [
   { valor: 1, label: '1 compás' },
   { valor: 2, label: '2 compases' },
   { valor: 3, label: '3 compases' },
@@ -143,7 +148,7 @@ const opcionesCompasesPorRenglon = [
   { valor: 6, label: '6 compases' },
 ]
 
-const opcionesEscalaPentagrama = [
+const opcionesEscalaPentagrama: OpcionSelector[] = [
   { valor: 0.4, label: '0.4' },
   { valor: 0.6, label: '0.6' },
   { valor: 0.8, label: '0.8' },
@@ -152,17 +157,8 @@ const opcionesEscalaPentagrama = [
   { valor: 2, label: '2' },
 ]
 
-const opcionesLetra = [
-  { valor: 8,   label: 'Muy chico' },
-  { valor: 16,  label: 'Chico' },
-  { valor: 24,  label: 'Normal' },
-  { valor: 32, label: 'Grande' },
-  { valor: 40, label: 'Muy grande' },
-  { valor: 66, label: 'Enorme' },
-]
-
-const opcionesAcorde = [
-  { valor: 8,  label: 'Muy chico' },
+const opcionesLetra: OpcionSelector[] = [
+  { valor: 8, label: 'Muy chico' },
   { valor: 16, label: 'Chico' },
   { valor: 24, label: 'Normal' },
   { valor: 32, label: 'Grande' },
@@ -170,7 +166,16 @@ const opcionesAcorde = [
   { valor: 66, label: 'Enorme' },
 ]
 
-const opcionesAnchoCompas = [
+const opcionesAcorde: OpcionSelector[] = [
+  { valor: 8, label: 'Muy chico' },
+  { valor: 16, label: 'Chico' },
+  { valor: 24, label: 'Normal' },
+  { valor: 32, label: 'Grande' },
+  { valor: 40, label: 'Muy grande' },
+  { valor: 66, label: 'Enorme' },
+]
+
+const opcionesAnchoCompas: OpcionSelector[] = [
   { valor: 160, label: 'Muy chico' },
   { valor: 208, label: 'Chico' },
   { valor: 256, label: 'Normal' },
@@ -179,26 +184,26 @@ const opcionesAnchoCompas = [
   { valor: 400, label: 'Enorme' },
 ]
 
-const opcionesAltoCompas = [
-  { valor: 12,  label: 'Muy chico' },
-  { valor: 34,  label: 'Chico' },
-  { valor: 55,  label: 'Normal' },
-  { valor: 77,  label: 'Grande' },
-  { valor: 98,  label: 'Muy grande' },
+const opcionesAltoCompas: OpcionSelector[] = [
+  { valor: 12, label: 'Muy chico' },
+  { valor: 34, label: 'Chico' },
+  { valor: 55, label: 'Normal' },
+  { valor: 77, label: 'Grande' },
+  { valor: 98, label: 'Muy grande' },
   { valor: 120, label: 'Enorme' },
 ]
 
-const opcionesAltoReproductor = [
-  { valor: 3,    label: 'Muy chico' },
-  { valor: 202,  label: 'Chico' },
-  { valor: 402,  label: 'Normal' },
-  { valor: 601,  label: 'Grande' },
-  { valor: 801,  label: 'Muy grande' },
+const opcionesAltoReproductor: OpcionSelector[] = [
+  { valor: 3, label: 'Muy chico' },
+  { valor: 202, label: 'Chico' },
+  { valor: 402, label: 'Normal' },
+  { valor: 601, label: 'Grande' },
+  { valor: 801, label: 'Muy grande' },
   { valor: 1000, label: 'Enorme' },
 ]
 
-const opcionesAnchoPrincipal = [
-  { valor: 3,  label: 'Muy chico' },
+const opcionesAnchoPrincipal: OpcionSelector[] = [
+  { valor: 3, label: 'Muy chico' },
   { valor: 22, label: 'Chico' },
   { valor: 41, label: 'Normal' },
   { valor: 60, label: 'Grande' },
@@ -206,8 +211,8 @@ const opcionesAnchoPrincipal = [
   { valor: 98, label: 'Enorme' },
 ]
 
-const opcionesAnchoTerciaria = [
-  { valor: 3,  label: 'Muy chico' },
+const opcionesAnchoTerciaria: OpcionSelector[] = [
+  { valor: 3, label: 'Muy chico' },
   { valor: 22, label: 'Chico' },
   { valor: 41, label: 'Normal' },
   { valor: 60, label: 'Grande' },
@@ -215,8 +220,8 @@ const opcionesAnchoTerciaria = [
   { valor: 98, label: 'Enorme' },
 ]
 
-const opcionesTamanioParte = [
-  { valor: 8,  label: 'Muy chico' },
+const opcionesTamanioParte: OpcionSelector[] = [
+  { valor: 8, label: 'Muy chico' },
   { valor: 14, label: 'Chico' },
   { valor: 21, label: 'Normal' },
   { valor: 27, label: 'Grande' },
@@ -224,12 +229,12 @@ const opcionesTamanioParte = [
   { valor: 40, label: 'Enorme' },
 ]
 
-const opcionesAnchoParte = [
-  { valor: 0,    label: 'Muy chico' },
-  { valor: 200,  label: 'Chico' },
-  { valor: 400,  label: 'Normal' },
-  { valor: 600,  label: 'Grande' },
-  { valor: 800,  label: 'Muy grande' },
+const opcionesAnchoParte: OpcionSelector[] = [
+  { valor: 0, label: 'Muy chico' },
+  { valor: 200, label: 'Chico' },
+  { valor: 400, label: 'Normal' },
+  { valor: 600, label: 'Grande' },
+  { valor: 800, label: 'Muy grande' },
   { valor: 1000, label: 'Enorme' },
 ]
 
@@ -238,7 +243,7 @@ function handleSelectChange(
   propiedad: keyof typeof configPantalla.value,
 ) {
   const val = Number((event.target as HTMLSelectElement).value)
-  ;(configPantalla.value as any)[propiedad] = val
+  ;(configPantalla.value as unknown as Record<string, number>)[propiedad] = val
 }
 </script>
 
@@ -287,7 +292,13 @@ function handleSelectChange(
                 @change="handleSelectChange($event, 'tamanioLetra')"
                 class="select-input"
               >
-                <option v-for="opt in opcionesLetra" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                <option
+                  v-for="opt in opcionesLetra"
+                  :key="opt.valor"
+                  :value="opt.valor"
+                >
+                  {{ opt.label }}
+                </option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.tamanioLetra }}px</span
@@ -303,7 +314,13 @@ function handleSelectChange(
                 @change="handleSelectChange($event, 'tamanioAcorde')"
                 class="select-input"
               >
-                <option v-for="opt in opcionesAcorde" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                <option
+                  v-for="opt in opcionesAcorde"
+                  :key="opt.valor"
+                  :value="opt.valor"
+                >
+                  {{ opt.label }}
+                </option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.tamanioAcorde }}px</span
@@ -343,7 +360,13 @@ function handleSelectChange(
                     @change="handleSelectChange($event, 'anchoCompas')"
                     class="select-input"
                   >
-                    <option v-for="opt in opcionesAnchoCompas" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                    <option
+                      v-for="opt in opcionesAnchoCompas"
+                      :key="opt.valor"
+                      :value="opt.valor"
+                    >
+                      {{ opt.label }}
+                    </option>
                   </select>
                   <span class="range-value"
                     >{{ configPantalla.anchoCompas }}px</span
@@ -360,7 +383,13 @@ function handleSelectChange(
                     @change="handleSelectChange($event, 'altoCompas')"
                     class="select-input"
                   >
-                    <option v-for="opt in opcionesAltoCompas" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                    <option
+                      v-for="opt in opcionesAltoCompas"
+                      :key="opt.valor"
+                      :value="opt.valor"
+                    >
+                      {{ opt.label }}
+                    </option>
                   </select>
                   <span class="range-value"
                     >{{ configPantalla.altoCompas }}px</span
@@ -420,7 +449,13 @@ function handleSelectChange(
                 @change="handleSelectChange($event, 'altoReproductor')"
                 class="select-input"
               >
-                <option v-for="opt in opcionesAltoReproductor" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                <option
+                  v-for="opt in opcionesAltoReproductor"
+                  :key="opt.valor"
+                  :value="opt.valor"
+                >
+                  {{ opt.label }}
+                </option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.altoReproductor }}px</span
@@ -514,7 +549,13 @@ function handleSelectChange(
                 @change="handleSelectChange($event, 'anchoPrincipal')"
                 class="select-input"
               >
-                <option v-for="opt in opcionesAnchoPrincipal" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                <option
+                  v-for="opt in opcionesAnchoPrincipal"
+                  :key="opt.valor"
+                  :value="opt.valor"
+                >
+                  {{ opt.label }}
+                </option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.anchoPrincipal }}%</span
@@ -530,7 +571,13 @@ function handleSelectChange(
                 @change="handleSelectChange($event, 'anchoTerciaria')"
                 class="select-input"
               >
-                <option v-for="opt in opcionesAnchoTerciaria" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                <option
+                  v-for="opt in opcionesAnchoTerciaria"
+                  :key="opt.valor"
+                  :value="opt.valor"
+                >
+                  {{ opt.label }}
+                </option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.anchoTerciaria }}%</span
@@ -629,7 +676,13 @@ function handleSelectChange(
                   @change="handleSelectChange($event, 'tamanioParte')"
                   class="select-input"
                 >
-                  <option v-for="opt in opcionesTamanioParte" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                  <option
+                    v-for="opt in opcionesTamanioParte"
+                    :key="opt.valor"
+                    :value="opt.valor"
+                  >
+                    {{ opt.label }}
+                  </option>
                 </select>
                 <span class="range-value"
                   >{{ configPantalla.tamanioParte }}px</span
@@ -644,7 +697,13 @@ function handleSelectChange(
                   @change="handleSelectChange($event, 'anchoParte')"
                   class="select-input"
                 >
-                  <option v-for="opt in opcionesAnchoParte" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
+                  <option
+                    v-for="opt in opcionesAnchoParte"
+                    :key="opt.valor"
+                    :value="opt.valor"
+                  >
+                    {{ opt.label }}
+                  </option>
                 </select>
                 <span class="range-value"
                   >{{ configPantalla.anchoParte }}px</span

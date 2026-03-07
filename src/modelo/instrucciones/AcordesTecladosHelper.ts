@@ -76,6 +76,15 @@ export class AcordesTecladosHelper {
     if (chordStr === 'Gm7') {
       teclas.push('G4', 'Bb4', 'D5', 'F5')
     }
+    if (chordStr === 'B') {
+      teclas.push('B4', 'D#5', 'F#5')
+    }
+    if (chordStr === 'F#') {
+      teclas.push('F#4', 'A#4', 'C#5')
+    }
+    if (chordStr === 'C#m') {
+      teclas.push('C#4', 'E4', 'G#4')
+    }
 
     return new AcordesTeclas(chordStr, teclas)
   }
