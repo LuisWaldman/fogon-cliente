@@ -133,155 +133,112 @@ function ClickSoloMidi() {
   }
 }
 
-// Diccionarios de opciones para cada tipo de configuración
-const opcionesCompasesPorRenglon: Record<
-  string,
-  { valor: number; label: string }
-> = {
-  '1-compas': { valor: 1, label: '1 compás' },
-  '2-compases': { valor: 2, label: '2 compases' },
-  '3-compases': { valor: 3, label: '3 compases' },
-  '4-compases': { valor: 4, label: '4 compases' },
-  '5-compases': { valor: 5, label: '5 compases' },
-  '6-compases': { valor: 6, label: '6 compases' },
-}
+// Opciones de cada combo con valores reales
+const opcionesCompasesPorRenglon = [
+  { valor: 1, label: '1 compás' },
+  { valor: 2, label: '2 compases' },
+  { valor: 3, label: '3 compases' },
+  { valor: 4, label: '4 compases' },
+  { valor: 5, label: '5 compases' },
+  { valor: 6, label: '6 compases' },
+]
 
-const opcionesEscalaPentagrama: Record<
-  string,
-  { valor: number; label: string }
-> = {
-  cerocuatro: { valor: 0.4, label: '0.4' },
-  ceroseis: { valor: 0.6, label: '0.6' },
-  cerocho: { valor: 0.8, label: '0.8' },
-  unocero: { valor: 1.0, label: '1.0' },
-  unodos: { valor: 1.2, label: '1.2' },
-  uno4: { valor: 1.4, label: '1.4' },
-}
+const opcionesEscalaPentagrama = [
+  { valor: 0.4, label: '0.4' },
+  { valor: 0.6, label: '0.6' },
+  { valor: 0.8, label: '0.8' },
+  { valor: 1.0, label: '1.0' },
+  { valor: 1.4, label: '1.4' },
+  { valor: 2, label: '2' },
+]
 
-const opcionesGenericas: Record<string, number> = {
-  'muy-chico': 0.0, // min
-  chico: 0.2, // 20% del rango
-  normal: 0.4, // 40% del rango
-  grande: 0.6, // 60% del rango
-  'muy-grande': 0.8, // 80% del rango
-  enorme: 1.0, // max
-}
+const opcionesLetra = [
+  { valor: 8,   label: 'Muy chico' },
+  { valor: 16,  label: 'Chico' },
+  { valor: 24,  label: 'Normal' },
+  { valor: 32, label: 'Grande' },
+  { valor: 40, label: 'Muy grande' },
+  { valor: 66, label: 'Enorme' },
+]
 
-// Funciones de mapeo para convertir entre valores y opciones de tamaño
-function tamañoAValor(
-  tamaño: string,
-  min: number,
-  max: number,
-  esCompases: boolean = false,
-  esEscala: boolean = false,
-): number {
-  // Casos especiales
-  if (esCompases) {
-    const opcion = opcionesCompasesPorRenglon[tamaño]
-    return opcion ? opcion.valor : 4 // default 4 compases
-  }
+const opcionesAcorde = [
+  { valor: 8,  label: 'Muy chico' },
+  { valor: 16, label: 'Chico' },
+  { valor: 24, label: 'Normal' },
+  { valor: 32, label: 'Grande' },
+  { valor: 40, label: 'Muy grande' },
+  { valor: 66, label: 'Enorme' },
+]
 
-  if (esEscala) {
-    const opcion = opcionesEscalaPentagrama[tamaño]
-    return opcion ? opcion.valor : 1.0 // default 1.0
-  }
+const opcionesAnchoCompas = [
+  { valor: 160, label: 'Muy chico' },
+  { valor: 208, label: 'Chico' },
+  { valor: 256, label: 'Normal' },
+  { valor: 304, label: 'Grande' },
+  { valor: 352, label: 'Muy grande' },
+  { valor: 400, label: 'Enorme' },
+]
 
-  // Porcentajes relativos al rango [min, max] para opciones genéricas
-  const porcentaje = opcionesGenericas[tamaño] ?? 0.4 // default a 'normal'
-  const valor = Math.round(min + (max - min) * porcentaje)
+const opcionesAltoCompas = [
+  { valor: 12,  label: 'Muy chico' },
+  { valor: 34,  label: 'Chico' },
+  { valor: 55,  label: 'Normal' },
+  { valor: 77,  label: 'Grande' },
+  { valor: 98,  label: 'Muy grande' },
+  { valor: 120, label: 'Enorme' },
+]
 
-  return valor
-}
+const opcionesAltoReproductor = [
+  { valor: 3,    label: 'Muy chico' },
+  { valor: 202,  label: 'Chico' },
+  { valor: 402,  label: 'Normal' },
+  { valor: 601,  label: 'Grande' },
+  { valor: 801,  label: 'Muy grande' },
+  { valor: 1000, label: 'Enorme' },
+]
 
-function valorATamaño(
-  valor: number,
-  min: number,
-  max: number,
-  esCompases: boolean = false,
-  esEscala: boolean = false,
-): string {
-  // Casos especiales
-  if (esCompases) {
-    const entrada = Object.entries(opcionesCompasesPorRenglon).find(
-      ([, opt]) => opt.valor === valor,
-    )
-    return entrada ? entrada[0] : '4-compases'
-  }
+const opcionesAnchoPrincipal = [
+  { valor: 3,  label: 'Muy chico' },
+  { valor: 22, label: 'Chico' },
+  { valor: 41, label: 'Normal' },
+  { valor: 60, label: 'Grande' },
+  { valor: 79, label: 'Muy grande' },
+  { valor: 98, label: 'Enorme' },
+]
 
-  if (esEscala) {
-    const entrada = Object.entries(opcionesEscalaPentagrama).find(
-      ([, opt]) => Math.abs(opt.valor - valor) < 0.1,
-    )
-    return entrada ? entrada[0] : 'normal'
-  }
+const opcionesAnchoTerciaria = [
+  { valor: 3,  label: 'Muy chico' },
+  { valor: 22, label: 'Chico' },
+  { valor: 41, label: 'Normal' },
+  { valor: 60, label: 'Grande' },
+  { valor: 79, label: 'Muy grande' },
+  { valor: 98, label: 'Enorme' },
+]
 
-  // Para opciones genéricas basadas en porcentaje
-  const rango = max - min
-  const porcentaje = (valor - min) / rango
+const opcionesTamanioParte = [
+  { valor: 8,  label: 'Muy chico' },
+  { valor: 14, label: 'Chico' },
+  { valor: 21, label: 'Normal' },
+  { valor: 27, label: 'Grande' },
+  { valor: 34, label: 'Muy grande' },
+  { valor: 40, label: 'Enorme' },
+]
 
-  if (porcentaje <= 0.1) return 'muy-chico'
-  if (porcentaje <= 0.3) return 'chico'
-  if (porcentaje <= 0.5) return 'normal'
-  if (porcentaje <= 0.7) return 'grande'
-  if (porcentaje <= 0.9) return 'muy-grande'
-  return 'enorme'
-}
-
-function cambiarTamaño(
-  propiedad: keyof typeof configPantalla.value,
-  tamaño: string,
-  min: number,
-  max: number,
-) {
-  const esCompases = propiedad === 'compasesPorRenglon'
-  const esEscala = propiedad === 'escalaPentagrama'
-  const valor = tamañoAValor(tamaño, min, max, esCompases, esEscala)
-
-  switch (propiedad) {
-    case 'tamanioLetra':
-      configPantalla.value.tamanioLetra = valor
-      break
-    case 'tamanioAcorde':
-      configPantalla.value.tamanioAcorde = valor
-      break
-    case 'compasesPorRenglon':
-      configPantalla.value.compasesPorRenglon = valor
-      break
-    case 'anchoCompas':
-      configPantalla.value.anchoCompas = valor
-      break
-    case 'altoCompas':
-      configPantalla.value.altoCompas = valor
-      break
-    case 'escalaPentagrama':
-      configPantalla.value.escalaPentagrama = valor
-      break
-    case 'altoReproductor':
-      configPantalla.value.altoReproductor = valor
-      break
-    case 'anchoPrincipal':
-      configPantalla.value.anchoPrincipal = valor
-      break
-    case 'anchoTerciaria':
-      configPantalla.value.anchoTerciaria = valor
-      break
-    case 'tamanioParte':
-      configPantalla.value.tamanioParte = valor
-      break
-    case 'anchoParte':
-      configPantalla.value.anchoParte = valor
-      break
-  }
-}
+const opcionesAnchoParte = [
+  { valor: 0,    label: 'Muy chico' },
+  { valor: 200,  label: 'Chico' },
+  { valor: 400,  label: 'Normal' },
+  { valor: 600,  label: 'Grande' },
+  { valor: 800,  label: 'Muy grande' },
+  { valor: 1000, label: 'Enorme' },
+]
 
 function handleSelectChange(
   event: Event,
   propiedad: keyof typeof configPantalla.value,
-  min: number,
-  max: number,
 ) {
-  const target = event.target as HTMLSelectElement
-  cambiarTamaño(propiedad, target.value, min, max)
+  const val = Number((event.target as HTMLSelectElement).value)
+  ;(configPantalla.value as any)[propiedad] = val
 }
 </script>
 
@@ -326,16 +283,11 @@ function handleSelectChange(
             <label>📏 Tamaño Letra</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.tamanioLetra, 8, 200)"
-                @change="handleSelectChange($event, 'tamanioLetra', 8, 200)"
+                :value="configPantalla.tamanioLetra"
+                @change="handleSelectChange($event, 'tamanioLetra')"
                 class="select-input"
               >
-                <option value="muy-chico">Muy chico</option>
-                <option value="chico">Chico</option>
-                <option value="normal">Normal</option>
-                <option value="grande">Grande</option>
-                <option value="muy-grande">Muy grande</option>
-                <option value="enorme">Enorme</option>
+                <option v-for="opt in opcionesLetra" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.tamanioLetra }}px</span
@@ -347,16 +299,11 @@ function handleSelectChange(
             <label>📏 Tamaño Acordes</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.tamanioAcorde, 8, 80)"
-                @change="handleSelectChange($event, 'tamanioAcorde', 8, 80)"
+                :value="configPantalla.tamanioAcorde"
+                @change="handleSelectChange($event, 'tamanioAcorde')"
                 class="select-input"
               >
-                <option value="muy-chico">Muy chico</option>
-                <option value="chico">Chico</option>
-                <option value="normal">Normal</option>
-                <option value="grande">Grande</option>
-                <option value="muy-grande">Muy grande</option>
-                <option value="enorme">Enorme</option>
+                <option v-for="opt in opcionesAcorde" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.tamanioAcorde }}px</span
@@ -371,24 +318,14 @@ function handleSelectChange(
                 <label>📊 Compases x Sistema</label>
                 <div class="range-group">
                   <select
-                    :value="
-                      valorATamaño(
-                        configPantalla.compasesPorRenglon,
-                        1,
-                        6,
-                        true,
-                        false,
-                      )
-                    "
-                    @change="
-                      handleSelectChange($event, 'compasesPorRenglon', 1, 6)
-                    "
+                    :value="configPantalla.compasesPorRenglon"
+                    @change="handleSelectChange($event, 'compasesPorRenglon')"
                     class="select-input"
                   >
                     <option
-                      v-for="(opcion, key) in opcionesCompasesPorRenglon"
-                      :key="key"
-                      :value="key"
+                      v-for="opcion in opcionesCompasesPorRenglon"
+                      :key="opcion.valor"
+                      :value="opcion.valor"
                     >
                       {{ opcion.label }}
                     </option>
@@ -402,18 +339,11 @@ function handleSelectChange(
                 <label>📐 Ancho Compás</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.anchoCompas, 160, 400)"
-                    @change="
-                      handleSelectChange($event, 'anchoCompas', 160, 400)
-                    "
+                    :value="configPantalla.anchoCompas"
+                    @change="handleSelectChange($event, 'anchoCompas')"
                     class="select-input"
                   >
-                    <option value="muy-chico">Muy chico</option>
-                    <option value="chico">Chico</option>
-                    <option value="normal">Normal</option>
-                    <option value="grande">Grande</option>
-                    <option value="muy-grande">Muy grande</option>
-                    <option value="enorme">Enorme</option>
+                    <option v-for="opt in opcionesAnchoCompas" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
                   </select>
                   <span class="range-value"
                     >{{ configPantalla.anchoCompas }}px</span
@@ -426,16 +356,11 @@ function handleSelectChange(
                 <label>📏 Alto Pentagrama</label>
                 <div class="range-group">
                   <select
-                    :value="valorATamaño(configPantalla.altoCompas, 12, 120)"
-                    @change="handleSelectChange($event, 'altoCompas', 12, 120)"
+                    :value="configPantalla.altoCompas"
+                    @change="handleSelectChange($event, 'altoCompas')"
                     class="select-input"
                   >
-                    <option value="muy-chico">Muy chico</option>
-                    <option value="chico">Chico</option>
-                    <option value="normal">Normal</option>
-                    <option value="grande">Grande</option>
-                    <option value="muy-grande">Muy grande</option>
-                    <option value="enorme">Enorme</option>
+                    <option v-for="opt in opcionesAltoCompas" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
                   </select>
                   <span class="range-value"
                     >{{ configPantalla.altoCompas }}px</span
@@ -446,24 +371,14 @@ function handleSelectChange(
                 <label>🔍 Escala Líneas</label>
                 <div class="range-group">
                   <select
-                    :value="
-                      valorATamaño(
-                        configPantalla.escalaPentagrama,
-                        0.4,
-                        2.0,
-                        false,
-                        true,
-                      )
-                    "
-                    @change="
-                      handleSelectChange($event, 'escalaPentagrama', 0.4, 2.0)
-                    "
+                    :value="configPantalla.escalaPentagrama"
+                    @change="handleSelectChange($event, 'escalaPentagrama')"
                     class="select-input"
                   >
                     <option
-                      v-for="(opcion, key) in opcionesEscalaPentagrama"
-                      :key="key"
-                      :value="key"
+                      v-for="opcion in opcionesEscalaPentagrama"
+                      :key="opcion.valor"
+                      :value="opcion.valor"
                     >
                       {{ opcion.label }}
                     </option>
@@ -501,16 +416,11 @@ function handleSelectChange(
             <label>📏 Alto Reproductor</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.altoReproductor, 3, 1000)"
-                @change="handleSelectChange($event, 'altoReproductor', 3, 1000)"
+                :value="configPantalla.altoReproductor"
+                @change="handleSelectChange($event, 'altoReproductor')"
                 class="select-input"
               >
-                <option value="muy-chico">Muy chico</option>
-                <option value="chico">Chico</option>
-                <option value="normal">Normal</option>
-                <option value="grande">Grande</option>
-                <option value="muy-grande">Muy grande</option>
-                <option value="enorme">Enorme</option>
+                <option v-for="opt in opcionesAltoReproductor" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.altoReproductor }}px</span
@@ -600,16 +510,11 @@ function handleSelectChange(
             <label v-if="refModoVista === 'simple'">📐 % Alto Principal</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.anchoPrincipal, 3, 98)"
-                @change="handleSelectChange($event, 'anchoPrincipal', 3, 98)"
+                :value="configPantalla.anchoPrincipal"
+                @change="handleSelectChange($event, 'anchoPrincipal')"
                 class="select-input"
               >
-                <option value="muy-chico">Muy chico</option>
-                <option value="chico">Chico</option>
-                <option value="normal">Normal</option>
-                <option value="grande">Grande</option>
-                <option value="muy-grande">Muy grande</option>
-                <option value="enorme">Enorme</option>
+                <option v-for="opt in opcionesAnchoPrincipal" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.anchoPrincipal }}%</span
@@ -621,16 +526,11 @@ function handleSelectChange(
             <label>📐 % Ancho Terciaria</label>
             <div class="range-group">
               <select
-                :value="valorATamaño(configPantalla.anchoTerciaria, 3, 98)"
-                @change="handleSelectChange($event, 'anchoTerciaria', 3, 98)"
+                :value="configPantalla.anchoTerciaria"
+                @change="handleSelectChange($event, 'anchoTerciaria')"
                 class="select-input"
               >
-                <option value="muy-chico">Muy chico</option>
-                <option value="chico">Chico</option>
-                <option value="normal">Normal</option>
-                <option value="grande">Grande</option>
-                <option value="muy-grande">Muy grande</option>
-                <option value="enorme">Enorme</option>
+                <option v-for="opt in opcionesAnchoTerciaria" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
               </select>
               <span class="range-value"
                 >{{ configPantalla.anchoTerciaria }}%</span
@@ -725,16 +625,11 @@ function handleSelectChange(
               <label>📏 Letra</label>
               <div class="range-group">
                 <select
-                  :value="valorATamaño(configPantalla.tamanioParte, 8, 40)"
-                  @change="handleSelectChange($event, 'tamanioParte', 8, 40)"
+                  :value="configPantalla.tamanioParte"
+                  @change="handleSelectChange($event, 'tamanioParte')"
                   class="select-input"
                 >
-                  <option value="muy-chico">Muy chico</option>
-                  <option value="chico">Chico</option>
-                  <option value="normal">Normal</option>
-                  <option value="grande">Grande</option>
-                  <option value="muy-grande">Muy grande</option>
-                  <option value="enorme">Enorme</option>
+                  <option v-for="opt in opcionesTamanioParte" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
                 </select>
                 <span class="range-value"
                   >{{ configPantalla.tamanioParte }}px</span
@@ -745,16 +640,11 @@ function handleSelectChange(
               <label>📐 Alto</label>
               <div class="range-group">
                 <select
-                  :value="valorATamaño(configPantalla.anchoParte, 0, 1000)"
-                  @change="handleSelectChange($event, 'anchoParte', 0, 1000)"
+                  :value="configPantalla.anchoParte"
+                  @change="handleSelectChange($event, 'anchoParte')"
                   class="select-input"
                 >
-                  <option value="muy-chico">Muy chico</option>
-                  <option value="chico">Chico</option>
-                  <option value="normal">Normal</option>
-                  <option value="grande">Grande</option>
-                  <option value="muy-grande">Muy grande</option>
-                  <option value="enorme">Enorme</option>
+                  <option v-for="opt in opcionesAnchoParte" :key="opt.valor" :value="opt.valor">{{ opt.label }}</option>
                 </select>
                 <span class="range-value"
                   >{{ configPantalla.anchoParte }}px</span
