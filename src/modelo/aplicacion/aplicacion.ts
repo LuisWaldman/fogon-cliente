@@ -14,15 +14,17 @@ import { ConexionManager } from './ConexionManager'
 import { SesionManager } from './SesionManager'
 import { AutenticacionManager } from './AutenticacionManager'
 import type { RolesSesion } from '../userSesion'
+import { WakeLockManager } from '../../helpers/WakeLockManager'
 
 export default class Aplicacion {
-  reproductor: Reproductor = new Reproductor()
+  reproductor: Reproductor
   configuracion: Configuracion = Configuracion.getInstance()
   indiceHelper: IndiceHelper = IndiceHelper.getInstance()
   conexionManager: ConexionManager = new ConexionManager()
   sesionManager: SesionManager
   autenticacionManager: AutenticacionManager
   router: Router | null = null
+  wakeLockManager: WakeLockManager = new WakeLockManager()
 
   public setRouter(router: Router) {
     this.router = router
@@ -30,6 +32,7 @@ export default class Aplicacion {
   }
 
   constructor() {
+    this.reproductor = new Reproductor(this.wakeLockManager)
     CancionManager.getInstance().SetDB()
     const ultimas = new UltimasCanciones()
     ultimas.filtrarSubidas()
