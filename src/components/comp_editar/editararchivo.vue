@@ -82,7 +82,10 @@ hacerNombreArchivo()
         <option value="0">⭐⚫⚫⚫⚫ De Internet</option>
         <option value="1">⭐⭐⚫⚫⚫ Texto Sincronizado</option>
         <option value="2">⭐⭐⭐⚫⚫ Texto Corregido</option>
-        <option value="3">Ok</option>
+        <option value="4">⭐⭐⭐⭐⚫ Acordes Ok</option>
+        <option value="3">⭐⭐⭐⭐⭐ Acordes Sincronizados</option>
+        <option value="5">⚫⚫⚫⚫⚫ Sin acordes</option>
+        <option value="6">⚫⚫⚫⚫⚫ Sin texto  </option>
       </select>
     </div>
     <div>
