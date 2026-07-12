@@ -14,11 +14,13 @@ import {
 } from '../../EstadosAplicacion'
 import { OrigenCancion } from '../cancion/origencancion'
 import type { MediaVista } from './MediaVista'
+import type { WakeLockManager } from '../../helpers/WakeLockManager'
 
 export class Reproductor {
   public ultimoUsuarioQueCambioEstado: number = 0
   public ultimoEstadoCambiado: string = ''
   MediaVista: MediaVista | null = null
+  wakeLockManager: WakeLockManager
 
   async listaActualizada() {
     await this.strategyReproductor.CargarCancion(
@@ -28,6 +30,9 @@ export class Reproductor {
   SetEstado(estado: EstadoReproduccion) {
     if (estado === 'pausa') {
       this.MediaVista?.Pausar?.()
+      this.wakeLockManager.release()
+    } else if (estado === 'reproduciendo') {
+      this.wakeLockManager.acquire()
     }
     EstadosAplicacion.GetEstadosAplicacion().SetEstadoReproduccion(estado)
   }
@@ -81,8 +86,9 @@ export class Reproductor {
   )
   compas: number = 0
   golpeDelCompas: number = 0 // Valor inicial predeterminado
-  constructor() {
+  constructor(wakeLockManager: WakeLockManager) {
     this.cancion.archivo = ''
+    this.wakeLockManager = wakeLockManager
   }
 
   public conectar(
