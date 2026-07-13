@@ -39,7 +39,7 @@ const cfiltroVideo = ref(false)
 const filtroPartitura = ref(false)
 const filtroCantAcordes1 = ref(false)
 const filtroDuracion = ref(false)
-const filtroCalidad = ref(false)
+const filtroCalidad = ref(true)
 const filtroEtiquetas = ref(false)
 const filtroPartes = ref(false)
 

@@ -22,10 +22,7 @@ export class HelperDisplayEditTexto {
   }
 
   public getResumen(letra: Letra): textoResumen {
-    if (!letra?.renglones?.length) {
-      throw new Error('Letra inválida o vacía')
-    }
-
+    
     const renglones = this.procesadorTexto.separarEnRenglones(letra)
     const resumenRenglones = renglones.map((renglon) =>
       this.procesadorTexto.calcularResumenVerso(renglon),
