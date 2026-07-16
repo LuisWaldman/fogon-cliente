@@ -13,7 +13,7 @@ export class ProcesadorTexto {
    */
   public separarEnRenglones(letra: Letra): string[] {
     if (!letra?.renglones?.length) {
-      throw new Error('La letra no contiene renglones válidos')
+      return []
     }
 
     const letraRenglones = letra.renglones.flat()

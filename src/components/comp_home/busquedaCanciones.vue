@@ -39,7 +39,7 @@ const cfiltroVideo = ref(false)
 const filtroPartitura = ref(false)
 const filtroCantAcordes1 = ref(false)
 const filtroDuracion = ref(false)
-const filtroCalidad = ref(false)
+const filtroCalidad = ref(true)
 const filtroEtiquetas = ref(false)
 const filtroPartes = ref(false)
 
@@ -85,7 +85,7 @@ const filtroTempoBPM = ref(['0_60'])
 const filtroPartituraSeleccionada = ref([''])
 const filtroCantAcordesSeleccionada = ref([''])
 const filtroDuracionSeleccionada = ref(['todas'])
-const filtroCalidadSeleccionada = ref(['0', '1', '2', '3'])
+const filtroCalidadSeleccionada = ref(['3', '4'])
 const filtroGrupoSeleccionado = ref([])
 const filtroPartesSeleccionada = ref([''])
 const filtroVideo = ref('video')
@@ -126,7 +126,10 @@ const opcionesCalidad = [
   { value: '0', label: 'De Internet' },
   { value: '1', label: 'Texto Sincronizado' },
   { value: '2', label: 'Texto Corregido' },
-  { value: '3', label: 'Ok' },
+  { value: '3', label: 'Acordes Sincronizados' },
+  { value: '4', label: 'Acordes Ok' },
+  { value: '5', label: 'Sin acordes' },
+  { value: '6', label: 'Sin texto' },
 ]
 
 const opcionesGrupo = [

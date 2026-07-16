@@ -13,7 +13,10 @@ const vectorCalidades: string[] = [
   'De Internet',
   'Texto Sincronizado',
   'Texto Corregido',
-  'Ok',
+  'Acordes Sincronizados',
+  'Acordes Ok',
+  'Sin acordes',
+  'Sin texto',
 ]
 const agregandoLista = ref(false)
 const agregandoALista = ref(false)
