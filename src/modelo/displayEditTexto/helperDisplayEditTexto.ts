@@ -22,7 +22,6 @@ export class HelperDisplayEditTexto {
   }
 
   public getResumen(letra: Letra): textoResumen {
-    
     const renglones = this.procesadorTexto.separarEnRenglones(letra)
     const resumenRenglones = renglones.map((renglon) =>
       this.procesadorTexto.calcularResumenVerso(renglon),

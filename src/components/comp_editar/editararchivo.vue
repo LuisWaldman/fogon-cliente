@@ -85,7 +85,7 @@ hacerNombreArchivo()
         <option value="4">⭐⭐⭐⭐⚫ Acordes Ok</option>
         <option value="3">⭐⭐⭐⭐⭐ Acordes Sincronizados</option>
         <option value="5">⚫⚫⚫⚫⚫ Sin acordes</option>
-        <option value="6">⚫⚫⚫⚫⚫ Sin texto  </option>
+        <option value="6">⚫⚫⚫⚫⚫ Sin texto</option>
       </select>
     </div>
     <div>

@@ -130,8 +130,6 @@ const opcionesCalidad = [
   { value: '4', label: 'Acordes Ok' },
   { value: '5', label: 'Sin acordes' },
   { value: '6', label: 'Sin texto' },
-
-
 ]
 
 const opcionesGrupo = [
